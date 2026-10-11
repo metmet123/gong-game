@@ -1,0 +1,17 @@
+{
+  "name": "공무원 키우기",
+  "short_name": "공무원키우기",
+  "description": "모서리구청 생활보장과 신입 주무관의 15일 — 업무 퍼즐 게임",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#24301f",
+  "theme_color": "#24301f",
+  "icons": [
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}
