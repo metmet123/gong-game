@@ -15,7 +15,7 @@
 
 ## 진행 중인 작업과 수정 파일
 
-2026-10-13: GitHub `gong-game-codex` 브랜치 보관 작업 진행. 수정 범위는 이 STATUS, 담당 작업 로그, github-export의 채팅별 기록·파일 목록·업로드 검증 자료. 다른 섹션의 원본 소스와 STATUS는 보존한다. shared 최신 지침·관련 STATUS·전달 기록을 이번 작업에서 확인했다.
+없음. 2026-10-13 전체 작업 파일과 관련 채팅 5개의 기록을 GitHub `gong-game-codex` 브랜치에 푸시하고 원격 커밋 일치를 확인했다. 수정 예약 해제. shared 최신 지침·관련 STATUS·전달을 이번 작업에서 직접 확인했다. [GitHub 보관 안내](https://github.com/metmet123/gong-game/blob/gong-game-codex/CODEX_WORKSPACE.md) · [작업 로그](2._WORK_LOG.md).
 
 ## 다음 작업
 

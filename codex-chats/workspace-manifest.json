@@ -1754,6 +1754,13 @@
       "owner": "공통 운영·전달 기록"
     },
     {
+      "path": "shared/handoffs/20261013-전체작업-GitHub브랜치보관.md",
+      "repositoryPath": "codex-workspace/shared/handoffs/20261013-전체작업-GitHub브랜치보관.md",
+      "bytes": 1785,
+      "sha256": "3cecc78b905bd9b7e66f4b532f3b75fda44b28532c259985e85fe50cd77f0f0f",
+      "owner": "공통 운영·전달 기록"
+    },
+    {
       "path": "shared/handoffs/README.md",
       "repositoryPath": "codex-workspace/shared/handoffs/README.md",
       "bytes": 756,
@@ -4521,8 +4528,8 @@
     {
       "path": "확장계획/2._WORK_LOG.md",
       "repositoryPath": "codex-workspace/확장계획/2._WORK_LOG.md",
-      "bytes": 10896,
-      "sha256": "a598130aa10249f2824d9fe864734086c3327c33769fb7a7bd6730f3212782df",
+      "bytes": 12518,
+      "sha256": "7a79f6600ee7ca2dc5b658e15f25e863a0aa0040f77085dab9408e8bbe071cba",
       "owner": "공무원키우기 확장 계획"
     },
     {
@@ -4815,13 +4822,13 @@
     {
       "path": "확장계획/STATUS.md",
       "repositoryPath": "codex-workspace/확장계획/STATUS.md",
-      "bytes": 4244,
-      "sha256": "73d0a6179bf1c2756e3230113eb5cfaeecb19bab0fbb82d5deea359e44d0072b",
+      "bytes": 4316,
+      "sha256": "301407fb2ee59c6b64b849a78d3b77e2e0c121041fd4ff1fcda8bdc15c17a550",
       "owner": "공무원키우기 확장 계획"
     }
   ],
   "excludedCaches": [],
-  "fileCount": 688,
-  "totalBytes": 104740784,
+  "fileCount": 689,
+  "totalBytes": 104744263,
   "validation": "All snapshot copies match their source SHA-256."
 }
