@@ -19,6 +19,7 @@ node scripts/build-budget.js
 node scripts/test-budget.js
 python -m http.server 8784 --bind 127.0.0.1
 node scripts/browser-budget.js
+node scripts/deploy-smoke.js
 ```
 
 문제 생성은 고정 seed로 동일한 데이터를 만든다. 첫 명령은 데이터를 다시 만들 때만 필요하다. 브라우저 검사는 이 컴퓨터의 Codex 번들 Playwright와 Edge를 사용한다. 다른 환경은 `scripts/browser-budget.js`의 Playwright 경로를 설치 환경에 맞춰 바꾼다. 테스트 중에만 기존 컨트롤러 접근을 열며, 출시 HTML에는 테스트 함수나 정답 버튼을 넣지 않는다. 정답은 기존 퍼즐처럼 확정 힌트용 witness로 포함된다.
