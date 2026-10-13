@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-10",
+  "method": "Primary official product/documentation pages opened with web tool during resumption; no copied graphics",
+  "scope": "Product/documentation-level facts, not our game performance or internal third-party code",
+  "sources": [
+    {
+      "name": "Papers, Please",
+      "url": "https://papersplea.se/",
+      "claim": "모바일 터치판 소개"
+    },
+    {
+      "name": "Lil Guardsman",
+      "url": "https://store.steampowered.com/app/1924360/Lil_Guardsman/",
+      "claim": "질문/도구/100명 이상/도구 강화/되돌리기"
+    },
+    {
+      "name": "Human Resource Machine",
+      "url": "https://tomorrowcorporation.com/humanresourcemachine",
+      "claim": "사무직 자동화, 단계적 명령, 선택적 크기/속도 최적화"
+    },
+    {
+      "name": "Baba Is You",
+      "url": "https://store.steampowered.com/app/736260/Baba_Is_You/",
+      "claim": "단어 블록으로 규칙 조작"
+    },
+    {
+      "name": "Death and Taxes",
+      "url": "https://placeholdergameworks.itch.io/death-and-taxes",
+      "claim": "사무직 서사와 선택"
+    },
+    {
+      "name": "Unpacking",
+      "url": "https://www.unpackinggame.com/",
+      "claim": "블록맞추기·공간꾸미기·소품의서사·8번이사"
+    },
+    {
+      "name": "Game Dev Story",
+      "url": "https://kairosoft.net/gallery/kairomail/backnumber/en/101/kairomail.html",
+      "claim": "회사운영·직원·콘솔개발"
+    },
+    {
+      "name": "Tiny Tower",
+      "url": "https://shop.nimblebit.com/home",
+      "claim": "픽셀공간·주민·직업·승강기·BitBook"
+    },
+    {
+      "name": "localStorage",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+      "claim": "file URL 저장동작은 정의되지 않음"
+    },
+    {
+      "name": "esbuild",
+      "url": "https://esbuild.github.io/getting-started/",
+      "claim": "번들링과설치명령"
+    },
+    {
+      "name": "Node test",
+      "url": "https://nodejs.org/api/test.html",
+      "claim": "내장테스트러너"
+    },
+    {
+      "name": "Playwright",
+      "url": "https://playwright.dev/docs/intro",
+      "claim": "브라우저E2E/설치/지원환경"
+    },
+    {
+      "name": "Phaser",
+      "url": "https://docs.phaser.io/phaser/getting-started/what-is-phaser",
+      "claim": "2D웹게임엔진"
+    },
+    {
+      "name": "Godot Web",
+      "url": "https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_web.html",
+      "claim": "웹export/실행제약"
+    }
+  ]
+}

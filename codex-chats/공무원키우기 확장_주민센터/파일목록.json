@@ -1,0 +1,1997 @@
+[
+  {
+    "path": "주민센터/2._WORK_LOG.md",
+    "repositoryPath": "codex-workspace/주민센터/2._WORK_LOG.md",
+    "bytes": 31405,
+    "sha256": "9619496d981999c6fe5b5a25084466be0709f91625ed7b168fab6c943434fae9",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/3._TODO.md",
+    "repositoryPath": "codex-workspace/주민센터/3._TODO.md",
+    "bytes": 2655,
+    "sha256": "4e40994af644465062b1af25cebe6bb2faf0e50ce191d63fbb4a48ab705bfbdd",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/AGENTS.md",
+    "repositoryPath": "codex-workspace/주민센터/AGENTS.md",
+    "bytes": 414,
+    "sha256": "3eac24d7a9953d210b15d29ef4f3b617034d3b9c9c3173c20140125ea66c578a",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/build.py",
+    "repositoryPath": "codex-workspace/주민센터/build.py",
+    "bytes": 706,
+    "sha256": "0a64f9de402d5de8ff4a51d0ed1df3ab3211ad4995c8178ff21554db39991866",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/build_center.py",
+    "repositoryPath": "codex-workspace/주민센터/build_center.py",
+    "bytes": 2665,
+    "sha256": "03f757560a44c5b0215262ab35eb0216180e60252039fccf3f628dff01de5a4f",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/build_center_compare.py",
+    "repositoryPath": "codex-workspace/주민센터/build_center_compare.py",
+    "bytes": 605,
+    "sha256": "d36be029888298d41f5e430e9cd3b094fa297c2ef2821a946341c3b8ecc8b193",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/build_integrated.py",
+    "repositoryPath": "codex-workspace/주민센터/build_integrated.py",
+    "bytes": 2148,
+    "sha256": "ab26d4bebac372bc13c19a0ce999e3702bba1ed4f19686a8d3432cd69006abde",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/build_puzzle.py",
+    "repositoryPath": "codex-workspace/주민센터/build_puzzle.py",
+    "bytes": 1115,
+    "sha256": "5576a44f3615719939c1d356b60487d86d2f60677cb6ed31410cf199b005758a",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/DECISIONS.md",
+    "repositoryPath": "codex-workspace/주민센터/DECISIONS.md",
+    "bytes": 2850,
+    "sha256": "4144a3c1defa80d016894a677e4f773a0cbabdf0161304874be3203144d83ac7",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/contracts/W01_사건계약.json",
+    "repositoryPath": "codex-workspace/주민센터/design/contracts/W01_사건계약.json",
+    "bytes": 10148,
+    "sha256": "058174ffa07c86662ca9ced6c9ebaf80fe185d64c0aa2a6fd162c0f98c7163be",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/검증_Orwell풍.cjs",
+    "repositoryPath": "codex-workspace/주민센터/design/검증_Orwell풍.cjs",
+    "bytes": 7160,
+    "sha256": "9bff28a2dce792edf0904b2fda6f8de3b9088d34a740c42b9381172c360e90ea",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/검증_두업무시안.cjs",
+    "repositoryPath": "codex-workspace/주민센터/design/검증_두업무시안.cjs",
+    "bytes": 5227,
+    "sha256": "a5172ca11bd113154cbd3c513d6c3e758810ef6810c9bce795db829643fe2646",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/관계추론_Orwell풍_시안.html",
+    "repositoryPath": "codex-workspace/주민센터/design/관계추론_Orwell풍_시안.html",
+    "bytes": 34793,
+    "sha256": "111b1e50d82ceb74143f02912dc58de82e722c138701899c2a920b44a45dfaed",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/두업무_구현비교.html",
+    "repositoryPath": "codex-workspace/주민센터/design/두업무_구현비교.html",
+    "bytes": 623168,
+    "sha256": "42613eacb856806bcba594e5da0acea0d2b542a960b7f1488e6088a853220e96",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/두업무_구현비교_shell.html",
+    "repositoryPath": "codex-workspace/주민센터/design/두업무_구현비교_shell.html",
+    "bytes": 2514,
+    "sha256": "fccf7a5acc4bf78435131bb6175856901331ea1048c82d2e15b112be10e834fe",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/두업무_연결_시안.html",
+    "repositoryPath": "codex-workspace/주민센터/design/두업무_연결_시안.html",
+    "bytes": 37985,
+    "sha256": "865220132dab933f71e6c453773d56d141cf4b5401d9415cb9fdf656bb5ba0c7",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/첫접수_안내중심_이전시안.html",
+    "repositoryPath": "codex-workspace/주민센터/design/첫접수_안내중심_이전시안.html",
+    "bytes": 15751,
+    "sha256": "430aecf003562acc2b3d1798a3f3471989f9713d1ea2daeeb4ca2550879b529d",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/첫접수_재설계_프로토타입.html",
+    "repositoryPath": "codex-workspace/주민센터/design/첫접수_재설계_프로토타입.html",
+    "bytes": 25381,
+    "sha256": "ec8f545dd21041ea8369064c6521661822cc78c4e61fcd91ca06056c924613b7",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/Orwell풍/검증결과.json",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/Orwell풍/검증결과.json",
+    "bytes": 2914,
+    "sha256": "89cc56c0e4a9b4d0414ceac501a9e096dc6d494a432dc9c257a516e106e17ad8",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/Orwell풍/새시안_PC.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/Orwell풍/새시안_PC.png",
+    "bytes": 62905,
+    "sha256": "18c3f4208d636cb8cdcfe41b24f540aba88f291adf25c5d2bfdb9d67ca4b12e2",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/Orwell풍/새시안_관계_320.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/Orwell풍/새시안_관계_320.png",
+    "bytes": 25263,
+    "sha256": "263c5d248bc17c6c25ac03522eb19eb00d4dd65adb6382978bc22fcfe568fadb",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/Orwell풍/새시안_관계_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/Orwell풍/새시안_관계_390.png",
+    "bytes": 34797,
+    "sha256": "519295b5cab073c38d7bce9d60e8d947b1b31f486013ecbf8ca237e4336024cc",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/Orwell풍/새시안_관계_430.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/Orwell풍/새시안_관계_430.png",
+    "bytes": 38406,
+    "sha256": "06487dbced91a7a34ab82e4b9f5681386bb647dad6dc5ad2c5e62d8911fd4aa3",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/Orwell풍/새시안_오답_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/Orwell풍/새시안_오답_390.png",
+    "bytes": 30067,
+    "sha256": "a2e329c181c1bea25396fa767747fdd7db5c7407d5623220fdf38ea6ac1e0d53",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/Orwell풍/새시안_완료_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/Orwell풍/새시안_완료_390.png",
+    "bytes": 30075,
+    "sha256": "f3fc739ed87a10a9361f8532c8fc2f3a48ae857c0d0d99ff7b55593a2b0b0ba6",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/Orwell풍/새시안_이전기록_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/Orwell풍/새시안_이전기록_390.png",
+    "bytes": 29931,
+    "sha256": "8c1ec3c10849a7d487e34b16af814e4b881f3fffd84c52676baa8a9cf628713e",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/Orwell풍/새시안_자료_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/Orwell풍/새시안_자료_390.png",
+    "bytes": 35276,
+    "sha256": "7523fa309edf9cbf83b70f356720674284c756a4cf8bb72869b26f17d9103bd9",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/Orwell풍/새시안_초기_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/Orwell풍/새시안_초기_390.png",
+    "bytes": 34646,
+    "sha256": "303b744051163a06977e7925e5f1efa64f92206b909fcb5c8b447568ad7a1354",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/Orwell풍/새시안_판단_320.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/Orwell풍/새시안_판단_320.png",
+    "bytes": 25255,
+    "sha256": "9d21b92df4f3db827582f1cd96b5c172dd550a131887129dce308c3eb5014c18",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/Orwell풍/새시안_판단_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/Orwell풍/새시안_판단_390.png",
+    "bytes": 36081,
+    "sha256": "a6f803b326c11d00329d3f4917ff97d34c628a75aa702bfe5424f364de23d418",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/Orwell풍/새시안_판단_430.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/Orwell풍/새시안_판단_430.png",
+    "bytes": 39662,
+    "sha256": "2715512565634e30edc6ccbe832baf3f96c3fa20e7f38db9f75b049d1054806a",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/Orwell풍/새시안_확대_320.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/Orwell풍/새시안_확대_320.png",
+    "bytes": 23143,
+    "sha256": "c33b59e9a4aacd27bf512e7e0448e1f3dcab708dbcded86f58c0369d68e8349d",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/Orwell풍/현재_관계_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/Orwell풍/현재_관계_390.png",
+    "bytes": 37985,
+    "sha256": "78eaa921610af1c5510886cc9865e3a863e93e680167a951407da1d7d0b24c84",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/관계추론/검토결과.json",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/관계추론/검토결과.json",
+    "bytes": 1500,
+    "sha256": "8982c7f43dd770948231b72d9d6b76af61780188c9a58c4d87dec70e887220f9",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/관계추론/새시안_320.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/관계추론/새시안_320.png",
+    "bytes": 23089,
+    "sha256": "1173f676f883135e9fcedacf3457f4bbcef6c4657e7bff4f549ca0fd0267a26f",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/관계추론/새시안_검토.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/관계추론/새시안_검토.png",
+    "bytes": 34613,
+    "sha256": "28280b24c0faa8dc41733edad0460675dfa007acdaf17acb942147079dc8eb4e",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/관계추론/새시안_관계.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/관계추론/새시안_관계.png",
+    "bytes": 38439,
+    "sha256": "eba86c0d4e76bec9642df9141bed5c4a3e5d0acb9d6c3ae4745d3bc743f46eaf",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/관계추론/새시안_오답초안.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/관계추론/새시안_오답초안.png",
+    "bytes": 34390,
+    "sha256": "a1b4f3a6cc1112435fb6c1da93be164bc094d3236708741e0f0fbb05794f1067",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/관계추론/새시안_완료.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/관계추론/새시안_완료.png",
+    "bytes": 25412,
+    "sha256": "b2cdd83ca88f527c00fc19366f0991ef4aeedc3b9d379e87562991ba3ec251ca",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/관계추론/새시안_재확인.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/관계추론/새시안_재확인.png",
+    "bytes": 37332,
+    "sha256": "84632b1e4338ebcd24a1ba48c4657374bbb472405f26e1cfe53c36b455b498d7",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/관계추론/새시안_판단.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/관계추론/새시안_판단.png",
+    "bytes": 34107,
+    "sha256": "a7a27a791b28e713ae6c20c4a68c156ae4433f2c9e660179e721df7ea55ffc85",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/관계추론/현재_게임.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/관계추론/현재_게임.png",
+    "bytes": 75215,
+    "sha256": "d7bb89fb8429bf24241ab660dece1ce479db7f465ff2bf3e92b14395e647731b",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/두업무/복지_PC.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/두업무/복지_PC.png",
+    "bytes": 59101,
+    "sha256": "1a20ba519448502dc3df61bab395cc7c1e7bdb33d28732e8b5893c3f540b8058",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/두업무/복지계획_320.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/두업무/복지계획_320.png",
+    "bytes": 21843,
+    "sha256": "36285d93c15330a175756159ef212434446cc761f419d339d29b4d91f30b5150",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/두업무/복지계획_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/두업무/복지계획_390.png",
+    "bytes": 31836,
+    "sha256": "20fd1365b0b27c10e532f86ffc7733eb292437c4713f50af8a50d6d70b006ac8",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/두업무/복지계획_430.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/두업무/복지계획_430.png",
+    "bytes": 32287,
+    "sha256": "a2951c15ae580b2b389c3fe0bcd6c16bd7918ff68c2843959d38ef45cebbaa04",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/두업무/복지관계_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/두업무/복지관계_390.png",
+    "bytes": 29210,
+    "sha256": "9269fb465c68c491d9e5e242d40f9a3e937ac0767acdc1e75bf8e7c90c141258",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/두업무/복지자료_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/두업무/복지자료_390.png",
+    "bytes": 31713,
+    "sha256": "29e9faffed1df39fd9e85fc06444b82592b65e90c143a3f39cc320c80fe73daa",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/두업무/복지자료_초기_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/두업무/복지자료_초기_390.png",
+    "bytes": 30143,
+    "sha256": "5672b0c29cef2ab5bd2467d8c56a63c6911f13221f171a5a6546970dfab59bef",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/두업무/시안검증.json",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/두업무/시안검증.json",
+    "bytes": 2620,
+    "sha256": "53dd44fcdec04c8f25c468518d9c69b68cf735c2e816143f2f6b93095a9ff6c8",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/두업무/업무선택_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/두업무/업무선택_390.png",
+    "bytes": 27744,
+    "sha256": "18b5846591c67c216c5c1f74973ca7d404f58ce595f69e9299b656343666b833",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/두업무/업무선택_잠금_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/두업무/업무선택_잠금_390.png",
+    "bytes": 27335,
+    "sha256": "e494400b84432d4930ac0ec406ab210f9f6ef2f014848165dc15489e552bb808",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/두업무/현재_전입_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/두업무/현재_전입_390.png",
+    "bytes": 37985,
+    "sha256": "78eaa921610af1c5510886cc9865e3a863e93e680167a951407da1d7d0b24c84",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/변경후_320.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/변경후_320.png",
+    "bytes": 23212,
+    "sha256": "9527816db7e355853c980eff99144b8bedd8cbba469ebb6d46d1c050d748f721",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/변경후_관계.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/변경후_관계.png",
+    "bytes": 31050,
+    "sha256": "f6413e8423f4c1750649e26849a89eeb1e853308d4c6782c4c834d2870512713",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/변경후_신고서.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/변경후_신고서.png",
+    "bytes": 29818,
+    "sha256": "0f1ba0a8c7e74f7b7c4780c68da191f74fb4fe3b492fa8c8a48bd6fd2be31f95",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/변경후_이동.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/변경후_이동.png",
+    "bytes": 29969,
+    "sha256": "b76f39dba77aa64430f19b0dbc28f2ebf26c042579666515871ba5d8d6ffc172",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/복지9건/검증.json",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/복지9건/검증.json",
+    "bytes": 2700,
+    "sha256": "c9325f3c0a23cb55badcb3ba496a9b6b6affddabcb9017748514899ca5430294",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/복지9건/변경후_high_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/복지9건/변경후_high_390.png",
+    "bytes": 28964,
+    "sha256": "e2435007f7867f97de25aa0bf50eb915208ef78c2193c273071b58357aeebbec",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/복지9건/변경후_low_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/복지9건/변경후_low_390.png",
+    "bytes": 30248,
+    "sha256": "54b108857c4057b5f9f77879fbb00a0915e37c7a88fcc92b2514af431a94a85c",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/복지9건/변경후_medium_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/복지9건/변경후_medium_390.png",
+    "bytes": 29295,
+    "sha256": "97740079f3a2975def9242f5f62bf620a3c6bf41d7891dbdb54bf3b963ddce98",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/복지9건/변경후_사례철_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/복지9건/변경후_사례철_390.png",
+    "bytes": 30248,
+    "sha256": "65fc6c5f02e56f63a1abd71729045fb47bade66f7901c3c8821d32217f90860d",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/복지9건/변경후_첫화면_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/복지9건/변경후_첫화면_390.png",
+    "bytes": 33263,
+    "sha256": "95aa95a3695b9236432c9df8aa5b957b8f247045aba8bb725c45ec94807f9545",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/복지9건/사례철_1180.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/복지9건/사례철_1180.png",
+    "bytes": 57209,
+    "sha256": "31cad26017b2d495b8534cab697c1f1ed8366507fef21859a66cc8ee6bafda59",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/복지9건/사례철_320.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/복지9건/사례철_320.png",
+    "bytes": 20395,
+    "sha256": "2bb095200023174ec9ee040e5f31d12a2ad83a382a89f4af924f458281368ed2",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/복지9건/사례철_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/복지9건/사례철_390.png",
+    "bytes": 29019,
+    "sha256": "95aaefbc8bb09fdab2ba23723750e230c1c97349a0929ee164582537d3939d76",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/복지9건/사례철_430.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/복지9건/사례철_430.png",
+    "bytes": 34673,
+    "sha256": "65fcd616addd332271b1dbc906522cce47fe0314ac2de331136326bc3d5bf265",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/복지9건/사례철_844.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/복지9건/사례철_844.png",
+    "bytes": 19760,
+    "sha256": "38fbb99fc6e8e84827852e2b89da7a05e17568176a34b8eff598e4aa083f4279",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/복지9건/상담상_1180.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/복지9건/상담상_1180.png",
+    "bytes": 55886,
+    "sha256": "e2d275a1172fb48760b4a16f2f6d25d14bbd5dd067072d40cf055ec4dfda27ae",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/복지9건/상담상_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/복지9건/상담상_390.png",
+    "bytes": 35229,
+    "sha256": "4a20393d6b23b52bfb3718677718b8134fa593cd367ff7fc97c793eb2980a13a",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/복지9건/현재_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/복지9건/현재_390.png",
+    "bytes": 32810,
+    "sha256": "78f58cb74552ee8ab4b02a3a017409f38a9e8e6267f7210782549206384cc486",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/복지9건/현재_상담_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/복지9건/현재_상담_390.png",
+    "bytes": 33140,
+    "sha256": "f7e8244c6dd4e5cd306632b941e18175454ca5d669ac1916e58960dbbb8274c5",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/복지우선/검증.json",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/복지우선/검증.json",
+    "bytes": 486,
+    "sha256": "20e0be5ab124c79e5d07d4efaf186d774e199b17f36fa9d3c7c3b8996bf6a84c",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/복지우선/변경전_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/복지우선/변경전_390.png",
+    "bytes": 33608,
+    "sha256": "47a31324912a1c30ea39c30fb6d72cf3d4e1b53dfdd40d9fc2aa144f1d580d81",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/복지우선/변경후_1180.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/복지우선/변경후_1180.png",
+    "bytes": 49389,
+    "sha256": "c28221f215307fca3d8b62973c2df7c8428f0953fdc0f885991816cbaa3ac6c1",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/복지우선/변경후_320.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/복지우선/변경후_320.png",
+    "bytes": 31817,
+    "sha256": "9d698ff15f32f245a87fd1c41550dc6bf9ed4dd70e9fd63fb88a05284c8e0644",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/복지우선/변경후_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/복지우선/변경후_390.png",
+    "bytes": 33263,
+    "sha256": "95aa95a3695b9236432c9df8aa5b957b8f247045aba8bb725c45ec94807f9545",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/복지우선/변경후_430.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/복지우선/변경후_430.png",
+    "bytes": 33963,
+    "sha256": "98a8997f3ad4fa5902374955dafe035ec1ef99d3b8669e66bf179c4a4b265b3b",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/01_hub_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/01_hub_390.png",
+    "bytes": 33263,
+    "sha256": "95aa95a3695b9236432c9df8aa5b957b8f247045aba8bb725c45ec94807f9545",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/02_W01_first_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/02_W01_first_390.png",
+    "bytes": 33853,
+    "sha256": "c0b8f0b0a15e0157705739f85509cfbafe100dcfa8ea749fc1dc13ff7960689e",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/03_W01_review.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/03_W01_review.png",
+    "bytes": 32052,
+    "sha256": "ccee7b0460552b5641ed3478f172a56167ac4b397d09ff2b248e139d9d91d0de",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/04_W01_result.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/04_W01_result.png",
+    "bytes": 36911,
+    "sha256": "3aa820ebf854edc5e6152731aea8f7b3d7fa2293b0045cf74896c5423834f75a",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/05_catalog_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/05_catalog_390.png",
+    "bytes": 29728,
+    "sha256": "85b430abcccc039602fff1d8961935d86507186761a3b6b5c7bff0ab3eda9590",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/06_W04_relation.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/06_W04_relation.png",
+    "bytes": 33239,
+    "sha256": "75d6f1dc8f2aebf7d9c98443ca102f185afd5a549b420a01232c09dfc4ca1622",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/07_W04_no_unknown.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/07_W04_no_unknown.png",
+    "bytes": 31328,
+    "sha256": "e63a58ac5ba159cabd28e224b6e1bf96077a2bbfde7547f96954a477e47bda34",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/08_W05_result.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/08_W05_result.png",
+    "bytes": 36253,
+    "sha256": "1caa5c05eab1e38a040eee7edf0ca8e187175ed15cccf71db4060dd0f17ffe77",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/09_W02_result.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/09_W02_result.png",
+    "bytes": 32758,
+    "sha256": "c9563b211a3629dbaa509e7b5baf00f1a30116411db06d2c86c5bfe8d97e604a",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/10_W06_two_proofs.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/10_W06_two_proofs.png",
+    "bytes": 30939,
+    "sha256": "ac69790a31a06d9bfb9b487aa83fd418b15893a5841a452f0677fef4dde1ccba",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/11_W06_result.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/11_W06_result.png",
+    "bytes": 37769,
+    "sha256": "ed025c36b0cac9693c9e8d2d27a296752acb22571ea54dd0d3432e9ff08bbc2e",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/12_W07_result.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/12_W07_result.png",
+    "bytes": 37909,
+    "sha256": "764f8323248ca63015d0779e6754d3bf4ba485b6f28699668ff3caac29242f0b",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/13_W02_fixed_result.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/13_W02_fixed_result.png",
+    "bytes": 37226,
+    "sha256": "9913fc49f9a9f1b3146fcb23ea9006a6ba51302739c2c19ce99b39ddb40108d7",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/14_W03_plan_scrolled.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/14_W03_plan_scrolled.png",
+    "bytes": 32679,
+    "sha256": "eed44dbc265197bfdcc50b44859104cdaf0238e3ae19f41046234bd079aa7d81",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/15_W03_result.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/15_W03_result.png",
+    "bytes": 37281,
+    "sha256": "b2b8d452ef5b04f91d9c7cb28bfb53e9053d303e6ba5461b98e09c6b2630afb8",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/16_W08_plan_390.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/16_W08_plan_390.png",
+    "bytes": 35345,
+    "sha256": "e9b86b0746cb21372157e36a2c1fb8d726635f505921abb1e6672b8f4281cf14",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/17_W08_result.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/17_W08_result.png",
+    "bytes": 36918,
+    "sha256": "933dccd44de0f8b700192211f441044b906a0bf42358535bc43f034018805177",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/18_W09_priority_reject.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/18_W09_priority_reject.png",
+    "bytes": 35021,
+    "sha256": "3f3038ffb49be64ac430b476aa04c03dba75c4097b43b515705c396540aeea4e",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/19_W09_result.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/19_W09_result.png",
+    "bytes": 38832,
+    "sha256": "9ff3af009a44c943ec2d96eee3e779b52c86ab43fce6a8f9ba3c1fc206f3a148",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/20_hub_9_complete.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/20_hub_9_complete.png",
+    "bytes": 32741,
+    "sha256": "9b347f0bd1808c3c69704f95c988422754b241629d49ebc95088e867115613ba",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/21_catalog_320.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/21_catalog_320.png",
+    "bytes": 19798,
+    "sha256": "0dc04cef2f2b9daf5c46d35b302b4794ac82b9df9477021862b391db5abfb394",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/22_W08_first_320.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/22_W08_first_320.png",
+    "bytes": 21454,
+    "sha256": "4ca7dad851b791ac66d2f89b8c26df43eafb4cc2cdff66fe187017e3a53998d0",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/23_W08_first_landscape.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/23_W08_first_landscape.png",
+    "bytes": 17898,
+    "sha256": "152a3c95904e7b56dfcbfcae4b2d89645fc34ae2a0fe077ed9518d7661dee68a",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/24_W08_first_desktop.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/24_W08_first_desktop.png",
+    "bytes": 42448,
+    "sha256": "96d1db34c4291faca84b72be6f32a94aee39b26ff97b98d7d213b947f440319c",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/25_W05_reply.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/25_W05_reply.png",
+    "bytes": 31721,
+    "sha256": "46d0b2c4596e2fc03f412c22839ad4862f2c158fd06fa5ae0a7b031511a979ce",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/26_W02_reply.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/26_W02_reply.png",
+    "bytes": 32201,
+    "sha256": "ee3ffc9c52a3b8a7469302f5a4f4d388dde5a982e8ce224a0b15143b6d3a57b7",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/27_W06_reply.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/27_W06_reply.png",
+    "bytes": 32760,
+    "sha256": "6326be72bde5b4ff2fe6b456b7e56a9b912a7b816e17a7766f18619e61fb40c7",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/28_W07_reply.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/28_W07_reply.png",
+    "bytes": 32552,
+    "sha256": "90ae95f6b91b1cea584cb7988961ab94f39752c1e3ccd6f47580410e519f6539",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/29_W03_reply.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/29_W03_reply.png",
+    "bytes": 32337,
+    "sha256": "f3f81d998fa643abf3e83a22db23d468a4932ad57f66f85a6b741067021a2f23",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/30_W08_reply.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/30_W08_reply.png",
+    "bytes": 31771,
+    "sha256": "5a71fa27fb3fec4eab6ac614352088a6591bab2fe8224ebc794b58109379a5de",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/31_W09_reply.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/31_W09_reply.png",
+    "bytes": 33008,
+    "sha256": "7f7b426fd23d10c0cc24f2d154a09cf65f21215aadebb712ef4d0439be582f90",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/32_transfer_start.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/32_transfer_start.png",
+    "bytes": 68155,
+    "sha256": "f133392bccf3081d6e7f2c86aa87b52639129c34ffdad761c50970a0138012e4",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/33_transfer_first_work.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/33_transfer_first_work.png",
+    "bytes": 33535,
+    "sha256": "ac2cc39bfd5d50475fbda6d2fe5594fd867f33551a0ed9c54220d9ca20908055",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/34_transfer_first_review.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/34_transfer_first_review.png",
+    "bytes": 33517,
+    "sha256": "f84c4549001c82a69ef8d3ae4c67c6da10b819aef9db4572bd6306ff2aa5a853",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/35_transfer_first_result.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/35_transfer_first_result.png",
+    "bytes": 33127,
+    "sha256": "5d10aa5fc24693d6ad3ae1e02094e9157edd0a795027f93011e1797df299a521",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/36_transfer_old_system.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/36_transfer_old_system.png",
+    "bytes": 35292,
+    "sha256": "893ed0d76204089cbbe7cc674f001e45c79f564ef3e7e16de1ef16feb28cb470",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/37_transfer_selected.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/37_transfer_selected.png",
+    "bytes": 34512,
+    "sha256": "2bd6edec82c8eb3a74959bbfa1bfe8527466426a3be5d4220d4427161a0070ce",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/38_M01_review.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/38_M01_review.png",
+    "bytes": 36314,
+    "sha256": "e14837b3b7e8dc7120cd174c09ba0219568529ca3887df4c8ac7b2eb59ca9aca",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/39_M01_result.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/39_M01_result.png",
+    "bytes": 33219,
+    "sha256": "5807e880554388e247add12ccf1e381e941d03610128d0946aa34314bcf609f6",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/40_M02_before.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/40_M02_before.png",
+    "bytes": 34518,
+    "sha256": "b91278fb6652dd77fb03c5f34bf1b9c091f26c78865ecd25bf38bc1e1ce1ea38",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/41_M02_result.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/41_M02_result.png",
+    "bytes": 34078,
+    "sha256": "ccec2b78092a696639868739bccfb6faf4e8b52acf78000a5336edae86094514",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/42_M03_result.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/42_M03_result.png",
+    "bytes": 33458,
+    "sha256": "c51b224a9e80dc018b78ecfcbeca2b2c3b84602ad8ff26abf6835081c711b394",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/43_transfer_day1_close.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/43_transfer_day1_close.png",
+    "bytes": 39613,
+    "sha256": "e4a0ac04d9a9250c67b2aabd9e257cb40a063cf59bdd987b4e31072d42e1af4a",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/44_transfer_day1_summary.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/44_transfer_day1_summary.png",
+    "bytes": 64525,
+    "sha256": "fd5db611fccee403637cb020199f25214cfcaae5a3f39664d5b81b5db2208d2b",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/index.html",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/index.html",
+    "bytes": 76471,
+    "sha256": "ec039a4655101ce008c609776e5658acc2d3bc2aea8183f8dee5a6d3d4e24daf",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/interaction.jsonl",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/interaction.jsonl",
+    "bytes": 1865983,
+    "sha256": "6cfcf9eb0050c38dab1b7c496ca746fed4752c96d55c6ec7073f1fcadb0c265c",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/사용자플레이검토_20261011/검토범위.json",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/사용자플레이검토_20261011/검토범위.json",
+    "bytes": 1375,
+    "sha256": "688219c2ed51fc0484bddd05082a05c3576a5cf40ddb002bb44daad29536d3e9",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/design/화면/현재_이동.png",
+    "repositoryPath": "codex-workspace/주민센터/design/화면/현재_이동.png",
+    "bytes": 75243,
+    "sha256": "12aa4e33017666ea6f9d3b1cd05d1c4f73ffa7b8460eca52c76eb13535919b14",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/개발계획_상세기록.md",
+    "repositoryPath": "codex-workspace/주민센터/docs/개발계획_상세기록.md",
+    "bytes": 40428,
+    "sha256": "1bb889806786eb350d47eb84ab7afb1c406c7a428eed1ebeffa1c82dafeaa6db",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/개발작업목록.json",
+    "repositoryPath": "codex-workspace/주민센터/docs/개발작업목록.json",
+    "bytes": 20449,
+    "sha256": "41bc1c5a2908ce59c1ab12552c3eb7e3b453afce06c1515bf89f27bbe7b452b2",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/개발작업목록_계획.json",
+    "repositoryPath": "codex-workspace/주민센터/docs/개발작업목록_계획.json",
+    "bytes": 16841,
+    "sha256": "d8a64f5553158f5fad6ddb59cee38e9c118a16ffbedfe577698430a1689459cc",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/개발진행.md",
+    "repositoryPath": "codex-workspace/주민센터/docs/개발진행.md",
+    "bytes": 1588,
+    "sha256": "c52b286733b31fde9de81f5de5bcc15e3b17e32745bed5c376d00a8a1c46594f",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/320px_200퍼센트.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/320px_200퍼센트.png",
+    "bytes": 97275,
+    "sha256": "acaa01b36921541f5b687dc63037245bb8f5c87c379f4a76d3596eeaa2e3edd6",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/320px_세대구성.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/320px_세대구성.png",
+    "bytes": 22489,
+    "sha256": "1d0c2767d93e0c6a69b04aeee5a9b4e1a797acb71e6a2754abeb4f3fddb2b381",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/PC_세대구성.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/PC_세대구성.png",
+    "bytes": 59108,
+    "sha256": "dea4e2c83eecb7dc5ebca27a5aba68a39ea8b30c7d4ff00d0f7f4bf176c210ac",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/PC_주민센터.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/PC_주민센터.png",
+    "bytes": 59051,
+    "sha256": "8b7374f791762dade691f5a6b20fb6759e33c420d728b390c39588878c4d0389",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/UI_비교.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/UI_비교.png",
+    "bytes": 114208,
+    "sha256": "225ff5002e6690f0993f2be4bbac51cfa9068657ae843deedee2138a709abff4",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/UI_이전_390.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/UI_이전_390.png",
+    "bytes": 44672,
+    "sha256": "1ef0c7e6f7327a69e81a95d90ba1a5cfd03f63d612ae25e3f02b0c7e8e9ba51b",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/UI_현재_390.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/UI_현재_390.png",
+    "bytes": 34713,
+    "sha256": "3ab87f81cddb836ee0dc46ff7f6440bc21c190c32c1bf6044b90d8fa8561e828",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/검증_백업.json",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/검증_백업.json",
+    "bytes": 28831,
+    "sha256": "18e512b52f3bbcc05c83655b339a2a8c4befbed1df3e907610c3f6b9e2aa9ffe",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/기존퍼즐_회귀.json",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/기존퍼즐_회귀.json",
+    "bytes": 57563,
+    "sha256": "ea5e1328659a387cf123044ed4fd81f397cbc164d20f5443fe42bf008e3c0348",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/두업무/검증결과.json",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/두업무/검증결과.json",
+    "bytes": 4175,
+    "sha256": "c7eb1c2d89a9fb1e2d7658af01cff70446b622d1760b98b5d76c6f918382b8ad",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/두업무/복지_PC_개요.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/두업무/복지_PC_개요.png",
+    "bytes": 57557,
+    "sha256": "72cf0cd3850e6cf66f198a49cf9c2833fc5f9728f64a310dfcb4cd2b3b5de647",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/두업무/복지계획_1180.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/두업무/복지계획_1180.png",
+    "bytes": 54864,
+    "sha256": "69c8b1920952e5b62a5a6af20b4189adceb03b25f35b2b3b320afd1a0116d6a0",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/두업무/복지계획_320.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/두업무/복지계획_320.png",
+    "bytes": 22335,
+    "sha256": "133e0e06c40c55e7f5dda386a3ed4620c075cbab78129ba17c5f10e54c6cb6b4",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/두업무/복지계획_390.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/두업무/복지계획_390.png",
+    "bytes": 35108,
+    "sha256": "ab62407b5829ac6e7597b9e5138f303ea31dac2d794b93527cb3203474165f1f",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/두업무/복지계획_430.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/두업무/복지계획_430.png",
+    "bytes": 38914,
+    "sha256": "35c91c18893104a2b6b656818cd565e855fe18fe01c6f99fccb8dd46292a435a",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/두업무/복지계획_844.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/두업무/복지계획_844.png",
+    "bytes": 20453,
+    "sha256": "781e7ab4b37a2aa12dcffd92b9c0161df9893848d7d4a99c13302f404e91d35e",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/두업무/복지관계_1180.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/두업무/복지관계_1180.png",
+    "bytes": 46708,
+    "sha256": "f3a480c941da7b56e815d4aa6acf9202534854c9bb0327557d3b71b2c8878902",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/두업무/복지관계_320.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/두업무/복지관계_320.png",
+    "bytes": 19087,
+    "sha256": "ffea1dbe49faa55bf56acf413d419bf0a7477ef14336d2c477bf82c840eb8337",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/두업무/복지관계_390.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/두업무/복지관계_390.png",
+    "bytes": 29780,
+    "sha256": "a4b00d46aab776ca773e9a67836987b5ecfbfaa9dc757cda3ee25904813bec1b",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/두업무/복지관계_430.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/두업무/복지관계_430.png",
+    "bytes": 32401,
+    "sha256": "311340a174f374907822dd77a4960b04cf5892b7c6e6db7865d75c1b30749798",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/두업무/복지관계_844.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/두업무/복지관계_844.png",
+    "bytes": 18187,
+    "sha256": "e83f4d4b8efa3a7eb515f111359f4a01c88e6e8cd676727eec814abda2dda445",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/두업무/복지관계_개요_390.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/두업무/복지관계_개요_390.png",
+    "bytes": 35938,
+    "sha256": "0f716e4772ad12f9ad7c925717991d9336146b15e0808e43de03bdd24bdd1921",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/두업무/복지완료_390.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/두업무/복지완료_390.png",
+    "bytes": 24963,
+    "sha256": "6e47b77437cc4de9cb0d5a6d338ee9736758c549fa0aa1d4d88f4e6a0cb90ba6",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/두업무/복지자료_390.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/두업무/복지자료_390.png",
+    "bytes": 36272,
+    "sha256": "09f5cda90805a4a8395d2bafacd36adca2c275b742142a8579ca46383817c07f",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/두업무/복지확대_320.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/두업무/복지확대_320.png",
+    "bytes": 16301,
+    "sha256": "90d3ff23f721a37cb967c3ba98d98ead0bd031629ca1bf94ceb61f464557565b",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/두업무/업무선택_390.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/두업무/업무선택_390.png",
+    "bytes": 25319,
+    "sha256": "23aadd30e38fde7b86f3bee95a9de2c3ef1d5fb66446c6392d4fefbd45cda580",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/두업무/업무선택_잠금_390.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/두업무/업무선택_잠금_390.png",
+    "bytes": 33608,
+    "sha256": "47a31324912a1c30ea39c30fb6d72cf3d4e1b53dfdd40d9fc2aa144f1d580d81",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/두업무/업무선택_즉시개방_390.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/두업무/업무선택_즉시개방_390.png",
+    "bytes": 33263,
+    "sha256": "95aa95a3695b9236432c9df8aa5b957b8f247045aba8bb725c45ec94807f9545",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/모바일_검토.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/모바일_검토.png",
+    "bytes": 35121,
+    "sha256": "b713f8b35e11b71159153c3d42d4e79cb05cc9319c444b76b81ff88d22d9ddac",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/모바일_접수목록.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/모바일_접수목록.png",
+    "bytes": 34449,
+    "sha256": "a9f769b29df1c396c0bbad578e61f9738de12d79ae8a3a4572c76ce01fe9a9ec",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/모바일_주민센터.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/모바일_주민센터.png",
+    "bytes": 39139,
+    "sha256": "905234b9c02089944590afe50a45d381ee98f5117be877bca4a50f8534512a60",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/모바일_처리완료.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/모바일_처리완료.png",
+    "bytes": 33511,
+    "sha256": "8f2689d4c16d8221501493eb5cc39bdc75f1c7c4992bf5159b4776a1f0d7d765",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/본편_통합후보.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/본편_통합후보.png",
+    "bytes": 42253,
+    "sha256": "1b3bc229299e2805a02599412564330b3a10a36362f851f44512283aa49a1526",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/첫접수/검증결과.json",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/첫접수/검증결과.json",
+    "bytes": 2619,
+    "sha256": "5da554f311b6a39b5417ab8652c4f9bfab577785166231372f025090a2627aa8",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/첫접수/검토_390.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/첫접수/검토_390.png",
+    "bytes": 35103,
+    "sha256": "b40eab2f941e725a688759feb329a4bde74f94bc35d2878d20036c35b732ef02",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/첫접수/관계_320.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/첫접수/관계_320.png",
+    "bytes": 24028,
+    "sha256": "1b0afd42df63b6c9c3d337b0dd8a413fe88e325a9862962e9abc5e789efa8e6a",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/첫접수/관계_390.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/첫접수/관계_390.png",
+    "bytes": 38023,
+    "sha256": "4d0e440b330f7c49a13e1bfaf971bea7f94681ca77c47517462e00201d35152f",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/첫접수/오답초안_390.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/첫접수/오답초안_390.png",
+    "bytes": 35028,
+    "sha256": "347334d6eb7a99093f9bbdc9896b64a22839f776cdb2ff3737ce699c27b32918",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/첫접수/완료_390.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/첫접수/완료_390.png",
+    "bytes": 31612,
+    "sha256": "791af8c6f0840b7560edd989601171c9ac1b14fdbc8df7059f75c6664fafcff4",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/첫접수/판단_390.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/첫접수/판단_390.png",
+    "bytes": 34310,
+    "sha256": "da31b72edb8f2eadf319f3dcf34ea9ad450489c854ee4487d274e3c9e558f08a",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/첫접수/확대_320.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/첫접수/확대_320.png",
+    "bytes": 80596,
+    "sha256": "2a24857286c0148a152f81735b7cadee1c4b19a75e43ace4f9abd2f800c46618",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/첫접수/확대입력_320.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/첫접수/확대입력_320.png",
+    "bytes": 102106,
+    "sha256": "9f2bede984778a2fd6fbe75dc740135228a47ce310475179cb9f0487ee6d11ef",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/검증화면/통합_검사결과.json",
+    "repositoryPath": "codex-workspace/주민센터/docs/검증화면/통합_검사결과.json",
+    "bytes": 11125,
+    "sha256": "2b5b94d5f469e1473c47c2e55a6822616349ffca6f854fab93c1eb116f28d02d",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/결정기록.md",
+    "repositoryPath": "codex-workspace/주민센터/docs/결정기록.md",
+    "bytes": 9457,
+    "sha256": "93a8f6afc5dc3d6eafe44a994569b5c20443f1eb4db0b02e1fd55287fb25a01d",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/계획검증_두업무.json",
+    "repositoryPath": "codex-workspace/주민센터/docs/계획검증_두업무.json",
+    "bytes": 2395,
+    "sha256": "fbe311bfe74914185f77c62beb85d72f9fc8cad14e7693dd0da46bc193cfb7c5",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/배포검증_20261011.json",
+    "repositoryPath": "codex-workspace/주민센터/docs/배포검증_20261011.json",
+    "bytes": 1183,
+    "sha256": "db36b1876e53972b251f80f3b7f4d408092426f83e9e879cbc4898f0273b953b",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/배포자료/sw.js",
+    "repositoryPath": "codex-workspace/주민센터/docs/배포자료/sw.js",
+    "bytes": 1131,
+    "sha256": "db7a4c59c701f0ba1e779832ede5aa44789b30a58fe8f1898a140752762a5d58",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/배포자료/공개_완료_390.png",
+    "repositoryPath": "codex-workspace/주민센터/docs/배포자료/공개_완료_390.png",
+    "bytes": 32818,
+    "sha256": "47faf11f68ba87002353e124dcecd683f53b305646e5376b5210038a050b1293",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/보호파일.json",
+    "repositoryPath": "codex-workspace/주민센터/docs/보호파일.json",
+    "bytes": 5382,
+    "sha256": "12d372e092d5daff543a3ccc296514de8c4a6c4cf5c8c050572c73fd65e905a5",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/복지9건_엔진검증.json",
+    "repositoryPath": "codex-workspace/주민센터/docs/복지9건_엔진검증.json",
+    "bytes": 1103,
+    "sha256": "09e3e2a9ad99f8ba1cdfd8060e7592fde1b7948b9c32e74f81a71cb6ce88d819",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/복지상담_난이도9건_명세.md",
+    "repositoryPath": "codex-workspace/주민센터/docs/복지상담_난이도9건_명세.md",
+    "bytes": 7666,
+    "sha256": "29b0d6f49578dd52ed187da0c3dda3b788605ef3d7b7662a4abbd704b2ce723c",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/본편연결계약.md",
+    "repositoryPath": "codex-workspace/주민센터/docs/본편연결계약.md",
+    "bytes": 3451,
+    "sha256": "d8b125339c9612f354b01ad85f151505dd08224212690b3f5b3003f2376fa2a3",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/본편자료/배포본.html",
+    "repositoryPath": "codex-workspace/주민센터/docs/본편자료/배포본.html",
+    "bytes": 1977819,
+    "sha256": "300fb0e4850c2453cff8ebbcbbaadb010a165f060f490f150709b4a41e736318",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/본편자료/확인.json",
+    "repositoryPath": "codex-workspace/주민센터/docs/본편자료/확인.json",
+    "bytes": 223,
+    "sha256": "74924a99fe2798763b3dd9ec8c04ee0d8062974711806ef9b332413b18412f3e",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/사용자관점_플레이검토_20261011.md",
+    "repositoryPath": "codex-workspace/주민센터/docs/사용자관점_플레이검토_20261011.md",
+    "bytes": 23444,
+    "sha256": "6836d3b2ab43b2565bc89d7490890f8e828921685410b46ed46b894c51792857",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/센터_W01엔진검증.json",
+    "repositoryPath": "codex-workspace/주민센터/docs/센터_W01엔진검증.json",
+    "bytes": 739,
+    "sha256": "e7f2a27e3849557f248ac454b7e8e68229b0ebc713807bde1a855ea759ccf5a2",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/센터_복지엔진검증.json",
+    "repositoryPath": "codex-workspace/주민센터/docs/센터_복지엔진검증.json",
+    "bytes": 1415,
+    "sha256": "d3191de4b420ae3463622a2baa34790357ed5d7370d283132ddeec92cce7ab76",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/센터_실기기_초심자_검증표.md",
+    "repositoryPath": "codex-workspace/주민센터/docs/센터_실기기_초심자_검증표.md",
+    "bytes": 3355,
+    "sha256": "470a2877a52ef724f964fdfe463c305e3c5d0c6ae42dec1602465e2464db3899",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/센터검증.json",
+    "repositoryPath": "codex-workspace/주민센터/docs/센터검증.json",
+    "bytes": 14726,
+    "sha256": "f1094977e80a2bb773560b113f91951c1be5fbdd77fb89a4fcdb7f87e8dbb1c7",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/센터구현검증.md",
+    "repositoryPath": "codex-workspace/주민센터/docs/센터구현검증.md",
+    "bytes": 10756,
+    "sha256": "7c9ac46ffa5bf3155ea3ee5de2d9fe5adbfc5bd88b3f3f1792cf8a50fed97062",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/센터기준/기존공개전입.html",
+    "repositoryPath": "codex-workspace/주민센터/docs/센터기준/기존공개전입.html",
+    "bytes": 134496,
+    "sha256": "2aa1f39ab359a049b2b3e54871e2bd74992ce3fba09663c1d38a98953d93f2b9",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/센터기준.json",
+    "repositoryPath": "codex-workspace/주민센터/docs/센터기준.json",
+    "bytes": 933,
+    "sha256": "73370632fb92d79110ada14331e5c266ada0f7ad464588d44dc837617507529c",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/센터기준회귀.json",
+    "repositoryPath": "codex-workspace/주민센터/docs/센터기준회귀.json",
+    "bytes": 11505,
+    "sha256": "c7b52d99acaa5bc06290c459761b425f16b24996f8f70249d06a7b6c9dd1d7e8",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/센터복구브라우저검증.json",
+    "repositoryPath": "codex-workspace/주민센터/docs/센터복구브라우저검증.json",
+    "bytes": 1076,
+    "sha256": "65a1c379bd4847cbdd48c4a909ce159e03db5f568e5caadaeaffae7a6e23b058",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/센터빌드검증.json",
+    "repositoryPath": "codex-workspace/주민센터/docs/센터빌드검증.json",
+    "bytes": 3104,
+    "sha256": "2306a6d36bd075e649fbd6262060e346d6d5683398fc4ebb6a8d8f16ec55d740",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/센터아티팩트검증.json",
+    "repositoryPath": "codex-workspace/주민센터/docs/센터아티팩트검증.json",
+    "bytes": 582,
+    "sha256": "348f59cb19955dce06a1387623c5bfa73cde35cda629ddc187e93d907d1d4fb9",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/센터저장검증.json",
+    "repositoryPath": "codex-workspace/주민센터/docs/센터저장검증.json",
+    "bytes": 675,
+    "sha256": "a0d27f3f4e075cc6f65497805e698d1c9c4a486e031980a1560ce52885806492",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/전입인수검증.json",
+    "repositoryPath": "codex-workspace/주민센터/docs/전입인수검증.json",
+    "bytes": 11506,
+    "sha256": "c3c141782a2dce317138a387b90172f14a4dff2239aac83a4d180aef5065cbbf",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/전입창구_복지상담실_상세개발계획.md",
+    "repositoryPath": "codex-workspace/주민센터/docs/전입창구_복지상담실_상세개발계획.md",
+    "bytes": 45444,
+    "sha256": "092c7853019b050c3a737c6eee487ec394ea00d4ac39882a358e05a198bba31c",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/절차근거.json",
+    "repositoryPath": "codex-workspace/주민센터/docs/절차근거.json",
+    "bytes": 872,
+    "sha256": "9e337d73c30a67553458f7a120eb79f43e897eb2015f9af7ee7a9ed7f3db8b28",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/참고게임_전입신고_적용검토.md",
+    "repositoryPath": "codex-workspace/주민센터/docs/참고게임_전입신고_적용검토.md",
+    "bytes": 8710,
+    "sha256": "1be594fdc31cc6b1a1ef5dcb3a18da70d8f7677d150ee3a887ea44f53be716b9",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/첫접수_Orwell풍_UIUX_시안.md",
+    "repositoryPath": "codex-workspace/주민센터/docs/첫접수_Orwell풍_UIUX_시안.md",
+    "bytes": 8345,
+    "sha256": "00db95bd4b8174c9e3b7630c1e35adbca690438ac6e4d1ac6df91e7ac457fa9c",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/첫접수_구현검증.md",
+    "repositoryPath": "codex-workspace/주민센터/docs/첫접수_구현검증.md",
+    "bytes": 6687,
+    "sha256": "3fec41c0b1e59f5a055b9f93108a8bfbf0128cf308f57f27af15bc80c3c7df88",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/첫접수_재설계_계획.md",
+    "repositoryPath": "codex-workspace/주민센터/docs/첫접수_재설계_계획.md",
+    "bytes": 15291,
+    "sha256": "538e6fbcc7f90d374c4a47180b0120a5b72812ee2c3a49950d99ee50630a02ed",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/첫접수_재설계_계획_v1_보관.md",
+    "repositoryPath": "codex-workspace/주민센터/docs/첫접수_재설계_계획_v1_보관.md",
+    "bytes": 13014,
+    "sha256": "3847a75a2b52301a280d964c21730e9de941c22af7f0dcf4f49135a07a1bdc8e",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/최종검사.json",
+    "repositoryPath": "codex-workspace/주민센터/docs/최종검사.json",
+    "bytes": 12180,
+    "sha256": "f718af5b219ba4d8fd1c0082729de1e0e5377e88112f4f60e9b9fba80cb0b9a9",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/출시검증.md",
+    "repositoryPath": "codex-workspace/주민센터/docs/출시검증.md",
+    "bytes": 3167,
+    "sha256": "ff8bb973906c554b722fc129bba382ce983768cd810dff8b9d3fd317029bef71",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/docs/퍼즐검증.md",
+    "repositoryPath": "codex-workspace/주민센터/docs/퍼즐검증.md",
+    "bytes": 294,
+    "sha256": "316b3c8cff6fa821b176bd9975d58007f5c070a85f7f521ae447f79e24ad8a92",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/preview/index.html",
+    "repositoryPath": "codex-workspace/주민센터/preview/index.html",
+    "bytes": 51747,
+    "sha256": "925efd6f70210ed5a9dacc2f80ca95ddaf091dc8d714b1dabefbac1c228144bf",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/preview-center/index.html",
+    "repositoryPath": "codex-workspace/주민센터/preview-center/index.html",
+    "bytes": 467038,
+    "sha256": "2259a43e041040557d422266aeb88f3275d0dfbe0fd0064456e18df20a528f37",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/preview-puzzle/index.html",
+    "repositoryPath": "codex-workspace/주민센터/preview-puzzle/index.html",
+    "bytes": 136833,
+    "sha256": "d9b56d4730eb6dd7dce19b6f22b393768d9cd0fe2c6769949bdf68441727ab63",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/PROJECT_PLAN.md",
+    "repositoryPath": "codex-workspace/주민센터/PROJECT_PLAN.md",
+    "bytes": 2066,
+    "sha256": "ff3b96101a4ec898d1c954a623cf5e85e6dfa444544670eb738d72cfe008137e",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/README.md",
+    "repositoryPath": "codex-workspace/주민센터/README.md",
+    "bytes": 3035,
+    "sha256": "9d4139bf90a082bc7749a1f9298aac1df13687b8b4f652f03e1528f4b9d96e2a",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/adapters/main-game.js",
+    "repositoryPath": "codex-workspace/주민센터/src/adapters/main-game.js",
+    "bytes": 11972,
+    "sha256": "2069ff4d2a075155c33c4650f772588124ef4e47bc4c7e8a4a9762e66d603b29",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/app.js",
+    "repositoryPath": "codex-workspace/주민센터/src/app.js",
+    "bytes": 15139,
+    "sha256": "a6ae343ffeea1a90a7e63b5cde83658e5955922344d12043e7f3ab1e52da0cbd",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/center/app.js",
+    "repositoryPath": "codex-workspace/주민센터/src/center/app.js",
+    "bytes": 17549,
+    "sha256": "273a07dbc6f14e2caaaf325b696bf7c384efc8fc363c107d964d3da2c0fb1bcc",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/center/bridge.js",
+    "repositoryPath": "codex-workspace/주민센터/src/center/bridge.js",
+    "bytes": 2687,
+    "sha256": "29af2d50757ad54a00ff34f1e294b084518f6199a01aa960f0d3954cb61eb030",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/center/center.css",
+    "repositoryPath": "codex-workspace/주민센터/src/center/center.css",
+    "bytes": 6464,
+    "sha256": "88ea8ea403562c4b1414c5ad9d76538cef4abc45ba52aadb6792a6be24cfb61a",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/center/shell.html",
+    "repositoryPath": "codex-workspace/주민센터/src/center/shell.html",
+    "bytes": 1154,
+    "sha256": "dbbde96fc79c06fa92bd2e56e93ed28c618b2ae3e2d03bd8edafcf7471b157cf",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/center/storage.js",
+    "repositoryPath": "codex-workspace/주민센터/src/center/storage.js",
+    "bytes": 3935,
+    "sha256": "691c2d7bb63cd9fa2a372c2f29b42bc45e990a50a7c581024fc62d8128c5e647",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/core.js",
+    "repositoryPath": "codex-workspace/주민센터/src/core.js",
+    "bytes": 7244,
+    "sha256": "5eac7480b47ef227a73ea80a87a3e7d43edcfb6425e9906da918a46994168879",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/data/cases.js",
+    "repositoryPath": "codex-workspace/주민센터/src/data/cases.js",
+    "bytes": 13907,
+    "sha256": "e50e4e88c442307c134ffb120147dfaa88a45d0cc8bc6874e01d69ac9d40bc1e",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/data/chapter.js",
+    "repositoryPath": "codex-workspace/주민센터/src/data/chapter.js",
+    "bytes": 3667,
+    "sha256": "e393f184bf9077864e4cb371eb530028fb9d70a6bcb4eeaeee3246a8d64d6192",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/engine/actions.js",
+    "repositoryPath": "codex-workspace/주민센터/src/engine/actions.js",
+    "bytes": 5462,
+    "sha256": "ad3e61bf95f79a4a2fab2adaacd3da99c9d705294d3f016d37efd18de1503317",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/engine/resolve.js",
+    "repositoryPath": "codex-workspace/주민센터/src/engine/resolve.js",
+    "bytes": 2178,
+    "sha256": "7dd535453dd8d2a6181444d4efde9f61bfc4e696343678ba51a599155ae83692",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/engine/review.js",
+    "repositoryPath": "codex-workspace/주민센터/src/engine/review.js",
+    "bytes": 3929,
+    "sha256": "d37aa364165450d42b96efe76337a2d21d949ef0873f50e27537c61fe702f30f",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/engine/session.js",
+    "repositoryPath": "codex-workspace/주민센터/src/engine/session.js",
+    "bytes": 5053,
+    "sha256": "661238c9d3496d0e8a3341dc5d434c58c9ceaebb3f4b8eb32a6015b09dbac994",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/puzzle-app.js",
+    "repositoryPath": "codex-workspace/주민센터/src/puzzle-app.js",
+    "bytes": 44247,
+    "sha256": "ae243f4fd906f08be60a6b109f67477ec0d6f2bf0ac0d87b755b815896d6c7d9",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/puzzle-shell.html",
+    "repositoryPath": "codex-workspace/주민센터/src/puzzle-shell.html",
+    "bytes": 1634,
+    "sha256": "2bb56ef4b3253401ee8929ad48ce42e5cbda7b906c3ade48668fa0382f616c57",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/puzzle.css",
+    "repositoryPath": "codex-workspace/주민센터/src/puzzle.css",
+    "bytes": 27146,
+    "sha256": "8c9848b3743c18575749947d05ba72fec7d81bed7c4330d0991eeb161c783f2c",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/services/campaign.js",
+    "repositoryPath": "codex-workspace/주민센터/src/services/campaign.js",
+    "bytes": 2850,
+    "sha256": "bba83fd2da5d4afb5cbd032567c27294dcbc3ddc13b8e37449242446ca43be37",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/services/storage.js",
+    "repositoryPath": "codex-workspace/주민센터/src/services/storage.js",
+    "bytes": 8510,
+    "sha256": "a372c7d05aced97f367579016ba0080de6fa015728215d1d34112c7b71a8184f",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/services/tutorial.js",
+    "repositoryPath": "codex-workspace/주민센터/src/services/tutorial.js",
+    "bytes": 5956,
+    "sha256": "0c573ae98e5b38e497f6808aae9086cb20d6cca4b54c28e3832159949501f8d7",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/shell.html",
+    "repositoryPath": "codex-workspace/주민센터/src/shell.html",
+    "bytes": 7497,
+    "sha256": "2bf19adf766af6e10456f17e11327fcf6d9464aca2b89419e942c4a104ea26ad",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/style.css",
+    "repositoryPath": "codex-workspace/주민센터/src/style.css",
+    "bytes": 21707,
+    "sha256": "4cc07a9a1e74763d8d7a757dbce119e528df571d589461bf13a76a61185c479a",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/tutorial-view.js",
+    "repositoryPath": "codex-workspace/주민센터/src/tutorial-view.js",
+    "bytes": 11859,
+    "sha256": "0d0545a6e7d2b804b4b587aa868c23d5ba935fa974317c31debdcb90378f08a2",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/welfare/app.js",
+    "repositoryPath": "codex-workspace/주민센터/src/welfare/app.js",
+    "bytes": 9794,
+    "sha256": "147096213e37e93b6b9f1289cd5b64a330f8ef1156c95a245f9d9e3fea093474",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/welfare/data/cases.js",
+    "repositoryPath": "codex-workspace/주민센터/src/welfare/data/cases.js",
+    "bytes": 31564,
+    "sha256": "443a82e81af6edc0194785650cd16d98e6f2e04aa0028e1ff159934739ef751c",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/welfare/data/extra-cases.js",
+    "repositoryPath": "codex-workspace/주민센터/src/welfare/data/extra-cases.js",
+    "bytes": 21750,
+    "sha256": "1827931e20b56e8463ad57f8388af437cf935dcbbcb075ad0dfeb05aa1805109",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/welfare/engine/actions.js",
+    "repositoryPath": "codex-workspace/주민센터/src/welfare/engine/actions.js",
+    "bytes": 4444,
+    "sha256": "1ec1459dbb560ccc64918e0a5892eb2f9293e0ceb121a4bb3b36859bb1399d0a",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/welfare/engine/resolve.js",
+    "repositoryPath": "codex-workspace/주민센터/src/welfare/engine/resolve.js",
+    "bytes": 873,
+    "sha256": "3ca977e07717e3c2965880c718009d628dfaee5a4508eec64995ca83d2808234",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/welfare/engine/review.js",
+    "repositoryPath": "codex-workspace/주민센터/src/welfare/engine/review.js",
+    "bytes": 3401,
+    "sha256": "f1c2ae5a5b5a4758d434a06417df3cda97bc1819581196e125e662ade12ebdd5",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/welfare/engine/session.js",
+    "repositoryPath": "codex-workspace/주민센터/src/welfare/engine/session.js",
+    "bytes": 1844,
+    "sha256": "5a8c84052e49f50532d3dcd3d6460ce2c4473b6961f452371e6410d80cc43ef0",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/welfare/services/storage.js",
+    "repositoryPath": "codex-workspace/주민센터/src/welfare/services/storage.js",
+    "bytes": 4958,
+    "sha256": "3f64d1cfd5769d953d06cc8c1eb038b8a72a7c3810258405c5278ec28820b326",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/welfare/shell.html",
+    "repositoryPath": "codex-workspace/주민센터/src/welfare/shell.html",
+    "bytes": 745,
+    "sha256": "12dd45f4cd4c9d893b5bd909bc82c20fdcd24b974fb408df1ade9d4df072a845",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/welfare/view.js",
+    "repositoryPath": "codex-workspace/주민센터/src/welfare/view.js",
+    "bytes": 12145,
+    "sha256": "f4ddf10f2fcb4bec3efd193c2d693b4e5a69f130aa020c99832439d05d99c3da",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/src/welfare/welfare.css",
+    "repositoryPath": "codex-workspace/주민센터/src/welfare/welfare.css",
+    "bytes": 8770,
+    "sha256": "8248a3f14544abab7859f817b471f6fe896374b27db0eeebc693279a8e876155",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/STATUS.md",
+    "repositoryPath": "codex-workspace/주민센터/STATUS.md",
+    "bytes": 4203,
+    "sha256": "3bc451b42f1b331ce3c729c65cb87e0b326ebdeb60a115a5ff2c4e9c2c219f01",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/browser.cjs",
+    "repositoryPath": "codex-workspace/주민센터/tests/browser.cjs",
+    "bytes": 3729,
+    "sha256": "8c3a985d821d86895d3cace20a92f2ab1256533a862032140074c6a7b5ecaa1b",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/center-artifact-browser.cjs",
+    "repositoryPath": "codex-workspace/주민센터/tests/center-artifact-browser.cjs",
+    "bytes": 3428,
+    "sha256": "73b788cb07ec4f00aa310e10a7de890194b4797b9fed1dfe43f663ae8964c4f0",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/center-browser.cjs",
+    "repositoryPath": "codex-workspace/주민센터/tests/center-browser.cjs",
+    "bytes": 12692,
+    "sha256": "641f2e0c1c84cfb41e54830b4addfd2166858abc0c37f62615b0c43f8c844ac5",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/center-fixtures.cjs",
+    "repositoryPath": "codex-workspace/주민센터/tests/center-fixtures.cjs",
+    "bytes": 1440,
+    "sha256": "450af3c1541a451c6f9b86ed87b0ede0cb9f99ba7876f81450b13c300373b86f",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/center-recovery-browser.cjs",
+    "repositoryPath": "codex-workspace/주민센터/tests/center-recovery-browser.cjs",
+    "bytes": 8989,
+    "sha256": "351f55f2e08a5c8f8674f1123f74dd72e2cbda872437cdf656c16c294df75093",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/center-storage.cjs",
+    "repositoryPath": "codex-workspace/주민센터/tests/center-storage.cjs",
+    "bytes": 4941,
+    "sha256": "aab58027d4ae180128571b553b4a32e0314f79f3f81de23288debca1e9e9de05",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/core.test.js",
+    "repositoryPath": "codex-workspace/주민센터/tests/core.test.js",
+    "bytes": 3659,
+    "sha256": "43a7d5fa1ec84914ba76eb4716f39980331a7a14fcf2ba6ab55fa71b8e406793",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/engine.test.cjs",
+    "repositoryPath": "codex-workspace/주민센터/tests/engine.test.cjs",
+    "bytes": 6329,
+    "sha256": "1e9f4acd3169237f8550571b693e51b0a136a566cab6d0f39cf8e028f429522b",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/fixtures/center/legacy-chapter-day1.json",
+    "repositoryPath": "codex-workspace/주민센터/tests/fixtures/center/legacy-chapter-day1.json",
+    "bytes": 4395,
+    "sha256": "d7c3d9ac76c51927c724fcd6a6b8f6181b3c4bd1af28833c20660ebc9ee6c451",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/fixtures/center/legacy-puzzle-day1.json",
+    "repositoryPath": "codex-workspace/주민센터/tests/fixtures/center/legacy-puzzle-day1.json",
+    "bytes": 4367,
+    "sha256": "9457b3e54b89b88ad3838db445ac1dbcc64b7a906a50533aa298446af01198d3",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/fixtures/center/legacy-welfare-three.json",
+    "repositoryPath": "codex-workspace/주민센터/tests/fixtures/center/legacy-welfare-three.json",
+    "bytes": 6028,
+    "sha256": "a484529faecaad59f1201b663246523c1b1e26321d879566c1627e7dea9ea002",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/integration-browser.cjs",
+    "repositoryPath": "codex-workspace/주민센터/tests/integration-browser.cjs",
+    "bytes": 8433,
+    "sha256": "2f2573bf543e26f59c1145946a704d1d38b9f6714ca7d5760d7c3e9eec47214e",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/legacy-regression.cjs",
+    "repositoryPath": "codex-workspace/주민센터/tests/legacy-regression.cjs",
+    "bytes": 1587,
+    "sha256": "3646b26bf6674620adcebee26d92e63c7aac9e6c31fac794574d8172c43aa84e",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/manual_review.cjs",
+    "repositoryPath": "codex-workspace/주민센터/tests/manual_review.cjs",
+    "bytes": 2392,
+    "sha256": "4277ea6e0af4e0622aba30f20c3356855224632111407ca98e0f8246574f338c",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/protection.py",
+    "repositoryPath": "codex-workspace/주민센터/tests/protection.py",
+    "bytes": 1365,
+    "sha256": "af7ded9fa168c68283b73a115dc4e5f8d7ddcc6e1adf1baeb49a58aae15d37fa",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/puzzle-browser.cjs",
+    "repositoryPath": "codex-workspace/주민센터/tests/puzzle-browser.cjs",
+    "bytes": 9345,
+    "sha256": "c1b5ecd62802a79d388490934e966ef2018e31bd93f0fc944ea7660b751e1e1d",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/run_center_checks.py",
+    "repositoryPath": "codex-workspace/주민센터/tests/run_center_checks.py",
+    "bytes": 3037,
+    "sha256": "d863330d4eae748244b228e647b18269bc0777bbe41232dd2540a6ec6822bb6d",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/run_checks.py",
+    "repositoryPath": "codex-workspace/주민센터/tests/run_checks.py",
+    "bytes": 1934,
+    "sha256": "b035377c53f1184c8af6aacfc09922924653aa31da456daaa629a6656225b0c6",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/screenshots.cjs",
+    "repositoryPath": "codex-workspace/주민센터/tests/screenshots.cjs",
+    "bytes": 1483,
+    "sha256": "7372d4e87b5c3716ac5dd4090dc5a02ea37ce4fad7972d64e907782d0c87312f",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/storage.test.cjs",
+    "repositoryPath": "codex-workspace/주민센터/tests/storage.test.cjs",
+    "bytes": 6591,
+    "sha256": "fb6674bae527783ef4929a943748ae3bad4e474e4c8b47395cfa21f43b2a9d04",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/tutorial-browser.cjs",
+    "repositoryPath": "codex-workspace/주민센터/tests/tutorial-browser.cjs",
+    "bytes": 8721,
+    "sha256": "cafce2d4e55fc4d835994532ac9e776544fe81fb3c9385a6fc0863622f42421b",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/tutorial-helper.cjs",
+    "repositoryPath": "codex-workspace/주민센터/tests/tutorial-helper.cjs",
+    "bytes": 958,
+    "sha256": "d71a88c0e127cf45940e9ded4ffdc288bbfb6f406e7c73b807ab5859e2ca0aa0",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/tutorial.test.cjs",
+    "repositoryPath": "codex-workspace/주민센터/tests/tutorial.test.cjs",
+    "bytes": 5664,
+    "sha256": "d67922a73098ae668f7eeb4ead75b38679e6a5f57ee4a1e059763db2cc74b1e0",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/ux-browser.cjs",
+    "repositoryPath": "codex-workspace/주민센터/tests/ux-browser.cjs",
+    "bytes": 4450,
+    "sha256": "542399a09f8342000520b9de631b3ec2997e6be0e12eef3cd4283a19858a13fb",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/welfare-catalog-browser.cjs",
+    "repositoryPath": "codex-workspace/주민센터/tests/welfare-catalog-browser.cjs",
+    "bytes": 11627,
+    "sha256": "02288405a102bbd08f4ccda4c53b1e473ee3c804328fbf76679e63964f9b23f0",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/welfare-difficulty.cjs",
+    "repositoryPath": "codex-workspace/주민센터/tests/welfare-difficulty.cjs",
+    "bytes": 6769,
+    "sha256": "6b1ad9e38f66e883125a0510ae3cc7ccc773f5d4a0a8bec806eae0ec4083c31f",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/welfare-engine.cjs",
+    "repositoryPath": "codex-workspace/주민센터/tests/welfare-engine.cjs",
+    "bytes": 7294,
+    "sha256": "da749754a8c122e3b51699f78fe6888b1db9cdd1f6cbad6a0e387d6714cde708",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/tests/welfare-order-browser.cjs",
+    "repositoryPath": "codex-workspace/주민센터/tests/welfare-order-browser.cjs",
+    "bytes": 1948,
+    "sha256": "596c7de438acaa4fc1999bf8eec120a155416c6ac8e9025194474e3d1bf90277",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/UI_비교_프로토타입.html",
+    "repositoryPath": "codex-workspace/주민센터/UI_비교_프로토타입.html",
+    "bytes": 3266,
+    "sha256": "65b6c82525792d8b57ea5c85eadeeaa78da343db24a8b16be45bbb54b8e43881",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/개발계획.md",
+    "repositoryPath": "codex-workspace/주민센터/개발계획.md",
+    "bytes": 1002,
+    "sha256": "b0fcc726c791653e32e8806c8be2cf2e642463b67f19dd0f7171c18a2ceb568d",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/공무원키우기_주민센터_통합후보.html",
+    "repositoryPath": "codex-workspace/주민센터/공무원키우기_주민센터_통합후보.html",
+    "bytes": 2228893,
+    "sha256": "20324c3d8b4cb47a74651ad47d58714ca001c523f4d4029b507ff161a4adbaec",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/전입신고_시안_PC.png",
+    "repositoryPath": "codex-workspace/주민센터/전입신고_시안_PC.png",
+    "bytes": 137948,
+    "sha256": "a35ae9c22b9d3d4a6cac789147552cafa272830acc0339084db7f35d52c4676f",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/전입신고_시안_검토.png",
+    "repositoryPath": "codex-workspace/주민센터/전입신고_시안_검토.png",
+    "bytes": 150923,
+    "sha256": "b98557f7e468a7be4b79d5eb6303d455fe54a6055ee255b11aa65528c6deb4cf",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/전입신고_시안_모바일.png",
+    "repositoryPath": "codex-workspace/주민센터/전입신고_시안_모바일.png",
+    "bytes": 88454,
+    "sha256": "be74ae9ca47dbb3d201c1c8ffb813223f2d1eefd65cd6b0974f76e17bef72efa",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/전입신고_퍼즐.html",
+    "repositoryPath": "codex-workspace/주민센터/전입신고_퍼즐.html",
+    "bytes": 136833,
+    "sha256": "d9b56d4730eb6dd7dce19b6f22b393768d9cd0fe2c6769949bdf68441727ab63",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/전입신고_퍼즐시안.html",
+    "repositoryPath": "codex-workspace/주민센터/전입신고_퍼즐시안.html",
+    "bytes": 51747,
+    "sha256": "925efd6f70210ed5a9dacc2f80ca95ddaf091dc8d714b1dabefbac1c228144bf",
+    "owner": "공무원키우기 확장_주민센터"
+  },
+  {
+    "path": "주민센터/주민센터_두업무.html",
+    "repositoryPath": "codex-workspace/주민센터/주민센터_두업무.html",
+    "bytes": 467038,
+    "sha256": "2259a43e041040557d422266aeb88f3275d0dfbe0fd0064456e18df20a528f37",
+    "owner": "공무원키우기 확장_주민센터"
+  }
+]

@@ -1,0 +1,10 @@
+document.querySelectorAll('[data-object]').forEach(b=>b.onclick=()=>activateObject(b.dataset.object));
+const navnames={growth:['growth','성장'],office:['plant','책상'],archive:['book','도감'],settings:['settings','설정']};document.querySelectorAll('[data-view]').forEach(b=>{const [i,n]=navnames[b.dataset.view];b.innerHTML=icon(i)+n;b.onclick=()=>setView(b.dataset.view);});
+el('menu-close').onclick=()=>{el('menu-modal').close();view='work';};el('menu-modal').addEventListener('cancel',()=>view='work');
+el('help-button').innerHTML=icon('help');el('help-button').onclick=help;
+el('sound-button').onclick=el('sound-setting').onclick=()=>{state.settings.sound=!state.settings.sound;save();updateSound();if(state.settings.sound)sound();};
+el('motion-setting').onclick=()=>{state.settings.motion=!state.settings.motion;save();render();};
+el('difficulty').onchange=()=>{state.settings.difficulty=el('difficulty').value;save();toast('다음 업무부터 적용돼요.');};
+el('end-day').onclick=()=>activateObject('door');el('export-save').onclick=exportSave;el('import-save').onclick=()=>el('save-file').click();el('save-file').onchange=()=>{importSave(el('save-file').files[0]);el('save-file').value='';};el('reset-game').onclick=confirmReset;
+resizeScene();new ResizeObserver(resizeScene).observe(el('scene-world'));render();requestAnimationFrame(animation);if(!state.started)welcome();
+})();

@@ -1,0 +1,452 @@
+{
+  "date": "2026-10-11",
+  "browser": "Headless Microsoft Edge via Playwright",
+  "scope": "HTML document navigation and illustrative prototypes; actual Android and game engines untested",
+  "checks": [
+    {
+      "name": "All 13 source chapters",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "All 96 TASK contracts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "24 difficulty examples",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Unique element IDs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Internal chapter, heading and appendix links resolve",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Chapter navigation doc-00",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Chapter navigation doc-01",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Chapter navigation doc-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Chapter navigation doc-03",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Chapter navigation doc-04",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Chapter navigation doc-05",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Chapter navigation doc-06",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Chapter navigation doc-07",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Chapter navigation doc-08",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Chapter navigation doc-09",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Chapter navigation doc-10",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Chapter navigation doc-11",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Chapter navigation doc-12",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Search jumps to and opens TASK",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Korean keyword search",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Embedded appendix modal opens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Embedded image appendix displays",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BFS and zoom desk",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BFS and zoom colleagues",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BFS and zoom approval",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BFS and zoom service",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BFS and zoom records",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BFS and zoom meeting",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BFS and zoom rest",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Overview returns",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Three zone screen previews",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Problem conveyor e",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Witness conveyor e",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Problem conveyor n",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Witness conveyor n",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Problem conveyor h",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Witness conveyor h",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Problem rules e",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Witness rules e",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Problem rules n",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Witness rules n",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Problem rules h",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Witness rules h",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Problem macro e",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Witness macro e",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Problem macro n",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Witness macro n",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Problem macro h",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Witness macro h",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Problem owner e",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Witness owner e",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Problem owner n",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Witness owner n",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Problem owner h",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Witness owner h",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Problem approval e",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Witness approval e",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Problem approval n",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Witness approval n",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Problem approval h",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Witness approval h",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Problem archive e",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Witness archive e",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Problem archive n",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Witness archive n",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Problem archive h",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Witness archive h",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Problem budget e",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Witness budget e",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Problem budget n",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Witness budget n",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Problem budget h",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Witness budget h",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Problem brief e",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Witness brief e",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Problem brief n",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Witness brief n",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Problem brief h",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Witness brief h",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Specific puzzle heading direct link",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Day 15 from shared contract",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Decor preview changes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No page overflow at six viewport widths",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "Mobile menu opens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile menu navigation and close",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile subheading selector opens TASK",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No JavaScript errors",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No external resource requests",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "overflow": [],
+  "passed": 88,
+  "total": 88
+}

@@ -1,0 +1,32 @@
+{
+  "repository": "metmet123/gong-game",
+  "branch": "main",
+  "commit": "20f988d4a3abf9f81b8ca77e5cc4bf24b6d0e7df",
+  "url": "https://metmet123.github.io/gong-game/resident-test/",
+  "source": "주민센터/전입신고_퍼즐.html",
+  "localSha256": "4ef5e524a61f76504bc7d179f39844e21aaabd83fbc029cc467bb11ac7c97159",
+  "publishedPaths": [
+    "resident-test/index.html",
+    "sw.js"
+  ],
+  "mainIndexBlob": "14c572a85b06fbc86928b3a56454814581dc1611",
+  "mainIndexUnchanged": true,
+  "status": "public HTTPS verified",
+  "publicSha256": "2aa1f39ab359a049b2b3e54871e2bd74992ce3fba09663c1d38a98953d93f2b9",
+  "contentMatchesLocalAfterLineEndingNormalization": true,
+  "lineEndings": "local CRLF; published LF; other content identical",
+  "httpStatus": 200,
+  "checks": [
+    "published HTML matches local build after CRLF normalization",
+    "390px evidence/incorrect relation/edit/complete",
+    "reload restores completion",
+    "320px no horizontal overflow"
+  ],
+  "scriptErrors": [],
+  "verifiedAt": "2026-10-11T10:24:27.965Z",
+  "workflow": {
+    "id": 38131738228,
+    "conclusion": "success",
+    "url": "https://github.com/metmet123/gong-game/actions/runs/38131738228"
+  }
+}

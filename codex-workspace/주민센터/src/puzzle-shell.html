@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#294f40"><title>새 주소로 옮겨드립니다 · 모퉁이동 주민센터</title><style>__STYLE__</style></head>
+<body><div class="game" id="game">
+ <header class="topbar"><button class="back icon-button" id="back" aria-label="이전 화면">←</button><div class="brand"><span class="brand-mark">모</span><div><b id="header-title">모퉁이동 주민센터</b><small id="header-subtitle">전입신고 담당 주무관</small></div></div><button class="menu-button" data-do="settings" aria-label="저장과 설정 열기">기록 · 설정</button></header>
+ <section class="resident-bar" id="resident-bar" hidden></section>
+ <nav class="stages" id="stages" aria-label="업무 단계" hidden></nav>
+ <nav class="tools" id="tools" aria-label="자료와 질문" hidden></nav>
+ <main class="work-scroll" id="work-scroll" tabindex="-1"></main>
+ <div class="live-note" id="live-note" role="status" aria-live="polite"></div>
+ <footer class="actionbar" id="actionbar"></footer>
+</div>
+<dialog class="sheet" id="sheet" aria-labelledby="sheet-title"><div class="sheet-heading"><div><span class="eyebrow" id="sheet-label"></span><h2 id="sheet-title"></h2></div><button class="icon-button" id="sheet-close" aria-label="창 닫기">×</button></div><div class="sheet-body" id="sheet-body"></div><div class="sheet-actions" id="sheet-actions"></div></dialog>
+<input type="file" id="import-file" accept="application/json,.json" hidden>
+__SCRIPTS__
+</body></html>

@@ -1,0 +1,957 @@
+{
+  "planVersion": "1.0",
+  "date": "2026-10-10",
+  "departmentId": "life_support",
+  "map": {
+    "cols": 14,
+    "rows": 21,
+    "tile": 24,
+    "objects": 46
+  },
+  "difficulty": [
+    "easy",
+    "normal",
+    "hard"
+  ],
+  "dailyMain": 4,
+  "durationMinutes": [
+    6,
+    10
+  ],
+  "reward": {
+    "taskXP": 15,
+    "taskP": 20,
+    "dayP": 15,
+    "initialP": 30,
+    "energyCost": 8
+  },
+  "zones": [
+    {
+      "id": "desk",
+      "name": "내 자리 · PC/서류",
+      "rects": [
+        [
+          5,
+          4,
+          7,
+          9
+        ]
+      ],
+      "focus": [
+        6,
+        6
+      ],
+      "approach": [
+        6,
+        4
+      ],
+      "objects": [
+        "o12",
+        "o10"
+      ],
+      "puzzles": [
+        "compare",
+        "memory",
+        "sort",
+        "sequence",
+        "conveyor",
+        "macro",
+        "brief"
+      ],
+      "npcs": [
+        "player",
+        "npc_sora"
+      ],
+      "anchors": [
+        "desk.plant",
+        "desk.mug",
+        "desk.stationery",
+        "desk.lamp",
+        "desk.chair",
+        "desk.monitor",
+        "desk.stamp"
+      ],
+      "zoneScaleMobile": 2,
+      "zoneScalePC": 3
+    },
+    {
+      "id": "colleagues",
+      "name": "동료 업무섬",
+      "rects": [
+        [
+          7,
+          4,
+          11,
+          9
+        ],
+        [
+          5,
+          9,
+          11,
+          14
+        ],
+        [
+          5,
+          14,
+          11,
+          19
+        ]
+      ],
+      "focus": [
+        9,
+        11
+      ],
+      "approach": [
+        9,
+        9
+      ],
+      "objects": [
+        "o4",
+        "o5",
+        "o6",
+        "o8",
+        "o9",
+        "o13",
+        "o14",
+        "o15",
+        "o29",
+        "o30",
+        "o41",
+        "o42",
+        "o43",
+        "o44"
+      ],
+      "puzzles": [
+        "owner"
+      ],
+      "npcs": [
+        "npc_sora",
+        "npc_jae",
+        "npc_dan"
+      ],
+      "anchors": [
+        "colleagues.memo"
+      ],
+      "zoneScaleMobile": 2,
+      "zoneScalePC": 3
+    },
+    {
+      "id": "approval",
+      "name": "결재 자리",
+      "rects": [
+        [
+          11,
+          0,
+          13,
+          3
+        ],
+        [
+          11,
+          5,
+          13,
+          8
+        ],
+        [
+          11,
+          10,
+          13,
+          13
+        ],
+        [
+          11,
+          15,
+          13,
+          18
+        ]
+      ],
+      "focus": [
+        12,
+        2
+      ],
+      "approach": [
+        11,
+        0
+      ],
+      "objects": [
+        "o3",
+        "o7",
+        "o11",
+        "o39"
+      ],
+      "puzzles": [
+        "conveyor",
+        "approval",
+        "brief"
+      ],
+      "npcs": [
+        "npc_chief1",
+        "npc_chief2",
+        "npc_chief3",
+        "npc_boss"
+      ],
+      "anchors": [
+        "approval.tray"
+      ],
+      "zoneScaleMobile": 2,
+      "zoneScalePC": 3
+    },
+    {
+      "id": "service",
+      "name": "민원 창구 · 게시판",
+      "rects": [
+        [
+          0,
+          0,
+          5,
+          4
+        ]
+      ],
+      "focus": [
+        2.5,
+        1.5
+      ],
+      "approach": [
+        2,
+        2
+      ],
+      "objects": [
+        "o24",
+        "o2"
+      ],
+      "puzzles": [
+        "route",
+        "rules",
+        "owner"
+      ],
+      "npcs": [
+        "npc_miru",
+        "visitor_a"
+      ],
+      "anchors": [
+        "service.poster",
+        "service.badge"
+      ],
+      "zoneScaleMobile": 2,
+      "zoneScalePC": 3
+    },
+    {
+      "id": "records",
+      "name": "출력 · 기록",
+      "rects": [
+        [
+          5,
+          2,
+          13,
+          4
+        ],
+        [
+          0,
+          8,
+          2,
+          11
+        ]
+      ],
+      "focus": [
+        1,
+        9
+      ],
+      "approach": [
+        1,
+        9
+      ],
+      "objects": [
+        "o16",
+        "o17",
+        "o18",
+        "o19",
+        "o20",
+        "o23",
+        "o31"
+      ],
+      "puzzles": [
+        "owner",
+        "archive",
+        "brief"
+      ],
+      "npcs": [
+        "npc_dan"
+      ],
+      "anchors": [
+        "records.label",
+        "records.bookend"
+      ],
+      "zoneScaleMobile": 2,
+      "zoneScalePC": 3
+    },
+    {
+      "id": "meeting",
+      "name": "회의 · 예산",
+      "rects": [
+        [
+          1,
+          18,
+          6,
+          21
+        ]
+      ],
+      "focus": [
+        3.5,
+        19
+      ],
+      "approach": [
+        3,
+        17
+      ],
+      "objects": [
+        "o21"
+      ],
+      "puzzles": [
+        "approval",
+        "budget"
+      ],
+      "npcs": [
+        "npc_jae",
+        "npc_chief2"
+      ],
+      "anchors": [
+        "meeting.coaster",
+        "meeting.mat"
+      ],
+      "zoneScaleMobile": 2,
+      "zoneScalePC": 3
+    },
+    {
+      "id": "rest",
+      "name": "휴식 · 출입",
+      "rects": [
+        [
+          0,
+          5,
+          2,
+          8
+        ],
+        [
+          0,
+          12,
+          2,
+          18
+        ],
+        [
+          6,
+          0,
+          9,
+          1
+        ]
+      ],
+      "focus": [
+        1,
+        7
+      ],
+      "approach": [
+        1,
+        7
+      ],
+      "objects": [
+        "o22",
+        "o25",
+        "o26",
+        "o27",
+        "o28",
+        "o33",
+        "o34",
+        "o36",
+        "o37",
+        "o38",
+        "o45"
+      ],
+      "puzzles": [],
+      "npcs": [
+        "npc_miru"
+      ],
+      "anchors": [
+        "rest.coffee",
+        "rest.cushion",
+        "rest.calendar"
+      ],
+      "zoneScaleMobile": 2,
+      "zoneScalePC": 3
+    }
+  ],
+  "puzzles": [
+    {
+      "id": "conveyor",
+      "name": "결재 컨베이어",
+      "group": "A",
+      "unlockDay": 6,
+      "mandatory": true
+    },
+    {
+      "id": "rules",
+      "name": "규정 개정",
+      "group": "A",
+      "unlockDay": 7,
+      "mandatory": true
+    },
+    {
+      "id": "macro",
+      "name": "매크로 설계·디버깅",
+      "group": "A",
+      "unlockDay": 8,
+      "mandatory": true
+    },
+    {
+      "id": "owner",
+      "name": "서류 주인 찾기",
+      "group": "B",
+      "unlockDay": 9,
+      "mandatory": true
+    },
+    {
+      "id": "approval",
+      "name": "결재 동선",
+      "group": "B",
+      "unlockDay": 10,
+      "mandatory": true
+    },
+    {
+      "id": "archive",
+      "name": "서고 정리",
+      "group": "B",
+      "unlockDay": 6,
+      "mandatory": false
+    },
+    {
+      "id": "budget",
+      "name": "예산 테트리스",
+      "group": "C",
+      "unlockDay": 11,
+      "mandatory": true
+    },
+    {
+      "id": "brief",
+      "name": "한 장 보고",
+      "group": "C",
+      "unlockDay": 12,
+      "mandatory": true
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "title": "첫 출근",
+      "main": [
+        "compare",
+        "memory",
+        "sort",
+        "route"
+      ],
+      "npc": "npc_sora",
+      "event": "서류 한 장이 오늘의 튜토리얼",
+      "flag": "st_day1",
+      "shopUnlock": "decor_plant"
+    },
+    {
+      "day": 2,
+      "title": "최종_진짜최종",
+      "main": [
+        "sort",
+        "sequence",
+        "compare",
+        "memory"
+      ],
+      "npc": "npc_jae",
+      "event": "파일명보다 승인 버전",
+      "flag": "st_final",
+      "shopUnlock": "decor_mug"
+    },
+    {
+      "day": 3,
+      "title": "한 줄 회신",
+      "main": [
+        "memory",
+        "route",
+        "sort",
+        "compare"
+      ],
+      "npc": "npc_miru",
+      "event": "전화 메모와 회신 대기 1턴",
+      "flag": "st_reply",
+      "shopUnlock": "decor_note"
+    },
+    {
+      "day": 4,
+      "title": "점심시간 순삭",
+      "main": [
+        "sequence",
+        "sort",
+        "route",
+        "memory"
+      ],
+      "npc": "npc_dan",
+      "event": "선택 업무 보류와 쉬운 반복 처리",
+      "flag": "st_lunch",
+      "shopUnlock": "decor_coaster"
+    },
+    {
+      "day": 5,
+      "title": "첫 주 수료",
+      "main": [
+        "compare",
+        "sequence",
+        "memory",
+        "route"
+      ],
+      "npc": "npc_chief1",
+      "event": "수료 후 같은 하루를 더 편하게",
+      "flag": "st_week1",
+      "shopUnlock": "decor_poster"
+    },
+    {
+      "day": 6,
+      "title": "도장 공장 시범",
+      "main": [
+        "conveyor",
+        "compare",
+        "sort",
+        "route"
+      ],
+      "npc": "npc_chief1",
+      "event": "결재 컨베이어; 서고는 선택",
+      "flag": "st_conveyor",
+      "shopUnlock": "decor_stamp"
+    },
+    {
+      "day": 7,
+      "title": "서식은 오늘부터",
+      "main": [
+        "rules",
+        "conveyor",
+        "compare",
+        "memory"
+      ],
+      "npc": "npc_miru",
+      "event": "가상 규정 개정; 잠긴 상위 규칙",
+      "flag": "st_form",
+      "shopUnlock": "decor_clip"
+    },
+    {
+      "day": 8,
+      "title": "100은 어느 쪽",
+      "main": [
+        "macro",
+        "rules",
+        "sort",
+        "route"
+      ],
+      "npc": "npc_jae",
+      "event": "매크로 경계값 디버깅",
+      "flag": "st_macro",
+      "shopUnlock": "decor_monitor"
+    },
+    {
+      "day": 9,
+      "title": "복사기에 남은 한 장",
+      "main": [
+        "owner",
+        "conveyor",
+        "memory",
+        "compare"
+      ],
+      "npc": "npc_dan",
+      "event": "서류 주인 추리; 이름은 가명",
+      "flag": "st_owner",
+      "shopUnlock": "decor_bookend"
+    },
+    {
+      "day": 10,
+      "title": "결재 반려, 다시",
+      "main": [
+        "approval",
+        "macro",
+        "owner",
+        "route"
+      ],
+      "npc": "npc_chief2",
+      "event": "가능 시간과 선행 조건",
+      "flag": "st_reject",
+      "shopUnlock": "decor_tray"
+    },
+    {
+      "day": 11,
+      "title": "분기 칸은 좁다",
+      "main": [
+        "budget",
+        "rules",
+        "sort",
+        "compare"
+      ],
+      "npc": "npc_chief3",
+      "event": "기간×금액 턴제 배치",
+      "flag": "st_budget",
+      "shopUnlock": "decor_lamp"
+    },
+    {
+      "day": 12,
+      "title": "한 장으로 줄여 와",
+      "main": [
+        "brief",
+        "conveyor",
+        "owner",
+        "memory"
+      ],
+      "npc": "npc_boss",
+      "event": "필수 사실과 분량 계약",
+      "flag": "st_brief",
+      "shopUnlock": "decor_mat"
+    },
+    {
+      "day": 13,
+      "title": "협조는 상호작용",
+      "main": [
+        "approval",
+        "macro",
+        "rules",
+        "sort"
+      ],
+      "npc": "npc_haru",
+      "event": "가상 타과 회신 이야기; 실제 부서팩은 후속",
+      "flag": "st_coop",
+      "shopUnlock": "decor_badge"
+    },
+    {
+      "day": 14,
+      "title": "금일 중, 또 금일 중",
+      "main": [
+        "budget",
+        "owner",
+        "conveyor",
+        "compare"
+      ],
+      "npc": "npc_chief3",
+      "event": "배운 도구로 돌발 요청 수습",
+      "flag": "st_deadline",
+      "shopUnlock": "decor_cover"
+    },
+    {
+      "day": 15,
+      "title": "제출 완료, 새 요청",
+      "main": [
+        "brief",
+        "approval",
+        "conveyor",
+        "rules"
+      ],
+      "npc": "npc_boss",
+      "event": "최종본 봉인 뒤 새 서식 도착",
+      "flag": "st_end",
+      "shopUnlock": "decor_calendar"
+    }
+  ],
+  "tools": [
+    {
+      "id": "guide",
+      "name": "대조 가이드",
+      "price": 45,
+      "day": 1,
+      "type": "compare",
+      "effect": "같은 항목 교차 강조"
+    },
+    {
+      "id": "memo",
+      "name": "전화 메모장",
+      "price": 45,
+      "day": 1,
+      "type": "memory",
+      "effect": "통화 후 핵심 1칸 유지"
+    },
+    {
+      "id": "clean",
+      "name": "자료 정리 도구",
+      "price": 60,
+      "day": 2,
+      "type": "sort",
+      "effect": "명백한 조건 불일치 흐리게 표시"
+    },
+    {
+      "id": "directory",
+      "name": "부서 연락망",
+      "price": 50,
+      "day": 2,
+      "type": "route",
+      "effect": "무관 부서 1곳 제외"
+    },
+    {
+      "id": "preview",
+      "name": "실행 미리보기",
+      "price": 60,
+      "day": 2,
+      "type": "sequence",
+      "effect": "감점 없이 단계별 실행"
+    },
+    {
+      "id": "auto",
+      "name": "반복 업무 매크로",
+      "price": 120,
+      "day": 4,
+      "type": "sort",
+      "effect": "튜토리얼 취합 2건 후 익숙한 워밍업 하루 1건 처리"
+    },
+    {
+      "id": "trace",
+      "name": "동선 추적지",
+      "price": 70,
+      "day": 6,
+      "type": "conveyor",
+      "effect": "한 서류의 레일 궤적 표시"
+    },
+    {
+      "id": "rulebook",
+      "name": "규정 색인",
+      "price": 70,
+      "day": 7,
+      "type": "rules",
+      "effect": "충돌한 상위 조건과 적용 순서 강조"
+    },
+    {
+      "id": "boundary",
+      "name": "경계값 카드",
+      "price": 80,
+      "day": 8,
+      "type": "macro",
+      "effect": "경계 입력 1개 제안; 테스트 횟수 소비 없음"
+    },
+    {
+      "id": "reply",
+      "name": "회신 바로가기",
+      "price": 90,
+      "day": 10,
+      "type": "approval",
+      "effect": "다음 날 선택 협조 회신 1턴 단축; 필수 해는 도구 없이 존재"
+    }
+  ],
+  "decor": [
+    {
+      "id": "decor_plant",
+      "name": "작은 화분",
+      "price": 35,
+      "anchor": "desk.plant",
+      "day": 1,
+      "scope": "MVP"
+    },
+    {
+      "id": "decor_mug",
+      "name": "내 이름 머그컵",
+      "price": 40,
+      "anchor": "desk.mug",
+      "day": 2,
+      "scope": "MVP"
+    },
+    {
+      "id": "decor_note",
+      "name": "메모 꽂이",
+      "price": 25,
+      "anchor": "desk.stationery",
+      "day": 3,
+      "scope": "MVP"
+    },
+    {
+      "id": "decor_coaster",
+      "name": "점심 컵받침",
+      "price": 25,
+      "anchor": "meeting.coaster",
+      "day": 4,
+      "scope": "MVP"
+    },
+    {
+      "id": "decor_poster",
+      "name": "정시퇴근 포스터",
+      "price": 45,
+      "anchor": "service.poster",
+      "day": 5,
+      "scope": "MVP"
+    },
+    {
+      "id": "decor_stamp",
+      "name": "녹색 도장 손잡이",
+      "price": 45,
+      "anchor": "desk.stamp",
+      "day": 6,
+      "scope": "MVP"
+    },
+    {
+      "id": "decor_clip",
+      "name": "별 클립",
+      "price": 30,
+      "anchor": "desk.stationery",
+      "day": 7,
+      "scope": "Beta"
+    },
+    {
+      "id": "decor_monitor",
+      "name": "숲 모니터 테마",
+      "price": 35,
+      "anchor": "desk.monitor",
+      "day": 8,
+      "scope": "Beta"
+    },
+    {
+      "id": "decor_bookend",
+      "name": "기록관 책받침",
+      "price": 40,
+      "anchor": "records.bookend",
+      "day": 9,
+      "scope": "Beta"
+    },
+    {
+      "id": "decor_tray",
+      "name": "나무 결재함 라벨",
+      "price": 40,
+      "anchor": "approval.tray",
+      "day": 10,
+      "scope": "Beta"
+    },
+    {
+      "id": "decor_lamp",
+      "name": "노란 스탠드",
+      "price": 40,
+      "anchor": "desk.lamp",
+      "day": 11,
+      "scope": "Beta"
+    },
+    {
+      "id": "decor_mat",
+      "name": "회의 테이블 매트",
+      "price": 35,
+      "anchor": "meeting.mat",
+      "day": 12,
+      "scope": "Beta"
+    },
+    {
+      "id": "decor_badge",
+      "name": "협조 배지",
+      "price": 35,
+      "anchor": "service.badge",
+      "day": 13,
+      "scope": "Beta"
+    },
+    {
+      "id": "decor_cover",
+      "name": "의자 커버",
+      "price": 45,
+      "anchor": "desk.chair",
+      "day": 14,
+      "scope": "Beta"
+    },
+    {
+      "id": "decor_calendar",
+      "name": "금일중 달력",
+      "price": 40,
+      "anchor": "rest.calendar",
+      "day": 15,
+      "scope": "Beta"
+    },
+    {
+      "id": "decor_cat",
+      "name": "사무실 고양이 조각",
+      "price": 100,
+      "anchor": "desk.plant",
+      "day": 5,
+      "scope": "Beta"
+    },
+    {
+      "id": "decor_coffee",
+      "name": "탕비 트레이",
+      "price": 45,
+      "anchor": "rest.coffee",
+      "day": 6,
+      "scope": "Beta"
+    },
+    {
+      "id": "decor_cushion",
+      "name": "대기석 쿠션",
+      "price": 35,
+      "anchor": "rest.cushion",
+      "day": 10,
+      "scope": "Beta"
+    }
+  ],
+  "departments": [
+    {
+      "id": "recycling",
+      "name": "자원순환과",
+      "puzzleTitle": "재활용 선별장",
+      "puzzleType": "sort_bins",
+      "wave": 1
+    },
+    {
+      "id": "waterworks",
+      "name": "상하수도사업소",
+      "puzzleTitle": "상수도관 연결",
+      "puzzleType": "connect_paths",
+      "wave": 1
+    },
+    {
+      "id": "traffic",
+      "name": "교통행정과",
+      "puzzleTitle": "불법주차 견인",
+      "puzzleType": "arrow_exit",
+      "wave": 1
+    },
+    {
+      "id": "land",
+      "name": "토지정보과",
+      "puzzleTitle": "지적도 복원",
+      "puzzleType": "nonogram",
+      "wave": 1
+    },
+    {
+      "id": "records",
+      "name": "기록관리팀",
+      "puzzleTitle": "기록물 철하기",
+      "puzzleType": "triple_stack",
+      "wave": 2
+    },
+    {
+      "id": "disaster",
+      "name": "재난안전과",
+      "puzzleTitle": "구호물자 창고",
+      "puzzleType": "archive",
+      "wave": 2
+    },
+    {
+      "id": "culture",
+      "name": "문화관광과",
+      "puzzleTitle": "축제 부스 배치",
+      "puzzleType": "booth_blocks",
+      "wave": 2
+    },
+    {
+      "id": "it",
+      "name": "정보화팀",
+      "puzzleTitle": "정산 매크로",
+      "puzzleType": "macro",
+      "wave": 2
+    },
+    {
+      "id": "river",
+      "name": "하천관리과",
+      "puzzleTitle": "장마철 수문",
+      "puzzleType": "water_cells",
+      "wave": 3
+    },
+    {
+      "id": "parks",
+      "name": "공원녹지과",
+      "puzzleTitle": "놀이터 해체",
+      "puzzleType": "screw_layers",
+      "wave": 3
+    },
+    {
+      "id": "building",
+      "name": "건축과",
+      "puzzleTitle": "현장 안전점검",
+      "puzzleType": "hazard_check",
+      "wave": 3
+    }
+  ]
+}

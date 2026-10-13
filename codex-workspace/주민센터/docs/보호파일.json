@@ -1,0 +1,153 @@
+{
+  "recordedAt": "2026-10-11",
+  "files": [
+    {
+      "path": "build_expansion_plan.py",
+      "sha256": "ddd18b4c35fc99439cbeea021d512183e8bac692a4c188f18e52be1bcdf1f42a"
+    },
+    {
+      "path": "build_game.py",
+      "sha256": "9758034b26bed219a3d9470944ecee77a5c0f8effa6528fb67780483fcad1ae1"
+    },
+    {
+      "path": "build_report.py",
+      "sha256": "87ebc9d39c8e2a2a82c3d536ff2bf081cf593f00a105349dec45af0cf5e48192"
+    },
+    {
+      "path": "build_scene.py",
+      "sha256": "307a8a67eec069b5f95b33c25bc30c7c35402bfa810482add2a5c9e0f9de4bdb"
+    },
+    {
+      "path": "fetch_research.py",
+      "sha256": "05a8f4da1238967cc3a5a2b5afc5ebd8c09126d2d7c80a61624282e7ef117531"
+    },
+    {
+      "path": "game-app.js",
+      "sha256": "7d0013e79d9008901a62779376301115179729aa886c707e54b33c2e930e93fe"
+    },
+    {
+      "path": "game-core.js",
+      "sha256": "ce3e53303e92cbf145c7887ea377509496a8de72bddc6f1c479595959f2ecce2"
+    },
+    {
+      "path": "game-shell.html",
+      "sha256": "39ca8d2e834630c28792cd95f41fb0a00fea728a1e490b5c4aaa0bb0c1a07f57"
+    },
+    {
+      "path": "game.css",
+      "sha256": "a188e276507ee00d668703273566e8006319926dd68b5864f38767fc592983a2"
+    },
+    {
+      "path": "pixel-characters.js",
+      "sha256": "738c725ac259a036aeb3a1c4b6afc46226465f05bf825a0baafd3c60b22b4736"
+    },
+    {
+      "path": "scene-app.js",
+      "sha256": "c0b0b2805fa505cd8ce1f3389d4c7349b9bdda4738833e0a434301b44107454f"
+    },
+    {
+      "path": "scene-art.js",
+      "sha256": "330d8b4e7a47271b757eed768aa497244fd5691fb08a0adb75fdbc18d6b202c9"
+    },
+    {
+      "path": "scene-controller.js",
+      "sha256": "67c62e87621016447ee8ea0488aa9ceedd03facb1cefe42702e997b7d30673a4"
+    },
+    {
+      "path": "scene-init.js",
+      "sha256": "5dab7df6d73ac0daa61cefa6feda1988a9c66205c36d3e3ec06dc75e23e1ab31"
+    },
+    {
+      "path": "scene-shell-top.html",
+      "sha256": "54ebed8f66ebea1fbd525c31a04eb41c3464be81d8ad5cca5a06ce0b2a76aea8"
+    },
+    {
+      "path": "scene.css",
+      "sha256": "121f30ea9d37f144d954f48314a18d65efd0b4e693b9696953646bc5cead2918"
+    },
+    {
+      "path": "test_game.js",
+      "sha256": "e8683aff662d00c94666a330c7ff01451e3c4ec8397889f787cb947734927169"
+    },
+    {
+      "path": "workshop.css",
+      "sha256": "020e5f890057ee20c23f6ba7b15e5353f77053a96cf45a1ea20d1f59c19682b8"
+    },
+    {
+      "path": "workshop.js",
+      "sha256": "6aea0043dfd277fa50644bcfd17b8b8127c2d89962bcd86d95fc81b0951eb4be"
+    },
+    {
+      "path": "공무원키우기_3단계시안_퍼즐우선계획.html",
+      "sha256": "2673ebdf554bc335049927bf07b4ad06bedadac2c857159dd3e3a22b1aee7adf"
+    },
+    {
+      "path": "공무원키우기_사무실버전.html",
+      "sha256": "eb4b81cae28627c5371701ea4782710415ccc87c5018f2e29bf48e272bf477ab"
+    },
+    {
+      "path": "공무원키우기_새버전_기획시안.html",
+      "sha256": "2b779dfabe57bf8406cc7eb72f05bbff736434f57ec8fcc7d2d352b266afb9d6"
+    },
+    {
+      "path": "공무원키우기_생활보장과_확장상세계획.html",
+      "sha256": "bd9a82ab324bcc7c28354f61531ecdb9af991a4408803e91f33c903e9fda8628"
+    },
+    {
+      "path": "공무원키우기_유사게임조사_구현제안.html",
+      "sha256": "4ba31ecea5f210febf9759e69ee9881b0ad4fd6597614ae10d42efbab040b36c"
+    },
+    {
+      "path": "공무원키우기_통합계획_탐색형.html",
+      "sha256": "d3e8950913174f16822b59400aff0f30b65eaa3035f7d3695140525222fff97b"
+    },
+    {
+      "path": "공무원키우기_플레이.html",
+      "sha256": "41cae4d9b5fd377350f5f15b483d88abf0581a1c40325de8eb288bdf81258021"
+    },
+    {
+      "path": "공무원키우기_플레이_이전버전.html",
+      "sha256": "262184270114505700a42541e48996e0b922841d9ee5ba0a087b71760a17e846"
+    },
+    {
+      "path": "공무원키우기_픽셀아트.html",
+      "sha256": "41cae4d9b5fd377350f5f15b483d88abf0581a1c40325de8eb288bdf81258021"
+    },
+    {
+      "path": "사무실배치도_만들기.html",
+      "sha256": "c6e57b8ecc9b553f86fff06ff29083969ad570860ba9e26eb7ffc2e57288983c"
+    },
+    {
+      "path": "생활보장과_사무실_시안.html",
+      "sha256": "aee6b83b9586b09f1c40bfc3a716f0c43c6d1f261e3d71dfc6e79fdf42b9ee31"
+    },
+    {
+      "path": "생활보장과_사무실배치.json",
+      "sha256": "b877a08b19ca34cb52f39649689c7de46dd4560f4cbbe2cde904cf6f13bfe8c4"
+    },
+    {
+      "path": "생활보장과_확정배치.jpg",
+      "sha256": "89ef8cff370f86ba01471cfb27bbcd48626611f1777f1bc8c45adf3f6e2bf963"
+    },
+    {
+      "path": "주민센터/전입신고_퍼즐시안.html",
+      "sha256": "925efd6f70210ed5a9dacc2f80ca95ddaf091dc8d714b1dabefbac1c228144bf"
+    },
+    {
+      "path": "주민센터/src/app.js",
+      "sha256": "a6ae343ffeea1a90a7e63b5cde83658e5955922344d12043e7f3ab1e52da0cbd"
+    },
+    {
+      "path": "주민센터/src/core.js",
+      "sha256": "5eac7480b47ef227a73ea80a87a3e7d43edcfb6425e9906da918a46994168879"
+    },
+    {
+      "path": "주민센터/src/shell.html",
+      "sha256": "2bf19adf766af6e10456f17e11327fcf6d9464aca2b89419e942c4a104ea26ad"
+    },
+    {
+      "path": "주민센터/src/style.css",
+      "sha256": "4cc07a9a1e74763d8d7a757dbce119e528df571d589461bf13a76a61185c479a"
+    }
+  ]
+}

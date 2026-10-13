@@ -1,0 +1,756 @@
+{
+  "registered": [
+    "compare",
+    "sort",
+    "memory",
+    "sequence",
+    "route",
+    "rules",
+    "macro",
+    "owner",
+    "approval",
+    "archive",
+    "budget",
+    "brief",
+    "recycling",
+    "waterworks",
+    "traffic",
+    "land",
+    "records",
+    "disaster",
+    "culture",
+    "it",
+    "river",
+    "parks",
+    "building",
+    "movein"
+  ],
+  "witnessResults": [
+    {
+      "id": "compare",
+      "status": "valid"
+    },
+    {
+      "id": "compare",
+      "status": "valid"
+    },
+    {
+      "id": "compare",
+      "status": "valid"
+    },
+    {
+      "id": "compare",
+      "status": "valid"
+    },
+    {
+      "id": "compare",
+      "status": "valid"
+    },
+    {
+      "id": "compare",
+      "status": "valid"
+    },
+    {
+      "id": "compare",
+      "status": "valid"
+    },
+    {
+      "id": "compare",
+      "status": "valid"
+    },
+    {
+      "id": "compare",
+      "status": "valid"
+    },
+    {
+      "id": "sort",
+      "status": "valid"
+    },
+    {
+      "id": "sort",
+      "status": "valid"
+    },
+    {
+      "id": "sort",
+      "status": "valid"
+    },
+    {
+      "id": "sort",
+      "status": "valid"
+    },
+    {
+      "id": "sort",
+      "status": "valid"
+    },
+    {
+      "id": "sort",
+      "status": "valid"
+    },
+    {
+      "id": "sort",
+      "status": "valid"
+    },
+    {
+      "id": "sort",
+      "status": "valid"
+    },
+    {
+      "id": "sort",
+      "status": "valid"
+    },
+    {
+      "id": "memory",
+      "status": "valid"
+    },
+    {
+      "id": "memory",
+      "status": "valid"
+    },
+    {
+      "id": "memory",
+      "status": "valid"
+    },
+    {
+      "id": "memory",
+      "status": "valid"
+    },
+    {
+      "id": "memory",
+      "status": "valid"
+    },
+    {
+      "id": "memory",
+      "status": "valid"
+    },
+    {
+      "id": "memory",
+      "status": "valid"
+    },
+    {
+      "id": "memory",
+      "status": "valid"
+    },
+    {
+      "id": "memory",
+      "status": "valid"
+    },
+    {
+      "id": "sequence",
+      "status": "valid"
+    },
+    {
+      "id": "sequence",
+      "status": "valid"
+    },
+    {
+      "id": "sequence",
+      "status": "valid"
+    },
+    {
+      "id": "sequence",
+      "status": "valid"
+    },
+    {
+      "id": "sequence",
+      "status": "valid"
+    },
+    {
+      "id": "sequence",
+      "status": "valid"
+    },
+    {
+      "id": "sequence",
+      "status": "valid"
+    },
+    {
+      "id": "sequence",
+      "status": "valid"
+    },
+    {
+      "id": "sequence",
+      "status": "valid"
+    },
+    {
+      "id": "route",
+      "status": "valid"
+    },
+    {
+      "id": "route",
+      "status": "valid"
+    },
+    {
+      "id": "route",
+      "status": "valid"
+    },
+    {
+      "id": "route",
+      "status": "valid"
+    },
+    {
+      "id": "route",
+      "status": "valid"
+    },
+    {
+      "id": "route",
+      "status": "valid"
+    },
+    {
+      "id": "route",
+      "status": "valid"
+    },
+    {
+      "id": "route",
+      "status": "valid"
+    },
+    {
+      "id": "route",
+      "status": "valid"
+    },
+    {
+      "id": "rules",
+      "status": "valid"
+    },
+    {
+      "id": "rules",
+      "status": "valid"
+    },
+    {
+      "id": "rules",
+      "status": "valid"
+    },
+    {
+      "id": "rules",
+      "status": "valid"
+    },
+    {
+      "id": "rules",
+      "status": "valid"
+    },
+    {
+      "id": "rules",
+      "status": "valid"
+    },
+    {
+      "id": "rules",
+      "status": "valid"
+    },
+    {
+      "id": "rules",
+      "status": "valid"
+    },
+    {
+      "id": "rules",
+      "status": "valid"
+    },
+    {
+      "id": "macro",
+      "status": "valid"
+    },
+    {
+      "id": "macro",
+      "status": "valid"
+    },
+    {
+      "id": "macro",
+      "status": "valid"
+    },
+    {
+      "id": "macro",
+      "status": "valid"
+    },
+    {
+      "id": "macro",
+      "status": "valid"
+    },
+    {
+      "id": "macro",
+      "status": "valid"
+    },
+    {
+      "id": "macro",
+      "status": "valid"
+    },
+    {
+      "id": "macro",
+      "status": "valid"
+    },
+    {
+      "id": "macro",
+      "status": "valid"
+    },
+    {
+      "id": "owner",
+      "status": "valid"
+    },
+    {
+      "id": "owner",
+      "status": "valid"
+    },
+    {
+      "id": "owner",
+      "status": "valid"
+    },
+    {
+      "id": "owner",
+      "status": "valid"
+    },
+    {
+      "id": "owner",
+      "status": "valid"
+    },
+    {
+      "id": "owner",
+      "status": "valid"
+    },
+    {
+      "id": "owner",
+      "status": "valid"
+    },
+    {
+      "id": "owner",
+      "status": "valid"
+    },
+    {
+      "id": "owner",
+      "status": "valid"
+    },
+    {
+      "id": "approval",
+      "status": "valid"
+    },
+    {
+      "id": "approval",
+      "status": "valid"
+    },
+    {
+      "id": "approval",
+      "status": "valid"
+    },
+    {
+      "id": "approval",
+      "status": "valid"
+    },
+    {
+      "id": "approval",
+      "status": "valid"
+    },
+    {
+      "id": "approval",
+      "status": "valid"
+    },
+    {
+      "id": "approval",
+      "status": "valid"
+    },
+    {
+      "id": "approval",
+      "status": "valid"
+    },
+    {
+      "id": "approval",
+      "status": "valid"
+    },
+    {
+      "id": "archive",
+      "status": "valid"
+    },
+    {
+      "id": "archive",
+      "status": "valid"
+    },
+    {
+      "id": "archive",
+      "status": "valid"
+    },
+    {
+      "id": "archive",
+      "status": "valid"
+    },
+    {
+      "id": "archive",
+      "status": "valid"
+    },
+    {
+      "id": "archive",
+      "status": "valid"
+    },
+    {
+      "id": "archive",
+      "status": "valid"
+    },
+    {
+      "id": "archive",
+      "status": "valid"
+    },
+    {
+      "id": "archive",
+      "status": "valid"
+    },
+    {
+      "id": "budget",
+      "status": "valid"
+    },
+    {
+      "id": "budget",
+      "status": "valid"
+    },
+    {
+      "id": "budget",
+      "status": "valid"
+    },
+    {
+      "id": "budget",
+      "status": "valid"
+    },
+    {
+      "id": "budget",
+      "status": "valid"
+    },
+    {
+      "id": "budget",
+      "status": "valid"
+    },
+    {
+      "id": "budget",
+      "status": "valid"
+    },
+    {
+      "id": "budget",
+      "status": "valid"
+    },
+    {
+      "id": "budget",
+      "status": "valid"
+    },
+    {
+      "id": "brief",
+      "status": "valid"
+    },
+    {
+      "id": "brief",
+      "status": "valid"
+    },
+    {
+      "id": "brief",
+      "status": "valid"
+    },
+    {
+      "id": "brief",
+      "status": "valid"
+    },
+    {
+      "id": "brief",
+      "status": "valid"
+    },
+    {
+      "id": "brief",
+      "status": "valid"
+    },
+    {
+      "id": "brief",
+      "status": "valid"
+    },
+    {
+      "id": "brief",
+      "status": "valid"
+    },
+    {
+      "id": "brief",
+      "status": "valid"
+    },
+    {
+      "id": "recycling",
+      "status": "valid"
+    },
+    {
+      "id": "recycling",
+      "status": "valid"
+    },
+    {
+      "id": "recycling",
+      "status": "valid"
+    },
+    {
+      "id": "recycling",
+      "status": "valid"
+    },
+    {
+      "id": "recycling",
+      "status": "valid"
+    },
+    {
+      "id": "recycling",
+      "status": "valid"
+    },
+    {
+      "id": "waterworks",
+      "status": "valid"
+    },
+    {
+      "id": "waterworks",
+      "status": "valid"
+    },
+    {
+      "id": "waterworks",
+      "status": "valid"
+    },
+    {
+      "id": "waterworks",
+      "status": "valid"
+    },
+    {
+      "id": "waterworks",
+      "status": "valid"
+    },
+    {
+      "id": "waterworks",
+      "status": "valid"
+    },
+    {
+      "id": "traffic",
+      "status": "valid"
+    },
+    {
+      "id": "traffic",
+      "status": "valid"
+    },
+    {
+      "id": "traffic",
+      "status": "valid"
+    },
+    {
+      "id": "traffic",
+      "status": "valid"
+    },
+    {
+      "id": "traffic",
+      "status": "valid"
+    },
+    {
+      "id": "traffic",
+      "status": "valid"
+    },
+    {
+      "id": "land",
+      "status": "valid"
+    },
+    {
+      "id": "land",
+      "status": "valid"
+    },
+    {
+      "id": "land",
+      "status": "valid"
+    },
+    {
+      "id": "land",
+      "status": "valid"
+    },
+    {
+      "id": "land",
+      "status": "valid"
+    },
+    {
+      "id": "land",
+      "status": "valid"
+    },
+    {
+      "id": "records",
+      "status": "valid"
+    },
+    {
+      "id": "records",
+      "status": "valid"
+    },
+    {
+      "id": "records",
+      "status": "valid"
+    },
+    {
+      "id": "records",
+      "status": "valid"
+    },
+    {
+      "id": "records",
+      "status": "valid"
+    },
+    {
+      "id": "records",
+      "status": "valid"
+    },
+    {
+      "id": "disaster",
+      "status": "valid"
+    },
+    {
+      "id": "disaster",
+      "status": "valid"
+    },
+    {
+      "id": "disaster",
+      "status": "valid"
+    },
+    {
+      "id": "disaster",
+      "status": "valid"
+    },
+    {
+      "id": "disaster",
+      "status": "valid"
+    },
+    {
+      "id": "disaster",
+      "status": "valid"
+    },
+    {
+      "id": "culture",
+      "status": "valid"
+    },
+    {
+      "id": "culture",
+      "status": "valid"
+    },
+    {
+      "id": "culture",
+      "status": "valid"
+    },
+    {
+      "id": "culture",
+      "status": "valid"
+    },
+    {
+      "id": "culture",
+      "status": "valid"
+    },
+    {
+      "id": "culture",
+      "status": "valid"
+    },
+    {
+      "id": "it",
+      "status": "valid"
+    },
+    {
+      "id": "it",
+      "status": "valid"
+    },
+    {
+      "id": "it",
+      "status": "valid"
+    },
+    {
+      "id": "it",
+      "status": "valid"
+    },
+    {
+      "id": "it",
+      "status": "valid"
+    },
+    {
+      "id": "it",
+      "status": "valid"
+    },
+    {
+      "id": "river",
+      "status": "valid"
+    },
+    {
+      "id": "river",
+      "status": "valid"
+    },
+    {
+      "id": "river",
+      "status": "valid"
+    },
+    {
+      "id": "river",
+      "status": "valid"
+    },
+    {
+      "id": "river",
+      "status": "valid"
+    },
+    {
+      "id": "river",
+      "status": "valid"
+    },
+    {
+      "id": "parks",
+      "status": "valid"
+    },
+    {
+      "id": "parks",
+      "status": "valid"
+    },
+    {
+      "id": "parks",
+      "status": "valid"
+    },
+    {
+      "id": "parks",
+      "status": "valid"
+    },
+    {
+      "id": "parks",
+      "status": "valid"
+    },
+    {
+      "id": "parks",
+      "status": "valid"
+    },
+    {
+      "id": "building",
+      "status": "valid"
+    },
+    {
+      "id": "building",
+      "status": "valid"
+    },
+    {
+      "id": "building",
+      "status": "valid"
+    },
+    {
+      "id": "building",
+      "status": "valid"
+    },
+    {
+      "id": "building",
+      "status": "valid"
+    },
+    {
+      "id": "building",
+      "status": "valid"
+    },
+    {
+      "id": "movein",
+      "status": "valid"
+    },
+    {
+      "id": "movein",
+      "status": "valid"
+    },
+    {
+      "id": "movein",
+      "status": "valid"
+    },
+    {
+      "id": "movein",
+      "status": "valid"
+    },
+    {
+      "id": "movein",
+      "status": "valid"
+    },
+    {
+      "id": "movein",
+      "status": "valid"
+    }
+  ],
+  "rewards": {
+    "xp": 180,
+    "points": 300,
+    "claims": 16
+  },
+  "errors": []
+}

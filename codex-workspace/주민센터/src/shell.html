@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#294f40"><title>새 주소로 옮겨드립니다 · 전입신고 시안</title><style>__STYLE__</style></head>
+<body>
+<header class="site-header"><div class="brand"><span class="brand-mark">모</span><div><b>모퉁이동 주민센터</b><small>공무원 키우기 · 새로운 근무지</small></div></div><span class="prototype">전입신고 조작 시안 <i>01</i></span></header>
+<main>
+ <section class="intro"><div><div class="eyebrow">A NEW ADDRESS, A NEW CHAPTER</div><h1>새 주소로<br class="mobile-br"> 옮겨드립니다<span>.</span></h1><p>누가 이사하고, 누가 남을까요?<br>주민의 이야기를 듣고 새로운 세대 기록을 만들어 주세요.</p></div><div class="intro-art" aria-hidden="true"><div class="house house-a"><i></i><span>이전 집</span></div><div class="moving-line">··· <b>→</b> ···</div><div class="house house-b"><i></i><span>새로운 시작</span></div><div class="art-tag">전입신고 담당 주무관</div></div></section>
+ <nav class="case-nav" aria-label="시안 사례 선택" id="case-nav"></nav>
+ <section class="desk" aria-labelledby="desk-title">
+  <div class="desk-top"><div class="desk-title"><span class="status-dot"></span><span>전입 창구 <b>02</b></span></div><span class="day-label">모퉁이동 · 오늘의 첫 주민</span><span class="desk-label">RESIDENT REGISTRATION</span></div>
+  <div class="workspace-heading"><div><span class="overline" id="case-subtitle"></span><h2 id="desk-title"></h2></div><div class="ticket"><small>접수번호</small><b id="ticket-no"></b></div></div>
+  <ol class="steps" aria-label="신고 처리 흐름"><li id="step-read"><span>1</span>자료 읽기</li><li id="step-edit"><span>2</span>세대 옮기기</li><li id="step-review"><span>3</span>변경 확인</li><li id="step-finish"><span>4</span>처리 완료</li></ol>
+  <div class="workspace">
+   <aside class="resident-panel"><div class="resident-card"><div class="portrait-scene"><span class="scene-window"></span><div id="resident-portrait"></div><span class="counter-edge"></span><div class="speech-mini">새 주소로 부탁드려요</div></div><div class="resident-name"><span class="small-label">오늘의 주민</span><b id="resident-name"></b><span class="adult-tag">성인</span></div><p class="quote" id="resident-speech"></p></div><div class="memo"><span class="small-label">✎ 접수 메모</span><ul id="facts"></ul></div><div class="files" id="documents"><div class="panel-label"><h3>자료철</h3><span id="read-count">0 / 2</span></div><button class="file-btn" data-doc="report"><span class="file-icon">▤</span><span><b>전입신고 내용</b><small>이동자 · 주소 · 세대 구성</small></span><span class="read-mark" id="mark-report">열기 ↗</span></button><button class="file-btn" data-doc="identity"><span class="file-icon">▣</span><span><b>제시된 확인 자료</b><small>이번 사례의 확인 상태</small></span><span class="read-mark" id="mark-identity">열기 ↗</span></button><p class="file-note">자료를 열면 ‘읽음’으로 표시됩니다.</p></div></aside>
+   <div class="board-area">
+    <div class="work-instruction"><span class="instruction-icon">↗</span><div><b id="first-action">먼저 자료철을 열어 주민의 신고 내용을 읽어 주세요.</b><small>선택 → 옮기기 · 잘못 옮겼다면 원래 자리로 돌릴 수 있어요.</small></div></div>
+    <div class="mobile-board-tabs" role="group" aria-label="세대판 보기"><button class="active" data-board="before">이사 전</button><button data-board="after">이사 후</button></div>
+    <div class="boards">
+     <section class="household before" id="before-board"><div class="board-title"><span class="number-square">A</span><div><h3>이사 전</h3><small>기존 세대 기록</small></div><span class="count-pill" id="old-count"></span></div><div class="address-static"><span>⌂</span><div><small>현재 등록된 주소</small><b id="old-address"></b></div></div><div class="household-outline"><div class="outline-label">기존 세대 <span id="old-head"></span></div><div id="before-people" class="people"></div><div id="empty-old" class="empty-old" hidden>세대원 모두가 이동 예정입니다.</div></div><button class="move-btn" id="move-btn" disabled>선택한 사람 옮기기 <span>→</span></button><p class="board-tip" id="selection-note">사람 카드를 눌러 이동 대상을 선택하세요.</p></section>
+     <section class="household after" id="after-board"><div class="board-title"><span class="number-square">B</span><div><h3>이사 후</h3><small>아직 확정되지 않은 초안</small></div><span class="count-pill" id="new-count"></span></div><div class="address-select" id="address"><label for="new-address">⌂ 새 주소 · 상세주소</label><select id="new-address"><option value="">새 주소를 선택하세요</option><option value="모퉁이로 12 · 202호">모퉁이로 12 · 202호</option><option value="모퉁이로 12 · 201호">모퉁이로 12 · 201호</option></select></div><div class="mode-picker" id="mode"><button data-mode="new"><span>＋</span>새 세대 구성</button><button data-mode="join"><span>↳</span>기존 세대 편입</button></div><div class="new-outline"><div class="outline-label" id="new-household-label">이동 예정인 사람 <span>미확정</span></div><div id="after-people" class="people"></div><div id="empty-new" class="empty-new"><span class="empty-house">⌂</span><b>새로운 기록이 시작되는 곳</b><p>이동할 사람을 선택하고<br>이곳으로 옮겨 주세요.</p></div></div><div class="head-picker" id="head"><label for="head-select">이사 후 세대주</label><select id="head-select"><option value="">세대주를 지정하세요</option></select></div><div class="relations" id="relations"></div></section>
+    </div>
+    <div class="change-strip"><span>이번 신고</span><b id="change-summary">아직 이동 대상이 없습니다.</b><span class="draft-label">초안 · 자동 저장 없음</span></div>
+    <section class="feedback" id="feedback" aria-live="polite" hidden></section>
+   </div>
+  </div>
+  <footer class="action-bar"><div class="action-secondary"><button id="undo-btn" disabled>↶ 되돌리기</button><button id="reset-btn">처음부터</button><button id="help-btn">? 업무 안내</button></div><div class="action-primary"><span id="action-note">내용을 확인한 뒤 기록을 옮겨 주세요.</span><button class="check-btn" id="check-btn">변경사항 확인 <span>→</span></button><button class="submit-btn" id="submit-btn" hidden>전입 처리하기 <span>✓</span></button></div></footer>
+ </section>
+ <div class="page-note"><span>01 / INTERACTIVE STUDY</span><p>가상의 성인 인물과 주소로 만든 화면·조작 시안입니다. 실제 행정 처리와 법적 확인 절차를 모두 구현한 버전은 아닙니다.</p></div>
+</main>
+<dialog id="info-dialog"><div class="dialog-heading"><span class="overline" id="dialog-eyebrow">자료철</span><button id="dialog-close" aria-label="자료 닫기">×</button></div><div id="dialog-body"></div><button class="dialog-done" id="dialog-done">읽었어요 · 작업대로</button></dialog>
+<dialog id="result-dialog"><div id="result-body"></div></dialog>
+<script>__CORE__</script><script>__APP__</script>
+</body></html>

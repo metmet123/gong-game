@@ -1,0 +1,110 @@
+[
+  {
+    "id": 239030,
+    "name": "Papers, Please",
+    "url": "https://store.steampowered.com/app/239030/",
+    "developer": [
+      "Lucas Pope"
+    ],
+    "images": [
+      {
+        "path": "research_assets\\239030_0.jpg",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239030/ss_958285f31774906eb4def9d98a83e7926ceb3be2.1920x1080.jpg?t=1678266428"
+      },
+      {
+        "path": "research_assets\\239030_1.jpg",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239030/ss_d24155eecb65aaff7367b791bc7d4910fe59b303.1920x1080.jpg?t=1678266428"
+      }
+    ]
+  },
+  {
+    "id": 1924360,
+    "name": "Lil' Guardsman",
+    "url": "https://store.steampowered.com/app/1924360/",
+    "developer": [
+      "Hilltop Studios"
+    ],
+    "images": [
+      {
+        "path": "research_assets\\1924360_0.jpg",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1924360/ss_7a8ce1551aca411ec291e8ffdf2735527464a925.1920x1080.jpg?t=1773307473"
+      },
+      {
+        "path": "research_assets\\1924360_1.jpg",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1924360/ss_7535b94af20615d933b5d55d68334e8e49256fad.1920x1080.jpg?t=1773307473"
+      }
+    ]
+  },
+  {
+    "id": 1166290,
+    "name": "Death and Taxes",
+    "url": "https://store.steampowered.com/app/1166290/",
+    "developer": [
+      "Placeholder Gameworks"
+    ],
+    "images": [
+      {
+        "path": "research_assets\\1166290_0.jpg",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1166290/ss_0ec1aad19f8f3bd4a66bc6de3c07cb50e8dcbfbc.1920x1080.jpg?t=1776015823"
+      },
+      {
+        "path": "research_assets\\1166290_1.jpg",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1166290/ss_1aa0e49c43ea837caa84e80e7f31d246de64fa3e.1920x1080.jpg?t=1776015823"
+      }
+    ]
+  },
+  {
+    "id": 375820,
+    "name": "Human Resource Machine",
+    "url": "https://store.steampowered.com/app/375820/",
+    "developer": [
+      "Tomorrow Corporation"
+    ],
+    "images": [
+      {
+        "path": "research_assets\\375820_0.jpg",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/375820/ss_5de238ca62f67dc97c940bd6af61c03a4320c981.1920x1080.jpg?t=1692721273"
+      },
+      {
+        "path": "research_assets\\375820_1.jpg",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/375820/ss_5b2cf252a11583639ba0eb958fa961e502e04de4.1920x1080.jpg?t=1692721273"
+      }
+    ]
+  },
+  {
+    "id": 1202900,
+    "name": "Assemble with Care",
+    "url": "https://store.steampowered.com/app/1202900/",
+    "developer": [
+      "ustwo games"
+    ],
+    "images": [
+      {
+        "path": "research_assets\\1202900_0.jpg",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1202900/ss_4d86c1e86c7fd4723350b113d0e84258c4ae1b1b.1920x1080.jpg?t=1780069462"
+      },
+      {
+        "path": "research_assets\\1202900_1.jpg",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1202900/ss_0cf2db7763d8244151beaf5c4c70a620b543a092.1920x1080.jpg?t=1780069462"
+      }
+    ]
+  },
+  {
+    "id": 448510,
+    "name": "Overcooked",
+    "url": "https://store.steampowered.com/app/448510/",
+    "developer": [
+      "Ghost Town Games Ltd."
+    ],
+    "images": [
+      {
+        "path": "research_assets\\448510_0.jpg",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/448510/ss_11cb84e3a78ffd9ed0b5f65a8306fe80f363587a.1920x1080.jpg?t=1788969012"
+      },
+      {
+        "path": "research_assets\\448510_1.jpg",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/448510/ss_2a35c15c78f06dd4f23dab8a1e1917a835d0062d.1920x1080.jpg?t=1788969012"
+      }
+    ]
+  }
+]

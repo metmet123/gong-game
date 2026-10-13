@@ -1,0 +1,165 @@
+{
+  "date": "2026-10-10",
+  "status": "PASS",
+  "scope": "Planning cross-validation + existing baseline logic, not new-game implementation/Android",
+  "passed": 30,
+  "total": 30,
+  "taskCount": 96,
+  "dependencyEdges": 107,
+  "checks": [
+    {
+      "name": "13 numbered documents",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No unfilled template markers",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No mixed-language fragments",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Relative links resolve",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "14 x 21 / 46 objects",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Map structure unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No bounds/overlap errors",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "139 occupied and 155 free cells",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Seven reachable representative approaches",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "All free cells reachable",
+      "pass": true,
+      "detail": 155
+    },
+    {
+      "name": "Object IDs valid and unique zone ownership",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Zone rectangles in bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Eight unique main puzzle specs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "15 sequential days / 4 valid main tasks / no early unlock",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Catalog counts 10 tools /18 decor /11 packs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Catalog IDs / anchors valid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Catalog prices and unlocks reproduced in tables",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "15 day table reproduced from contract",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Economy 1455 income /1425 prices /30 remainder",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "96 unique planned tasks",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Task required fields nonempty",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Dependencies refer to valid tasks",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Dependency DAG no cycles",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Reverse dependencies match prerequisites",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "JSON /CSV /backlog consistent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "24 example IDs /18 achievements /12 callbacks /9 NPC IDs",
+      "pass": true,
+      "detail": {
+        "achievements": 18
+      }
+    },
+    {
+      "name": "Source HTML/map/reference hashes unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Test core equals inline baseline",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Existing 1200 rule variants",
+      "pass": true,
+      "detail": "PASS: 1200 deterministic puzzle variants, correct/incorrect judgments, commutative automation, 5-day campaign, duplicate-reward guards, restore, purchases, and import validation."
+    },
+    {
+      "name": "Planning example checks PASS",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "failures": [],
+  "android": "unverified"
+}

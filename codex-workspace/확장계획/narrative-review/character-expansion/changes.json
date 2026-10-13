@@ -1,0 +1,5310 @@
+[
+  {
+    "path": [
+      "days",
+      "1",
+      "morning",
+      3
+    ],
+    "before": null,
+    "after": {
+      "who": "sora",
+      "line": "오늘 설명을 듣다가 모르는 말이 나오면 바로 끊어도 돼요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "1",
+      "morning",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "메모하다가 놓칠까 봐 걱정했어요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "1",
+      "morning",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "sora",
+      "line": "제가 기다릴게요. 다 외우려고 하지 않아도 됩니다."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "1",
+      "evening",
+      0,
+      "who"
+    ],
+    "before": "hansol",
+    "after": "sora"
+  },
+  {
+    "path": [
+      "days",
+      "1",
+      "evening",
+      0,
+      "line"
+    ],
+    "before": "첫날이라 긴장했죠? 오늘은 푹 쉬어요.",
+    "after": "첫날 메모가 꽤 많네요."
+  },
+  {
+    "path": [
+      "days",
+      "1",
+      "evening",
+      1,
+      "line"
+    ],
+    "before": "내일은 조금 덜 긴장할 것 같아요.",
+    "after": "이름하고 모르는 말을 적었어요."
+  },
+  {
+    "path": [
+      "days",
+      "1",
+      "evening",
+      2
+    ],
+    "before": null,
+    "after": {
+      "who": "sora",
+      "line": "질문 옆에 답 쓸 자리도 남겨 두세요. 내일 같이 봐요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "1",
+      "evening",
+      3
+    ],
+    "before": null,
+    "after": {
+      "who": "hansol",
+      "line": "첫날이라 긴장했죠? 오늘은 푹 쉬어요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "2",
+      "evening",
+      0,
+      "line"
+    ],
+    "before": "며칠 더 해 보면 손에 익을 거예요. 오늘도 수고했어요.",
+    "after": "오늘 설명이 너무 빨랐으면 말씀해 주세요."
+  },
+  {
+    "path": [
+      "days",
+      "2",
+      "evening",
+      1
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "중간에 놓친 말을 적어 뒀어요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "2",
+      "evening",
+      2
+    ],
+    "before": null,
+    "after": {
+      "who": "sora",
+      "line": "내일은 그 메모부터 봅시다."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "2",
+      "evening",
+      3
+    ],
+    "before": null,
+    "after": {
+      "who": "jaehun",
+      "line": "좋아요. 말하는 속도도 줄여 볼게요. 오늘 수고했어요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "3",
+      "morning",
+      3
+    ],
+    "before": null,
+    "after": {
+      "who": "jio",
+      "line": "다음 근무 전에 들르려고 시간을 맞췄어요. 접수 뒤에 물어볼 것도 있네요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "3",
+      "morning",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "miru",
+      "line": "접수한 신청을 확인할 문의처가 궁금하신 거죠?"
+    }
+  },
+  {
+    "path": [
+      "days",
+      "3",
+      "morning",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "jio",
+      "line": "네. 오늘은 그곳부터 알아두고 싶어요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "3",
+      "evening",
+      0,
+      "who"
+    ],
+    "before": "sora",
+    "after": "miru"
+  },
+  {
+    "path": [
+      "days",
+      "3",
+      "evening",
+      0,
+      "line"
+    ],
+    "before": "오늘도 수고했어요. 집에 가서는 일 생각 말고 쉬어요.",
+    "after": "오늘은 제가 말을 많이 해서 목이 좀 잠겼네요."
+  },
+  {
+    "path": [
+      "days",
+      "3",
+      "evening",
+      1
+    ],
+    "before": null,
+    "after": {
+      "who": "sora",
+      "line": "퇴근 전에 물 한잔 드세요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "3",
+      "evening",
+      2
+    ],
+    "before": null,
+    "after": {
+      "who": "miru",
+      "line": "고마워요. 내일은 쉬는 시간도 먼저 챙겨야겠어요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "3",
+      "evening",
+      3
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "전화 메모는 제가 정리해 뒀어요. 오늘 수고하셨습니다."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "4",
+      "morning",
+      3
+    ],
+    "before": null,
+    "after": {
+      "who": "yeoreum",
+      "line": "설명을 읽었는데 제가 이해한 게 맞는지 더 물어보고 싶어요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "4",
+      "morning",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "확인한 부분과 궁금한 부분을 나눠 말씀해 주세요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "4",
+      "morning",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "yeoreum",
+      "line": "이번에는 질문을 적어 와서 조금 덜 긴장돼요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "4",
+      "evening",
+      0,
+      "line"
+    ],
+    "before": "오늘 파일에는 날짜만 붙였어요. '진짜 최종'은 내일로 미뤘죠.",
+    "after": "이 화분은 제 거예요. 이름이 최종이고요."
+  },
+  {
+    "path": [
+      "days",
+      "4",
+      "evening",
+      1
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "파일 이름이랑 같은 농담인가요?"
+    }
+  },
+  {
+    "path": [
+      "days",
+      "4",
+      "evening",
+      2
+    ],
+    "before": null,
+    "after": {
+      "who": "danbi",
+      "line": "새 잎이 나면 진짜 최종이라고 부르려고 했죠."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "4",
+      "evening",
+      3
+    ],
+    "before": null,
+    "after": {
+      "who": "jaehun",
+      "line": "그럼 다음 잎부터는 날짜를 붙이는 게 낫겠네요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "4",
+      "evening",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "danbi",
+      "line": "화분 사진은 그렇게 하기로 했어요. 오늘도 수고했어요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "5",
+      "evening",
+      0,
+      "who"
+    ],
+    "before": "sora",
+    "after": "hansol"
+  },
+  {
+    "path": [
+      "days",
+      "5",
+      "evening",
+      0,
+      "line"
+    ],
+    "before": "오늘은 좀 덜 긴장한 것 같네요. 수고했어요.",
+    "after": "오늘은 점심을 조금 급하게 먹었네요."
+  },
+  {
+    "path": [
+      "days",
+      "5",
+      "evening",
+      1
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "오후 업무 생각을 하다 보니 그랬어요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "5",
+      "evening",
+      2
+    ],
+    "before": null,
+    "after": {
+      "who": "hansol",
+      "line": "내일은 쉬는 시간도 일정에 넣어 봅시다."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "5",
+      "evening",
+      3
+    ],
+    "before": null,
+    "after": {
+      "who": "sora",
+      "line": "자료는 여기 두고 가세요. 내일 같이 확인하면 돼요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "6",
+      "morning",
+      3
+    ],
+    "before": null,
+    "after": {
+      "who": "nuri",
+      "line": "이사하고 처음 오는 곳이 많아졌어요. 질문을 수첩에 적어 왔습니다."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "6",
+      "morning",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "miru",
+      "line": "천천히 읽으셔도 돼요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "6",
+      "morning",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "nuri",
+      "line": "답을 쓸 자리도 남겨 왔어요. 오늘은 그 칸을 써 보려고요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "6",
+      "evening",
+      0,
+      "who"
+    ],
+    "before": "hansol",
+    "after": "danbi"
+  },
+  {
+    "path": [
+      "days",
+      "6",
+      "evening",
+      0,
+      "line"
+    ],
+    "before": "오늘도 수고했어요. 내일 봐요.",
+    "after": "서랍에서 예전 동료의 엽서를 찾았어요."
+  },
+  {
+    "path": [
+      "days",
+      "6",
+      "evening",
+      1
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "어떤 말이 적혀 있어요?"
+    }
+  },
+  {
+    "path": [
+      "days",
+      "6",
+      "evening",
+      2
+    ],
+    "before": null,
+    "after": {
+      "who": "danbi",
+      "line": "정리도 좋지만 밥부터 먹으래요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "6",
+      "evening",
+      3
+    ],
+    "before": null,
+    "after": {
+      "who": "hansol",
+      "line": "오늘 점심은 잘 챙겼으니 첫 문장부터 답장할 수 있겠네요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "6",
+      "evening",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "danbi",
+      "line": "그러게요. 이번에는 답장을 미루지 말아야겠어요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "7",
+      "evening",
+      0,
+      "who"
+    ],
+    "before": "miru",
+    "after": "jaehun"
+  },
+  {
+    "path": [
+      "days",
+      "7",
+      "evening",
+      0,
+      "line"
+    ],
+    "before": "새 규정이라 설명할 게 많았죠. 오늘도 수고했어요.",
+    "after": "규정은 고쳤는데 제 설명 속도는 아직 빠르죠?"
+  },
+  {
+    "path": [
+      "days",
+      "7",
+      "evening",
+      1
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "오늘은 제가 말할 틈이 있었어요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "7",
+      "evening",
+      2
+    ],
+    "before": null,
+    "after": {
+      "who": "jaehun",
+      "line": "그럼 조금 나아졌네요. 다음에도 중간에 알려 주세요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "7",
+      "evening",
+      3
+    ],
+    "before": null,
+    "after": {
+      "who": "miru",
+      "line": "오늘은 새 기준 설명하느라 수고했어요. 여기까지 합시다."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "8",
+      "morning",
+      3
+    ],
+    "before": null,
+    "after": {
+      "who": "jio",
+      "line": "지난번 메모를 형과 같이 읽다가 궁금한 게 더 생겼어요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "8",
+      "morning",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "miru",
+      "line": "전에 적어 둔 내용부터 같이 확인해 볼까요?"
+    }
+  },
+  {
+    "path": [
+      "days",
+      "8",
+      "morning",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "jio",
+      "line": "네. 새 질문도 그 아래 적었습니다."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "8",
+      "evening",
+      0,
+      "who"
+    ],
+    "before": "danbi",
+    "after": "haru"
+  },
+  {
+    "path": [
+      "days",
+      "8",
+      "evening",
+      0,
+      "line"
+    ],
+    "before": "오늘은 처음 해 보는 일이 많았죠. 수고했어요.",
+    "after": "오늘부터 다른 부서의 선택 업무를 전해 드립니다."
+  },
+  {
+    "path": [
+      "days",
+      "8",
+      "evening",
+      1
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "요청 뒤의 답변도 전해 주시는 건가요?"
+    }
+  },
+  {
+    "path": [
+      "days",
+      "8",
+      "evening",
+      2
+    ],
+    "before": null,
+    "after": {
+      "who": "haru",
+      "line": "네. 내용은 담당자에게 확인해서 전할게요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "8",
+      "evening",
+      3
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "그럼 다음에 오실 때 먼저 인사드리겠습니다."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "9",
+      "evening",
+      0,
+      "who"
+    ],
+    "before": "sora",
+    "after": "miru"
+  },
+  {
+    "path": [
+      "days",
+      "9",
+      "evening",
+      0,
+      "line"
+    ],
+    "before": "오늘 일은 여기까지예요. 퇴근해서 푹 쉬어요.",
+    "after": "오늘은 소라 씨가 잠깐 창구를 받아 줬어요."
+  },
+  {
+    "path": [
+      "days",
+      "9",
+      "evening",
+      1
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "쉬는 동안 불편하진 않으셨어요?"
+    }
+  },
+  {
+    "path": [
+      "days",
+      "9",
+      "evening",
+      2
+    ],
+    "before": null,
+    "after": {
+      "who": "miru",
+      "line": "처음에는요. 돌아와서 메모를 보니 자리를 잘 맡아 줬더라고요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "9",
+      "evening",
+      3
+    ],
+    "before": null,
+    "after": {
+      "who": "sora",
+      "line": "필요하면 내일도 말해 주세요. 오늘은 다 같이 퇴근해요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "10",
+      "morning",
+      3
+    ],
+    "before": null,
+    "after": {
+      "who": "nuri",
+      "line": "딸이 같이 오겠다고 했는데 제가 먼저 와 봤어요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "10",
+      "morning",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "지난번 적으신 메모도 가져오셨나요?"
+    }
+  },
+  {
+    "path": [
+      "days",
+      "10",
+      "morning",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "nuri",
+      "line": "네. 두 질문에 번호도 붙였습니다."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "10",
+      "evening",
+      0,
+      "line"
+    ],
+    "before": "다들 반갑게 맞아 주셔서 고마웠어요.",
+    "after": "자리 안내를 다시 물었는데 단비 씨가 반갑게 알려 줬어요."
+  },
+  {
+    "path": [
+      "days",
+      "10",
+      "evening",
+      1
+    ],
+    "before": null,
+    "after": {
+      "who": "danbi",
+      "line": "저도 재훈 씨에게 자꾸 물어보는걸요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "10",
+      "evening",
+      2
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "제가 아는 길도 알려 드릴 수 있어요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "10",
+      "evening",
+      3
+    ],
+    "before": null,
+    "after": {
+      "who": "seoyun",
+      "line": "그럼 점심 산책길부터 부탁드릴게요. 오늘 고마웠습니다."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "11",
+      "evening",
+      0,
+      "line"
+    ],
+    "before": "오늘 맡은 일 하느라 수고했어요. 내일 봅시다.",
+    "after": "책상에 두는 잔은 오래 쓴 걸 가져왔어요."
+  },
+  {
+    "path": [
+      "days",
+      "11",
+      "evening",
+      1
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "손잡이가 손에 잘 맞나 봐요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "11",
+      "evening",
+      2
+    ],
+    "before": null,
+    "after": {
+      "who": "garam",
+      "line": "네. 어머니와 고른 잔이라 더 익숙하고요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "11",
+      "evening",
+      3
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "다음에 차 얘기도 들려주세요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "11",
+      "evening",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "garam",
+      "line": "그러죠. 오늘 맡은 일도 수고했습니다."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "12",
+      "evening",
+      0,
+      "line"
+    ],
+    "before": "오늘까지 한 일은 함께 정리해 봅시다.",
+    "after": "오늘은 제가 설명을 짧게 끝냈는지 돌아보고 있어요."
+  },
+  {
+    "path": [
+      "days",
+      "12",
+      "evening",
+      1
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "필요한 내용을 빼도 되는지 망설인 적은 있었어요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "12",
+      "evening",
+      2
+    ],
+    "before": null,
+    "after": {
+      "who": "yunseo",
+      "line": "그럴 때는 다시 물어봐 주세요. 간결하게 쓰는 것과 설명을 빠뜨리는 건 다르니까요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "12",
+      "evening",
+      3
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "네. 다음 보고 때는 먼저 확인하겠습니다."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "13",
+      "morning",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "yeoreum",
+      "line": "지난 질문은 확인했어요. 이번에는 바뀐 생활 일정을 말씀드리려고요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "13",
+      "morning",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "miru",
+      "line": "새로 궁금해진 내용을 들려주세요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "13",
+      "morning",
+      6
+    ],
+    "before": null,
+    "after": {
+      "who": "yeoreum",
+      "line": "제일 궁금한 것부터 적어 왔습니다."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "13",
+      "evening",
+      0,
+      "line"
+    ],
+    "before": "오늘도 수고했어요. 답변이 오면 제가 전해 드릴게요.",
+    "after": "요청이 많으면 답변 날짜부터 약속하고 싶어져요."
+  },
+  {
+    "path": [
+      "days",
+      "13",
+      "evening",
+      1
+    ],
+    "before": null,
+    "after": {
+      "who": "miru",
+      "line": "담당자 일정은 확인했어요?"
+    }
+  },
+  {
+    "path": [
+      "days",
+      "13",
+      "evening",
+      2
+    ],
+    "before": null,
+    "after": {
+      "who": "haru",
+      "line": "오늘은 확인한 뒤에 전했습니다. 예전에는 그것부터 놓친 적이 있어요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "13",
+      "evening",
+      3
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "저도 언제까지 할 수 있는지 먼저 말씀드릴게요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "13",
+      "evening",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "haru",
+      "line": "고마워요. 오래 같이하려면 그게 더 좋겠네요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "14",
+      "evening",
+      0,
+      "who"
+    ],
+    "before": "hansol",
+    "after": "danbi"
+  },
+  {
+    "path": [
+      "days",
+      "14",
+      "evening",
+      0,
+      "line"
+    ],
+    "before": "평가는 내일이고, 오늘 일은 끝났어요. 푹 쉬어요.",
+    "after": "그 엽서에 드디어 답장을 썼어요."
+  },
+  {
+    "path": [
+      "days",
+      "14",
+      "evening",
+      1
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "서랍 정리보다 밥부터 먹으라고 적힌 엽서요?"
+    }
+  },
+  {
+    "path": [
+      "days",
+      "14",
+      "evening",
+      2
+    ],
+    "before": null,
+    "after": {
+      "who": "danbi",
+      "line": "네. 새 동료들이랑 밥 잘 먹고 있다고 썼어요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "14",
+      "evening",
+      3
+    ],
+    "before": null,
+    "after": {
+      "who": "jaehun",
+      "line": "이번 파일 이름은 최종인가요?"
+    }
+  },
+  {
+    "path": [
+      "days",
+      "14",
+      "evening",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "danbi",
+      "line": "손편지라 파일 이름은 없어요. 내일 보내려고요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "14",
+      "evening",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "hansol",
+      "line": "마감 준비도 여기까지입니다. 푹 쉬어요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "15",
+      "morning",
+      3
+    ],
+    "before": null,
+    "after": {
+      "who": "nuri",
+      "line": "처음에는 수첩만 보고 인사했는데 오늘은 얼굴부터 뵀네요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "15",
+      "morning",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "저도 누리 님을 먼저 알아봤어요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "15",
+      "morning",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "nuri",
+      "line": "새 질문은 여기 적었습니다. 오늘도 하나씩 여쭤볼게요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "15",
+      "evening",
+      0,
+      "who"
+    ],
+    "before": "hansol",
+    "after": "yunseo"
+  },
+  {
+    "path": [
+      "days",
+      "15",
+      "evening",
+      0,
+      "line"
+    ],
+    "before": "이번 분기도 수고했어요. 다음 분기에도 잘 부탁해요.",
+    "after": "오늘까지 함께 맡아 준 분들, 고맙습니다."
+  },
+  {
+    "path": [
+      "days",
+      "15",
+      "evening",
+      1,
+      "who"
+    ],
+    "before": "player",
+    "after": "danbi"
+  },
+  {
+    "path": [
+      "days",
+      "15",
+      "evening",
+      1,
+      "line"
+    ],
+    "before": "수고하셨습니다. 처음보다 많이 익숙해졌어요.",
+    "after": "다음 분기 폴더는 아직 안 만들었어요. 오늘은 쉬려고요."
+  },
+  {
+    "path": [
+      "days",
+      "15",
+      "evening",
+      2
+    ],
+    "before": null,
+    "after": {
+      "who": "jaehun",
+      "line": "간식 모임은 다음에도 이어 갑시다. 그 시간은 줄이지 말고요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "15",
+      "evening",
+      3
+    ],
+    "before": null,
+    "after": {
+      "who": "miru",
+      "line": "쉬는 시간에 창구를 맡아 주신 것도 고마웠어요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "15",
+      "evening",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "첫날 적은 이름들이 이제는 같이 일한 분들이 됐네요."
+    }
+  },
+  {
+    "path": [
+      "days",
+      "15",
+      "evening",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "hansol",
+      "line": "이번 분기도 수고했어요. 다음 분기에도 잘 부탁합니다."
+    }
+  },
+  {
+    "path": [
+      "visitors",
+      "yeoreum",
+      "profile",
+      "personality"
+    ],
+    "before": "낯선 절차 앞에서도 차분히 질문한다.",
+    "after": "들은 설명을 자기 말로 다시 확인한다. 오래 일한 가게의 영업시간이 바뀐 뒤 생활 일정도 다시 정리하고 있다."
+  },
+  {
+    "path": [
+      "visitors",
+      "yeoreum",
+      "profile",
+      "likes"
+    ],
+    "before": "산책과 끝까지 들어 주는 설명.",
+    "after": "동생과 나누는 빵, 쉬는 날 동네 산책, 질문할 시간을 남겨 주는 설명."
+  },
+  {
+    "path": [
+      "visitors",
+      "yeoreum",
+      "profile",
+      "dislikes"
+    ],
+    "before": "사정을 짐작해 대신 결정하는 말.",
+    "after": "짧은 이야기만 듣고 가족이나 생활 형편을 대신 판단하는 말."
+  },
+  {
+    "path": [
+      "visitors",
+      "yeoreum",
+      "profile",
+      "relations",
+      "miru"
+    ],
+    "before": "질문을 편하게 받아 주는 주무관.",
+    "after": "처음 방문했을 때 말을 재촉하지 않은 담당자. 모르는 질문도 차례로 말할 수 있었다."
+  },
+  {
+    "path": [
+      "visitors",
+      "yeoreum",
+      "profile",
+      "relations",
+      "sora"
+    ],
+    "before": "재방문의 인사를 기억하는 주무관.",
+    "after": "여름의 이름과 재방문을 기억해 준 주무관. 지난번 질문부터 다시 확인해 준다."
+  },
+  {
+    "path": [
+      "visitors",
+      "yeoreum",
+      "visits",
+      "1",
+      "ask"
+    ],
+    "before": "생활 지원에 관해 상담받고 싶은데, 어디로 가면 될까요?",
+    "after": "가게 영업시간이 바뀌어 생활 지원 상담을 받아 보고 싶어요. 이 문의는 어디서 하나요?"
+  },
+  {
+    "path": [
+      "visitors",
+      "yeoreum",
+      "visits",
+      "1",
+      "after"
+    ],
+    "before": "다음에 문의할 곳을 알았어요. 고맙습니다.",
+    "after": "상담받을 곳을 알았어요. 제 상황을 정리해서 물어볼게요."
+  },
+  {
+    "path": [
+      "visitors",
+      "yeoreum",
+      "visits",
+      "4",
+      "ask"
+    ],
+    "before": "안내받은 설명 중 더 물어볼 게 있어요.",
+    "after": "지난번에 안내받은 설명을 읽었어요. 제 상황에서 더 확인할 것은 어디에 물어보면 될까요?"
+  },
+  {
+    "path": [
+      "visitors",
+      "yeoreum",
+      "visits",
+      "4",
+      "after"
+    ],
+    "before": "설명을 들으니 무엇을 더 확인해야 할지 알겠어요.",
+    "after": "제가 이해한 것과 더 물어볼 것을 나눠 적어 볼게요."
+  },
+  {
+    "path": [
+      "visitors",
+      "yeoreum",
+      "visits",
+      "13",
+      "ask"
+    ],
+    "before": "지난번 궁금했던 건 확인했어요. 다른 것도 여쭤봐도 될까요?",
+    "after": "지난번 질문은 확인했어요. 생활 일정이 달라져 새로 궁금한 것도 안내받고 싶어요."
+  },
+  {
+    "path": [
+      "visitors",
+      "yeoreum",
+      "visits",
+      "13",
+      "after"
+    ],
+    "before": "이번에는 질문을 정리해 올 수 있었어요.",
+    "after": "이번에는 필요한 질문부터 설명할 수 있었어요. 고맙습니다."
+  },
+  {
+    "path": [
+      "visitors",
+      "jio",
+      "profile",
+      "personality"
+    ],
+    "before": "현재 상황을 알고 싶어 꼼꼼히 묻는다.",
+    "after": "접수 뒤 무엇을 확인할 수 있는지 차근차근 묻는다. 교대근무 시간을 맞추며 구청에 올 시간을 미리 정한다."
+  },
+  {
+    "path": [
+      "visitors",
+      "jio",
+      "profile",
+      "likes"
+    ],
+    "before": "산책과 처리 과정을 차근차근 알려 주는 설명.",
+    "after": "출근 전 짧은 산책, 형과 정리하는 일정표, 다음 단계를 적어 둔 메모."
+  },
+  {
+    "path": [
+      "visitors",
+      "jio",
+      "profile",
+      "dislikes"
+    ],
+    "before": "질문을 귀찮아하는 태도.",
+    "after": "확인되지 않은 처리 날짜를 단정하거나 같은 질문이라고 듣지 않는 태도."
+  },
+  {
+    "path": [
+      "visitors",
+      "jio",
+      "profile",
+      "relations",
+      "miru"
+    ],
+    "before": "접수 이후의 질문을 들어 주는 주무관.",
+    "after": "접수 뒤 문의도 따로 할 수 있다고 설명한 주무관. 지오의 근무시간을 고려해 질문을 듣는다."
+  },
+  {
+    "path": [
+      "visitors",
+      "jio",
+      "profile",
+      "relations",
+      "haru"
+    ],
+    "before": "다른 부서 담당자를 안내해 준 주무관.",
+    "after": "부서 간 문의는 답변을 확인한 뒤 전달한다고 알려 준 주무관."
+  },
+  {
+    "path": [
+      "visitors",
+      "jio",
+      "visits",
+      "3",
+      "ask"
+    ],
+    "before": "신청이 얼마나 진행됐는지 어디에 물어보면 될까요?",
+    "after": "교대근무 시간을 맞춰 왔어요. 접수한 신청의 진행 상황은 어디에 문의하나요?"
+  },
+  {
+    "path": [
+      "visitors",
+      "jio",
+      "visits",
+      "3",
+      "after"
+    ],
+    "before": "접수 뒤에도 문의할 곳이 있군요.",
+    "after": "문의처를 적어 두었어요. 다음 근무 전에 확인해 보겠습니다."
+  },
+  {
+    "path": [
+      "visitors",
+      "jio",
+      "visits",
+      "8",
+      "ask"
+    ],
+    "before": "지난번 안내받은 곳에 문의했는데, 더 확인할 게 생겼어요.",
+    "after": "지난번 문의 뒤 메모를 읽어 보니 더 확인할 것이 생겼어요. 어디에 물어보면 될까요?"
+  },
+  {
+    "path": [
+      "visitors",
+      "jio",
+      "visits",
+      "8",
+      "after"
+    ],
+    "before": "다시 왔는데도 자세히 들어 주셔서 고맙습니다.",
+    "after": "확인된 내용과 아직 물어볼 것을 따로 적었습니다. 고맙습니다."
+  },
+  {
+    "path": [
+      "visitors",
+      "nuri",
+      "profile",
+      "personality"
+    ],
+    "before": "질문을 적어 오며 배운 것을 오래 기억한다.",
+    "after": "집에서 질문을 적어 왔다가 설명을 들으며 다시 고친다. 이사한 동네에서 혼자 할 수 있는 일을 하나씩 늘리는 중이다."
+  },
+  {
+    "path": [
+      "visitors",
+      "nuri",
+      "profile",
+      "likes"
+    ],
+    "before": "작은 수첩과 천천히 나누는 대화.",
+    "after": "작은 수첩, 딸과 서로 알려 주는 동네 소식, 천천히 살펴보는 산책길."
+  },
+  {
+    "path": [
+      "visitors",
+      "nuri",
+      "profile",
+      "dislikes"
+    ],
+    "before": "질문하는 속도를 재촉하는 말.",
+    "after": "본인에게 묻지 않고 가족에게만 설명하거나 질문하는 속도를 재촉하는 말."
+  },
+  {
+    "path": [
+      "visitors",
+      "nuri",
+      "profile",
+      "relations",
+      "miru"
+    ],
+    "before": "말할 속도를 맞춰 주는 주무관.",
+    "after": "누리가 수첩을 읽을 시간을 기다려 준 주무관. 먼저 어떤 문의인지 물어본다."
+  },
+  {
+    "path": [
+      "visitors",
+      "nuri",
+      "profile",
+      "relations",
+      "sora"
+    ],
+    "before": "낯선 날의 긴장을 풀어 준 주무관.",
+    "after": "처음 온 날 긴장을 풀어 준 주무관. 적어 온 질문을 스스로 설명하도록 기다린다."
+  },
+  {
+    "path": [
+      "visitors",
+      "nuri",
+      "visits",
+      "6",
+      "ask"
+    ],
+    "before": "처음 왔어요. 이 문의도 여기서 하나요?",
+    "after": "이사 온 뒤 처음 왔어요. 수첩에 적은 문의는 어디에서 하나요?"
+  },
+  {
+    "path": [
+      "visitors",
+      "nuri",
+      "visits",
+      "6",
+      "after"
+    ],
+    "before": "어디부터 물어봐야 할지 알겠어요.",
+    "after": "오늘 물어본 내용과 다음 문의처를 수첩에 적어 두겠습니다."
+  },
+  {
+    "path": [
+      "visitors",
+      "nuri",
+      "visits",
+      "10",
+      "ask"
+    ],
+    "before": "지난번 설명을 듣고 궁금한 게 두 가지 더 생겼어요.",
+    "after": "지난번 설명을 집에서 읽고 질문을 두 개 더 적었어요. 각각 어디에 물어보나요?"
+  },
+  {
+    "path": [
+      "visitors",
+      "nuri",
+      "visits",
+      "10",
+      "after"
+    ],
+    "before": "각각 어디에 물을지 적어 두었어요.",
+    "after": "두 질문의 문의처를 나눠 적으니 다시 찾기 쉽겠어요."
+  },
+  {
+    "path": [
+      "visitors",
+      "nuri",
+      "visits",
+      "15",
+      "ask"
+    ],
+    "before": "지난 문의는 마쳤어요. 새 질문도 안내해 주세요.",
+    "after": "지난 문의는 확인했어요. 오늘은 새로 적어 온 질문도 안내받고 싶어요."
+  },
+  {
+    "path": [
+      "visitors",
+      "nuri",
+      "visits",
+      "15",
+      "after"
+    ],
+    "before": "다음에도 하나씩 질문해 보겠습니다.",
+    "after": "모르는 걸 다시 물어봐도 된다는 걸 알았어요. 다음에도 하나씩 여쭤볼게요."
+  },
+  {
+    "path": [
+      "characters",
+      "sora",
+      "profile",
+      "personality"
+    ],
+    "before": "신입이 익숙해질 때까지 차분히 기다려 준다.",
+    "after": "설명하다가도 신입이 확인 중이면 말을 멈추고 기다린다. 정작 자기 부탁은 뒤로 미루는 편이다."
+  },
+  {
+    "path": [
+      "characters",
+      "sora",
+      "profile",
+      "likes"
+    ],
+    "before": "조용한 아침과 잘 여문 귤.",
+    "after": "동생과 나눠 먹는 귤, 출근 전 책상 정리, 조용한 아침."
+  },
+  {
+    "path": [
+      "characters",
+      "sora",
+      "profile",
+      "dislikes"
+    ],
+    "before": "한 번 한 실수를 두고두고 들추는 분위기.",
+    "after": "이미 고친 실수를 사람들 앞에서 다시 들추거나 질문을 재촉하는 말."
+  },
+  {
+    "path": [
+      "characters",
+      "sora",
+      "profile",
+      "relations",
+      "jaehun"
+    ],
+    "before": "서로의 속도를 존중하는 생활보장계 동료.",
+    "after": "재훈의 빠른 설명에 잠깐씩 쉬는 시간을 넣어 주고, 재훈은 소라의 반복 작업을 도와준다."
+  },
+  {
+    "path": [
+      "characters",
+      "sora",
+      "profile",
+      "relations",
+      "hansol"
+    ],
+    "before": "모르는 일이 있으면 함께 알아봐 주는 계장.",
+    "after": "신입 때 날짜를 잘못 적은 서류를 함께 고쳐 준 계장. 질문을 숨기지 않는 법을 배웠다."
+  },
+  {
+    "path": [
+      "characters",
+      "sora",
+      "rel",
+      "1",
+      0,
+      "line"
+    ],
+    "before": "제 첫날엔 인사만 열 번 했어요.",
+    "after": "제 첫날에는 서류 날짜를 하루 잘못 적었어요."
+  },
+  {
+    "path": [
+      "characters",
+      "sora",
+      "rel",
+      "1",
+      1,
+      "line"
+    ],
+    "before": "저도 방금 한 인사를 또 했네요.",
+    "after": "혼나셨나요?"
+  },
+  {
+    "path": [
+      "characters",
+      "sora",
+      "rel",
+      "1",
+      2,
+      "line"
+    ],
+    "before": "두 번째 인사도 반가웠어요.",
+    "after": "한솔 계장님이 옆에서 같이 고쳐 주셨어요. 그다음엔 왜 헷갈렸는지 물으셨고요."
+  },
+  {
+    "path": [
+      "characters",
+      "sora",
+      "rel",
+      "1",
+      3,
+      "line"
+    ],
+    "before": "그럼 오늘은 열한 번까지 해 볼까요?",
+    "after": "그래서 제가 확인할 때도 기다려 주시는군요."
+  },
+  {
+    "path": [
+      "characters",
+      "sora",
+      "rel",
+      "1",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "sora",
+      "line": "네. 눈치 보면서 읽으면 날짜도 더 안 보이더라고요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "sora",
+      "rel",
+      "1",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "모르는 건 숨기지 않고 여쭤볼게요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "sora",
+      "rel",
+      "2",
+      0,
+      "line"
+    ],
+    "before": "귤 하나 드실래요? 집에서 가져왔어요.",
+    "after": "귤 하나 드실래요? 동생이 큰 상자를 사 와서 나눠 먹는 중이에요."
+  },
+  {
+    "path": [
+      "characters",
+      "sora",
+      "rel",
+      "2",
+      1,
+      "line"
+    ],
+    "before": "껍질이 잘 벗겨지네요.",
+    "after": "동생분도 귤을 좋아하시나 봐요."
+  },
+  {
+    "path": [
+      "characters",
+      "sora",
+      "rel",
+      "2",
+      2,
+      "line"
+    ],
+    "before": "일도 이 귤처럼 술술 풀리면 좋겠네요.",
+    "after": "껍질 벗기는 건 늘 제 몫이에요. 먹는 속도는 동생이 더 빠르고요."
+  },
+  {
+    "path": [
+      "characters",
+      "sora",
+      "rel",
+      "2",
+      3,
+      "line"
+    ],
+    "before": "귤 하나에 벌써 기분이 좋아졌어요.",
+    "after": "여기서는 제가 제 것부터 벗기겠습니다."
+  },
+  {
+    "path": [
+      "characters",
+      "sora",
+      "rel",
+      "2",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "sora",
+      "line": "그럼 저는 천천히 먹을 수 있겠네요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "sora",
+      "rel",
+      "2",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "오늘은 선배님도 도움을 받으세요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "sora",
+      "rel",
+      "3",
+      0,
+      "line"
+    ],
+    "before": "다음 신입에게 무슨 말을 해 줄까요?",
+    "after": "다음 신입이 오면 제가 설명을 너무 많이 하는지 봐 주실래요?"
+  },
+  {
+    "path": [
+      "characters",
+      "sora",
+      "rel",
+      "3",
+      1,
+      "line"
+    ],
+    "before": "동료들 이름은 천천히 외워도 된다고요.",
+    "after": "선배님도 그런 걱정을 하세요?"
+  },
+  {
+    "path": [
+      "characters",
+      "sora",
+      "rel",
+      "3",
+      2,
+      "line"
+    ],
+    "before": "저도 듣고 싶었던 말이에요.",
+    "after": "잘 알려 주고 싶어서, 상대가 물어볼 틈을 놓칠 때가 있어요."
+  },
+  {
+    "path": [
+      "characters",
+      "sora",
+      "rel",
+      "3",
+      3,
+      "line"
+    ],
+    "before": "그 말은 제가 먼저 건네 볼게요.",
+    "after": "제가 질문할 시간을 조금 남겨 두자고 말씀드릴게요."
+  },
+  {
+    "path": [
+      "characters",
+      "sora",
+      "rel",
+      "3",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "sora",
+      "line": "좋아요. 서로 알려 주면 덜 놓치겠죠."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "sora",
+      "rel",
+      "3",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "저도 먼저 도울 일이 있는지 물어볼게요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "jaehun",
+      "profile",
+      "personality"
+    ],
+    "before": "새로운 방법을 시험하고 편한 요령을 동료에게 알려 준다.",
+    "after": "반복 작업을 줄일 방법을 금세 떠올린다. 설명도 같은 속도로 해서, 동료가 따라오는지 뒤늦게 확인한다."
+  },
+  {
+    "path": [
+      "characters",
+      "jaehun",
+      "profile",
+      "likes"
+    ],
+    "before": "단축키와 가벼운 농담.",
+    "after": "사진 동호회 산책, 단축키 찾기, 오래 앉아 먹는 간식."
+  },
+  {
+    "path": [
+      "characters",
+      "jaehun",
+      "profile",
+      "dislikes"
+    ],
+    "before": "혼자만 쓰는 편한 방법.",
+    "after": "편한 방법을 혼자만 쓰는 일과 모르는 사람에게 너무 쉽다고 말하는 일."
+  },
+  {
+    "path": [
+      "characters",
+      "jaehun",
+      "profile",
+      "relations",
+      "sora"
+    ],
+    "before": "서로 다른 업무 습관을 믿는 동료.",
+    "after": "설명이 빨라지면 소라가 멈춰 세운다. 대신 소라의 반복 업무를 줄일 방법을 함께 찾는다."
+  },
+  {
+    "path": [
+      "characters",
+      "jaehun",
+      "profile",
+      "relations",
+      "danbi"
+    ],
+    "before": "파일명 농담의 단골 청중.",
+    "after": "단비의 최종 파일명 농담을 받아 주는 동료. 옛 버전을 지우기 전에는 단비에게 묻는다."
+  },
+  {
+    "path": [
+      "characters",
+      "jaehun",
+      "rel",
+      "1",
+      0,
+      "line"
+    ],
+    "before": "제 취미는 단축키 찾기예요.",
+    "after": "제가 설명을 너무 빨리 했죠? 소라 씨가 방금 제 소매를 잡았어요."
+  },
+  {
+    "path": [
+      "characters",
+      "jaehun",
+      "rel",
+      "1",
+      1,
+      "line"
+    ],
+    "before": "주말에도 찾으세요?",
+    "after": "세 번째 말부터는 따라가기 어려웠어요."
+  },
+  {
+    "path": [
+      "characters",
+      "jaehun",
+      "rel",
+      "1",
+      2,
+      "line"
+    ],
+    "before": "주말에는 산책길 지름길을 찾죠.",
+    "after": "빨리 끝내 드리고 싶은데 설명까지 빨라지네요."
+  },
+  {
+    "path": [
+      "characters",
+      "jaehun",
+      "rel",
+      "1",
+      3,
+      "line"
+    ],
+    "before": "그래도 풍경은 천천히 보세요.",
+    "after": "중간에 제가 해 본 걸 말씀드려도 될까요?"
+  },
+  {
+    "path": [
+      "characters",
+      "jaehun",
+      "rel",
+      "1",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "jaehun",
+      "line": "좋아요. 제가 말하는 시간보다 그게 더 필요하겠네요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "jaehun",
+      "rel",
+      "1",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "그럼 이번에는 한 단계씩 같이 해 봐요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "jaehun",
+      "rel",
+      "2",
+      0,
+      "line"
+    ],
+    "before": "동호회 별명이 재실행이었어요.",
+    "after": "사진 동호회에서 제 별명이 재실행이에요."
+  },
+  {
+    "path": [
+      "characters",
+      "jaehun",
+      "rel",
+      "2",
+      1,
+      "line"
+    ],
+    "before": "어쩌다 그런 별명이 생겼어요?",
+    "after": "사진도 자동화하시나요?"
+  },
+  {
+    "path": [
+      "characters",
+      "jaehun",
+      "rel",
+      "2",
+      2,
+      "line"
+    ],
+    "before": "사진 찍다 눈을 자꾸 감았거든요.",
+    "after": "아뇨. 찍을 때마다 눈을 감아서요. 누나가 잘 나온 사진만 가족 단체방에 올려요."
+  },
+  {
+    "path": [
+      "characters",
+      "jaehun",
+      "rel",
+      "2",
+      3,
+      "line"
+    ],
+    "before": "다음엔 제가 '하나, 둘, 셋' 해 드릴게요.",
+    "after": "누나분이 검수를 해 주시는군요."
+  },
+  {
+    "path": [
+      "characters",
+      "jaehun",
+      "rel",
+      "2",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "jaehun",
+      "line": "탈락한 사진도 지우지는 않더라고요. 그게 더 웃기대요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "jaehun",
+      "rel",
+      "2",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "다음 사진은 제가 셋까지 천천히 세 드릴게요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "jaehun",
+      "rel",
+      "3",
+      0,
+      "line"
+    ],
+    "before": "다음 분기 간식 모임 이름을 정할까요?",
+    "after": "간식 시간은 줄이지 말자는 말, 누나한테도 했어요."
+  },
+  {
+    "path": [
+      "characters",
+      "jaehun",
+      "rel",
+      "3",
+      1,
+      "line"
+    ],
+    "before": "거기에도 단축키가 필요해요?",
+    "after": "뭐라고 하셨어요?"
+  },
+  {
+    "path": [
+      "characters",
+      "jaehun",
+      "rel",
+      "3",
+      2,
+      "line"
+    ],
+    "before": "아뇨. 이 시간은 줄이면 아깝죠.",
+    "after": "그럼 주말 산책도 지름길로 끝내지 말래요. 제가 길 찾느라 사진을 놓쳤거든요."
+  },
+  {
+    "path": [
+      "characters",
+      "jaehun",
+      "rel",
+      "3",
+      3,
+      "line"
+    ],
+    "before": "그건 저도 찬성이에요. 간식 시간은 길수록 좋죠.",
+    "after": "다음에는 길보다 풍경을 먼저 보세요."
+  },
+  {
+    "path": [
+      "characters",
+      "jaehun",
+      "rel",
+      "3",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "jaehun",
+      "line": "업무 설명도요. 빠른 것만 좋은 건 아닌 것 같아요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "jaehun",
+      "rel",
+      "3",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "저도 모르는 부분은 바로 말씀드릴게요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "miru",
+      "profile",
+      "personality"
+    ],
+    "before": "말끝까지 듣고 상대의 긴장을 풀어 준다.",
+    "after": "질문을 다 들은 뒤 자기 말로 다시 확인한다. 바쁜 날에는 쉬는 시간을 놓쳐 목이 먼저 지친다."
+  },
+  {
+    "path": [
+      "characters",
+      "miru",
+      "profile",
+      "likes"
+    ],
+    "before": "이름을 기억하는 인사와 동네 빵.",
+    "after": "출근길 단골 빵집, 쉬는 날 조용한 산책, 어머니와 나누는 짧은 통화."
+  },
+  {
+    "path": [
+      "characters",
+      "miru",
+      "profile",
+      "dislikes"
+    ],
+    "before": "사정을 듣기 전에 붙이는 낙인.",
+    "after": "사정을 듣기 전에 결론을 내리거나, 설명을 못 알아들었다고 탓하는 말."
+  },
+  {
+    "path": [
+      "characters",
+      "miru",
+      "profile",
+      "relations",
+      "sora"
+    ],
+    "before": "바쁜 날 서로의 안부를 챙기는 동료.",
+    "after": "창구가 붐비면 소라가 잠깐 자리를 받아 주고, 미루는 소라에게 밀린 전화를 알려 준다."
+  },
+  {
+    "path": [
+      "characters",
+      "miru",
+      "profile",
+      "relations",
+      "haru"
+    ],
+    "before": "부서 사이 인사를 이어 주는 동료.",
+    "after": "문의처가 여러 부서에 걸치면 하루와 함께 확인한다. 알 수 없는 답을 먼저 약속하지 않는다."
+  },
+  {
+    "path": [
+      "characters",
+      "miru",
+      "rel",
+      "1",
+      0,
+      "line"
+    ],
+    "before": "요즘 빵집에서 제 이름을 불러 줘요.",
+    "after": "빵집에서 제 이름을 불러 주면 아침이 조금 편해져요."
+  },
+  {
+    "path": [
+      "characters",
+      "miru",
+      "rel",
+      "1",
+      1,
+      "line"
+    ],
+    "before": "단골이신가 봐요.",
+    "after": "늘 같은 걸 사세요?"
+  },
+  {
+    "path": [
+      "characters",
+      "miru",
+      "rel",
+      "1",
+      2,
+      "line"
+    ],
+    "before": "같은 빵만 사는데도 반갑더라고요.",
+    "after": "네. 그런데 저번에는 빵이 다 팔려도 제 이름부터 불러 주셨어요."
+  },
+  {
+    "path": [
+      "characters",
+      "miru",
+      "rel",
+      "1",
+      3,
+      "line"
+    ],
+    "before": "저도 내일은 먼저 인사드릴게요.",
+    "after": "물건보다 사람이 먼저였네요."
+  },
+  {
+    "path": [
+      "characters",
+      "miru",
+      "rel",
+      "1",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "miru",
+      "line": "창구에서도 그런 인사를 해 보고 싶어요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "miru",
+      "rel",
+      "1",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "저도 오신 분 성함부터 잘 기억해 볼게요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "miru",
+      "rel",
+      "2",
+      0,
+      "line"
+    ],
+    "before": "쉬는 날엔 조용한 길을 걸어요.",
+    "after": "어머니가 전화하실 때는 첫 문장이 늘 밥 먹었니예요."
+  },
+  {
+    "path": [
+      "characters",
+      "miru",
+      "rel",
+      "2",
+      1,
+      "line"
+    ],
+    "before": "평일에는 이야기를 많이 들으시죠.",
+    "after": "선배님도 그렇게 물으세요?"
+  },
+  {
+    "path": [
+      "characters",
+      "miru",
+      "rel",
+      "2",
+      2,
+      "line"
+    ],
+    "before": "조용한 날이 있어야 또 잘 듣게 돼요.",
+    "after": "예전에는 바로 용건부터 말했어요. 요즘은 저도 밥부터 물어요."
+  },
+  {
+    "path": [
+      "characters",
+      "miru",
+      "rel",
+      "2",
+      3,
+      "line"
+    ],
+    "before": "저도 제 조용한 길을 찾아볼게요.",
+    "after": "천천히 얘기하게 되겠네요."
+  },
+  {
+    "path": [
+      "characters",
+      "miru",
+      "rel",
+      "2",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "miru",
+      "line": "그래서 쉬는 날에는 조용히 걸어요. 잘 들으려면 저도 쉬어야 해서요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "miru",
+      "rel",
+      "2",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "오늘은 물 한잔 드시고 나서 이야기해요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "miru",
+      "rel",
+      "3",
+      0,
+      "line"
+    ],
+    "before": "첫날보다 인사가 자연스러워졌네요.",
+    "after": "오늘은 제가 먼저 잠깐 쉬겠다고 말했어요."
+  },
+  {
+    "path": [
+      "characters",
+      "miru",
+      "rel",
+      "3",
+      1,
+      "line"
+    ],
+    "before": "연습한 티가 안 나나요?",
+    "after": "늘 마지막까지 창구를 지키셨잖아요."
+  },
+  {
+    "path": [
+      "characters",
+      "miru",
+      "rel",
+      "3",
+      2,
+      "line"
+    ],
+    "before": "조금 나요. 그게 반가워요.",
+    "after": "소라 씨가 맡아 주겠다고 했는데도 괜히 미안했거든요."
+  },
+  {
+    "path": [
+      "characters",
+      "miru",
+      "rel",
+      "3",
+      3,
+      "line"
+    ],
+    "before": "그럼 다음 분기도 계속 연습할게요.",
+    "after": "돌아오실 때 제가 받은 내용을 말씀드릴게요."
+  },
+  {
+    "path": [
+      "characters",
+      "miru",
+      "rel",
+      "3",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "miru",
+      "line": "고마워요. 돌아올 자리가 있으니까 쉬기도 편하네요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "miru",
+      "rel",
+      "3",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "다음엔 제가 쉬고 싶다고 먼저 말해 볼게요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "danbi",
+      "profile",
+      "personality"
+    ],
+    "before": "자료를 꼼꼼히 보관하고 농담으로 어색한 분위기를 푼다.",
+    "after": "버전을 확인한 뒤 자료를 정리하고, 어색해지면 파일명 농담을 꺼낸다. 기념이 될 만한 것은 쉽게 못 버린다."
+  },
+  {
+    "path": [
+      "characters",
+      "danbi",
+      "profile",
+      "likes"
+    ],
+    "before": "오래된 편지와 짧은 파일명.",
+    "after": "예전 동료의 엽서, 아버지가 보내는 화분 사진, 짧고 구별되는 파일명."
+  },
+  {
+    "path": [
+      "characters",
+      "danbi",
+      "profile",
+      "dislikes"
+    ],
+    "before": "함께한 사람의 수고를 몰라주는 일.",
+    "after": "작성자의 수고를 묻지 않고 자료를 지우거나 새 파일만 남기는 일."
+  },
+  {
+    "path": [
+      "characters",
+      "danbi",
+      "profile",
+      "relations",
+      "jaehun"
+    ],
+    "before": "최종 파일명 농담을 받아 주는 동료.",
+    "after": "최종 파일명 농담을 받아 주는 동료. 정리 방법은 재훈에게 묻되 옛 자료는 직접 확인한다."
+  },
+  {
+    "path": [
+      "characters",
+      "danbi",
+      "profile",
+      "relations",
+      "seoyun"
+    ],
+    "before": "새 계장을 반갑게 맞는 조사관리계 동료.",
+    "after": "부임한 서윤에게 자료 위치를 알려 준다. 모르는 것을 숨기지 않고 묻는 태도가 반갑다."
+  },
+  {
+    "path": [
+      "characters",
+      "danbi",
+      "rel",
+      "1",
+      1,
+      "line"
+    ],
+    "before": "더 자라면 이름이 바뀌나요?",
+    "after": "더 자라면 진짜 최종이 되나요?"
+  },
+  {
+    "path": [
+      "characters",
+      "danbi",
+      "rel",
+      "1",
+      2,
+      "line"
+    ],
+    "before": "그땐 '진짜 최종'으로 바꿔야죠.",
+    "after": "벌써 아버지가 그렇게 부르세요. 화분 사진을 보내 드렸더니 새 잎을 찾아내셨거든요."
+  },
+  {
+    "path": [
+      "characters",
+      "danbi",
+      "rel",
+      "1",
+      3,
+      "line"
+    ],
+    "before": "화분도 파일명 농담을 듣는군요.",
+    "after": "다음 잎이 나면 이름이 또 길어지겠네요."
+  },
+  {
+    "path": [
+      "characters",
+      "danbi",
+      "rel",
+      "1",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "danbi",
+      "line": "그래서 사진에는 날짜만 붙이기로 했어요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "danbi",
+      "rel",
+      "1",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "화분도 버전 관리가 필요하군요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "danbi",
+      "rel",
+      "2",
+      0,
+      "line"
+    ],
+    "before": "예전 동료의 엽서를 아직 갖고 있어요.",
+    "after": "이 엽서는 예전 동료가 다른 곳으로 옮길 때 줬어요."
+  },
+  {
+    "path": [
+      "characters",
+      "danbi",
+      "rel",
+      "2",
+      1,
+      "line"
+    ],
+    "before": "뭐라고 쓰여 있나요?",
+    "after": "무슨 말이 적혀 있나요?"
+  },
+  {
+    "path": [
+      "characters",
+      "danbi",
+      "rel",
+      "2",
+      2,
+      "line"
+    ],
+    "before": "별말 없어요. 밥 잘 먹으래요.",
+    "after": "서랍 정리도 좋지만 밥부터 먹으래요. 마감 때 제가 점심을 잘 빼먹었거든요."
+  },
+  {
+    "path": [
+      "characters",
+      "danbi",
+      "rel",
+      "2",
+      3,
+      "line"
+    ],
+    "before": "오래 남는 말은 의외로 짧네요.",
+    "after": "선배님 버릇을 알고 쓰신 말이네요."
+  },
+  {
+    "path": [
+      "characters",
+      "danbi",
+      "rel",
+      "2",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "danbi",
+      "line": "네. 답장을 쓰려다가 좋은 말을 찾느라 미뤘어요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "danbi",
+      "rel",
+      "2",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "밥 잘 먹고 있다고 먼저 알려 드리면 어떨까요?"
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "danbi",
+      "rel",
+      "3",
+      0,
+      "line"
+    ],
+    "before": "분기 끝나면 편지를 써 볼까 해요.",
+    "after": "이번에는 엽서에 답장을 쓰려고요. 파일명처럼 자꾸 고치지는 않으려고요."
+  },
+  {
+    "path": [
+      "characters",
+      "danbi",
+      "rel",
+      "3",
+      1,
+      "line"
+    ],
+    "before": "제게도 한 줄 써 주세요.",
+    "after": "어떤 말로 시작하실 거예요?"
+  },
+  {
+    "path": [
+      "characters",
+      "danbi",
+      "rel",
+      "3",
+      2,
+      "line"
+    ],
+    "before": "파일처럼 '최종'이라고 쓰면 이상하겠죠?",
+    "after": "밥 잘 먹고 있습니다. 새 동료도 왔어요, 라고요."
+  },
+  {
+    "path": [
+      "characters",
+      "danbi",
+      "rel",
+      "3",
+      3,
+      "line"
+    ],
+    "before": "그냥 '다음 분기에도 잘 부탁해요'라고 써 주세요.",
+    "after": "그 새 동료에 저도 들어가나요?"
+  },
+  {
+    "path": [
+      "characters",
+      "danbi",
+      "rel",
+      "3",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "danbi",
+      "line": "당연하죠. 밥 얘기도 같이 했잖아요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "danbi",
+      "rel",
+      "3",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "다음에는 답장을 쓰시면 저도 구경하고 싶어요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "hansol",
+      "profile",
+      "personality"
+    ],
+    "before": "말은 짧아도 어려운 일은 함께 맡고 쉬는 시간도 챙긴다.",
+    "after": "근거는 분명히 묻고, 어려운 설명은 함께 맡는다. 괜찮다는 짧은 말만으로 마음이 전해졌다고 생각할 때가 있다."
+  },
+  {
+    "path": [
+      "characters",
+      "hansol",
+      "profile",
+      "likes"
+    ],
+    "before": "점심 뒤 산책과 함께 나누는 고민.",
+    "after": "점심 뒤 짧은 산책, 딸과 걷는 동네 길, 질문이 적힌 메모."
+  },
+  {
+    "path": [
+      "characters",
+      "hansol",
+      "profile",
+      "dislikes"
+    ],
+    "before": "신입에게 혼자 책임지라고 하는 말.",
+    "after": "신입에게 확인할 사람 없이 혼자 책임지라고 하거나 실수를 숨기게 만드는 분위기."
+  },
+  {
+    "path": [
+      "characters",
+      "hansol",
+      "profile",
+      "relations",
+      "sora"
+    ],
+    "before": "신입이 적응하도록 함께 도와주는 선배.",
+    "after": "소라의 신입 시절 실수를 함께 고쳤다. 이제는 신입 설명을 나눠 맡고 소라의 부담도 살핀다."
+  },
+  {
+    "path": [
+      "characters",
+      "hansol",
+      "profile",
+      "relations",
+      "seoyun"
+    ],
+    "before": "각 계의 사정을 존중하는 계장 동료.",
+    "after": "다른 계의 일정을 함께 조율한다. 서로 바쁜 이유를 먼저 묻기로 했다."
+  },
+  {
+    "path": [
+      "characters",
+      "hansol",
+      "rel",
+      "1",
+      0,
+      "line"
+    ],
+    "before": "첫날에는 저도 계장님을 어려워했어요.",
+    "after": "첫날에는 저도 계장님 앞에서 헛기침부터 했어요."
+  },
+  {
+    "path": [
+      "characters",
+      "hansol",
+      "rel",
+      "1",
+      2,
+      "line"
+    ],
+    "before": "그럼요. 인사 전에 헛기침부터 했죠.",
+    "after": "네. 모르는 걸 물으면 안 될 줄 알았어요. 그래서 작은 일을 오래 붙들었죠."
+  },
+  {
+    "path": [
+      "characters",
+      "hansol",
+      "rel",
+      "1",
+      3,
+      "line"
+    ],
+    "before": "저만 그런 게 아니라 다행이에요.",
+    "after": "질문해도 된다는 말을 먼저 해 주시는 이유군요."
+  },
+  {
+    "path": [
+      "characters",
+      "hansol",
+      "rel",
+      "1",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "hansol",
+      "line": "대답을 모르면 같이 확인하면 됩니다."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "hansol",
+      "rel",
+      "1",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "그럼 혼자 오래 붙들기 전에 말씀드릴게요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "hansol",
+      "rel",
+      "2",
+      0,
+      "line"
+    ],
+    "before": "점심 뒤에 잠깐 걸을까요?",
+    "after": "점심 뒤에 잠깐 걸을까요? 일 얘기는 쉬고요."
+  },
+  {
+    "path": [
+      "characters",
+      "hansol",
+      "rel",
+      "2",
+      1,
+      "line"
+    ],
+    "before": "일 얘기를 해야 하나요?",
+    "after": "평소에도 산책을 자주 하세요?"
+  },
+  {
+    "path": [
+      "characters",
+      "hansol",
+      "rel",
+      "2",
+      2,
+      "line"
+    ],
+    "before": "아뇨. 오늘은 일 얘기 말고 편하게 걸어요.",
+    "after": "딸이 제 걸음이 너무 빠르대요. 동네를 돌아도 출근하는 것 같다고요."
+  },
+  {
+    "path": [
+      "characters",
+      "hansol",
+      "rel",
+      "2",
+      3,
+      "line"
+    ],
+    "before": "그럼 저도 편하게 따라가겠습니다.",
+    "after": "오늘은 제가 조금 천천히 걸어도 될까요?"
+  },
+  {
+    "path": [
+      "characters",
+      "hansol",
+      "rel",
+      "2",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "hansol",
+      "line": "좋죠. 구청 앞 나무도 한번 보고 갑시다."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "hansol",
+      "rel",
+      "2",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "계장님도 점심시간에는 속도를 줄이셔야겠네요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "hansol",
+      "rel",
+      "3",
+      0,
+      "line"
+    ],
+    "before": "이번 분기 끝나면 스스로에게 한마디 해 볼까요?",
+    "after": "제가 괜찮아요만 하고 설명을 끝낸 적이 있죠?"
+  },
+  {
+    "path": [
+      "characters",
+      "hansol",
+      "rel",
+      "3",
+      1,
+      "line"
+    ],
+    "before": "익숙해지느라 애썼다고요.",
+    "after": "뜻은 알겠는데, 뭘 더 물어도 될지 망설인 적은 있어요."
+  },
+  {
+    "path": [
+      "characters",
+      "hansol",
+      "rel",
+      "3",
+      2,
+      "line"
+    ],
+    "before": "그 말을 잊지 않았으면 좋겠어요.",
+    "after": "딸도 제 대답이 너무 짧다고 해요. 듣고 있다는 말을 더 해야겠네요."
+  },
+  {
+    "path": [
+      "characters",
+      "hansol",
+      "rel",
+      "3",
+      3,
+      "line"
+    ],
+    "before": "계장님도 정말 수고하셨어요.",
+    "after": "저도 필요한 설명은 한 번 더 부탁드릴게요."
+  },
+  {
+    "path": [
+      "characters",
+      "hansol",
+      "rel",
+      "3",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "hansol",
+      "line": "좋아요. 질문할 때 눈치 보지 않는 팀이면 좋겠습니다."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "hansol",
+      "rel",
+      "3",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "다음 신입에게도 그렇게 말씀드릴게요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "seoyun",
+      "profile",
+      "personality"
+    ],
+    "before": "일정을 차분히 살피고 새 만남을 소중히 한다.",
+    "after": "부임 뒤 이름과 자리를 수첩에 적어 익힌다. 꼼꼼하게 계획하지만 낯선 곳에서 먼저 도움을 청하는 것은 서툴다."
+  },
+  {
+    "path": [
+      "characters",
+      "seoyun",
+      "profile",
+      "likes"
+    ],
+    "before": "손으로 쓴 안부와 주말 기차 여행.",
+    "after": "주말 기차 여행, 언니에게 보내는 풍경 사진, 손으로 쓴 안부."
+  },
+  {
+    "path": [
+      "characters",
+      "seoyun",
+      "profile",
+      "dislikes"
+    ],
+    "before": "상황은 묻지 않고 마감만 재촉하는 말.",
+    "after": "담당자의 사정은 묻지 않고 마감 날짜만 앞당기는 말."
+  },
+  {
+    "path": [
+      "characters",
+      "seoyun",
+      "profile",
+      "relations",
+      "danbi"
+    ],
+    "before": "부임 첫날부터 웃음을 나눈 동료.",
+    "after": "부임 첫날 자료 위치를 알려 준 동료. 단비의 농담 덕분에 질문하기가 편해졌다."
+  },
+  {
+    "path": [
+      "characters",
+      "seoyun",
+      "profile",
+      "relations",
+      "hansol"
+    ],
+    "before": "서로 다른 계의 일정을 나누는 동료.",
+    "after": "서로 다른 계의 출장과 마감 일정을 나눈다. 변경 전에 상대 계의 사정을 확인한다."
+  },
+  {
+    "path": [
+      "characters",
+      "seoyun",
+      "rel",
+      "1",
+      0,
+      "line"
+    ],
+    "before": "새 이름을 외우느라 집에서도 중얼거려요.",
+    "after": "이름 옆에 자리를 그려 두니까 조금 덜 헷갈리네요."
+  },
+  {
+    "path": [
+      "characters",
+      "seoyun",
+      "rel",
+      "1",
+      1,
+      "line"
+    ],
+    "before": "저도 첫날에 그랬어요.",
+    "after": "제 자리도 그리셨어요?"
+  },
+  {
+    "path": [
+      "characters",
+      "seoyun",
+      "rel",
+      "1",
+      2,
+      "line"
+    ],
+    "before": "저보다 먼저 오셨으니, 모르는 게 있으면 여쭤봐야겠네요.",
+    "after": "네. 그런데 화분을 너무 크게 그려서 이름 쓸 칸이 작아졌어요."
+  },
+  {
+    "path": [
+      "characters",
+      "seoyun",
+      "rel",
+      "1",
+      3,
+      "line"
+    ],
+    "before": "네. 제가 아는 건 알려 드릴게요.",
+    "after": "단비 선배님 화분은 최종이라는 이름도 있어요."
+  },
+  {
+    "path": [
+      "characters",
+      "seoyun",
+      "rel",
+      "1",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "seoyun",
+      "line": "그 이름은 벌써 외웠어요. 사람 이름보다 먼저 외우면 곤란한데요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "seoyun",
+      "rel",
+      "1",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "모르는 자리는 제가 같이 찾아드릴게요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "seoyun",
+      "rel",
+      "2",
+      0,
+      "line"
+    ],
+    "before": "기차 여행은 창밖 보는 재미가 있어요.",
+    "after": "언니한테 새 부서가 어떠냐는 연락이 왔어요."
+  },
+  {
+    "path": [
+      "characters",
+      "seoyun",
+      "rel",
+      "2",
+      1,
+      "line"
+    ],
+    "before": "어디로 가는 걸 좋아하세요?",
+    "after": "뭐라고 답하셨어요?"
+  },
+  {
+    "path": [
+      "characters",
+      "seoyun",
+      "rel",
+      "2",
+      2,
+      "line"
+    ],
+    "before": "도착지보다 쉬는 시간이 좋더라고요.",
+    "after": "아직 이름 외우는 중이라고요. 언니는 주말에 기차 타고 바람 쐬자고 해요."
+  },
+  {
+    "path": [
+      "characters",
+      "seoyun",
+      "rel",
+      "2",
+      3,
+      "line"
+    ],
+    "before": "저도 쉬는 날엔 일정 없이 나가 봐야겠어요.",
+    "after": "여행 일정도 미리 짜 두시나요?"
+  },
+  {
+    "path": [
+      "characters",
+      "seoyun",
+      "rel",
+      "2",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "seoyun",
+      "line": "원래는요. 이번에는 돌아오는 시간만 정해 보려고요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "seoyun",
+      "rel",
+      "2",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "새로운 곳에서도 잠깐 계획을 비워 두시는군요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "seoyun",
+      "rel",
+      "3",
+      0,
+      "line"
+    ],
+    "before": "다음 분기에 함께 산책할까요?",
+    "after": "모르는 자료를 단비 씨에게 다시 물었어요."
+  },
+  {
+    "path": [
+      "characters",
+      "seoyun",
+      "rel",
+      "3",
+      1,
+      "line"
+    ],
+    "before": "제가 길을 골라도 될까요?",
+    "after": "다 외워야 한다고 생각하셨나요?"
+  },
+  {
+    "path": [
+      "characters",
+      "seoyun",
+      "rel",
+      "3",
+      2,
+      "line"
+    ],
+    "before": "물론이죠. 익숙한 길을 알려 주세요.",
+    "after": "계장인데 자꾸 묻는 게 미안했어요. 그런데 단비 씨가 본인도 물어본대요."
+  },
+  {
+    "path": [
+      "characters",
+      "seoyun",
+      "rel",
+      "3",
+      3,
+      "line"
+    ],
+    "before": "좋아요. 제가 좋아하는 길로 모실게요.",
+    "after": "저도 아는 길은 알려 드릴 수 있어요."
+  },
+  {
+    "path": [
+      "characters",
+      "seoyun",
+      "rel",
+      "3",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "seoyun",
+      "line": "그럼 점심 산책길부터 부탁드릴까요?"
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "seoyun",
+      "rel",
+      "3",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "네. 오늘은 제가 안내하겠습니다."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "garam",
+      "profile",
+      "personality"
+    ],
+    "before": "담백한 말로 각자의 사정을 존중한다.",
+    "after": "예산표를 볼 때 사업 담당자의 설명도 함께 읽는다. 오래 쓴 물건을 고쳐 쓰며, 새 방법은 먼저 시험해 보는 편이다."
+  },
+  {
+    "path": [
+      "characters",
+      "garam",
+      "profile",
+      "likes"
+    ],
+    "before": "천천히 마시는 차와 오래 쓰는 물건.",
+    "after": "천천히 마시는 차, 어머니와 고르는 찻잎, 손에 익은 찻잔."
+  },
+  {
+    "path": [
+      "characters",
+      "garam",
+      "profile",
+      "dislikes"
+    ],
+    "before": "사람의 필요를 숫자 하나로 줄이는 말.",
+    "after": "사업이 왜 필요한지 듣지 않고 숫자 하나로 사람의 사정을 단정하는 말."
+  },
+  {
+    "path": [
+      "characters",
+      "garam",
+      "profile",
+      "relations",
+      "seoyun"
+    ],
+    "before": "계획을 함께 의논하는 계장 동료.",
+    "after": "예산 변경에 맞춰 일정을 함께 의논한다. 서윤의 새 부서 적응을 서두르게 하지 않는다."
+  },
+  {
+    "path": [
+      "characters",
+      "garam",
+      "profile",
+      "relations",
+      "yunseo"
+    ],
+    "before": "현장의 사정을 나누는 과장.",
+    "after": "예산표만으로 설명되지 않는 사업 사정을 보고한다. 윤서는 그 설명이 빠지지 않게 묻는다."
+  },
+  {
+    "path": [
+      "characters",
+      "garam",
+      "rel",
+      "1",
+      0,
+      "line"
+    ],
+    "before": "이 찻잔, 꽤 오래 썼어요.",
+    "after": "표를 오래 보면 잠깐 멀리 보는 게 좋더군요."
+  },
+  {
+    "path": [
+      "characters",
+      "garam",
+      "rel",
+      "1",
+      1,
+      "line"
+    ],
+    "before": "새것보다 손이 잘 가나요?",
+    "after": "계장님도 숫자가 헷갈릴 때가 있으세요?"
+  },
+  {
+    "path": [
+      "characters",
+      "garam",
+      "rel",
+      "1",
+      2,
+      "line"
+    ],
+    "before": "오래 써서 그런지 이 잔이 제일 편해요.",
+    "after": "그럼요. 틀리지 않으려다 같은 칸을 계속 읽을 때도 있어요."
+  },
+  {
+    "path": [
+      "characters",
+      "garam",
+      "rel",
+      "1",
+      3,
+      "line"
+    ],
+    "before": "저도 제 머그컵 오래 써야겠네요.",
+    "after": "잠깐 쉬고 돌아와도 될까요?"
+  },
+  {
+    "path": [
+      "characters",
+      "garam",
+      "rel",
+      "1",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "garam",
+      "line": "네. 저는 차 한잔 가져오겠습니다."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "garam",
+      "rel",
+      "1",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "저도 눈부터 조금 쉬겠습니다."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "garam",
+      "rel",
+      "2",
+      0,
+      "line"
+    ],
+    "before": "차를 마시면 말도 조금 느려져요.",
+    "after": "이 잔은 어머니와 찻잎을 고르러 갔다가 산 겁니다."
+  },
+  {
+    "path": [
+      "characters",
+      "garam",
+      "rel",
+      "2",
+      1,
+      "line"
+    ],
+    "before": "제가 말을 급하게 했나요?",
+    "after": "오래 쓰신 잔인가 봐요."
+  },
+  {
+    "path": [
+      "characters",
+      "garam",
+      "rel",
+      "2",
+      2,
+      "line"
+    ],
+    "before": "아뇨. 그냥 잠깐 쉬면서 마시자는 뜻이에요.",
+    "after": "손잡이가 조금 닳았지만 손에는 더 편해요. 어머니는 새 잔도 보라고 하시고요."
+  },
+  {
+    "path": [
+      "characters",
+      "garam",
+      "rel",
+      "2",
+      3,
+      "line"
+    ],
+    "before": "오늘은 천천히 마셔 볼게요.",
+    "after": "차는 새로 골라도 잔은 그대로 쓰시는군요."
+  },
+  {
+    "path": [
+      "characters",
+      "garam",
+      "rel",
+      "2",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "garam",
+      "line": "네. 바꿀 것과 남길 것은 따로 생각하려고요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "garam",
+      "rel",
+      "2",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "다음에는 어떤 차인지도 알려 주세요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "garam",
+      "rel",
+      "3",
+      0,
+      "line"
+    ],
+    "before": "다음 분기에 새 차를 나눠 마실까요?",
+    "after": "다음에 새 차를 가져오면 같이 마실까요?"
+  },
+  {
+    "path": [
+      "characters",
+      "garam",
+      "rel",
+      "3",
+      1,
+      "line"
+    ],
+    "before": "지금 잔으로요?",
+    "after": "그 손에 익은 잔으로요?"
+  },
+  {
+    "path": [
+      "characters",
+      "garam",
+      "rel",
+      "3",
+      2,
+      "line"
+    ],
+    "before": "네. 이 잔으로 새 차도 마셔 봐야죠.",
+    "after": "네. 새 방법을 익힌다고 익숙한 것까지 모두 버릴 필요는 없겠죠."
+  },
+  {
+    "path": [
+      "characters",
+      "garam",
+      "rel",
+      "3",
+      3,
+      "line"
+    ],
+    "before": "그 약속은 오래 기억할 것 같아요.",
+    "after": "새 예산표도 처음부터 혼자 하려 하지 않겠습니다."
+  },
+  {
+    "path": [
+      "characters",
+      "garam",
+      "rel",
+      "3",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "garam",
+      "line": "막히면 같이 봅시다. 저도 새 방식은 물어봐야 하니까요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "garam",
+      "rel",
+      "3",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "차 마시면서 궁금했던 것도 여쭤볼게요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "profile",
+      "personality"
+    ],
+    "before": "말은 간결하지만 동료들이 애쓴 일을 잊지 않는다.",
+    "after": "보고가 길어지면 핵심을 묻고, 뒤에서 도운 사람도 확인한다. 칭찬을 생각해 놓고 짧은 말로 끝내는 버릇이 있다."
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "profile",
+      "likes"
+    ],
+    "before": "짧은 편지와 꾸준한 안부.",
+    "after": "짧은 손편지, 아들이 보내는 밥 사진, 퇴근길에 나누는 안부."
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "profile",
+      "dislikes"
+    ],
+    "before": "평가 한 줄로 사람을 단정하는 일.",
+    "after": "한 번의 평가로 사람을 단정하거나, 결과만 보고 함께한 사람을 빠뜨리는 일."
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "profile",
+      "relations",
+      "hansol"
+    ],
+    "before": "팀의 사정을 들려주는 계장.",
+    "after": "한솔에게 일정뿐 아니라 팀원들의 부담도 묻는다. 길게 설명할 일과 줄여도 될 말을 나눈다."
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "profile",
+      "relations",
+      "garam"
+    ],
+    "before": "사업마다 필요한 지원을 함께 의논하는 계장.",
+    "after": "사업 예산과 현장의 사정을 함께 듣는다. 표에서 빠진 설명은 가람에게 다시 묻는다."
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "rel",
+      "1",
+      0,
+      "who"
+    ],
+    "before": "player",
+    "after": "yunseo"
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "rel",
+      "1",
+      0,
+      "line"
+    ],
+    "before": "짧게 말하는 건 원래 습관인가요?",
+    "after": "제 보고가 짧아야 한다는 말이 좀 무서웠나요?"
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "rel",
+      "1",
+      1,
+      "who"
+    ],
+    "before": "yunseo",
+    "after": "player"
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "rel",
+      "1",
+      1,
+      "line"
+    ],
+    "before": "길게 하면 제 점심 얘기가 섞여요.",
+    "after": "빼면 안 되는 것까지 줄일까 봐 걱정했어요."
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "rel",
+      "1",
+      2,
+      "who"
+    ],
+    "before": "player",
+    "after": "yunseo"
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "rel",
+      "1",
+      2,
+      "line"
+    ],
+    "before": "오늘 점심은 뭐였는데요?",
+    "after": "필요한 내용을 빼라는 뜻은 아니었어요. 제가 설명을 덜 했군요."
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "rel",
+      "1",
+      3,
+      "who"
+    ],
+    "before": "yunseo",
+    "after": "player"
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "rel",
+      "1",
+      3,
+      "line"
+    ],
+    "before": "그 질문엔 길게 답해도 되겠네요.",
+    "after": "무엇을 남겨야 하는지 모르면 다시 여쭤보겠습니다."
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "rel",
+      "1",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "yunseo",
+      "line": "좋아요. 사람 이름이나 맡은 일을 지우면서 줄이지는 맙시다."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "rel",
+      "1",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "읽는 분이 알아볼 수 있는지도 확인하겠습니다."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "rel",
+      "2",
+      0,
+      "line"
+    ],
+    "before": "신입 때 받은 편지를 간직하고 있어요.",
+    "after": "아들이 오늘 먹은 밥 사진을 보내 왔어요."
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "rel",
+      "2",
+      1,
+      "line"
+    ],
+    "before": "아직 읽어 보세요?",
+    "after": "과장님도 답장을 보내세요?"
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "rel",
+      "2",
+      2,
+      "line"
+    ],
+    "before": "오늘도 잘 먹고 쉬라는 말이 있어요.",
+    "after": "저는 잘 먹어라 한 줄만 보내요. 그런데 하루 씨는 잘 들었다는 말도 써 보래요."
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "rel",
+      "2",
+      3,
+      "line"
+    ],
+    "before": "짧은 말인데 오래 힘이 되셨겠어요.",
+    "after": "사진을 보셨다는 게 더 잘 전해지겠네요."
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "rel",
+      "2",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "yunseo",
+      "line": "그래서 오늘은 반찬 하나를 물어봤어요. 답장이 길어졌더군요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "rel",
+      "2",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "짧게 쓰는 것보다 대화가 이어지는 게 좋을 때도 있네요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "rel",
+      "3",
+      0,
+      "line"
+    ],
+    "before": "이번 분기에 가장 기억나는 일이 뭔가요?",
+    "after": "오늘은 고맙다는 말을 조금 더 붙이려고요."
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "rel",
+      "3",
+      1,
+      "line"
+    ],
+    "before": "첫날에 제 이름을 불러 주셨던 게 기억나요.",
+    "after": "어떤 말씀이요?"
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "rel",
+      "3",
+      2,
+      "line"
+    ],
+    "before": "그 인사가 기억에 남았다니 저도 기쁘네요.",
+    "after": "신입이라 낯설 텐데 질문을 숨기지 않고 끝까지 맡아 줘서 고맙습니다."
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "rel",
+      "3",
+      3,
+      "line"
+    ],
+    "before": "다음 분기에도 먼저 인사드릴게요.",
+    "after": "그렇게 말씀해 주시니 어떤 점을 봐 주셨는지 알겠어요."
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "rel",
+      "3",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "yunseo",
+      "line": "다음 분기에도 궁금한 건 물어봐 주세요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "yunseo",
+      "rel",
+      "3",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "네. 함께 일한 분들도 기억하겠습니다."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "haru",
+      "profile",
+      "personality"
+    ],
+    "before": "서로 모르는 사람을 자연스럽게 연결한다.",
+    "after": "요청과 답변을 전할 때 담당자 이름을 확인한다. 부탁을 바로 받아 주려다 자기 일정이 겹치는 날이 있다."
+  },
+  {
+    "path": [
+      "characters",
+      "haru",
+      "profile",
+      "likes"
+    ],
+    "before": "손편지와 처음 만난 사람의 이름.",
+    "after": "짧은 손편지, 아버지에게 보내는 엽서, 다른 부서 휴게실에서 나누는 차."
+  },
+  {
+    "path": [
+      "characters",
+      "haru",
+      "profile",
+      "dislikes"
+    ],
+    "before": "답변을 보내 준 담당자에게 감사 인사를 빼먹는 일.",
+    "after": "답변한 사람의 이름을 빼먹거나 확인하지 않은 완료 날짜를 먼저 약속하는 일."
+  },
+  {
+    "path": [
+      "characters",
+      "haru",
+      "profile",
+      "relations",
+      "miru"
+    ],
+    "before": "창구에서 다른 부서로 문의할 때 자주 함께하는 동료.",
+    "after": "여러 부서에 걸친 질문의 문의처를 함께 확인한다. 미루는 하루가 무리한 약속을 하면 다시 묻는다."
+  },
+  {
+    "path": [
+      "characters",
+      "haru",
+      "profile",
+      "relations",
+      "jaehun"
+    ],
+    "before": "정보화팀 요청으로 자주 만나는 동료.",
+    "after": "정보화팀 요청을 전달하며 자주 만난다. 재훈에게 받은 빠른 설명은 상대 부서에 맞게 다시 풀어 쓴다."
+  },
+  {
+    "path": [
+      "characters",
+      "haru",
+      "rel",
+      "1",
+      0,
+      "line"
+    ],
+    "before": "서류부터 드리느라 인사가 늦었네요.",
+    "after": "서류를 전할 때 업무 얘기만 했네요."
+  },
+  {
+    "path": [
+      "characters",
+      "haru",
+      "rel",
+      "1",
+      1,
+      "line"
+    ],
+    "before": "자주 오셔서 얼굴은 벌써 익숙해요.",
+    "after": "요청을 받을 때 성함은 들었어요."
+  },
+  {
+    "path": [
+      "characters",
+      "haru",
+      "rel",
+      "1",
+      2,
+      "line"
+    ],
+    "before": "그럼 오늘은 제대로 소개할게요. 임하루예요.",
+    "after": "저는 각 부서의 요청과 답변을 전해요. 내용을 모르면 바로 확인하고요."
+  },
+  {
+    "path": [
+      "characters",
+      "haru",
+      "rel",
+      "1",
+      3,
+      "line"
+    ],
+    "before": "임하루 주무관님, 반갑습니다.",
+    "after": "부탁을 전하는 것도 꽤 일이겠네요."
+  },
+  {
+    "path": [
+      "characters",
+      "haru",
+      "rel",
+      "1",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "haru",
+      "line": "그래서 오늘은 이름부터 말씀드렸어요. 서류 말고 사람도 기억해 주세요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "haru",
+      "rel",
+      "1",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "네. 다음에 오시면 먼저 인사드릴게요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "haru",
+      "rel",
+      "2",
+      2,
+      "line"
+    ],
+    "before": "네. 서류를 보낼 때 짧게 인사도 적는 편이에요.",
+    "after": "아버지께 엽서를 써요. 어디서 일하는지보다 점심을 누구랑 먹었는지 궁금해하시거든요."
+  },
+  {
+    "path": [
+      "characters",
+      "haru",
+      "rel",
+      "2",
+      3,
+      "line"
+    ],
+    "before": "오늘 회신에는 제 안부도 넣어 주세요.",
+    "after": "오늘은 같이 차 마셨다고 쓰셔도 되겠네요."
+  },
+  {
+    "path": [
+      "characters",
+      "haru",
+      "rel",
+      "2",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "haru",
+      "line": "좋아요. 이번 엽서는 업무 얘기가 조금 줄겠네요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "haru",
+      "rel",
+      "2",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "대신 차가 식기 전에 드세요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "haru",
+      "rel",
+      "3",
+      0,
+      "line"
+    ],
+    "before": "다음 분기엔 제가 안부를 물어도 되죠?",
+    "after": "이번 요청은 답변 시간을 확인한 뒤에 전달했어요."
+  },
+  {
+    "path": [
+      "characters",
+      "haru",
+      "rel",
+      "3",
+      1,
+      "line"
+    ],
+    "before": "요청이 없어도 오셔도 돼요.",
+    "after": "예전에는 먼저 약속하셨나요?"
+  },
+  {
+    "path": [
+      "characters",
+      "haru",
+      "rel",
+      "3",
+      2,
+      "line"
+    ],
+    "before": "그렇게 말씀해 주시니 반갑네요.",
+    "after": "도와주고 싶어서 오늘 중이라고 했다가 일정이 겹친 적이 있어요. 미루 씨가 말려 줬죠."
+  },
+  {
+    "path": [
+      "characters",
+      "haru",
+      "rel",
+      "3",
+      3,
+      "line"
+    ],
+    "before": "다음에 오시면 같이 차라도 마셔요.",
+    "after": "저도 언제까지 할 수 있는지 먼저 말씀드릴게요."
+  },
+  {
+    "path": [
+      "characters",
+      "haru",
+      "rel",
+      "3",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "haru",
+      "line": "고마워요. 무리하지 않고 계속 함께하려고요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "haru",
+      "rel",
+      "3",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "요청이 없는 날에도 차 마시러 오세요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "yeoreum",
+      "profile",
+      "personality"
+    ],
+    "before": "낯선 절차 앞에서도 차분히 질문한다.",
+    "after": "들은 설명을 자기 말로 다시 확인한다. 오래 일한 가게의 영업시간이 바뀐 뒤 생활 일정도 다시 정리하고 있다."
+  },
+  {
+    "path": [
+      "characters",
+      "yeoreum",
+      "profile",
+      "likes"
+    ],
+    "before": "산책과 끝까지 들어 주는 설명.",
+    "after": "동생과 나누는 빵, 쉬는 날 동네 산책, 질문할 시간을 남겨 주는 설명."
+  },
+  {
+    "path": [
+      "characters",
+      "yeoreum",
+      "profile",
+      "dislikes"
+    ],
+    "before": "사정을 짐작해 대신 결정하는 말.",
+    "after": "짧은 이야기만 듣고 가족이나 생활 형편을 대신 판단하는 말."
+  },
+  {
+    "path": [
+      "characters",
+      "yeoreum",
+      "profile",
+      "relations",
+      "miru"
+    ],
+    "before": "질문을 편하게 받아 주는 주무관.",
+    "after": "처음 방문했을 때 말을 재촉하지 않은 담당자. 모르는 질문도 차례로 말할 수 있었다."
+  },
+  {
+    "path": [
+      "characters",
+      "yeoreum",
+      "profile",
+      "relations",
+      "sora"
+    ],
+    "before": "재방문의 인사를 기억하는 주무관.",
+    "after": "여름의 이름과 재방문을 기억해 준 주무관. 지난번 질문부터 다시 확인해 준다."
+  },
+  {
+    "path": [
+      "characters",
+      "yeoreum",
+      "rel",
+      "1",
+      0,
+      "line"
+    ],
+    "before": "처음 왔을 때 문 앞에서 잠깐 망설였어요.",
+    "after": "처음에는 문 앞에서 질문을 몇 번 읽었어요."
+  },
+  {
+    "path": [
+      "characters",
+      "yeoreum",
+      "rel",
+      "1",
+      1,
+      "line"
+    ],
+    "before": "처음 오시면 긴장되죠. 잘 오셨어요.",
+    "after": "잊을까 봐 걱정되셨나요?"
+  },
+  {
+    "path": [
+      "characters",
+      "yeoreum",
+      "rel",
+      "1",
+      2,
+      "line"
+    ],
+    "before": "오늘은 주무관님이 계셔서 좀 마음이 놓였어요.",
+    "after": "네. 가게 시간이 바뀌어서 생활도 좀 달라졌는데 어디부터 설명할지 모르겠더라고요."
+  },
+  {
+    "path": [
+      "characters",
+      "yeoreum",
+      "rel",
+      "1",
+      3,
+      "line"
+    ],
+    "before": "다시 오시면 제가 먼저 인사할게요.",
+    "after": "말씀하실 수 있는 것부터 하나씩 여쭤보세요."
+  },
+  {
+    "path": [
+      "characters",
+      "yeoreum",
+      "rel",
+      "1",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "yeoreum",
+      "line": "오늘은 그렇게 해 볼게요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "yeoreum",
+      "rel",
+      "1",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "궁금한 내용과 문의처를 같이 확인하겠습니다."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "yeoreum",
+      "rel",
+      "2",
+      0,
+      "line"
+    ],
+    "before": "집에 가는 길에 작은 빵집이 있어요.",
+    "after": "동생이 오는 길에 빵을 사 오라고 했어요."
+  },
+  {
+    "path": [
+      "characters",
+      "yeoreum",
+      "rel",
+      "2",
+      1,
+      "line"
+    ],
+    "before": "오늘도 들르시나요?",
+    "after": "두 분이 같이 드시나요?"
+  },
+  {
+    "path": [
+      "characters",
+      "yeoreum",
+      "rel",
+      "2",
+      2,
+      "line"
+    ],
+    "before": "마음이 가벼운 날엔 하나 사 가요.",
+    "after": "네. 요즘은 퇴근 시간이 달라서 저녁을 따로 먹거든요. 빵 먹을 때 잠깐 얘기해요."
+  },
+  {
+    "path": [
+      "characters",
+      "yeoreum",
+      "rel",
+      "2",
+      3,
+      "line"
+    ],
+    "before": "오늘도 맛있는 빵 하나 사 가세요.",
+    "after": "오늘 들으신 설명도 같이 보실 수 있겠네요."
+  },
+  {
+    "path": [
+      "characters",
+      "yeoreum",
+      "rel",
+      "2",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "yeoreum",
+      "line": "제가 먼저 정리한 뒤에 필요한 것만 같이 보려고요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "yeoreum",
+      "rel",
+      "2",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "본인이 궁금한 내용부터 확인하시면 됩니다."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "yeoreum",
+      "rel",
+      "3",
+      0,
+      "line"
+    ],
+    "before": "이젠 모르는 게 있으면 바로 물어볼 수 있어요.",
+    "after": "이제 질문을 적을 때 제일 궁금한 것부터 써요."
+  },
+  {
+    "path": [
+      "characters",
+      "yeoreum",
+      "rel",
+      "3",
+      1,
+      "line"
+    ],
+    "before": "궁금한 건 편하게 말씀해 주세요.",
+    "after": "처음보다 묻기가 편해지셨나요?"
+  },
+  {
+    "path": [
+      "characters",
+      "yeoreum",
+      "rel",
+      "3",
+      2,
+      "line"
+    ],
+    "before": "다음에 와도 이렇게 편하게 여쭤볼게요.",
+    "after": "네. 모르는 걸 전부 한 번에 해결해야 하는 줄 알았어요."
+  },
+  {
+    "path": [
+      "characters",
+      "yeoreum",
+      "rel",
+      "3",
+      3,
+      "line"
+    ],
+    "before": "네. 오시면 편하게 말씀해 주세요.",
+    "after": "확인할 곳이 다르면 나눠서 물어보셔도 돼요."
+  },
+  {
+    "path": [
+      "characters",
+      "yeoreum",
+      "rel",
+      "3",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "yeoreum",
+      "line": "이번에는 제가 이해한 내용을 먼저 말씀드릴게요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "yeoreum",
+      "rel",
+      "3",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "네. 다르게 이해한 부분이 있는지 함께 확인해요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "jio",
+      "profile",
+      "personality"
+    ],
+    "before": "현재 상황을 알고 싶어 꼼꼼히 묻는다.",
+    "after": "접수 뒤 무엇을 확인할 수 있는지 차근차근 묻는다. 교대근무 시간을 맞추며 구청에 올 시간을 미리 정한다."
+  },
+  {
+    "path": [
+      "characters",
+      "jio",
+      "profile",
+      "likes"
+    ],
+    "before": "산책과 처리 과정을 차근차근 알려 주는 설명.",
+    "after": "출근 전 짧은 산책, 형과 정리하는 일정표, 다음 단계를 적어 둔 메모."
+  },
+  {
+    "path": [
+      "characters",
+      "jio",
+      "profile",
+      "dislikes"
+    ],
+    "before": "질문을 귀찮아하는 태도.",
+    "after": "확인되지 않은 처리 날짜를 단정하거나 같은 질문이라고 듣지 않는 태도."
+  },
+  {
+    "path": [
+      "characters",
+      "jio",
+      "profile",
+      "relations",
+      "miru"
+    ],
+    "before": "접수 이후의 질문을 들어 주는 주무관.",
+    "after": "접수 뒤 문의도 따로 할 수 있다고 설명한 주무관. 지오의 근무시간을 고려해 질문을 듣는다."
+  },
+  {
+    "path": [
+      "characters",
+      "jio",
+      "profile",
+      "relations",
+      "haru"
+    ],
+    "before": "다른 부서 담당자를 안내해 준 주무관.",
+    "after": "부서 간 문의는 답변을 확인한 뒤 전달한다고 알려 준 주무관."
+  },
+  {
+    "path": [
+      "characters",
+      "jio",
+      "rel",
+      "1",
+      0,
+      "line"
+    ],
+    "before": "기다릴 때 저는 복도를 걷곤 해요.",
+    "after": "구청에 오는 날은 근무표에 미리 표시해 둬요."
+  },
+  {
+    "path": [
+      "characters",
+      "jio",
+      "rel",
+      "1",
+      1,
+      "line"
+    ],
+    "before": "오늘은 많이 기다리셨나요?",
+    "after": "시간을 맞추기 어려우신가요?"
+  },
+  {
+    "path": [
+      "characters",
+      "jio",
+      "rel",
+      "1",
+      2,
+      "line"
+    ],
+    "before": "조금요. 그래도 인사하니 마음이 놓여요.",
+    "after": "교대근무라 매주 달라요. 그래서 왔을 때 뭘 물을지 적어 두고요."
+  },
+  {
+    "path": [
+      "characters",
+      "jio",
+      "rel",
+      "1",
+      3,
+      "line"
+    ],
+    "before": "다음에 오시면 제가 먼저 인사드릴게요.",
+    "after": "오늘 확인하고 싶은 것부터 말씀해 주세요."
+  },
+  {
+    "path": [
+      "characters",
+      "jio",
+      "rel",
+      "1",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "jio",
+      "line": "신청하고 나서 어디에 연락할 수 있는지가 궁금해요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "jio",
+      "rel",
+      "1",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "문의 내용을 보고 담당을 확인하겠습니다."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "jio",
+      "rel",
+      "2",
+      0,
+      "line"
+    ],
+    "before": "걷다가 동네 이름을 새로 알았어요.",
+    "after": "형이 제 근무표를 보고 구청 갈 시간을 같이 골라 줬어요."
+  },
+  {
+    "path": [
+      "characters",
+      "jio",
+      "rel",
+      "2",
+      1,
+      "line"
+    ],
+    "before": "늘 지나던 곳이었나요?",
+    "after": "설명 들으신 내용도 같이 보시나요?"
+  },
+  {
+    "path": [
+      "characters",
+      "jio",
+      "rel",
+      "2",
+      2,
+      "line"
+    ],
+    "before": "네. 알고 나니 길이 좀 다르게 보여요.",
+    "after": "메모만요. 처음엔 신청했으니 기다리기만 하면 되는 줄 알았거든요."
+  },
+  {
+    "path": [
+      "characters",
+      "jio",
+      "rel",
+      "2",
+      3,
+      "line"
+    ],
+    "before": "저도 익숙한 길을 다시 봐야겠어요.",
+    "after": "궁금한 건 접수 뒤에도 물어보실 수 있어요."
+  },
+  {
+    "path": [
+      "characters",
+      "jio",
+      "rel",
+      "2",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "jio",
+      "line": "기다리는 동안 확인할 수 있는 게 뭔지 알고 싶어요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "jio",
+      "rel",
+      "2",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "확인된 내용과 아직 모르는 내용을 나눠서 여쭤보세요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "jio",
+      "rel",
+      "3",
+      0,
+      "line"
+    ],
+    "before": "다음에 오면 주무관님도 잘 지내셨는지 여쭤볼게요.",
+    "after": "오늘은 처리 날짜를 꼭 정해 달라는 질문은 안 하려고요."
+  },
+  {
+    "path": [
+      "characters",
+      "jio",
+      "rel",
+      "3",
+      1,
+      "line"
+    ],
+    "before": "언제든 편하게 인사해 주세요.",
+    "after": "대신 무엇이 궁금하세요?"
+  },
+  {
+    "path": [
+      "characters",
+      "jio",
+      "rel",
+      "3",
+      2,
+      "line"
+    ],
+    "before": "문의가 있을 때만 말 걸어야 하는 줄 알았어요.",
+    "after": "아직 정해지지 않았으면 어디서 다음 소식을 확인하는지요."
+  },
+  {
+    "path": [
+      "characters",
+      "jio",
+      "rel",
+      "3",
+      3,
+      "line"
+    ],
+    "before": "지나가다 인사해 주셔도 반갑죠.",
+    "after": "그 문의에 맞는 담당을 같이 찾아보겠습니다."
+  },
+  {
+    "path": [
+      "characters",
+      "jio",
+      "rel",
+      "3",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "jio",
+      "line": "모른다는 답도 이유를 들으니 덜 답답하더라고요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "jio",
+      "rel",
+      "3",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "확인되지 않은 날짜를 약속하지 않고 설명드릴게요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "nuri",
+      "profile",
+      "personality"
+    ],
+    "before": "질문을 적어 오며 배운 것을 오래 기억한다.",
+    "after": "집에서 질문을 적어 왔다가 설명을 들으며 다시 고친다. 이사한 동네에서 혼자 할 수 있는 일을 하나씩 늘리는 중이다."
+  },
+  {
+    "path": [
+      "characters",
+      "nuri",
+      "profile",
+      "likes"
+    ],
+    "before": "작은 수첩과 천천히 나누는 대화.",
+    "after": "작은 수첩, 딸과 서로 알려 주는 동네 소식, 천천히 살펴보는 산책길."
+  },
+  {
+    "path": [
+      "characters",
+      "nuri",
+      "profile",
+      "dislikes"
+    ],
+    "before": "질문하는 속도를 재촉하는 말.",
+    "after": "본인에게 묻지 않고 가족에게만 설명하거나 질문하는 속도를 재촉하는 말."
+  },
+  {
+    "path": [
+      "characters",
+      "nuri",
+      "profile",
+      "relations",
+      "miru"
+    ],
+    "before": "말할 속도를 맞춰 주는 주무관.",
+    "after": "누리가 수첩을 읽을 시간을 기다려 준 주무관. 먼저 어떤 문의인지 물어본다."
+  },
+  {
+    "path": [
+      "characters",
+      "nuri",
+      "profile",
+      "relations",
+      "sora"
+    ],
+    "before": "낯선 날의 긴장을 풀어 준 주무관.",
+    "after": "처음 온 날 긴장을 풀어 준 주무관. 적어 온 질문을 스스로 설명하도록 기다린다."
+  },
+  {
+    "path": [
+      "characters",
+      "nuri",
+      "rel",
+      "1",
+      0,
+      "line"
+    ],
+    "before": "이 수첩은 질문을 잊지 않으려고 샀어요.",
+    "after": "이사하고 처음 가는 곳이 많아서 수첩을 샀어요."
+  },
+  {
+    "path": [
+      "characters",
+      "nuri",
+      "rel",
+      "1",
+      1,
+      "line"
+    ],
+    "before": "첫 장에는 뭐가 적혀 있나요?",
+    "after": "구청에 올 때도 적어 오셨나요?"
+  },
+  {
+    "path": [
+      "characters",
+      "nuri",
+      "rel",
+      "1",
+      2,
+      "line"
+    ],
+    "before": "구청에 가면 인사부터, 라고요.",
+    "after": "첫 장에 인사부터라고 써 뒀어요. 긴장하면 질문만 읽을까 봐요."
+  },
+  {
+    "path": [
+      "characters",
+      "nuri",
+      "rel",
+      "1",
+      3,
+      "line"
+    ],
+    "before": "적어 오신 대로 오늘 인사부터 하셨네요.",
+    "after": "오늘은 인사도 잘하셨고 질문도 말씀하셨어요."
+  },
+  {
+    "path": [
+      "characters",
+      "nuri",
+      "rel",
+      "1",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "nuri",
+      "line": "다음 장에는 답을 적을 자리를 남겨야겠네요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "nuri",
+      "rel",
+      "1",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "천천히 적으셔도 괜찮아요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "nuri",
+      "rel",
+      "2",
+      0,
+      "line"
+    ],
+    "before": "집에서 수첩을 다시 읽었어요.",
+    "after": "딸이 같이 오겠다고 했는데 오늘은 혼자 와 봤어요."
+  },
+  {
+    "path": [
+      "characters",
+      "nuri",
+      "rel",
+      "2",
+      1,
+      "line"
+    ],
+    "before": "질문이 더 생기셨나요?",
+    "after": "직접 확인하고 싶으셨군요."
+  },
+  {
+    "path": [
+      "characters",
+      "nuri",
+      "rel",
+      "2",
+      2,
+      "line"
+    ],
+    "before": "안부를 물어볼 칸도 만들었어요.",
+    "after": "네. 딸이 모르는 동네 길은 제가 알려 주거든요. 구청 일도 조금씩 익혀 보려고요."
+  },
+  {
+    "path": [
+      "characters",
+      "nuri",
+      "rel",
+      "2",
+      3,
+      "line"
+    ],
+    "before": "제 안부도 물어보시려고요? 고맙습니다.",
+    "after": "이번에 들으신 내용은 어떻게 적으실까요?"
+  },
+  {
+    "path": [
+      "characters",
+      "nuri",
+      "rel",
+      "2",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "nuri",
+      "line": "누구에게 무엇을 물었는지부터 적을게요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "nuri",
+      "rel",
+      "2",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "집에서 다시 읽을 때 찾기 편하겠네요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "nuri",
+      "rel",
+      "3",
+      0,
+      "line"
+    ],
+    "before": "처음엔 질문이 많으면 미안했어요.",
+    "after": "처음에는 질문이 많으면 미안했어요."
+  },
+  {
+    "path": [
+      "characters",
+      "nuri",
+      "rel",
+      "3",
+      1,
+      "line"
+    ],
+    "before": "궁금한 건 물어보셔도 돼요. 너무 미안해하지 마세요.",
+    "after": "지금은 어떠세요?"
+  },
+  {
+    "path": [
+      "characters",
+      "nuri",
+      "rel",
+      "3",
+      2,
+      "line"
+    ],
+    "before": "그럼 다음에도 하나씩 여쭤볼게요.",
+    "after": "집에서 읽다가 헷갈리면 다시 물어볼 것도 적어요. 다 외울 필요는 없더라고요."
+  },
+  {
+    "path": [
+      "characters",
+      "nuri",
+      "rel",
+      "3",
+      3,
+      "line"
+    ],
+    "before": "저도 하나씩 잘 들어 보겠습니다.",
+    "after": "확인하고 싶은 것부터 하나씩 말씀해 주세요."
+  },
+  {
+    "path": [
+      "characters",
+      "nuri",
+      "rel",
+      "3",
+      4
+    ],
+    "before": null,
+    "after": {
+      "who": "nuri",
+      "line": "다음에는 제가 찾아온 길도 알려 드릴게요."
+    }
+  },
+  {
+    "path": [
+      "characters",
+      "nuri",
+      "rel",
+      "3",
+      5
+    ],
+    "before": null,
+    "after": {
+      "who": "player",
+      "line": "질문 말고 동네 이야기도 반갑습니다."
+    }
+  },
+  {
+    "path": [
+      "departments",
+      "recycling",
+      "contact",
+      "personality"
+    ],
+    "before": "쓰던 물건을 다시 쓸 방법을 찾는 걸 좋아한다.",
+    "after": "쓰던 통도 연필통으로 다시 쓴다. 물건을 버리기 전에 어느 부분을 쓸 수 있는지 살핀다."
+  },
+  {
+    "path": [
+      "departments",
+      "waterworks",
+      "contact",
+      "personality"
+    ],
+    "before": "작은 불편도 흘려듣지 않고 차분히 확인하는 담당자.",
+    "after": "작은 불편도 메모하며 확인한다. 설명할 때는 도면의 같은 곳을 함께 보도록 기다린다."
+  },
+  {
+    "path": [
+      "departments",
+      "traffic",
+      "contact",
+      "personality"
+    ],
+    "before": "서로 다른 사정을 고르게 들으려 한다.",
+    "after": "순서를 설명하기 전에 서로 다른 차량의 사정을 듣는다. 쉬는 시간이 밀린 동료도 챙긴다."
+  },
+  {
+    "path": [
+      "departments",
+      "land",
+      "contact",
+      "personality"
+    ],
+    "before": "오래된 기록에 남은 이름을 소중히 여긴다.",
+    "after": "오래된 도면의 지명과 작성일을 먼저 읽는다. 책갈피에도 그 이름을 적어 두는 편이다."
+  },
+  {
+    "path": [
+      "departments",
+      "disaster",
+      "contact",
+      "personality"
+    ],
+    "before": "별일 없는 날에도 구호물자를 꼼꼼히 챙긴다.",
+    "after": "별일 없는 날 창고 위치와 수량을 확인한다. 물자뿐 아니라 일하는 사람의 휴식도 챙긴다."
+  },
+  {
+    "path": [
+      "departments",
+      "it",
+      "contact",
+      "personality"
+    ],
+    "before": "새 시도를 즐기며 누구든 편하게 묻게 한다.",
+    "after": "새 방법을 시험한 기록을 남긴다. 아는 용어라도 상대가 익숙한지 먼저 묻는다."
+  },
+  {
+    "path": [
+      "departments",
+      "records",
+      "contact",
+      "personality"
+    ],
+    "before": "자료를 받을 때 누가 어떤 목적으로 만들었는지도 살핀다.",
+    "after": "자료를 누가 어떤 목적으로 만들었는지 살핀다. 짧은 감사 쪽지도 따로 모아 둔다."
+  },
+  {
+    "path": [
+      "departments",
+      "culture",
+      "contact",
+      "personality"
+    ],
+    "before": "행사를 준비하는 사람들도 즐거웠으면 한다.",
+    "after": "행사 배치만큼 준비하는 사람들의 동선도 살핀다. 일이 끝나면 같이 축제를 보자고 한다."
+  },
+  {
+    "path": [
+      "departments",
+      "river",
+      "contact",
+      "personality"
+    ],
+    "before": "비 오는 날에도 침착하게 안부를 챙긴다.",
+    "after": "비가 오면 시설 기록과 동료의 안부를 함께 확인한다. 연락할 때는 확인한 내용을 차분히 전한다."
+  },
+  {
+    "path": [
+      "departments",
+      "parks",
+      "contact",
+      "personality"
+    ],
+    "before": "쉬는 공간을 돌보며 동료의 쉼도 챙긴다.",
+    "after": "점심에 공원 길을 걷는 걸 좋아한다. 공간을 돌보는 동료도 쉴 곳이 필요하다고 생각한다."
+  },
+  {
+    "path": [
+      "departments",
+      "building",
+      "contact",
+      "personality"
+    ],
+    "before": "작은 걱정도 흘려듣지 않는 담당자.",
+    "after": "작은 걱정도 기록해 다시 확인한다. 아직 확인하지 않은 것을 괜찮다고 먼저 말하지 않는다."
+  },
+  {
+    "path": [
+      "decor",
+      "plant",
+      "dex"
+    ],
+    "before": "모니터 옆에 놓는 작은 화분. 새 잎을 보는 재미가 있다.",
+    "after": "책상에 놓는 작은 화분. 물 주는 날을 메모해 두며 돌볼 수 있다."
+  },
+  {
+    "path": [
+      "decor",
+      "memo",
+      "dex"
+    ],
+    "before": "내일 할 일을 적은 메모를 꽂아 두는 홀더.",
+    "after": "질문과 답을 따로 적은 메모를 꽂아 두는 홀더."
+  },
+  {
+    "path": [
+      "decor",
+      "photo",
+      "dex"
+    ],
+    "before": "가족사진을 넣어 모니터 옆에 두는 액자.",
+    "after": "가족사진을 넣는 액자. 바쁜 날에도 잠깐 고개를 돌려 볼 수 있다."
+  },
+  {
+    "path": [
+      "decor",
+      "calendar",
+      "dex"
+    ],
+    "before": "업무 일정과 쉬는 날을 적어 두는 달력.",
+    "after": "업무 일정과 쉬는 날을 나눠 적어 둘 수 있는 탁상 달력."
+  },
+  {
+    "path": [
+      "decor",
+      "books",
+      "dex"
+    ],
+    "before": "궁금한 것이 생길 때마다 펼쳐 보는 업무 참고서.",
+    "after": "필요한 업무 내용을 찾아보는 참고서. 외우기보다 다시 확인할 때 쓰기 좋다."
+  },
+  {
+    "path": [
+      "decor",
+      "snack",
+      "dex"
+    ],
+    "before": "뚜껑을 열면 동료들이 하나씩 집어 가는 간식 상자.",
+    "after": "함께 먹을 간식을 넣어 두는 상자. 쉬는 시간에 열기 좋다."
+  },
+  {
+    "path": [
+      "dex",
+      "tasks",
+      "compare",
+      "intro"
+    ],
+    "before": "원본과 제출 서류를 비교해 잘못 옮긴 항목을 찾는다.",
+    "after": "원본과 제출안을 나란히 읽고 값이 다른 곳을 찾는다. 확인한 뒤 틀린 부분을 고쳐 제출한다."
+  },
+  {
+    "path": [
+      "dex",
+      "tasks",
+      "sort",
+      "intro"
+    ],
+    "before": "조건에 맞는 자료를 골라 제출할 파일을 모은다.",
+    "after": "자료의 날짜·버전·승인 여부를 살펴 요청에 맞는 파일만 모은다."
+  },
+  {
+    "path": [
+      "dex",
+      "tasks",
+      "memory",
+      "intro"
+    ],
+    "before": "통화 내용을 메모해 담당자에게 전달한다.",
+    "after": "통화 내용을 듣고 요청자·문의 내용·담당을 메모한다. 기록을 보고 알맞게 전달한다."
+  },
+  {
+    "path": [
+      "dex",
+      "tasks",
+      "sequence",
+      "intro"
+    ],
+    "before": "처리 명령의 순서를 정해 반복 업무를 자동화한다.",
+    "after": "처리 명령을 순서대로 놓는다. 같은 흐름을 다시 실행해도 막히지 않도록 구성한다."
+  },
+  {
+    "path": [
+      "dex",
+      "tasks",
+      "route",
+      "intro"
+    ],
+    "before": "문의 내용을 읽고 알맞은 담당부서를 안내한다.",
+    "after": "문의 내용을 읽고 알맞은 담당을 고른다. 안내 완료는 문의처를 찾았다는 뜻이다."
+  },
+  {
+    "path": [
+      "dex",
+      "tasks",
+      "owner",
+      "intro"
+    ],
+    "before": "공개된 단서를 보고 서류와 주인을 짝짓는다.",
+    "after": "잉크 색·접수 시간 등의 단서를 함께 읽고 각 서류와 주인을 짝짓는다."
+  },
+  {
+    "path": [
+      "dex",
+      "tasks",
+      "brief",
+      "intro"
+    ],
+    "before": "핵심 내용은 남기고 문장 카드를 합쳐 보고서를 한 장으로 줄인다.",
+    "after": "필수 내용을 남긴 채 문장 카드를 합친다. 읽을 내용을 지우지 않고 한 장으로 정리한다."
+  },
+  {
+    "path": [
+      "endings",
+      0,
+      "epilogue",
+      1
+    ],
+    "before": "나소라: 오늘도 수고했어요.",
+    "after": "나소라: 오늘은 자기 몫까지 챙기세요."
+  },
+  {
+    "path": [
+      "endings",
+      0,
+      "epilogue",
+      2
+    ],
+    "before": "나는 첫 출근 기록을 다시 읽는다.",
+    "after": "나는 첫날에 적어 둔 질문과 그 옆의 답을 읽는다."
+  },
+  {
+    "path": [
+      "endings",
+      0,
+      "epilogue",
+      3
+    ],
+    "before": "다음 분기에는 첫날처럼 긴장하지 않아도 될 것 같다.",
+    "after": "다음에 모르는 일이 생겨도 함께 물어볼 사람이 있다."
+  },
+  {
+    "path": [
+      "endings",
+      1,
+      "epilogue",
+      0
+    ],
+    "before": "백단비가 새 엽서를 꺼낸다.",
+    "after": "백단비가 새 엽서에 날짜를 적는다."
+  },
+  {
+    "path": [
+      "endings",
+      1,
+      "epilogue",
+      1
+    ],
+    "before": "백단비: 다음 분기에도 잘 부탁해요.",
+    "after": "백단비: 이번에는 답장을 오래 미루지 않으려고요."
+  },
+  {
+    "path": [
+      "endings",
+      1,
+      "epilogue",
+      2
+    ],
+    "before": "나는 이름을 적고 짧게 웃는다.",
+    "after": "나는 내 이름 옆에 함께 일한 동료들의 이름을 적는다."
+  },
+  {
+    "path": [
+      "endings",
+      1,
+      "epilogue",
+      3
+    ],
+    "before": "다음 분기에도 먼저 인사할 동료가 많다.",
+    "after": "다음 분기에도 먼저 인사할 얼굴이 많다."
+  },
+  {
+    "path": [
+      "endings",
+      2,
+      "epilogue",
+      0
+    ],
+    "before": "도재훈이 간식 상자를 연다.",
+    "after": "도재훈이 간식 상자를 책상 가운데 놓는다."
+  },
+  {
+    "path": [
+      "endings",
+      2,
+      "epilogue",
+      1
+    ],
+    "before": "도재훈: 이 시간은 줄이지 맙시다.",
+    "after": "도재훈: 설명은 천천히, 간식도 천천히 먹읍시다."
+  },
+  {
+    "path": [
+      "endings",
+      2,
+      "epilogue",
+      2
+    ],
+    "before": "나는 시험해 본 작업들을 적어 둔 노트를 덮는다.",
+    "after": "나는 시험해 본 작업을 적은 노트에 다음에 물어볼 것도 남긴다."
+  },
+  {
+    "path": [
+      "endings",
+      2,
+      "epilogue",
+      3
+    ],
+    "before": "다음 분기에도 함께 해 볼 일이 많다.",
+    "after": "빠르게 처리할 일과 함께 시간을 쓸 일을 조금 알게 됐다."
+  }
+]

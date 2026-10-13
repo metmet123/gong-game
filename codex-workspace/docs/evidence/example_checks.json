@@ -1,0 +1,202 @@
+{
+  "date": "2026-10-10",
+  "status": "PASS",
+  "count": 24,
+  "scope": "Independent arithmetic/constraint/witness checks of 05 planning examples. Not new game engines or UI tests. Production stage evaluation and authored 72-level validation remain planned.",
+  "examples": [
+    {
+      "stageId": "conveyor_e01",
+      "status": "PASS",
+      "checks": {
+        "expected_output": true
+      }
+    },
+    {
+      "stageId": "conveyor_n01",
+      "status": "PASS",
+      "checks": {
+        "classification": true
+      }
+    },
+    {
+      "stageId": "conveyor_h01",
+      "status": "PASS",
+      "checks": {
+        "bag_and_stamps": true
+      }
+    },
+    {
+      "stageId": "rules_e01",
+      "status": "PASS",
+      "checks": {
+        "original_wrong": true,
+        "edited_three_cases": true,
+        "locked_boss_unchanged": true
+      }
+    },
+    {
+      "stageId": "rules_n01",
+      "status": "PASS",
+      "checks": {
+        "OR_cases": true,
+        "OR_commutative": true
+      }
+    },
+    {
+      "stageId": "rules_h01",
+      "status": "PASS",
+      "checks": {
+        "six_public_cases": true,
+        "locked_priority": true
+      }
+    },
+    {
+      "stageId": "macro_e01",
+      "status": "PASS",
+      "checks": {
+        "sum300": true,
+        "sum100": true
+      }
+    },
+    {
+      "stageId": "macro_n01",
+      "status": "PASS",
+      "checks": {
+        "350": true,
+        "empty0": true,
+        "alternate100": true
+      }
+    },
+    {
+      "stageId": "macro_h01",
+      "status": "PASS",
+      "checks": {
+        "boss100_150": true,
+        "chief99": true,
+        "boundary98_100_101": true
+      }
+    },
+    {
+      "stageId": "owner_e01",
+      "status": "PASS",
+      "checks": {
+        "unique": true
+      }
+    },
+    {
+      "stageId": "owner_n01",
+      "status": "PASS",
+      "checks": {
+        "unique": true
+      }
+    },
+    {
+      "stageId": "owner_h01",
+      "status": "PASS",
+      "checks": {
+        "unique": true
+      }
+    },
+    {
+      "stageId": "approval_e01",
+      "status": "PASS",
+      "checks": {
+        "witness": true,
+        "alternate": true
+      }
+    },
+    {
+      "stageId": "approval_n01",
+      "status": "PASS",
+      "checks": {
+        "witness": true,
+        "alternate": true
+      }
+    },
+    {
+      "stageId": "approval_h01",
+      "status": "PASS",
+      "checks": {
+        "witness": true
+      }
+    },
+    {
+      "stageId": "archive_e01",
+      "status": "PASS",
+      "checks": {
+        "goals": true,
+        "push2": true
+      }
+    },
+    {
+      "stageId": "archive_n01",
+      "status": "PASS",
+      "checks": {
+        "goals": true,
+        "push4": true
+      }
+    },
+    {
+      "stageId": "archive_h01",
+      "status": "PASS",
+      "checks": {
+        "goals": true,
+        "push4": true,
+        "year2025": true,
+        "year2024": true
+      }
+    },
+    {
+      "stageId": "budget_e01",
+      "status": "PASS",
+      "checks": {
+        "witness": true,
+        "alternate": true
+      }
+    },
+    {
+      "stageId": "budget_n01",
+      "status": "PASS",
+      "checks": {
+        "witness": true,
+        "q3_4": true,
+        "alternate": true
+      }
+    },
+    {
+      "stageId": "budget_h01",
+      "status": "PASS",
+      "checks": {
+        "witness": true,
+        "q3_4_3_4": true,
+        "precedence": true
+      }
+    },
+    {
+      "stageId": "brief_e01",
+      "status": "PASS",
+      "checks": {
+        "plain": true,
+        "short": true
+      }
+    },
+    {
+      "stageId": "brief_n01",
+      "status": "PASS",
+      "checks": {
+        "summary1": true,
+        "summary2": true
+      }
+    },
+    {
+      "stageId": "brief_h01",
+      "status": "PASS",
+      "checks": {
+        "summary1": true,
+        "summary2": true,
+        "fact_order1": true,
+        "fact_order2": true
+      }
+    }
+  ]
+}

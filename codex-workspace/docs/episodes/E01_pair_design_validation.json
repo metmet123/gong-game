@@ -1,0 +1,206 @@
+{
+  "status": "passed",
+  "issues": [],
+  "geometry": [
+    {
+      "scene": "budget-start",
+      "width": 390,
+      "height": 844,
+      "pageHeight": 844,
+      "pageWidth": 390,
+      "boardHeight": 566,
+      "boardContent": 566,
+      "primaryBottom": 821
+    },
+    {
+      "scene": "budget-ready",
+      "width": 390,
+      "height": 844,
+      "pageHeight": 844,
+      "pageWidth": 390,
+      "boardHeight": 566,
+      "boardContent": 566,
+      "primaryBottom": 821
+    },
+    {
+      "scene": "document-start",
+      "width": 390,
+      "height": 844,
+      "pageHeight": 844,
+      "pageWidth": 390,
+      "boardHeight": 566,
+      "boardContent": 566,
+      "primaryBottom": 821
+    },
+    {
+      "scene": "document-picker",
+      "width": 390,
+      "height": 844,
+      "pageHeight": 844,
+      "pageWidth": 390,
+      "boardHeight": 566,
+      "boardContent": 566,
+      "primaryBottom": 821
+    },
+    {
+      "scene": "budget",
+      "width": 320,
+      "height": 740,
+      "pageHeight": 740,
+      "pageWidth": 320,
+      "boardHeight": 441,
+      "boardContent": 548,
+      "primaryBottom": 717
+    },
+    {
+      "scene": "document",
+      "width": 320,
+      "height": 740,
+      "pageHeight": 740,
+      "pageWidth": 320,
+      "boardHeight": 441,
+      "boardContent": 555,
+      "primaryBottom": 717
+    },
+    {
+      "scene": "document-open",
+      "width": 320,
+      "height": 740,
+      "pageHeight": 740,
+      "pageWidth": 320,
+      "boardHeight": 441,
+      "boardContent": 577,
+      "primaryBottom": 717
+    },
+    {
+      "scene": "budget",
+      "width": 390,
+      "height": 844,
+      "pageHeight": 844,
+      "pageWidth": 390,
+      "boardHeight": 566,
+      "boardContent": 566,
+      "primaryBottom": 821
+    },
+    {
+      "scene": "document",
+      "width": 390,
+      "height": 844,
+      "pageHeight": 844,
+      "pageWidth": 390,
+      "boardHeight": 566,
+      "boardContent": 566,
+      "primaryBottom": 821
+    },
+    {
+      "scene": "document-open",
+      "width": 390,
+      "height": 844,
+      "pageHeight": 844,
+      "pageWidth": 390,
+      "boardHeight": 566,
+      "boardContent": 566,
+      "primaryBottom": 821
+    },
+    {
+      "scene": "budget",
+      "width": 430,
+      "height": 932,
+      "pageHeight": 932,
+      "pageWidth": 430,
+      "boardHeight": 654,
+      "boardContent": 654,
+      "primaryBottom": 909
+    },
+    {
+      "scene": "document",
+      "width": 430,
+      "height": 932,
+      "pageHeight": 932,
+      "pageWidth": 430,
+      "boardHeight": 654,
+      "boardContent": 654,
+      "primaryBottom": 909
+    },
+    {
+      "scene": "document-open",
+      "width": 430,
+      "height": 932,
+      "pageHeight": 932,
+      "pageWidth": 430,
+      "boardHeight": 654,
+      "boardContent": 654,
+      "primaryBottom": 909
+    },
+    {
+      "scene": "budget",
+      "width": 768,
+      "height": 1024,
+      "pageHeight": 1024,
+      "pageWidth": 768,
+      "boardHeight": 619,
+      "boardContent": 619,
+      "primaryBottom": 926
+    },
+    {
+      "scene": "document",
+      "width": 768,
+      "height": 1024,
+      "pageHeight": 1024,
+      "pageWidth": 768,
+      "boardHeight": 619,
+      "boardContent": 619,
+      "primaryBottom": 926
+    },
+    {
+      "scene": "document-open",
+      "width": 768,
+      "height": 1024,
+      "pageHeight": 1024,
+      "pageWidth": 768,
+      "boardHeight": 619,
+      "boardContent": 619,
+      "primaryBottom": 926
+    },
+    {
+      "scene": "budget",
+      "width": 1440,
+      "height": 1000,
+      "pageHeight": 1000,
+      "pageWidth": 1440,
+      "boardHeight": 619,
+      "boardContent": 619,
+      "primaryBottom": 926
+    },
+    {
+      "scene": "document",
+      "width": 1440,
+      "height": 1000,
+      "pageHeight": 1000,
+      "pageWidth": 1440,
+      "boardHeight": 619,
+      "boardContent": 619,
+      "primaryBottom": 926
+    },
+    {
+      "scene": "document-open",
+      "width": 1440,
+      "height": 1000,
+      "pageHeight": 1000,
+      "pageWidth": 1440,
+      "boardHeight": 619,
+      "boardContent": 619,
+      "primaryBottom": 926
+    }
+  ],
+  "actualUserFunTest": false,
+  "checks": [
+    "budget allocation, quote and local shortage recovery",
+    "one-action transitions",
+    "field-first source picker and local error states",
+    "undo within each stage; no undo across completed stages",
+    "complete pair path",
+    "responsive viewport geometry",
+    "portable standalone HTML"
+  ]
+}

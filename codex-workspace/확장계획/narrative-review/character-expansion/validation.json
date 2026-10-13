@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "approvedChoices": [
+    "1B family/past/personal concerns",
+    "2A warm daily life and light humor",
+    "3B additional scenes"
+  ],
+  "characters": 12,
+  "supportingContacts": 11,
+  "relationshipScenes": 36,
+  "before": {
+    "morningLines": 46,
+    "eveningLines": 17,
+    "relationshipLines": 144
+  },
+  "after": {
+    "morningLines": 70,
+    "eveningLines": 68,
+    "relationshipLines": 216
+  },
+  "dialogueCharactersMax": 48,
+  "candidateSha256": "94ee0866a0950bcb8d29facdb7f50357fd0e7e2a0134ee8b28bb3b288f5fd440",
+  "checked": [
+    "schema except approved dialogue lengths preserved",
+    "IDs/unlocks/conditions/visit dates/proposals preserved; dialogue speakers validated",
+    "15-day news and mechanics retained",
+    "all handbook text matches canonical data",
+    "arrival dates respected",
+    "4 daily introduction/payoff arcs",
+    "candidate only narrative payload plus existing profile text disclosure changed"
+  ],
+  "limitations": [
+    "Mobile/browser text wrapping not tested",
+    "Not a full gameplay playthrough",
+    "Not publicly deployed"
+  ]
+}

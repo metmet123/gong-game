@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>묶음 4 시안 · 서가 빼내기</title>
+<style>
+:root{--bg:#1f2a1b;--panel:#2b3a25;--panel2:#34462d;--cream:#f4eedb;--paper:#fffaf0;--ink:#2c3628;--muted:#6b705c;--line:#c9bc94;--green:#3f5f3a;--leaf:#7fae6a;--gold:#d6a93c;--red:#b4472f;--blue:#3d5f9e;--wood:#8a6239}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:#e8e3cc;font:15px/1.65 "Malgun Gothic","Apple SD Gothic Neo",system-ui,sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:28px 16px 80px}
+h1{font-size:clamp(24px,5vw,32px);margin:0 0 6px;color:var(--cream);text-wrap:balance}
+h2{font-size:21px;margin:46px 0 10px;color:var(--cream);border-bottom:1px solid #46573c;padding-bottom:6px}
+h3{font-size:18px;margin:26px 0 6px;color:var(--gold)}
+h4{font-size:15px;margin:16px 0 4px;color:var(--cream)}
+p{margin:6px 0;max-width:80ch}
+.lead{color:#c9cdb6;max-width:76ch}
+.kick{font-size:12px;letter-spacing:.08em;color:var(--gold);font-weight:800}
+.note{background:#3a2a20;border-left:4px solid var(--gold);border-radius:8px;padding:10px 14px;margin:14px 0;color:#f0e2c8;max-width:84ch}
+.toc{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}.toc a{background:var(--panel2);color:var(--cream);text-decoration:none;border-radius:8px;padding:4px 10px;font-size:13px;font-weight:700}
+.tbl{overflow-x:auto;margin:10px 0}
+table{border-collapse:collapse;width:100%;min-width:620px;background:var(--panel);border-radius:8px;overflow:hidden;font-size:14px}
+th,td{padding:7px 10px;text-align:left;vertical-align:top;border-bottom:1px solid #3d4d35}
+th{background:var(--panel2);color:var(--cream);font-size:13px;white-space:nowrap}
+td b{color:var(--cream)}
+ul,ol{padding-left:22px;margin:6px 0}li{margin:3px 0}
+code,pre{font-family:Consolas,"D2Coding",monospace;font-size:13px}
+pre{background:#141c11;color:#d9e4c8;border-radius:8px;padding:10px 12px;overflow-x:auto;margin:8px 0;line-height:1.5}
+code{background:#141c11;border-radius:4px;padding:0 4px;color:#d9e4c8}
+.files li code{color:#f6e27a}
+/* 휴대폰 시안 */
+.phones{display:flex;gap:18px;overflow-x:auto;padding:6px 2px 12px}
+.ph{flex:0 0 300px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.ph .cap{font-size:13px;color:#c9cdb6;margin:0}.ph .cap b{color:var(--gold)}
+.phone{width:300px;height:600px;border:7px solid #11180e;border-radius:28px;overflow:hidden;background:#4b6744;color:var(--ink);font-size:12px;line-height:1.4;display:flex;flex-direction:column}
+.phone .bar{height:14px;background:#11180e;flex:0 0 auto}
+.scr{flex:1;overflow:hidden;padding:7px;display:flex;flex-direction:column;gap:6px}
+.ghd{display:flex;align-items:center;gap:6px;background:#2f4129;color:var(--cream);border-radius:9px;padding:5px 8px}
+.ghd .back{font-weight:900;font-size:11px;white-space:nowrap}
+.ghd .t{flex:1;text-align:center;line-height:1.15}.ghd .t small{display:block;font-size:9.5px;opacity:.8}.ghd .t b{font-size:13px}
+.ghd .lv{background:var(--cream);color:var(--red);border-radius:6px;font-weight:900;padding:1px 6px;font-size:11px}
+.brief{background:#2f4129;color:#e8f0dc;border-radius:8px;padding:5px 8px;font-size:11px;line-height:1.35}
+.play{flex:1;background:var(--cream);border-radius:10px;padding:7px;display:flex;flex-direction:column;gap:6px;min-height:0;position:relative}
+.btns{display:flex;gap:5px}.btns span{flex:1;text-align:center;background:var(--cream);border-radius:8px;padding:6px 0;font-weight:800;font-size:11px;border:1.5px solid #b9ad84}.btns span.go{background:var(--green);color:var(--cream);border-color:#2a3f26}
+.tip{background:#f6e27a;color:#4a3b10;border-radius:6px;padding:4px 7px;font-size:10.5px;font-weight:700}
+.ok{color:#2f6a2a;font-weight:900}.bad{color:var(--red);font-weight:900}
+.bubble{position:absolute;background:#fff;border:2px solid var(--ink);border-radius:8px;padding:3px 6px;font-size:10px;font-weight:800}
+.win{background:#fff8e0;border:2px solid var(--gold);border-radius:10px;padding:8px;text-align:center}
+.win .st{font-size:22px;color:var(--gold);letter-spacing:2px}.win .st i{color:#d4ccb2;font-style:normal}
+.small{font-size:10.5px;color:var(--muted)}
+.card{background:var(--cream);color:var(--ink);border-radius:12px;padding:14px 16px;margin:14px 0;border:1.5px solid var(--line)}
+.card h4{color:var(--green)}
+.card table{background:var(--paper);min-width:540px}.card th{background:#e6dcc0;color:var(--ink)}.card td{border-bottom:1px solid #e3d8b8}.card td b{color:var(--ink)}
+.card code,.card pre{background:#2c3628;color:#e9f0dc}
+.steps{counter-reset:s;list-style:none;padding:0;margin:8px 0}
+.steps li{counter-increment:s;position:relative;padding:8px 10px 8px 42px;background:var(--panel);border-radius:8px;margin:6px 0}
+.steps li::before{content:counter(s);position:absolute;left:10px;top:8px;width:22px;height:22px;border-radius:50%;background:var(--gold);color:#2b2208;font-weight:900;font-size:12px;display:grid;place-items:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="toc" style="margin-top:0"><a href="시안_묶음1_거르기블록.html">묶음 1 거르기 블록</a><a href="시안_묶음2_예산표배정.html">묶음 2 예산표 배정</a><a href="시안_묶음3_그물풀기.html">묶음 3 그물 풀기</a><a href="시안_묶음4_서가빼내기.html" style="background:#d6a93c;color:#2b2208">묶음 4 서가 빼내기</a><a href="퍼즐_중복정리_개선계획.html">전체 계획</a></div><style>
+.rh{position:relative;margin:0 auto;background:#d9c79c;border:4px solid #6b5a3a;border-radius:6px}
+.rh .cell{position:absolute;border:1px dashed #0001}
+.rh .cart{position:absolute;border-radius:6px;border:2px solid #0004;display:grid;place-items:center;font-size:10px;font-weight:900;color:#2c3628;box-shadow:0 2px 0 #0003}
+.rh .cart.h{background:repeating-linear-gradient(90deg,#c9a46e 0 8px,#b8935e 8px 10px)}
+.rh .cart.v{background:repeating-linear-gradient(0deg,#a7b8c9 0 8px,#93a6ba 8px 10px)}
+.rh .cart.X{background:#b4472f;color:#fff}
+.rh .door{position:absolute;width:10px;background:var(--gold);border-radius:2px}
+.han{display:flex;justify-content:space-around;align-items:flex-end;height:120px;background:#d9c79c;border-radius:8px;padding:6px}
+.peg{display:flex;flex-direction:column-reverse;align-items:center;gap:2px;width:30%;border-bottom:4px solid #6b5a3a}
+.peg i{display:block;height:12px;border-radius:3px;background:#a7b8c9;border:1.5px solid #0003;font-size:8px;font-style:normal;text-align:center;font-weight:900}
+</style>
+<div class="kick">묶음 4 · 시안과 구현 계획</div>
+<h1>상자 밀기 묶음 → 서가 빼내기</h1>
+<p class="lead">구호물자 창고 정리(부서)는 상자 밀기 그대로 두고, 같은 엔진·같은 생성기였던 <b>서고 정리(머리 퍼즐 · 선택 업무)</b>를 바꿔요. 참고: <b>Unblock Me · Rush Hour</b>(가로·세로로만 미끄러지는 블록을 움직여 목표 블록을 빼냄 — 판이 작아도 최소 수가 20수 넘는 판이 있을 만큼 깊음, 모바일 캐주얼 장기 흥행작).</p>
+<p class="lead">이야기: 서고 통로에 <b>이동식 서가 수레</b>가 빽빽이 서 있어요. 수레는 놓인 방향으로만 앞뒤로 밀려요. 빨간 <b>이관 상자 수레</b>를 서고 문 밖으로 빼내면 성공.</p>
+<div class="note">불법주차 견인과의 차이 — 견인은 차를 <b>한 번 누르면</b> 화살표 방향으로 끝까지 빠져나가고, 차를 빼는 순서만 정하면 돼요. 서가 빼내기는 수레를 <b>앞뒤로 조금씩</b> 옮기며 길을 만들고, 어떤 수레는 여러 번 왔다 갔다 해야 해요(되돌리는 계획). 시안을 보시고 그래도 비슷해 보이면 아래 대안(하노이 탑식)으로 갑니다.</div>
+
+<h2>시안</h2>
+<div class="phones">
+<div class="ph"><div class="phone"><div class="bar"></div><div class="scr">
+  <div class="ghd"><span class="back">◀ 지도</span><span class="t"><small>서고 정리 · 하 9/30</small><b>이관 상자 빼내기</b></span><span class="lv">하</span></div>
+  <div class="brief">수레를 끌어 앞뒤로 밀어요. 빨간 이관 상자를 오른쪽 문 밖으로!</div>
+  <div class="play"><div class="rh" id="r1"></div>
+    <div class="small" style="text-align:center">이동 0 · 최소 5수</div>
+    <div class="tip">👆 수레를 손가락으로 끌면 칸 단위로 미끄러져요.</div></div>
+  <div class="btns"><span>↶ 되돌리기</span><span>처음부터</span><span>💡 힌트</span></div>
+</div></div><p class="cap"><b>① 하 9</b> — 실제 생성 예시, 최소 5수(너비 우선 탐색으로 확인).</p></div>
+
+<div class="ph"><div class="phone"><div class="bar"></div><div class="scr">
+  <div class="ghd"><span class="back">◀ 지도</span><span class="t"><small>서고 정리 · 상 25/30</small><b>꽉 찬 서고</b></span><span class="lv">상</span></div>
+  <div class="brief">수레 11대. 막는 수레를 막는 수레가 또 있어요.</div>
+  <div class="play"><div class="rh" id="r2"></div>
+    <div class="small" style="text-align:center">이동 0 · 목표 25수 이내 (최소 23수)</div></div>
+  <div class="btns"><span>↶ 되돌리기</span><span>처음부터</span><span>💡 힌트</span></div>
+</div></div><p class="cap"><b>② 상 25</b> — 실제 생성 예시, 최소 23수. 같은 판 크기에서 막힘 단계만으로 난이도가 크게 벌어져요.</p></div>
+
+<div class="ph"><div class="phone"><div class="bar"></div><div class="scr">
+  <div class="ghd"><span class="back">◀ 지도</span><span class="t"><small>대안 · 서가 옮기기</small><b>하노이 탑식</b></span><span class="lv">중</span></div>
+  <div class="brief">왼쪽 수레의 상자를 오른쪽으로. 큰(오래된) 상자는 작은 상자 위에 못 올려요.</div>
+  <div class="play"><div class="han"><div class="peg"><i style="width:90%">2019</i><i style="width:75%">2021</i><i style="width:60%">2023</i><i style="width:45%">2025</i></div><div class="peg"></div><div class="peg"></div></div>
+    <div class="small">하: 상자 3개(7수) · 중: 4개(15수) + 금지 칸 · 상: 수레 4대·상자 5~6개·이동 제한</div>
+    <div class="tip" style="background:#e6dcc0;color:var(--ink)">대안의 약점: 규칙이 단순해 30레벨 사다리를 만들기 어렵고, 재활용 선별장(쌓아 옮기기)과 손이 비슷해요.</div></div>
+</div></div><p class="cap"><b>③ 대안</b> — 서가 빼내기가 불법주차와 겹쳐 보일 때만.</p></div>
+</div>
+
+<div class="card">
+<h4>규칙</h4>
+<ul><li>6×6 서고(상 일부 7×7). 수레는 길이 2 또는 3, 가로 수레는 좌우로만·세로 수레는 위아래로만 미끄러짐. 다른 수레·벽을 넘을 수 없음.</li>
+<li>빨간 이관 상자 수레(가로 2칸)는 문이 있는 줄에 있고, 오른쪽 문 밖으로 나가면 성공.</li>
+<li>‘이동’ = 수레 하나를 잡아 놓기 1번(여러 칸 미끄러져도 1수). 별 3번째 = 최소 수 + 여유 안.</li>
+<li>상 21~: <b>고정 책장(움직이지 않는 칸)</b>, 상 26~: <b>문이 위·아래에도 있고 상자가 2개</b>(두 상자 모두 빼야 함).</li></ul>
+<h4>30레벨 사다리 (최소 수 기준)</h4>
+<table><tr><th>레벨</th><th>하</th><th>중</th><th>상</th></tr>
+<tr><td>1~10</td><td>수레 3~5, 2~5수</td><td>수레 6~8, 8~12수</td><td>수레 9~11, 15~20수</td></tr>
+<tr><td>11~20</td><td>수레 5~6, 5~8수</td><td>12~16수, 길이 3 수레 많음</td><td>20~26수</td></tr>
+<tr><td>21~30</td><td>8~10수</td><td>16~20수 + 고정 책장</td><td>26수 이상 / 상자 2개 · 문 2곳</td></tr></table>
+<h4>데이터·생성·풀이기</h4>
+<pre>level = { w:6, h:6, door:{side:"R", row:2},
+  carts:[{id:"X",x:1,y:2,len:2,h:1,goal:true}, {id:"A",x:3,y:0,len:3,h:0}, ...],
+  walls:[[5,5]],                 // 고정 책장 (상 21~)
+  par:7, min:5,
+  witness:{ moves:[["A",-1],["C",+1],["X",+4]] } }    // [수레, 칸 이동]
+draft = { moves:[["A",-1], ...] }</pre>
+<ul><li>생성: 무작위 배치(이관 상자 줄에는 가로 수레 금지) → <b>너비 우선 탐색</b>으로 최소 수(6×6은 상태 수가 작아 수십 ms) → 풀리고 최소 수가 단계 범위 안이면 채택. 상 상위 판은 ‘최소 수가 가장 긴 판’ 찾기(풀린 상태에서 거꾸로 가장 먼 상태를 고르는 방법)로 26수 이상 확보.</li>
+<li>난이도 점수 = 최소 수 × 1 + 다른 수레를 움직인 횟수가 3번 이상인 수레 수 × 1.5 + 탐색 상태 수 log × 0.5.</li>
+<li>판정: draft의 이동을 차례로 적용(겹침 검사) → 상자가 문 밖이면 valid, metric = 이동 수.</li>
+<li>코드 정리: <code>sokobanModule</code>·<code>sokoGen</code>은 구호물자 창고 전용으로 남김.</li></ul>
+<h4>화면</h4>
+<ul><li>수레를 끌면 칸 단위로 스냅해 미끄러짐(막히는 곳까지만), 끌기 어려우면 수레를 탭한 뒤 ◀▶/▲▼ 버튼.</li>
+<li>수레 그림: 가로 = 나무 서가, 세로 = 철제 서가, 이관 상자 = 빨간 상자. 문 밖으로 빠지면 상자가 복도로 굴러가는 연출.</li>
+<li>되돌리기 무제한, 이동 수 표시 “이동 6 · 목표 7”.</li></ul>
+<h4>힌트·별·스토리</h4>
+<ul><li>힌트 1: 지금 이관 상자를 막는 수레들 표시 · 힌트 2: 정답의 다음 한 수 · 힌트 3: 정답 재생.</li>
+<li>별: 완료 · 힌트 없이 · 이동 ≤ par(최소 + 하 3 / 중 2 / 상 2).</li>
+<li>선택 업무(서고) 대사 “서고 정리 좀 도와줘요”는 그대로. 다음 날 결과 문구 그대로 사용 가능.</li></ul>
+</div>
+
+<h2>파일별 작업과 순서</h2>
+<ul class="files">
+<li><code>puzzles/brain.js</code> — archive를 sokobanModule에서 떼어 rushhour 엔진·화면으로</li>
+<li><code>levelgen/gen_brain.js</code> — archive 생성기 교체(무작위 배치 + 너비 우선 탐색 + 역방향 최장 탐색)</li>
+<li><code>puzzles/howto.js</code>, <code>style.css</code>, <code>framework.js</code>(ver 2), <code>test_puzzles.js</code>(witness = 최소 수 · par ≥ min)</li></ul>
+<ol class="steps"><li>엔진·풀이기·생성기 → 90레벨 최소 수 분포 확인</li><li>끌기 화면 → <i>확인 지점: 불법주차와 겹쳐 보이는지 직접 비교(여기서 대안 여부 결정)</i></li><li>시험·빌드·배포</li></ol>
+
+<script>
+function rh(id,cars,cell){const el=document.getElementById(id);el.style.width=(cell*6+8)+'px';el.style.height=(cell*6+8)+'px';let h='';
+  for(let y=0;y<6;y++)for(let x=0;x<6;x++)h+=`<div class="cell" style="left:${x*cell}px;top:${y*cell}px;width:${cell}px;height:${cell}px"></div>`;
+  cars.forEach(c=>{const w=c.h?c.len*cell:cell,hh=c.h?cell:c.len*cell;h+=`<div class="cart ${c.id==='X'?'X':c.h?'h':'v'}" style="left:${c.x*cell+2}px;top:${c.y*cell+2}px;width:${w-4}px;height:${hh-4}px">${c.id==='X'?'이관':''}</div>`;});
+  h+=`<div class="door" style="left:${6*cell}px;top:${2*cell+4}px;height:${cell-8}px"></div>`;el.innerHTML=h;}
+rh('r1',[{h:1,len:2,x:1,y:2,id:'X'},{h:0,len:3,x:3,y:0,id:'A'},{h:0,len:3,x:2,y:3,id:'B'},{h:0,len:2,x:4,y:1,id:'C'},{h:1,len:2,x:3,y:3,id:'D'},{h:1,len:2,x:4,y:0,id:'E'}],40);
+rh('r2',[{h:1,len:2,x:0,y:2,id:'X'},{h:1,len:2,x:0,y:0,id:'A'},{h:1,len:2,x:1,y:4,id:'B'},{h:0,len:2,x:4,y:4,id:'C'},{h:1,len:2,x:4,y:3,id:'D'},{h:1,len:2,x:2,y:0,id:'E'},{h:0,len:2,x:0,y:3,id:'F'},{h:0,len:3,x:2,y:1,id:'G'},{h:0,len:2,x:5,y:4,id:'H'},{h:0,len:2,x:5,y:1,id:'I'},{h:0,len:3,x:3,y:3,id:'J'}],40);
+</script>
+
+</div>
+</body>
+</html>

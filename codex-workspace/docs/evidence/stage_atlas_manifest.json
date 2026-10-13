@@ -1,0 +1,36 @@
+{
+  "version": "1.2",
+  "appReferences": 9,
+  "redesignedPuzzles": 24,
+  "uiuxRegistry": "puzzle_uiux_v1_2.json",
+  "items": 43,
+  "screens": 129,
+  "tasks": 39,
+  "bytes": 596430,
+  "originalGameSHA256": "41cae4d9b5fd377350f5f15b483d88abf0581a1c40325de8eb288bdf81258021",
+  "sources": [
+    {
+      "file": "C:\\Users\\이현주\\Desktop\\공무원키우기 _코덱스\\docs\\02_MASTER_GAME_DESIGN.md",
+      "sha256": "253fa73e4e99911b4dae97bbb7d957f9ccf7967ee615a4e4938e760f72746955"
+    },
+    {
+      "file": "C:\\Users\\이현주\\Desktop\\공무원키우기 _코덱스\\docs\\evidence\\v1_1_before_app_uiux\\05_PUZZLE_SYSTEM_AND_8_SPECS.md",
+      "sha256": "7958ee0101597f679da1589ea6c08e864bfc48b429b3effd6a1c35b2ff3a6521"
+    },
+    {
+      "file": "C:\\Users\\이현주\\Desktop\\공무원키우기 _코덱스\\docs\\evidence\\v1_1_before_app_uiux\\07_DEPARTMENT_EXPANSION_PACKS.md",
+      "sha256": "46eca3d9c59514c9b88be98483cb8f7b211a6072a66d20d38dd8e441df11e581"
+    },
+    {
+      "file": "C:\\Users\\이현주\\Desktop\\공무원키우기 _코덱스\\docs\\data\\planning_contract.json",
+      "sha256": "ffdcee68002fe5baaa4ad738bec90fe331adbb0a19c5706391a9f21dda353c1e"
+    },
+    {
+      "file": "C:\\Users\\이현주\\Desktop\\공무원키우기 _코덱스\\docs\\data\\office_original_v1.json",
+      "sha256": "dba1be488608706f5bec0ea4bb8e62bc140fc7afa2f26fd5268bfd5ba19e890e"
+    }
+  ],
+  "atlasSHA256": "2673ebdf554bc335049927bf07b4ad06bedadac2c857159dd3e3a22b1aee7adf",
+  "sourceSnapshotNote": "05/07 source hashes refer to pre-cross-reference documents retained in evidence/v1_1_before_app_uiux; gameplay content unchanged",
+  "uiuxContractSHA256": "5767ccc6f29532a67ca1893c28a1a59893c860c26267ccef97367dbf78eb067b"
+}

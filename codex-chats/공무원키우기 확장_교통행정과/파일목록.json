@@ -1,0 +1,93 @@
+[
+  {
+    "path": "docs/chapters/civil_service/build_plan.py",
+    "repositoryPath": "codex-workspace/docs/chapters/civil_service/build_plan.py",
+    "bytes": 35554,
+    "sha256": "7a3e27cc4b643f9e810b9f1b93927187958590c199c575fbe30fbf5056e29668",
+    "owner": "공무원키우기 확장_교통행정과"
+  },
+  {
+    "path": "docs/chapters/civil_service/chapter_plan.json",
+    "repositoryPath": "codex-workspace/docs/chapters/civil_service/chapter_plan.json",
+    "bytes": 41363,
+    "sha256": "d533135a0891fe09f5891aa3017d6061c4bf984732b1674f4edf0cea2349118e",
+    "owner": "공무원키우기 확장_교통행정과"
+  },
+  {
+    "path": "docs/chapters/civil_service/map_layout.json",
+    "repositoryPath": "codex-workspace/docs/chapters/civil_service/map_layout.json",
+    "bytes": 12763,
+    "sha256": "feb14546ec00d3a1d29007498a44d5d07e3281376bcca5c2f1921ee7992a37f7",
+    "owner": "공무원키우기 확장_교통행정과"
+  },
+  {
+    "path": "docs/chapters/civil_service/map_preview.png",
+    "repositoryPath": "codex-workspace/docs/chapters/civil_service/map_preview.png",
+    "bytes": 56262,
+    "sha256": "a57333257534b7e2dfad8ae30e5d78eff3b67fce665ab2197365cbe5ca17521b",
+    "owner": "공무원키우기 확장_교통행정과"
+  },
+  {
+    "path": "docs/chapters/civil_service/map_preview.svg",
+    "repositoryPath": "codex-workspace/docs/chapters/civil_service/map_preview.svg",
+    "bytes": 13700,
+    "sha256": "6a03fb7173022b5167c40e2c016139bc264ec2214703fed18c75f16e3551b1ca",
+    "owner": "공무원키우기 확장_교통행정과"
+  },
+  {
+    "path": "docs/chapters/civil_service/sources.json",
+    "repositoryPath": "codex-workspace/docs/chapters/civil_service/sources.json",
+    "bytes": 6585,
+    "sha256": "b8f3c426b32db31e8167f81973e6864fbfddb7d92fe6dc4094331de1de2e04d1",
+    "owner": "공무원키우기 확장_교통행정과"
+  },
+  {
+    "path": "docs/chapters/civil_service/tasks.json",
+    "repositoryPath": "codex-workspace/docs/chapters/civil_service/tasks.json",
+    "bytes": 5066,
+    "sha256": "816a408101bede63d07393ac1c8eca0e24bc30bf7913a47ce9ad94e3a5bc07e7",
+    "owner": "공무원키우기 확장_교통행정과"
+  },
+  {
+    "path": "docs/chapters/civil_service/validation.json",
+    "repositoryPath": "codex-workspace/docs/chapters/civil_service/validation.json",
+    "bytes": 1272,
+    "sha256": "7f097d2fe0f2a4d0cf4f0e85518a25b0c9f4cfe4922ca6360c2699d8ef1df5d2",
+    "owner": "공무원키우기 확장_교통행정과"
+  },
+  {
+    "path": "docs/chapters/civil_service/민원봉사과_개발계획.html",
+    "repositoryPath": "codex-workspace/docs/chapters/civil_service/민원봉사과_개발계획.html",
+    "bytes": 64601,
+    "sha256": "c1db78389288a4a46efa79940d4e6032606a44c7623a96fc24bbfed2998e3449",
+    "owner": "공무원키우기 확장_교통행정과"
+  },
+  {
+    "path": "docs/chapters/civil_service/민원봉사과_챕터_개발계획.md",
+    "repositoryPath": "codex-workspace/docs/chapters/civil_service/민원봉사과_챕터_개발계획.md",
+    "bytes": 39960,
+    "sha256": "23441f3c111edfae9d436ad62efbe1aff6f05a5273ff138b889a124ba0729416",
+    "owner": "공무원키우기 확장_교통행정과"
+  },
+  {
+    "path": "교통행정과/AGENTS.md",
+    "repositoryPath": "codex-workspace/교통행정과/AGENTS.md",
+    "bytes": 448,
+    "sha256": "fc271e1525c0e379b996f36229c7a64d0a5044f4d2f98e38e632bb690f489788",
+    "owner": "공무원키우기 확장_교통행정과"
+  },
+  {
+    "path": "교통행정과/README.md",
+    "repositoryPath": "codex-workspace/교통행정과/README.md",
+    "bytes": 837,
+    "sha256": "e9e9505d9dad94e69f3fccc9ce5351cfaf2404f29de21f5bc6320e759d246316",
+    "owner": "공무원키우기 확장_교통행정과"
+  },
+  {
+    "path": "교통행정과/STATUS.md",
+    "repositoryPath": "codex-workspace/교통행정과/STATUS.md",
+    "bytes": 2026,
+    "sha256": "72d4f511362ecbfd49e032a94d71757f77bd377fdedfc0ceb26fd0070108daa7",
+    "owner": "공무원키우기 확장_교통행정과"
+  }
+]

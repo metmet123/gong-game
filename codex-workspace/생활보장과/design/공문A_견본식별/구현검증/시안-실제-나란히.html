@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A 견본 식별 · 시안과 실제 화면 비교</title>
+<style>
+  :root{color-scheme:dark;font-family:"Malgun Gothic","Noto Sans KR",sans-serif;background:#152527;color:#f4efdf}
+  body{margin:0;padding:24px;background:linear-gradient(135deg,#172f31,#2b1e18);line-height:1.45}
+  h1{margin:0 0 8px;font-size:clamp(22px,3vw,36px)}
+  p{margin:0 0 20px;color:#d8dfd2}
+  .grid{display:grid;grid-template-columns:minmax(280px,.8fr) minmax(280px,1.2fr);gap:16px;align-items:start}
+  figure{margin:0;padding:12px;background:#082a2d;border:1px solid #b99762;box-shadow:0 8px 24px #0006}
+  figcaption{font-weight:700;color:#f5df9b;margin-bottom:9px}
+  img{display:block;width:100%;height:auto;background:#f5f0df}
+  .actual{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .actual figure{background:#0c3336}
+  @media(max-width:760px){body{padding:12px}.grid{grid-template-columns:1fr}.actual{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<h1>공문 A · 견본 식별 화면 비교</h1>
+<p>왼쪽은 첨부된 01~04 합성 시안, 오른쪽은 같은 단계에서 실제로 조작한 화면 캡처입니다. PC 1440×900 기준으로 비교하며, 아래 캡처는 자동 검증을 통과한 결과입니다.</p>
+<main class="grid">
+  <figure><figcaption>기준 시안 · 1000053048.jpg</figcaption><img src="../시안_4단계_원본.png" alt="01 시작, 02 지도 대조, 03 반려 수정, 04 선정 완료 합성 시안"></figure>
+  <section class="actual" aria-label="실제 구현 단계별 캡처">
+    <figure><figcaption>01 시작</figcaption><img src="start-1440.png" alt="실제 01 시작 화면"></figure>
+    <figure><figcaption>02 지도 대조</figcaption><img src="map-compare-1440.png" alt="실제 02 지도 대조 화면"></figure>
+    <figure><figcaption>03 반려·수정</figcaption><img src="rejected-1440.png" alt="실제 03 반려 수정 화면"></figure>
+    <figure><figcaption>04 선정 완료</figcaption><img src="completed-1440.png" alt="실제 04 선정 완료 화면"></figure>
+  </section>
+</main>
+</body>
+</html>

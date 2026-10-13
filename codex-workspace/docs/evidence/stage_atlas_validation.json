@@ -1,0 +1,127 @@
+{
+  "date": "2026-10-11",
+  "scope": "Static stage design atlas and roadmap; not playable new game engines or actual Samsung device validation",
+  "browser": "Headless Edge, JS enabled and disabled",
+  "checks": [
+    {
+      "name": "43 separate items",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "129 staged screen mockups",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "39 planned TASKs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Each item has three named completion stages",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Unique IDs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "All part and TASK links resolve",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Original map contains exactly 46 footprints per stage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "All task dependencies resolve and are acyclic",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Puzzle prototypes and full play do not depend on office/campaign",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Office begins only after 8 types and legacy gate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "All implementation tasks still planned",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Korean search with spaces",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "TASK search locates budget",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Direct prototype anchor navigation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "TASK direct link automatically expands",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No outer page overflow across 7 widths",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "JavaScript disabled: all 43 items still visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "JavaScript disabled: all 129 screens still visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "JavaScript disabled: mobile index uses normal links",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "JavaScript disabled: shared office SVG is rendered",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "JavaScript disabled: no fixed full screen notice blocks document",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "JavaScript errors absent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No network asset requests",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "overflow": [],
+  "passed": 23,
+  "total": 23
+}

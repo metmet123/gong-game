@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "inlineScriptsParsed": 6,
+  "checked": [
+    "all inline JS syntax",
+    "Week uses revised 15-day news headline/rule/talk",
+    "NPC habits and completion lines read revised data"
+  ],
+  "limitations": [
+    "DOM rendering and actual mobile wrapping not tested"
+  ]
+}

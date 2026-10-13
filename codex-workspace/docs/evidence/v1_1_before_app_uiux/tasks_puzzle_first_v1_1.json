@@ -1,0 +1,452 @@
+[
+  {
+    "id": "PF0-01",
+    "title": "원본 보호·새 src/dist·hash manifest",
+    "dependsOn": [],
+    "acceptance": "원본게임/배치/저장 보존·별도체험출력",
+    "legacyReference": "P0-01/P0-05",
+    "status": "planned",
+    "milestone": "PF0"
+  },
+  {
+    "id": "PF0-02",
+    "title": "공통 PuzzleModule·Stage/Draft/Evaluation·임시저장 계약",
+    "dependsOn": [
+      "PF0-01"
+    ],
+    "acceptance": "DOM/보상 없는 판정·콘텐츠 버전·stage validation",
+    "legacyReference": "05/08/P1",
+    "status": "planned",
+    "milestone": "PF0"
+  },
+  {
+    "id": "PF0-03",
+    "title": "독립 연습실·선택→규칙→편집→검증→결과 shell",
+    "dependsOn": [
+      "PF0-02"
+    ],
+    "acceptance": "지도 없이 문제 진입·연습보상0·뒤로/중단·320px",
+    "legacyReference": "05 공통UI",
+    "status": "planned",
+    "milestone": "PF0"
+  },
+  {
+    "id": "PF0-04",
+    "title": "기존5종 기준 회귀·fixture",
+    "dependsOn": [
+      "PF0-01"
+    ],
+    "acceptance": "기존1200변형 재현·동등해·가상저장 시험",
+    "legacyReference": "P0-02/P1",
+    "status": "planned",
+    "milestone": "PF0"
+  },
+  {
+    "id": "PF1-RUL",
+    "title": "rules 최소1문제+순수판정+러프UI",
+    "dependsOn": [
+      "PF0-03"
+    ],
+    "acceptance": "요일수정으로 성공·잠금 보호·미완료/위반·undo",
+    "legacyReference": "P5/05 rules",
+    "status": "planned",
+    "milestone": "PF1"
+  },
+  {
+    "id": "PF1-OWN",
+    "title": "owner 최소1문제+배정/노트",
+    "dependsOn": [
+      "PF0-03"
+    ],
+    "acceptance": "유일해1·중복 거절·노트 복원",
+    "legacyReference": "P7/05 owner",
+    "status": "planned",
+    "milestone": "PF1"
+  },
+  {
+    "id": "PF1-APR",
+    "title": "approval 최소1문제+날짜선택",
+    "dependsOn": [
+      "PF0-03"
+    ],
+    "acceptance": "복수 일정 수용·선행·마감·undo",
+    "legacyReference": "P7/05 approval",
+    "status": "planned",
+    "milestone": "PF1"
+  },
+  {
+    "id": "PF1-BRF",
+    "title": "brief 최소1문제+recipe",
+    "dependsOn": [
+      "PF0-03"
+    ],
+    "acceptance": "G/P/B 보존·GP 결합·출처 undo·동등요약",
+    "legacyReference": "P8/05 brief",
+    "status": "planned",
+    "milestone": "PF1"
+  },
+  {
+    "id": "PF1-MAC",
+    "title": "macro 최소1문제+VM/로그",
+    "dependsOn": [
+      "PF0-03"
+    ],
+    "acceptance": "두입력300/100·step 제한·취소·reset",
+    "legacyReference": "P5/05 macro",
+    "status": "planned",
+    "milestone": "PF1"
+  },
+  {
+    "id": "PF1-ARC",
+    "title": "archive 최소1문제+grid 이동/밀기",
+    "dependsOn": [
+      "PF0-03"
+    ],
+    "acceptance": "RURD 해·벽 충돌·밀기undo·초기복원",
+    "legacyReference": "P7/05 archive",
+    "status": "planned",
+    "milestone": "PF1"
+  },
+  {
+    "id": "PF1-BUD",
+    "title": "budget 최소1문제+placement",
+    "dependsOn": [
+      "PF0-03"
+    ],
+    "acceptance": "A/B·겹침/월/분기 검사·회전불가·동등해",
+    "legacyReference": "P8/05 budget",
+    "status": "planned",
+    "milestone": "PF1"
+  },
+  {
+    "id": "PF1-CNV",
+    "title": "conveyor 최소1문제+tick/도장",
+    "dependsOn": [
+      "PF0-03"
+    ],
+    "acceptance": "도장필요·함/수량·빈칸/loop 사유·취소",
+    "legacyReference": "P3/05 conveyor",
+    "status": "planned",
+    "milestone": "PF1"
+  },
+  {
+    "id": "PF1-GATE",
+    "title": "8종 독립 플레이 통합 인수",
+    "dependsOn": [
+      "PF1-RUL",
+      "PF1-OWN",
+      "PF1-APR",
+      "PF1-BRF",
+      "PF1-MAC",
+      "PF1-ARC",
+      "PF1-BUD",
+      "PF1-CNV"
+    ],
+    "acceptance": "8종 선택/수정/제출/완료/재시도 영상·모듈 dispose",
+    "legacyReference": "10 유형별 시험",
+    "status": "planned",
+    "milestone": "PF1"
+  },
+  {
+    "id": "PF2-01",
+    "title": "공통 기본UI·자료/편집/검증·48px 조작·키보드",
+    "dependsOn": [
+      "PF1-GATE"
+    ],
+    "acceptance": "모바일 터치만으로 모든작업·화면별 초점·큰글씨",
+    "legacyReference": "04/05/10",
+    "status": "planned",
+    "milestone": "PF2"
+  },
+  {
+    "id": "PF2-02",
+    "title": "무료힌트3/보조·초안저장·오류trace·결과",
+    "dependsOn": [
+      "PF2-01"
+    ],
+    "acceptance": "seed/난도고정·restore·오류에서편집유지·보상연동전0",
+    "legacyReference": "05/08",
+    "status": "planned",
+    "milestone": "PF2"
+  },
+  {
+    "id": "PF2-RUL",
+    "title": "rules 하/중/상 완전3문제",
+    "dependsOn": [
+      "PF2-02"
+    ],
+    "acceptance": "OR/우선순위/locked·모든공개사례·복수해",
+    "legacyReference": "P5",
+    "status": "planned",
+    "milestone": "PF2"
+  },
+  {
+    "id": "PF2-OWN",
+    "title": "owner 하/중/상 완전3문제",
+    "dependsOn": [
+      "PF2-02"
+    ],
+    "acceptance": "3/4/5명·유일해·순서불변·단서문장검수",
+    "legacyReference": "P7",
+    "status": "planned",
+    "milestone": "PF2"
+  },
+  {
+    "id": "PF2-APR",
+    "title": "approval 하/중/상 완전3문제",
+    "dependsOn": [
+      "PF2-02"
+    ],
+    "acceptance": "1/2/3문서·담당자별용량·출장/lag·대안일정",
+    "legacyReference": "P7",
+    "status": "planned",
+    "milestone": "PF2"
+  },
+  {
+    "id": "PF2-BRF",
+    "title": "brief 하/중/상 완전3문제",
+    "dependsOn": [
+      "PF2-02"
+    ],
+    "acceptance": "recipe·fact값·source·orderedFacts·동등요약",
+    "legacyReference": "P8",
+    "status": "planned",
+    "milestone": "PF2"
+  },
+  {
+    "id": "PF2-MAC",
+    "title": "macro 하/중/상 완전3문제",
+    "dependsOn": [
+      "PF2-02"
+    ],
+    "acceptance": "filter/dedup·empty·99/100/101·step 상한",
+    "legacyReference": "P5",
+    "status": "planned",
+    "milestone": "PF2"
+  },
+  {
+    "id": "PF2-ARC",
+    "title": "archive 하/중/상 완전3문제",
+    "dependsOn": [
+      "PF2-02"
+    ],
+    "acceptance": "5×5/6×5/7×6·연도별목표·undo·push witness",
+    "legacyReference": "P7",
+    "status": "planned",
+    "milestone": "PF2"
+  },
+  {
+    "id": "PF2-BUD",
+    "title": "budget 하/중/상 완전3문제",
+    "dependsOn": [
+      "PF2-02"
+    ],
+    "acceptance": "4/6/12개월·분기탭·대안행·window/선행",
+    "legacyReference": "P8",
+    "status": "planned",
+    "milestone": "PF2"
+  },
+  {
+    "id": "PF2-CNV",
+    "title": "conveyor 하/중/상 완전3문제",
+    "dependsOn": [
+      "PF2-02"
+    ],
+    "acceptance": "분기/복사/root·stamp·함bag·tick/token상한·다해법",
+    "legacyReference": "P3",
+    "status": "planned",
+    "milestone": "PF2"
+  },
+  {
+    "id": "PF2-LEG",
+    "title": "기존5종 연습실 어댑터/기록 보존",
+    "dependsOn": [
+      "PF2-01",
+      "PF0-04"
+    ],
+    "acceptance": "5종 기존회귀+탭UI·같은core 결과·전용키",
+    "legacyReference": "P1/P4",
+    "status": "planned",
+    "milestone": "PF2"
+  },
+  {
+    "id": "PF2-GATE",
+    "title": "퍼즐 우선 플레이 완료",
+    "dependsOn": [
+      "PF2-RUL",
+      "PF2-OWN",
+      "PF2-APR",
+      "PF2-BRF",
+      "PF2-MAC",
+      "PF2-ARC",
+      "PF2-BUD",
+      "PF2-CNV",
+      "PF2-LEG"
+    ],
+    "acceptance": "신규24문제+기존5종·터치/PC·초안/중단·무료힌트",
+    "legacyReference": "10 인수 기준",
+    "status": "planned",
+    "milestone": "PF2"
+  },
+  {
+    "id": "PF3-01",
+    "title": "캠페인 shell·업무함·모듈 adapter",
+    "dependsOn": [
+      "PF2-GATE"
+    ],
+    "acceptance": "같은8모듈 진입·완료이벤트·연습/본업 구분",
+    "legacyReference": "P1",
+    "status": "planned",
+    "milestone": "PF3"
+  },
+  {
+    "id": "PF3-02",
+    "title": "v1→v2/3 bridge·backup·fixture·returnContext",
+    "dependsOn": [
+      "PF3-01"
+    ],
+    "acceptance": "11가상fixture·이전raw보존·실패복구·진행중 고정",
+    "legacyReference": "P1/08",
+    "status": "planned",
+    "milestone": "PF3"
+  },
+  {
+    "id": "PF3-03",
+    "title": "전체지도·충돌/BFS·camera·주요3구역",
+    "dependsOn": [
+      "PF3-01"
+    ],
+    "acceptance": "원본46물품·정수endpoint·내자리/창구/결재 왕복",
+    "legacyReference": "P2/04",
+    "status": "planned",
+    "milestone": "PF3"
+  },
+  {
+    "id": "PF3-04",
+    "title": "나머지4구역·목적별초점·뒤로/퇴근action",
+    "dependsOn": [
+      "PF3-02",
+      "PF3-03"
+    ],
+    "acceptance": "7구역 동선·인접접근·원본좌표·복귀 저장",
+    "legacyReference": "P2/04",
+    "status": "planned",
+    "milestone": "PF3"
+  },
+  {
+    "id": "PF4-01",
+    "title": "XP/P·거래/결산 원장·보상1회",
+    "dependsOn": [
+      "PF3-02"
+    ],
+    "acceptance": "연출재개/더블탭/새로고침에도1회·연습0",
+    "legacyReference": "P1/06/08",
+    "status": "planned",
+    "milestone": "PF4"
+  },
+  {
+    "id": "PF4-02",
+    "title": "일차·본업4건·난도·D1~15 progression",
+    "dependsOn": [
+      "PF3-04",
+      "PF4-01"
+    ],
+    "acceptance": "쉬움/보조도엔딩·무료회신·선택skip·결산",
+    "legacyReference": "P4/P6/P8",
+    "status": "planned",
+    "milestone": "PF4"
+  },
+  {
+    "id": "PF4-03",
+    "title": "도구10·소품6→18·가격/해금·장착anchor",
+    "dependsOn": [
+      "PF4-01",
+      "PF3-04"
+    ],
+    "acceptance": "소유→구매→장착→구역반영→restore·1455/1425",
+    "legacyReference": "P6/P8/06",
+    "status": "planned",
+    "milestone": "PF4"
+  },
+  {
+    "id": "PF4-04",
+    "title": "도감5·업적18·난도별 기록",
+    "dependsOn": [
+      "PF4-02",
+      "PF4-03"
+    ],
+    "acceptance": "획득1회·미설치팩분모제외·보조기록 구분",
+    "legacyReference": "P6/P8/06",
+    "status": "planned",
+    "milestone": "PF4"
+  },
+  {
+    "id": "PF4-05",
+    "title": "NPC5→9·소식·선택·후속12",
+    "dependsOn": [
+      "PF4-02"
+    ],
+    "acceptance": "condition/flag 기반·replay중복0·skip·가상명",
+    "legacyReference": "P4/P6/P8/03",
+    "status": "planned",
+    "milestone": "PF4"
+  },
+  {
+    "id": "PF4-06",
+    "title": "신규72문제·변형·solver/witness·콘텐츠검수",
+    "dependsOn": [
+      "PF2-GATE"
+    ],
+    "acceptance": "각난도3·8×9=72·다른조건·유일성/해존재·문장",
+    "legacyReference": "P5/P7/P8",
+    "status": "planned",
+    "milestone": "PF4"
+  },
+  {
+    "id": "PF5-01",
+    "title": "공통 픽셀 자산·19화면/13게임 디테일",
+    "dependsOn": [
+      "PF4-03",
+      "PF4-04",
+      "PF4-05",
+      "PF4-06"
+    ],
+    "acceptance": "sprite/atlas·종이/도장·짧은연출·기존판정불변",
+    "legacyReference": "P9/08",
+    "status": "planned",
+    "milestone": "PF5"
+  },
+  {
+    "id": "PF5-02",
+    "title": "무음/동작줄이기·큰글씨·키보드·실제Android",
+    "dependsOn": [
+      "PF5-01"
+    ],
+    "acceptance": "320~412/PC·실기Samsung 결과·연출skip·50회왕복",
+    "legacyReference": "P9/10",
+    "status": "planned",
+    "milestone": "PF5"
+  },
+  {
+    "id": "PF5-03",
+    "title": "단일HTML·오프라인·save 복구·베타 인수",
+    "dependsOn": [
+      "PF5-02"
+    ],
+    "acceptance": "외부 필수요청0·fixture/회귀·배포 후보/미검증 구분",
+    "legacyReference": "P9",
+    "status": "planned",
+    "milestone": "PF5"
+  },
+  {
+    "id": "PF6-01",
+    "title": "재활용 샘플1팩·청사지도·협조·등록/복귀",
+    "dependsOn": [
+      "PF5-03"
+    ],
+    "acceptance": "6문제·팩미설치/결손·도감/보상/저장·본업복귀",
+    "legacyReference": "P10/07",
+    "status": "planned",
+    "milestone": "PF6"
+  }
+]

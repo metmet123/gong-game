@@ -1,0 +1,86 @@
+{
+  "checkedAt": "2026-10-11T11:31:17.999082+00:00",
+  "scope": "계획 구조·계약 예시·링크·보존 검사; 미래 게임 엔진 실행 검증 아님",
+  "checks": [
+    {
+      "name": "작업 ID 유일",
+      "passed": true
+    },
+    {
+      "name": "신규 구현 작업 18개 모두 planned",
+      "passed": true
+    },
+    {
+      "name": "기존 MC00~MC17 완료 보존",
+      "passed": true
+    },
+    {
+      "name": "기존 RC-R01~06 완료와 R07 대기 보존",
+      "passed": true
+    },
+    {
+      "name": "의존 작업 참조 유효",
+      "passed": true
+    },
+    {
+      "name": "작업 의존성 비순환",
+      "passed": true
+    },
+    {
+      "name": "W01 ID 유일",
+      "passed": true
+    },
+    {
+      "name": "질문 답변 원문 참조 유효",
+      "passed": true
+    },
+    {
+      "name": "주장 근거 참조 유효",
+      "passed": true
+    },
+    {
+      "name": "허용 값은 선택지에 포함",
+      "passed": true
+    },
+    {
+      "name": "witness 값과 근거가 계약과 일치",
+      "passed": true
+    },
+    {
+      "name": "완료 필수 주장과 계획 참조 유효",
+      "passed": true
+    },
+    {
+      "name": "W01은 실제 서비스 승인·본편 보상 없음",
+      "passed": true
+    },
+    {
+      "name": "상세계획의 로컬 링크·이미지 존재",
+      "passed": true
+    },
+    {
+      "name": "기존 실행판 3개 해시 보존",
+      "passed": true
+    }
+  ],
+  "artifacts": {
+    "전입신고_퍼즐.html": {
+      "sha256": "4ef5e524a61f76504bc7d179f39844e21aaabd83fbc029cc467bb11ac7c97159",
+      "unchanged": true
+    },
+    "공무원키우기_주민센터_통합후보.html": {
+      "sha256": "4bc6412976ac6b8e1dbd972bc345ee957cde46671c1e07fa0fedae17b640b86d",
+      "unchanged": true
+    },
+    "UI_비교_프로토타입.html": {
+      "sha256": "65b6c82525792d8b57ea5c85eadeeaa78da343db24a8b16be45bbb54b8e43881",
+      "unchanged": true
+    }
+  },
+  "taskCount": 43,
+  "newPlannedTaskCount": 18,
+  "uiEvidence": "../design/화면/두업무/시안검증.json",
+  "finalDocumentLinksChecked": true,
+  "sourcesUnchangedScope": "실제 src/·빌드·실행판 수정 없음; 게임 엔진은 검증하지 않은 계획 단계",
+  "protectionResult": "PASS 37 protected originals unchanged"
+}

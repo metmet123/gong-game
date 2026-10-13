@@ -1,0 +1,562 @@
+{
+  "planVersion": "1.0",
+  "updatedAt": "2026-10-11",
+  "owner": "Codex",
+  "scope": "주민센터 전입신고 퍼즐 우선 개발",
+  "nextTaskId": "MC00",
+  "statusMeaning": {
+    "planned": "미착수",
+    "in_progress": "구현 중",
+    "done": "완료 조건과 검증 증거 충족"
+  },
+  "milestones": [
+    {
+      "id": "puzzle",
+      "throughTask": "MC11",
+      "deliverable": "모바일 전용 독립 퍼즐 6사례"
+    },
+    {
+      "id": "chapter",
+      "throughTask": "MC14",
+      "deliverable": "4일 12접수 주민센터 독립 챕터"
+    },
+    {
+      "id": "integrated",
+      "throughTask": "MC17",
+      "deliverable": "본편과 연결한 출시 후보"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "MC00",
+      "title": "기준 빌드와 원본 보호",
+      "status": "planned",
+      "dependsOn": [],
+      "outputs": [
+        "docs/결정기록.md",
+        "docs/보호파일.json",
+        "tests/baseline 검증 기록"
+      ],
+      "steps": [
+        "시안 빌드와 core 테스트 및 browser 테스트 재현",
+        "기존 게임 소스와 HTML 보호 해시 작성",
+        "새 빌더 출력이 주민센터 폴더에 한정되는지 확인",
+        "단일 HTML과 file 실행 확인"
+      ],
+      "acceptance": [
+        "기존 게임 파일 변경 없음",
+        "20개 baseline 테스트 재현",
+        "세 사례 브라우저 완료 재현"
+      ],
+      "testKinds": [
+        "baseline",
+        "build"
+      ]
+    },
+    {
+      "id": "MC01",
+      "title": "사례 데이터 분리와 절차 근거",
+      "status": "planned",
+      "dependsOn": [
+        "MC00"
+      ],
+      "outputs": [
+        "src/data/cases.js",
+        "docs/절차근거.json",
+        "tests/content/schema.test.js"
+      ],
+      "steps": [
+        "all/part/join을 M02/M03/M04로 매핑",
+        "M01/M05/M06 데이터와 질문 및 자료 계약 작성",
+        "M06 확인 항목을 공식 근거로 확정 또는 대체안 기록",
+        "고유 ID와 이전 관계 및 주소 ID 검증"
+      ],
+      "acceptance": [
+        "6사례 데이터가 schema를 통과",
+        "M06 연구 결정과 근거 기록",
+        "허용 범위와 미확인 절차를 구분"
+      ],
+      "testKinds": [
+        "content-schema",
+        "source-review"
+      ]
+    },
+    {
+      "id": "MC02",
+      "title": "초안과 확인 사실 및 화면 상태 분리",
+      "status": "planned",
+      "dependsOn": [
+        "MC01"
+      ],
+      "outputs": [
+        "src/engine/session.js",
+        "src/engine/actions.js",
+        "tests/engine/actions.test.js"
+      ],
+      "steps": [
+        "Draft/Knowledge/ViewState 분리",
+        "허용 action과 payload 검증",
+        "업무 편집 undo/redo 30개 구현",
+        "사람 보존 및 세대주 변경 시 관계 무효화",
+        "질문 답변과 열람 상태 유지"
+      ],
+      "acceptance": [
+        "탭과 선택은 draft revision 불변",
+        "잘못된 ID와 action이 state를 손상시키지 않음",
+        "undo가 이미 얻은 답변을 삭제하지 않음"
+      ],
+      "testKinds": [
+        "engine-invariants",
+        "undo"
+      ]
+    },
+    {
+      "id": "MC03",
+      "title": "검토와 전입 처리 및 보완 안내",
+      "status": "planned",
+      "dependsOn": [
+        "MC02"
+      ],
+      "outputs": [
+        "src/engine/review.js",
+        "src/engine/resolve.js",
+        "tests/engine/resolution.test.js"
+      ],
+      "steps": [
+        "의미 있는 오류 우선순위와 근거 위치 반환",
+        "초안과 knowledge revision 검증",
+        "registered/followup_requested 처리",
+        "원형 세대 snapshot 유지 및 최종 세대 snapshot 작성",
+        "완료 잠금과 resolutionId 중복 방지"
+      ],
+      "acceptance": [
+        "추측으로 확인 조건을 우회할 수 없음",
+        "보완 안내는 세대 snapshot 변경 없음",
+        "완료된 기록 재편집 불가",
+        "double resolve 중복 결과 없음"
+      ],
+      "testKinds": [
+        "review",
+        "resolution",
+        "immutability"
+      ]
+    },
+    {
+      "id": "MC04",
+      "title": "모바일 전용 작업 화면",
+      "status": "planned",
+      "dependsOn": [
+        "MC03"
+      ],
+      "outputs": [
+        "src/ui/workspace.js",
+        "src/shell.html",
+        "src/style.css",
+        "모바일 단계별 캡처"
+      ],
+      "steps": [
+        "상단 주민 요약과 하단 행동 영역 구성",
+        "중앙 작업면 단일 스크롤",
+        "이사 전후 탭과 남는 사람 요약",
+        "dvh 및 안전 영역 대응",
+        "짧은 화면과 큰 글씨 fallback"
+      ],
+      "acceptance": [
+        "320px에서 가로 넘침 없음",
+        "주 행동 가림 없음",
+        "선택과 탭 전환 시 초안 유지"
+      ],
+      "testKinds": [
+        "mobile-layout",
+        "resize"
+      ]
+    },
+    {
+      "id": "MC05",
+      "title": "세대 이동과 카드별 관계 입력",
+      "status": "planned",
+      "dependsOn": [
+        "MC04"
+      ],
+      "outputs": [
+        "src/ui/cards.js",
+        "src/ui/관계 선택 영역",
+        "tests/browser/household.test.cjs"
+      ],
+      "steps": [
+        "사람 선택과 이동 및 돌리기",
+        "옮긴 뒤 이사 후 탭으로 전환",
+        "카드 세대주 지정과 관계 입력",
+        "기존 전입지 세대주 보호",
+        "포커스 및 작업면 스크롤 유지"
+      ],
+      "acceptance": [
+        "M01~M04를 탭만으로 작성 가능",
+        "이사 후 세대주를 관계 기준에 표시",
+        "전체/일부/편입 기록 인원 보존"
+      ],
+      "testKinds": [
+        "browser-editing",
+        "keyboard"
+      ]
+    },
+    {
+      "id": "MC06",
+      "title": "자료와 무료 질문 및 화면 이동",
+      "status": "planned",
+      "dependsOn": [
+        "MC05"
+      ],
+      "outputs": [
+        "src/ui/sheets.js",
+        "src/data/dialogue.js",
+        "tests/browser/sheets.test.cjs"
+      ],
+      "steps": [
+        "하단 자료 dialog와 질문 선택",
+        "확인된 사실만 접수 메모에 추가",
+        "열람과 확인 상태를 구분",
+        "dialog 포커스 및 단계 뒤로 가기",
+        "회전과 자료 종료 시 초안 보존"
+      ],
+      "acceptance": [
+        "dialog 중첩 없음",
+        "질문 답변 일관성과 무료 반복 조회",
+        "닫기 뒤 원래 버튼으로 포커스 복귀"
+      ],
+      "testKinds": [
+        "dialog",
+        "navigation",
+        "knowledge"
+      ]
+    },
+    {
+      "id": "MC07",
+      "title": "여섯 사례 실제 플레이 콘텐츠",
+      "status": "planned",
+      "dependsOn": [
+        "MC06"
+      ],
+      "outputs": [
+        "완전한 M01~M06 데이터",
+        "tests/content/witnesses.test.js",
+        "대표 오답 fixture"
+      ],
+      "steps": [
+        "M01 단계 안내 작성",
+        "M02~M04 기존 시안 사실을 완전 데이터로 이관",
+        "M05 답변 후 상세주소 확인",
+        "M06 보완 사유와 후속 안내 선택",
+        "사례별 정답 진행 기록과 오답 검증"
+      ],
+      "acceptance": [
+        "6개의 독립 사례가 모두 올바른 결과에 도달",
+        "필수 판단의 근거가 화면 또는 질문에서 제공",
+        "이름만 바꾼 문제로 분량을 채우지 않음"
+      ],
+      "testKinds": [
+        "content-witness",
+        "negative-cases"
+      ]
+    },
+    {
+      "id": "MC08",
+      "title": "검토 화면과 오류 수정 및 힌트",
+      "status": "planned",
+      "dependsOn": [
+        "MC07"
+      ],
+      "outputs": [
+        "src/ui/review-screen.js",
+        "사례별 해설과 힌트",
+        "tests/browser/review.test.cjs"
+      ],
+      "steps": [
+        "before/after 요약 검토 화면",
+        "우선 오류와 전체 오류 목록",
+        "오류 위치로 이동하고 재검토",
+        "무료 힌트 3단계",
+        "읽기 전용 완료 기록"
+      ],
+      "acceptance": [
+        "오류가 기존 작성 내용을 초기화하지 않음",
+        "편집 후 오래된 검토로 처리 불가",
+        "확인 전 숨은 정답을 오류로 공개하지 않음"
+      ],
+      "testKinds": [
+        "correction",
+        "stale-review",
+        "hints"
+      ]
+    },
+    {
+      "id": "MC09",
+      "title": "초안 저장과 복원 및 내보내기",
+      "status": "planned",
+      "dependsOn": [
+        "MC08"
+      ],
+      "outputs": [
+        "src/services/storage.js",
+        "src/services/migration.js",
+        "tests/storage/fixtures 및 검사"
+      ],
+      "steps": [
+        "독립 저장 envelope와 키 구현",
+        "편집 저장과 중요 전환 즉시 저장",
+        "초안/검토/완료 복원",
+        "손상과 미래버전 보호",
+        "가져오기/내보내기 및 저장 불가 모드",
+        "다른 탭 변경 감지"
+      ],
+      "acceptance": [
+        "기존 게임 저장 키 접근 없음",
+        "손상 파일이 현재 기록을 덮어쓰지 않음",
+        "재로딩 뒤 보상과 결과 중복 없음",
+        "저장 불가 상태에서 내보내기 가능"
+      ],
+      "testKinds": [
+        "save-restore",
+        "migration",
+        "storage-failure"
+      ]
+    },
+    {
+      "id": "MC10",
+      "title": "독립 퍼즐 진행과 연습 모드",
+      "status": "planned",
+      "dependsOn": [
+        "MC09"
+      ],
+      "outputs": [
+        "src/services/campaign.js",
+        "접수 목록과 완료 기록",
+        "전입신고_퍼즐.html"
+      ],
+      "steps": [
+        "6사례 순차 캠페인과 중간 재개",
+        "완료 사례 읽기와 무보상 연습",
+        "시안 산출물 보존한 실제 퍼즐 빌드",
+        "오프라인 단일 파일 검증"
+      ],
+      "acceptance": [
+        "처음 시작부터 6사례 결산까지 진행 가능",
+        "연습이 캠페인 진행과 지급 원장을 변경하지 않음",
+        "인터넷 없이 필수 기능 실행"
+      ],
+      "testKinds": [
+        "campaign",
+        "offline-build",
+        "practice"
+      ]
+    },
+    {
+      "id": "MC11",
+      "title": "독립 퍼즐 모바일 품질 검증",
+      "status": "planned",
+      "dependsOn": [
+        "MC10"
+      ],
+      "outputs": [
+        "docs/퍼즐검증.md",
+        "최종 PC와 모바일 캡처",
+        "지원 환경과 미검증 항목"
+      ],
+      "steps": [
+        "320/360/390/412/430px 전 과정 확인",
+        "짧은 화면과 회전 및 200% 글자",
+        "6사례 브라우저 시나리오와 저장 복원",
+        "키보드 및 focus 확인",
+        "가능한 실제 기기 검증과 성능 측정"
+      ],
+      "acceptance": [
+        "필수 오류 0",
+        "6사례 처리와 보완 흐름 통과",
+        "실기기와 에뮬레이션 결과를 별도 표기",
+        "미검증 환경을 검증 완료로 표시하지 않음"
+      ],
+      "testKinds": [
+        "end-to-end",
+        "responsive",
+        "accessibility",
+        "performance"
+      ]
+    },
+    {
+      "id": "MC12",
+      "title": "4일 이야기와 재방문 진행",
+      "status": "planned",
+      "dependsOn": [
+        "MC11"
+      ],
+      "outputs": [
+        "src/data/chapter.js",
+        "M07~M11 및 M06 재방문 데이터",
+        "동료와 주민 대사"
+      ],
+      "steps": [
+        "12회 방문과 11사례 순서 작성",
+        "M06 보완 안내 뒤 3일 재방문 연결",
+        "초기 발령 도입과 일일 결산",
+        "선임과 동료 대화",
+        "기존 인물 연결 후보를 본편 데이터 확인 전 보류"
+      ],
+      "acceptance": [
+        "M06 대기 상태가 근무 종료를 막지 않음",
+        "재방문에서만 해당 세대 변경",
+        "4일 이야기와 사건 상태 모순 없음"
+      ],
+      "testKinds": [
+        "story-flow",
+        "callback",
+        "content-review"
+      ]
+    },
+    {
+      "id": "MC13",
+      "title": "주민센터 맵과 복귀 흐름",
+      "status": "planned",
+      "dependsOn": [
+        "MC12"
+      ],
+      "outputs": [
+        "20x14 지도 데이터",
+        "전용 맵 화면과 이동",
+        "퍼즐 복귀 context"
+      ],
+      "steps": [
+        "6구역과 필수 접근점 배치",
+        "목적지 클릭으로 이동",
+        "전입 창구에서 작업 화면 진입",
+        "퍼즐 종료 후 원위치 복귀",
+        "필수 목적지 경로 검사"
+      ],
+      "acceptance": [
+        "모바일에서 걷기 조작이 필수가 아님",
+        "모든 필수 구역 접근 가능",
+        "작성 도중 맵 복귀와 재진입으로 초안 보존"
+      ],
+      "testKinds": [
+        "map-paths",
+        "return-context"
+      ]
+    },
+    {
+      "id": "MC14",
+      "title": "기념품과 챕터 독립 완성",
+      "status": "planned",
+      "dependsOn": [
+        "MC13"
+      ],
+      "outputs": [
+        "src/data/items.js",
+        "기념품 4개와 기본 비품",
+        "주민센터 독립 챕터 빌드"
+      ],
+      "steps": [
+        "기념품 조건과 once claim 적용",
+        "무료 비품 배치",
+        "최종 픽셀 아트와 기본 무음 대응",
+        "12방문과 4결산 통합 검증"
+      ],
+      "acceptance": [
+        "기념품 지급 중복 0",
+        "보완 안내와 재방문 각각의 기록 보존",
+        "4일 결산까지 독립 챕터 완료"
+      ],
+      "testKinds": [
+        "item-claims",
+        "chapter-end-to-end"
+      ]
+    },
+    {
+      "id": "MC15",
+      "title": "최신 본편 통합 구조 확인",
+      "status": "planned",
+      "dependsOn": [
+        "MC14"
+      ],
+      "outputs": [
+        "docs/본편연결계약.md",
+        "최신 소스와 빌드 식별",
+        "저장 사본 fixture"
+      ],
+      "steps": [
+        "현재 배포와 로컬 소스 차이 확인",
+        "최신 registry/맵/저장/성장 구조 확인",
+        "기존 생활보장과 인물과 관계 데이터 확인",
+        "발령 진입/복귀/경제 adapter 계약 작성"
+      ],
+      "acceptance": [
+        "과거 로컬 core를 최신으로 가정하지 않음",
+        "보호할 기존 상태와 버전 확인",
+        "최신 소스가 없으면 연결 작업만 제한하고 독립 챕터 보존"
+      ],
+      "testKinds": [
+        "integration-audit",
+        "save-fixtures"
+      ]
+    },
+    {
+      "id": "MC16",
+      "title": "본편과 발령 및 경력 연결",
+      "status": "planned",
+      "dependsOn": [
+        "MC15"
+      ],
+      "outputs": [
+        "src/adapters/main-game.js",
+        "통합 후보 빌드",
+        "본편 저장 호환 검사"
+      ],
+      "steps": [
+        "chapterId와 퍼즐 adapter 등록",
+        "발령 commit과 중단 복원",
+        "전역 XP/재화/소유품/관계 보존",
+        "통합 완료 기록과 once claim 연결",
+        "기존 인물 안부 대사 연결"
+      ],
+      "acceptance": [
+        "발령 취소가 기존 진행을 삭제하지 않음",
+        "재진입과 재로딩에서 보상 중복 0",
+        "기존 퍼즐과 저장 회귀 통과"
+      ],
+      "testKinds": [
+        "integration",
+        "transfer",
+        "legacy-regression"
+      ]
+    },
+    {
+      "id": "MC17",
+      "title": "출시 후보 종합 검수",
+      "status": "planned",
+      "dependsOn": [
+        "MC16"
+      ],
+      "outputs": [
+        "최종 출시 후보",
+        "docs/출시검증.md",
+        "변경 목록과 배포 절차"
+      ],
+      "steps": [
+        "퍼즐과 챕터 전체 회귀",
+        "모바일 지원 환경 검증",
+        "오프라인 파일과 통합 빌드 검증",
+        "알려진 문제와 제한 기록",
+        "공개 배포 결정용 구체적 산출물 준비"
+      ],
+      "acceptance": [
+        "필수 오류 0",
+        "보호한 기존 상태와 회귀 통과",
+        "미구현 챕터 진입 비활성",
+        "사용자 배포 승인 전 공개 반영 없음"
+      ],
+      "testKinds": [
+        "release-regression",
+        "offline",
+        "integration"
+      ]
+    }
+  ]
+}

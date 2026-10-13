@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": 1,
+  "saveRevision": 0,
+  "mode": "chapter",
+  "records": {
+    "chapter:M01": {
+      "resolutionId": "visit:M01",
+      "caseId": "M01",
+      "visitId": "M01",
+      "outcome": "registered",
+      "beforeSnapshot": {
+        "origin": {
+          "address": "들꽃길 3 · 101호",
+          "headId": "sae",
+          "memberIds": [
+            "sae"
+          ],
+          "relationByPerson": {
+            "sae": "본인"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "모퉁이로 12 · 201호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        }
+      },
+      "afterSnapshot": {
+        "origin": {
+          "address": "들꽃길 3 · 101호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        },
+        "destination": {
+          "address": "모퉁이로 12 · 201호",
+          "headId": "sae",
+          "memberIds": [
+            "sae"
+          ],
+          "relationByPerson": {
+            "sae": "본인"
+          },
+          "active": true
+        }
+      },
+      "explanation": "제 첫 독립 주소네요. 이사 온 게 실감 나요."
+    },
+    "chapter:M02": {
+      "resolutionId": "visit:M02",
+      "caseId": "M02",
+      "visitId": "M02",
+      "outcome": "registered",
+      "beforeSnapshot": {
+        "origin": {
+          "address": "나무길 8 · 101호",
+          "headId": "yu",
+          "memberIds": [
+            "yu",
+            "min",
+            "sol"
+          ],
+          "relationByPerson": {
+            "yu": "본인",
+            "min": "배우자",
+            "sol": "자녀"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "모퉁이로 12 · 202호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        }
+      },
+      "afterSnapshot": {
+        "origin": {
+          "address": "나무길 8 · 101호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        },
+        "destination": {
+          "address": "모퉁이로 12 · 202호",
+          "headId": "yu",
+          "memberIds": [
+            "yu",
+            "min",
+            "sol"
+          ],
+          "relationByPerson": {
+            "yu": "본인",
+            "min": "배우자",
+            "sol": "자녀"
+          },
+          "active": true
+        }
+      },
+      "explanation": "세 사람의 새집 주소가 잘 등록됐네요. 감사합니다."
+    },
+    "chapter:M03": {
+      "resolutionId": "visit:M03",
+      "caseId": "M03",
+      "visitId": "M03",
+      "outcome": "registered",
+      "beforeSnapshot": {
+        "origin": {
+          "address": "나무길 8 · 101호",
+          "headId": "chae",
+          "memberIds": [
+            "chae",
+            "ga",
+            "bo"
+          ],
+          "relationByPerson": {
+            "chae": "본인",
+            "ga": "자녀",
+            "bo": "자녀"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "모퉁이로 12 · 202호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        }
+      },
+      "afterSnapshot": {
+        "origin": {
+          "address": "나무길 8 · 101호",
+          "headId": "chae",
+          "memberIds": [
+            "chae"
+          ],
+          "relationByPerson": {
+            "chae": "본인"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "모퉁이로 12 · 202호",
+          "headId": "ga",
+          "memberIds": [
+            "ga",
+            "bo"
+          ],
+          "relationByPerson": {
+            "ga": "본인",
+            "bo": "형제자매"
+          },
+          "active": true
+        }
+      },
+      "explanation": "이제 정말 저희 집 주소가 생겼네요. 이삿짐 정리하러 갈게요."
+    }
+  },
+  "drafts": {},
+  "dayClosed": [
+    1
+  ],
+  "introduced": false,
+  "items": [
+    "badge"
+  ],
+  "active": null,
+  "map": {
+    "x": 4,
+    "y": 10
+  },
+  "settings": {
+    "motion": true,
+    "sound": false
+  },
+  "savedAt": null
+}

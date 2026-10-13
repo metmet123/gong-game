@@ -1,0 +1,7 @@
+[
+  {
+    "before": "${p?esc(p.personality)+(lv?` 좋아하는 것: ${esc(p.likes)}`:''):esc(n.quote||'')}",
+    "after": "${p?esc(p.personality)+(lv?` 좋아하는 것: ${esc(p.likes)}`:'')+(lv>=2?` 불편해하는 것: ${esc(p.dislikes)}`:'')+(lv>=3?` 동료 관계: ${Object.entries(p.relations||{}).map(([who,desc])=>esc(NP[who]?.name||who)+': '+esc(desc)).join(' / ')}`:''):esc(n.quote||'')}",
+    "count": 1
+  }
+]

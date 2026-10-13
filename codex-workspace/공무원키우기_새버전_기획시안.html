@@ -1,0 +1,1066 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>공무원 키우기 새 버전 시안</title>
+<style>
+:root{
+  --paper:#f5f0e2; --paper-2:#ebe3cd; --card:#fffdf6; --ink:#2c3628; --ink-2:#5d6555; --line:#d6ccb2;
+  --green:#3f5f3a; --green-2:#5d7f4f; --green-soft:#dfe7d2; --red:#b4472f; --red-soft:#f4ddd4; --gold:#c9932c;
+  --font:"Pretendard","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  --mono:"D2Coding",Consolas,"Courier New",monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#1d221b; --paper-2:#262c23; --card:#2b3227; --ink:#ece6d4; --ink-2:#b5b29f; --line:#434b3c;
+    --green:#a9c79a; --green-2:#8fb27f; --green-soft:#33402d; --red:#e58a71; --red-soft:#4a2c24; --gold:#e0b45a;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#1d221b; --paper-2:#262c23; --card:#2b3227; --ink:#ece6d4; --ink-2:#b5b29f; --line:#434b3c;
+  --green:#a9c79a; --green-2:#8fb27f; --green-soft:#33402d; --red:#e58a71; --red-soft:#4a2c24; --gold:#e0b45a;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);line-height:1.65;font-size:16px;word-break:keep-all;overflow-wrap:anywhere}
+a{color:var(--green)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:16px;height:56px}
+header.top b{font-size:15px}
+header.top nav{margin-left:auto;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+header.top nav a{font-size:13px;text-decoration:none;color:var(--ink-2);padding:6px 10px;border-radius:999px;white-space:nowrap}
+header.top nav a:hover{background:var(--paper-2);color:var(--ink)}
+@media (max-width:720px){header.top nav{display:none}}
+
+.hero{padding:56px 0 32px}
+.eyebrow{font-size:12px;letter-spacing:.12em;color:var(--green);font-weight:700;text-transform:uppercase}
+h1{font-size:clamp(28px,5vw,44px);line-height:1.2;margin:10px 0 14px;letter-spacing:-.02em}
+.lead{font-size:17px;color:var(--ink-2);max-width:720px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{font-size:13px;padding:4px 12px;border-radius:999px;background:var(--green-soft);color:var(--green);font-weight:600}
+.chip.red{background:var(--red-soft);color:var(--red)}
+
+section.sec{padding:44px 0;border-top:1px solid var(--line)}
+.sechead{margin-bottom:22px}
+.num{font-family:var(--mono);font-size:13px;color:var(--green);font-weight:700}
+h2{font-size:clamp(22px,3.4vw,30px);line-height:1.3;margin:6px 0 8px;letter-spacing:-.01em}
+h3{font-size:18px;margin:0 0 6px}
+.sub{color:var(--ink-2);margin:0;max-width:760px}
+p{margin:0 0 10px}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:820px){.grid2,.grid3{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card ul{margin:6px 0 0;padding-left:18px}
+.card li{margin:4px 0}
+.card.good{border-top:4px solid var(--green-2)}
+.card.fix{border-top:4px solid var(--red)}
+.tag{display:inline-block;font-size:12px;font-weight:700;padding:2px 8px;border-radius:6px;background:var(--paper-2);color:var(--ink-2);margin-bottom:8px}
+
+.concept{background:var(--green);color:#f6f1df;border-radius:16px;padding:28px;margin-bottom:20px}
+.concept .big{font-size:clamp(20px,3vw,26px);font-weight:800;line-height:1.35;margin:4px 0 10px}
+.concept p{color:#dfe5cf;margin:0}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .concept{background:#2f4429}}
+
+.mix{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media (max-width:820px){.mix{grid-template-columns:1fr}}
+.mixcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.mixcard .game{font-size:12px;color:var(--ink-2);font-weight:700}
+.mixcard .feel{font-size:17px;font-weight:800;margin:2px 0 6px}
+.mixcard .ours{font-size:14px;margin:0}
+.mixcard .not{font-size:12.5px;color:var(--ink-2);margin-top:8px;border-top:1px dashed var(--line);padding-top:8px}
+
+.loop{display:flex;flex-wrap:wrap;align-items:stretch;gap:8px}
+.loop .step{flex:1 1 140px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;position:relative}
+.loop .step b{display:block;font-size:15px}
+.loop .step small{color:var(--ink-2);font-size:12.5px;display:block;line-height:1.5}
+.loop .step i{font-style:normal;font-size:11px;color:var(--green);font-weight:700;font-family:var(--mono)}
+.loop .back{flex-basis:100%;text-align:center;font-size:13px;color:var(--ink-2);border:1px dashed var(--line);border-radius:10px;padding:8px}
+.note{font-size:14px;color:var(--ink-2);background:var(--paper-2);border-radius:10px;padding:12px 14px;margin-top:14px}
+
+table{width:100%;border-collapse:collapse;font-size:14px;background:var(--card);border-radius:12px;overflow:hidden}
+th,td{padding:11px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:var(--paper-2);font-size:13px;color:var(--ink-2)}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+.tablewrap table{min-width:720px}
+
+/* ---------- mockup frame ---------- */
+.mock{margin:0 0 28px}
+.mock .cap{display:flex;gap:10px;align-items:baseline;margin:0 0 8px;flex-wrap:wrap}
+.mock .cap b{font-size:16px}
+.mock .cap span{font-size:13px;color:var(--ink-2)}
+.stagewrap{overflow-x:auto;border-radius:12px;border:1px solid var(--line);background:#222}
+.stage{min-width:600px;container-type:inline-size}
+.stage .s{position:relative;font-size:1.5625cqw;width:64em;height:40em;overflow:hidden;font-family:var(--font);line-height:1.35;color:#2c3628}
+.mock .why{font-size:13.5px;color:var(--ink-2);margin-top:8px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:6px 18px}
+.mock .why div::before{content:"▸ ";color:var(--green)}
+.abs{position:absolute}
+svg.pp{display:block;shape-rendering:crispEdges}
+
+/* style A palette (recommended) */
+.sa{--wall:#efe6cc;--wall2:#e3d7b6;--floor:#d9caa3;--wood:#b98a56;--wood2:#9c6f3f;--green:#3f5f3a;--cream:#fbf6e6;--ink:#2c3628;--red:#b4472f}
+.sa .hud{background:#2f4a2c;color:#f3ecd2;border:.15em solid #1d2f1b;padding:.35em .8em;font-weight:800;font-size:1.1em}
+.paperA{background:#fbf6e6;border:.15em solid #8a7a58;box-shadow:.3em .3em 0 rgba(60,45,20,.25)}
+.rowA{display:flex;justify-content:space-between;border-bottom:.08em dashed #c8b98f;padding:.32em .1em;font-size:1.05em}
+.rowA b{font-weight:800}
+.bubble{background:#fffdf3;border:.15em solid #3a3a2a;padding:.5em .7em;font-size:1.1em;font-weight:700;line-height:1.35}
+.bubble::after{content:"";position:absolute;width:.9em;height:.9em;background:#fffdf3;border-left:.15em solid #3a3a2a;border-bottom:.15em solid #3a3a2a;transform:rotate(-45deg);left:1.4em;bottom:-.58em}
+.stampmark{border:.3em double var(--red,#b4472f);color:var(--red,#b4472f);font-weight:900;text-align:center;letter-spacing:.08em;opacity:.88}
+.btnA{background:#3f5f3a;color:#f6f1df;border:.15em solid #22361f;font-weight:800;text-align:center;padding:.45em .9em;box-shadow:0 .25em 0 #22361f}
+.cardA{background:#fbf6e6;border:.13em solid #7d6d4b;padding:.4em .55em;font-size:.95em;box-shadow:.2em .2em 0 rgba(0,0,0,.18)}
+.cardA b{display:block;font-size:1.1em}
+.pill{display:inline-block;font-size:.8em;font-weight:800;padding:.05em .45em;border:.1em solid currentColor;margin-right:.3em}
+
+/* style comparison */
+.styles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:820px){.styles{grid-template-columns:1fr}}
+.stylecard{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.stylecard .mini{container-type:inline-size}
+.stylecard .mini .s{position:relative;font-size:2.5cqw;width:40em;height:30em;overflow:hidden;line-height:1.3}
+.stylecard .body{padding:14px 16px}
+.stylecard .rec{font-size:12px;font-weight:800;color:#fff;background:var(--green-2);padding:2px 8px;border-radius:6px;margin-left:6px;vertical-align:2px}
+.palette{display:flex;gap:4px;margin:8px 0 10px}
+.palette i{width:22px;height:22px;border-radius:5px;border:1px solid rgba(0,0,0,.15)}
+.pc{font-size:13.5px;margin:0}
+.pc b{color:var(--green)}
+.pc.minus b{color:var(--red)}
+
+/* style B */
+.sb{background:#3a3833;color:#2a2a24;font-family:var(--mono)}
+.sb .paper{background:#d9d3b4;border:.25em solid #1f1e1a;box-shadow:.4em .4em 0 #1f1e1a}
+.sb .row{display:flex;justify-content:space-between;border-bottom:.15em solid #a9a283;padding:.25em .2em;font-size:1.05em}
+/* style C */
+.sc{background:#f6e3cf;font-family:var(--font);color:#4a3426}
+.sc .paper{background:#fffaf2;border:.25em solid #5b3d2b;border-radius:1em;box-shadow:0 .5em 0 rgba(91,61,43,.25)}
+.sc .row{display:flex;justify-content:space-between;border-bottom:.12em solid #f0dcc6;padding:.3em .3em;font-size:1.05em}
+
+/* phone mock */
+.phonewrap{display:grid;grid-template-columns:280px 1fr;gap:24px;align-items:center}
+@media (max-width:720px){.phonewrap{grid-template-columns:1fr;justify-items:center}}
+.phone{width:280px;max-width:100%;border-radius:34px;background:#1d1d1b;padding:10px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.phone .scr{container-type:inline-size;border-radius:26px;overflow:hidden}
+.phone .s{position:relative;font-size:3.846cqw;width:26em;height:54em;background:#e9e1c8;line-height:1.35;color:#2c3628}
+
+footer{padding:36px 0 60px;color:var(--ink-2);font-size:13px;border-top:1px solid var(--line)}
+.decide{counter-reset:d}
+.decide .card{position:relative;padding-left:56px}
+.decide .card::before{counter-increment:d;content:counter(d);position:absolute;left:18px;top:18px;width:26px;height:26px;border-radius:50%;background:var(--green);color:var(--paper);font-weight:800;display:grid;place-items:center;font-size:14px}
+.opt{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.opt span{font-size:13px;border:1px solid var(--line);border-radius:8px;padding:3px 9px;background:var(--paper)}
+.opt span.r{border-color:var(--green-2);background:var(--green-soft);color:var(--green);font-weight:700}
+/* brain puzzles */
+.principles{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:22px}
+@media (max-width:820px){.principles{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.principles{grid-template-columns:1fr}}
+.principles div{background:var(--green-soft);border-radius:12px;padding:12px 14px;font-size:13.5px;line-height:1.55}
+.principles b{display:block;font-size:15px;color:var(--green);margin-bottom:2px}
+.pz{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:820px){.pz{grid-template-columns:1fr}}
+.pzc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.pzc.core{border:2px solid var(--green-2)}
+.pzc .meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:12px;color:var(--ink-2)}
+.pzc .meta .badge{background:var(--green-2);color:#fff;font-weight:800;padding:1px 8px;border-radius:6px}
+.pzc .meta .badge.sub{background:var(--ink-2)}
+.pzc .meta .where{border:1px solid var(--line);padding:0 7px;border-radius:6px}
+.pzc h3{margin:0;font-size:19px}
+.pzc p{margin:0;font-size:14.5px}
+.pzc .k{font-size:12px;font-weight:800;color:var(--green);margin-right:4px}
+.ex{background:var(--paper-2);border-radius:10px;padding:12px;display:flex;flex-direction:column;gap:7px;font-size:13px}
+.ex .ln{display:flex;flex-wrap:wrap;align-items:center;gap:5px}
+.t{display:inline-block;padding:2px 8px;border-radius:6px;border:1.5px solid #8a7a58;background:#fbf6e6;color:#2c3628;font-weight:700;white-space:nowrap}
+.t.g{background:#3f5f3a;color:#f6f1df;border-color:#22361f}
+.t.r{background:#b4472f;color:#fff;border-color:#7d2c1c}
+.t.y{background:#f2d27a;border-color:#a8862c}
+.t.b{background:#6c7fb0;color:#fff;border-color:#4a5a88}
+.t.lock{background:#d6ccb2;color:#5d6555;border-style:dashed}
+.t.hl{outline:2px solid #e0a020;outline-offset:1px}
+.ex .ar{color:var(--ink-2);font-weight:800}
+.ex .cm{color:var(--ink-2);font-size:12px}
+.pzc .why{font-size:13.5px;color:var(--ink-2);border-top:1px dashed var(--line);padding-top:8px}
+.pzc .why b{color:var(--ink)}
+/* department minigames */
+.dept{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media (max-width:980px){.dept{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.dept{grid-template-columns:1fr}}
+.dg{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:flex;flex-direction:column;gap:7px}
+.dg.pick{border:2px solid var(--green-2)}
+.dg .gen{font-size:12px;color:var(--ink-2);font-weight:700}
+.dg h3{margin:0;font-size:18px}
+.dg .office{font-size:12.5px;font-weight:800;color:var(--green)}
+.dg p{margin:0;font-size:14px}
+.dg .twist{font-size:13px;background:var(--red-soft);color:var(--ink);border-radius:8px;padding:7px 10px}
+.dg .twist b{color:var(--red)}
+.dg .cost{font-size:12px;color:var(--ink-2);display:flex;gap:10px;flex-wrap:wrap}
+.vis{background:#efe6cc;border-radius:10px;padding:10px;display:flex;justify-content:center;align-items:center;gap:8px;min-height:120px;color:#2c3628}
+.fg{display:grid;grid-template-columns:repeat(5,22px);gap:2px}
+.fg span{width:22px;height:22px;background:#d9cfb2;border-radius:3px;display:grid;place-items:center}
+.fg .R{background:#e3a08f}.fg .B{background:#9fb5dc}.fg .Y{background:#f0d68a}.fg .G{background:#a9cf9b}
+.fg i{width:12px;height:12px;border-radius:50%;display:block}
+.fg .dR{background:#b4472f}.fg .dB{background:#3d5f9e}.fg .dY{background:#c9932c}.fg .dG{background:#3f7a3a}
+.fg .x{background:#7d6d4b;color:#efe6cc;font-size:11px;font-weight:800}
+.tubes{display:flex;gap:8px;align-items:flex-end}
+.tube{width:40px;height:104px;border:2.5px solid #5b4c31;border-top:none;border-radius:0 0 12px 12px;display:flex;flex-direction:column-reverse;padding:2px;gap:2px;background:rgba(255,255,255,.4)}
+.tube span{height:22px;border-radius:4px;font-size:12px;font-weight:800;color:#2c3628;display:grid;place-items:center}
+.ar-grid{display:grid;grid-template-columns:repeat(4,28px);gap:3px}
+.ar-grid span{width:28px;height:28px;border-radius:5px;background:#d9cfb2;display:grid;place-items:center;font-weight:900;font-size:15px}
+.ar-grid .c{background:#fbf6e6;border:1.5px solid #8a7a58}
+.ar-grid .f{background:#b4472f;color:#fff}
+.ar-grid .lane{background:repeating-linear-gradient(45deg,#f2d27a 0 5px,#e8c35c 5px 10px)}
+.nono{display:grid;grid-template-columns:28px repeat(5,18px);gap:2px;font-size:10.5px;font-weight:800}
+.nono span{width:18px;height:18px;display:grid;place-items:center;background:#fbf6e6;border:1px solid #c8b98f}
+.nono .h{background:none;border:none;color:#5d6555;line-height:1.05;text-align:center}
+.nono .h.l{width:28px;justify-content:end;padding-right:3px}
+.nono .on{background:#3f5f3a;border-color:#3f5f3a}
+.nono .off{background:#fbf6e6;color:#b9ac86}
+.slots{display:flex;flex-direction:column;gap:8px;align-items:center}
+.pile{display:flex;gap:3px;flex-wrap:wrap;justify-content:center;max-width:210px}
+.pile span,.slotrow span{width:26px;height:30px;border-radius:4px;background:#fbf6e6;border:1.5px solid #8a7a58;display:grid;place-items:center;font-size:14px}
+.pile span.dim{opacity:.4}
+.slotrow{display:flex;gap:3px;background:#8f6a3e;padding:4px;border-radius:6px}
+.slotrow span.e{background:#a98457;border-color:#6d4f2c}
+.flowmap{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+@media print{header.top{position:static}.stagewrap{overflow:visible}}
+</style>
+</head>
+<body>
+
+<!-- pixel sprites -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="person" viewBox="0 0 12 16">
+      <rect x="3" y="0" width="6" height="2" fill="var(--hair,#3b2a20)"/>
+      <rect x="2" y="1" width="1" height="3" fill="var(--hair,#3b2a20)"/>
+      <rect x="9" y="1" width="1" height="2" fill="var(--hair,#3b2a20)"/>
+      <rect x="3" y="2" width="6" height="4" fill="var(--skin,#f0c9a0)"/>
+      <rect x="4" y="3" width="1" height="1" fill="#2a2420"/>
+      <rect x="7" y="3" width="1" height="1" fill="#2a2420"/>
+      <rect x="5" y="5" width="2" height="1" fill="var(--mouth,#c98a6a)"/>
+      <rect x="2" y="6" width="8" height="6" fill="var(--shirt,#4c6fa0)"/>
+      <rect x="5" y="6" width="2" height="1" fill="#f4f1e6"/>
+      <rect x="5" y="7" width="2" height="3" fill="var(--tie,#2f4a2c)"/>
+      <rect x="1" y="7" width="1" height="4" fill="var(--shirt,#4c6fa0)"/>
+      <rect x="10" y="7" width="1" height="4" fill="var(--shirt,#4c6fa0)"/>
+      <rect x="1" y="11" width="1" height="1" fill="var(--skin,#f0c9a0)"/>
+      <rect x="10" y="11" width="1" height="1" fill="var(--skin,#f0c9a0)"/>
+      <rect x="3" y="12" width="2" height="4" fill="var(--pants,#3a3a44)"/>
+      <rect x="7" y="12" width="2" height="4" fill="var(--pants,#3a3a44)"/>
+    </symbol>
+    <symbol id="plant" viewBox="0 0 10 12">
+      <rect x="4" y="0" width="2" height="2" fill="#5d8a4a"/><rect x="1" y="2" width="3" height="2" fill="#6f9c55"/>
+      <rect x="6" y="1" width="3" height="3" fill="#4f7a3f"/><rect x="3" y="3" width="4" height="3" fill="#5d8a4a"/>
+      <rect x="4" y="5" width="2" height="2" fill="#3f6a33"/><rect x="2" y="7" width="6" height="5" fill="#b0764a"/>
+      <rect x="2" y="7" width="6" height="1" fill="#8f5c36"/>
+    </symbol>
+    <symbol id="phoneicon" viewBox="0 0 14 10">
+      <rect x="0" y="0" width="14" height="3" fill="#2f3a2c"/><rect x="0" y="3" width="3" height="2" fill="#2f3a2c"/>
+      <rect x="11" y="3" width="3" height="2" fill="#2f3a2c"/><rect x="2" y="5" width="10" height="5" fill="#3d4a39"/>
+      <rect x="4" y="6" width="1" height="1" fill="#d8d0b6"/><rect x="6" y="6" width="1" height="1" fill="#d8d0b6"/>
+      <rect x="8" y="6" width="1" height="1" fill="#d8d0b6"/><rect x="4" y="8" width="1" height="1" fill="#d8d0b6"/>
+      <rect x="6" y="8" width="1" height="1" fill="#d8d0b6"/><rect x="8" y="8" width="1" height="1" fill="#d8d0b6"/>
+    </symbol>
+    <symbol id="monitor" viewBox="0 0 14 12">
+      <rect x="0" y="0" width="14" height="9" fill="#3a4a3c"/><rect x="1" y="1" width="12" height="7" fill="#9fc3b0"/>
+      <rect x="2" y="2" width="7" height="1" fill="#e9f3e5"/><rect x="2" y="4" width="9" height="1" fill="#e9f3e5"/>
+      <rect x="2" y="6" width="5" height="1" fill="#e9f3e5"/><rect x="6" y="9" width="2" height="2" fill="#3a4a3c"/>
+      <rect x="4" y="11" width="6" height="1" fill="#3a4a3c"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <b>공무원 키우기 · 새 버전 시안</b>
+    <nav>
+      <a href="#review">초안 검토</a><a href="#concept">콘셉트</a><a href="#loop">하루 흐름</a><a href="#style">그림 스타일</a><a href="#screens">화면 시안</a><a href="#puzzles">퍼즐</a><a href="#brain">머리 쓰는 퍼즐</a><a href="#minigames">부서 미니게임</a><a href="#office">생활보장과</a><a href="#growth">성장·결과</a><a href="#steps">개발 단계</a><a href="#decide">결정할 것</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <div class="eyebrow">기획 · 화면 시안 · 2026.10.10</div>
+    <h1>창구 하나, 책상 하나.<br>오늘도 금일 중 제출.</h1>
+    <p class="lead">조사한 게임 6개의 ‘느낌’을 섞어 공무원 키우기를 처음부터 다시 설계합니다. 이 문서는 <b>코딩 전 단계</b>의 계획과 화면 시안입니다. 시안을 보고 그림 스타일과 몇 가지 방향을 골라주시면, 그걸 기준으로 1단계 프로토타입을 만듭니다.</p>
+    <div class="chips"><span class="chip">업무 퍼즐 70 · 성장 20 · 연출 10 유지</span><span class="chip">고정된 내 자리 시점</span><span class="chip">도장·결재 손맛</span><span class="chip red">구현 코드 없음 · 시안만</span></div>
+  </div>
+
+  <!-- 01 -->
+  <section class="sec" id="review">
+    <div class="sechead"><div class="num">01 / 초안 검토</div><h2>조사 보고서는 ‘구조’를 잘 잡았고, ‘느낌’은 아직 화면으로 옮겨지지 않았어요.</h2>
+      <p class="sub">「공무원키우기_유사게임조사_구현제안.html」과 기존 플레이 버전을 함께 확인한 결과입니다.</p></div>
+    <div class="grid2">
+      <div class="card good"><span class="tag">좋은 점 · 그대로 가져갑니다</span>
+        <ul>
+          <li>업무 퍼즐 70 · 성장 20 · 사무실 연출 10이라는 방향이 분명합니다.</li>
+          <li>게임마다 ‘적용 제안’과 ‘범위 조절’을 나눠 적어, 욕심내서 범위가 커지는 걸 막아 줍니다.</li>
+          <li>퍼즐 틀 5개와 문제 데이터를 분리하는 설계, 난이도가 스토리·승진을 막지 않는다는 원칙이 좋습니다.</li>
+          <li>공식 소개에서 확인한 사실과 이미지를 보고 해석한 내용, 이 기획을 위한 제안을 구분해 정직하게 썼습니다.</li>
+        </ul>
+      </div>
+      <div class="card fix"><span class="tag">보완할 점 · 새 버전에서 해결합니다</span>
+        <ul>
+          <li><b>무대가 없어요.</b> 기존 게임은 사무실 화면 위에 퍼즐을 팝업 창으로 띄웁니다. 조사한 게임들은 모두 <b>고정된 작업 공간</b>에서 일이 ‘도착’하는 구조예요.</li>
+          <li><b>마무리 동작이 없어요.</b> 제출 버튼만 누르고 끝나서, 도장 찍기·결재함에 넣기 같은 손맛이 빠져 있습니다.</li>
+          <li><b>사람이 안 보여요.</b> 민원인과 동료가 텍스트로만 나와요. 창구에 실제로 찾아오는 인물이 필요합니다.</li>
+          <li><b>다음 날이 똑같아요.</b> 내 판단이 다음 날에 영향을 주지 않아 다시 할 이유가 약합니다.</li>
+          <li>보고서 파일이 5.4MB입니다. 상용 게임 이미지 12장이 들어 있어 외부에 공유하기는 어렵습니다(내부 참고용으로만 쓰세요).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 -->
+  <section class="sec" id="concept">
+    <div class="sechead"><div class="num">02 / 새 버전 콘셉트</div><h2>게임 6개에서 ‘느낌’ 하나씩만 가져와 섞습니다.</h2></div>
+    <div class="concept">
+      <div class="eyebrow" style="color:#cfe0bb">한 줄 콘셉트</div>
+      <div class="big">구청 행정지원팀 창구 자리에 앉은 신규 주무관이 되어, 책상으로 밀려드는 서류·전화·민원을 손으로 처리하고 도장을 찍어 내보내는 업무 퍼즐 게임.</div>
+      <p>사무실을 걸어 다니지 않습니다. 화면은 항상 <b>내 자리</b>입니다. 위쪽에는 창구와 사무실 풍경, 아래쪽에는 내 책상이 있어요. 일은 저절로 도착합니다.</p>
+    </div>
+    <div class="mix">
+      <div class="mixcard"><div class="game">Papers, Please</div><div class="feel">책상 위의 서류와 도장</div><p class="ours">고정된 책상에 원본과 제출안을 펼쳐 대조하고 <b>승인/반려 도장</b>을 찍습니다. 출근 전에는 「구청 소식」 한 장으로 하루를 시작해요.</p><div class="not">가져오지 않음: 무거운 분위기, 가족 생계 압박, 강한 시간 제한</div></div>
+      <div class="mixcard"><div class="game">Lil’ Guardsman</div><div class="feel">창구에 찾아오는 사람들</div><p class="ours">민원인이 창구에 와서 말풍선으로 이야기합니다. <b>질문 1개</b>를 고르거나 도구(연락망, 규칙 카드)를 써서 정보를 모은 뒤 담당부서를 안내해요.</p><div class="not">가져오지 않음: 긴 대화 트리, 100명 이상의 인물</div></div>
+      <div class="mixcard"><div class="game">Human Resource Machine</div><div class="feel">명령대로 움직이는 작은 나</div><p class="ours">PC에서 명령 블록을 배열하고 실행하면, 작은 주무관이 <b>서류를 들고 실제로 움직이며</b> 처리합니다. 어디서 틀렸는지 눈으로 보여요.</p><div class="not">가져오지 않음: 점프·메모리 주소 같은 프로그래밍 개념</div></div>
+      <div class="mixcard"><div class="game">Death and Taxes</div><div class="feel">내 판단이 내일 돌아온다</div><p class="ours">오늘 잡은 오류, 잘못 안내한 민원이 <b>다음 날 소식지·동료의 한마디·책상 변화</b>로 돌아옵니다.</p><div class="not">가져오지 않음: 생사 판단, 실패하면 막히는 분기</div></div>
+      <div class="mixcard"><div class="game">Assemble with Care</div><div class="feel">손으로 완성하는 1~2초</div><p class="ours">정답을 내면 스테이플러 찰칵, 도장 쾅, 결재함에 휙. <b>짧은 완료 연출</b>로 ‘일 하나 끝냈다’는 감각을 줍니다.</p><div class="not">가져오지 않음: 3D 물체 조작</div></div>
+      <div class="mixcard"><div class="game">Overcooked</div><div class="feel">쌓이는 일, 고르는 순서</div><p class="ours">들어온 업무함에 마감·회신 대기 표시가 붙습니다. 회신을 기다리는 동안 다른 일부터 처리하는 <b>순서 선택</b>이 생겨요.</p><div class="not">가져오지 않음: 실시간 압박, 이동, 멀티플레이</div></div>
+    </div>
+  </section>
+
+  <!-- 03 -->
+  <section class="sec" id="loop">
+    <div class="sechead"><div class="num">03 / 하루 흐름</div><h2>하루는 6~10분, 업무 4~6건.</h2><p class="sub">소식지로 시작해 결산으로 끝나고, 결과는 다음 날 소식지로 돌아옵니다.</p></div>
+    <div class="loop">
+      <div class="step"><i>출근</i><b>구청 소식</b><small>어제의 결과, 오늘 바뀐 규칙 한 줄</small></div>
+      <div class="step"><i>업무함</i><b>순서 고르기</b><small>긴급·마감·회신 대기 카드 4~6장</small></div>
+      <div class="step"><i>처리</i><b>창구 · 책상 · PC</b><small>퍼즐 20초~2분, 같은 화면에서 진행</small></div>
+      <div class="step"><i>마무리</i><b>도장 · 결재</b><small>1~2초 손맛 연출, 근거 확인과 재시도</small></div>
+      <div class="step"><i>퇴근</i><b>근무 기록</b><small>포인트·숙련도, 동료 한마디, 내일 예고</small></div>
+      <div class="back">↺ 오늘의 판단이 내일 소식지·업무·책상에 반영</div>
+    </div>
+    <p class="note">협조 업무는 ‘요청을 보내면 다른 업무 1건을 처리한 뒤 회신 도착’처럼 <b>턴 단위로 기다립니다</b>. 실시간 타이머보다 부담이 적고, 무엇부터 할지 고르는 재미가 생겨요.</p>
+  </section>
+
+  <!-- 04 -->
+  <section class="sec" id="style">
+    <div class="sechead"><div class="num">04 / 그림 스타일 시안</div><h2>같은 장면을 세 가지 스타일로 그렸어요.</h2><p class="sub">창구의 민원인, 원본과 제출안, 반려 도장이 있는 ‘서류 검토’ 장면입니다. 이 문서의 나머지 화면 시안은 추천안 A로 그렸습니다.</p></div>
+    <div class="styles">
+      <!-- A -->
+      <div class="stylecard">
+        <div class="mini"><div class="s sa" style="background:var(--wall)">
+          <div class="abs" style="left:0;top:0;width:40em;height:12em;background:var(--wall)"></div>
+          <div class="abs" style="left:2em;top:1.6em;width:15em;height:9.4em;background:#cfe0cf;border:.4em solid #8d7a52"></div>
+          <svg class="pp abs" style="left:6.5em;top:4em;width:5em;height:6.7em;--shirt:#c27b4a;--hair:#6b4a2b;--tie:#c27b4a"><use href="#person"/></svg>
+          <div class="abs bubble" style="left:11.82em;top:1.64em;font-size:1.1em;max-width:11.82em">수정본 맞는지 봐주세요!</div>
+          <div class="abs" style="left:0;top:11em;width:40em;height:19em;background:var(--wood);border-top:.5em solid var(--wood2)"></div>
+          <div class="abs paperA" style="left:2em;top:13em;width:16em;padding:.6em;transform:rotate(-2deg)"><div style="font-weight:800;font-size:1.1em;margin-bottom:.2em">원본</div><div class="rowA"><span>사업연도</span><b>2027</b></div><div class="rowA"><span>재료비</span><b>3,000</b></div><div class="rowA"><span>합계</span><b>5,000</b></div></div>
+          <div class="abs paperA" style="left:20em;top:12.6em;width:16em;padding:.6em;transform:rotate(1.5deg)"><div style="font-weight:800;font-size:1.1em;margin-bottom:.2em">제출안</div><div class="rowA"><span>사업연도</span><b>2027</b></div><div class="rowA" style="background:#f6d9cd"><span>재료비</span><b>30,000</b></div><div class="rowA"><span>합계</span><b>5,000</b></div></div>
+          <div class="abs stampmark" style="left:16.67em;top:14.33em;width:6em;padding:.2em;transform:rotate(-12deg);font-size:1.5em">반려</div>
+        </div></div>
+        <div class="body">
+          <h3>A · 크림·녹색 도트 <span class="rec">추천</span></h3>
+          <div class="palette"><i style="background:#efe6cc"></i><i style="background:#b98a56"></i><i style="background:#3f5f3a"></i><i style="background:#fbf6e6"></i><i style="background:#b4472f"></i></div>
+          <p class="pc"><b>장점</b> 보내주신 시안·기존 게임과 이어집니다. 친근하고 글씨가 잘 읽히며, 그림 제작량이 가장 적어요.</p>
+          <p class="pc minus"><b>단점</b> 무난해서 개성이 약해 보일 수 있어요. 도장·종이 소리 같은 연출로 보완합니다.</p>
+        </div>
+      </div>
+      <!-- B -->
+      <div class="stylecard">
+        <div class="mini"><div class="s sb">
+          <div class="abs" style="left:0;top:0;width:40em;height:12em;background:#5b5a4e"></div>
+          <div class="abs" style="left:2em;top:1.6em;width:15em;height:9.4em;background:#7d7c69;border:.4em solid #1f1e1a"></div>
+          <svg class="pp abs" style="left:6.5em;top:4em;width:5em;height:6.7em;--shirt:#5c5446;--hair:#1f1e1a;--tie:#5c5446;--skin:#c9b394"><use href="#person"/></svg>
+          <div class="abs" style="left:12.38em;top:1.9em;background:#d9d3b4;border:.2em solid #1f1e1a;padding:.4em .6em;font-size:1.05em;font-weight:700">수정본 맞는지 봐주세요.</div>
+          <div class="abs" style="left:0;top:11em;width:40em;height:19em;background:#4a473f;border-top:.5em solid #1f1e1a"></div>
+          <div class="abs paper" style="left:2em;top:13em;width:16em;padding:.6em"><div style="font-weight:800;font-size:1.1em">원본</div><div class="row"><span>연도</span><b>2027</b></div><div class="row"><span>재료비</span><b>3,000</b></div><div class="row"><span>합계</span><b>5,000</b></div></div>
+          <div class="abs paper" style="left:20em;top:13em;width:16em;padding:.6em"><div style="font-weight:800;font-size:1.1em">제출안</div><div class="row"><span>연도</span><b>2027</b></div><div class="row" style="background:#c99c8a"><span>재료비</span><b>30,000</b></div><div class="row"><span>합계</span><b>5,000</b></div></div>
+          <div class="abs" style="left:16.67em;top:14.67em;width:6em;padding:.15em;font-size:1.5em;transform:rotate(-8deg);border:.25em solid #8a2b1d;color:#8a2b1d;font-weight:900;text-align:center;background:rgba(138,43,29,.08)">DENIED 반려</div>
+        </div></div>
+        <div class="body">
+          <h3>B · 저채도 레트로 도트</h3>
+          <div class="palette"><i style="background:#3a3833"></i><i style="background:#5b5a4e"></i><i style="background:#d9d3b4"></i><i style="background:#1f1e1a"></i><i style="background:#8a2b1d"></i></div>
+          <p class="pc"><b>장점</b> 서류 업무의 긴장감과 건조한 풍자 톤이 강하게 살아요.</p>
+          <p class="pc minus"><b>단점</b> 오래 보면 칙칙하고, 모바일에서 덜 읽힙니다. Papers, Please를 흉내 낸 것처럼 보일 위험이 있어요.</p>
+        </div>
+      </div>
+      <!-- C -->
+      <div class="stylecard">
+        <div class="mini"><div class="s sc">
+          <div class="abs" style="left:0;top:0;width:40em;height:12em;background:#f6e3cf"></div>
+          <div class="abs" style="left:2em;top:1.6em;width:15em;height:9.4em;background:#bfe0dc;border:.35em solid #5b3d2b;border-radius:1.2em;overflow:hidden">
+            <div class="abs" style="left:3.6em;top:2em;width:5em;height:5em;border-radius:50%;background:#f2c7a2;border:.3em solid #5b3d2b"></div>
+            <div class="abs" style="left:3.2em;top:1.2em;width:5.8em;height:2.6em;border-radius:3em 3em 1em 1em;background:#c4504a;border:.3em solid #5b3d2b"></div>
+            <div class="abs" style="left:2.4em;top:6.6em;width:7.4em;height:4em;border-radius:3em 3em 0 0;background:#f0a24b;border:.3em solid #5b3d2b"></div>
+          </div>
+          <div class="abs" style="left:11.82em;top:1.45em;background:#fff;border:.25em solid #5b3d2b;border-radius:1em;padding:.4em .7em;font-size:1.1em;font-weight:700">수정본 맞는지 봐주세요~</div>
+          <div class="abs" style="left:0;top:11em;width:40em;height:19em;background:#e8b886;border-top:.5em solid #5b3d2b"></div>
+          <div class="abs paper" style="left:2em;top:13em;width:16em;padding:.7em;transform:rotate(-2deg)"><div style="font-weight:800;font-size:1.1em">원본</div><div class="row"><span>사업연도</span><b>2027</b></div><div class="row"><span>재료비</span><b>3,000</b></div><div class="row"><span>합계</span><b>5,000</b></div></div>
+          <div class="abs paper" style="left:20em;top:12.6em;width:16em;padding:.7em;transform:rotate(2deg)"><div style="font-weight:800;font-size:1.1em">제출안</div><div class="row"><span>사업연도</span><b>2027</b></div><div class="row" style="background:#ffd9cf;border-radius:.4em"><span>재료비</span><b>30,000</b></div><div class="row"><span>합계</span><b>5,000</b></div></div>
+          <div class="abs" style="left:21.67em;top:17.92em;width:6.33em;height:6.33em;border-radius:50%;border:.35em solid #d2483b;color:#d2483b;font-weight:900;display:grid;place-items:center;font-size:1.2em;transform:rotate(-14deg);background:rgba(255,255,255,.4)">반려!</div>
+        </div></div>
+        <div class="body">
+          <h3>C · 부드러운 캐주얼 일러스트</h3>
+          <div class="palette"><i style="background:#f6e3cf"></i><i style="background:#e8b886"></i><i style="background:#5b3d2b"></i><i style="background:#bfe0dc"></i><i style="background:#d2483b"></i></div>
+          <p class="pc"><b>장점</b> 가장 대중적이고, 인물의 표정과 감정을 크게 보여줄 수 있어요.</p>
+          <p class="pc minus"><b>단점</b> 인물·소품 그림 작업량이 가장 많고, 그림 품질이 게임 인상을 크게 좌우합니다.</p>
+        </div>
+      </div>
+    </div>
+    <p class="note"><b>추천: A를 기본으로, B의 ‘책상 구도’와 ‘도장의 무게감’만 빌려오기.</b> 보내주신 시안의 크림색 종이·녹색 메뉴를 살리면서도, 화면 구성은 Papers, Please처럼 책상 중심으로 바꿉니다.</p>
+  </section>
+
+  <!-- 05 -->
+  <section class="sec" id="screens">
+    <div class="sechead"><div class="num">05 / 핵심 화면 시안</div><h2>화면 7장으로 보는 새 버전</h2><p class="sub">HTML/CSS로 그린 정적 시안입니다. 실제 동작은 없고, 배치와 분위기 확인용이에요. 좁은 화면에서는 시안을 옆으로 밀어서 보세요.</p></div>
+
+    <!-- S1 newspaper -->
+    <div class="mock">
+      <div class="cap"><b>① 출근 · 구청 소식</b><span>Papers, Please의 신문 + Death and Taxes의 결과</span></div>
+      <div class="stagewrap"><div class="stage"><div class="s" style="background:#2b3328">
+        <div class="abs" style="left:12em;top:2.4em;width:40em;height:30em;background:#f4eedb;border:.3em solid #1e2a1c;box-shadow:.6em .6em 0 rgba(0,0,0,.35);padding:1.4em 1.8em">
+          <div style="display:flex;justify-content:space-between;align-items:end;border-bottom:.3em double #2c3628;padding-bottom:.3em">
+            <div style="font-size:2.6em;font-weight:900;letter-spacing:.05em;line-height:1">OO구청 소식</div>
+            <div style="font-size:1em;font-weight:700;text-align:right">출근 3일차<br>수요일</div>
+          </div>
+          <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:1.4em;margin-top:1em">
+            <div>
+              <div style="font-size:.95em;font-weight:800;color:#b4472f">어제의 업무 결과</div>
+              <div style="font-size:1.9em;font-weight:900;line-height:1.2;margin:.15em 0 .4em">교육사업 예산,<br>정정 없이 한 번에 통과</div>
+              <div style="font-size:1.05em;line-height:1.5;color:#4d5547">신규 주무관이 ‘재료비 0 하나 더’ 오류를 잡아냈다는 후문. 회계팀은 “오랜만에 야근 없는 하루”라고 전했다.</div>
+              <div style="margin-top:.9em;height:5.5em;background:repeating-linear-gradient(#cfc6aa 0 .25em,transparent .25em .9em)"></div>
+            </div>
+            <div>
+              <div style="border:.2em solid #2c3628;padding:.7em .8em;background:#fbf7e9">
+                <div style="font-size:.95em;font-weight:800;color:#3f5f3a">오늘부터 바뀐 규칙</div>
+                <div style="font-size:1.3em;font-weight:900;margin-top:.2em;line-height:1.3">모든 금액 단위는<br>‘천 원’으로 통일</div>
+                <div style="font-size:.95em;color:#5d6555;margin-top:.3em">→ 서류 검토에 새 조건 추가</div>
+              </div>
+              <div style="margin-top:.9em;font-size:1em;line-height:1.55"><b>구내식당</b> 제육볶음 · 미역국<br><b>민원 예보</b> 오후에 붐빔 ☂</div>
+              <div style="margin-top:.9em;height:3.8em;background:repeating-linear-gradient(#cfc6aa 0 .25em,transparent .25em .9em)"></div>
+            </div>
+          </div>
+        </div>
+        <div class="abs btnA" style="left:21.2em;top:28em;width:8.8em;font-size:1.25em">출근하기 ▸</div>
+      </div></div></div>
+      <div class="why"><div>어제의 내 판단이 첫 기사로 나옵니다.</div><div>‘오늘 바뀐 규칙’이 그날 퍼즐 조건을 하나 바꿉니다.</div><div>읽는 데 10초, 건너뛰기 가능.</div></div>
+    </div>
+
+    <!-- S2 main desk -->
+    <div class="mock">
+      <div class="cap"><b>② 메인 작업대 · 내 자리</b><span>위는 창구와 사무실, 아래는 내 책상. 이동 없음</span></div>
+      <div class="stagewrap"><div class="stage"><div class="s sa" style="background:var(--wall)">
+        <!-- wall & office back -->
+        <div class="abs" style="left:0;top:0;width:64em;height:22em;background:linear-gradient(#efe6cc 0 70%,#e3d7b6 70%)"></div>
+        <div class="abs" style="left:34em;top:3em;width:12em;height:7em;background:#cfe0cf;border:.35em solid #8d7a52"></div>
+        <div class="abs" style="left:48em;top:3em;width:12em;height:7em;background:#cfe0cf;border:.35em solid #8d7a52"></div>
+        <div class="abs" style="left:36em;top:12em;width:10em;height:3.2em;background:#b98a56;border-bottom:.3em solid #9c6f3f"></div>
+        <svg class="pp abs" style="left:39.5em;top:8.3em;width:3em;height:4em;--shirt:#6d8a5b;--hair:#2b2420"><use href="#person"/></svg>
+        <svg class="pp abs" style="left:38.7em;top:9.5em;width:2.4em;height:2em"><use href="#monitor"/></svg>
+        <div class="abs" style="left:50em;top:12em;width:10em;height:3.2em;background:#b98a56;border-bottom:.3em solid #9c6f3f"></div>
+        <svg class="pp abs" style="left:53.5em;top:8.3em;width:3em;height:4em;--shirt:#4c4c5a;--hair:#8d8d8d;--tie:#a03a2a"><use href="#person"/></svg>
+        <div class="abs bubble" style="left:49.47em;top:3.79em;font-size:.95em;padding:.3em .5em">팀장: 오늘 예산 건 먼저!</div>
+        <svg class="pp abs" style="left:60.5em;top:13em;width:2.5em;height:3em"><use href="#plant"/></svg>
+        <!-- counter window -->
+        <div class="abs" style="left:2em;top:3em;width:29em;height:17.5em;background:#d8e6d3;border:.5em solid #7d6a45"></div>
+        <div class="abs" style="left:2.5em;top:3.5em;width:28em;height:2.4em;background:#3f5f3a;color:#f3ecd2;font-weight:800;font-size:1em;display:flex;align-items:center;padding-left:.8em">민원 창구 · 대기 2명</div>
+        <svg class="pp abs" style="left:8em;top:8.5em;width:7em;height:9.4em;--shirt:#c27b4a;--hair:#6b4a2b;--tie:#c27b4a"><use href="#person"/></svg>
+        <div class="abs bubble" style="left:15.24em;top:7.24em;width:12.86em;font-size:1.05em">작년 행사 공문을 찾는데요, 어디로 가야 하죠?</div>
+        <div class="abs" style="left:18em;top:15.78em;display:flex;gap:.4em;font-size:.9em">
+          <span class="btnA" style="padding:.25em .5em;box-shadow:none">질문하기</span><span class="btnA" style="padding:.25em .5em;box-shadow:none;background:#7d6a45;border-color:#5b4c31">규칙 카드</span>
+        </div>
+        <div class="abs" style="left:1em;top:20.6em;width:31em;height:1.3em;background:#9c6f3f"></div>
+        <!-- HUD -->
+        <div class="abs hud" style="left:1em;top:0.6em;font-size:1em;padding:.25em .7em">3일차 · 수요일 10:40</div>
+        <div class="abs" style="left:48.42em;top:0.74em;display:flex;align-items:center;gap:.5em;font-size:.95em;font-weight:800">집중력<div style="width:8em;height:.9em;background:#d6ccb2;border:.12em solid #2f4a2c"><div style="width:72%;height:100%;background:#5d7f4f"></div></div>◈ 145</div>
+        <!-- desk -->
+        <div class="abs" style="left:0;top:22em;width:64em;height:18em;background:var(--wood);border-top:.6em solid var(--wood2)"></div>
+        <!-- inbox -->
+        <div class="abs" style="left:1.4em;top:23.6em;width:15em;height:15em;background:#8f6a3e;border:.25em solid #6d4f2c;padding:.6em">
+          <div style="color:#f6eedb;font-weight:900;font-size:1em;margin-bottom:.4em">들어온 업무 4</div>
+          <div class="cardA" style="margin-bottom:.4em"><span class="pill" style="color:#b4472f">긴급</span><b>사업설명서 검토</b></div>
+          <div class="cardA" style="margin-bottom:.4em"><span class="pill" style="color:#3f5f3a">전화</span><b>수정 요청 메모</b></div>
+          <div class="cardA" style="opacity:.7"><span class="pill" style="color:#7d6a45">⏳ 회신 대기</span><b>자료 취합</b></div>
+        </div>
+        <!-- docs -->
+        <div class="abs paperA" style="left:18.5em;top:24.4em;width:12.5em;height:13.5em;padding:.6em;transform:rotate(-3deg)"><div style="font-weight:900">원본</div><div class="rowA"><span>연도</span><b>2027</b></div><div class="rowA"><span>재료비</span><b>3,000</b></div><div class="rowA"><span>운영비</span><b>2,000</b></div><div class="rowA"><span>합계</span><b>5,000</b></div></div>
+        <div class="abs paperA" style="left:30.5em;top:24em;width:12.5em;height:13.5em;padding:.6em;transform:rotate(2deg)"><div style="font-weight:900">제출안</div><div class="rowA"><span>연도</span><b>2026</b></div><div class="rowA"><span>재료비</span><b>30,000</b></div><div class="rowA"><span>운영비</span><b>2,000</b></div><div class="rowA"><span>합계</span><b>5,000</b></div></div>
+        <!-- tools -->
+        <div class="abs" style="left:45em;top:23.6em;width:8em;height:6.6em;background:#6d4f2c;border:.25em solid #4a3520;display:grid;grid-template-columns:1fr 1fr;gap:.4em;padding:.5em">
+          <div style="background:#3f5f3a;color:#f3ecd2;font-weight:900;display:grid;place-items:center;font-size:.95em">승인</div>
+          <div style="background:#b4472f;color:#fbe9df;font-weight:900;display:grid;place-items:center;font-size:.95em">반려</div>
+        </div>
+        <div class="abs" style="left:50.44em;top:34.22em;font-size:.9em;font-weight:800;color:#3d2b16">도장 받침</div>
+        <svg class="pp abs" style="left:54.5em;top:24em;width:7.5em;height:6.4em"><use href="#monitor"/></svg>
+        <div class="abs" style="left:60.56em;top:34em;font-size:.9em;font-weight:800;color:#3d2b16">PC · 자동화</div>
+        <svg class="pp abs" style="left:45.5em;top:33em;width:6.5em;height:4.6em"><use href="#phoneicon"/></svg>
+        <div class="abs" style="left:54.71em;top:37.41em;background:#b4472f;color:#fff;font-weight:900;font-size:.85em;padding:0 .35em">따르릉</div>
+        <div class="abs" style="left:60.56em;top:36.67em;width:8.33em;height:6.22em;background:#7a5a34;border:.25em solid #4a3520;color:#f6eedb;font-size:.9em;font-weight:800;padding:.3em .4em">결재함<br><span style="font-size:1.6em">▤ 2</span></div>
+      </div></div></div>
+      <div class="why"><div>모든 업무가 이 화면에서 진행돼요. 팝업 없음.</div><div>창구 · 책상 서류 · 전화 · PC 네 곳에서 일이 ‘도착’합니다.</div><div>업무함 카드에 긴급·전화·회신 대기를 표시해 순서를 고릅니다.</div></div>
+    </div>
+
+    <!-- S3 review -->
+    <div class="mock">
+      <div class="cap"><b>③ 서류 검토 · 도장 찍기</b><span>책상을 확대한 상태. 틀린 줄 표시 → 도장</span></div>
+      <div class="stagewrap"><div class="stage"><div class="s sa" style="background:var(--wood)">
+        <div class="abs" style="left:0;top:0;width:60.95em;height:3.43em;background:#2f4a2c;color:#f3ecd2;display:flex;align-items:center;gap:1em;padding:0 1.2em;font-weight:800;font-size:1.05em"><span>◂ 내 자리</span><span>사업설명서 검토 · 오류 2개를 찾으세요</span><span style="margin-left:auto;font-weight:600;opacity:.8">오늘의 규칙: 금액 단위 ‘천 원’</span></div>
+        <div class="abs paperA" style="left:3em;top:5.6em;width:24em;height:30em;padding:1.1em 1.3em;transform:rotate(-1.2deg)">
+          <div style="display:flex;justify-content:space-between;align-items:baseline"><div style="font-size:1.4em;font-weight:900">원본</div><div style="font-size:.9em;color:#6c6a55">기획팀 · 확인 완료</div></div>
+          <div style="font-size:.9em;color:#6c6a55;margin:.2em 0 .6em">단위: 천 원</div>
+          <div class="rowA" style="font-size:1.2em"><span>사업연도</span><b>2027년</b></div>
+          <div class="rowA" style="font-size:1.2em"><span>재료비</span><b>3,000</b></div>
+          <div class="rowA" style="font-size:1.2em"><span>운영비</span><b>2,000</b></div>
+          <div class="rowA" style="font-size:1.2em"><span>합계</span><b>5,000</b></div>
+          <div class="rowA" style="font-size:1.2em"><span>제출기한</span><b>11월 20일</b></div>
+        </div>
+        <div class="abs paperA" style="left:30em;top:5.2em;width:24em;height:30em;padding:1.1em 1.3em;transform:rotate(1deg)">
+          <div style="display:flex;justify-content:space-between;align-items:baseline"><div style="font-size:1.4em;font-weight:900">제출안</div><div style="font-size:.9em;color:#6c6a55">교육팀 · 검토 중</div></div>
+          <div style="font-size:.9em;color:#6c6a55;margin:.2em 0 .6em">단위: 천 원</div>
+          <div class="rowA" style="font-size:1.2em;position:relative"><span>사업연도</span><b>2026년</b><span class="abs" style="left:-.4em;top:-.2em;width:calc(100% + .8em);height:1.9em;border:.2em solid #b4472f;border-radius:50%"></span></div>
+          <div class="rowA" style="font-size:1.2em;position:relative"><span>재료비</span><b>30,000</b><span class="abs" style="left:-.4em;top:-.2em;width:calc(100% + .8em);height:1.9em;border:.2em solid #b4472f;border-radius:50%"></span></div>
+          <div class="rowA" style="font-size:1.2em"><span>운영비</span><b>2,000</b></div>
+          <div class="rowA" style="font-size:1.2em"><span>합계</span><b>5,000</b></div>
+          <div class="rowA" style="font-size:1.2em"><span>제출기한</span><b>11월 20일</b></div>
+          <div class="abs stampmark" style="left:5em;top:10.26em;width:5.79em;font-size:1.9em;padding:.1em;transform:rotate(-11deg)">반려</div>
+          <div class="abs" style="left:1.2em;top:21em;font-size:1em;color:#b4472f;font-weight:700">수정 요청: 연도 · 재료비</div>
+        </div>
+        <!-- side tools -->
+        <div class="abs" style="left:56em;top:6em;width:6.5em;display:grid;gap:.7em">
+          <div style="background:#fbf6e6;border:.15em solid #7d6d4b;padding:.5em;text-align:center;font-weight:800;font-size:.95em">🔍<br>대조<br>가이드</div>
+          <div style="background:#3f5f3a;color:#f3ecd2;border:.15em solid #22361f;padding:.6em .3em;text-align:center;font-weight:900">승인<br>도장</div>
+          <div style="background:#b4472f;color:#fbe9df;border:.15em solid #7d2c1c;padding:.6em .3em;text-align:center;font-weight:900;outline:.25em solid #f2c94c">반려<br>도장</div>
+        </div>
+        <div class="abs bubble" style="left:4em;top:36em;font-size:1em;padding:.3em .6em">선배: 0 개수랑 연도는 꼭 두 번 봐요.</div>
+        <div class="abs btnA" style="left:44.55em;top:32.36em;font-size:1.1em">결재함으로 보내기 ▸</div>
+      </div></div></div>
+      <div class="why"><div>틀린 줄을 누르면 빨간 동그라미가 생깁니다.</div><div>‘대조 가이드’ 도구를 쓰면 같은 줄이 초록색으로 짝지어져요.</div><div>도장은 쾅 소리와 함께 살짝 기울어 찍힙니다(1초).</div></div>
+    </div>
+
+    <!-- S4 phone -->
+    <div class="mock">
+      <div class="cap"><b>④ 전화 메모</b><span>통화 읽기 → 끊기 → 포스트잇에 핵심 3칸</span></div>
+      <div class="stagewrap"><div class="stage"><div class="s sa" style="background:var(--wood)">
+        <div class="abs" style="left:0;top:0;width:60.95em;height:3.43em;background:#2f4a2c;color:#f3ecd2;display:flex;align-items:center;gap:1em;padding:0 1.2em;font-weight:800;font-size:1.05em"><span>◂ 내 자리</span><span>전화 메모 · 통화가 끝나면 메모를 남기세요</span><span style="margin-left:auto;display:flex;gap:.4em;font-size:.9em"><span style="background:#f3ecd2;color:#2f4a2c;padding:0 .5em">1 통화</span><span style="opacity:.6;padding:0 .5em;border:.1em solid">2 메모</span></span></div>
+        <svg class="pp abs" style="left:3em;top:7em;width:14em;height:10em"><use href="#phoneicon"/></svg>
+        <div class="abs" style="left:3.27em;top:16.36em;font-weight:900;font-size:1.1em;color:#3d2b16">☎ 교육지원팀에서 걸려 온 전화</div>
+        <div class="abs" style="left:20em;top:6em;width:40em">
+          <div class="bubble" style="position:relative;font-size:1.3em;line-height:1.55;font-weight:600;padding:.8em 1em">“안녕하세요, <b style="background:#fde9a6">김민지</b>입니다. 사업설명서 수정본을 <b style="background:#fde9a6">목요일 오후 2시</b>까지 부탁드려요. 받는 곳은 <b style="background:#fde9a6">교육지원팀</b>이고요. 아, 지난번 파일 말고 새 서식으로요!”</div>
+        </div>
+        <div class="abs btnA" style="left:18.18em;top:17.82em;font-size:1.1em;background:#b4472f;border-color:#7d2c1c;box-shadow:0 .25em 0 #7d2c1c">통화 종료하고 메모하기</div>
+        <div class="abs" style="left:36em;top:19.9em;font-size:1em;color:#3d2b16;font-weight:700">시간 제한 없음 · 다시 듣기 불가</div>
+        <!-- sticky memo -->
+        <div class="abs" style="left:32em;top:24.5em;width:28em;height:14em;background:#fbe38a;box-shadow:.4em .4em 0 rgba(0,0,0,.2);transform:rotate(-1.5deg);padding:.9em 1.1em;opacity:.55">
+          <div style="font-weight:900;font-size:1.15em;margin-bottom:.4em">메모 (통화 후 작성)</div>
+          <div style="display:grid;grid-template-columns:5em 1fr;gap:.45em;font-size:1.05em;align-items:center">
+            <span>요청자</span><span style="border-bottom:.12em solid #7a6420">김민지 / 박민수 / 이서연</span>
+            <span>기한</span><span style="border-bottom:.12em solid #7a6420">수 2시 / 목 2시 / 목 4시</span>
+            <span>부서</span><span style="border-bottom:.12em solid #7a6420">교육지원 / 시설관리 / 회계</span>
+          </div>
+        </div>
+        <div class="abs" style="left:2.86em;top:23.33em;width:24.76em;font-size:1.05em;line-height:1.55;color:#3d2b16"><b>성장 후:</b> ‘전화 메모장’ 도구가 생기면 통화 중에 한 칸을 미리 적어 둘 수 있어요. 완료하면 포스트잇을 모니터에 <b>착</b> 붙이는 연출.</div>
+      </div></div></div>
+    </div>
+
+    <!-- S5 automation -->
+    <div class="mock">
+      <div class="cap"><b>⑤ PC · 업무 자동화</b><span>Human Resource Machine처럼 명령대로 작은 내가 움직임</span></div>
+      <div class="stagewrap"><div class="stage"><div class="s" style="background:#3a4a3c">
+        <div class="abs" style="left:0;top:0;width:60.95em;height:3.43em;background:#2f4a2c;color:#f3ecd2;display:flex;align-items:center;gap:1em;padding:0 1.2em;font-weight:800;font-size:1.05em"><span>◂ 내 자리</span><span>중복 청구를 빼고 합계를 제출하세요</span></div>
+        <!-- room -->
+        <div class="abs" style="left:1.5em;top:5em;width:40em;height:29em;background:repeating-conic-gradient(#e6dbbd 0 25%,#ddd0ac 0 50%) 0 0/4em 4em;border:.5em solid #8d7a52"></div>
+        <div class="abs" style="left:3em;top:8em;width:6em;height:20em;background:#5b4c31;border:.25em solid #3a3020"></div>
+        <div class="abs" style="left:3em;top:5.36em;width:4.91em;text-align:center;font-weight:900;color:#2c3628;font-size:1.1em">IN</div>
+        <div class="abs" style="left:3.8em;top:9em;display:grid;gap:.5em">
+          <div class="cardA" style="width:4.4em;text-align:center;padding:.3em 0;font-weight:900">B 200</div>
+        </div>
+        <div class="abs" style="left:33.5em;top:8em;width:6em;height:20em;background:#5b4c31;border:.25em solid #3a3020"></div>
+        <div class="abs" style="left:30.73em;top:5.36em;width:4.91em;text-align:center;font-weight:900;color:#2c3628;font-size:1.1em">OUT</div>
+        <!-- worker -->
+        <div class="abs cardA" style="left:17.6em;top:12em;width:4.4em;text-align:center;padding:.3em 0;font-weight:900;background:#f6d9cd">A 100</div>
+        <svg class="pp abs" style="left:17.2em;top:14.6em;width:5.2em;height:7em;--shirt:#4c6fa0"><use href="#person"/></svg>
+        <div class="abs bubble" style="left:24.21em;top:10.53em;font-size:.95em;padding:.25em .5em">이건 아까 본 거!</div>
+        <div class="abs" style="left:13em;top:24em;width:14em;height:4em;background:#c9b88e;border:.2em dashed #8d7a52;display:grid;place-items:center;font-weight:800;color:#5b4c31">합계 칸 · 100</div>
+        <div class="abs" style="left:13.68em;top:30.95em;width:14.74em;text-align:center;font-weight:800;color:#5b4c31;font-size:.95em">🗑 중복 → 파쇄기</div>
+        <!-- program -->
+        <div class="abs" style="left:43.5em;top:5em;width:19em;height:29em;background:#efe6cc;border:.3em solid #8d7a52;padding:.8em">
+          <div style="font-weight:900;font-size:1.1em;margin-bottom:.6em;color:#2c3628">업무 순서</div>
+          <div style="display:grid;gap:.45em;font-weight:800;font-size:1.05em">
+            <div style="display:flex;gap:.5em;align-items:center"><span style="width:1.6em;color:#8d7a52">01</span><span style="background:#5d7f4f;color:#fff;padding:.25em .6em">▸ 자료 받기</span></div>
+            <div style="display:flex;gap:.5em;align-items:center;position:relative"><span style="width:1.6em;color:#8d7a52">02</span><span style="background:#b4472f;color:#fff;padding:.25em .6em;outline:.2em solid #f2c94c">중복이면 버리기</span><span style="position:absolute;left:-1.3em;color:#f2c94c;font-size:1.2em">▶</span></div>
+            <div style="display:flex;gap:.5em;align-items:center"><span style="width:1.6em;color:#8d7a52">03</span><span style="background:#c9932c;color:#fff;padding:.25em .6em">합계에 더하기</span></div>
+            <div style="display:flex;gap:.5em;align-items:center"><span style="width:1.6em;color:#8d7a52">04</span><span style="background:#6c7fb0;color:#fff;padding:.25em .6em">↺ 01로 돌아가기</span></div>
+            <div style="display:flex;gap:.5em;align-items:center"><span style="width:1.6em;color:#8d7a52">05</span><span style="background:#3f5f3a;color:#fff;padding:.25em .6em">결과 제출 ▸</span></div>
+          </div>
+          <div style="margin-top:1em;border-top:.12em dashed #c8b98f;padding-top:.6em;font-size:.9em;color:#5d6555">블록 보관함: 승인만 남기기 🔒</div>
+        </div>
+        <div class="abs" style="left:1.5em;top:35.3em;display:flex;gap:.6em">
+          <span class="btnA" style="background:#b4472f;border-color:#7d2c1c;box-shadow:none">■</span><span class="btnA" style="box-shadow:none">▶ 실행</span><span class="btnA" style="box-shadow:none;background:#7d6a45;border-color:#5b4c31">한 단계씩</span><span class="btnA" style="box-shadow:none;background:#7d6a45;border-color:#5b4c31">속도 ▸▸</span>
+        </div>
+        <div class="abs" style="left:45.79em;top:37.47em;font-size:.95em;color:#e6dbbd;font-weight:700">입력 2세트로 검증 · 통과 시 ‘자동 처리’ 해금</div>
+      </div></div></div>
+      <div class="why"><div>처음엔 직선 4블록, 그다음 ‘~이면’, 마지막에 반복.</div><div>틀리면 작은 주무관이 그 블록에서 멈추고 머리를 긁어요.</div><div>통과한 자동화는 이후 같은 업무를 도장 한 번으로 처리.</div></div>
+    </div>
+
+    <!-- S6 end of day -->
+    <div class="mock">
+      <div class="cap"><b>⑥ 퇴근 · 근무 기록</b><span>결산 영수증 + 내일 예고</span></div>
+      <div class="stagewrap"><div class="stage"><div class="s" style="background:#1f2a22">
+        <div class="abs" style="left:0;top:0;width:64em;height:40em;background:radial-gradient(circle at 75% 45%,rgba(240,210,140,.25),transparent 40%)"></div>
+        <div class="abs" style="left:42em;top:15em;width:18em;height:8em;background:#5e4630;border-top:.5em solid #3d2b1b"></div>
+        <svg class="pp abs" style="left:46.5em;top:9.6em;width:4.6em;height:4em;filter:brightness(.4)"><use href="#monitor"/></svg>
+        <svg class="pp abs" style="left:52.5em;top:9.5em;width:4em;height:5.6em"><use href="#plant"/></svg>
+        <div class="abs" style="left:60.71em;top:8.94em;background:#f2c94c;color:#2c3628;font-weight:900;font-size:.85em;padding:0 .4em">NEW 화분</div>
+        <div class="abs" style="left:42em;top:25em;width:18em;font-size:1em;color:#cfd8c3;line-height:1.5">불이 꺼진 사무실, 책상 위에 오늘 생긴 소품이 남아요.</div>
+        <!-- receipt -->
+        <div class="abs" style="left:6em;top:2.5em;width:28em;background:#fbf8ee;padding:1.4em 1.6em;font-family:var(--font);color:#2c3628;box-shadow:.5em .5em 0 rgba(0,0,0,.35)">
+          <div style="text-align:center;font-weight:900;font-size:1.5em">근무 기록</div>
+          <div style="text-align:center;font-size:.95em;color:#6c6a55;margin-bottom:.8em">3일차 · 수요일 · 18:00 정시 퇴근</div>
+          <div style="border-top:.15em dashed #9a9480;padding-top:.6em;display:grid;gap:.35em;font-size:1.1em">
+            <div style="display:flex;justify-content:space-between"><span>사업설명서 검토</span><b>반려 ✓</b></div>
+            <div style="display:flex;justify-content:space-between"><span>전화 메모</span><b>3/3 ✓</b></div>
+            <div style="display:flex;justify-content:space-between"><span>창구 안내</span><b style="color:#b4472f">다시 옴 △</b></div>
+            <div style="display:flex;justify-content:space-between"><span>자료 취합</span><b>자동 처리</b></div>
+          </div>
+          <div style="border-top:.15em dashed #9a9480;margin-top:.7em;padding-top:.6em;display:grid;gap:.3em;font-size:1.05em">
+            <div style="display:flex;justify-content:space-between"><span>검토 숙련</span><b>+15</b></div>
+            <div style="display:flex;justify-content:space-between"><span>포인트</span><b>◈ +40</b></div>
+          </div>
+          <div style="border-top:.15em dashed #9a9480;margin-top:.7em;padding-top:.7em;font-family:var(--font);font-size:1.05em;line-height:1.5">
+            <b>선배 한마디</b><br>“연도 잡은 거 봤어요. 팀장님이 화분 하나 놓고 가셨어요.”
+          </div>
+          <div style="margin-top:.8em;background:#e9e1c8;padding:.6em .8em;font-family:var(--font);font-size:1em;line-height:1.45"><b>내일 예고</b> · 공문 찾던 민원인이 다시 온다고 합니다. 이번엔 기록관리팀으로!</div>
+        </div>
+        <div class="abs btnA" style="left:35em;top:26.67em;font-size:1.2em">다음 날 출근 ▸</div>
+      </div></div></div>
+    </div>
+
+    <!-- S7 mobile -->
+    <div class="mock">
+      <div class="cap"><b>⑦ 모바일 세로 배치</b><span>서류는 한 장씩, 탭으로 원본/제출안 전환</span></div>
+      <div class="phonewrap">
+        <div class="phone"><div class="scr"><div class="s">
+          <div class="abs hud" style="left:0;top:0;width:26em;background:#2f4a2c;color:#f3ecd2;font-weight:800;font-size:1em;padding:.7em 1em;display:flex;justify-content:space-between"><span>3일차 10:40</span><span>◈ 145</span></div>
+          <div class="abs" style="left:0;top:3em;width:26em;height:11em;background:#efe6cc;border-bottom:.4em solid #9c6f3f"></div>
+          <div class="abs" style="left:1em;top:4em;width:9em;height:9.5em;background:#d8e6d3;border:.35em solid #7d6a45"></div>
+          <svg class="pp abs" style="left:3em;top:6.4em;width:5em;height:6.7em;--shirt:#c27b4a;--hair:#6b4a2b;--tie:#c27b4a"><use href="#person"/></svg>
+          <div class="abs bubble" style="left:11em;top:4.4em;width:14em;font-size:1em">수정본 맞는지 봐주세요!</div>
+          <div class="abs" style="left:12.94em;top:12.35em;font-size:.85em;font-weight:800;color:#5b4c31">대기 2명 · 업무 4</div>
+          <div class="abs" style="left:0;top:14.4em;width:26em;height:40em;background:#b98a56"></div>
+          <div class="abs" style="left:1em;top:15.4em;width:24em;display:flex;font-weight:900;font-size:1em">
+            <div style="flex:1;text-align:center;background:#e3d7b6;padding:.4em;border:.15em solid #7d6d4b">원본</div>
+            <div style="flex:1;text-align:center;background:#fbf6e6;padding:.4em;border:.15em solid #7d6d4b;border-bottom-color:#fbf6e6">제출안</div>
+          </div>
+          <div class="abs paperA" style="left:1em;top:17.8em;width:24em;height:21em;padding:1em;box-shadow:none;border-top:none">
+            <div class="rowA" style="font-size:1.2em"><span>사업연도</span><b>2026년</b></div>
+            <div class="rowA" style="font-size:1.2em;background:#f6d9cd"><span>재료비</span><b>30,000</b></div>
+            <div class="rowA" style="font-size:1.2em"><span>운영비</span><b>2,000</b></div>
+            <div class="rowA" style="font-size:1.2em"><span>합계</span><b>5,000</b></div>
+            <div style="margin-top:.8em;font-size:.95em;color:#6c6a55">원본 값을 보려면 줄을 길게 누르세요</div>
+          </div>
+          <div class="abs" style="left:1em;top:40em;width:24em;display:grid;grid-template-columns:1fr 1fr 1fr;gap:.6em">
+            <div style="background:#fbf6e6;border:.15em solid #7d6d4b;padding:.7em 0;text-align:center;font-weight:800">🔍 대조</div>
+            <div style="background:#3f5f3a;color:#f3ecd2;padding:.7em 0;text-align:center;font-weight:900">승인</div>
+            <div style="background:#b4472f;color:#fbe9df;padding:.7em 0;text-align:center;font-weight:900">반려</div>
+          </div>
+          <div class="abs" style="left:0;top:50em;width:28.89em;height:10em;background:#2f4a2c;display:grid;grid-template-columns:repeat(4,1fr);color:#f3ecd2;font-size:.9em;font-weight:700;text-align:center;padding-top:1.2em">
+            <span>업무함</span><span>전화</span><span>PC</span><span>내 책상</span>
+          </div>
+        </div></div></div>
+        <div>
+          <h3>모바일에서 지킬 것</h3>
+          <ul style="margin:6px 0 0;padding-left:18px">
+            <li>서류는 <b>한 번에 한 장</b>. 원본/제출안을 탭으로 전환하고, 줄을 길게 누르면 원본 값이 말풍선으로 보입니다.</li>
+            <li>창구 풍경은 위쪽 띠로 줄이고, 민원인이 올 때만 커집니다.</li>
+            <li>도장·도구 버튼은 엄지가 닿는 아래쪽에 둡니다(누르는 영역 44px 이상).</li>
+            <li>드래그가 필요한 자동화 블록은 ‘선택 후 위·아래 버튼’ 방식도 함께 제공합니다.</li>
+            <li>글자는 그림으로 굳히지 않고 실제 텍스트로 표시합니다.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 -->
+  <section class="sec" id="puzzles">
+    <div class="sechead"><div class="num">06 / 퍼즐 5종 재설계</div><h2>업무마다 ‘어디서’ 하고 ‘어떻게 끝나는지’를 정했어요.</h2></div>
+    <div class="tablewrap"><table>
+      <thead><tr><th>업무</th><th>장소</th><th>플레이어의 조작</th><th>참고 게임</th><th>완료 연출</th></tr></thead>
+      <tbody>
+        <tr><td><b>서류 검토</b><br><small>예산·사업설명서</small></td><td>책상</td><td>원본과 제출안 대조 → 틀린 줄 표시 → 승인/반려 도장</td><td>Papers, Please</td><td>도장 쾅 + 결재함으로 휙</td></tr>
+        <tr><td><b>창구 안내</b><br><small>담당부서 연결</small></td><td>창구</td><td>민원인 말 듣기 → 질문 1개 고르기 → 규칙 카드 확인 → 부서 안내</td><td>Lil’ Guardsman</td><td>민원인이 인사하고 퇴장, 대기 번호 넘김</td></tr>
+        <tr><td><b>전화 메모</b></td><td>책상 · 전화</td><td>통화 읽기 → 직접 끊기 → 포스트잇 3칸 채우기</td><td>원 기획 + Lil’ Guardsman의 도구</td><td>포스트잇을 모니터에 착</td></tr>
+        <tr><td><b>자료 취합</b></td><td>책상 · 파일함</td><td>파일 카드 중 조건에 맞는 것만 집게로 묶고, 구버전은 파쇄기에</td><td>Papers, Please의 규칙 + Assemble with Care</td><td>스테이플러 찰칵</td></tr>
+        <tr><td><b>업무 자동화</b></td><td>PC</td><td>명령 블록 배열 → 실행 → 작은 주무관이 수행</td><td>Human Resource Machine</td><td>성공한 업무는 이후 ‘자동 처리’ 도장 한 번으로</td></tr>
+        <tr><td colspan="5" style="background:var(--paper-2)"><b>모든 업무 공통 · 업무함</b> — 카드에 긴급·마감·회신 대기를 표시해 처리 순서를 고릅니다(Overcooked의 대기열을 턴 단위로). 결과는 다음 날 소식지와 동료 반응으로 돌아옵니다(Death and Taxes).</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note"><b>업데이트:</b> 이 표의 퍼즐은 외우고 숫자를 비교하는 ‘일의 연장선’ 느낌이 강해, 다음 섹션의 <a href="#brain">머리 쓰는 퍼즐</a>로 바꾸는 안을 제안합니다.</p>
+    <p class="note">원 기획의 ‘정보공개 판단’, ‘급식비 대조’, ‘공문 순서 배열’은 위 5개 틀에 새 문제 데이터를 넣는 방식으로 2단계 이후 추가합니다. 정보공개는 실제 법령이 아닌 <b>게임 속 가상 규칙</b>만 사용합니다.</p>
+  </section>
+
+  <!-- 06+ -->
+  <section class="sec" id="brain">
+    <div class="sechead"><div class="num">06+ / 머리 쓰는 퍼즐 제안</div><h2>업무를 ‘확인’하는 대신, 업무를 굴러가게 하는 ‘방법’을 만듭니다.</h2>
+      <p class="sub">외우기·숫자 비교는 정답이 하나뿐인 확인 작업이라 일처럼 느껴집니다. 코딩 게임처럼 <b>규칙을 이해하고 조합해서 내 방식의 해법을 만드는</b> 퍼즐로 바꿉니다. 소재는 그대로 결재·도장·규정·민원입니다.</p></div>
+
+    <div class="principles">
+      <div><b>외우지 않는다</b>필요한 정보는 항상 화면에 있습니다. 어려움은 기억이 아니라 ‘어떻게 하지?’에서 옵니다.</div>
+      <div><b>해법이 여러 개</b>통과하면 끝이 아니라 ‘부품 수·단계 수·소요 일수’ 기록이 남습니다. 더 우아한 답을 찾고 싶어져요.</div>
+      <div><b>하루에 비틀기 하나</b>출근 소식지의 ‘새 규정’이 퍼즐 규칙을 하나씩 바꿉니다. 같은 퍼즐도 매일 새로워요.</div>
+      <div><b>풍자가 곧 규칙</b>결재 순서, 서식, 규정 자체가 퍼즐 장치가 됩니다. 관료제를 ‘가지고 노는’ 느낌.</div>
+    </div>
+
+    <div class="pz">
+      <!-- 1 -->
+      <div class="pzc core">
+        <div class="meta"><span class="badge">핵심 추천</span><span class="where">PC · 책상 보드</span><span>참고: Opus Magnum, Factorio, SHENZHEN I/O</span></div>
+        <h3>① 결재 컨베이어 — 도장 공장 짓기</h3>
+        <p><span class="k">플레이</span>격자 판에 레일·복사기·분기기·도장 스테이션을 놓아, 접수된 서류가 <b>알아서 흘러가며 처리되는 결재 라인</b>을 만듭니다. 실행하면 서류가 움직이고, 목표 결과물이 나오면 통과.</p>
+        <div class="ex">
+          <div class="cm">목표: 승인 사본 1부는 교육팀으로, 원본은 기록관으로</div>
+          <div class="ln"><span class="t y">접수</span><span class="ar">→</span><span class="t">복사기</span><span class="ar">→</span><span class="t g">팀장 도장</span><span class="ar">→</span><span class="t">교육팀</span></div>
+          <div class="ln"><span class="cm" style="padding-left:62px">↳ 복사기에서 나온 원본</span><span class="ar">→</span><span class="t r">기록 도장</span><span class="ar">→</span><span class="t">기록관</span></div>
+          <div class="cm">기록: 부품 5개 · 12틱 · 도장 2개 (친구 평균 7개)</div>
+        </div>
+        <p class="why"><b>왜 재미있나</b> 정답 배치가 하나가 아니고, 줄이고 다듬는 재미가 있어요. <b>확장</b> ‘100만 원 이상이면 과장 도장 추가’ 분기, 서류 2종 동시 처리, 도장 잉크 3회 제한.</p>
+      </div>
+      <!-- 2 -->
+      <div class="pzc core">
+        <div class="meta"><span class="badge">핵심 추천</span><span class="where">사무실 게시판</span><span>참고: Baba Is You</span></div>
+        <h3>② 규정 개정 — 문장을 바꿔 민원 해결</h3>
+        <p><span class="k">플레이</span>게시판 규정이 <b>단어 타일</b>로 되어 있습니다. 막힌 민원을 풀려면 제한된 ‘개정권’으로 타일을 옮겨 규정 문장을 바꿔요. 단, 잠긴 상위 규정(감사 규정)과 충돌하면 반려.</p>
+        <div class="ex">
+          <div class="cm">상황: 오늘은 목요일, 팀장님은 금요일 출장 → 결재를 어떻게 끝낼까? (답은 둘 이상)</div>
+          <div class="ln"><span class="t">결재</span><span class="t">는</span><span class="t hl">팀장</span><span class="t">이</span><span class="t hl">금요일</span><span class="t">에 한다</span></div>
+          <div class="ln"><span class="t lock">🔒 금액</span><span class="t lock">100만 이상</span><span class="t lock">은</span><span class="t lock">과장</span><span class="t lock">결재</span></div>
+          <div class="ln"><span class="cm">손패:</span><span class="t b">목요일</span><span class="t b">대리</span><span class="t b">전자결재</span><span class="cm">· 개정권 1장</span></div>
+        </div>
+        <p class="why"><b>왜 재미있나</b> “규정을 고쳐서 일을 해결한다”는 발상 자체가 풍자이자 논리 퍼즐이에요. 규정끼리 연쇄로 바뀌는 순간 ‘아하!’가 옵니다.</p>
+      </div>
+      <!-- 3 -->
+      <div class="pzc core">
+        <div class="meta"><span class="badge">핵심 추천</span><span class="where">PC · 매크로 편집기</span><span>참고: Human Resource Machine, 7 Billion Humans</span></div>
+        <h3>③ 매크로 설계 &amp; 디버깅</h3>
+        <p><span class="k">플레이</span>두 가지 모드. <b>설계</b>: 명령 블록(받기·조건·반복·보관칸 1개)으로 분류·집계 매크로를 직접 만듭니다. <b>디버깅</b>: 선배가 만든 매크로가 가끔 틀린 결과를 냅니다. <b>테스트 입력을 3번만</b> 골라 돌려볼 수 있어요. 어떤 입력을 넣어야 버그가 드러날지 생각해서 고칩니다.</p>
+        <div class="ex">
+          <div class="ln"><span class="cm">01</span><span class="t g">자료 받기</span></div>
+          <div class="ln"><span class="cm">02</span><span class="t y">금액 &gt; 100 이면 → 05</span><span class="cm">← 100 딱 맞으면?</span></div>
+          <div class="ln"><span class="cm">03</span><span class="t">합계에 더하기</span><span class="cm">04</span><span class="t b">↺ 01로</span></div>
+          <div class="ln"><span class="cm">05</span><span class="t r">과장 결재함으로</span></div>
+        </div>
+        <p class="why"><b>왜 재미있나</b> ‘경계값’, ‘빈 입력’ 같은 진짜 프로그래밍 사고를 공무원 상황으로 체험합니다. 숨겨진 테스트 입력이 있어 꼼수 답이 통하지 않아요.</p>
+      </div>
+      <!-- 4 -->
+      <div class="pzc core">
+        <div class="meta"><span class="badge">핵심 추천</span><span class="where">책상 · 접수함</span><span>참고: Return of the Obra Dinn, 논리 격자 퍼즐</span></div>
+        <h3>④ 서류 주인 찾기 — 추리</h3>
+        <p><span class="k">플레이</span>이름이 빠진 서류 5장과 오늘 방문한 민원인 5명. 접수 시각 메모, 도장 색, 필체, 동료의 한마디 같은 <b>단서를 엮어</b> 누가 어떤 서류를 냈는지 맞힙니다. <b>3쌍이 맞아야 한꺼번에 확정</b>되어 찍기가 통하지 않아요.</p>
+        <div class="ex">
+          <div class="ln"><span class="t">단서</span><span class="cm">파란 볼펜을 쓴 사람은 오전에 왔다</span></div>
+          <div class="ln"><span class="t">단서</span><span class="cm">박 씨는 점심 직후에 왔다 · 정정 서류는 오후 접수</span></div>
+          <div class="ln"><span class="t g">김민지 ↔ 보조금 신청</span><span class="t g">박지훈 ↔ 정정 신청</span><span class="t lock">? ↔ ?</span><span class="cm">2/3 · 아직 확정 안 됨</span></div>
+        </div>
+        <p class="why"><b>왜 재미있나</b> 기존 ‘전화 메모 외우기’를 대체합니다. 정보를 외우는 대신 <b>정보끼리의 관계</b>로 추론해요. 창구에서 만난 민원인이 단서로 다시 등장합니다.</p>
+      </div>
+      <!-- 5 -->
+      <div class="pzc core">
+        <div class="meta"><span class="badge">핵심 추천</span><span class="where">책상 · 주간 달력</span><span>참고: 일정 배치 퍼즐, 스도쿠식 제약</span></div>
+        <h3>⑤ 결재 동선 짜기 — 금요일까지 끝내라</h3>
+        <p><span class="k">플레이</span>공문 2~3건이 각자 여러 부서의 도장을 받아야 합니다. 조건이 붙은 도장 카드를 <b>주간 달력에 배치</b>해 금요일 안에 모두 끝내세요.</p>
+        <div class="ex">
+          <div class="ln"><span class="t lock">조건</span><span class="cm">회계는 팀장 도장 뒤 · 과장은 회계 뒤 · 과장은 수요일 출장 · 한 사람당 하루 2건까지</span></div>
+          <div class="ln"><span class="t">월</span><span class="t g">팀장 A·B</span><span class="t">화</span><span class="t y">회계 A·B</span><span class="t">수</span><span class="t lock">과장 ✕</span><span class="t">목</span><span class="t r">과장 A·B</span></div>
+          <div class="cm">공문 C가 끼어들면? 하루 2건 제한 때문에 순서를 다시 짜야 해요.</div>
+        </div>
+        <p class="why"><b>왜 재미있나</b> 협조·결재라는 가장 ‘공무원다운’ 답답함이 순서 논리 퍼즐이 됩니다. 소식지의 “과장님 휴가” 한 줄이 그날 퍼즐을 바꿔요.</p>
+      </div>
+      <!-- 6 -->
+      <div class="pzc">
+        <div class="meta"><span class="badge sub">휴식용</span><span class="where">기록관 창고</span><span>참고: 소코반</span></div>
+        <h3>⑥ 서고 정리 — 상자 밀기</h3>
+        <p><span class="k">플레이</span>좁은 기록관에서 서류 상자를 밀어 <b>연도순 칸</b>에 넣습니다. 당기기는 못 하고 밀기만 가능. 하루 끝 ‘잔업’이나 기분 전환용 짧은 공간 퍼즐.</p>
+        <div class="ex"><div class="ln"><span class="t">2024</span><span class="t lock">벽</span><span class="t y">📦25</span><span class="t g">🧍</span><span class="t">　</span><span class="t">2025 칸</span></div></div>
+        <p class="why"><b>왜 재미있나</b> 손으로 만지는 느낌의 짧은 퍼즐로 논리 퍼즐 사이에 리듬을 줍니다.</p>
+      </div>
+      <!-- 7 -->
+      <div class="pzc">
+        <div class="meta"><span class="badge sub">확장 후보</span><span class="where">PC · 예산표</span><span>참고: 테트리스, 블록 채우기</span></div>
+        <h3>⑦ 예산 테트리스</h3>
+        <p><span class="k">플레이</span>사업마다 모양이 다른 블록(기간×금액)을 연간 예산 격자에 끼워 넣습니다. 분기별 한도 선, ‘연속 3개월 필요’ 같은 조건이 붙어요. 숫자를 계산하는 대신 <b>모양을 맞춥니다</b>.</p>
+        <p class="why"><b>왜 재미있나</b> 예산 업무를 공간 퍼즐로 바꿔, 숫자 비교 없이도 ‘예산 짜는 머리’를 씁니다.</p>
+      </div>
+      <!-- 8 -->
+      <div class="pzc">
+        <div class="meta"><span class="badge sub">확장 후보</span><span class="where">책상 · 보고서</span><span>참고: 단어 조합 퍼즐</span></div>
+        <h3>⑧ 한 장으로 줄여 와</h3>
+        <p><span class="k">플레이</span>팀장님: “한 장으로.” 문장 카드를 합치고 자르고 빼서, <b>필수 키워드는 모두 남기고 칸 수는 제한 안에</b> 맞춥니다. 빼면 안 되는 단어를 빼면 팀장님 표정이 변해요.</p>
+        <p class="why"><b>왜 재미있나</b> 공무원 생활의 가장 공감 가는 순간을 창의적인 단어 퍼즐로. 대신 문제 제작이 어려워 2단계 이후에 둡니다.</p>
+      </div>
+    </div>
+
+    <h3 style="margin:28px 0 10px">기존 퍼즐 → 새 퍼즐</h3>
+    <div class="tablewrap"><table>
+      <thead><tr><th>기존</th><th>‘일 같다’고 느끼는 이유</th><th>바꾸는 방향</th></tr></thead>
+      <tbody>
+        <tr><td><b>서류 검토</b></td><td>숫자를 눈으로 대조하는 숨은그림찾기</td><td>튜토리얼·워밍업으로 축소. 대조는 결재 컨베이어의 ‘검수 스테이션’ 장치로 흡수</td></tr>
+        <tr><td><b>자료 취합</b></td><td>조건 체크리스트를 하나씩 확인</td><td>분류를 직접 하지 않고, <b>분류하는 매크로를 만든다</b>(③)</td></tr>
+        <tr><td><b>전화 메모</b></td><td>단기 기억 테스트</td><td>단서를 엮는 추리로(④). 외울 필요 없이 화면에 다 있음</td></tr>
+        <tr><td><b>업무 자동화</b></td><td>정답 순서가 하나뿐인 배열</td><td>조건·반복·보관칸, 숨은 테스트, 디버깅 모드, 최적화 기록(③)</td></tr>
+        <tr><td><b>담당부서 안내</b></td><td>규칙 표와 대조해 고르기</td><td>규칙 자체를 바꾸거나(②), 순서를 설계하기(⑤)</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note"><b>추천 조합:</b> 핵심 5종(①~⑤) + 휴식용 ⑥. 첫 프로토타입은 이 게임만의 색이 가장 강한 <b>① 결재 컨베이어</b> 또는 <b>② 규정 개정</b> 중 하나로 시작해 “한 판 더” 반응을 확인하는 걸 권합니다. 두 퍼즐 모두 도장·책상 연출과 자연스럽게 이어집니다.</p>
+  </section>
+
+  <!-- 06++ -->
+  <section class="sec" id="minigames">
+    <div class="sechead"><div class="num">06++ / 부서 지원 미니게임</div><h2>“옆 부서에서 일손 좀 빌려달래요.”</h2>
+      <p class="sub">인기 캐주얼 퍼즐(물 정렬, 선잇기, 화살표 탈출, 트리플 매치, 블록 퍼즐, 핀 뽑기, 나사 퍼즐, 노노그램, 숨은그림찾기)의 <b>규칙은 이미 검증된 재미</b>입니다. 이걸 그대로 베끼지 않고, 공무원이 실제로 다루는 분야의 업무를 하나씩 붙이고 <b>공무원다운 비틀기 규칙</b>을 하나 더해 우리 게임만의 미니게임으로 만듭니다.</p></div>
+
+    <div class="card" style="margin-bottom:18px">
+      <span class="tag">게임 안에서의 위치 · ‘차출·협조’ 시스템</span>
+      <div class="flowmap">
+        <span class="t y">업무함에 ‘협조 요청’ 카드 도착</span><span class="ar">→</span>
+        <span class="t">해당 부서로 잠깐 지원</span><span class="ar">→</span>
+        <span class="t g">미니게임 30초~2분</span><span class="ar">→</span>
+        <span class="t b">부서 우호도 ↑</span><span class="ar">→</span>
+        <span class="t">그 부서가 내 본업을 도와줌</span>
+      </div>
+      <p style="font-size:14px;margin-top:10px">공무원의 ‘차출’(선거·축제·재난 지원)과 순환보직을 그대로 게임 장치로 씁니다. 예: 상하수도사업소를 도와주면, 다음 날부터 그 부서 회신이 1턴 빨라져요. 하루 본업 퍼즐 3~4건 + 협조 미니게임 1~2건. 부서마다 도감(우리 구 지도)이 채워집니다.</p>
+    </div>
+
+    <div class="dept">
+      <!-- water sort -->
+      <div class="dg pick">
+        <div class="gen">물 정렬 퍼즐 · Magic Sort 계열</div>
+        <h3>재활용 선별장</h3>
+        <div class="office">자원순환과 · 분리수거</div>
+        <div class="vis"><div class="tubes">
+          <div class="tube"><span style="background:#f2d27a">캔</span><span style="background:#9fc3dc">페</span><span style="background:#f2d27a">캔</span><span style="background:#d6b88a">종</span></div>
+          <div class="tube"><span style="background:#9fc3dc">페</span><span style="background:#d6b88a">종</span><span style="background:#9fc3dc">페</span></div>
+          <div class="tube"><span style="background:#d6b88a">종</span><span style="background:#f2d27a">캔</span></div>
+          <div class="tube"></div>
+        </div></div>
+        <p>수거함 맨 위 재활용품을 옮겨 같은 종류끼리 모읍니다. 위에 같은 종류가 있을 때만 쌓을 수 있어요.</p>
+        <div class="twist"><b>비틀기</b> 라벨 붙은 페트병은 ‘라벨 제거대’를 한 번 거쳐야 페트 칸에 들어갑니다. 오염된 용기는 일반쓰레기로.</div>
+        <div class="cost"><span>제작 ★☆☆</span><span>자동 문제 생성 가능</span></div>
+      </div>
+      <!-- flow -->
+      <div class="dg pick">
+        <div class="gen">선잇기 · Dot Link 계열</div>
+        <h3>상수도관 연결</h3>
+        <div class="office">상하수도사업소 · 관로 공사</div>
+        <div class="vis"><div class="fg">
+          <span class="R"><i class="dR"></i></span><span class="R"></span><span class="R"></span><span class="R"></span><span class="B"><i class="dB"></i></span>
+          <span></span><span></span><span><i class="dG"></i></span><span class="R"></span><span class="B"></span>
+          <span></span><span><i class="dY"></i></span><span class="x">문</span><span class="R"></span><span class="B"></span>
+          <span></span><span></span><span><i class="dY"></i></span><span class="R"><i class="dR"></i></span><span class="B"></span>
+          <span></span><span></span><span></span><span><i class="dG"></i></span><span class="B"><i class="dB"></i></span>
+        </div></div>
+        <p>같은 색 시설끼리(정수장 → 아파트, 하수 → 처리장) 관을 잇습니다. 관끼리 교차할 수 없어요.</p>
+        <div class="twist"><b>비틀기</b> ‘문’ 칸은 문화재 보호구역이라 굴착 불가. 도로 굴착 허가 2장으로만 일부 칸을 지하 통과할 수 있어요.</div>
+        <div class="cost"><span>제작 ★☆☆</span><span>자동 문제 생성 가능</span></div>
+      </div>
+      <!-- arrows -->
+      <div class="dg pick">
+        <div class="gen">화살표 탈출 · Arrows 계열</div>
+        <h3>불법주차 견인 작전</h3>
+        <div class="office">교통행정과 · 주정차 단속</div>
+        <div class="vis"><div class="ar-grid">
+          <span class="c">→</span><span class="c">↓</span><span class="lane"></span><span class="c">←</span>
+          <span class="c">↑</span><span class="c">→</span><span class="lane"></span><span class="c">↓</span>
+          <span class="c">↑</span><span class="c">→</span><span class="c">→</span><span class="c">↑</span>
+          <span class="f">🚒</span><span class="c">←</span><span class="lane"></span><span class="c">↑</span>
+        </div></div>
+        <p>차는 바라보는 방향으로만 빠져나갑니다. 막힌 차를 먼저 누르면 견인 실패. 빠지는 순서를 찾으세요.</p>
+        <div class="twist"><b>비틀기</b> 노란 칸은 소방차 진입로. 소방로 위 차량부터 정해진 횟수 안에 비워야 소방차가 출동해요.</div>
+        <div class="cost"><span>제작 ★☆☆</span><span>자동 문제 생성 가능</span></div>
+      </div>
+      <!-- nonogram -->
+      <div class="dg pick">
+        <div class="gen">노노그램 · 그림 로직</div>
+        <h3>지적도 복원</h3>
+        <div class="office">토지정보과 · 지적 측량</div>
+        <div class="vis"><div class="nono">
+          <span class="h"></span><span class="h">3</span><span class="h">4</span><span class="h">3</span><span class="h">4</span><span class="h">3</span>
+          <span class="h l">1</span><span class="off">·</span><span class="off">·</span><span class="on"></span><span class="off">·</span><span class="off">·</span>
+          <span class="h l">3</span><span class="off">·</span><span class="on"></span><span class="on"></span><span class="on"></span><span class="off">·</span>
+          <span class="h l">5</span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span>
+          <span class="h l">2 2</span><span class="on"></span><span class="on"></span><span class="off">·</span><span class="on"></span><span class="on"></span>
+          <span class="h l">2 2</span><span class="on"></span><span class="on"></span><span class="off">·</span><span class="on"></span><span class="on"></span>
+        </div></div>
+        <p>행·열의 숫자 힌트로 빗물에 번진 옛 지적도의 필지 모양을 되살립니다.</p>
+        <div class="twist"><b>비틀기</b> 완성한 필지가 모여 ‘우리 구 지도’가 한 칸씩 채워지는 수집 요소. 힌트 대신 ‘현장 측량’ 도구로 한 줄 확정.</div>
+        <div class="cost"><span>제작 ★☆☆</span><span>순수 논리, 찍기 불필요</span></div>
+      </div>
+      <!-- triple match -->
+      <div class="dg">
+        <div class="gen">트리플 매치 · Tile Explorer 계열</div>
+        <h3>기록물 철하기</h3>
+        <div class="office">기록관리팀 · 문서 정리</div>
+        <div class="vis"><div class="slots">
+          <div class="pile"><span>📕</span><span>📗</span><span class="dim">📘</span><span>📕</span><span>📒</span><span class="dim">📗</span><span>📘</span><span>📒</span><span class="dim">📕</span></div>
+          <div class="slotrow"><span>📗</span><span>📗</span><span>📕</span><span class="e"></span><span class="e"></span><span class="e"></span><span class="e"></span></div>
+        </div></div>
+        <p>쌓인 서류 더미에서 위에 드러난 것만 집어 책상 칸(7칸)에 올립니다. 같은 분류 3장이면 철해져 사라져요. 칸이 넘치면 실패.</p>
+        <div class="twist"><b>비틀기</b> ‘영구 보존’ 서류는 철하지 않고 금고 칸으로. 섞어 넣으면 감사 지적.</div>
+        <div class="cost"><span>제작 ★★☆</span><span>더미 배치 설계 필요</span></div>
+      </div>
+      <!-- sokoban -->
+      <div class="dg">
+        <div class="gen">상자 밀기 · 소코반</div>
+        <h3>구호물자 창고 정리</h3>
+        <div class="office">재난안전과 · 비축 창고</div>
+        <div class="vis"><div class="flowmap" style="justify-content:center"><span class="t lock">벽</span><span class="t y">📦 생수</span><span class="t g">🧍</span><span class="t">　</span><span class="t" style="border-style:dashed">출고 칸</span></div></div>
+        <p>좁은 창고에서 상자를 밀어 지정 칸에 넣습니다. 밀기만 가능, 당기기 불가.</p>
+        <div class="twist"><b>비틀기</b> 유통기한 임박 물자가 출고문 가까이 가야 해요. 위치뿐 아니라 ‘순서’까지 맞추는 소코반.</div>
+        <div class="cost"><span>제작 ★★☆</span><span>레벨은 직접 설계</span></div>
+      </div>
+      <!-- block blast -->
+      <div class="dg">
+        <div class="gen">블록 퍼즐 · Block Blast 계열</div>
+        <h3>축제 부스 배치</h3>
+        <div class="office">문화관광과 · 지역 축제</div>
+        <p>모양이 다른 부스 블록 3개씩 주어지고, 광장 격자에 배치합니다. 한 줄이 꽉 차면 ‘관람 동선 확보’로 비워져요. 더 놓을 곳이 없으면 종료.</p>
+        <div class="twist"><b>비틀기</b> 푸드트럭 블록은 소화기 칸 옆에만. 무대 앞 2줄은 비워 둬야 점수 보너스.</div>
+        <div class="cost"><span>제작 ★☆☆</span><span>끝없는 모드 = 휴식용</span></div>
+      </div>
+      <!-- pin pull -->
+      <div class="dg">
+        <div class="gen">핀 뽑기 · Pull the Pin 계열</div>
+        <h3>장마철 수문 관리</h3>
+        <div class="office">하천관리과 · 수해 대비</div>
+        <p>수문(핀)을 뽑는 순서에 따라 빗물과 토사가 흘러갑니다. 물은 유수지로, 마을엔 한 방울도 안 가게.</p>
+        <div class="twist"><b>비틀기</b> 소식지의 ‘강수량 예보’에 따라 물의 양이 달라집니다. 같은 지형도 날마다 다른 문제.</div>
+        <div class="cost"><span>제작 ★★★</span><span>물 표현은 칸 단위 가짜 물리로 단순화</span></div>
+      </div>
+      <!-- screw -->
+      <div class="dg">
+        <div class="gen">나사 퍼즐 · Wood Nuts 계열</div>
+        <h3>노후 놀이터 해체</h3>
+        <div class="office">공원녹지과 · 시설 정비</div>
+        <p>겹쳐진 판자 중 위에 드러난 나사만 풀 수 있어요. 나사는 같은 색 공구함에 3개씩. 판자가 모두 떨어지면 완료.</p>
+        <div class="twist"><b>비틀기</b> ‘안전 고정’ 나사는 마지막에 풀어야 해요. 먼저 풀면 판자가 쓰러져 작업 중지.</div>
+        <div class="cost"><span>제작 ★★★</span><span>겹침 판정·물리 필요</span></div>
+      </div>
+      <!-- hidden object -->
+      <div class="dg">
+        <div class="gen">숨은그림찾기 · Seek It 계열</div>
+        <h3>현장 안전점검</h3>
+        <div class="office">건축과 · 다중이용시설 점검</div>
+        <p>현장 그림에서 위험 요소를 찾습니다. 찾을 물건 그림이 아니라 <b>점검표 문장</b>(“비상구 앞 적치물 없음”)만 주어져, 무엇을 찾을지 해석해야 해요.</p>
+        <div class="twist"><b>비틀기</b> 일부 항목은 ‘이상 없음’이 정답. 없는 걸 없다고 판단하는 것도 점검입니다.</div>
+        <div class="cost"><span>제작 ★★★</span><span>큰 그림 장면이 많이 필요</span></div>
+      </div>
+      <!-- macro -->
+      <div class="dg">
+        <div class="gen">코딩 퍼즐 · Human Resource Machine 계열</div>
+        <h3>정산 매크로 만들기</h3>
+        <div class="office">정보화팀 · 업무 자동화</div>
+        <p>06+의 ③ 매크로 설계·디버깅. 조건·반복 블록으로 반복 업무를 처리하는 프로그램을 짭니다. 숨은 테스트 입력으로 검증.</p>
+        <div class="twist"><b>비틀기</b> 성공한 매크로는 실제로 본업 일부를 자동 처리합니다. 미니게임이 본업을 바꾸는 유일한 장르.</div>
+        <div class="cost"><span>제작 ★★☆</span><span>실행 애니메이션 필요</span></div>
+      </div>
+    </div>
+
+    <h3 style="margin:28px 0 10px">어떤 순서로 넣을까</h3>
+    <div class="tablewrap"><table>
+      <thead><tr><th>묶음</th><th>미니게임</th><th>이유</th></tr></thead>
+      <tbody>
+        <tr><td><b>1차 (추천)</b></td><td>재활용 선별장 · 상수도관 연결 · 불법주차 견인 · 지적도 복원</td><td>모두 <b>격자 기반</b>이라 화면·판정 틀을 함께 씁니다. 문제를 프로그램으로 만들 수 있어 문제 수 확보가 쉽고, 모바일 터치에 잘 맞아요.</td></tr>
+        <tr><td><b>2차</b></td><td>기록물 철하기 · 구호물자 창고 · 축제 부스 · 정산 매크로</td><td>레벨 설계나 실행 연출이 더 필요하지만, 여전히 칸 단위라 1차 틀을 재사용합니다.</td></tr>
+        <tr><td><b>3차</b></td><td>수문 관리 · 놀이터 해체 · 현장 안전점검</td><td>물리 표현이나 큰 그림 장면이 필요해 제작량이 많습니다. 반응을 본 뒤 결정.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note"><b>주의할 점:</b> 이 장르들은 광고·유료 아이템과 함께 쓰이는 경우가 많습니다. 우리는 <b>규칙만 참고</b>하고 그림·화면 구성은 직접 만들며, 광고로 막는 구조(하트 소진, 힌트 결제)는 쓰지 않습니다. 실패해도 바로 다시 할 수 있고, 미니게임 결과가 본업 진행을 막지 않게 합니다.</p>
+  </section>
+
+  <!-- 06+++ -->
+  <section class="sec" id="office">
+    <div class="sechead"><div class="num">06+++ / 생활보장과 사무실</div><h2>내 부서는 따로, 기존 업무는 그대로.</h2>
+      <p class="sub">생활보장과는 플레이어의 ‘집’ 같은 사무실입니다. 기존 버전의 업무 퍼즐 5종을 모두 유지하고, 실제 사무실 배치를 바탕으로 그립니다. 다른 부서는 협조 요청이 올 때 방문하는 미니게임 공간이에요.</p></div>
+    <div class="grid2">
+      <div class="card"><span class="tag">생활보장과 · 본업 (기존 5종 유지)</span>
+        <ul>
+          <li><b>서류 검토</b> — 책상 서류 더미 · 지급 내역·사업 자료 대조</li>
+          <li><b>자료 취합</b> — 캐비닛 · 최신 승인 자료만 모으기</li>
+          <li><b>전화 메모</b> — 내 전화 · 요청 내용 메모</li>
+          <li><b>업무 자동화</b> — 내 PC · 순서 배열 (이후 매크로로 확장)</li>
+          <li><b>담당부서 안내</b> — 민원 창구 · 가상 안내 규칙</li>
+          <li style="color:var(--ink-2)">+ 새 퍼즐: <b>결재 컨베이어</b>는 결재함, 규정 개정은 게시판에서</li>
+        </ul>
+        <p style="font-size:13px;color:var(--ink-2);margin-top:8px">사례와 이름은 모두 가상으로 만들고, 복지 대상자를 웃음거리로 삼지 않습니다(원 기획의 톤 원칙).</p>
+      </div>
+      <div class="card"><span class="tag">사무실 그리기 순서</span>
+        <ol style="margin:6px 0 0;padding-left:18px">
+          <li>「사무실배치도_만들기.html」로 실제 배치를 대략 그림 (내 자리, 과장님·계장님·주무관 자리, 복사기·문·정수기 등)</li>
+          <li><b>배치 코드</b> 또는 <b>이미지</b>를 전달</li>
+          <li>배치 코드를 그대로 읽어 게임 속 생활보장과 사무실을 픽셀아트로 생성. 사무실 물건이 업무 위치가 됨 (예: 복사기 = 자료 취합, 결재함 = 결재 컨베이어)</li>
+          <li>동료 자리는 이야기·연출 캐릭터로 (과장님 결재, 계장님 한마디, 옆자리 주무관의 협조 요청)</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 -->
+  <section class="sec" id="growth">
+    <div class="sechead"><div class="num">07 / 성장과 결과</div><h2>성장하면 일이 편해지고, 판단은 내일 돌아옵니다.</h2></div>
+    <div class="grid2">
+      <div class="card"><span class="tag">책상에 하나씩 생기는 도구</span>
+        <ul>
+          <li><b>🔍 대조 가이드</b> — 원본과 제출안의 같은 줄을 짝지어 강조</li>
+          <li><b>📝 전화 메모장</b> — 통화 중에 한 칸을 미리 적어 두기</li>
+          <li><b>📇 부서 연락망</b> — 관련 없는 부서 1곳 지우기</li>
+          <li><b>🗑 파쇄기</b> — 명백한 구버전을 자동으로 제외</li>
+          <li><b>⚙ 매크로</b> — 통과한 자동화로 쉬운 업무 1건 자동 처리</li>
+        </ul>
+        <p style="font-size:14px;color:var(--ink-2);margin-top:10px">도구는 책상 위 소품으로 실제로 놓입니다. 성장이 숫자가 아니라 ‘눈에 보이는 책상 변화’가 돼요.</p>
+      </div>
+      <div class="card"><span class="tag">다음 날 돌아오는 결과 (예시)</span>
+        <ul>
+          <li><b>예산 단위 오류를 잡음</b> → 소식지 “정정 없이 통과”, 회계팀 동료가 커피를 놓고 감</li>
+          <li><b>민원인을 잘못 안내</b> → 같은 민원인이 다시 와서 “어제 거기 아니던데요?” — 감점 없이 다시 풀 기회</li>
+          <li><b>전화 메모를 정확히 남김</b> → 교육지원팀 자료가 하루 일찍 도착(회신 대기 1턴 단축)</li>
+        </ul>
+        <p style="font-size:14px;color:var(--ink-2);margin-top:10px"><b>원칙:</b> 결과는 분위기와 편의로 돌려주고, 진행을 막지 않습니다. 난이도 하·중·상은 기록·칭호 보너스만 다릅니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 -->
+  <section class="sec" id="steps">
+    <div class="sechead"><div class="num">08 / 개발 단계 (다음 단계 계획)</div><h2>먼저 ‘도장 하나 찍는 손맛’부터 확인합니다.</h2><p class="sub">이번 문서에서는 구현하지 않습니다. 시안이 확정되면 아래 순서로 진행합니다.</p></div>
+    <div class="grid3">
+      <div class="card"><span class="tag">1단계 · 손맛</span><h3>작업대 + 대표 퍼즐 1종 + 도장</h3><p style="font-size:14px">메인 작업대 화면 1개, 소식지, 결재 컨베이어 또는 규정 개정 퍼즐 5~8단계, 도장·결재 연출, 효과음.</p><p style="font-size:13px;color:var(--ink-2)">통과 기준: 설명 없이 도장까지 찍고, “한 번 더” 하고 싶은가.</p></div>
+      <div class="card"><span class="tag">2단계 · 하루</span><h3>퍼즐 5종 + 5일</h3><p style="font-size:14px">창구·전화·취합·자동화 추가, 업무함 대기열, 퇴근 결산. 업무별 8~10문제.</p><p style="font-size:13px;color:var(--ink-2)">통과 기준: 퍼즐 종류가 바뀌어도 헷갈리지 않고 5일을 끝내는가.</p></div>
+      <div class="card"><span class="tag">3단계 · 결과</span><h3>성장 + 다음 날</h3><p style="font-size:14px">도구 5종, 다음 날 결과, 책상 소품, 난이도 하·중·상, 저장·이어하기.</p><p style="font-size:13px;color:var(--ink-2)">통과 기준: 같은 업무가 점점 편해지는 걸 느끼는가.</p></div>
+    </div>
+    <p class="note"><b>기술 방향:</b> HTML·CSS·JavaScript로 만들고, 화면 / 판정 규칙 / 문제 데이터를 분리합니다. 그림은 선택한 스타일로 인물 4~6명과 책상 소품 10여 개를 직접 그립니다. 상용 게임 이미지는 사용하지 않습니다. 기존 버전의 퍼즐 판정 아이디어는 참고만 합니다.</p>
+  </section>
+
+  <!-- 09 -->
+  <section class="sec" id="decide">
+    <div class="sechead"><div class="num">09 / 확정된 결정 · 2026.10.10</div><h2>추천안대로 확정했습니다.</h2></div>
+    <div class="decide" style="display:grid;gap:12px">
+      <div class="card"><h3>사무실 구성</h3><div class="opt"><span class="r">생활보장과(내 부서) 사무실 별도 · 기존 업무 퍼즐 5종 모두 유지</span><span class="r">협조 부서 = 미니게임</span></div></div>
+      <div class="card"><h3>부서 미니게임 1차 묶음</h3><div class="opt"><span class="r">격자 4종: 선별장·상수도·견인·지적도</span></div></div>
+      <div class="card"><h3>첫 프로토타입 퍼즐</h3><div class="opt"><span class="r">① 결재 컨베이어</span></div></div>
+      <div class="card"><h3>그림 스타일</h3><div class="opt"><span class="r">A 크림·녹색 도트 (B의 책상 구도·도장 무게감 차용)</span></div></div>
+      <div class="card"><h3>창구 민원인의 비중</h3><div class="opt"><span class="r">하루 1~2명, 이야기 사건 중심</span></div></div>
+      <div class="card"><h3>시간 압박</h3><div class="opt"><span class="r">없음 · 기록용 시계만</span></div></div>
+      <div class="card"><h3>남은 준비물</h3><div class="opt"><span>실제 사무실 배치도 (「사무실배치도_만들기.html」로 그려서 전달)</span></div></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    이 문서의 모든 화면은 HTML/CSS로 그린 시안이며, 상용 게임 이미지를 사용하지 않았습니다. 게임 이름은 비교·참고 목적으로만 적었습니다.<br>
+    근거 자료: 공무원키우기_유사게임조사_구현제안.html · 공무원키우기_게임기획_정리본.html · 사용자 제공 화면 시안 2장 · 기존 플레이 버전.
+  </div>
+</footer>
+</body>
+</html>

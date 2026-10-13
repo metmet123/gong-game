@@ -1,0 +1,2560 @@
+[
+  {
+    "id": "P0-01",
+    "milestone": "P0",
+    "priority": "P0",
+    "title": "원본 동결·해시·읽기전용 기준",
+    "purpose": "목표: 원본 동결·해시·읽기전용 기준. 산출: 원본manifest·백업·수정제외목록과복구지침 확보.",
+    "prerequisites": [],
+    "files": [
+      "docs/evidence/source_manifest.json",
+      "tests/fixtures/baseline-manifest.json"
+    ],
+    "inputs": "4개 HTML·배치JSON·생성소스",
+    "implementation": "SHA256/byte/경로 기록. 원본 사본은 별도 backups/<hash>/에 보존하고 원본을 빌드출력 경로에서 제외. 사용자 저장은 읽기전용/시험키 분리.",
+    "outputs": "원본manifest·백업·수정제외목록과복구지침 확보",
+    "automaticTests": "원본 SHA256 일치; HTML 인라인core와 sourcecore 동일 여부",
+    "manualQA": "사본으로 열리는지 확인→게임 원본 날짜/크기/해시 재확인",
+    "failureHandling": "경로/인코딩/해시차이면 정지하고 원본/사본 구분. 임의 재빌드 금지.",
+    "definitionOfDone": "원본manifest·백업·수정제외목록과복구지침 확보",
+    "relativeSize": "S",
+    "status": "planned",
+    "nextDependencies": [
+      "P0-02",
+      "P0-03"
+    ]
+  },
+  {
+    "id": "P0-02",
+    "milestone": "P0",
+    "priority": "P0",
+    "title": "기존 규칙·UI 현황 재현",
+    "purpose": "목표: 기존 규칙·UI 현황 재현. 산출: 현황 PASS/FAIL/미검증 표와 증거 저장.",
+    "prerequisites": [
+      "P0-01"
+    ],
+    "files": [
+      "tests/fixtures/legacy",
+      "docs/evidence/runtime-audit.md"
+    ],
+    "inputs": "기존test_game.js/실행HTML/기존 저장키",
+    "implementation": "실제 inline 규칙 추출. 1200변형 검사. 시험키 사본에서5유형/하루4/퇴근/장식/복원. 코드존재와실행통과 구분. 이사 후 규칙 시험은 baseline 픽셀아트 HTML에서 직접 추출한 core와 시험 core의 동일성을 먼저 확인한다.",
+    "outputs": "현황 PASS/FAIL/미검증 표와 증거 저장",
+    "automaticTests": "정오답·중복claim·5일XP300/P505/day6; 추출규칙 동일",
+    "manualQA": "320/390: 첫출근→4건→퇴근→다음날→구매→reload;백업파일UI도확인",
+    "failureHandling": "불가환경은미검증/대체방법 명시, 사용자save를시험에쓰지않음",
+    "definitionOfDone": "현황 PASS/FAIL/미검증 표와 증거 저장",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P0-04",
+      "P0-06"
+    ]
+  },
+  {
+    "id": "P0-03",
+    "milestone": "P0",
+    "priority": "P0",
+    "title": "자료 충돌·원본배치 검증",
+    "purpose": "목표: 자료 충돌·원본배치 검증. 산출: 자료별 근거·충돌표·원본맵 동결.",
+    "prerequisites": [
+      "P0-01"
+    ],
+    "files": [
+      "docs/01_SOURCE_AUDIT_AND_DECISIONS.md",
+      "content/office/layout.private.v1.json"
+    ],
+    "inputs": "첨부3문서·원본JSON·공식참고URL",
+    "implementation": "const layout JSON추출/구조동일 검사. 46 footprint/방향/원본order 유지. 8본편/11타과 제목추출,자료주장/확정 구분.",
+    "outputs": "자료별 근거·충돌표·원본맵 동결",
+    "automaticTests": "cols14/rows21/items46/outside0/overlap0; 제목8/11누락0",
+    "manualQA": "SVG와JSON의내자리/창문/과장/3계장/서고 위치 대조",
+    "failureHandling": "캡처/붙임번호 미식별은unknown; 추정완료표기금지",
+    "definitionOfDone": "자료별 근거·충돌표·원본맵 동결",
+    "relativeSize": "S",
+    "status": "planned",
+    "nextDependencies": [
+      "P0-04"
+    ]
+  },
+  {
+    "id": "P0-04",
+    "milestone": "P0",
+    "priority": "P0",
+    "title": "기준 ID·일차·보상 계약 확정",
+    "purpose": "목표: 기준 ID·일차·보상 계약 확정. 산출: 단일 기준JSON과 변경기록, 새로운비용/방향결정 없음.",
+    "prerequisites": [
+      "P0-02",
+      "P0-03"
+    ],
+    "files": [
+      "content/story/days.v1.json",
+      "content/catalogs",
+      "docs/data/planning_contract.json"
+    ],
+    "inputs": "이번계획 7zone/13type/15days/10tools/18decor",
+    "implementation": "기준ID·가격·해금·본업4건·보상95P/일을 문서와 대조한다. 미래 유형이 미등록이면 같은 숙련 계열의 기존 퍼즐로 대체하고 사건 문구도 바꾼다. NPC MVP는5명, 베타9명이다.",
+    "outputs": "단일 기준JSON과 변경기록, 새로운비용/방향결정 없음",
+    "automaticTests": "알려지지 않은ID0, 일별4건, 가격합1425/수입1455/잔액30, 18업적 도달.",
+    "manualQA": "D6~12 소개·선택서고·보조완료 경로를 읽어 동일 해금을 확인한다.",
+    "failureHandling": "충돌하는 문서와 기준 데이터를 함께 수정한 뒤 계획 검증을 다시 실행한다.",
+    "definitionOfDone": "단일 기준JSON과 변경기록, 새로운비용/방향결정 없음",
+    "relativeSize": "S",
+    "status": "planned",
+    "nextDependencies": [
+      "P0-05",
+      "P0-06"
+    ]
+  },
+  {
+    "id": "P0-05",
+    "milestone": "P0",
+    "priority": "P0",
+    "title": "개발 도구·새출력 경로 준비",
+    "purpose": "목표: 개발 도구·새출력 경로 준비. 산출: 명령scripts와lockfile/새dist경로 실행 가능.",
+    "prerequisites": [
+      "P0-04"
+    ],
+    "files": [
+      "package.json",
+      "package-lock.json",
+      "tools/serve.mjs",
+      "tools/build-html.mjs"
+    ],
+    "inputs": "설치Node/npm/브라우저 기능탐지",
+    "implementation": "ESM+esbuild+Node test/선택Playwright선정. src/content/dist 새경로. dev loopback. 원본HTML 재생성 명령과출력차단.",
+    "outputs": "명령scripts와lockfile/새dist경로 실행 가능",
+    "automaticTests": "node/npm확인; 빈 shell bundle offline로드; 외부URL0",
+    "manualQA": "개발서버 시작/중지→새dist파일 열기→원본불변",
+    "failureHandling": "설치못하면기존Node검사/CUA수동. 엔진전면재작성하지않음",
+    "definitionOfDone": "명령scripts와lockfile/새dist경로 실행 가능",
+    "relativeSize": "S",
+    "status": "planned",
+    "nextDependencies": [
+      "P1-01"
+    ]
+  },
+  {
+    "id": "P0-06",
+    "milestone": "P0",
+    "priority": "P0",
+    "title": "v1 골든 픽스처·기대값",
+    "purpose": "목표: v1 골든 픽스처·기대값. 산출: 최소11종 fixture와 보존 필드 기대값 확보.",
+    "prerequisites": [
+      "P0-02",
+      "P0-04"
+    ],
+    "files": [
+      "tests/fixtures/v1/*.json",
+      "tests/fixtures/v1/expected.json"
+    ],
+    "inputs": "GameCore.blank/생성된 가상플레이 기록",
+    "implementation": "fresh/partial/4완료퇴근전/day6/day27/모든도구/plant+cat/hardstarted/wrong/손상/future fixture. 개인정보 실제save 사용 금지.",
+    "outputs": "최소11종 fixture와 보존 필드 기대값 확보",
+    "automaticTests": "v1정상fixtures 원본validator통과, malformed거절,수치snapshot동일",
+    "manualQA": "각fixture의화면요약/현재업무난도/일차를읽어기대값대조",
+    "failureHandling": "records→coins재계산금지;틀린fixture는근거고쳐재생성",
+    "definitionOfDone": "최소11종 fixture와 보존 필드 기대값 확보",
+    "relativeSize": "S",
+    "status": "planned",
+    "nextDependencies": [
+      "P1-01",
+      "P1-06"
+    ]
+  },
+  {
+    "id": "P1-01",
+    "milestone": "P1",
+    "priority": "P0",
+    "title": "순수 legacy 규칙 모듈 추출",
+    "purpose": "목표: 순수 legacy 규칙 모듈 추출. 산출: 동일 결과를내는독립모듈과골든검사.",
+    "prerequisites": [
+      "P0-05",
+      "P0-06"
+    ],
+    "files": [
+      "src/core/legacy-rules.js",
+      "tests/unit/legacy.test.mjs"
+    ],
+    "inputs": "인라인 GameCore/기존1200검사",
+    "implementation": "DOM없는generate/evaluate/sequence adapter 추출. seed/수치/판정변경0. 기존타입id 그대로.",
+    "outputs": "동일 결과를내는독립모듈과골든검사",
+    "automaticTests": "1200변형/교환필터/5일/소유/purchase/validate 동일",
+    "manualQA": "하루유형5개를동일 입력으로원본과대조",
+    "failureHandling": "추출에서규칙변경발견시legacy원문으로회귀",
+    "definitionOfDone": "동일 결과를내는독립모듈과골든검사",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P1-02"
+    ]
+  },
+  {
+    "id": "P1-02",
+    "milestone": "P1",
+    "priority": "P0",
+    "title": "Task·Stage·Registry·Pack 스키마",
+    "purpose": "목표: Task·Stage·Registry·Pack 스키마. 산출: 기존5종을새Task model로시작/평가.",
+    "prerequisites": [
+      "P1-01"
+    ],
+    "files": [
+      "src/puzzles/registry.js",
+      "src/core/state.js",
+      "src/core/task-planner.js"
+    ],
+    "inputs": "05/07/08계약 및 13type",
+    "implementation": "Task.type, Stage.type, registry.type을 같은 ID로 사용한다. 첫 진입에서 taskId·stageId·seed·difficulty·contentVersion을 고정한다. task status는 locked/available/waiting/started/suspended/evaluating/completed, 보조 여부는 결과 assisted 필드다. 부서팩은 namespaced stage를 등록한다.",
+    "outputs": "기존5종을새Task model로시작/평가",
+    "automaticTests": "중복 등록 거절, 미등록 필수문제 대체, 현재 난도 고정, 다음 신규 task 난도 적용, 미래 save 버전 거절.",
+    "manualQA": "설정을 바꿔 현재 문제 불변과 다음 문제 변경을 확인한다.",
+    "failureHandling": "카탈로그 결손은 기존 퍼즐 대체, 미래 저장은 원문 보존/읽기 전용 처리.",
+    "definitionOfDone": "기존5종을새Task model로시작/평가",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P1-03",
+      "P1-07"
+    ]
+  },
+  {
+    "id": "P1-03",
+    "milestone": "P1",
+    "priority": "P0",
+    "title": "Session reducer·중단/결과 계약",
+    "purpose": "목표: Session reducer·중단/결과 계약. 산출: 세션조작이DOM과무관하며 UI는action만발행.",
+    "prerequisites": [
+      "P1-02"
+    ],
+    "files": [
+      "src/app/session.js",
+      "src/ui/router.js",
+      "src/puzzles/common/draft.js"
+    ],
+    "inputs": "상태전이/Task모델",
+    "implementation": "available/started/suspended/evaluating/completed 전이,screen/dayPhase 분리. active task1/optional draft1,invalid/incomplete 구분,async token.",
+    "outputs": "세션조작이DOM과무관하며 UI는action만발행",
+    "automaticTests": "허용전이외거절/불완전오답0/닫기초안복원/동시제출guard",
+    "manualQA": "문제열기→편집→닫기→재열기→검증→제출",
+    "failureHandling": "evaluation error는초안유지/재실행;새게임reset자동금지",
+    "definitionOfDone": "세션조작이DOM과무관하며 UI는action만발행",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P1-04",
+      "P2-07"
+    ]
+  },
+  {
+    "id": "P1-04",
+    "milestone": "P1",
+    "priority": "P0",
+    "title": "보상·결산·구매 원장",
+    "purpose": "목표: 보상·결산·구매 원장. 산출: idempotent거래가모든보상진입점에적용.",
+    "prerequisites": [
+      "P1-03"
+    ],
+    "files": [
+      "src/core/reward-ledger.js",
+      "src/progression/economy.js"
+    ],
+    "inputs": "reward+task/day/purchaseId",
+    "implementation": "task결과+XP15/P20/도감이벤트한snapshot. completedclaim반환은증분0,day95기준,invalid금전변경0.",
+    "outputs": "idempotent거래가모든보상진입점에적용",
+    "automaticTests": "더블submit/reload/replay/dayclose/purchase 각각1회;15일총1455",
+    "manualQA": "완료버튼연속누름→복귀→다시열기→잔액비교",
+    "failureHandling": "claim경합은기존결과반환,부분증분rollback",
+    "definitionOfDone": "idempotent거래가모든보상진입점에적용",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P1-05",
+      "P1-07",
+      "P3-07"
+    ]
+  },
+  {
+    "id": "P1-05",
+    "milestone": "P1",
+    "priority": "P0",
+    "title": "SaveRepository 저장실패·pending 복구",
+    "purpose": "목표: SaveRepository 저장실패·pending 복구. 산출: 오류별안내와정상본복구,한번의저장에원장/재화같음.",
+    "prerequisites": [
+      "P1-04"
+    ],
+    "files": [
+      "src/persistence/repository.js",
+      "src/persistence/validation.js"
+    ],
+    "inputs": "v2shape/가상storage adapter",
+    "implementation": "main/pending/lastGood 전체snapshot프로토콜. 메모리fallback/지속경고/export. strict필드/프로토타입키거절.",
+    "outputs": "오류별안내와정상본복구,한번의저장에원장/재화같음",
+    "automaticTests": "read/write throw/quota/손상/pending revision/lastGood/unknownfuture tests",
+    "manualQA": "storage거절시험→플레이가능/경고→백업→복구선택",
+    "failureHandling": "원본key삭제없음,자동초기화없음. 실패하더라도메모리원장유지",
+    "definitionOfDone": "오류별안내와정상본복구,한번의저장에원장/재화같음",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P1-06",
+      "P4-06"
+    ]
+  },
+  {
+    "id": "P1-06",
+    "milestone": "P1",
+    "priority": "P0",
+    "title": "v1→v2 마이그레이션·bridge",
+    "purpose": "목표: v1→v2 마이그레이션·bridge. 산출: legacy snapshot불변/기존진행손실0/과거보상중복0.",
+    "prerequisites": [
+      "P1-05",
+      "P0-06"
+    ],
+    "files": [
+      "src/persistence/migrate-v1-v2.js",
+      "tests/integration/migration.test.mjs"
+    ],
+    "inputs": "v1 fixtures/08필드매핑",
+    "implementation": "11종 v1 픽스처로 이름·XP·P·도구·장식·기록·시작 난도를 보존한다. 현재 legacy4건을 마친 뒤 old.day≤5는 다음날, old.day>5는 새D6으로 연결한다. 화분/고양이는 둘 다 소유하되 같은anchor에는 하나만 장착한다.",
+    "outputs": "legacy snapshot불변/기존진행손실0/과거보상중복0",
+    "automaticTests": "11픽스처 필드 보존, 입력 불변, 결정적 변환, 실패 롤백, 4건완료/퇴근전 보너스1회, D27 연결.",
+    "manualQA": "D6/D27 가져오기→현재업무 완료→새D6 예고와 잔액 대조.",
+    "failureHandling": "원문 보존과 이전 HTML 복귀. 알 수 없는 기록을 임의 삭제하지 않는다.",
+    "definitionOfDone": "legacy snapshot불변/기존진행손실0/과거보상중복0",
+    "relativeSize": "L",
+    "status": "planned",
+    "nextDependencies": [
+      "P1-08"
+    ]
+  },
+  {
+    "id": "P1-07",
+    "milestone": "P1",
+    "priority": "P0",
+    "title": "Inventory·Codex·Narrative 최소 계약",
+    "purpose": "목표: Inventory·Codex·Narrative 최소 계약. 산출: 확장데이터를위한작은pure모듈/빈상태UI 계약.",
+    "prerequisites": [
+      "P1-02",
+      "P1-04"
+    ],
+    "files": [
+      "src/progression/inventory.js",
+      "src/progression/codex.js",
+      "src/narrative/events.js"
+    ],
+    "inputs": "owned/equipped/onceKey/도감5분류",
+    "implementation": "최소owned/equip/codex projection/eventonce 구조. 판정기가P지급못함. 미등록item/pack은orphans.",
+    "outputs": "확장데이터를위한작은pure모듈/빈상태UI 계약",
+    "automaticTests": "미보유장착거절/코덱스projection재구성/event중복0/unknown보관",
+    "manualQA": "legacy장식2개동시소유→slot선택→업무도감기록읽기",
+    "failureHandling": "missinganchor은 미장착보관,조건부일화missing은 fallback",
+    "definitionOfDone": "확장데이터를위한작은pure모듈/빈상태UI 계약",
+    "relativeSize": "S",
+    "status": "planned",
+    "nextDependencies": [
+      "P1-08",
+      "P3-08"
+    ]
+  },
+  {
+    "id": "P1-08",
+    "milestone": "P1",
+    "priority": "P0",
+    "title": "P1 체험 빌드·호환 게이트",
+    "purpose": "목표: P1 체험 빌드·호환 게이트. 산출: 기존게임동작을새모듈/저장으로재현한빌드.",
+    "prerequisites": [
+      "P1-06",
+      "P1-07"
+    ],
+    "files": [
+      "src/app/main.js",
+      "tools/build-html.mjs",
+      "tests/e2e/legacy.spec.js"
+    ],
+    "inputs": "새session/legacyview/원본baseline",
+    "implementation": "기존사무실UI어댑터+5종+v2저장으로새dist 체험빌드. 시각변경은아직최소.",
+    "outputs": "기존게임동작을새모듈/저장으로재현한빌드",
+    "automaticTests": "기존1200/5일캠페인/마이그레이션/오프라인bundle PASS",
+    "manualQA": "새게임·기존가져오기→4업무→퇴근→reload→백업",
+    "failureHandling": "게이트실패시P2착수안함/원본baseline유지",
+    "definitionOfDone": "기존게임동작을새모듈/저장으로재현한빌드",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P2-01"
+    ]
+  },
+  {
+    "id": "P2-01",
+    "milestone": "P2",
+    "priority": "P0",
+    "title": "원본 맵 로더·object ID·anchors",
+    "purpose": "목표: 원본 맵 로더·object ID·anchors. 산출: 원본동일로딩,renderer와collision 공통map참조.",
+    "prerequisites": [
+      "P1-08"
+    ],
+    "files": [
+      "src/world/map.js",
+      "content/office/layout.private.v1.json",
+      "content/office/anchors.v1.json"
+    ],
+    "inputs": "46원본 items/7구역",
+    "implementation": "oN생성/방향·크기 유지, T24world변환/anchor분리. sourceHash검사.",
+    "outputs": "원본동일로딩,renderer와collision 공통map참조",
+    "automaticTests": "46동일/139blocked/겹침0/영역밖0/anchorbound",
+    "manualQA": "내자리/창문/과장/계장3/출입문 위치 SVG와대조",
+    "failureHandling": "map검증 실패시safe원본사본로딩/잘못그림으로배포금지",
+    "definitionOfDone": "원본동일로딩,renderer와collision 공통map참조",
+    "relativeSize": "S",
+    "status": "planned",
+    "nextDependencies": [
+      "P2-02",
+      "P2-03"
+    ]
+  },
+  {
+    "id": "P2-02",
+    "milestone": "P2",
+    "priority": "P0",
+    "title": "충돌격자·접근점·BFS",
+    "purpose": "목표: 충돌격자·접근점·BFS. 산출: 최단path/실패reason/접근후보map 확보.",
+    "prerequisites": [
+      "P2-01"
+    ],
+    "files": [
+      "src/world/collision.js",
+      "src/world/pathfinding.js",
+      "content/office/zones.v1.json"
+    ],
+    "inputs": "155freecells/o별perimeter",
+    "implementation": "원본46개 footprint를 막고4방향 BFS로 시작(1,12)에서 대표접근7개와 물품 둘레 후보를 탐색한다. 동률은 북/동/남/서, 후보는 거리/y/x순이다. 발반경0.22타일, 좌석 NPC는 비충돌 연출이다.",
+    "outputs": "최단path/실패reason/접근후보map 확보",
+    "automaticTests": "139blocked/155free, 대표접근7개 도달, 필수물품 후보, 대각선/막힌칸0, 계장 왼쪽(10,6) 접근 거절.",
+    "manualQA": "o7 북측(11,5)과 row4/9/14의 좁은통로를 확인한다.",
+    "failureHandling": "다른 접근점을 찾고 없으면 위치를 유지한 직접 업무 선택을 제공한다. 관통 이동으로 숨기지 않는다.",
+    "definitionOfDone": "최단path/실패reason/접근후보map 확보",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P2-06"
+    ]
+  },
+  {
+    "id": "P2-03",
+    "milestone": "P2",
+    "priority": "P0",
+    "title": "정확한46물품·19좌석 렌더",
+    "purpose": "목표: 정확한46물품·19좌석 렌더. 산출: 가로/세로에서원본물품배열과양식유지.",
+    "prerequisites": [
+      "P2-01"
+    ],
+    "files": [
+      "src/render/office.js",
+      "src/render/sprites.js",
+      "assets/sprites/office"
+    ],
+    "inputs": "mapSnapshot/기존sprite/방향",
+    "implementation": "fixed geometry를JSON worldrenderer로교체. furniture footprint변경없이localart;좌석방향/npc색/동쪽windows4.",
+    "outputs": "가로/세로에서원본물품배열과양식유지",
+    "automaticTests": "bounding/방향snapshot과원본일치/DPR1·2에서touch별도",
+    "manualQA": "PC와320에서동일map순서/19occupied/빈자리1 비교",
+    "failureHandling": "assetmissingplaceholder+label, unknowntype즉시작업금지",
+    "definitionOfDone": "가로/세로에서원본물품배열과양식유지",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P2-04"
+    ]
+  },
+  {
+    "id": "P2-04",
+    "milestone": "P2",
+    "priority": "P0",
+    "title": "카메라 변환·정수endpoint·clamp",
+    "purpose": "목표: 카메라 변환·정수endpoint·clamp. 산출: 모든대상보이며픽셀정수도달/텍스트16px.",
+    "prerequisites": [
+      "P2-03"
+    ],
+    "files": [
+      "src/world/camera.js",
+      "src/render/text-overlay.js"
+    ],
+    "inputs": "04수식/5viewports/zonefocus",
+    "implementation": "월드/화면 정·역변환과 DPR 분리, 전체지도fit, 모바일2배/PC3배 정수 종료, 가장자리clamp·letterbox를 구현한다. 350ms tween 뒤 대상이 보여야 하며 회전은 새 viewport로 재계산한다.",
+    "outputs": "모든대상보이며픽셀정수도달/텍스트16px",
+    "automaticTests": "역변환 오차0.01CSSpx 미만, 5화면 크기, oversized clamp, 정수 종료, 가장자리 대상 가시성.",
+    "manualQA": "창구/과장/회의 초점, 화면회전, 주소창 높이 변화 후 같은 물품을 탭한다.",
+    "failureHandling": "tween 취소와 입력 잠금 정리. 대상 가림은 초점 조정/업무목록. 판정기에 카메라 값 전달 금지.",
+    "definitionOfDone": "모든대상보이며픽셀정수도달/텍스트16px",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P2-05"
+    ]
+  },
+  {
+    "id": "P2-05",
+    "milestone": "P2",
+    "priority": "P0",
+    "title": "터치·7배지·겹침대상 선택",
+    "purpose": "목표: 터치·7배지·겹침대상 선택. 산출: 핵심hit44/모호tap일관/스크롤오작동0.",
+    "prerequisites": [
+      "P2-04"
+    ],
+    "files": [
+      "src/world/hit-test.js",
+      "src/ui/zone-actions.js"
+    ],
+    "inputs": "inversecamera/object/zonepolygons",
+    "implementation": "DOM→realfootprint→44확장후보→zone 우선. 후보복수는sheet. 전체map7badge48,zone큰소품버튼.",
+    "outputs": "핵심hit44/모호tap일관/스크롤오작동0",
+    "automaticTests": "좌표inverse/겹침ties/8pxscroll취소/label방해 없음/키보드동일action",
+    "manualQA": "320에서전화/서류구분, 2후보sheet, 확대후objecttap",
+    "failureHandling": "터치오차는대상선택창,잘못퍼즐자동시작금지",
+    "definitionOfDone": "핵심hit44/모호tap일관/스크롤오작동0",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P2-06"
+    ]
+  },
+  {
+    "id": "P2-06",
+    "milestone": "P2",
+    "priority": "P0",
+    "title": "자동 이동·최신탭·중단",
+    "purpose": "목표: 자동 이동·최신탭·중단. 산출: 장애물회피walk/도착줌/입력잠금일관성.",
+    "prerequisites": [
+      "P2-02",
+      "P2-05"
+    ],
+    "files": [
+      "src/world/movement.js",
+      "src/app/session.js"
+    ],
+    "inputs": "BFS route/camera target/reducedmotion",
+    "implementation": "tile120ms, 긴경로2초압축, 마지막안전칸, latesttarget만, transitionToken. arrival뒤줌, callback1회.",
+    "outputs": "장애물회피walk/도착줌/입력잠금일관성",
+    "automaticTests": "재탭/취소/hidden/회전/오류/없는대상/중복callback/경로blocked0",
+    "manualQA": "창구→회의 긴걷기, 중간다른구역tap, back, 동작줄이기",
+    "failureHandling": "300ms전환오류시다른접근/업무선택. reachable즉시이동만허용",
+    "definitionOfDone": "장애물회피walk/도착줌/입력잠금일관성",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P2-07"
+    ]
+  },
+  {
+    "id": "P2-07",
+    "milestone": "P2",
+    "priority": "P0",
+    "title": "전체↔구역↔작업대↔결과↔복귀",
+    "purpose": "목표: 전체↔구역↔작업대↔결과↔복귀. 산출: 끝까지연결된1구역사이클/5종어댑터호환.",
+    "prerequisites": [
+      "P2-06",
+      "P1-03"
+    ],
+    "files": [
+      "src/ui/router.js",
+      "src/ui/workbench.js",
+      "src/app/session.js"
+    ],
+    "inputs": "screenstates/lastzone/5legacytype",
+    "implementation": "compare를 독립 작업대로 연결한다. 전체→이동→구역→작업대→결과→같은구역을 reducer/history로 구성한다. 뒤로는 초안을 저장하고 결과는 보상을 다시 지급하지 않는다.",
+    "outputs": "끝까지연결된1구역사이클/5종어댑터호환",
+    "automaticTests": "화면 허용전이, 결과 claim1회, lastzone/lastSafeCell 복원, 초안 재열기, history 중복0.",
+    "manualQA": "내자리 서류→제출→같은구역→전체→퇴근, 뒤로3회와 reload 후 위치 대조.",
+    "failureHandling": "history 미지원은 화면 뒤로 버튼. 작업대/메뉴 중복 겹침과 자동 초기화 금지.",
+    "definitionOfDone": "끝까지연결된1구역사이클/5종어댑터호환",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P2-08"
+    ]
+  },
+  {
+    "id": "P2-08",
+    "milestone": "P2",
+    "priority": "P0",
+    "title": "내자리·창구·결재3구역 상세UI",
+    "purpose": "목표: 내자리·창구·결재3구역 상세UI. 산출: 3구역의가독성/소품/NPC/action 세부화.",
+    "prerequisites": [
+      "P2-07"
+    ],
+    "files": [
+      "src/ui/zone-actions.js",
+      "content/office/zones.v1.json",
+      "src/render/text-overlay.js"
+    ],
+    "inputs": "04상세3wireframe/approval4subfocus",
+    "implementation": "phone/papers/PC/inbox localanchors;창구NPC/게시판전환;간부4석targetsubfocus. 나머지4zone도선택/목록제공.",
+    "outputs": "3구역의가독성/소품/NPC/action 세부화",
+    "automaticTests": "원본ownership중복0/targetfocus/ready-wait-done/actions valid",
+    "manualQA": "3203구역큰버튼/과장↔계장3전환/선택기억",
+    "failureHandling": "미등록action은준비중;전체zonebox맞춤으로tiny화금지",
+    "definitionOfDone": "3구역의가독성/소품/NPC/action 세부화",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P2-09"
+    ]
+  },
+  {
+    "id": "P2-09",
+    "milestone": "P2",
+    "priority": "P0",
+    "title": "작은화면·큰글씨·동작줄이기",
+    "purpose": "목표: 작은화면·큰글씨·동작줄이기. 산출: 320/390필수조작성공/안전영역겹침0.",
+    "prerequisites": [
+      "P2-08"
+    ],
+    "files": [
+      "src/ui/styles/layout.css",
+      "src/ui/settings.js"
+    ],
+    "inputs": "320/360/390/412/1280;text16/18/20",
+    "implementation": "safe24+env, dvhfallback, DOMtext/48button, 분류탭/중간스크롤, reducedmotion 즉시endpoint. 접근성label/focus.",
+    "outputs": "320/390필수조작성공/안전영역겹침0",
+    "automaticTests": "모든viewport페이지overflow0/actionvisible/콘트라스트/hiddeninput focus",
+    "manualQA": "5크기둘러보기, 글씨20, OS동작줄이기, touchpan",
+    "failureHandling": "미지원CSS는단순height/resize, 컨트롤내부scroll fallback",
+    "definitionOfDone": "320/390필수조작성공/안전영역겹침0",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P2-10"
+    ]
+  },
+  {
+    "id": "P2-10",
+    "milestone": "P2",
+    "priority": "P0",
+    "title": "P2 맵 연결 회귀 게이트",
+    "purpose": "목표: P2 맵 연결 회귀 게이트. 산출: 기존업무흐름안깨지는탭→이동→확대빌드.",
+    "prerequisites": [
+      "P2-09"
+    ],
+    "files": [
+      "tests/e2e/map-cycle.spec.js",
+      "docs/evidence/P2"
+    ],
+    "inputs": "3zones/전체7/legacy5/v2",
+    "implementation": "1일4건+커피+꾸미기+도감+퇴근+reload 맵흐름. 원본byte동일시험.",
+    "outputs": "기존업무흐름안깨지는탭→이동→확대빌드",
+    "automaticTests": "map/BFS/camera/hit/reward/migration/5day/오프라인 PASS",
+    "manualQA": "실제가능Android먼저 행spotcheck, 데스크톱5viewport, back/rotation",
+    "failureHandling": "Android불가면미검증표시/게이트조건남김;실패수정후P3",
+    "definitionOfDone": "기존업무흐름안깨지는탭→이동→확대빌드",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P3-01"
+    ]
+  },
+  {
+    "id": "P3-01",
+    "milestone": "P3",
+    "priority": "P0",
+    "title": "컨베이어 schema·하1레벨",
+    "purpose": "목표: 컨베이어 schema·하1레벨. 산출: 하대표1개와finitefield계약.",
+    "prerequisites": [
+      "P2-10"
+    ],
+    "files": [
+      "src/puzzles/conveyor/schema.js",
+      "content/stages/conveyor/easy/e01.json"
+    ],
+    "inputs": "05 e01/장치필드/목표bag",
+    "implementation": "board/device/predicate/sink/root/stamp schema. witness/미완성draft. 정답좌표고정검사안함.",
+    "outputs": "하대표1개와finitefield계약",
+    "automaticTests": "stagebounds/deviceID/목표수/유효witnessschema/invalid level거절",
+    "manualQA": "IN→도장→OUT 규칙을10초읽고설명가능",
+    "failureHandling": "missinggoalstage등록거절/보조해법누락시출시불가",
+    "definitionOfDone": "하대표1개와finitefield계약",
+    "relativeSize": "S",
+    "status": "planned",
+    "nextDependencies": [
+      "P3-02"
+    ]
+  },
+  {
+    "id": "P3-02",
+    "milestone": "P3",
+    "priority": "P0",
+    "title": "레일·분기·도장 simulator",
+    "purpose": "목표: 레일·분기·도장 simulator. 산출: rails/branch/stamp순수평가결과와trace.",
+    "prerequisites": [
+      "P3-01"
+    ],
+    "files": [
+      "src/puzzles/conveyor/rules.js",
+      "tests/unit/conveyor.test.mjs"
+    ],
+    "inputs": "documents/devicegrid/tick300",
+    "implementation": "deterministic tick/선행입력순차/분기truefalse/도장set/출력bag. 빈칸/루프/범위reason.",
+    "outputs": "rails/branch/stamp순수평가결과와trace",
+    "automaticTests": "e01/n01witness;잘못sink/순환/duplicate/noexit/경계predicate",
+    "manualQA": "한tick로그로문서가이동하는이유확인",
+    "failureHandling": "300tick중단/trace저장/draft유지",
+    "definitionOfDone": "rails/branch/stamp순수평가결과와trace",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P3-03",
+      "P3-04"
+    ]
+  },
+  {
+    "id": "P3-03",
+    "milestone": "P3",
+    "priority": "P0",
+    "title": "복사·금액경계·다중출력",
+    "purpose": "목표: 복사·금액경계·다중출력. 산출: 상대표해법과어떤결과동일여도valid판정.",
+    "prerequisites": [
+      "P3-02"
+    ],
+    "files": [
+      "src/puzzles/conveyor/rules.js",
+      "tests/unit/conveyor-copy.test.mjs"
+    ],
+    "inputs": "h01A100B50/원본·사본",
+    "implementation": "root원본1/copy1 cap/requiredstamps/토큰16. 사본과원본역할, 100boss 조건. bag multiplicity 비교.",
+    "outputs": "상대표해법과어떤결과동일여도valid판정",
+    "automaticTests": "h01valid/99·100·101/원본손실/copy폭발/extraStamp/2동등설계",
+    "manualQA": "한rootcopy둘로나뉘어함별도착/도장오류설명",
+    "failureHandling": "token상한/illegalcopy중지, 원본증식허용금지",
+    "definitionOfDone": "상대표해법과어떤결과동일여도valid판정",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P3-05"
+    ]
+  },
+  {
+    "id": "P3-04",
+    "milestone": "P3",
+    "priority": "P0",
+    "title": "공통 GridBoard·편집·undo",
+    "purpose": "목표: 공통 GridBoard·편집·undo. 산출: 마우스/터치/키보드모두풀수있는editor.",
+    "prerequisites": [
+      "P3-02"
+    ],
+    "files": [
+      "src/puzzles/common/grid-board.js",
+      "src/puzzles/common/undo.js",
+      "src/puzzles/conveyor/view.js"
+    ],
+    "inputs": "5×4/7×5/8×6/320작업 영역",
+    "implementation": "부품 선택→칸 탭→회전/삭제를 필수 입력으로 하고 키보드와 드래그를 보조한다. 최근50undo/redo, 내부pan/zoom과 편집 없는 전체 미리보기를 제공한다.",
+    "outputs": "마우스/터치/키보드모두풀수있는editor",
+    "automaticTests": "배치/삭제 undo, 회전, 좌표불변, pointercancel, 새 편집 시 redo 분기 폐기.",
+    "manualQA": "320px 하 난도44px칸과 상 난도 내부 이동, 키보드로 같은 해법을 완성한다.",
+    "failureHandling": "불법칸은 변경을 거절하고 사유 표시. 페이지 가로 넘침0, scroll이 submit으로 해석되지 않게 한다.",
+    "definitionOfDone": "마우스/터치/키보드모두풀수있는editor",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P3-05"
+    ]
+  },
+  {
+    "id": "P3-05",
+    "milestone": "P3",
+    "priority": "P0",
+    "title": "9고정레벨·난도·해법 증명",
+    "purpose": "목표: 9고정레벨·난도·해법 증명. 산출: 9검수stage+풀이+최적화기록규칙.",
+    "prerequisites": [
+      "P3-03",
+      "P3-04"
+    ],
+    "files": [
+      "content/stages/conveyor",
+      "tools/solvers/conveyor.mjs",
+      "tests/content/conveyor.test.mjs"
+    ],
+    "inputs": "3변형후보/하중상각 3",
+    "implementation": "하/중/상 각3개, 총9개 고정 문제를 제작하고 실제 simulator로 witness를 검증한다. 최소2레벨은 다른 배치2개도 valid여야 한다. 상 최적화는 별도 연구실 기록이다.",
+    "outputs": "9검수stage+풀이+최적화기록규칙",
+    "automaticTests": "9witness, 최소2복수해 레벨, 경계/상한 매트릭스, seed 재현, 초안 복원.",
+    "manualQA": "각난도1레벨과 최초10초 안내, 60~120초 목표를 표본 점검한다.",
+    "failureHandling": "긴판은 장치수 축소/연구실 분리. 해 없는 레벨 등록 금지.",
+    "definitionOfDone": "9검수stage+풀이+최적화기록규칙",
+    "relativeSize": "L",
+    "status": "planned",
+    "nextDependencies": [
+      "P3-06"
+    ]
+  },
+  {
+    "id": "P3-06",
+    "milestone": "P3",
+    "priority": "P0",
+    "title": "힌트3·단계실행·검증피드백",
+    "purpose": "목표: 힌트3·단계실행·검증피드백. 산출: 실패이유를읽고복구가능, 힌트스택완성.",
+    "prerequisites": [
+      "P3-05"
+    ],
+    "files": [
+      "src/puzzles/conveyor/view.js",
+      "src/puzzles/conveyor/hints.js"
+    ],
+    "inputs": "reason.targets/trace/witness",
+    "implementation": "막힘→한root경로→유효예배치. 무료힌트/보조완료/검증감점0/submit잘못1. 숫자DOM.",
+    "outputs": "실패이유를읽고복구가능, 힌트스택완성",
+    "automaticTests": "incomplete오답0/hintundo/assist60/XP동일/trace로그상한",
+    "manualQA": "틀린분기제출→근거→수정→힌트3→보조완료",
+    "failureHandling": "판정error은 재실행/기존초안, 정답없다고사용자탓안함",
+    "definitionOfDone": "실패이유를읽고복구가능, 힌트스택완성",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P3-07"
+    ]
+  },
+  {
+    "id": "P3-07",
+    "milestone": "P3",
+    "priority": "P0",
+    "title": "도장·제출·결과 연출",
+    "purpose": "목표: 도장·제출·결과 연출. 산출: 효과음/장식/실문자근거와안전한finish.",
+    "prerequisites": [
+      "P3-06",
+      "P1-04"
+    ],
+    "files": [
+      "src/render/effects.js",
+      "src/render/audio.js",
+      "src/ui/result.js"
+    ],
+    "inputs": "valid/assisted/claimTransaction",
+    "implementation": "claimcommit후0.8초stamp→서류함→결과. skip/off즉시, 새판정과무관한시각피드백. 잠금cleanup.",
+    "outputs": "효과음/장식/실문자근거와안전한finish",
+    "automaticTests": "더블submit/중간reload/모션off/무음/연출cancel claim1",
+    "manualQA": "도장보임→P20/XP15→같은구역, 연출중back",
+    "failureHandling": "효과error이면즉시결과, 포인트중복0",
+    "definitionOfDone": "효과음/장식/실문자근거와안전한finish",
+    "relativeSize": "S",
+    "status": "planned",
+    "nextDependencies": [
+      "P3-08"
+    ]
+  },
+  {
+    "id": "P3-08",
+    "milestone": "P3",
+    "priority": "P0",
+    "title": "짧은 사건·장식·도감·slice save",
+    "purpose": "목표: 짧은 사건·장식·도감·slice save. 산출: 한구역·퍼즐·이야기·보상·저장이연결된slice.",
+    "prerequisites": [
+      "P3-07",
+      "P1-07"
+    ],
+    "files": [
+      "src/narrative/events.js",
+      "src/progression/codex.js",
+      "src/ui/zone-actions.js"
+    ],
+    "inputs": "npc_sora/st_conveyor/decor_stamp/v2",
+    "implementation": "development slice는1과제focus/가상save. 소라1줄/도장handle상점해금/업무도감갱신, 선택zone/초안영구저장. 전체15일완료인척안함.",
+    "outputs": "한구역·퍼즐·이야기·보상·저장이연결된slice",
+    "automaticTests": "onceevent/보상claim/장착preview/save복원/codex1갱신",
+    "manualQA": "한zone→conveyor→도장→사건→소품구매장착→reload→zone",
+    "failureHandling": "savefail경고/백업, catalogmissingplaceholder",
+    "definitionOfDone": "한구역·퍼즐·이야기·보상·저장이연결된slice",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P3-09"
+    ]
+  },
+  {
+    "id": "P3-09",
+    "milestone": "P3",
+    "priority": "P0",
+    "title": "P3 세로슬라이스 재미·모바일 게이트",
+    "purpose": "목표: P3 세로슬라이스 재미·모바일 게이트. 산출: 플레이가능slice와기록된개선/통과판정.",
+    "prerequisites": [
+      "P3-08"
+    ],
+    "files": [
+      "tests/e2e/conveyor-cycle.spec.js",
+      "docs/evidence/P3-playtest.md"
+    ],
+    "inputs": "9stage/모바일5뷰/새플레이어표본",
+    "implementation": "자동stage/P2회귀/oldsave/하중상/assisted/새로고침. 3~5명규칙발견/한판더/막힌원인기록. Android불가구분.",
+    "outputs": "플레이가능slice와기록된개선/통과판정",
+    "automaticTests": "9모든 정답+비유효+복수답/scene일관/중복claim/noNetwork",
+    "manualQA": "첫입력10초, 중단복원, 320기본조작, 실기주소scheme",
+    "failureHandling": "재미미달시장치줄이고다시표본, schema결함부터수정",
+    "definitionOfDone": "플레이가능slice와기록된개선/통과판정",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P4-01"
+    ]
+  },
+  {
+    "id": "P4-01",
+    "milestone": "P4",
+    "priority": "P0",
+    "title": "첫주5종을새장소에연결",
+    "purpose": "목표: 첫주5종을새장소에연결. 산출: 첫주4건/퇴근에5유형전부연결.",
+    "prerequisites": [
+      "P3-09"
+    ],
+    "files": [
+      "src/puzzles/legacy views",
+      "content/story/days.v1.json"
+    ],
+    "inputs": "D1~5기존DAY_PLANS",
+    "implementation": "compare/memory/sort/sequence/route 독립작업대 및object대응. 원본seed/판정유지,새조작tutorial하루최대1.",
+    "outputs": "첫주4건/퇴근에5유형전부연결",
+    "automaticTests": "D1~5 20task/3난도각경로/워밍업성공",
+    "manualQA": "5유형touch로정상/틀림/assist/뒤로",
+    "failureHandling": "새type안넣은날도4건보장",
+    "definitionOfDone": "첫주4건/퇴근에5유형전부연결",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P4-02"
+    ]
+  },
+  {
+    "id": "P4-02",
+    "milestone": "P4",
+    "priority": "P0",
+    "title": "출근소식·건너뛰기·기사",
+    "purpose": "목표: 출근소식·건너뛰기·기사. 산출: 첫주소식과전날결과출력.",
+    "prerequisites": [
+      "P4-01"
+    ],
+    "files": [
+      "src/ui/bulletin.js",
+      "content/story/events.v1.json"
+    ],
+    "inputs": "15일사건중1~5/어제결과",
+    "implementation": "기사1/규칙1/내일연결; skip과읽기의효과동일, 도감다시보기.",
+    "outputs": "첫주소식과전날결과출력",
+    "automaticTests": "reloadonce/skip공통flags/기본variant",
+    "manualQA": "10초소식읽기→skip→퍼즐규칙재열람",
+    "failureHandling": "기사missingdefault, 법령없는가상규칙",
+    "definitionOfDone": "첫주소식과전날결과출력",
+    "relativeSize": "S",
+    "status": "planned",
+    "nextDependencies": [
+      "P4-03"
+    ]
+  },
+  {
+    "id": "P4-03",
+    "milestone": "P4",
+    "priority": "P0",
+    "title": "업무함·회신대기·연속선택",
+    "purpose": "목표: 업무함·회신대기·연속선택. 산출: 본업가로막지않는순서선택/상태UI.",
+    "prerequisites": [
+      "P4-02"
+    ],
+    "files": [
+      "src/core/task-planner.js",
+      "src/ui/queue.js"
+    ],
+    "inputs": "본업4/선택협조/urgent/waiting",
+    "implementation": "waiting최대1, 다른1완료후ready, 유일남은waiting무료회신, 같은zone연속업무.",
+    "outputs": "본업가로막지않는순서선택/상태UI",
+    "automaticTests": "deadlock0/미등록types대체/required4/대기순서",
+    "manualQA": "본업세건완료후waiting만남음→회신→퇴근",
+    "failureHandling": "외부대기없이공개fallback, 기한은가상게임표시",
+    "definitionOfDone": "본업가로막지않는순서선택/상태UI",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P4-04"
+    ]
+  },
+  {
+    "id": "P4-04",
+    "milestone": "P4",
+    "priority": "P0",
+    "title": "근무기록·일차결산·다음날",
+    "purpose": "목표: 근무기록·일차결산·다음날. 산출: 첫주수료/다음날지속루프.",
+    "prerequisites": [
+      "P4-03"
+    ],
+    "files": [
+      "src/ui/summary.js",
+      "src/app/session.js"
+    ],
+    "inputs": "4완료/dayClose ledger/storyrecap",
+    "implementation": "처리4줄/획득/장식/동료1줄/내일예고, dayphase=summary복구. next버튼과claim분리.",
+    "outputs": "첫주수료/다음날지속루프",
+    "automaticTests": "더블endDay/summaryreload/day++ once/focusreset",
+    "manualQA": "퇴근도중reload→영수증→다음날→본업4",
+    "failureHandling": "lastGood일차복구, 중복bonus0",
+    "definitionOfDone": "첫주수료/다음날지속루프",
+    "relativeSize": "S",
+    "status": "planned",
+    "nextDependencies": [
+      "P4-05"
+    ]
+  },
+  {
+    "id": "P4-05",
+    "milestone": "P4",
+    "priority": "P0",
+    "title": "NPC5명·튜토리얼·재열람",
+    "purpose": "목표: NPC5명·튜토리얼·재열람. 산출: 작은동료사건과tutorial로첫주완주.",
+    "prerequisites": [
+      "P4-04"
+    ],
+    "files": [
+      "content/story/npcs.v1.json",
+      "src/ui/dialogue.js",
+      "assets/sprites/npc"
+    ],
+    "inputs": "소라재훈미루단비한솔/9후속후보",
+    "implementation": "초상팔레트5/한줄대사, 첫조작10초 안내, 관계scene조건, skip동일해금.",
+    "outputs": "작은동료사건과tutorial로첫주완주",
+    "automaticTests": "조건분기기본0missing/NPC자리valid/skipprogress",
+    "manualQA": "처음출근/최종/전화/점심/수료대사확인",
+    "failureHandling": "실명/실제번호없는지수동검수",
+    "definitionOfDone": "작은동료사건과tutorial로첫주완주",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P4-06"
+    ]
+  },
+  {
+    "id": "P4-06",
+    "milestone": "P4",
+    "priority": "P0",
+    "title": "설정·백업 UI·오류복구",
+    "purpose": "목표: 설정·백업 UI·오류복구. 산출: 모바일에서읽고진행을보관할수있음.",
+    "prerequisites": [
+      "P4-05",
+      "P1-05"
+    ],
+    "files": [
+      "src/ui/settings.js",
+      "src/persistence/backup.js"
+    ],
+    "inputs": "난도/sound/motion/textsize/JSONFile",
+    "implementation": "export/import미리보기/취소/새게임확인, 텍스트fallback, 현재seedfreeze. 폴백feature탐지.",
+    "outputs": "모바일에서읽고진행을보관할수있음",
+    "automaticTests": "손상/4MBlimit/future/프로토타입키/export-import동일",
+    "manualQA": "소리off/글씨20/JSON교환/취소/저장거절",
+    "failureHandling": "다운로드불가copy-text, reset전backup권장",
+    "definitionOfDone": "모바일에서읽고진행을보관할수있음",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P4-07"
+    ]
+  },
+  {
+    "id": "P4-07",
+    "milestone": "P4",
+    "priority": "P0",
+    "title": "첫주완성 빌드 게이트",
+    "purpose": "목표: 첫주완성 빌드 게이트. 산출: 5일체험빌드와P5출제준비.",
+    "prerequisites": [
+      "P4-06"
+    ],
+    "files": [
+      "tests/integration/week1.test.mjs",
+      "tests/e2e/week1.spec.js"
+    ],
+    "inputs": "첫주모든경로/v1fixtures",
+    "implementation": "5일하중상/보조캠페인, 텍스트/구역/메뉴/소식통합검수. 정상새save/옛save비교.",
+    "outputs": "5일체험빌드와P5출제준비",
+    "automaticTests": "20task각 3난도/마이그레이션/회신deadlock0/claim일관",
+    "manualQA": "실기가능폰에서5일완주/가독성/backup",
+    "failureHandling": "미검증기기는릴리스검수잔여로표시",
+    "definitionOfDone": "5일체험빌드와P5출제준비",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P5-01"
+    ]
+  },
+  {
+    "id": "P5-01",
+    "milestone": "P5",
+    "priority": "P0",
+    "title": "규정 AST·우선순위 판정",
+    "purpose": "목표: 규정 AST·우선순위 판정. 산출: 규정pure판정/유한solver 계약.",
+    "prerequisites": [
+      "P4-07"
+    ],
+    "files": [
+      "src/puzzles/rules/{schema,rules}.js",
+      "tests/unit/rules.test.mjs"
+    ],
+    "inputs": "05rules3예제/유한한 카드",
+    "implementation": "allowedAST/locked/highpriority/write conflict/모든case 평가, eval금지.",
+    "outputs": "규정pure판정/유한solver 계약",
+    "automaticTests": "AND/OR동등한 식/locked변조/100boundary/conflict/무해stage거절",
+    "manualQA": "각사례적용근거를읽고설명가능",
+    "failureHandling": "syntax/incomplete변별, reasonrule필드",
+    "definitionOfDone": "규정pure판정/유한solver 계약",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P5-02"
+    ]
+  },
+  {
+    "id": "P5-02",
+    "milestone": "P5",
+    "priority": "P0",
+    "title": "규정 작업대·9레벨·힌트",
+    "purpose": "목표: 규정 작업대·9레벨·힌트. 산출: 9검수규정레벨/모바일터치작업대.",
+    "prerequisites": [
+      "P5-01"
+    ],
+    "files": [
+      "src/puzzles/rules/view.js",
+      "content/stages/rules",
+      "tools/solvers/rules.mjs"
+    ],
+    "inputs": "하중상3개씩",
+    "implementation": "슬롯선택/카드/사례tab/undo/3힌트, finite열거sol존재. 한국어가상규칙안내.",
+    "outputs": "9검수규정레벨/모바일터치작업대",
+    "automaticTests": "9witness/OR교환/모바일samejudge/locked시각 표시",
+    "manualQA": "320 rules한판→틀린case확인→수정/보조",
+    "failureHandling": "정답없는stage등록안함/recipe문장모호함없음",
+    "definitionOfDone": "9검수규정레벨/모바일터치작업대",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P5-03"
+    ]
+  },
+  {
+    "id": "P5-03",
+    "milestone": "P5",
+    "priority": "P0",
+    "title": "매크로 VM·경계테스트",
+    "purpose": "목표: 매크로 VM·경계테스트. 산출: VM결과기반판정/무한실행0.",
+    "prerequisites": [
+      "P5-02"
+    ],
+    "files": [
+      "src/puzzles/macro/{schema,rules}.js",
+      "tests/unit/macro.test.mjs"
+    ],
+    "inputs": "receive/filter/dedup/sum/submit/GE/foreach",
+    "implementation": "유한한 블록12/input20/step256, trace, hiddenedge동일 규칙. 반복중첩/임의goto제외.",
+    "outputs": "VM결과기반판정/무한실행0",
+    "automaticTests": "empty/0/99/100/101/중복 payload/type/stepcap/동등순서",
+    "manualQA": "블록한단계데이터전후/실패입력확인",
+    "failureHandling": "유형오류/loop중지초안유지",
+    "definitionOfDone": "VM결과기반판정/무한실행0",
+    "relativeSize": "L",
+    "status": "planned",
+    "nextDependencies": [
+      "P5-04"
+    ]
+  },
+  {
+    "id": "P5-04",
+    "milestone": "P5",
+    "priority": "P0",
+    "title": "매크로 editor·debug·9레벨",
+    "purpose": "목표: 매크로 editor·debug·9레벨. 산출: 9고정macro/직접설계와debug모드.",
+    "prerequisites": [
+      "P5-03"
+    ],
+    "files": [
+      "src/puzzles/macro/view.js",
+      "content/stages/macro",
+      "tools/solvers/macro.mjs"
+    ],
+    "inputs": "05대표3/공개·경계입력",
+    "implementation": "추가/↑↓/삭제/한단계/로그tab, 3회test점수와본업재도전분리, 9reference.",
+    "outputs": "9고정macro/직접설계와debug모드",
+    "automaticTests": "9witness/hiddenfail입력노출/undo/reload/keyboard",
+    "manualQA": "320백서없이직선→경계버그까지풀기",
+    "failureHandling": "복잡입력은연구실, 실무코드입력금지",
+    "definitionOfDone": "9고정macro/직접설계와debug모드",
+    "relativeSize": "L",
+    "status": "planned",
+    "nextDependencies": [
+      "P5-05"
+    ]
+  },
+  {
+    "id": "P5-05",
+    "milestone": "P5",
+    "priority": "P0",
+    "title": "A군27레벨·D6~8 편성 게이트",
+    "purpose": "목표: A군27레벨·D6~8 편성 게이트. 산출: A체험빌드/27레벨검수.",
+    "prerequisites": [
+      "P5-04"
+    ],
+    "files": [
+      "content/story/days.v1.json",
+      "tests/integration/group-a.test.mjs"
+    ],
+    "inputs": "conveyor/rules/macro 각9",
+    "implementation": "day6/7/8해금, 첫소개/도구연결, 이전types2+신규1기본. 낮은난도동일 핵심 보상.",
+    "outputs": "A체험빌드/27레벨검수",
+    "automaticTests": "27witness/하중상/보조전체 해금/v1bridge/N일저장",
+    "manualQA": "D6~8연속플레이/6~10분목표측정",
+    "failureHandling": "시간초과워밍업축소/상최적화분리",
+    "definitionOfDone": "A체험빌드/27레벨검수",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P6-01"
+    ]
+  },
+  {
+    "id": "P6-01",
+    "milestone": "P6",
+    "priority": "P0",
+    "title": "v2→v3 콘텐츠·팩·도감 마이그레이션",
+    "purpose": "목표: v2→v3 콘텐츠·팩·도감 마이그레이션. 산출: v3바닥구조/단계저장안전 .",
+    "prerequisites": [
+      "P5-05"
+    ],
+    "files": [
+      "src/persistence/migrate-v2-v3.js",
+      "tests/fixtures/v2"
+    ],
+    "inputs": "v2사용자진행/draft/owned",
+    "implementation": "추가필드packProgress/codex/achievements/callbacks/returnContext/orphans만, v2이름유지. v1→2→3연결.",
+    "outputs": "v3바닥구조/단계저장안전 ",
+    "automaticTests": "모든보존/oldtype미확인저장/ futureversion/rollback",
+    "manualQA": "P5저장가져오기→D8초안 그대로→다음날",
+    "failureHandling": "부서결손메인fallback, 원문삭제금지",
+    "definitionOfDone": "v3바닥구조/단계저장안전 ",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P6-02"
+    ]
+  },
+  {
+    "id": "P6-02",
+    "milestone": "P6",
+    "priority": "P0",
+    "title": "1~10일 스토리·선택·NPC9 계약",
+    "purpose": "목표: 1~10일 스토리·선택·NPC9 계약. 산출: 2막까지연속사건/분기progressblock0.",
+    "prerequisites": [
+      "P6-01"
+    ],
+    "files": [
+      "content/story/events.v1.json",
+      "src/narrative/events.js"
+    ],
+    "inputs": "03표/choice.final,lunch,coop",
+    "implementation": "15일 스키마와 주요NPC9 메타데이터, 첫10일 텍스트를 작성한다. P4는 소라/재훈/미루/단비/한솔5명, P6~P8은9명으로 확장한다. 한 화면3문장/선택2개, skip도 같은 기본 효과다.",
+    "outputs": "2막까지연속사건/분기progressblock0",
+    "automaticTests": "조건부 사건 기본variant, once, 관계0~3, 결제 선택0, 하루 방문자1~2명 상한.",
+    "manualQA": "첫출근→서식변경→반려의 말투·연결을 읽는다.",
+    "failureHandling": "실제인물 재현과 복지대상자 희화화는 가상 절차 농담으로 수정한다.",
+    "definitionOfDone": "2막까지연속사건/분기progressblock0",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P6-03"
+    ]
+  },
+  {
+    "id": "P6-03",
+    "milestone": "P6",
+    "priority": "P0",
+    "title": "내일 결과·콜백12·중복방지",
+    "purpose": "목표: 내일 결과·콜백12·중복방지. 산출: 내일이실제로달라지는12경로.",
+    "prerequisites": [
+      "P6-02"
+    ],
+    "files": [
+      "src/narrative/callbacks.js",
+      "content/story/callbacks.json"
+    ],
+    "inputs": "03callback12/onceKey",
+    "implementation": "발행/정렬/전달/도감보관. skip/보조/새campaign/repeat에서지속, cap동일 일3접기.",
+    "outputs": "내일이실제로달라지는12경로",
+    "automaticTests": "12callback direct/assist/skip;reload중복0/엔딩후전달",
+    "manualQA": "소식지전일기사/동료/책상decal 실제변화",
+    "failureHandling": "과다기사접기/flag누락기본variant",
+    "definitionOfDone": "내일이실제로달라지는12경로",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P6-04"
+    ]
+  },
+  {
+    "id": "P6-04",
+    "milestone": "P6",
+    "priority": "P0",
+    "title": "숙련4·도구10 조작효과",
+    "purpose": "목표: 숙련4·도구10 조작효과. 산출: 10도구유의미한 효과/legacy소유보존.",
+    "prerequisites": [
+      "P6-03"
+    ],
+    "files": [
+      "src/progression/skills.js",
+      "content/catalogs/tools.json",
+      "src/ui/growth.js"
+    ],
+    "inputs": "06도구10/price690",
+    "implementation": "legacy6보존/new4효과구현, 도구없이해존재, hard동일 진행, auto하루1워밍업만.",
+    "outputs": "10도구유의미한 효과/legacy소유보존",
+    "automaticTests": "최종15일XP900(미완성10일 빌드는XP600)/threshold/auto1/trace/rulebook/boundary/reply불변",
+    "manualQA": "가격/효과전후/PC블록미리보기/힌트무료",
+    "failureHandling": "도구결손기본힌트/실수복구무료",
+    "definitionOfDone": "10도구유의미한 효과/legacy소유보존",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P6-05"
+    ]
+  },
+  {
+    "id": "P6-05",
+    "milestone": "P6",
+    "priority": "P0",
+    "title": "15일 경제·구매 원자성",
+    "purpose": "목표: 15일 경제·구매 원자성. 산출: 15일기본경제검사와상품상태.",
+    "prerequisites": [
+      "P6-04"
+    ],
+    "files": [
+      "src/progression/economy.js",
+      "content/catalogs/decor.json"
+    ],
+    "inputs": "수입1455/총가격1425/잔액30",
+    "implementation": "현재지급기준/가격/구매transaction/노파밍. 추천구매장부자동생성, 필수도구없음.",
+    "outputs": "15일기본경제검사와상품상태",
+    "automaticTests": "15일ledger잔액30/가격부족/중복/assist동일 수입/preview무변경",
+    "manualQA": "추천장부로모든품목구매가능/난도3동일 소득",
+    "failureHandling": "높은가격로lock불가, 아이템추가총합검토",
+    "definitionOfDone": "15일기본경제검사와상품상태",
+    "relativeSize": "S",
+    "status": "planned",
+    "nextDependencies": [
+      "P6-06"
+    ]
+  },
+  {
+    "id": "P6-06",
+    "milestone": "P6",
+    "priority": "P0",
+    "title": "anchors·소유/장착·MVP6 아트",
+    "purpose": "목표: anchors·소유/장착·MVP6 아트. 산출: 6실제로보이는장식장착/모든18데이터준비.",
+    "prerequisites": [
+      "P6-05"
+    ],
+    "files": [
+      "content/office/anchors.v1.json",
+      "src/progression/inventory.js",
+      "src/render/office.js"
+    ],
+    "inputs": "06anchor18/first6sprite",
+    "implementation": "별도localanchors/옛3convert/6장식스프라이트/scene반영. furniturecollision불변.",
+    "outputs": "6실제로보이는장식장착/모든18데이터준비",
+    "automaticTests": "owned/equip/duplicate/freeconvert/anchorbound/점유 영역같음",
+    "manualQA": "화분/머그/메모/컵받침/포스터/도장handle확대서보기",
+    "failureHandling": "missinganchor는소유유지미장착/placeholder",
+    "definitionOfDone": "6실제로보이는장식장착/모든18데이터준비",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P6-07"
+    ]
+  },
+  {
+    "id": "P6-07",
+    "milestone": "P6",
+    "priority": "P0",
+    "title": "상점·구역미리보기·교체",
+    "purpose": "목표: 상점·구역미리보기·교체. 산출: 아이콘목록이아닌실제공간꾸미기.",
+    "prerequisites": [
+      "P6-06"
+    ],
+    "files": [
+      "src/ui/shop.js",
+      "src/ui/decor-preview.js"
+    ],
+    "inputs": "owned/locked/balance/anchor",
+    "implementation": "previewoverride저장0, 구매/장착/취소, 미보유상태, 소품도감배치보기.",
+    "outputs": "아이콘목록이아닌실제공간꾸미기",
+    "automaticTests": "preview취소/차감1/교체이전 소유/부족P/reload장착",
+    "manualQA": "320scenepreview에서anchor→아이템→장착→zone복귀",
+    "failureHandling": "버튼즉시disabled/거래실패원인/저장경고",
+    "definitionOfDone": "아이콘목록이아닌실제공간꾸미기",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P6-08"
+    ]
+  },
+  {
+    "id": "P6-08",
+    "milestone": "P6",
+    "priority": "P0",
+    "title": "도감5·기록·숨김힌트",
+    "purpose": "목표: 도감5·기록·숨김힌트. 산출: 5분류모두실제플레이데이터와연결.",
+    "prerequisites": [
+      "P6-07"
+    ],
+    "files": [
+      "src/progression/codex.js",
+      "src/ui/codex.js"
+    ],
+    "inputs": "work/person/item/dept/event5분류",
+    "implementation": "statprojection/초기빈상태/미보유실루엣/다시연습보상0/배치보기, 미설치 팩분모제외.",
+    "outputs": "5분류모두실제플레이데이터와연결",
+    "automaticTests": "projection재계산/최고난도별/unknownpack/extrainputescape",
+    "manualQA": "각분류→카드→장소/연습→back목록복원",
+    "failureHandling": "missingasset placeholder/metadatafallback",
+    "definitionOfDone": "5분류모두실제플레이데이터와연결",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P6-09"
+    ]
+  },
+  {
+    "id": "P6-09",
+    "milestone": "P6",
+    "priority": "P0",
+    "title": "업적18·무료외형·재열람",
+    "purpose": "목표: 업적18·무료외형·재열람. 산출: 100%수집에hard/반복노가다필수0.",
+    "prerequisites": [
+      "P6-08"
+    ],
+    "files": [
+      "content/catalogs/achievements.json",
+      "src/progression/achievements.js"
+    ],
+    "inputs": "06업적18/아트decal공유",
+    "implementation": "uniqueevent 기준한번, 보조경로동일, 고급메달별도, 숨김사후힌트.",
+    "outputs": "100%수집에hard/반복노가다필수0",
+    "automaticTests": "18달성가능/난도3/보조/중복reward0",
+    "manualQA": "못찾은일화도감재열람→업적얻기",
+    "failureHandling": "조작특징없는assist는연습에서무료경험가능",
+    "definitionOfDone": "100%수집에hard/반복노가다필수0",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P6-10"
+    ]
+  },
+  {
+    "id": "P6-10",
+    "milestone": "P6",
+    "priority": "P0",
+    "title": "10일 통합 성장 게이트",
+    "purpose": "목표: 10일 통합 성장 게이트. 산출: 서사2막과실제성장체험빌드.",
+    "prerequisites": [
+      "P6-09"
+    ],
+    "files": [
+      "tests/integration/ten-days.test.mjs",
+      "tests/e2e/collections.spec.js"
+    ],
+    "inputs": "D1~10/A27/소품6/도구10/v3",
+    "implementation": "기사→업무→성장→장착→도감→퇴근→복원. 아직B미등록은워밍업대체.",
+    "outputs": "서사2막과실제성장체험빌드",
+    "automaticTests": "직접/보조/legacy각10일/경제/콜백/장착/백업",
+    "manualQA": "10일동료변화/소품보임/320작업연결",
+    "failureHandling": "미구현유형와이어만띄우지않음, 대체명확",
+    "definitionOfDone": "서사2막과실제성장체험빌드",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P7-01"
+    ]
+  },
+  {
+    "id": "P7-01",
+    "milestone": "P7",
+    "priority": "P0",
+    "title": "단서 constraints·유일성 solver",
+    "purpose": "목표: 단서 constraints·유일성 solver. 산출: owner 독립판정기·solver·오류근거.",
+    "prerequisites": [
+      "P6-10"
+    ],
+    "files": [
+      "src/puzzles/owner/rules.js",
+      "tools/solvers/owner.mjs",
+      "tests/unit/owner.test.mjs"
+    ],
+    "inputs": "05 owner 하중상예제/Stage계약",
+    "implementation": "인물·서류 일대일 배정과 모든 관계 단서를 검사한다. 유일해 본편은3!~5! 열거로 해1개, 복수해 도전은 anySatisfying 정책을 명시한다.",
+    "outputs": "owner 독립판정기·solver·오류근거",
+    "automaticTests": "e01/n01/h01 유일성, 중복/미배정, 모순 단서 거절, 이름·정렬 불변.",
+    "manualQA": "단서 문장과 논리 조건·풀이를 대조한다.",
+    "failureHandling": "모순/다의 단서를 고친 뒤 다시 열거. 답 없는 문제는 등록 금지.",
+    "definitionOfDone": "owner 독립판정기·solver·오류근거",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P7-02"
+    ]
+  },
+  {
+    "id": "P7-02",
+    "milestone": "P7",
+    "priority": "P0",
+    "title": "owner 작업대·9고정레벨·NPC",
+    "purpose": "목표: owner 작업대·9고정레벨·NPC. 산출: owner 9검수레벨/실제작업대/저장연결.",
+    "prerequisites": [
+      "P7-01"
+    ],
+    "files": [
+      "src/puzzles/owner/view.js",
+      "content/stages/owner",
+      "tests/content/owner.test.mjs"
+    ],
+    "inputs": "05 owner controls/힌트/9stage",
+    "implementation": "터치/키보드·3힌트·draft·undo·9레벨+NPC상호작용. day9/10해금+도감+스토리.",
+    "outputs": "owner 9검수레벨/실제작업대/저장연결",
+    "automaticTests": "9witness/320판정동일/중단복원/보조기록/선택파밍guard",
+    "manualQA": "320/390 owner 직접완료/틀림/힌트/뒤로/서고skip퇴근",
+    "failureHandling": "긴 판최적화별도/정답불명문장수정",
+    "definitionOfDone": "owner 9검수레벨/실제작업대/저장연결",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P7-03"
+    ]
+  },
+  {
+    "id": "P7-03",
+    "milestone": "P7",
+    "priority": "P0",
+    "title": "일정 DAG·용량·가능시간 판정",
+    "purpose": "목표: 일정 DAG·용량·가능시간 판정. 산출: approval 독립판정기·solver·오류근거.",
+    "prerequisites": [
+      "P7-02"
+    ],
+    "files": [
+      "src/puzzles/approval/rules.js",
+      "tools/solvers/approval.mjs",
+      "tests/unit/approval.test.mjs"
+    ],
+    "inputs": "05 approval 하중상예제/Stage계약",
+    "implementation": "단계각1회·담당자 가능일·담당자별 일용량·선행DAG·다음날간격·마감을 순수 검사한다. 달력 판정과 사무실 이동연출을 분리한다.",
+    "outputs": "approval 독립판정기·solver·오류근거",
+    "automaticTests": "3대표 일정, 월chief/화boss와 화chief/수boss 복수해, 순환/중복/용량/출장 위반 거절.",
+    "manualQA": "요일별 이유와 담당자별 용량을 손으로 대조한다.",
+    "failureHandling": "불가능 일정 등록 금지. 회신 대기는 마지막 본업 무료 확인으로 해소한다.",
+    "definitionOfDone": "approval 독립판정기·solver·오류근거",
+    "relativeSize": "L",
+    "status": "planned",
+    "nextDependencies": [
+      "P7-04"
+    ]
+  },
+  {
+    "id": "P7-04",
+    "milestone": "P7",
+    "priority": "P0",
+    "title": "approval 작업대·9고정레벨·NPC",
+    "purpose": "목표: approval 작업대·9고정레벨·NPC. 산출: approval 9검수레벨/실제작업대/저장연결.",
+    "prerequisites": [
+      "P7-03"
+    ],
+    "files": [
+      "src/puzzles/approval/view.js",
+      "content/stages/approval",
+      "tests/content/approval.test.mjs"
+    ],
+    "inputs": "05 approval controls/힌트/9stage",
+    "implementation": "터치/키보드·3힌트·draft·undo·9레벨+NPC상호작용. day9/10해금+도감+스토리.",
+    "outputs": "approval 9검수레벨/실제작업대/저장연결",
+    "automaticTests": "9witness/320판정동일/중단복원/보조기록/선택파밍guard",
+    "manualQA": "320/390 approval 직접완료/틀림/힌트/뒤로/서고skip퇴근",
+    "failureHandling": "긴 판최적화별도/정답불명문장수정",
+    "definitionOfDone": "approval 9검수레벨/실제작업대/저장연결",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P7-05"
+    ]
+  },
+  {
+    "id": "P7-05",
+    "milestone": "P7",
+    "priority": "P0",
+    "title": "push·goal·deadlock·undo 판정",
+    "purpose": "목표: push·goal·deadlock·undo 판정. 산출: archive 독립판정기·solver·오류근거.",
+    "prerequisites": [
+      "P7-04"
+    ],
+    "files": [
+      "src/puzzles/archive/rules.js",
+      "tools/solvers/archive.mjs",
+      "tests/unit/archive.test.mjs"
+    ],
+    "inputs": "05 archive 하중상예제/Stage계약",
+    "implementation": "벽·상자·플레이어와 연도별 목표를 검사한다. 한 번에 상자1개만 밀고 당기기는 금지한다. undo는 상자·플레이어를 함께 되돌린다. 코너 막힘은 복구 힌트다.",
+    "outputs": "archive 독립판정기·solver·오류근거",
+    "automaticTests": "3대표 이동열, 최소밀기 BFS, 겹침/벽/연도위반, undo, 막힘복구, 선택업무 퇴근 불변.",
+    "manualQA": "하/중/상 witness를 따라가며 상자 위치를 대조한다.",
+    "failureHandling": "선택서고는 skip 가능. 막힘은 undo/reset, 일일 회복 중복0.",
+    "definitionOfDone": "archive 독립판정기·solver·오류근거",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P7-06"
+    ]
+  },
+  {
+    "id": "P7-06",
+    "milestone": "P7",
+    "priority": "P0",
+    "title": "archive 작업대·9고정레벨·NPC",
+    "purpose": "목표: archive 작업대·9고정레벨·NPC. 산출: archive 9검수레벨/실제작업대/저장연결.",
+    "prerequisites": [
+      "P7-05"
+    ],
+    "files": [
+      "src/puzzles/archive/view.js",
+      "content/stages/archive",
+      "tests/content/archive.test.mjs"
+    ],
+    "inputs": "05 archive controls/힌트/9stage",
+    "implementation": "터치/키보드·3힌트·draft·undo·9레벨+NPC상호작용. 선택서고본업불포함/회복1회.",
+    "outputs": "archive 9검수레벨/실제작업대/저장연결",
+    "automaticTests": "9witness/320판정동일/중단복원/보조기록/선택파밍guard",
+    "manualQA": "320/390 archive 직접완료/틀림/힌트/뒤로/서고skip퇴근",
+    "failureHandling": "긴 판최적화별도/정답불명문장수정",
+    "definitionOfDone": "archive 9검수레벨/실제작업대/저장연결",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P7-07"
+    ]
+  },
+  {
+    "id": "P7-07",
+    "milestone": "P7",
+    "priority": "P0",
+    "title": "B군54레벨·선택서고 게이트",
+    "purpose": "목표: B군54레벨·선택서고 게이트. 산출: A+B8? 유형6+선택archive 총6유형새퍼즐 빌드.",
+    "prerequisites": [
+      "P7-06"
+    ],
+    "files": [
+      "tests/integration/group-b.test.mjs",
+      "content/story/days.v1.json"
+    ],
+    "inputs": "A27+B27/15일중D1~10",
+    "implementation": "owner/approval일9/10로대체, archive6후선택. NPC/가구새 아트필요최소.",
+    "outputs": "A+B8? 유형6+선택archive 총6유형새퍼즐 빌드",
+    "automaticTests": "54witness/서고미완료퇴근/2막events/oldsave draft",
+    "manualQA": "D9서류추리→동료/ D10일정→결재석→복귀",
+    "failureHandling": "부품중복토대오류수정,타과선행추가안함",
+    "definitionOfDone": "A+B8? 유형6+선택archive 총6유형새퍼즐 빌드",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P8-01"
+    ]
+  },
+  {
+    "id": "P8-01",
+    "milestone": "P8",
+    "priority": "P0",
+    "title": "예산 semantic block·한도 판정",
+    "purpose": "목표: 예산 semantic block·한도 판정. 산출: 예산공간규칙/해검증.",
+    "prerequisites": [
+      "P7-07"
+    ],
+    "files": [
+      "src/puzzles/budget/rules.js",
+      "tools/solvers/budget.mjs"
+    ],
+    "inputs": "기간×금액/월분기/선행",
+    "implementation": "회전/줄삭제금지,window/월합/Qsum/dep/겹침판정. 유효배치candidate CSP.",
+    "outputs": "예산공간규칙/해검증",
+    "automaticTests": "3witness/분기3-4/금액semantic/월0·13/다중placement",
+    "manualQA": "예제금액합산과board칸색일대일 대조",
+    "failureHandling": "추상돈단위공개/불가능정답등록거절",
+    "definitionOfDone": "예산공간규칙/해검증",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P8-02"
+    ]
+  },
+  {
+    "id": "P8-02",
+    "milestone": "P8",
+    "priority": "P0",
+    "title": "예산 편집·분기탭·9레벨",
+    "purpose": "목표: 예산 편집·분기탭·9레벨. 산출: 9예산level/모바일semanticediting.",
+    "prerequisites": [
+      "P8-01"
+    ],
+    "files": [
+      "src/puzzles/budget/view.js",
+      "content/stages/budget"
+    ],
+    "inputs": "320months12/44cell/3hint",
+    "implementation": "연간overview/분기편집tab, 사업선택/놓기/제거, 월한도텍스트, 9레벨.",
+    "outputs": "9예산level/모바일semanticediting",
+    "automaticTests": "9valid/최소2복수배치/폰트size불변/undo/resize",
+    "manualQA": "320월12끝사업이동/합계/제출/중단복원",
+    "failureHandling": "과대board내부pan, 필수시간초과연구실",
+    "definitionOfDone": "9예산level/모바일semanticediting",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P8-03"
+    ]
+  },
+  {
+    "id": "P8-03",
+    "milestone": "P8",
+    "priority": "P0",
+    "title": "보고 사실·recipe·분량 판정",
+    "purpose": "목표: 보고 사실·recipe·분량 판정. 산출: 보고제약판정/유효요약solver.",
+    "prerequisites": [
+      "P8-02"
+    ],
+    "files": [
+      "src/puzzles/brief/rules.js",
+      "tools/solvers/brief.mjs"
+    ],
+    "inputs": "factvalue/polarity/provenance/cost",
+    "implementation": "requiredcoverage/허용된recipe/consume/순서, font영향 없음. subsetrecipeorder유한한 검증.",
+    "outputs": "보고제약판정/유효요약solver",
+    "automaticTests": "3witness/두요약/falsekeyword/duplicate source/overcost/order",
+    "manualQA": "문장뜻이factid/value와맞는지콘텐츠검수",
+    "failureHandling": "애매문장교체, AI/외부API사용하지 않음",
+    "definitionOfDone": "보고제약판정/유효요약solver",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P8-04"
+    ]
+  },
+  {
+    "id": "P8-04",
+    "milestone": "P8",
+    "priority": "P0",
+    "title": "한장 작업대·9레벨·프린트",
+    "purpose": "목표: 한장 작업대·9레벨·프린트. 산출: 9검수보고문제/실제프린트완료.",
+    "prerequisites": [
+      "P8-03"
+    ],
+    "files": [
+      "src/puzzles/brief/view.js",
+      "content/stages/brief",
+      "src/render/effects.js"
+    ],
+    "inputs": "원문/보고탭/카드cost/과장초상",
+    "implementation": "선택/합치기/분해/순서, 고정cost/필수facts, 9레벨/출력0.8s.",
+    "outputs": "9검수보고문제/실제프린트완료",
+    "automaticTests": "9valid/recipeundo/20px동일판정/두해법/draft보관",
+    "manualQA": "320원문읽기→2카드합치기→분량→제출",
+    "failureHandling": "어휘불명reason수정, freeText금지",
+    "definitionOfDone": "9검수보고문제/실제프린트완료",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P8-05"
+    ]
+  },
+  {
+    "id": "P8-05",
+    "milestone": "P8",
+    "priority": "P0",
+    "title": "3막·15일 엔딩·반복모드",
+    "purpose": "목표: 3막·15일 엔딩·반복모드. 산출: 15일전막과엔딩후체험.",
+    "prerequisites": [
+      "P8-04"
+    ],
+    "files": [
+      "content/story/days.v1.json",
+      "content/story/events.v1.json",
+      "src/core/task-planner.js"
+    ],
+    "inputs": "03 day11~15/callback12/엔딩3",
+    "implementation": "budgetD11/briefD12, 협조D13이야기/미설치 팩대체, D15건조한유머, repeat/campaign새  namespace/옛Inventory 유지.",
+    "outputs": "15일전막과엔딩후체험",
+    "automaticTests": "15dayrequired4/모든3난도/assist/엔딩이후callback/claim분리",
+    "manualQA": "D11~15연속/엔딩→반복→스토리재생보상0",
+    "failureHandling": "스토리새회차메인기록덮지않음/extra긴 업무분리",
+    "definitionOfDone": "15일전막과엔딩후체험",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P8-06"
+    ]
+  },
+  {
+    "id": "P8-06",
+    "milestone": "P8",
+    "priority": "P0",
+    "title": "소품18·NPC9·픽셀 세부 마감",
+    "purpose": "목표: 소품18·NPC9·픽셀 세부 마감. 산출: 베타의각소품/인물식별가능/라이선스기록.",
+    "prerequisites": [
+      "P8-05"
+    ],
+    "files": [
+      "assets/sprites",
+      "content/catalogs",
+      "src/render/office.js"
+    ],
+    "inputs": "06전체18/03NPC9/21가구types",
+    "implementation": "후속소품12제작/전체NPC팔레트/표정2/핸드오프. 각장식zone실제로보임, 정수pixel/textoverlay.",
+    "outputs": "베타의각소품/인물식별가능/라이선스기록",
+    "automaticTests": "18소유장착/9NPC자리/점유 영역불변/assetmanifest",
+    "manualQA": "부착anchor전부scene/320·390고양이장식교체/움직임off",
+    "failureHandling": "자산크면공유palettes+placeholder, 타사그림안씀",
+    "definitionOfDone": "베타의각소품/인물식별가능/라이선스기록",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P8-07"
+    ]
+  },
+  {
+    "id": "P8-07",
+    "milestone": "P8",
+    "priority": "P0",
+    "title": "생활보장과 베타72레벨 게이트",
+    "purpose": "목표: 생활보장과 베타72레벨 게이트. 산출: 15일베타체험가능/8새 종성공과저장회귀.",
+    "prerequisites": [
+      "P8-06"
+    ],
+    "files": [
+      "tests/integration/campaign15.test.mjs",
+      "tests/content/all-stages.test.mjs"
+    ],
+    "inputs": "8종72+legacy5/15일/전체시스템",
+    "implementation": "직접/보조/자동/legacybridge캠페인, 하루6~10분/가격합1425/수입1455측정, 모든13type연결.",
+    "outputs": "15일베타체험가능/8새 종성공과저장회귀",
+    "automaticTests": "72witness/15days×3난도/잔액30/claim/저장/콜백/door통합",
+    "manualQA": "새플레이어전체막가독성/지루함/긴애니메이션기록",
+    "failureHandling": "플레이시간초과필수레벨축소/별도연구실, 않음 가능level제외",
+    "definitionOfDone": "15일베타체험가능/8새 종성공과저장회귀",
+    "relativeSize": "L",
+    "status": "planned",
+    "nextDependencies": [
+      "P9-01"
+    ]
+  },
+  {
+    "id": "P9-01",
+    "milestone": "P9",
+    "priority": "P0",
+    "title": "실제 Android file/content·저장 QA",
+    "purpose": "목표: 실제 Android file/content·저장 QA. 산출: 실기PASS/FAIL/미검증문서와재현경로.",
+    "prerequisites": [
+      "P8-07"
+    ],
+    "files": [
+      "docs/evidence/android-matrix.md",
+      "tests/manual/android.md"
+    ],
+    "inputs": "삼성브라우저버전/Android/HTML/JSON",
+    "implementation": "모바일실기주소scheme/재open/이름변경/오프라인/브라우저데이터/backup/import/back/회전. 가상testsave만.",
+    "outputs": "실기PASS/FAIL/미검증문서와재현경로",
+    "automaticTests": "웹자동동일cycle보조, 저장거절/네트워크0모의 시험",
+    "manualQA": "Samsung실기5개화면→퍼즐→저장→파일다시 열기→JSON복원",
+    "failureHandling": "로컬실행불가가현실이면정적웹안구체화해사용자최종배포결정",
+    "definitionOfDone": "실기PASS/FAIL/미검증문서와재현경로",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P9-02"
+    ]
+  },
+  {
+    "id": "P9-02",
+    "milestone": "P9",
+    "priority": "P0",
+    "title": "반응형·접근성·오래된기능 폴백",
+    "purpose": "목표: 반응형·접근성·오래된기능 폴백. 산출: 좁은화면과낮은 기능에서치명오류0.",
+    "prerequisites": [
+      "P9-01"
+    ],
+    "files": [
+      "tests/e2e/responsive.spec.js",
+      "src/ui/styles",
+      "src/app/feature-detect.js"
+    ],
+    "inputs": "5viewports/textsize20/lowfeatures",
+    "implementation": "핵심button>=44/contrast4.5/DOM읽기/keyboard/DPR/OSsafe/touchcancel/functionfallback.",
+    "outputs": "좁은화면과낮은 기능에서치명오류0",
+    "automaticTests": "5screens overflow0/mapping동일/설정2배/보조완료",
+    "manualQA": "320/390실기손가락 조작/주소창/큰글씨/무음·motionoff",
+    "failureHandling": "못읽는UI스케일이아닌탭/페이지구조개선",
+    "definitionOfDone": "좁은화면과낮은 기능에서치명오류0",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P9-03"
+    ]
+  },
+  {
+    "id": "P9-03",
+    "milestone": "P9",
+    "priority": "P0",
+    "title": "저장·초안·보상·회귀 릴리스 시험",
+    "purpose": "목표: 저장·초안·보상·회귀 릴리스 시험. 산출: 호환/복구/끝일까지release blockers0.",
+    "prerequisites": [
+      "P9-02"
+    ],
+    "files": [
+      "tests/integration",
+      "tests/e2e/recovery.spec.js"
+    ],
+    "inputs": "모든v1/v2/v3픽스처/72stage",
+    "implementation": "working/evaluating/result/summary/menu 단계중reload/back/닫기/다른파일, 복원/ledger/unknownpack.",
+    "outputs": "호환/복구/끝일까지release blockers0",
+    "automaticTests": "중복claim0/진행손실0/초안seed난도동일/손상roll회",
+    "manualQA": "대표8종중단→export→다른testnamespace import→계속",
+    "failureHandling": "migrationFAIL시release중지, 원본backups유지",
+    "definitionOfDone": "호환/복구/끝일까지release blockers0",
+    "relativeSize": "L",
+    "status": "planned",
+    "nextDependencies": [
+      "P9-04"
+    ]
+  },
+  {
+    "id": "P9-04",
+    "milestone": "P9",
+    "priority": "P0",
+    "title": "성능·재미·균형 측정 수정",
+    "purpose": "목표: 성능·재미·균형 측정 수정. 산출: 측정기록/수정이유/목표통과또는근거있는제한.",
+    "prerequisites": [
+      "P9-03"
+    ],
+    "files": [
+      "src/render",
+      "content/stages",
+      "docs/evidence/beta-playtest.md"
+    ],
+    "inputs": "프레임/입력delay/하루시간/스킵률",
+    "implementation": "2MB/1MBsave/64MB/2초startup/100msinput목표. 문제반복/도구체감/한판더, 최적화서사비율.",
+    "outputs": "측정기록/수정이유/목표통과또는근거있는제한",
+    "automaticTests": "trace/tokencaps/assetweight/숨김rAF/cycle20회memory",
+    "manualQA": "3~5명플레이/이동2.5초/피로지루함/하루10분초과확인",
+    "failureHandling": "장치/필수판축소, 애니단축, renderer부터profiler수정",
+    "definitionOfDone": "측정기록/수정이유/목표통과또는근거있는제한",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P9-05"
+    ]
+  },
+  {
+    "id": "P9-05",
+    "milestone": "P9",
+    "priority": "P0",
+    "title": "개인정보·저작권·공개맵 검수",
+    "purpose": "목표: 개인정보·저작권·공개맵 검수. 산출: 공개가능아트/데이터와privacy체크기록.",
+    "prerequisites": [
+      "P9-04"
+    ],
+    "files": [
+      "assets/licenses.json",
+      "content/office/layout.public.v1.json",
+      "docs/release-notes.md"
+    ],
+    "inputs": "사람가명/민원가상/원본mapprivate",
+    "implementation": "실제이름/번호/민감문서없음 검수, 타사assets잔존0, publicmap 필요변형alias/다시BFS. 외부공유승인은별도.",
+    "outputs": "공개가능아트/데이터와privacy체크기록",
+    "automaticTests": "remoteURL/privatefield/license/bounds/assets경로검사",
+    "manualQA": "자산/대사전문읽기, 공개맵현실유사정보검토",
+    "failureHandling": "민감정보발견삭제/가상대체, 개인원본손대지않음",
+    "definitionOfDone": "공개가능아트/데이터와privacy체크기록",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P9-06"
+    ]
+  },
+  {
+    "id": "P9-06",
+    "milestone": "P9",
+    "priority": "P0",
+    "title": "최종오프라인 번들·베타 배포 게이트",
+    "purpose": "목표: 최종오프라인 번들·베타 배포 게이트. 산출: 생활보장과베타릴리스검수통과/타과착수가능.",
+    "prerequisites": [
+      "P9-05"
+    ],
+    "files": [
+      "tools/build-html.mjs",
+      "dist",
+      "docs/release-notes.md"
+    ],
+    "inputs": "P9QA결과/lockfile/contenthash",
+    "implementation": "새한HTML/정적웹variant선택준비, network0/원본SHAunchanged/버전/백업이동안내. 사용자배포형태변경승인은구체적인 결과후.",
+    "outputs": "생활보장과베타릴리스검수통과/타과착수가능",
+    "automaticTests": "all tests/offline다시 열기/bundleURL0/reproducibleSHA/크기",
+    "manualQA": "인터넷끄고HTML→15일대표save/backup/restore",
+    "failureHandling": "localFAIL명확표시/미검증을PASS로표기금지",
+    "definitionOfDone": "생활보장과베타릴리스검수통과/타과착수가능",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P10-01"
+    ]
+  },
+  {
+    "id": "P10-01",
+    "milestone": "P10",
+    "priority": "P0",
+    "title": "부서팩 등록·청사지도·returnContext",
+    "purpose": "목표: 부서팩 등록·청사지도·returnContext. 산출: 등록기반팩동선/저장 contract.",
+    "prerequisites": [
+      "P9-06"
+    ],
+    "files": [
+      "src/puzzles/registry.js",
+      "src/ui/building-map.js",
+      "src/core/task-planner.js"
+    ],
+    "inputs": "07DepartmentPack/empty샘플",
+    "implementation": "packvalidator/namespacedstage/codex/효과enum, 등록만으로선택협조/복귀. core/save부서if0.",
+    "outputs": "등록기반팩동선/저장 contract",
+    "automaticTests": "unknownpack저장/minversion/dependency/type판정/미설치 팩분모제외",
+    "manualQA": "생활보장과요청→청사→부서→취소→같은zone",
+    "failureHandling": "결손pack은 비활성/주업무영향0",
+    "definitionOfDone": "등록기반팩동선/저장 contract",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P10-02"
+    ]
+  },
+  {
+    "id": "P10-02",
+    "milestone": "P10",
+    "priority": "P0",
+    "title": "자원순환 샘플팩·6레벨",
+    "purpose": "목표: 자원순환 샘플팩·6레벨. 산출: 샘플팩1개로메인계약작동 증명.",
+    "prerequisites": [
+      "P10-01"
+    ],
+    "files": [
+      "src/puzzles/sort_bins",
+      "content/departments/recycling",
+      "tools/solvers/sort-bins.mjs"
+    ],
+    "inputs": "sorting+라벨변환/07예제",
+    "implementation": "stacktop/같은색/cap/제거대, 각난도2고정, sharedGridUI/힌트/undo/witness. 배지1회.",
+    "outputs": "샘플팩1개로메인계약작동 증명",
+    "automaticTests": "6witness/오염/라벨/부족공간/역출제solver/claim",
+    "manualQA": "3201개팩만설치빌드에서청사/퍼즐/도감/보상/저장/복귀",
+    "failureHandling": "불가능자동stage사용금지/같은request반복0",
+    "definitionOfDone": "샘플팩1개로메인계약작동 증명",
+    "relativeSize": "L",
+    "status": "planned",
+    "nextDependencies": [
+      "P10-03"
+    ]
+  },
+  {
+    "id": "P10-03",
+    "milestone": "P10",
+    "priority": "P0",
+    "title": "관로팩·보호/허가·6레벨",
+    "purpose": "목표: 관로팩·보호/허가·6레벨. 산출: 관로선택협조팩/복수route허용.",
+    "prerequisites": [
+      "P10-02"
+    ],
+    "files": [
+      "src/puzzles/connect_paths",
+      "content/departments/waterworks"
+    ],
+    "inputs": "07경로예제/허가2",
+    "implementation": "색path/4adjacent/no-cross/protected/permit, solver/모바일칸tapdrag둘 다 . 6stage.",
+    "outputs": "관로선택협조팩/복수route허용",
+    "automaticTests": "6witness/교차/보호/허가계수/undo/대체경로",
+    "manualQA": "320path그리기→오류cell→다시route→도감",
+    "failureHandling": "허가는최종draft기준/잘못gesture차감0",
+    "definitionOfDone": "관로선택협조팩/복수route허용",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P10-04"
+    ]
+  },
+  {
+    "id": "P10-04",
+    "milestone": "P10",
+    "priority": "P0",
+    "title": "견인팩·우선구역·6레벨",
+    "purpose": "목표: 견인팩·우선구역·6레벨. 산출: 견인순서팩/파밍0.",
+    "prerequisites": [
+      "P10-03"
+    ],
+    "files": [
+      "src/puzzles/arrow_exit",
+      "content/departments/traffic"
+    ],
+    "inputs": "07차량 예제/exitray/priority",
+    "implementation": "blockingray/차량 방향/소방로≤2turn, 해법 순서역출제, 6stage.",
+    "outputs": "견인순서팩/파밍0",
+    "automaticTests": "6witness/blockcycle거절/first2/undo/동등 순서",
+    "manualQA": "잘못막힌차tap→사유→B/A정리→복귀",
+    "failureHandling": "실제단속법령재현안함/미해결본업퇴근가능",
+    "definitionOfDone": "견인순서팩/파밍0",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P10-05"
+    ]
+  },
+  {
+    "id": "P10-05",
+    "milestone": "P10",
+    "priority": "P0",
+    "title": "지적도팩·유일성·6레벨",
+    "purpose": "목표: 지적도팩·유일성·6레벨. 산출: 지적도논리팩/도감수집연결.",
+    "prerequisites": [
+      "P10-04"
+    ],
+    "files": [
+      "src/puzzles/nonogram",
+      "content/departments/land"
+    ],
+    "inputs": "row/colrun/5x5diamond",
+    "implementation": "fill/empty/unknown toggles, runs판정/unique solver, 측량freehint/가상지도piece. 6stage.",
+    "outputs": "지적도논리팩/도감수집연결",
+    "automaticTests": "6unique/두해stage거절/rowcolrun/폰트동일 판정",
+    "manualQA": "320기호/숫자확인→채움/제외→완성지도",
+    "failureHandling": "찍기필수문제제외/힌트무료",
+    "definitionOfDone": "지적도논리팩/도감수집연결",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P10-06"
+    ]
+  },
+  {
+    "id": "P10-06",
+    "milestone": "P10",
+    "priority": "P0",
+    "title": "타과1차4팩·기본회귀 게이트",
+    "purpose": "목표: 타과1차4팩·기본회귀 게이트. 산출: 생활보장과회귀통과한4팩체험빌드.",
+    "prerequisites": [
+      "P10-05"
+    ],
+    "files": [
+      "tests/integration/packs.test.mjs",
+      "tests/e2e/cooperation.spec.js"
+    ],
+    "inputs": "4팩24stage/life_support72",
+    "implementation": "각팩1회/미완료/삭제/재등록/draft/returnContext/배지/일closure. 새맵은가상.",
+    "outputs": "생활보장과회귀통과한4팩체험빌드",
+    "automaticTests": "24witness/core새if0/save수정0/main퇴근/우호도unique",
+    "manualQA": "4부서전부/1팩만/팩없는옛파일이동restore",
+    "failureHandling": "orphans보관/미등록준비중/일일1권장",
+    "definitionOfDone": "생활보장과회귀통과한4팩체험빌드",
+    "relativeSize": "L",
+    "status": "planned",
+    "nextDependencies": [
+      "P11-01"
+    ]
+  },
+  {
+    "id": "P11-01",
+    "milestone": "P11",
+    "priority": "P1",
+    "title": "2·3차 선택 게이트·제작량 확인",
+    "purpose": "목표: 2·3차 선택 게이트·제작량 확인. 산출: 착수/보류사유와reusable범위명시.",
+    "prerequisites": [
+      "P10-06"
+    ],
+    "files": [
+      "docs/evidence/pack-priority-review.md"
+    ],
+    "inputs": "실제협조플레이/문제제작비용/화면측정",
+    "implementation": "disaster/it먼저 재사용, records/culture다음 , river/parks/building마지막. 3차는개별필요성/아트비용검수.",
+    "outputs": "착수/보류사유와reusable범위명시",
+    "automaticTests": "반응기록/미검증표시/각 의존성완비",
+    "manualQA": "사용자가다시하고싶은종류/분기비용리뷰",
+    "failureHandling": "재미/비용실패는보류시제품만/자동전체11추가금지",
+    "definitionOfDone": "착수/보류사유와reusable범위명시",
+    "relativeSize": "S",
+    "status": "planned",
+    "nextDependencies": [
+      "P11-02"
+    ]
+  },
+  {
+    "id": "P11-02",
+    "milestone": "P11",
+    "priority": "P1",
+    "title": "disaster 규칙/재사용 어댑터",
+    "purpose": "목표: disaster 규칙/재사용 어댑터. 산출: disaster 독립판정과샘플유효해.",
+    "prerequisites": [
+      "P11-01"
+    ],
+    "files": [
+      "src/puzzles/archive/rules.js",
+      "tests/unit/archive.test.mjs"
+    ],
+    "inputs": "07 disaster예제/기존shared계약",
+    "implementation": "archive 밀기와 연도별 출고목표 규칙을 별도 데이터/순수 모듈로 구현한다. 기존 결과·힌트·undo 계약을 재사용한다.",
+    "outputs": "disaster 독립판정과샘플유효해",
+    "automaticTests": "07의 대표 witness, 불가능 조건, 고유 제약 경계, undo와 실행 상한. 부서별 조건을 실제 assert로 작성한다.",
+    "manualQA": "화면 규칙·판정 근거·해법의 의미를 대조한다. 다른 부서 모듈 없이 실행한다.",
+    "failureHandling": "해 없는 문제는 등록 금지. 실제 물리 대신 유한 DAG/칸 모델, 오류 시 초안 보존.",
+    "definitionOfDone": "disaster 독립판정과샘플유효해",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P11-03"
+    ]
+  },
+  {
+    "id": "P11-03",
+    "milestone": "P11",
+    "priority": "P1",
+    "title": "disaster 작업대·팩·6고정레벨",
+    "purpose": "목표: disaster 작업대·팩·6고정레벨. 산출: disaster 선택부서팩체험빌드/검수기록.",
+    "prerequisites": [
+      "P11-02"
+    ],
+    "files": [
+      "src/puzzles/archive/view.js",
+      "content/departments/disaster",
+      "tests/content/disaster.test.mjs"
+    ],
+    "inputs": "disaster왕복/6문제/부서배지",
+    "implementation": "하/중/상 각2개(총6개), 문제별3단계힌트·모바일 조작·초안을 연결한다. 부서도감/외형/returnContext를 등록하고 본업 복귀를 보장한다.",
+    "outputs": "disaster 선택부서팩체험빌드/검수기록",
+    "automaticTests": "6개 witness, 단독 팩 등록, claim1회, 초안 복원, 반복 보상0, 같은 본업 구역 복귀.",
+    "manualQA": "320/390px에서 disaster 완료·오류·중단·뒤로·본업복귀·퇴근을 확인한다.",
+    "failureHandling": "화면/아트 비용이 게이트를 넘으면 단순 자산으로 재검수한다. 미검수 팩은 준비중이며 본업을 막지 않는다.",
+    "definitionOfDone": "disaster 선택부서팩체험빌드/검수기록",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P11-04"
+    ]
+  },
+  {
+    "id": "P11-04",
+    "milestone": "P11",
+    "priority": "P1",
+    "title": "it 규칙/재사용 어댑터",
+    "purpose": "목표: it 규칙/재사용 어댑터. 산출: it 독립판정과샘플유효해.",
+    "prerequisites": [
+      "P11-03"
+    ],
+    "files": [
+      "src/puzzles/macro/rules.js",
+      "tests/unit/macro.test.mjs"
+    ],
+    "inputs": "07 it예제/기존shared계약",
+    "implementation": "macro VM과 경계검증 규칙을 별도 데이터/순수 모듈로 구현한다. 기존 결과·힌트·undo 계약을 재사용한다.",
+    "outputs": "it 독립판정과샘플유효해",
+    "automaticTests": "07의 대표 witness, 불가능 조건, 고유 제약 경계, undo와 실행 상한. 부서별 조건을 실제 assert로 작성한다.",
+    "manualQA": "화면 규칙·판정 근거·해법의 의미를 대조한다. 다른 부서 모듈 없이 실행한다.",
+    "failureHandling": "해 없는 문제는 등록 금지. 실제 물리 대신 유한 DAG/칸 모델, 오류 시 초안 보존.",
+    "definitionOfDone": "it 독립판정과샘플유효해",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P11-05"
+    ]
+  },
+  {
+    "id": "P11-05",
+    "milestone": "P11",
+    "priority": "P1",
+    "title": "it 작업대·팩·6고정레벨",
+    "purpose": "목표: it 작업대·팩·6고정레벨. 산출: it 선택부서팩체험빌드/검수기록.",
+    "prerequisites": [
+      "P11-04"
+    ],
+    "files": [
+      "src/puzzles/macro/view.js",
+      "content/departments/it",
+      "tests/content/it.test.mjs"
+    ],
+    "inputs": "it왕복/6문제/부서배지",
+    "implementation": "하/중/상 각2개(총6개), 문제별3단계힌트·모바일 조작·초안을 연결한다. 부서도감/외형/returnContext를 등록하고 본업 복귀를 보장한다.",
+    "outputs": "it 선택부서팩체험빌드/검수기록",
+    "automaticTests": "6개 witness, 단독 팩 등록, claim1회, 초안 복원, 반복 보상0, 같은 본업 구역 복귀.",
+    "manualQA": "320/390px에서 it 완료·오류·중단·뒤로·본업복귀·퇴근을 확인한다.",
+    "failureHandling": "화면/아트 비용이 게이트를 넘으면 단순 자산으로 재검수한다. 미검수 팩은 준비중이며 본업을 막지 않는다.",
+    "definitionOfDone": "it 선택부서팩체험빌드/검수기록",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P11-06"
+    ]
+  },
+  {
+    "id": "P11-06",
+    "milestone": "P11",
+    "priority": "P1",
+    "title": "records 규칙/재사용 어댑터",
+    "purpose": "목표: records 규칙/재사용 어댑터. 산출: records 독립판정과샘플유효해.",
+    "prerequisites": [
+      "P11-05"
+    ],
+    "files": [
+      "src/puzzles/triple_stack/rules.js",
+      "tests/unit/triple_stack.test.mjs"
+    ],
+    "inputs": "07 records예제/기존shared계약",
+    "implementation": "가려짐 DAG, tray7칸, 같은분류3개, 영구금고 규칙을 별도 데이터/순수 모듈로 구현한다. 기존 결과·힌트·undo 계약을 재사용한다.",
+    "outputs": "records 독립판정과샘플유효해",
+    "automaticTests": "07의 대표 witness, 불가능 조건, 고유 제약 경계, undo와 실행 상한. 부서별 조건을 실제 assert로 작성한다.",
+    "manualQA": "화면 규칙·판정 근거·해법의 의미를 대조한다. 다른 부서 모듈 없이 실행한다.",
+    "failureHandling": "해 없는 문제는 등록 금지. 실제 물리 대신 유한 DAG/칸 모델, 오류 시 초안 보존.",
+    "definitionOfDone": "records 독립판정과샘플유효해",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P11-07"
+    ]
+  },
+  {
+    "id": "P11-07",
+    "milestone": "P11",
+    "priority": "P1",
+    "title": "records 작업대·팩·6고정레벨",
+    "purpose": "목표: records 작업대·팩·6고정레벨. 산출: records 선택부서팩체험빌드/검수기록.",
+    "prerequisites": [
+      "P11-06"
+    ],
+    "files": [
+      "src/puzzles/triple_stack/view.js",
+      "content/departments/records",
+      "tests/content/records.test.mjs"
+    ],
+    "inputs": "records왕복/6문제/부서배지",
+    "implementation": "하/중/상 각2개(총6개), 문제별3단계힌트·모바일 조작·초안을 연결한다. 부서도감/외형/returnContext를 등록하고 본업 복귀를 보장한다.",
+    "outputs": "records 선택부서팩체험빌드/검수기록",
+    "automaticTests": "6개 witness, 단독 팩 등록, claim1회, 초안 복원, 반복 보상0, 같은 본업 구역 복귀.",
+    "manualQA": "320/390px에서 records 완료·오류·중단·뒤로·본업복귀·퇴근을 확인한다.",
+    "failureHandling": "화면/아트 비용이 게이트를 넘으면 단순 자산으로 재검수한다. 미검수 팩은 준비중이며 본업을 막지 않는다.",
+    "definitionOfDone": "records 선택부서팩체험빌드/검수기록",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P11-08"
+    ]
+  },
+  {
+    "id": "P11-08",
+    "milestone": "P11",
+    "priority": "P1",
+    "title": "culture 규칙/재사용 어댑터",
+    "purpose": "목표: culture 규칙/재사용 어댑터. 산출: culture 독립판정과샘플유효해.",
+    "prerequisites": [
+      "P11-07"
+    ],
+    "files": [
+      "src/puzzles/booth_blocks/rules.js",
+      "tests/unit/booth_blocks.test.mjs"
+    ],
+    "inputs": "07 culture예제/기존shared계약",
+    "implementation": "부스 배치와 통로 floodfill, 소화기 인접 규칙을 별도 데이터/순수 모듈로 구현한다. 기존 결과·힌트·undo 계약을 재사용한다.",
+    "outputs": "culture 독립판정과샘플유효해",
+    "automaticTests": "07의 대표 witness, 불가능 조건, 고유 제약 경계, undo와 실행 상한. 부서별 조건을 실제 assert로 작성한다.",
+    "manualQA": "화면 규칙·판정 근거·해법의 의미를 대조한다. 다른 부서 모듈 없이 실행한다.",
+    "failureHandling": "해 없는 문제는 등록 금지. 실제 물리 대신 유한 DAG/칸 모델, 오류 시 초안 보존.",
+    "definitionOfDone": "culture 독립판정과샘플유효해",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P11-09"
+    ]
+  },
+  {
+    "id": "P11-09",
+    "milestone": "P11",
+    "priority": "P1",
+    "title": "culture 작업대·팩·6고정레벨",
+    "purpose": "목표: culture 작업대·팩·6고정레벨. 산출: culture 선택부서팩체험빌드/검수기록.",
+    "prerequisites": [
+      "P11-08"
+    ],
+    "files": [
+      "src/puzzles/booth_blocks/view.js",
+      "content/departments/culture",
+      "tests/content/culture.test.mjs"
+    ],
+    "inputs": "culture왕복/6문제/부서배지",
+    "implementation": "하/중/상 각2개(총6개), 문제별3단계힌트·모바일 조작·초안을 연결한다. 부서도감/외형/returnContext를 등록하고 본업 복귀를 보장한다.",
+    "outputs": "culture 선택부서팩체험빌드/검수기록",
+    "automaticTests": "6개 witness, 단독 팩 등록, claim1회, 초안 복원, 반복 보상0, 같은 본업 구역 복귀.",
+    "manualQA": "320/390px에서 culture 완료·오류·중단·뒤로·본업복귀·퇴근을 확인한다.",
+    "failureHandling": "화면/아트 비용이 게이트를 넘으면 단순 자산으로 재검수한다. 미검수 팩은 준비중이며 본업을 막지 않는다.",
+    "definitionOfDone": "culture 선택부서팩체험빌드/검수기록",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P11-10"
+    ]
+  },
+  {
+    "id": "P11-10",
+    "milestone": "P11",
+    "priority": "P2",
+    "title": "river 규칙/재사용 어댑터",
+    "purpose": "목표: river 규칙/재사용 어댑터. 산출: river 독립판정과샘플유효해.",
+    "prerequisites": [
+      "P11-09"
+    ],
+    "files": [
+      "src/puzzles/water_cells/rules.js",
+      "tests/unit/water_cells.test.mjs"
+    ],
+    "inputs": "07 river예제/기존shared계약",
+    "implementation": "정수 물량 보존과 수문/유수지 용량, 최대64tick 규칙을 별도 데이터/순수 모듈로 구현한다. 기존 결과·힌트·undo 계약을 재사용한다.",
+    "outputs": "river 독립판정과샘플유효해",
+    "automaticTests": "07의 대표 witness, 불가능 조건, 고유 제약 경계, undo와 실행 상한. 부서별 조건을 실제 assert로 작성한다.",
+    "manualQA": "화면 규칙·판정 근거·해법의 의미를 대조한다. 다른 부서 모듈 없이 실행한다.",
+    "failureHandling": "해 없는 문제는 등록 금지. 실제 물리 대신 유한 DAG/칸 모델, 오류 시 초안 보존.",
+    "definitionOfDone": "river 독립판정과샘플유효해",
+    "relativeSize": "L",
+    "status": "planned",
+    "nextDependencies": [
+      "P11-11"
+    ]
+  },
+  {
+    "id": "P11-11",
+    "milestone": "P11",
+    "priority": "P2",
+    "title": "river 작업대·팩·6고정레벨",
+    "purpose": "목표: river 작업대·팩·6고정레벨. 산출: river 선택부서팩체험빌드/검수기록.",
+    "prerequisites": [
+      "P11-10"
+    ],
+    "files": [
+      "src/puzzles/water_cells/view.js",
+      "content/departments/river",
+      "tests/content/river.test.mjs"
+    ],
+    "inputs": "river왕복/6문제/부서배지",
+    "implementation": "하/중/상 각2개(총6개), 문제별3단계힌트·모바일 조작·초안을 연결한다. 부서도감/외형/returnContext를 등록하고 본업 복귀를 보장한다.",
+    "outputs": "river 선택부서팩체험빌드/검수기록",
+    "automaticTests": "6개 witness, 단독 팩 등록, claim1회, 초안 복원, 반복 보상0, 같은 본업 구역 복귀.",
+    "manualQA": "320/390px에서 river 완료·오류·중단·뒤로·본업복귀·퇴근을 확인한다.",
+    "failureHandling": "화면/아트 비용이 게이트를 넘으면 단순 자산으로 재검수한다. 미검수 팩은 준비중이며 본업을 막지 않는다.",
+    "definitionOfDone": "river 선택부서팩체험빌드/검수기록",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P11-12"
+    ]
+  },
+  {
+    "id": "P11-12",
+    "milestone": "P11",
+    "priority": "P2",
+    "title": "parks 규칙/재사용 어댑터",
+    "purpose": "목표: parks 규칙/재사용 어댑터. 산출: parks 독립판정과샘플유효해.",
+    "prerequisites": [
+      "P11-11"
+    ],
+    "files": [
+      "src/puzzles/screw_layers/rules.js",
+      "tests/unit/screw_layers.test.mjs"
+    ],
+    "inputs": "07 parks예제/기존shared계약",
+    "implementation": "판자 DAG, 접근나사, 안전고정 선행 규칙을 별도 데이터/순수 모듈로 구현한다. 기존 결과·힌트·undo 계약을 재사용한다.",
+    "outputs": "parks 독립판정과샘플유효해",
+    "automaticTests": "07의 대표 witness, 불가능 조건, 고유 제약 경계, undo와 실행 상한. 부서별 조건을 실제 assert로 작성한다.",
+    "manualQA": "화면 규칙·판정 근거·해법의 의미를 대조한다. 다른 부서 모듈 없이 실행한다.",
+    "failureHandling": "해 없는 문제는 등록 금지. 실제 물리 대신 유한 DAG/칸 모델, 오류 시 초안 보존.",
+    "definitionOfDone": "parks 독립판정과샘플유효해",
+    "relativeSize": "L",
+    "status": "planned",
+    "nextDependencies": [
+      "P11-13"
+    ]
+  },
+  {
+    "id": "P11-13",
+    "milestone": "P11",
+    "priority": "P2",
+    "title": "parks 작업대·팩·6고정레벨",
+    "purpose": "목표: parks 작업대·팩·6고정레벨. 산출: parks 선택부서팩체험빌드/검수기록.",
+    "prerequisites": [
+      "P11-12"
+    ],
+    "files": [
+      "src/puzzles/screw_layers/view.js",
+      "content/departments/parks",
+      "tests/content/parks.test.mjs"
+    ],
+    "inputs": "parks왕복/6문제/부서배지",
+    "implementation": "하/중/상 각2개(총6개), 문제별3단계힌트·모바일 조작·초안을 연결한다. 부서도감/외형/returnContext를 등록하고 본업 복귀를 보장한다.",
+    "outputs": "parks 선택부서팩체험빌드/검수기록",
+    "automaticTests": "6개 witness, 단독 팩 등록, claim1회, 초안 복원, 반복 보상0, 같은 본업 구역 복귀.",
+    "manualQA": "320/390px에서 parks 완료·오류·중단·뒤로·본업복귀·퇴근을 확인한다.",
+    "failureHandling": "화면/아트 비용이 게이트를 넘으면 단순 자산으로 재검수한다. 미검수 팩은 준비중이며 본업을 막지 않는다.",
+    "definitionOfDone": "parks 선택부서팩체험빌드/검수기록",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": [
+      "P11-14"
+    ]
+  },
+  {
+    "id": "P11-14",
+    "milestone": "P11",
+    "priority": "P2",
+    "title": "building 규칙/재사용 어댑터",
+    "purpose": "목표: building 규칙/재사용 어댑터. 산출: building 독립판정과샘플유효해.",
+    "prerequisites": [
+      "P11-13"
+    ],
+    "files": [
+      "src/puzzles/hazard_check/rules.js",
+      "tests/unit/hazard_check.test.mjs"
+    ],
+    "inputs": "07 building예제/기존shared계약",
+    "implementation": "선언형 위험 hotspot과 이상없음 점검표 규칙을 별도 데이터/순수 모듈로 구현한다. 기존 결과·힌트·undo 계약을 재사용한다.",
+    "outputs": "building 독립판정과샘플유효해",
+    "automaticTests": "07의 대표 witness, 불가능 조건, 고유 제약 경계, undo와 실행 상한. 부서별 조건을 실제 assert로 작성한다.",
+    "manualQA": "화면 규칙·판정 근거·해법의 의미를 대조한다. 다른 부서 모듈 없이 실행한다.",
+    "failureHandling": "해 없는 문제는 등록 금지. 실제 물리 대신 유한 DAG/칸 모델, 오류 시 초안 보존.",
+    "definitionOfDone": "building 독립판정과샘플유효해",
+    "relativeSize": "L",
+    "status": "planned",
+    "nextDependencies": [
+      "P11-15"
+    ]
+  },
+  {
+    "id": "P11-15",
+    "milestone": "P11",
+    "priority": "P2",
+    "title": "building 작업대·팩·6고정레벨",
+    "purpose": "목표: building 작업대·팩·6고정레벨. 산출: building 선택부서팩체험빌드/검수기록.",
+    "prerequisites": [
+      "P11-14"
+    ],
+    "files": [
+      "src/puzzles/hazard_check/view.js",
+      "content/departments/building",
+      "tests/content/building.test.mjs"
+    ],
+    "inputs": "building왕복/6문제/부서배지",
+    "implementation": "하/중/상 각2개(총6개), 문제별3단계힌트·모바일 조작·초안을 연결한다. 부서도감/외형/returnContext를 등록하고 본업 복귀를 보장한다.",
+    "outputs": "building 선택부서팩체험빌드/검수기록",
+    "automaticTests": "6개 witness, 단독 팩 등록, claim1회, 초안 복원, 반복 보상0, 같은 본업 구역 복귀.",
+    "manualQA": "320/390px에서 building 완료·오류·중단·뒤로·본업복귀·퇴근을 확인한다.",
+    "failureHandling": "화면/아트 비용이 게이트를 넘으면 단순 자산으로 재검수한다. 미검수 팩은 준비중이며 본업을 막지 않는다.",
+    "definitionOfDone": "building 선택부서팩체험빌드/검수기록",
+    "relativeSize": "M",
+    "status": "planned",
+    "nextDependencies": []
+  }
+]

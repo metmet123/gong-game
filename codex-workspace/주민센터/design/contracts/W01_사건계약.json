@@ -1,0 +1,434 @@
+{
+  "contractVersion": 1,
+  "status": "planning-fixture-not-runtime",
+  "caseId": "resident-center:welfare:W01",
+  "contentVersion": 1,
+  "title": "같은 주소, 다른 하루",
+  "fictional": true,
+  "people": [
+    {
+      "id": "P1",
+      "name": "박정임"
+    },
+    {
+      "id": "P2",
+      "name": "김하나"
+    },
+    {
+      "id": "P3",
+      "name": "오민수"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "O1",
+      "name": "모퉁이복지관",
+      "fictional": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "이웃의 도움 요청",
+      "authorId": "P3",
+      "recordedAt": "D1",
+      "effectivePeriod": "최근 며칠",
+      "initiallyAvailable": true,
+      "statements": [
+        {
+          "id": "E01",
+          "text": "식사를 거르는 날이 보여 걱정된다. 사정은 당사자에게 확인해 달라.",
+          "supports": [
+            "concern-meal"
+          ],
+          "doesNotEstablish": [
+            "living-alone",
+            "meal-cause"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "title": "이전 상담 기록",
+      "authorId": "resident-center",
+      "recordedAt": "D-90",
+      "effectivePeriod": "D-90 당시",
+      "initiallyAvailable": true,
+      "statements": [
+        {
+          "id": "E02",
+          "text": "김하나는 박정임의 딸이다.",
+          "supports": [
+            "daughter-of"
+          ]
+        },
+        {
+          "id": "E03",
+          "text": "당시 두 사람은 같은 집에 거주했다.",
+          "supports": [
+            "past-cohabiting"
+          ],
+          "doesNotEstablish": [
+            "current-cohabiting"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "title": "당사자의 현재 생활",
+      "authorId": "P1",
+      "recordedAt": "D1",
+      "effectivePeriod": "현재",
+      "initiallyAvailable": false,
+      "statements": [
+        {
+          "id": "E04",
+          "text": "딸은 지난달 다른 지역으로 옮겼고 현재 혼자 지낸다.",
+          "supports": [
+            "living-alone",
+            "not-current-cohabiting"
+          ]
+        },
+        {
+          "id": "E05",
+          "text": "장보기와 식사 준비가 어렵다.",
+          "supports": [
+            "meal-preparation-need"
+          ]
+        },
+        {
+          "id": "E06",
+          "text": "딸에게 확인하고 식사 지원 상담을 연결하는 데 동의한다.",
+          "supports": [
+            "consent-contact-daughter",
+            "consent-meal-referral"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "title": "딸의 도움 범위",
+      "authorId": "P2",
+      "recordedAt": "D1",
+      "effectivePeriod": "현재",
+      "initiallyAvailable": false,
+      "statements": [
+        {
+          "id": "E07",
+          "text": "다른 지역에서 살며 저녁마다 전화로 연락한다.",
+          "supports": [
+            "not-current-cohabiting",
+            "phone-contact"
+          ]
+        },
+        {
+          "id": "E08",
+          "text": "매일 방문하는 도움은 제공할 수 없다.",
+          "supports": [
+            "no-daily-visits"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "title": "모퉁이복지관 안내",
+      "authorId": "O1",
+      "recordedAt": "D1",
+      "effectivePeriod": "현재 가상 서비스 안내",
+      "initiallyAvailable": true,
+      "statements": [
+        {
+          "id": "E09",
+          "text": "동의한 주민의 식사 지원 상담을 접수한다. 제공 여부와 일정은 상담 후 기관에서 확인한다.",
+          "supports": [
+            "meal-consultation-route"
+          ],
+          "doesNotEstablish": [
+            "service-approved"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q01",
+      "label": "당사자의 현재 생활과 연결 의사를 확인한다",
+      "prerequisites": [],
+      "answerSourceId": "S03"
+    },
+    {
+      "id": "Q02",
+      "label": "딸에게 현재 도움의 범위를 확인한다",
+      "prerequisites": [
+        "question:Q01",
+        "statement:E06"
+      ],
+      "answerSourceId": "S04"
+    }
+  ],
+  "claimDefinitions": [
+    {
+      "id": "C1",
+      "subjectId": "P2",
+      "objectId": "P1",
+      "kind": "family",
+      "choices": [
+        "daughter",
+        "neighbor",
+        "unknown"
+      ],
+      "acceptedValue": "daughter",
+      "evidenceAnyOf": [
+        [
+          "E02"
+        ]
+      ]
+    },
+    {
+      "id": "C2",
+      "subjectId": "P2",
+      "objectId": "P1",
+      "kind": "current-cohabiting",
+      "choices": [
+        "yes",
+        "no",
+        "unknown"
+      ],
+      "acceptedValue": "no",
+      "evidenceAnyOf": [
+        [
+          "E04"
+        ],
+        [
+          "E07"
+        ]
+      ]
+    },
+    {
+      "id": "C3",
+      "subjectId": "P2",
+      "objectId": "P1",
+      "kind": "phone-contact",
+      "choices": [
+        "yes",
+        "no",
+        "unknown"
+      ],
+      "acceptedValue": "yes",
+      "evidenceAnyOf": [
+        [
+          "E07"
+        ]
+      ]
+    },
+    {
+      "id": "C4",
+      "subjectId": "P2",
+      "objectId": "P1",
+      "kind": "daily-visits",
+      "choices": [
+        "yes",
+        "no",
+        "unknown"
+      ],
+      "acceptedValue": "no",
+      "evidenceAnyOf": [
+        [
+          "E08"
+        ]
+      ]
+    },
+    {
+      "id": "C5",
+      "subjectId": "P1",
+      "kind": "meal-preparation-need",
+      "choices": [
+        "yes",
+        "no",
+        "unknown"
+      ],
+      "acceptedValue": "yes",
+      "evidenceAnyOf": [
+        [
+          "E05"
+        ]
+      ]
+    }
+  ],
+  "completion": {
+    "requiredClaims": [
+      "C1",
+      "C2",
+      "C4",
+      "C5"
+    ],
+    "contactRepresentationAnyOf": [
+      {
+        "claimId": "C3",
+        "value": "yes",
+        "evidenceIds": [
+          "E07"
+        ]
+      },
+      {
+        "cooperationNote": {
+          "personId": "P2",
+          "kind": "phone-contact",
+          "evidenceIds": [
+            "E07"
+          ]
+        }
+      }
+    ],
+    "requiredPlan": {
+      "id": "P-MEAL",
+      "issueClaimId": "C5",
+      "organizationId": "O1",
+      "action": "consultation-request",
+      "consentEvidenceId": "E06",
+      "routeEvidenceId": "E09",
+      "status": "requested"
+    },
+    "requiredFollowup": {
+      "ownerRole": "resident-center:counselor",
+      "due": "next-shift",
+      "purpose": "confirm-consultation-receipt"
+    },
+    "outcome": "handoff-complete",
+    "serviceApprovalAllowed": false,
+    "allEvidenceMustBeAccessibleAndRead": true,
+    "unknownClaimsAllowedForRequiredClaims": false
+  },
+  "stateRules": {
+    "pinDoesNotSetClaim": true,
+    "questionDoesNotSetClaim": true,
+    "draftChangeInvalidatesReview": true,
+    "knowledgeChangeInvalidatesReview": true,
+    "unpinKeepsClaimButRequiresEvidenceRepair": true,
+    "resolvedRecordImmutable": true,
+    "practiceDoesNotGrantItem": true
+  },
+  "witness": {
+    "actions": [
+      "OPEN_SOURCE:S02",
+      "PIN_STATEMENT:E02",
+      "ASK_QUESTION:Q01",
+      "OPEN_SOURCE:S03",
+      "PIN_STATEMENT:E04",
+      "PIN_STATEMENT:E05",
+      "PIN_STATEMENT:E06",
+      "ASK_QUESTION:Q02",
+      "OPEN_SOURCE:S04",
+      "PIN_STATEMENT:E07",
+      "PIN_STATEMENT:E08",
+      "OPEN_SOURCE:S05",
+      "PIN_STATEMENT:E09"
+    ],
+    "claims": {
+      "C1": {
+        "value": "daughter",
+        "evidenceIds": [
+          "E02"
+        ]
+      },
+      "C2": {
+        "value": "no",
+        "evidenceIds": [
+          "E04"
+        ]
+      },
+      "C3": {
+        "value": "yes",
+        "evidenceIds": [
+          "E07"
+        ]
+      },
+      "C4": {
+        "value": "no",
+        "evidenceIds": [
+          "E08"
+        ]
+      },
+      "C5": {
+        "value": "yes",
+        "evidenceIds": [
+          "E05"
+        ]
+      }
+    },
+    "planId": "P-MEAL",
+    "followupDue": "next-shift"
+  },
+  "negativeFixtures": [
+    {
+      "name": "과거 주소로 현재 동거 단정",
+      "claimId": "C2",
+      "value": "yes",
+      "evidenceIds": [
+        "E03"
+      ],
+      "expectedIssue": "outdated-evidence"
+    },
+    {
+      "name": "가족이 있으므로 종결",
+      "planAction": "close-no-need",
+      "expectedIssue": "unsupported-plan"
+    },
+    {
+      "name": "매일 방문하도록 자동 배정",
+      "claimId": "C4",
+      "value": "yes",
+      "evidenceIds": [
+        "E08"
+      ],
+      "expectedIssue": "contradicts-source"
+    },
+    {
+      "name": "식사 서비스 확정",
+      "planStatus": "approved",
+      "expectedIssue": "out-of-scope-resolution"
+    },
+    {
+      "name": "읽지 않은 질문 답을 근거로 첨부",
+      "evidenceIds": [
+        "E04"
+      ],
+      "withoutQuestions": [
+        "Q01"
+      ],
+      "expectedIssue": "inaccessible-evidence"
+    },
+    {
+      "name": "근거 없는 정답",
+      "claimId": "C5",
+      "value": "yes",
+      "evidenceIds": [],
+      "expectedIssue": "missing-evidence"
+    }
+  ],
+  "hintPolicy": {
+    "onRequestOnly": true,
+    "maxLevels": 3,
+    "giveCurrentAnswerBeforeResolution": false
+  },
+  "epilogue": {
+    "trigger": "next-center-shift",
+    "eventId": "resident-center:welfare:W01:reply",
+    "text": "복지관 상담 일정이 잡혔다는 답신을 확인한다.",
+    "once": true
+  },
+  "itemId": "resident-center:welfare:W01:note",
+  "mainRewards": {
+    "xp": 0,
+    "points": 0
+  },
+  "sourceReferences": [
+    "https://www.ssis.or.kr/lay1/S1T756C779/contents.do"
+  ],
+  "sourceScope": "상담과 지원 연계의 큰 흐름만 참고; 사건과 처리 기준은 게임용 창작"
+}

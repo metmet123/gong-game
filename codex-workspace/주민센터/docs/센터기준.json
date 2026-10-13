@@ -1,0 +1,19 @@
+{
+  "capturedAt": "2026-10-11T20:46:37.666104",
+  "artifacts": {
+    "전입신고_퍼즐.html": "4ef5e524a61f76504bc7d179f39844e21aaabd83fbc029cc467bb11ac7c97159",
+    "공무원키우기_주민센터_통합후보.html": "4bc6412976ac6b8e1dbd972bc345ee957cde46671c1e07fa0fedae17b640b86d",
+    "UI_비교_프로토타입.html": "65b6c82525792d8b57ea5c85eadeeaa78da343db24a8b16be45bbb54b8e43881",
+    "preview-puzzle/index.html": "4ef5e524a61f76504bc7d179f39844e21aaabd83fbc029cc467bb11ac7c97159"
+  },
+  "limitations": [
+    "실기기와 실제 참가자 평가 미실시"
+  ],
+  "legacyKey": "gong-game:resident-center:v1",
+  "publicRollbackCopy": {
+    "path": "docs/센터기준/기존공개전입.html",
+    "source": "https://metmet123.github.io/gong-game/resident-test/",
+    "matchesOriginalAfterCRLFNormalization": true,
+    "sha256": "2aa1f39ab359a049b2b3e54871e2bd74992ce3fba09663c1d38a98953d93f2b9"
+  }
+}

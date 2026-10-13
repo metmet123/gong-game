@@ -1,0 +1,63 @@
+{
+  "version": "1.1",
+  "date": "2026-10-11",
+  "authority": {
+    "confirmed": [
+      "3단계 비교 시안",
+      "퍼즐 먼저 독립 플레이 가능하게 구현"
+    ],
+    "proposed": [
+      "8종 내부 구현 순서",
+      "PF 마일스톤과 콘텐츠 수량"
+    ],
+    "implemented": [
+      "기존5종 기준 규칙"
+    ],
+    "unimplemented": [
+      "신규8종 엔진",
+      "새 BFS/카메라",
+      "신규 캠페인"
+    ]
+  },
+  "supersedesImplementationOrder": "v1.0 P0~P11 / docs/tasks.json",
+  "taskRegistry": "tasks_puzzle_first_v1_1.json",
+  "coreContentRegistry": "data/planning_contract.json",
+  "order": [
+    "PF0",
+    "PF1",
+    "PF2",
+    "PF3",
+    "PF4",
+    "PF5",
+    "PF6"
+  ],
+  "puzzleBuildOrder": [
+    "rules",
+    "owner",
+    "approval",
+    "brief",
+    "macro",
+    "archive",
+    "budget",
+    "conveyor"
+  ],
+  "contentTargets": {
+    "PF1": 8,
+    "PF2": 24,
+    "PF4": 72,
+    "cumulativeNotAdditive": true
+  },
+  "prototypeScreens": {
+    "corePuzzles": 39,
+    "placesAndCommon": 57,
+    "optionalDepartments": 33,
+    "total": 129
+  },
+  "economy": {
+    "income": 1455,
+    "tools": 690,
+    "decor": 735
+  },
+  "allTasksStatus": "planned",
+  "actualAndroid": "unverified"
+}

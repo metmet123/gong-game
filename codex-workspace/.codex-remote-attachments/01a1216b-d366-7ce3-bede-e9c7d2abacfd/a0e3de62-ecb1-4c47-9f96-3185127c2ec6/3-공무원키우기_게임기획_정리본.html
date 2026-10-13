@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>공무원 키우기 - 게임 기획 초안</title>
+<style>
+:root{
+  --bg:#f4f0e6;
+  --paper:#fffdf7;
+  --ink:#2f3834;
+  --muted:#6c6a63;
+  --green:#40594a;
+  --green2:#6d8a72;
+  --brown:#9a6a47;
+  --blue:#5e7f96;
+  --red:#b35b50;
+  --line:#d4ccbd;
+  --yellow:#f3df9c;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:system-ui,-apple-system,"Noto Sans KR","Malgun Gothic",sans-serif;
+  line-height:1.7;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 18px 60px}
+.hero{
+  background:linear-gradient(135deg,#3f5749,#60755f);
+  color:white;
+  border-radius:24px;
+  padding:38px 36px;
+  box-shadow:0 14px 34px #00000018;
+}
+.hero h1{margin:0;font-size:clamp(30px,5vw,54px);letter-spacing:-1.5px}
+.hero p{margin:12px 0 0;color:#eef4ec;font-size:18px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.badge{
+  padding:7px 11px;border-radius:999px;background:#ffffff1d;border:1px solid #ffffff35;
+  font-size:13px;font-weight:700
+}
+.section{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:26px;
+  margin-top:20px;
+  box-shadow:0 7px 20px #0000000c;
+}
+.section h2{margin:0 0 14px;font-size:25px}
+.section h3{margin:24px 0 9px;font-size:19px}
+.lead{
+  background:#edf1ea;
+  border-left:5px solid var(--green);
+  padding:16px 18px;
+  border-radius:10px;
+  font-size:17px;
+  font-weight:700;
+}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.card{
+  background:#faf7ef;border:1px solid var(--line);border-radius:15px;padding:17px;
+}
+.card b{color:var(--green)}
+.flow{
+  display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:14px 0
+}
+.step{
+  padding:10px 15px;background:#eef1e9;border:1px solid #cfd6cc;border-radius:11px;font-weight:800
+}
+.arrow{color:var(--brown);font-weight:900}
+table{
+  width:100%;border-collapse:collapse;margin-top:12px;font-size:14px;
+}
+th,td{padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+th{background:#ece8dd;color:#3a463f}
+tr:last-child td{border-bottom:none}
+.kpi{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:14px
+}
+.kpi div{background:#f0ece3;border-radius:14px;padding:14px}
+.kpi strong{display:block;font-size:24px;color:var(--green)}
+.note{
+  background:#fff3c7;border:1px solid #e4cf7c;border-radius:12px;padding:14px 16px;margin-top:14px
+}
+.quote{
+  font-size:22px;font-weight:900;text-align:center;padding:22px;background:#f0ece4;border-radius:15px
+}
+.mini{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px
+}
+.mini .card h4{margin:0 0 8px;font-size:16px}
+.pill{display:inline-block;padding:3px 8px;border-radius:999px;color:white;font-size:12px;font-weight:700;margin-right:5px}
+.red{background:var(--red)} .blue{background:var(--blue)} .green{background:var(--green2)} .brown{background:var(--brown)}
+.footer{
+  text-align:center;color:var(--muted);font-size:13px;margin-top:30px
+}
+ul{margin-top:8px;padding-left:22px}
+li{margin:5px 0}
+@media(max-width:820px){
+  .grid,.mini,.kpi{grid-template-columns:1fr}
+  .hero{padding:28px 22px}
+  .section{padding:21px 18px}
+  table{font-size:13px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<section class="hero">
+  <h1>공무원 키우기</h1>
+  <p>업무별 퍼즐을 풀고 숙련도와 자동화 능력을 키워, 더 능숙하게 하루를 마치는 공무원 성장 게임</p>
+  <div class="badges">
+    <span class="badge">2D 캐주얼</span>
+    <span class="badge">업무 퍼즐</span>
+    <span class="badge">두뇌게임</span>
+    <span class="badge">성장 시스템</span>
+    <span class="badge">가벼운 풍자</span>
+    <span class="badge">난이도 상·중·하</span>
+  </div>
+</section>
+
+<section class="section">
+  <h2>1. 최종 방향 요약</h2>
+  <div class="lead">
+    사무실을 직접 돌아다니는 시뮬레이션보다는, 실제 공무원 업무의 특징을 각각 다른 유형의 퍼즐로 바꾸는 방향을 기본으로 한다.
+  </div>
+  <p>
+    플레이어는 하루에 들어온 업무를 선택해 짧은 퍼즐을 해결하고, 그 결과에 따라 경험치·숙련도·업무 도구를 얻는다.
+    사무실과 동료들은 직접 이동하는 공간이 아니라, 업무 사이를 연결하는 배경·연출·이벤트 공간으로 활용한다.
+  </p>
+  <div class="kpi">
+    <div><strong>70%</strong>업무 퍼즐</div>
+    <div><strong>20%</strong>성장·수집</div>
+    <div><strong>10%</strong>사무실 연출</div>
+    <div><strong>3단계</strong>난이도 하·중·상</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>2. 게임의 핵심 컨셉</h2>
+  <div class="quote">“업무를 처리하는 행위 자체가 퍼즐이 된다.”</div>
+  <div class="grid">
+    <div class="card">
+      <b>현실 업무에서 가져오는 것</b>
+      <ul>
+        <li>예산·자료 검토</li>
+        <li>자료 취합과 제출기한</li>
+        <li>전화·민원 내용 기억</li>
+        <li>정보공개 판단</li>
+        <li>급식비·지출자료 대조</li>
+        <li>공문·쪽지 구성</li>
+        <li>담당자 협조와 결재</li>
+        <li>반복 업무 자동화</li>
+      </ul>
+    </div>
+    <div class="card">
+      <b>게임용으로 바꾸는 원칙</b>
+      <ul>
+        <li>실제 업무 절차를 그대로 복제하지 않는다.</li>
+        <li>20초~2분 내외의 짧은 퍼즐로 단순화한다.</li>
+        <li>관찰·기억·분류·논리·순서 판단을 섞는다.</li>
+        <li>실패해도 게임 진행이 막히지 않도록 한다.</li>
+        <li>성장할수록 퍼즐을 더 편하게 풀 수 있게 한다.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>3. 기본 플레이 루프</h2>
+  <div class="flow">
+    <span class="step">하루 시작</span><span class="arrow">→</span>
+    <span class="step">업무 카드 확인</span><span class="arrow">→</span>
+    <span class="step">업무 선택</span><span class="arrow">→</span>
+    <span class="step">퍼즐 진행</span><span class="arrow">→</span>
+    <span class="step">제출·결과</span><span class="arrow">→</span>
+    <span class="step">성장</span><span class="arrow">→</span>
+    <span class="step">하루 결산</span>
+  </div>
+  <p>
+    한 번 플레이할 때 여러 업무가 카드 형태로 등장하고, 플레이어가 우선순위를 선택한다.
+    업무마다 다른 종류의 퍼즐이 등장하기 때문에 반복 플레이에서도 감각이 바뀌도록 구성한다.
+  </p>
+</section>
+
+<section class="section">
+  <h2>4. 업무별 퍼즐 유형</h2>
+  <table>
+    <thead>
+      <tr><th>업무</th><th>퍼즐 유형</th><th>게임 예시</th><th>주요 능력</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>예산·사업설명서 검토</td><td>틀린 부분 찾기</td><td>원자료와 제출자료의 금액·연도·재원·단위 차이 찾기</td><td>관찰·대조</td></tr>
+      <tr><td>자료 취합</td><td>조건 분류</td><td>요구 조건에 맞는 자료만 선택하고 중복·구버전 제외</td><td>분류·판단</td></tr>
+      <tr><td>전화 민원</td><td>기억력</td><td>짧은 통화 후 이름·시간·요청사항·담당부서 기억</td><td>단기 기억</td></tr>
+      <tr><td>정보공개</td><td>논리 판단</td><td>상황과 조건을 보고 공개·부분공개·부존재 등 선택</td><td>논리·규칙 적용</td></tr>
+      <tr><td>급식비·지출자료</td><td>대조 퍼즐</td><td>명단·시간·지급액·입금내역 맞추기</td><td>정확성</td></tr>
+      <tr><td>공문·쪽지 작성</td><td>순서 배열</td><td>배경·요청내용·기한·근거를 올바른 순서로 배치</td><td>구조화</td></tr>
+      <tr><td>담당자 협조</td><td>조건 추리</td><td>누구에게 어떤 자료를 요청해야 가장 빠른지 판단</td><td>업무 조율</td></tr>
+      <tr><td>결재</td><td>최종 오류 탐색</td><td>제출 직전 문서에서 숨은 오류·누락 찾기</td><td>검토</td></tr>
+      <tr><td>반복 업무 자동화</td><td>순서·블록 퍼즐</td><td>자료 수집→정리→중복 제거→합계 계산→제출 순서 구성</td><td>자동화 사고</td></tr>
+      <tr><td>돌발 민원·긴급 요청</td><td>선택형 판단</td><td>짧은 상황 설명을 보고 가장 적절한 대응 선택</td><td>상황 판단</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="section">
+  <h2>5. 퍼즐 스타일</h2>
+  <div class="mini">
+    <div class="card">
+      <h4><span class="pill blue">순발력형</span>빠른 판단</h4>
+      <p>짧은 제한시간 안에 분류·선택·기억 문제를 처리한다.</p>
+      <p>예: 전화 내용 기억, 급한 자료 분류</p>
+    </div>
+    <div class="card">
+      <h4><span class="pill green">추리형</span>생각하는 판단</h4>
+      <p>시간 압박을 줄이고 조건을 비교하며 답을 찾는다.</p>
+      <p>예: 정보공개 판단, 담당자 협조</p>
+    </div>
+    <div class="card">
+      <h4><span class="pill brown">혼합형</span>기본 방식</h4>
+      <p>순발력과 추리를 섞되, 강한 시간 압박은 일부 업무에만 사용한다.</p>
+      <p>게임의 기본 플레이 방식으로 사용한다.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>6. 난이도 설정</h2>
+  <p>설정에서 언제든 <b>하 / 중 / 상</b>을 선택할 수 있으며, 변경 내용은 다음 퍼즐부터 적용한다.</p>
+  <table>
+    <thead>
+      <tr><th>항목</th><th>하</th><th>중</th><th>상</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>제한시간</td><td>넉넉함</td><td>기본</td><td>짧음</td></tr>
+      <tr><td>조건 수</td><td>1~2개</td><td>2~3개</td><td>3~4개 이상</td></tr>
+      <tr><td>힌트</td><td>자동 강조 많음</td><td>요청 시 제공</td><td>제한적</td></tr>
+      <tr><td>실수 부담</td><td>거의 없음</td><td>재확인 시간 추가</td><td>시간·점수 손실 증가</td></tr>
+      <tr><td>추천 대상</td><td>가볍게 플레이</td><td>기본 추천</td><td>도전 플레이</td></tr>
+    </tbody>
+  </table>
+  <div class="note">
+    난이도는 스토리·승진·아이템 해금에 불이익을 주지 않는다. 어려운 난이도는 점수·기록 경쟁용 보너스만 주는 방향이 적절하다.
+  </div>
+</section>
+
+<section class="section">
+  <h2>7. 성장 시스템</h2>
+  <p>성장은 단순 능력치 상승보다, 실제 플레이 방식이 편해지는 방향으로 설계한다.</p>
+  <table>
+    <thead><tr><th>성장 요소</th><th>효과 예시</th></tr></thead>
+    <tbody>
+      <tr><td>검토 숙련도</td><td>오류 후보를 희미하게 표시하거나 비교 범위를 줄여준다.</td></tr>
+      <tr><td>업무 기억력</td><td>전화 퍼즐에서 핵심 메모 한 줄을 유지할 수 있다.</td></tr>
+      <tr><td>자료 취합 숙련</td><td>명백한 중복·구버전을 자동 제외한다.</td></tr>
+      <tr><td>업무 조율</td><td>협조 요청 퍼즐에서 불필요한 선택지가 줄어든다.</td></tr>
+      <tr><td>자동화</td><td>쉬운 반복 퍼즐 일부를 자동 완료하거나 단계 수를 줄인다.</td></tr>
+      <tr><td>노련함</td><td>제한시간 증가, 실수 패널티 감소 등 전반적인 보조 효과.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="section">
+  <h2>8. 사무실 요소의 활용</h2>
+  <div class="lead">
+    사무실은 직접 탐색하는 메인 콘텐츠가 아니라, 퍼즐 사이의 분위기와 성장감을 보여주는 메타 화면으로 사용한다.
+  </div>
+  <div class="grid">
+    <div class="card">
+      <b>유지할 요소</b>
+      <ul>
+        <li>주인공 책상</li>
+        <li>동료·팀장</li>
+        <li>전화·프린터·PC</li>
+        <li>서류 더미·결재함</li>
+        <li>점심시간·퇴근 연출</li>
+      </ul>
+    </div>
+    <div class="card">
+      <b>연출 예시</b>
+      <ul>
+        <li>퍼즐 성공 후 주인공이 프린터로 이동</li>
+        <li>동료가 “자료 보냈어요”라고 말함</li>
+        <li>팀장에게 결재 올리는 짧은 애니메이션</li>
+        <li>업무가 쌓이면 책상 위 서류 더미 증가</li>
+        <li>퇴근 성공 시 PC를 끄고 사무실 불이 꺼짐</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>9. 화면 구성 초안</h2>
+  <div class="grid">
+    <div class="card">
+      <b>메인 화면</b>
+      <ul>
+        <li>상단: 날짜 / 직급 / 집중력 / 숙련도</li>
+        <li>중앙: 오늘 들어온 업무 카드 3~5개</li>
+        <li>하단: 업무 / 성장 / 도감 / 설정</li>
+        <li>배경: 작은 사무실과 캐릭터 연출</li>
+      </ul>
+    </div>
+    <div class="card">
+      <b>업무 카드 예시</b>
+      <p><span class="pill red">긴급</span>2027년도 사업설명서 검토</p>
+      <p>난이도 ★★★☆☆</p>
+      <p>예상 소요시간 1분</p>
+      <p>보상: 검토 경험치 +15</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>10. 톤과 분위기</h2>
+  <ul>
+    <li><b>현실 공감:</b> 짧은 제출기한, 수정 요청, 서식 변경, 자료 취합 등 실제 업무에서 오는 상황을 소재로 사용</li>
+    <li><b>가벼운 풍자:</b> “금일 중 제출”, “최종_진짜최종”, “총액만 있으면 됩니다” 같은 상황을 유머로 활용</li>
+    <li><b>교훈적이지 않게:</b> 매번 감동적인 결말보다 짧고 건조한 웃음으로 마무리</li>
+    <li><b>대상 비하 금지:</b> 복지대상자나 민원인 자체보다 불합리한 절차·서식·업무환경을 풍자의 중심으로 삼음</li>
+    <li><b>그래픽:</b> 간단한 2D, 복고풍 또는 캐주얼 일러스트 스타일. 정교한 3D는 사용하지 않음</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>11. 첫 개발 범위 추천</h2>
+  <table>
+    <thead><tr><th>항목</th><th>1차 목표</th></tr></thead>
+    <tbody>
+      <tr><td>업무 종류</td><td>5개</td></tr>
+      <tr><td>퍼즐 시스템</td><td>자료 비교 / 조건 분류 / 전화 기억 / 순서 배열 / 선택형 판단</td></tr>
+      <tr><td>문제 수</td><td>업무별 8~10개</td></tr>
+      <tr><td>난이도</td><td>하·중·상</td></tr>
+      <tr><td>성장</td><td>검토 / 기억 / 자동화 / 조율 4개 계열</td></tr>
+      <tr><td>사무실</td><td>정적 배경 + 짧은 애니메이션 연출</td></tr>
+      <tr><td>플레이 단위</td><td>게임 속 5일 또는 1주</td></tr>
+    </tbody>
+  </table>
+  <div class="note">
+    첫 버전에서는 자유 이동, 복잡한 NPC AI, 실제 Excel/HWP 파일 연동은 제외한다. 퍼즐 자체가 재미있는지 먼저 검증한 뒤 확장한다.
+  </div>
+</section>
+
+<section class="section">
+  <h2>12. 최종 한 문장</h2>
+  <div class="quote">
+    “공무원 업무를 관찰·기억·분류·추리 퍼즐로 풀고, 자동화와 숙련도를 키워 점점 더 능숙하게 하루를 끝내는 캐주얼 성장 게임.”
+  </div>
+</section>
+
+<div class="footer">
+  공무원 키우기 기획 초안 · 현재까지의 대화 내용을 기준으로 정리
+</div>
+
+</div>
+</body>
+</html>

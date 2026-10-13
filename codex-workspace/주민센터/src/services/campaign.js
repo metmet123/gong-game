@@ -1,0 +1,13 @@
+(function(root){
+  'use strict';
+  const node=typeof module!=='undefined'&&module.exports,E=node?require('../engine/resolve.js'):root.MoveInEngine,D=node?require('../data/cases.js'):root.MoveInData,C=node?require('../data/chapter.js'):root.MoveInChapter;
+  const sequence=mode=>mode==='chapter'?D.visits:D.puzzle;
+  function next(model){return sequence(model.mode).find(c=>!model.records[model.mode+':'+c.visitId])||null;}
+  function currentDay(model){return C.days.find(d=>!model.dayClosed.includes(d.day))||null;}
+  function available(model,id){const seq=sequence(model.mode),index=seq.findIndex(c=>c.visitId===id);return index>=0&&(!!model.records[model.mode+':'+id]||seq.slice(0,index).every(c=>model.records[model.mode+':'+c.visitId]))&&(model.mode!=='chapter'||!!model.records['chapter:'+id]||currentDay(model)?.visits.includes(id));}
+  function stash(model){const n=E.clone(model);if(n.active&&!n.active.practice&&n.active.session.status==='editing')n.drafts[n.active.mode+':'+n.active.visitId]=E.clone(n.active.session);return n;}
+  function start(model,id,practice=false){if(!D.get(id)||!available(model,id))return {accepted:false,reason:'이전 접수와 근무 결산을 먼저 마쳐 주세요.'};const key=model.mode+':'+id;if(model.records[key]&&!practice)return {accepted:false,reason:'완료 기록입니다. 연습으로 열어 주세요.'};const n=stash(model);n.active={mode:model.mode,visitId:id,practice,session:!practice&&n.drafts[key]?E.clone(n.drafts[key]):E.createSession(D.get(id))};return {accepted:true,model:n};}
+  function commit(model,session){if(!model.active||session.visitId!==model.active.visitId||session.status!=='resolved')return {accepted:false,reason:'접수 상태가 맞지 않습니다.'};const n=E.clone(model);n.active.session=session;const key=n.mode+':'+session.visitId;if(n.active.practice)return {accepted:true,model:n};if(n.records[key])return {accepted:false,reason:'이미 기록된 접수입니다.'};n.records[key]=E.clone(session.record);delete n.drafts[key];if(session.record.outcome==='registered'&&!n.items.includes('badge'))n.items.push('badge');if(n.mode==='chapter'&&session.visitId==='M06-return'&&!n.items.includes('map'))n.items.push('map');return {accepted:true,model:n};}
+  function closeDay(model){const day=currentDay(model);if(!day||day.visits.some(id=>!model.records['chapter:'+id]))return {accepted:false,reason:'오늘의 세 접수를 먼저 마쳐 주세요.'};const n=E.clone(model);n.dayClosed.push(day.day);if(day.day===2&&!n.items.includes('memo'))n.items.push('memo');if(day.day===4&&!n.items.includes('photo'))n.items.push('photo');n.active=null;return {accepted:true,model:n,day};}
+  const api={sequence,next,currentDay,available,start,commit,closeDay,stash};if(node)module.exports=api;else root.MoveInCampaign=api;
+})(typeof globalThis!=='undefined'?globalThis:this);

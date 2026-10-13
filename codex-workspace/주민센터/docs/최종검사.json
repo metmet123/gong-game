@@ -1,0 +1,88 @@
+{
+  "checkedAt": "2026-10-11T09:43:11.984586+00:00",
+  "environment": "Windows / headless Microsoft Edge (browser checks only)",
+  "results": [
+    {
+      "name": "original-core",
+      "passed": true,
+      "elapsedSeconds": 0.17,
+      "output": "PASS all correct mover/head/relationship combination\nPASS all rejects wrong unit and stale review\nPASS all returning mover clears their relationship and review\nPASS all confirmation materials must be read\nPASS part correct mover/head/relationship combination\nPASS part rejects wrong unit and stale review\nPASS part returning mover clears their relationship and review\nPASS part confirmation materials must be read\nPASS join correct mover/head/relationship combination\nPASS join rejects wrong unit and stale review\nPASS join returning mover clears their relationship and review\nPASS join confirmation materials must be read\nPASS partial move leaves original head at previous residence\nPASS head change clears previous self relation\nPASS clearing head resets self relation\nPASS relationship uses the destination head as its reference\nPASS mode changes invalidate relationship draft and review\nPASS duplicate reading and unchanged mode are idempotent\nPASS moved people cannot be selected a second time\nPASS unknown action never changes the state\n20 tests passed.\n"
+    },
+    {
+      "name": "engine",
+      "passed": true,
+      "elapsedSeconds": 0.29,
+      "output": "PASS M01 schema and evidence exposure\nPASS M01 witness and immutable resolution\nPASS M01 stale review rejected\nPASS M01 tab changes preserve review\nPASS M01 document opening is not evidence verification\nPASS M02 schema and evidence exposure\nPASS M02 witness and immutable resolution\nPASS M02 stale review rejected\nPASS M02 tab changes preserve review\nPASS M02 document opening is not evidence verification\nPASS M03 schema and evidence exposure\nPASS M03 witness and immutable resolution\nPASS M03 stale review rejected\nPASS M03 tab changes preserve review\nPASS M03 document opening is not evidence verification\nPASS M04 schema and evidence exposure\nPASS M04 witness and immutable resolution\nPASS M04 stale review rejected\nPASS M04 tab changes preserve review\nPASS M04 document opening is not evidence verification\nPASS M05 schema and evidence exposure\nPASS M05 witness and immutable resolution\nPASS M05 stale review rejected\nPASS M05 tab changes preserve review\nPASS M05 document opening is not evidence verification\nPASS M06 schema and evidence exposure\nPASS M06 witness and immutable resolution\nPASS M06 stale review rejected\nPASS M06 tab changes preserve review\nPASS M06 document opening is not evidence verification\nPASS M06-return schema and evidence exposure\nPASS M06-return witness and immutable resolution\nPASS M06-return stale review rejected\nPASS M06-return tab changes preserve review\nPASS M06-return document opening is not evidence verification\nPASS M07 schema and evidence exposure\nPASS M07 witness and immutable resolution\nPASS M07 stale review rejected\nPASS M07 tab changes preserve review\nPASS M07 document opening is not evidence verification\nPASS M08 schema and evidence exposure\nPASS M08 witness and immutable resolution\nPASS M08 stale review rejected\nPASS M08 tab changes preserve review\nPASS M08 document opening is not evidence verification\nPASS M09 schema and evidence exposure\nPASS M09 witness and immutable resolution\nPASS M09 stale review rejected\nPASS M09 tab changes preserve review\nPASS M09 document opening is not evidence verification\nPASS M10 schema and evidence exposure\nPASS M10 witness and immutable resolution\nPASS M10 stale review rejected\nPASS M10 tab changes preserve review\nPASS M10 document opening is not evidence verification\nPASS M11 schema and evidence exposure\nPASS M11 witness and immutable resolution\nPASS M11 stale review rejected\nPASS M11 tab changes preserve review\nPASS M11 document opening is not evidence verification\nPASS M03 preserves original head and relations\nPASS M02 dissolves empty original household\nPASS M05 guesses cannot replace question\nPASS M06 missing evidence cannot be verified\nPASS M06 return independently permits registration\nPASS head change invalidates prior relationships\nPASS undo preserves already obtained answers and increments revision\nPASS bad payloads are rejected without mutation\nPASS forged verification fact and destination head rejected\nPASS deterministic stress keeps invariants across accepted and rejected edits\n70 engine/content tests passed\n"
+    },
+    {
+      "name": "storage",
+      "passed": true,
+      "elapsedSeconds": 0.2,
+      "output": "PASS fresh save and restore with separate key\nPASS six cases persist with arbitrary correct selection order\nPASS all chapter visits, pending callback and once-only souvenirs\nPASS practice cannot claim progress or items\nPASS resolving same visit twice cannot duplicate campaign record\nPASS locked cases and premature day close rejected\nPASS draft pack loses undo only in serialized copy\nPASS switching campaigns preserves unfinished draft\nPASS storage failure preserves in-memory game and export\nPASS corrupt and future records protected from automatic overwrite\nPASS another writer revision prevents stale save\nPASS import rejects broken fields without modifying original\nPASS oversized JSON and arbitrary format rejected\nPASS tampered household results rejected\nPASS chapter all required destinations reachable\n15 storage/campaign/map tests passed\n"
+    },
+    {
+      "name": "first-contact",
+      "passed": true,
+      "elapsedSeconds": 0.21,
+      "output": "PASS fictional independent case validates without changing M03\nPASS initial choices empty, fixed address supplied as context\nPASS empty draft cannot resolve\nPASS wrong mover and head are preserved\nPASS correct choices require evidence and reasoning\nPASS old-reference relation remains wrong and is not corrected\nPASS wrong reasoning prevents completion even with correct relations\nPASS reading evidence in review keeps draft and phase\nPASS changing head clears relations and reason\nPASS returning head removes reference and keeps evidence\nPASS moving another person invalidates dependent relation and reason\nPASS editing after failed review clears old feedback\nPASS help only advances when requested, max two\nPASS engine produces actual snapshots and immutable completion\nPASS first contact has no campaign completion or rewards\nPASS wrong draft and clues survive save/restore\nPASS old storage without new field still validates\nPASS malformed or future tutorial blocked without migration\nPASS forged resolved snapshots rejected\nPASS legacy session and simultaneously active tutorial rejected\n20 first-contact engine/storage tests passed\n"
+    },
+    {
+      "name": "protection",
+      "passed": true,
+      "elapsedSeconds": 0.25,
+      "output": "PASS 37 protected originals unchanged\n"
+    },
+    {
+      "name": "tutorial-browser",
+      "passed": true,
+      "elapsedSeconds": 9.7,
+      "output": "PASS 기존 첫 접수 버튼도 새 도입 사건으로 연결\nPASS 첫 시작에서 이동·기준·관계 자동 정답 없음\nPASS 요청형 첫 도움에 관계 정답 없음\nPASS 선배 도움 닫기 후 초점 복귀\nPASS 요청형 두 번째 도움에 관계 정답 없음\nPASS 잘못된 이동·기준도 신고 기록에 유지\nPASS 빈칸·오답 처리 시 근거 재확인\nPASS 관계 선택 뒤 키보드 초점 유지\nPASS 오답 관계를 정답으로 대체하지 않음\nPASS 오답 피드백에서 정답을 알려주지 않음\nPASS 오답·이유·검토 상태 새로고침 복원\nPASS 복원 초안 실제 저장 검증 통과\nPASS 자료 ledger 닫기 후 초점 복귀\nPASS 자료 request 닫기 후 초점 복귀\nPASS 자료를 읽어도 검토 장면 유지\nPASS 기준 변경 시 관계 재판단\nPASS 기존 엔진의 판정·스냅샷으로 실제 완료\nPASS 첫 접수는 기존 완료·보상 기록에 영향 없음\nPASS 완료 결과 새로고침 복원\nPASS 완료 뒤 기존 M01 접수로 정상 연결\nPASS 본편의 기존 저장 키 보존\nPASS 화면 320×568 관계 조작·대화·44px·가로 넘침 검사\nPASS 320px·200% 글자 확대에서 관계 입력 가능\nPASS 화면 390×844 관계 조작·대화·44px·가로 넘침 검사\nPASS 화면 430×932 관계 조작·대화·44px·가로 넘침 검사\nPASS 화면 844×390 관계 조작·대화·44px·가로 넘침 검사\nPASS 320px·200% 글자 확대 결과 읽기 가능\nPASS 기존 작성 중 M01은 강제 도입 없이 복원\nPASS 브라우저 실행 오류 없음\n29 browser checks passed\n"
+    },
+    {
+      "name": "puzzle-browser",
+      "passed": true,
+      "elapsedSeconds": 23.08,
+      "output": "PASS active intake restores after reload\nPASS mobile completion/reload M01\nPASS mobile completion/reload M02\nPASS mobile completion/reload M03\nPASS mobile completion/reload M04\nPASS mobile completion/reload M05\nPASS mobile completion/reload M06\nPASS question cannot be skipped and practice does not add records\nPASS chapter visit M01\nPASS chapter visit M02\nPASS chapter visit M03\nPASS chapter visit M04\nPASS chapter visit M05\nPASS chapter visit M06\nPASS chapter visit M06-return\nPASS chapter visit M07\nPASS chapter visit M08\nPASS chapter visit M09\nPASS chapter visit M10\nPASS chapter visit M11\nPASS full chapter, callback, four day closings and unique souvenirs\nPASS screen sizes and actionbar visibility\nPASS dialog Escape and focus restoration\nPASS browser undo preserves prior edit\nPASS export and invalid import protection\nPASS another tab change detection\nPASS no script errors or network dependencies\nPASS storage unavailable still permits gameplay\n"
+    },
+    {
+      "name": "ux-browser",
+      "passed": true,
+      "elapsedSeconds": 5.1,
+      "output": "PASS keyboard entry and nested document focus restoration\nPASS browser back dismisses sheet without losing work\nPASS validated backup import with confirmation\nPASS 320px with 200% text keeps relationship and review usable\nPASS future-version original protection, export requirement and explicit recovery\n"
+    },
+    {
+      "name": "integration-browser",
+      "passed": true,
+      "elapsedSeconds": 27.56,
+      "output": "PASS preview has no main rewards or progress changes\nPASS immediate return flush, resume and reload while transferred\nPASS 12 visits, four closings, 180 XP/300 points, once claims and existing state preservation\nPASS six registered move-in witnesses\nPASS native practice submission preserves rewards\nPASS isolated save keys, message guard and no script errors\n"
+    },
+    {
+      "name": "legacy-regression",
+      "passed": true,
+      "elapsedSeconds": 3.06,
+      "output": "PASS existing 23 registered modules / 2070 levels and witness results unchanged\n"
+    },
+    {
+      "name": "screenshots",
+      "passed": true,
+      "elapsedSeconds": 3.05,
+      "output": "PASS before/after screenshots and interactive comparison\n"
+    }
+  ],
+  "artifacts": {
+    "전입신고_퍼즐.html": "4ef5e524a61f76504bc7d179f39844e21aaabd83fbc029cc467bb11ac7c97159",
+    "공무원키우기_주민센터_통합후보.html": "4bc6412976ac6b8e1dbd972bc345ee957cde46671c1e07fa0fedae17b640b86d",
+    "UI_비교_프로토타입.html": "65b6c82525792d8b57ea5c85eadeeaa78da343db24a8b16be45bbb54b8e43881"
+  },
+  "fullSuiteArtifacts": {
+    "전입신고_퍼즐.html": "c8ebaef080791eba9150b8df3f37937c4741855342d8d42c5b9a3ab2f6682154",
+    "공무원키우기_주민센터_통합후보.html": "30afb118123a1ade8cf740a6f5429c984028d536f5f21258bccd4dbddf909f20",
+    "UI_비교_프로토타입.html": "65b6c82525792d8b57ea5c85eadeeaa78da343db24a8b16be45bbb54b8e43881"
+  },
+  "postSuiteVerification": {
+    "change": "짧은 화면 안내 문구만 간결화; 자료·판정·저장 변경 없음",
+    "checks": "tests/tutorial-browser.cjs 재실행 29개 통과",
+    "evidence": "docs/검증화면/첫접수/검증결과.json",
+    "checkedAt": "2026-10-11T09:44:01.567Z"
+  }
+}

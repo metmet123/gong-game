@@ -1,0 +1,130 @@
+[
+  {
+    "width": 1440,
+    "stage": 1,
+    "pageHeight": 1375,
+    "scene": {
+      "top": 351,
+      "height": 833,
+      "width": 877
+    },
+    "instructions": {
+      "top": 351,
+      "height": 388,
+      "width": 245
+    },
+    "feedback": {
+      "top": 1202,
+      "height": 47,
+      "width": 1142
+    },
+    "finish": {
+      "top": 1265,
+      "height": 44,
+      "width": 135
+    },
+    "sourceTray": null,
+    "firstEditableField": null,
+    "editableFieldFont": null
+  },
+  {
+    "width": 1440,
+    "stage": 2,
+    "pageHeight": 1301,
+    "scene": {
+      "top": 351,
+      "height": 760,
+      "width": 877
+    },
+    "instructions": {
+      "top": 351,
+      "height": 388,
+      "width": 245
+    },
+    "feedback": {
+      "top": 1129,
+      "height": 47,
+      "width": 1142
+    },
+    "finish": {
+      "top": 1192,
+      "height": 44,
+      "width": 148
+    },
+    "sourceTray": {
+      "top": 407,
+      "height": 678,
+      "width": 180
+    },
+    "firstEditableField": {
+      "top": 605,
+      "height": 35,
+      "width": 51
+    },
+    "editableFieldFont": "12px"
+  },
+  {
+    "width": 390,
+    "stage": 1,
+    "pageHeight": 2172,
+    "scene": {
+      "top": 475,
+      "height": 1129,
+      "width": 358
+    },
+    "instructions": {
+      "top": 1624,
+      "height": 288,
+      "width": 358
+    },
+    "feedback": {
+      "top": 1930,
+      "height": 62,
+      "width": 358
+    },
+    "finish": {
+      "top": 2061,
+      "height": 44,
+      "width": 358
+    },
+    "sourceTray": null,
+    "firstEditableField": null,
+    "editableFieldFont": null
+  },
+  {
+    "width": 390,
+    "stage": 2,
+    "pageHeight": 2027,
+    "scene": {
+      "top": 475,
+      "height": 1003,
+      "width": 358
+    },
+    "instructions": {
+      "top": 1499,
+      "height": 269,
+      "width": 358
+    },
+    "feedback": {
+      "top": 1785,
+      "height": 62,
+      "width": 358
+    },
+    "finish": {
+      "top": 1916,
+      "height": 44,
+      "width": 358
+    },
+    "sourceTray": {
+      "top": 526,
+      "height": 248,
+      "width": 320
+    },
+    "firstEditableField": {
+      "top": 983,
+      "height": 35,
+      "width": 51
+    },
+    "editableFieldFont": "12px"
+  }
+]

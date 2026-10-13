@@ -1,0 +1,127 @@
+{
+  "verifiedAt": "2026-10-11T11:28:25.837Z",
+  "scope": "계획용 HTML만 검증; 게임 엔진·저장·실제 개방 미구현",
+  "checks": [
+    {
+      "name": "처음에는 복지 정식 시작 잠금",
+      "passed": true
+    },
+    {
+      "name": "시안 개방 전환",
+      "passed": true
+    },
+    {
+      "name": "기존 전입 이미지 비교",
+      "passed": true
+    },
+    {
+      "name": "당사자 확인 전 딸 질문 잠금",
+      "passed": true
+    },
+    {
+      "name": "새 답변이 판단을 채우지 않음",
+      "passed": true
+    },
+    {
+      "name": "근거 보관이 판단을 채우지 않음",
+      "passed": true
+    },
+    {
+      "name": "자료·질문 왕복 판단 보존",
+      "passed": true
+    },
+    {
+      "name": "관계망의 인물 목록 대체",
+      "passed": true
+    },
+    {
+      "name": "계획 검토는 한글 선택값 표시",
+      "passed": true
+    },
+    {
+      "name": "검토 초점 가두기",
+      "passed": true
+    },
+    {
+      "name": "검토 닫기 초점 복귀",
+      "passed": true
+    },
+    {
+      "name": "업무 왕복 계획 보존",
+      "passed": true
+    },
+    {
+      "name": "320 source 가로 넘침 없음",
+      "passed": true
+    },
+    {
+      "name": "320 relation 가로 넘침 없음",
+      "passed": true
+    },
+    {
+      "name": "320 plan 가로 넘침 없음",
+      "passed": true
+    },
+    {
+      "name": "320 주요 버튼 44px",
+      "passed": true
+    },
+    {
+      "name": "320 입력 글자 16px",
+      "passed": true
+    },
+    {
+      "name": "390 source 가로 넘침 없음",
+      "passed": true
+    },
+    {
+      "name": "390 relation 가로 넘침 없음",
+      "passed": true
+    },
+    {
+      "name": "390 plan 가로 넘침 없음",
+      "passed": true
+    },
+    {
+      "name": "390 주요 버튼 44px",
+      "passed": true
+    },
+    {
+      "name": "390 입력 글자 16px",
+      "passed": true
+    },
+    {
+      "name": "430 source 가로 넘침 없음",
+      "passed": true
+    },
+    {
+      "name": "430 relation 가로 넘침 없음",
+      "passed": true
+    },
+    {
+      "name": "430 plan 가로 넘침 없음",
+      "passed": true
+    },
+    {
+      "name": "430 주요 버튼 44px",
+      "passed": true
+    },
+    {
+      "name": "430 입력 글자 16px",
+      "passed": true
+    },
+    {
+      "name": "PC 관계와 자료 동시 표시",
+      "passed": true
+    },
+    {
+      "name": "키보드 작업 탭 전환",
+      "passed": true
+    },
+    {
+      "name": "스크립트 오류 없음",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

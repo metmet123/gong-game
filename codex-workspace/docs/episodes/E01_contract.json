@@ -1,0 +1,60 @@
+{
+  "id": "E01",
+  "title": "홍보물 200부, 오늘 안에 끝내라고요?",
+  "version": 2,
+  "status": "independent_interactive_mockup",
+  "currentDesign": "E01_홍보물200부_개정기획.md",
+  "nextGameplayDesign": "E01_재미중심_개정안.md",
+  "nextGameplayDesignVersion": "0.3",
+  "nextPlaytimeTarget": [10, 15],
+  "funValidatedWithUsers": false,
+  "mockup": "E01_플레이목업.html",
+  "portableMockup": "E01_체험목업.html",
+  "rules": "e01-engine.js",
+  "legacyLogicReuse": false,
+  "budget": 260000,
+  "chipValue": 10000,
+  "quantity": 200,
+  "initialUnitPrice": 1000,
+  "finalUnitPrice": 1100,
+  "spec": {"size": "A5", "sides": 2, "contentVersion": 2, "hours": "09:00~18:00"},
+  "options": [
+    {"id": "stand", "label": "안내 거치대", "cost": 20000, "payment": "PAY-E01-STAND"},
+    {"id": "delivery", "label": "분점 배송", "cost": 30000, "payment": "PAY-E01-DELIVERY"},
+    {"id": "proof", "label": "사전 교정", "cost": 40000, "payment": "PAY-E01-PROOF"}
+  ],
+  "recommendedWitness": {"options": ["stand"], "initialPrintChips": 20, "initialReserveChips": 4, "finalPrintChips": 22, "finalReserveChips": 2},
+  "printPayment": "PAY-E01-PRINT",
+  "printContract": "PRINT-E01",
+  "inspection": {"initialReceived": 200, "initialGood": 160, "initialBad": 40, "returned": 40, "replacementGood": 40, "replacementCost": 0},
+  "distribution": {
+    "targets": {"counter": 80, "branchA": 60, "branchB": 60},
+    "initial": {"counter": 80, "branchA": 60, "branchB": 20, "holding": 40},
+    "shipmentId": "B-02",
+    "transferQuantity": 40,
+    "final": {"counter": 80, "branchA": 60, "branchB": 60, "holding": 0},
+    "holdingWithDelivery": "1층 배송 보관실",
+    "holdingWithoutDelivery": "2층 공용 보관실"
+  },
+  "settlementRows": [
+    {"id": "R1", "paymentRef": "PAY-E01-PRINT", "amount": 220000, "source": "manual"},
+    {"id": "R2", "paymentRef": "PAY-E01-PRINT", "amount": 220000, "source": "import"}
+  ],
+  "stages": [
+    {"id": "budget", "title": "사업 편성", "minutes": [2,3], "action": "사업에 칩 배치 → 견적 확인 → 재편성", "gate": "제작22칩 + 선택사업 + 예비 = 26칩", "effect": "최종 사업과 최신 견적 고정"},
+    {"id": "document", "title": "공문 작업대", "minutes": [3,4], "action": "자료 선택 → 공문 필드 교체 → 붙임 클립", "gate": "200부 × 1100원, v2, 배부80/60/60, 옵션 일치", "effect": "담당 확인과 서류철 생성"},
+    {"id": "approval", "title": "결재 작전", "minutes": [2,3], "action": "서류철 전달 → 출력 확보 → 협조와 결재", "gate": "협조와 최신붙임 → 계장 → 과장", "effect": "발주 확정"},
+    {"id": "inspection", "title": "납품 검수", "minutes": [2,3], "action": "상자 열기 → 분류 → 반품과 보완", "gate": "정상160 + 보완40 = 200, 불량반품40", "effect": "제작 검수 확정"},
+    {"id": "payment", "title": "지급 서류철", "minutes": [1,2], "action": "계약·청구·검수 연결 → 지급 실행", "gate": "같은 계약과 정확한 금액, 미지급, 서비스 완료", "effect": "실제 지급을 거래별 한 번 기록"},
+    {"id": "complaint", "title": "민원 조사", "minutes": [3,4], "action": "기록·진술·라벨 조사 → 원인 메모 → 물품 운반", "gate": "B-02의40부 실제전달, 수령80/60/60, 회신", "effect": "민원 종결, 배송비 후속 지급"},
+    {"id": "settlement", "title": "결산 사건 보드", "minutes": [3,4], "action": "거래 연결 → 원인 주장 → 중복 집계 제외", "gate": "실제 제작지급1회 입증, 총액과 잔액, 보고결재", "effect": "결산 확정"},
+    {"id": "result", "title": "오늘의 사무실", "minutes": [1,1], "action": "사무실 변화와 사건 기록 확인", "gate": "민원·전체지급·결산 완료", "effect": "홍보물과 선택 소품, 도감, 대사 반영"}
+  ],
+  "storageKey": "gong-e01-independent-mockup-v2",
+  "legacyRewardPolicy": "independent_episode_no_campaign_xp_points",
+  "issues": ["price_increase", "bad_content_40", "intermediate_receipt_misposted", "duplicate_settlement_projection"],
+  "validationStatus": "rules_and_browser_mockup_tested",
+  "validationReports": ["E01_mockup_validation.json", "E01_browser_validation.json"],
+  "mockupSimplifications": ["pre_filled_title_purpose_spec_distribution", "fixed_office_stations", "automatic_option_service_acceptance", "automatic_reply_and_deferred_delivery_payment", "automatic_report_amounts"],
+  "screenshots": "mockup_screens/"
+}

@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-11T13:05:44.264Z",
+  "checks": [
+    "exactly 3 cases for each difficulty, unique residents and topics",
+    "all new cases declare reference-valid claims, routes and question dependencies",
+    "legacy 3-record backup parses without changing any completed record",
+    "legacy wrong-draft review wording remains valid after content expansion",
+    "arbitrary-case drafts coexist and survive serialization",
+    "nine completions in reverse order preserve canonical items and original earlier records",
+    "completion preserves other unfinished drafts",
+    "W04 notification is insufficient to claim completed application",
+    "W05 utility arrears do not establish unpaid rent",
+    "W06 care gap requires both work and helper schedules",
+    "W07 uncertain friend help cannot be assumed confirmed",
+    "W08 two helpers require two sources, wrong order and single route rejected",
+    "W09 consent boundaries reject sharing with family and conflating routing consent",
+    "unpin consent invalidates final handoff without erasing resident decisions"
+  ],
+  "passed": true
+}

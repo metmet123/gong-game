@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-10-11T13:05:43.506Z",
+  "checks": [
+    "W01 all choices initially empty",
+    "stable unique case IDs survive JSON serialization",
+    "W01 question consent gate and hidden answer blocked",
+    "W01 opening/pinning/questions never answer claims",
+    "W01 correct labels without evidence fail",
+    "W01 old cohabitation and forced visits fail; wrong choice retained",
+    "W01 source variant E07 for current address accepted",
+    "W01 contact cooperation note is equivalent path",
+    "W01 unpin keeps value but removes link and invalidates review",
+    "W01 service approval and unsupported extra plan fail",
+    "W01 stale review, view preservation, immutable result",
+    "W01 forged records and private evidence fail validation",
+    "W01 data references and supported path",
+    "W02 data references and supported path",
+    "W03 data references and supported path",
+    "W04 data references and supported path",
+    "W05 data references and supported path",
+    "W06 data references and supported path",
+    "W07 data references and supported path",
+    "W08 data references and supported path",
+    "W09 data references and supported path",
+    "W02 waiting branch requires request, concrete followup, no false approval",
+    "W03 wrong priority and stable-family assumption fail",
+    "9 records and canonical items validated; duplicate completion rejected"
+  ],
+  "passed": true
+}

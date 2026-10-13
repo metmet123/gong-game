@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>사무실 배치도 만들기</title>
+<style>
+:root{
+  color-scheme:light;
+  --bg:#f3eddc; --card:#fffdf6; --ink:#2c3628; --ink2:#646b5a; --line:#d6ccb2;
+  --green:#3f5f3a; --green2:#5d7f4f; --soft:#e2e9d6; --red:#b4472f; --blue:#2f6fb3;
+  --floor:#f6f0dd; --grid:#e3d8b8;
+  --font:"Pretendard","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:15px;line-height:1.5;word-break:keep-all;padding-bottom:140px}
+button{font:inherit;color:inherit;cursor:pointer}
+.wrap{max-width:820px;margin:0 auto;padding:0 16px}
+header{background:var(--green);color:#f6f1df;padding:14px 0}
+header b{font-size:19px;display:block}
+header span{font-size:13px;opacity:.85}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-top:14px}
+.how{margin:0;padding-left:20px;font-size:14px}
+.how li{margin:2px 0}
+.hint{margin:8px 0 0;font-size:13px;color:var(--ink2)}
+.settings{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;font-size:14px}
+.settings label{display:flex;align-items:center;gap:6px}
+.settings input[type=text]{width:130px;padding:6px 8px;border:1px solid var(--line);border-radius:8px;font:inherit;background:#fff}
+.stepper{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff}
+.stepper button{border:0;background:#fff;width:32px;height:32px;font-weight:800}
+.stepper b{min-width:28px;text-align:center}
+.settings small{color:var(--ink2);font-size:12px}
+
+.palette{position:sticky;top:0;z-index:20;background:var(--bg);padding:10px 0 8px;margin-top:6px;border-bottom:1px solid var(--line)}
+.tabs{display:flex;gap:6px;margin-bottom:8px}
+.tabs button{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:4px 12px;font-size:13px;font-weight:700}
+.tabs button.on{background:var(--green);color:#f6f1df;border-color:var(--green)}
+.chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}
+.chip{flex:0 0 auto;display:flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--card);border-radius:10px;padding:6px 10px 6px 6px;font-size:13.5px;font-weight:700}
+.chip i{font-style:normal;width:26px;height:26px;border-radius:6px;display:grid;place-items:center;font-size:14px;border:1px solid rgba(0,0,0,.15)}
+.chip:active{transform:scale(.97)}
+
+.boardwrap{margin-top:12px;display:flex;justify-content:center}
+#board{position:relative;background-color:var(--floor);
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  border:3px solid #7d6d4b;border-radius:4px;touch-action:none;user-select:none;-webkit-user-select:none;box-sizing:content-box}
+.item{position:absolute;border-radius:4px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;line-height:1.08;
+  font-size:max(9px,calc(var(--cell) * .38));font-weight:700;color:#2c3628;border:1.5px solid rgba(40,30,10,.45);overflow:hidden;cursor:grab;touch-action:none}
+.item .ic{font-size:calc(var(--cell) * .58);line-height:1}
+.item.row{flex-direction:row;gap:2px}
+.item.row .ic{font-size:calc(var(--cell) * .48)}
+.item.k-me{box-shadow:0 0 0 2px #e0a020}
+.item span{padding:0 2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.item.sel{outline:3px solid var(--blue);outline-offset:1px;z-index:5}
+.item.bad{box-shadow:inset 0 0 0 3px var(--red)}
+.item.new{animation:pop .35s ease}
+@keyframes pop{0%{transform:scale(.6)}70%{transform:scale(1.08)}100%{transform:scale(1)}}
+.item.k-wall,.item.k-pillar{color:#f3ecd2}
+.item.k-window{background-image:repeating-linear-gradient(90deg,transparent 0 6px,rgba(255,255,255,.7) 6px 8px)!important}
+.seat{background:rgba(255,255,255,.35)!important;border:1px dashed rgba(60,50,30,.3)}
+.seat .desk{position:absolute;display:flex;align-items:center;justify-content:center;border:1.5px solid rgba(40,30,10,.5);border-radius:3px;overflow:hidden}
+.seat .desk span{font-size:max(9px,calc(var(--cell) * .36))}
+.seat .chair{position:absolute;width:calc(var(--cell) * .62);height:calc(var(--cell) * .62);border-radius:50%;background:#4b5563;border:2px solid #fff}
+.d-up .desk{left:5%;right:5%;top:5%;height:52%} .d-up .chair{left:50%;bottom:7%;transform:translateX(-50%)}
+.d-down .desk{left:5%;right:5%;bottom:5%;height:52%} .d-down .chair{left:50%;top:7%;transform:translateX(-50%)}
+.d-left .desk{top:5%;bottom:5%;left:5%;width:52%} .d-left .chair{top:50%;right:7%;transform:translateY(-50%)}
+.d-right .desk{top:5%;bottom:5%;right:5%;width:52%} .d-right .chair{top:50%;left:7%;transform:translateY(-50%)}
+.d-left .desk span,.d-right .desk span{writing-mode:vertical-rl;letter-spacing:-.05em}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12.5px;color:var(--ink2);margin-top:8px;justify-content:center}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:50%;background:#4b5563;vertical-align:-1px;margin-right:4px;border:2px solid #fff;box-shadow:0 0 0 1px #999}
+
+.check h3{margin:0 0 6px;font-size:15px}
+.checklist{display:flex;flex-wrap:wrap;gap:6px}
+.checklist span{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:2px 10px;background:#fff;color:var(--ink2)}
+.checklist span.ok{background:var(--soft);border-color:var(--green2);color:var(--green);font-weight:700}
+.actions{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
+@media (max-width:520px){.actions{grid-template-columns:1fr 1fr}}
+.btn{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:10px 8px;font-weight:700;font-size:14px}
+.btn.main{background:var(--green);color:#f6f1df;border-color:var(--green)}
+.btn:disabled{opacity:.4}
+.btn.warn{color:var(--red)}
+
+.toolbar{position:fixed;left:0;right:0;bottom:0;z-index:30;background:#fffdf6;border-top:2px solid var(--green);box-shadow:0 -6px 18px rgba(0,0,0,.12);padding:8px 0 calc(8px + env(safe-area-inset-bottom))}
+.toolbar[hidden]{display:none}
+.tbrow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:3px 0}
+.tbrow .tname{font-size:12px;font-weight:800;color:var(--green);background:var(--soft);border-radius:6px;padding:2px 8px}
+.tbrow input{flex:1;min-width:100px;padding:7px 9px;border:1px solid var(--line);border-radius:8px;font:inherit;background:#fff}
+.tbrow button{border:1px solid var(--line);background:#fff;border-radius:8px;min-width:38px;height:38px;padding:0 9px;font-weight:800;font-size:14px}
+.tbrow .grp{display:inline-flex;align-items:center;gap:3px;font-size:12.5px;color:var(--ink2);font-weight:700}
+.tbrow .danger{color:var(--red)}
+
+.modal{position:fixed;inset:0;z-index:50;background:rgba(20,25,18,.55);display:flex;align-items:center;justify-content:center;padding:16px}
+.modal[hidden]{display:none}
+.modal .box{background:var(--card);border-radius:14px;max-width:640px;width:100%;max-height:90vh;overflow:auto;padding:18px}
+.modal h2{margin:0 0 8px;font-size:18px}
+.modal textarea{width:100%;height:160px;font-family:Consolas,monospace;font-size:12px;border:1px solid var(--line);border-radius:8px;padding:8px}
+.modal img{width:100%;border:1px solid var(--line);border-radius:8px;margin-top:8px}
+.modal .row{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.toast{position:fixed;left:50%;top:16px;transform:translateX(-50%) translateY(-80px);background:#2c3628;color:#fff;padding:8px 16px;border-radius:999px;font-size:14px;z-index:60;transition:transform .25s}
+.toast.show{transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+<header><div class="wrap"><b>사무실 배치도 만들기</b><span>공무원 키우기 · 실제 사무실을 게임 속 사무실로 옮기기 위한 도구</span></div></header>
+
+<main class="wrap">
+  <section class="card">
+    <ol class="how">
+      <li>아래 목록에서 물건을 누르면 배치도에 추가돼요.</li>
+      <li>손가락으로 끌어 옮기고, 아래 도구 막대에서 이름·방향·크기를 바꿔요.</li>
+      <li>다 그리면 <b>이미지 저장</b>이나 <b>배치 코드 복사</b>로 보내 주세요.</li>
+    </ol>
+    <p class="hint">위치는 대략이면 충분해요. 이름은 실명 대신 직함이나 별명으로 적어도 됩니다. 그린 내용은 이 기기에만 자동 저장돼요.</p>
+  </section>
+
+  <section class="card settings">
+    <label>사무실 이름 <input type="text" id="oname" maxlength="20"></label>
+    <span>가로 <span class="stepper"><button data-s="c-">−</button><b id="cols"></b><button data-s="c+">+</button></span> 칸</span>
+    <span>세로 <span class="stepper"><button data-s="r-">−</button><b id="rows"></b><button data-s="r+">+</button></span> 칸</span>
+    <small>1칸 ≈ 0.7m · 직원 자리 하나 = 2×2칸</small>
+  </section>
+
+  <div class="palette"><div class="tabs" id="tabs"></div><div class="chips" id="chips"></div></div>
+
+  <div class="boardwrap"><div id="board"></div></div>
+  <div class="legend"><span><i></i>의자 쪽에 앉아 책상 쪽을 봐요</span><span style="color:var(--red)">빨간 테두리 = 겹침</span></div>
+
+  <section class="card check"><h3>들어가면 좋은 것</h3><div class="checklist" id="check"></div></section>
+
+  <div class="actions">
+    <button class="btn" id="undo" disabled>↶ 되돌리기</button>
+    <button class="btn" id="sample">예시 불러오기</button>
+    <button class="btn warn" id="clear">모두 지우기</button>
+    <button class="btn main" id="png">이미지 저장</button>
+    <button class="btn main" id="copy">배치 코드 복사</button>
+    <button class="btn" id="import">코드 불러오기</button>
+  </div>
+</main>
+
+<div class="toolbar" id="toolbar" hidden><div class="wrap">
+  <div class="tbrow"><span class="tname" id="tbtype"></span><input id="tblabel" maxlength="16" placeholder="이름 (예: 김주무관)"><button id="tbclose" aria-label="선택 해제">✕</button></div>
+  <div class="tbrow">
+    <button data-a="rot" id="tbrot">↻ 방향</button>
+    <span class="grp">가로<button data-a="w-">−</button><button data-a="w+">+</button></span>
+    <span class="grp">세로<button data-a="h-">−</button><button data-a="h+">+</button></span>
+    <span class="grp"><button data-a="l">←</button><button data-a="u">↑</button><button data-a="d">↓</button><button data-a="r">→</button></span>
+    <button data-a="dup">복제</button><button data-a="del" class="danger">삭제</button>
+  </div>
+</div></div>
+
+<div class="modal" id="modal" hidden><div class="box" id="mbox"></div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const TYPES={
+  me:{n:'내 자리',c:'자리',seat:1,w:2,h:2,col:'#f2c94c',ic:'★'},
+  boss:{n:'과장님',c:'자리',seat:1,w:2,h:2,col:'#e59a86',ic:'과'},
+  chief:{n:'계장님',c:'자리',seat:1,w:2,h:2,col:'#d6a6d0',ic:'계'},
+  staff:{n:'주무관',c:'자리',seat:1,w:2,h:2,col:'#a9c7e8',ic:'주'},
+  other:{n:'기타 직원',c:'자리',seat:1,w:2,h:2,col:'#bcd8ad',ic:'직'},
+  empty:{n:'빈 자리',c:'자리',seat:1,w:2,h:2,col:'#e6dfcd',ic:'·'},
+  meeting:{n:'회의 테이블',c:'가구',w:3,h:2,col:'#c9a271',ic:'🪑'},
+  cabinet:{n:'캐비닛',c:'가구',w:2,h:1,col:'#b9c0b2',ic:'🗄️'},
+  shelf:{n:'책장',c:'가구',w:2,h:1,col:'#b48d61',ic:'📚'},
+  counter:{n:'민원 창구',c:'가구',w:3,h:1,col:'#93b89e',ic:'🙋'},
+  wait:{n:'대기 의자',c:'가구',w:3,h:1,col:'#dccca5',ic:'💺'},
+  partition:{n:'칸막이',c:'가구',w:3,h:1,col:'#a3aaa1',ic:''},
+  sofa:{n:'소파',c:'가구',w:2,h:1,col:'#c7a9a0',ic:'🛋️'},
+  copier:{n:'복사기',c:'설비',w:1,h:1,col:'#cfd7dd',ic:'📠'},
+  printer:{n:'프린터',c:'설비',w:1,h:1,col:'#cfd7dd',ic:'🖨️'},
+  water:{n:'정수기',c:'설비',w:1,h:1,col:'#cde6f2',ic:'🚰'},
+  coffee:{n:'커피·탕비',c:'설비',w:1,h:1,col:'#e2cdb3',ic:'☕'},
+  fridge:{n:'냉장고',c:'설비',w:1,h:1,col:'#dfe7ea',ic:'🧊'},
+  shredder:{n:'파쇄기',c:'설비',w:1,h:1,col:'#d8d2c4',ic:'✂️'},
+  trash:{n:'분리수거함',c:'설비',w:1,h:1,col:'#cfe0c5',ic:'♻️'},
+  safe:{n:'금고',c:'설비',w:1,h:1,col:'#a9a9a9',ic:'🔐'},
+  aircon:{n:'에어컨',c:'설비',w:1,h:1,col:'#e5f0f5',ic:'❄️'},
+  plant:{n:'화분',c:'설비',w:1,h:1,col:'#cfe3c0',ic:'🪴'},
+  board:{n:'게시판',c:'설비',w:2,h:1,col:'#e3c995',ic:'📌'},
+  tv:{n:'TV·모니터',c:'설비',w:2,h:1,col:'#c3c9d1',ic:'📺'},
+  door:{n:'출입문',c:'건물·기타',w:2,h:1,col:'#a8804f',ic:'🚪'},
+  window:{n:'창문',c:'건물·기타',w:3,h:1,col:'#bfe0ea',ic:''},
+  wall:{n:'벽',c:'건물·기타',w:1,h:3,col:'#6d5f45',ic:''},
+  pillar:{n:'기둥',c:'건물·기타',w:1,h:1,col:'#5c5446',ic:''},
+  text:{n:'메모',c:'건물·기타',w:2,h:1,col:'#fff3b8',ic:'✏️'}
+};
+const CATS=['자리','가구','설비','건물·기타'];
+const DIRS=['up','right','down','left'];
+const NOCHECK=new Set(['door','window','wall','text']);
+const KEY='office-layout-v1';
+const $=id=>document.getElementById(id);
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const uid=()=>Math.random().toString(36).slice(2,9);
+let state,sel=null,hist=[],cat='자리',cell=24,drag=null,toastT;
+
+function mk(type,x,y,o={}){const t=TYPES[type];return {id:uid(),type,x,y,w:o.w||t.w,h:o.h||t.h,dir:o.dir||'up',label:o.label??t.n};}
+function example(){
+  const I=[
+    mk('window',2,0,{w:4}),mk('window',8,0,{w:4}),mk('board',11,1),
+    mk('boss',6,1,{dir:'down'}),
+    mk('chief',1,4,{dir:'right'}),mk('staff',3,3,{dir:'down'}),mk('staff',5,3,{dir:'down'}),mk('staff',3,5,{dir:'up'}),mk('staff',5,5,{dir:'up'}),
+    mk('chief',12,4,{dir:'left'}),mk('staff',8,3,{dir:'down'}),mk('staff',10,3,{dir:'down'}),mk('staff',8,5,{dir:'up'}),mk('empty',10,5,{dir:'up'}),
+    mk('pillar',7,8),
+    mk('chief',1,10,{dir:'right'}),mk('me',3,9,{dir:'down'}),mk('staff',5,9,{dir:'down'}),mk('staff',3,11,{dir:'up'}),mk('staff',5,11,{dir:'up'}),
+    mk('cabinet',8,9),mk('cabinet',10,9),mk('shelf',12,9),
+    mk('printer',8,12),mk('copier',12,12),mk('meeting',9,13),mk('water',13,14),mk('shredder',13,12),
+    mk('counter',3,15,{w:4}),mk('wait',3,17),mk('door',0,17),mk('plant',13,17),mk('coffee',12,17)
+  ];
+  return {name:'생활보장과',cols:14,rows:18,items:I};
+}
+function valid(s){return s&&Array.isArray(s.items)&&s.cols>=4&&s.rows>=4&&s.items.every(i=>TYPES[i.type]);}
+function load(){try{const s=JSON.parse(localStorage.getItem(KEY));if(valid(s))return s;}catch(e){}return example();}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}}
+function snap(){hist.push(JSON.stringify(state));if(hist.length>60)hist.shift();$('undo').disabled=false;}
+function undo(){if(!hist.length)return;state=JSON.parse(hist.pop());sel=null;$('undo').disabled=!hist.length;save();renderAll();toast('되돌렸어요');}
+function find(id){return state.items.find(i=>i.id===id);}
+function toast(m){const t=$('toast');t.textContent=m;t.classList.add('show');clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove('show'),1600);}
+
+function hit(a,b){return a.x<b.x+b.w&&b.x<a.x+a.w&&a.y<b.y+b.h&&b.y<a.y+a.h;}
+function overlapSet(){const s=new Set(),L=state.items.filter(i=>!NOCHECK.has(i.type));
+  for(let i=0;i<L.length;i++)for(let j=i+1;j<L.length;j++)if(hit(L[i],L[j])){s.add(L[i].id);s.add(L[j].id);}return s;}
+
+/* ---------- render ---------- */
+function renderTabs(){
+  $('tabs').innerHTML=CATS.map(c=>`<button class="${c===cat?'on':''}" data-c="${c}">${c}</button>`).join('');
+  $('chips').innerHTML=Object.entries(TYPES).filter(([,t])=>t.c===cat).map(([k,t])=>`<button class="chip" data-t="${k}"><i style="background:${t.col}">${t.ic||''}</i>${t.n}</button>`).join('');
+}
+function layoutBoard(){
+  const b=$('board'),avail=b.parentElement.clientWidth-6;
+  cell=Math.max(16,Math.min(44,Math.floor(avail/state.cols)));
+  b.style.width=cell*state.cols+'px';b.style.height=cell*state.rows+'px';
+  b.style.backgroundSize=`${cell}px ${cell}px`;b.style.setProperty('--cell',cell+'px');
+}
+function itemHTML(it,bad,isNew){
+  const t=TYPES[it.type];
+  const st=`left:${it.x*cell}px;top:${it.y*cell}px;width:${it.w*cell}px;height:${it.h*cell}px;`;
+  const cls=`item k-${it.type}${t.seat?' seat d-'+it.dir:''}${sel===it.id?' sel':''}${bad?' bad':''}${isNew?' new':''}`;
+  if(t.seat)return `<div class="${cls}" data-id="${it.id}" style="${st}" title="${esc(it.label)}"><div class="desk" style="background:${t.col}"><span>${esc(it.label)}</span></div><div class="chair"></div></div>`;
+  const tiny=it.w*it.h<=1&&t.ic;
+  return `<div class="${cls}${it.h===1&&it.w>1?' row':''}" data-id="${it.id}" style="${st}background:${t.col}" title="${esc(it.label)}">${t.ic?`<b class="ic">${t.ic}</b>`:''}${tiny?'':`<span>${esc(it.label)}</span>`}</div>`;
+}
+function renderBoard(newId){
+  layoutBoard();const bad=overlapSet();
+  $('board').innerHTML=state.items.map(it=>itemHTML(it,bad.has(it.id),it.id===newId)).join('');
+}
+function renderToolbar(){
+  const it=sel&&find(sel),tb=$('toolbar');
+  if(!it){tb.hidden=true;return;}
+  tb.hidden=false;const t=TYPES[it.type];
+  $('tbtype').textContent=t.n;
+  if(document.activeElement!==$('tblabel'))$('tblabel').value=it.label;
+  $('tbrot').textContent=t.seat?'↻ 방향':'↻ 회전';
+}
+function renderCheck(){
+  const want=[['me','내 자리'],['boss','과장님'],['chief','계장님'],['staff','주무관'],['door','출입문'],['window','창문'],['copier','복사기'],['printer','프린터'],['water','정수기'],['counter','민원 창구'],['cabinet','캐비닛'],['meeting','회의 테이블']];
+  $('check').innerHTML=want.map(([k,n])=>{const c=state.items.filter(i=>i.type===k).length;return `<span class="${c?'ok':''}">${c?'✓':'○'} ${n}${c>1?' '+c:''}</span>`;}).join('');
+}
+function renderAll(newId){
+  $('oname').value=state.name;$('cols').textContent=state.cols;$('rows').textContent=state.rows;
+  renderTabs();renderBoard(newId);renderToolbar();renderCheck();
+}
+
+/* ---------- edit ---------- */
+function freeSpot(w,h){
+  const L=state.items.filter(i=>!NOCHECK.has(i.type));
+  const cx=Math.floor((state.cols-w)/2),cy=Math.floor((state.rows-h)/2);
+  const cand=[];for(let y=0;y<=state.rows-h;y++)for(let x=0;x<=state.cols-w;x++)cand.push({x,y,d:Math.abs(x-cx)+Math.abs(y-cy)});
+  cand.sort((a,b)=>a.d-b.d);
+  for(const c of cand){const r={x:c.x,y:c.y,w,h};if(!L.some(i=>hit(i,r)))return c;}
+  return {x:0,y:0};
+}
+function add(type){
+  const t=TYPES[type];
+  if(type==='me'){const ex=state.items.find(i=>i.type==='me');if(ex){sel=ex.id;renderBoard();renderToolbar();toast('내 자리는 하나만 둘 수 있어요');return;}}
+  snap();
+  const w=Math.min(t.w,state.cols),h=Math.min(t.h,state.rows),p=NOCHECK.has(type)?{x:0,y:0}:freeSpot(w,h);
+  const it=mk(type,p.x,p.y,{w,h});state.items.push(it);sel=it.id;save();
+  renderBoard(it.id);renderToolbar();renderCheck();
+  const el=document.querySelector(`[data-id="${it.id}"]`);el&&el.scrollIntoView({block:'nearest',behavior:'smooth'});
+}
+function fit(it){it.w=clamp(it.w,1,state.cols);it.h=clamp(it.h,1,state.rows);it.x=clamp(it.x,0,state.cols-it.w);it.y=clamp(it.y,0,state.rows-it.h);}
+function act(a){
+  const it=sel&&find(sel);if(!it)return;
+  if(a==='del'){snap();state.items=state.items.filter(i=>i!==it);sel=null;save();renderBoard();renderToolbar();renderCheck();return;}
+  if(a==='dup'){
+    if(it.type==='me'){toast('내 자리는 복제할 수 없어요');return;}
+    snap();const c={...it,id:uid()};const p=freeSpot(c.w,c.h);c.x=p.x;c.y=p.y;state.items.push(c);sel=c.id;save();renderBoard(c.id);renderCheck();return;
+  }
+  snap();
+  if(a==='rot'){
+    if(TYPES[it.type].seat)it.dir=DIRS[(DIRS.indexOf(it.dir)+1)%4];
+    [it.w,it.h]=TYPES[it.type].seat&&it.w===it.h?[it.w,it.h]:[it.h,it.w];
+  }
+  if(a==='w-')it.w--; if(a==='w+')it.w++; if(a==='h-')it.h--; if(a==='h+')it.h++;
+  if(a==='l')it.x--; if(a==='r')it.x++; if(a==='u')it.y--; if(a==='d')it.y++;
+  fit(it);save();renderBoard();
+}
+function resizeRoom(k){
+  snap();
+  if(k==='c-')state.cols--; if(k==='c+')state.cols++; if(k==='r-')state.rows--; if(k==='r+')state.rows++;
+  state.cols=clamp(state.cols,6,30);state.rows=clamp(state.rows,6,30);
+  state.items.forEach(fit);save();renderAll();
+}
+
+/* ---------- pointer drag ---------- */
+const board=$('board');
+board.addEventListener('pointerdown',e=>{
+  const el=e.target.closest('.item');
+  if(!el){if(sel){sel=null;renderBoard();renderToolbar();}return;}
+  e.preventDefault();
+  const it=find(el.dataset.id);if(!it)return;
+  if(sel!==it.id){document.querySelectorAll('#board .item.sel').forEach(x=>x.classList.remove('sel'));el.classList.add('sel');sel=it.id;renderToolbar();}
+  drag={it,el,px:e.clientX,py:e.clientY,ox:it.x,oy:it.y,before:JSON.stringify(state),moved:false};
+  try{board.setPointerCapture(e.pointerId);}catch(_){}
+});
+board.addEventListener('pointermove',e=>{
+  if(!drag)return;
+  const nx=clamp(drag.ox+Math.round((e.clientX-drag.px)/cell),0,state.cols-drag.it.w);
+  const ny=clamp(drag.oy+Math.round((e.clientY-drag.py)/cell),0,state.rows-drag.it.h);
+  if(nx!==drag.it.x||ny!==drag.it.y){drag.it.x=nx;drag.it.y=ny;drag.moved=true;drag.el.style.left=nx*cell+'px';drag.el.style.top=ny*cell+'px';}
+});
+function endDrag(){
+  if(!drag)return;
+  if(drag.moved){hist.push(drag.before);if(hist.length>60)hist.shift();$('undo').disabled=false;save();renderBoard();}
+  drag=null;
+}
+board.addEventListener('pointerup',endDrag);board.addEventListener('pointercancel',endDrag);
+
+/* ---------- export / import ---------- */
+function code(){return JSON.stringify({v:1,name:state.name,cols:state.cols,rows:state.rows,items:state.items.map(i=>[i.type,i.x,i.y,i.w,i.h,i.dir,i.label])});}
+function parseCode(txt){
+  const o=JSON.parse(String(txt).trim());
+  if(!o||o.v!==1||!Array.isArray(o.items))throw new Error('형식이 달라요');
+  const s={name:String(o.name||'사무실').slice(0,20),cols:clamp(+o.cols|0,6,30),rows:clamp(+o.rows|0,6,30),items:[]};
+  o.items.forEach(a=>{if(!Array.isArray(a)||!TYPES[a[0]])return;
+    const it={id:uid(),type:a[0],x:+a[1]|0,y:+a[2]|0,w:+a[3]|0||1,h:+a[4]|0||1,dir:DIRS.includes(a[5])?a[5]:'up',label:String(a[6]??TYPES[a[0]].n).slice(0,16)};
+    s.items.push(it);});
+  state=s;state.items.forEach(fit);return s;
+}
+function modal(html){$('mbox').innerHTML=html;$('modal').hidden=false;}
+function closeModal(){$('modal').hidden=true;}
+$('modal').addEventListener('click',e=>{if(e.target.id==='modal'||e.target.dataset.close!==undefined)closeModal();});
+
+async function copyText(t,area){
+  try{await navigator.clipboard.writeText(t);return true;}catch(e){}
+  try{area.focus();area.select();return document.execCommand('copy');}catch(e){return false;}
+}
+function showCode(){
+  const c=code();
+  modal(`<h2>배치 코드</h2><p style="font-size:14px;margin:0 0 8px">아래 코드를 복사해서 대화창에 붙여 넣어 주세요. 이 코드로 게임 속 사무실을 똑같이 만들 수 있어요.</p><textarea id="codearea" readonly>${esc(c)}</textarea><div class="row"><button class="btn main" id="docopy">복사하기</button><button class="btn" data-close>닫기</button></div>`);
+  $('docopy').onclick=async()=>{const ok=await copyText(c,$('codearea'));toast(ok?'복사했어요':'길게 눌러 직접 복사해 주세요');};
+}
+function showImport(){
+  modal(`<h2>코드 불러오기</h2><p style="font-size:14px;margin:0 0 8px">전에 복사한 배치 코드를 붙여 넣으세요. 지금 배치는 바뀌지만 ‘되돌리기’로 돌아올 수 있어요.</p><textarea id="imparea" placeholder='{"v":1, ...}'></textarea><div class="row"><button class="btn main" id="doimp">불러오기</button><button class="btn" data-close>닫기</button></div>`);
+  $('doimp').onclick=()=>{const before=JSON.stringify(state);try{parseCode($('imparea').value);hist.push(before);$('undo').disabled=false;sel=null;save();renderAll();closeModal();toast('불러왔어요');}catch(e){state=JSON.parse(before);toast('코드를 읽을 수 없어요');}};
+}
+
+function drawPNG(){
+  const S=44,pad=20,top=54,legendH=40,W=state.cols*S+pad*2,H=state.rows*S+top+pad+legendH;
+  const cv=document.createElement('canvas');cv.width=W*2;cv.height=H*2;const g=cv.getContext('2d');g.scale(2,2);
+  const F='"Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",sans-serif';
+  g.fillStyle='#f3eddc';g.fillRect(0,0,W,H);
+  g.fillStyle='#2c3628';g.font=`800 20px ${F}`;g.textBaseline='middle';g.fillText(state.name+' 배치도',pad,26);
+  g.font=`500 12px ${F}`;g.fillStyle='#646b5a';g.textAlign='right';g.fillText(`${state.cols}×${state.rows}칸 · 1칸≈0.7m`,W-pad,27);g.textAlign='left';
+  const ox=pad,oy=top;
+  g.fillStyle='#f6f0dd';g.fillRect(ox,oy,state.cols*S,state.rows*S);
+  g.strokeStyle='#e3d8b8';g.lineWidth=1;
+  for(let x=0;x<=state.cols;x++){g.beginPath();g.moveTo(ox+x*S+.5,oy);g.lineTo(ox+x*S+.5,oy+state.rows*S);g.stroke();}
+  for(let y=0;y<=state.rows;y++){g.beginPath();g.moveTo(ox,oy+y*S+.5);g.lineTo(ox+state.cols*S,oy+y*S+.5);g.stroke();}
+  g.strokeStyle='#7d6d4b';g.lineWidth=3;g.strokeRect(ox-1.5,oy-1.5,state.cols*S+3,state.rows*S+3);
+  const order=it=>TYPES[it.type].seat?2:NOCHECK.has(it.type)?0:1;
+  const text=(t,x,y,max,size,weight=700,color='#2c3628')=>{g.font=`${weight} ${size}px ${F}`;g.fillStyle=color;g.textAlign='center';g.textBaseline='middle';let s=t;while(s.length>1&&g.measureText(s).width>max)s=s.slice(0,-1);if(s!==t)s=s.slice(0,-1)+'…';g.fillText(s,x,y);g.textAlign='left';};
+  [...state.items].sort((a,b)=>order(a)-order(b)).forEach(it=>{
+    const t=TYPES[it.type],x=ox+it.x*S,y=oy+it.y*S,w=it.w*S,h=it.h*S;
+    if(t.seat){
+      g.fillStyle='rgba(255,255,255,.4)';g.fillRect(x+1,y+1,w-2,h-2);
+      let d={x:x+w*.05,y:y+h*.05,w:w*.9,h:h*.52},c={x:x+w/2,y:y+h*.76};
+      if(it.dir==='down'){d={x:x+w*.05,y:y+h*.43,w:w*.9,h:h*.52};c={x:x+w/2,y:y+h*.24};}
+      if(it.dir==='left'){d={x:x+w*.05,y:y+h*.05,w:w*.52,h:h*.9};c={x:x+w*.76,y:y+h/2};}
+      if(it.dir==='right'){d={x:x+w*.43,y:y+h*.05,w:w*.52,h:h*.9};c={x:x+w*.24,y:y+h/2};}
+      g.fillStyle=t.col;g.fillRect(d.x,d.y,d.w,d.h);g.strokeStyle='rgba(40,30,10,.55)';g.lineWidth=1.5;g.strokeRect(d.x,d.y,d.w,d.h);
+      g.beginPath();g.arc(c.x,c.y,S*.3,0,Math.PI*2);g.fillStyle='#4b5563';g.fill();g.lineWidth=2;g.strokeStyle='#fff';g.stroke();
+      text((it.type==='me'?'★':'')+it.label,d.x+d.w/2,d.y+d.h/2,d.w-4,12,800);
+    }else{
+      g.fillStyle=t.col;g.fillRect(x+1,y+1,w-2,h-2);g.strokeStyle='rgba(40,30,10,.5)';g.lineWidth=1.5;g.strokeRect(x+1,y+1,w-2,h-2);
+      const light=it.type==='wall'||it.type==='pillar'?'#f3ecd2':'#2c3628';
+      if(t.ic){text(t.ic,x+w/2,y+h/2-(h>=S?7:5),w,Math.min(20,h*.45),400);text(it.label,x+w/2,y+h/2+(h>=S?12:9),w-4,10.5,700,light);}
+      else text(it.label,x+w/2,y+h/2,w-4,11,700,light);
+    }
+  });
+  const roles=['me','boss','chief','staff','other','empty'];let lx=pad;const ly=oy+state.rows*S+pad+8;
+  roles.forEach(k=>{const t=TYPES[k];g.fillStyle=t.col;g.fillRect(lx,ly-7,14,14);g.strokeStyle='rgba(0,0,0,.3)';g.lineWidth=1;g.strokeRect(lx,ly-7,14,14);g.font=`700 12px ${F}`;g.fillStyle='#2c3628';g.textBaseline='middle';g.fillText(t.n,lx+19,ly);lx+=g.measureText(t.n).width+36;});
+  g.font=`500 11px ${F}`;g.fillStyle='#646b5a';g.fillText('● 의자 쪽에 앉아 책상 쪽을 바라봄',pad,ly+18);
+  return cv;
+}
+function savePNG(){
+  sel=null;renderBoard();renderToolbar();
+  const cv=drawPNG(),url=cv.toDataURL('image/png'),name=(state.name||'사무실')+'_배치도.png';
+  try{const a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();}catch(e){}
+  modal(`<h2>배치도 이미지</h2><p style="font-size:14px;margin:0">자동으로 저장되지 않으면 아래 이미지를 <b>길게 눌러 저장</b>하세요.</p><img src="${url}" alt="${esc(name)}"><div class="row"><button class="btn" data-close>닫기</button></div>`);
+}
+
+/* ---------- wiring ---------- */
+$('tabs').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;cat=b.dataset.c;renderTabs();});
+$('chips').addEventListener('click',e=>{const b=e.target.closest('.chip');if(b)add(b.dataset.t);});
+$('toolbar').addEventListener('click',e=>{const b=e.target.closest('button[data-a]');if(b)act(b.dataset.a);});
+$('tbclose').onclick=()=>{sel=null;renderBoard();renderToolbar();};
+$('tblabel').addEventListener('focus',()=>snap());
+$('tblabel').addEventListener('input',e=>{const it=sel&&find(sel);if(!it)return;it.label=e.target.value.slice(0,16)||TYPES[it.type].n;save();renderBoard();});
+document.querySelector('.settings').addEventListener('click',e=>{const b=e.target.closest('button[data-s]');if(b)resizeRoom(b.dataset.s);});
+$('oname').addEventListener('input',e=>{state.name=e.target.value.slice(0,20);save();});
+$('undo').onclick=undo;
+$('sample').onclick=()=>{if(!confirm('예시 배치로 바꿀까요? ‘되돌리기’로 돌아올 수 있어요.'))return;snap();state=example();sel=null;save();renderAll();};
+$('clear').onclick=()=>{if(!confirm('배치를 모두 지울까요? ‘되돌리기’로 돌아올 수 있어요.'))return;snap();state={name:state.name,cols:state.cols,rows:state.rows,items:[]};sel=null;save();renderAll();};
+$('png').onclick=savePNG;$('copy').onclick=showCode;$('import').onclick=showImport;
+document.addEventListener('keydown',e=>{
+  if(e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA')return;
+  if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='z'){e.preventDefault();undo();return;}
+  const m={ArrowLeft:'l',ArrowRight:'r',ArrowUp:'u',ArrowDown:'d',Delete:'del',Backspace:'del',r:'rot',R:'rot'}[e.key];
+  if(m&&sel){e.preventDefault();act(m);}
+  if(e.key==='Escape'){closeModal();sel=null;renderBoard();renderToolbar();}
+});
+let rT;window.addEventListener('resize',()=>{clearTimeout(rT);rT=setTimeout(renderBoard,120);});
+
+state=load();renderAll();
+</script>
+</body>
+</html>

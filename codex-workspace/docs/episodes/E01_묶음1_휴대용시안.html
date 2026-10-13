@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>홍보물 200부 · 예산과 공문 작업대</title><style>:root{--cream:#f4eedb;--paper:#fffaf0;--ink:#2c3628;--muted:#73755f;--line:#c9bc94;--green:#3f5f3a;--leaf:#7fae6a;--gold:#d6a93c;--red:#b4472f;--blue:#3d5f9e;--wood:#8a6239}
+*{box-sizing:border-box}body{margin:0;background:#1f2a1b;background-image:radial-gradient(ellipse at 50% 30%,#47603b66,transparent 70%),repeating-linear-gradient(115deg,transparent 0 70px,#ffffff02 70px 72px);color:var(--cream);font:14px/1.45 'Malgun Gothic','Apple SD Gothic Neo',system-ui,sans-serif}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer;color:var(--ink);border:1.5px solid #b3a477;background:var(--cream);border-radius:8px;min-height:44px;touch-action:manipulation}button:hover:not(:disabled){filter:brightness(1.05)}button:active:not(:disabled){transform:translateY(2px);box-shadow:none}button:focus-visible,a:focus-visible{outline:3px solid #356dae;outline-offset:3px}button:disabled{opacity:.45;cursor:default}a{color:#ddd8bb;text-decoration:none}h1,h2,h3,p{margin:0}.outside{max-width:760px;margin:14px auto 10px;display:flex;align-items:center;justify-content:space-between;gap:14px;font-size:12px;color:#c9cdb6;padding:0 5px}.outside button{min-height:30px;background:#34462d;border-color:#516348;color:var(--cream);padding:3px 10px}.outside>span{flex:1;text-align:center}.foot{margin:10px auto;font-size:11px}.game{width:calc(100% - 24px);max-width:760px;height:calc(100dvh - 106px);min-height:650px;max-height:890px;margin:auto;background:#4b6744;border:7px solid #11180e;border-radius:23px;box-shadow:0 22px 60px #0005,inset 0 1px #819273;display:flex;flex-direction:column;padding:11px;gap:8px}.game-head{display:flex;gap:10px;align-items:center;background:#2f4129;padding:9px 12px;border-radius:12px;color:var(--cream);flex-shrink:0}.crest{font-size:23px;font-weight:900;background:#dbdfae;color:#34462d;width:40px;height:40px;display:grid;place-items:center;border-radius:12px;box-shadow:0 3px 0 #11180e55}.heading{flex:1}.heading small{display:block;opacity:.75;font-size:11px}h1{font-size:21px;line-height:1.3;letter-spacing:-.5px}.stage-tag{padding:5px 9px;border:1px solid #96ab7a77;border-radius:7px;font-weight:bold;font-size:12px}.chapter-track{display:flex;gap:5px;padding:0 4px;flex-shrink:0}.chapter-track i{height:3px;border-radius:4px;background:#32482c;flex:1}.chapter-track i.active{background:#e6bd58}.brief{background:#2f4129;color:#e8f0dc;border-radius:9px;padding:9px 11px;font-size:13px;display:flex;gap:8px;align-items:center;flex-shrink:0}.brief b{color:#f6df84}.brief .speech-icon{width:24px;height:24px;background:#b8c993;border-radius:50%;flex-shrink:0;display:grid;place-items:center;color:#334b2d;font-weight:900}.board{flex:1;min-height:0;background:var(--cream);border-radius:13px;color:var(--ink);position:relative;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#b3a477 transparent}.message{min-height:38px;flex-shrink:0;background:#e6dfb4;color:#4a4a2e;border-radius:7px;font-size:12px;padding:7px 10px;display:flex;align-items:center}.message.error{background:#f5d8c4;color:#85341f;border-left:4px solid var(--red)}.controls{display:flex;gap:7px;flex-shrink:0}.controls button{min-height:49px;box-shadow:0 3px 0 #263b21;font-size:19px;min-width:64px}.controls button small{display:block;font-size:10px;line-height:1.2;font-weight:700}.controls .primary{flex:1;font-size:15px;font-weight:900}.primary{background:#3f5f3a;color:var(--cream);border-color:#2a3f26}.controls .primary{background:linear-gradient(#557c46,#3f5f3a);border:1px solid #8ba270;box-shadow:0 3px 0 #1c321a}.budget-scene{padding:12px;display:flex;flex-direction:column;gap:10px;min-height:100%}.budget-hud{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;border-radius:8px;background:#e4dcc4;border:1px solid #cfbf98;padding:6px}.budget-hud div{text-align:center;border-right:1px solid #c6b790;font-size:11px;color:#656746}.budget-hud div:last-child{border:0}.budget-hud strong{display:block;color:var(--ink);font-size:22px;line-height:1.2}.budget-hud .free strong{color:#9c711e}.budget-hud em{font-style:normal;font-size:11px;font-weight:normal}.allocation-bar{display:flex;height:7px;border-radius:4px;overflow:hidden;background:#d2c8a8}.allocation-bar i{display:block;transition:width .25s}.allocation-bar .printing{background:#5c8050}.allocation-bar .support{background:#688aae}.allocation-bar .free{background:#ddbb62}.desk-label{display:flex;justify-content:space-between;font-size:11px;font-weight:700;color:#6b705c;align-items:center}.desk-label span{font-weight:normal}.printing-card{position:relative;background:linear-gradient(120deg,#ece6ca,#fff8e6);border:2px solid #6b8855;border-radius:10px;box-shadow:0 4px 0 #a49870;display:grid;grid-template-columns:130px 1fr;min-height:152px;overflow:hidden}.printing-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:4px;background:#88a465}.print-art{position:relative;display:grid;place-items:center;background:#b4c99455;border-right:1px solid #bcc797}.print-art svg{width:104px;height:95px}.print-art .quantity-tag{position:absolute;bottom:11px;left:26px;background:#47663f;color:#fff5dc;border-radius:5px;padding:3px 8px;font-size:12px;font-weight:800;transform:rotate(-5deg)}.print-work{padding:10px 12px}.print-work h2{font-size:16px}.print-work .meta{font-size:11px;color:#72715b;margin:2px 0 7px}.chip-piles{display:flex;align-items:center;gap:6px;min-height:43px}.coin{display:inline-grid;place-items:center;width:35px;height:35px;border:2px solid #a3751f;border-radius:50%;background:radial-gradient(circle at 32% 25%,#ffed98,#d8a53c);box-shadow:inset 0 0 0 3px #ecc863,0 3px 0 #936728;color:#694712;font-size:13px;font-weight:900}.coin.stack{box-shadow:inset 0 0 0 3px #ecc863,0 3px 0 #936728,0 6px 0 #d2a34d,0 8px 0 #936728;transform:translateY(-3px)}.chip-piles .ghost{width:35px;height:35px;border-radius:50%;border:2px dashed #beb895;background:#e5dfc6;color:#a1a47b;display:grid;place-items:center}.print-controls{display:flex;align-items:center;gap:6px;margin-top:7px}.print-controls button{min-width:44px;min-height:44px;font-size:18px;font-weight:700;padding:0 10px;background:#fffaf0}.print-controls .allocate{font-size:13px;flex:1;background:#3f5f3a;color:var(--cream);border-color:#324a2e}.print-count{font-size:13px;margin-left:auto;font-weight:bold;white-space:nowrap}.print-count span{color:#77795e;font-weight:normal;font-size:11px}.reserve-box{display:flex;gap:8px;align-items:center;border:1px dashed #aa9768;border-radius:7px;padding:7px 9px;background:#e8d9b044}.reserve-icon{font-size:20px}.reserve-box b{font-size:12px}.reserve-box small{display:block;font-size:10px;color:#777158}.reserve-box .reserve-num{margin-left:auto;font-size:18px;font-weight:900;color:#996d1d}.support-deck{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.support-card{position:relative;padding:7px 5px;display:flex;flex-direction:column;align-items:center;gap:3px;background:#fffaf0;border:1.5px solid #c8be9d;box-shadow:0 3px 0 #bfb08d;min-height:115px;transition:background .15s}.support-card.chosen{background:#dce7c6;border:2px solid #66844e;padding:6.5px 4.5px}.support-card svg{height:39px;width:62px}.support-card b{font-size:12px}.support-card .effect{font-size:10px;color:#72745b}.support-card .select-state{font-size:10px;color:#6a6c52;font-weight:700}.support-card.chosen .select-state{color:#345b29}.cost-tag{position:absolute;top:5px;right:5px;background:#ebd28d;color:#70531d;border:1px solid #cab375;font-size:10px;padding:1px 4px;border-radius:5px}.quote-note{margin-top:auto;background:#f6e27a;border:1px solid #d9bf5a;border-radius:7px;padding:9px 10px;display:flex;gap:9px;align-items:center;min-height:60px;box-shadow:0 2px 0 #c9b76955}.quote-note .phone-icon{font-size:23px}.quote-note b{display:block;font-size:12px}.quote-note p{font-size:11px}.quote-note button{margin-left:auto;min-width:84px;padding:5px 8px;font-size:12px;background:#fff7d9;font-weight:700}.quote-note button:disabled{opacity:1;color:#8b7360;background:#edddac}.quote-note.bad{background:#f4d2b8;border-color:#d4a080}.quote-note .quote-copy{flex:1}.doc-scene{padding:12px;display:flex;flex-direction:column;gap:9px;min-height:100%}.desk-mat{position:relative;padding:15px 13px 12px;background:repeating-linear-gradient(0deg,#a17a4a 0 22px,#9b7444 22px 23px,#a47e50 23px 45px);border:3px solid #71532e;border-radius:9px;box-shadow:inset 0 2px 6px #57381155;flex:1}.paper{position:relative;background:var(--paper);padding:14px 15px 12px;box-shadow:4px 5px 0 #69472166,-2px -2px 0 #e5dcc5;transform:rotate(-.35deg);border:1px solid #bdb79d;max-width:580px;margin:auto}.paper::before{content:'';position:absolute;top:-14px;left:40%;width:20%;height:23px;border:4px solid #8a9290;background:linear-gradient(#b8c0b5,#788676);border-radius:6px;box-shadow:0 2px 1px #0004}.paper-header{display:flex;align-items:center;gap:8px;border-bottom:2px solid #59624f;padding-bottom:7px;margin-bottom:7px}.paper-header .doc-mark{display:grid;place-items:center;width:28px;height:28px;background:#e2e9cd;border-radius:50%;font-weight:900;color:#4c6540}.paper-header b{font-size:15px;letter-spacing:3px}.paper-header small{margin-left:auto;font-size:10px;color:#747961}.approval-strip{display:flex;justify-content:flex-end;gap:0;margin-bottom:6px}.approval-strip span{border:1px solid #b5b7a5;font-size:9px;text-align:center;min-width:39px;padding:2px 5px;color:#80856e}.approval-strip .own{color:#4e6345;background:#e2e9cd}.doc-to{font-size:10px;color:#5b6452}.doc-title{font-size:13px;border-bottom:1px solid #a1a88f;padding:5px 0 7px;margin-bottom:4px;font-weight:700}.doc-line{font-size:11px;margin-bottom:5px;color:#5a634f}.edit-row{display:grid;grid-template-columns:57px 1fr;align-items:center;gap:7px;margin-top:5px}.edit-row>label{font-size:11px;font-weight:700}.field{display:flex;align-items:center;justify-content:space-between;width:100%;padding:6px 10px;background:#f3eddc;border:1.5px dashed #b6a365;border-radius:5px;min-height:45px;font-size:16px;font-weight:700}.field small{font-size:10px;color:#7f744c;font-weight:normal}.field.touched{background:#e9efdc;border:1.5px solid #91a779}.field.active{background:#fff0a8;outline:2px solid #c8a644;outline-offset:1px}.field.bad{border:2px solid #b4472f;background:#fce6d9;color:#993b26}.field.bad small{color:#993b26}.calc-line{font-size:11px;text-align:right;color:#73765c;padding:7px 0 4px}.attachments-label{display:flex;align-items:center;justify-content:space-between;font-size:11px;font-weight:700;border-top:1px solid #cccbb7;padding:6px 0 5px}.attachments-label small{font-size:10px;color:#767b64;font-weight:normal}.attachment-row{display:grid;grid-template-columns:1fr 1fr;gap:6px}.attachment{position:relative;border-radius:3px;min-height:48px;display:flex;align-items:center;gap:6px;text-align:left;font-size:11px;padding:6px;background:#f0e8d3;border:1.5px dashed #b8a97b;line-height:1.25}.attachment .clip{font-size:20px;color:#8f9a90}.attachment small{font-size:10px;color:#8a7c5d;display:block}.attachment.touched{border-style:solid;border-color:#91a779;background:#e9efdc}.attachment.active{outline:2px solid #c8a644;outline-offset:1px}.attachment.bad{border:2px solid #b4472f;background:#fce6d9}.paper-end{font-size:10px;color:#7f846e;text-align:right;margin-top:6px}.evidence-dock{border:1.5px solid #bdae84;background:#ebe0c1;border-radius:8px;padding:9px 10px;box-shadow:0 3px 0 #c5b795;min-height:90px}.dock-heading{font-size:12px;font-weight:bold;display:flex;gap:8px;align-items:center;margin-bottom:6px}.dock-heading span{flex:1}.dock-heading button{min-width:44px;min-height:32px;font-size:17px;border:0;background:transparent}.dock-help{font-size:11px;color:#6b6f53}.source-index{display:flex;gap:5px;margin-top:7px}.source-index span{border:1px solid #c2b487;background:#fff7df;border-radius:3px;padding:4px 7px;font-size:10px;flex:1;text-align:center}.source-choices{display:grid;grid-template-columns:1fr 1fr;gap:7px}.source{background:#fffaf0;border:1px solid #b5b394;box-shadow:2px 2px 0 #b6a77e;text-align:left;padding:8px;min-height:85px;position:relative;border-radius:4px}.source b{display:block;font-size:11px}.source .value{display:block;font-size:16px;font-weight:900;color:#354b30;margin:4px 0}.source small{display:block;font-size:10px;color:#75755f}.source .use{position:absolute;right:5px;bottom:5px;font-size:10px;color:#607a4f}.source:focus-visible{outline-offset:1px}.complete-scene{min-height:100%;padding:25px 18px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:16px;background:radial-gradient(ellipse,#fef7da,#eee5c9)}.stars{font-size:35px;color:#bf8e2c;letter-spacing:10px}.folder{position:relative;width:180px;height:130px;background:#d9b66f;border:3px solid #aa803d;border-radius:4px 10px 10px 10px;box-shadow:5px 8px 0 #b3a27a55;display:grid;place-items:center;transform:rotate(-4deg)}.folder::before{content:'';position:absolute;left:-3px;top:-15px;width:78px;height:19px;background:#d9b66f;border:3px solid #aa803d;border-bottom:0;border-radius:5px 7px 0 0}.folder-label{background:#fffaf0;padding:12px 18px;border:1px solid #b9ad86;font-size:12px}.seal{font-size:22px;border:3px double #b4472f;color:#b4472f;padding:5px;transform:rotate(-10deg);border-radius:5px;margin:5px auto;width:94px;animation:stamp .35s both}.complete-scene h2{font-size:23px}.complete-scene p{font-size:13px;color:#626b50}.result-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:5px}.result-tags span{background:#dce6c5;padding:6px 9px;border-radius:5px;font-size:11px;border:1px solid #a9b58a}.next-label{font-size:11px;color:#7a795d;margin-top:15px}.complete-scene a{background:#3f5f3a;border-radius:8px;color:#fff4d9;padding:12px 22px;font-weight:bold}.flash .printing-card{animation:pop .3s}.flash .paper{animation:pop .3s}.shake{animation:shake .25s}@keyframes pop{50%{transform:translateY(-3px)}}@keyframes shake{25%{transform:translateX(-3px)}75%{transform:translateX(3px)}}@keyframes stamp{0%{transform:rotate(-10deg) scale(1.7);opacity:0}100%{transform:rotate(-10deg) scale(1);opacity:1}}dialog{max-width:340px;width:calc(100% - 36px);background:#fffaf0;border:3px solid #4b6744;border-radius:12px;color:var(--ink);padding:22px}dialog::backdrop{background:#0f180ccc}dialog h2{font-size:20px;margin-bottom:9px}dialog p{font-size:13px;margin-bottom:16px}dialog div{display:flex;gap:8px}dialog button{flex:1;padding:7px}
+@media(min-width:700px){.budget-scene{padding:18px;gap:12px}.printing-card{grid-template-columns:180px 1fr;min-height:180px}.print-art svg{width:140px;height:130px}.print-art .quantity-tag{left:50px;bottom:13px}.print-work{padding:15px 20px}.print-work h2{font-size:20px}.chip-piles{min-height:50px;gap:10px}.coin{width:41px;height:41px;font-size:15px}.support-card{min-height:127px}.support-card svg{height:48px;width:70px}.support-card b{font-size:14px}.support-card .effect{font-size:11px}.budget-hud strong{font-size:25px}.doc-scene{padding:18px;gap:12px}.paper{padding:17px 23px}.paper-header b{font-size:18px}.field{min-height:49px}.doc-to,.doc-line{font-size:12px}.doc-title{font-size:15px}.edit-row{grid-template-columns:72px 1fr}.edit-row>label{font-size:13px}.attachment{font-size:12px;min-height:52px}.evidence-dock{max-width:580px;width:100%;margin:auto}.source{min-height:93px}.source b{font-size:13px}.source small{font-size:11px}.source .value{font-size:19px}.message{font-size:13px;min-height:40px}}
+@media(max-width:699px){.outside{margin:7px 12px;font-size:10px}.outside>span{display:none}.outside a{font-size:11px}.outside.foot{display:none}.outside button{min-height:27px;font-size:11px}.game{width:calc(100% - 14px);height:calc(100dvh - 51px);max-height:none;min-height:0;border-width:5px;border-radius:19px;padding:8px;gap:6px}.game-head{padding:7px 9px;gap:8px}.crest{width:32px;height:32px;font-size:20px;border-radius:9px}.heading small{font-size:10px}h1{font-size:17px}.stage-tag{font-size:10px;padding:5px 7px}.brief{font-size:12px;padding:7px 9px}.brief .speech-icon{width:20px;height:20px;font-size:12px}.message{font-size:11px;min-height:37px;padding:6px 8px}.controls button{min-width:58px;min-height:46px}.controls .primary{font-size:14px}.budget-scene{padding:9px;gap:8px}.budget-hud strong{font-size:21px}.printing-card{grid-template-columns:98px 1fr;min-height:146px}.print-art svg{width:89px;height:89px}.print-art .quantity-tag{left:13px;bottom:15px;font-size:11px}.print-work{padding:10px 8px}.print-work h2{font-size:14px}.print-work .meta{font-size:10px;margin-bottom:5px}.chip-piles{gap:5px;min-height:40px}.coin{width:31px;height:31px;font-size:12px}.chip-piles .ghost{width:31px;height:31px}.print-controls{gap:4px}.print-controls .allocate{font-size:12px;padding:0 6px}.print-count{font-size:12px}.print-count span{font-size:10px}.support-deck{gap:6px}.support-card{min-height:115px}.support-card svg{height:35px;width:55px}.support-card b{font-size:11px}.support-card .effect{font-size:9px}.cost-tag{font-size:9px}.reserve-box{padding:6px 8px}.quote-note{padding:7px 8px;gap:6px;min-height:65px}.quote-note b{font-size:11px}.quote-note p{font-size:10px}.quote-note button{min-width:73px;font-size:11px}.doc-scene{padding:9px;gap:8px}.desk-mat{padding:15px 8px 10px}.paper{padding:12px 10px 9px}.paper-header{padding-bottom:5px;margin-bottom:5px}.paper-header b{font-size:14px}.paper-header small{font-size:9px}.paper-header .doc-mark{width:24px;height:24px}.approval-strip{margin-bottom:4px}.doc-title{font-size:12px;padding:4px 0 6px}.edit-row{grid-template-columns:51px 1fr;gap:5px}.field{padding:6px 9px;min-height:45px}.attachment{min-height:48px;padding:5px;gap:4px}.attachment .clip{font-size:17px}.evidence-dock{padding:7px 8px;min-height:90px}.source{padding:7px;min-height:84px}.source b{font-size:10px}.source .value{font-size:15px}.source small{font-size:9px}.source .use{font-size:9px}.dock-heading{font-size:11px;margin-bottom:5px}.complete-scene{padding:20px 15px}.complete-scene h2{font-size:21px}}
+@media(max-width:350px){.print-count span{display:none}.printing-card{grid-template-columns:78px 1fr}.print-art svg{width:73px}.print-art .quantity-tag{left:5px}.print-work h2{font-size:13px}.print-controls button{padding:0 6px}.print-controls .allocate{font-size:11px}.edit-row{grid-template-columns:45px 1fr}.field{font-size:16px;padding:6px}.field small{font-size:9px}.doc-title{font-size:11px}.attachment{font-size:10px}.attachment small{font-size:9px}.support-card .effect{font-size:8px}.quote-note .phone-icon{display:none}.paper-header small{font-size:8px}.budget-hud div{font-size:10px}.budget-hud strong{font-size:19px}}
+/* Keep the whole document and its evidence in the same view at normal phone heights. */
+.desk-mat{flex:0 0 auto;padding-top:12px;padding-bottom:8px}.paper{padding-top:10px;padding-bottom:7px}.paper-header{padding-bottom:4px;margin-bottom:4px}.paper-header .doc-mark{width:23px;height:23px}.approval-strip{margin-bottom:3px}.approval-strip span{font-size:8px;line-height:1.15;padding:2px 4px}.doc-title{padding-top:3px;padding-bottom:4px;margin-bottom:3px}.doc-line{margin-bottom:3px;line-height:1.3}.edit-row{margin-top:4px}.field{min-height:44px}.calc-line{padding-top:4px;padding-bottom:3px}.attachments-label{padding-top:4px;padding-bottom:4px}.paper-end{margin-top:3px;line-height:1.2}.evidence-dock{margin-top:auto;margin-bottom:0}
+@media(min-width:700px){.paper{padding:12px 19px 8px}.paper-header b{font-size:16px}.paper-header .doc-mark{width:25px;height:25px}.desk-mat{padding:12px 13px 10px}.attachment{min-height:48px}.evidence-dock{padding:7px 10px}.source{min-height:85px}.source .value{font-size:17px}.source small{font-size:10px}}
+.paperclip{width:17px;height:25px;flex:0 0 17px}.field.touched,.attachment.touched{background:#e7edf0;border-color:#8ca3ad}.field.active,.attachment.active{background:#fff0a8}.field.bad,.attachment.bad{background:#fce6d9;border-color:#b4472f}
+.folder{height:140px}.folder-label{width:150px;padding:8px;font-size:11px}.seal{width:124px;font-size:20px;letter-spacing:1.4px;white-space:nowrap}
+@media(min-width:700px){.printing-card{min-height:159px}.print-work{padding:9px 15px}.print-art svg{height:110px}.support-card{min-height:114px}.support-card svg{height:39px}.budget-scene{gap:10px;padding:14px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="outside"><a href="E01_체험목업.html">이전 목업 ↗</a><span>홍보물 200부, 오늘 안에 끝내라고요?</span><button id="restart">처음부터</button></div>
+<main class="game" aria-label="예산과 공문 체험">
+ <header class="game-head"><div class="crest" aria-hidden="true">공</div><div class="heading"><small>모서리구청 · 오늘의 사업</small><h1 id="title">예산 쟁탈전</h1></div><span class="stage-tag" id="stage-tag">1 / 8</span></header>
+ <div class="chapter-track" aria-hidden="true"><i class="active"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+ <div id="brief" class="brief"></div>
+ <section id="board" class="board" aria-label="현재 퍼즐"></section>
+ <div class="message" id="message" role="status" aria-live="polite"></div>
+ <footer class="controls"><button id="undo" aria-label="마지막 조작 되돌리기">↶<small>되돌리기</small></button><button id="hint">?<small>힌트</small></button><button id="primary" class="primary"></button></footer>
+</main>
+<div class="outside foot"><span>1·2번 디자인 체험 · 별도 저장 없이 실행</span><a href="E01_01-02_게임화면_디자인해설.md">디자인 해설 ↗</a></div>
+<dialog id="reset-dialog"><h2>작업대를 비울까요?</h2><p>이 체험의 예산과 공문을 처음부터 시작해요.</p><div><button id="reset-cancel">계속하기</button><button id="reset-confirm" class="primary">처음부터</button></div></dialog>
+<script>/* E01-only state and rules. No legacy game modules or save data are read. */
+(function (root) {
+  'use strict';
+  const options = {
+    stand: { name: '안내 거치대', cost: 20000, effect: '창구에 안내 거치대가 생겨요.' },
+    delivery: { name: '분점 배송', cost: 30000, effect: '배송 기사와 카트를 이용할 수 있어요.' },
+    proof: { name: '사전 교정', cost: 40000, effect: '담당자가 비교 교정지를 준비해 줘요.' }
+  };
+  const stages = ['사업 편성', '공문 작업대', '결재 작전', '납품 검수', '지급 서류철', '민원 조사', '결산 사건 보드', '오늘의 사무실'];
+  const clone = value => JSON.parse(JSON.stringify(value));
+  const initialState = () => ({
+    version: 2, stage: 0, highest: 0, revision: 0, checked: null,
+    chips: 0, options: [], priceRaised: false, lockedBudget: false,
+    document: { quantity: 150, unit: 1000, version: 1, estimate: 1, specimen: 1 },
+    approvals: { own: false, cooperation: false, chief: false, director: false },
+    printed: [], location: 'desk', bundles: [], returned: 0, replacement: false,
+    paymentSlots: {}, ledger: {}, distribution: null,
+    clues: [], complaintCause: '', carrying: false, receipt: false, replied: false,
+    links: {}, settlementCause: '', excluded: '', reportSigned: false,
+    log: []
+  });
+  const optionCost = s => s.options.reduce((sum, id) => sum + options[id].cost, 0);
+  const reserved = s => 26 - s.chips - optionCost(s) / 10000;
+  const spent = s => Object.values(s.ledger).reduce((sum, payment) => sum + payment.amount, 0);
+  const totals = s => ({ budget: 260000, planned: s.chips * 10000 + optionCost(s), paid: spent(s), remaining: 260000 - spent(s), reserve: reserved(s) });
+  const inventory = s => {
+    const counts = { good: 0, bad: 0, unknown: 0, returned: s.returned, held: 0 };
+    for (const b of s.bundles) { counts[b.status] += b.quantity; if (b.status !== 'returned') counts.held += b.quantity; }
+    // Returned is tracked as a transaction, rather than counted twice from bundle labels.
+    counts.returned = s.returned;
+    return counts;
+  };
+  function evaluate(s, stage = s.stage) {
+    const errors = [];
+    if (stage === 0) {
+      if (s.chips !== (s.priceRaised ? 22 : 20)) errors.push('제작 카드에 ' + (s.priceRaised ? 22 : 20) + '칩을 배치하세요.');
+      if (reserved(s) < 0) errors.push('예산을 ' + Math.abs(reserved(s)) + '칩 초과했어요. 선택 사업을 조정하세요.');
+    } else if (stage === 1) {
+      if (s.document.quantity !== 200) errors.push('제작 수량을 배부계획의 200부로 바꾸세요.');
+      if (s.document.unit !== 1100) errors.push('산출 단가를 견적 v2의 1,100원으로 바꾸세요.');
+      if (s.document.version !== 2) errors.push('운영시간을 최신 공지의 09:00~18:00로 바꾸세요.');
+      if (s.document.estimate !== 2 || s.document.specimen !== 2) errors.push('붙임의 견적서와 규격 견본을 모두 v2로 교체하세요.');
+    } else if (stage === 2) {
+      if (!s.approvals.director) errors.push('협조와 출력 준비를 마치고, 계장 → 과장 순서로 결재받으세요.');
+    } else if (stage === 3) {
+      const inv = inventory(s);
+      if (inv.unknown) errors.push('미확인 묶음 ' + inv.unknown + '부가 있어요. 샘플을 확인하고 분류하세요.');
+      if (inv.good !== 200 || inv.bad || s.returned !== 40) errors.push('정상 200부와 구버전 40부 반품·교체를 확인하세요.');
+    } else if (stage === 4) {
+      if (s.paymentSlots.contract !== 'contract' || s.paymentSlots.invoice !== 'invoice-v2' || s.paymentSlots.inspection !== 'inspection') errors.push('발주서·청구서 v2·검수조서를 각각 맞는 칸에 연결하세요.');
+    } else if (stage === 5) {
+      if (!['register', 'receipt', 'testimony', 'holding'].every(id => s.clues.includes(id))) errors.push('배부대장·수령증·담당자 진술·보관 묶음을 모두 조사하세요.');
+      if (s.complaintCause !== 'intermediate') errors.push('중간 보관을 최종 수령으로 기록한 근거를 연결하세요.');
+      if (!s.receipt || s.distribution.branchB !== 60 || s.distribution.holding !== 0) errors.push('보관 중인 B-02 40부를 B분점에 전달하고 수령 확인을 받으세요.');
+    } else if (stage === 6) {
+      if (s.links.R1 !== 'PAY-E01-PRINT' || s.links.R2 !== 'PAY-E01-PRINT') errors.push('R1과 R2를 같은 지급확인증에 각각 연결하세요.');
+      if (s.settlementCause !== 'duplicate') errors.push('실제 지급은 1회예요. 중복 집계를 원인으로 설명하세요.');
+      if (!['R1', 'R2'].includes(s.excluded)) errors.push('같은 지급을 반영한 집계행 중 하나만 제외하세요.');
+      if (!s.replied || spent(s) !== 220000 + optionCost(s)) errors.push('민원 회신과 선택 사업 지급을 먼저 마치세요.');
+    }
+    return { valid: errors.length === 0, errors };
+  }
+  function makeBundles() {
+    return Array.from({ length: 20 }, (_, i) => ({ id: 'M' + (i + 1), box: Math.floor(i / 5) + 1, quantity: 10, version: i < 16 ? 2 : 1, status: 'unknown', inspected: false }));
+  }
+  function apply(state, action) {
+    const s = clone(state);
+    let message = '', ok = true, mutated = false;
+    const deny = msg => { ok = false; message = msg; };
+    const edit = () => { mutated = true; s.revision++; s.checked = null; };
+    const next = () => { s.stage++; s.highest = Math.max(s.highest, s.stage); edit(); };
+    const pay = (id, amount) => {
+      if (!s.ledger[id]) { s.ledger[id] = { amount, status: 'paid' }; return true; }
+      return false;
+    };
+    const requiredStage = {
+      chips: 0, option: 0, quote: 0, budgetCommit: 0, documentSet: 1, documentCommit: 1,
+      visit: 2, print: 2, approvalCommit: 2, inspect: 3, classify: 3, replace: 3, inspectionCommit: 3,
+      paymentSlot: 4, paymentCommit: 4, clue: 5, complaintCause: 5, pickup: 5, deliver: 5, receipt: 5, complaintCommit: 5,
+      link: 6, settlementCause: 6, exclude: 6, settlementCommit: 6
+    };
+    if (action.type in requiredStage && requiredStage[action.type] !== s.stage) return { state: s, ok: false, message: '현재 장면에서 가능한 행동을 선택하세요.' };
+    if (s.stage < s.highest && action.type !== 'navigate') return { state: s, ok: false, message: '완료한 장면은 기록으로 볼 수 있어요. 진행 중인 장면으로 돌아가세요.' };
+    if (action.type === 'check') {
+      const result = evaluate(s);
+      if (result.valid) { s.checked = { stage: s.stage, revision: s.revision }; message = '준비가 됐어요. 아래 실행 버튼으로 마무리하세요.'; }
+      else { s.checked = null; deny(result.errors.join(' ')); }
+    } else if (action.type.endsWith('Commit')) {
+      if (s.checked?.stage !== s.stage || s.checked?.revision !== s.revision || !evaluate(s).valid) deny('현재 작업을 먼저 확인하세요. 수정 후에는 다시 확인해야 해요.');
+      else if (action.type === 'budgetCommit') {
+        if (!s.priceRaised) deny('최신 견적을 먼저 확인하세요.');
+        else { s.lockedBudget = true; next(); message = '사업을 확정했어요. 지난 기안문을 새 사업에 맞게 고쳐 봅시다.'; }
+      } else if (action.type === 'documentCommit') {
+        s.approvals.own = true; next(); message = '담당 확인 도장! 서류철을 들고 협조 담당자를 찾아가세요.';
+      } else if (action.type === 'approvalCommit') {
+        s.bundles = makeBundles(); next(); message = '발주 완료. 홍보물 200부가 네 상자에 도착했어요.';
+      } else if (action.type === 'inspectionCommit') { next(); message = '정상본 200부를 확보했어요. 증빙을 연결해 지급합시다.'; }
+      else if (action.type === 'paymentCommit') {
+        pay('PAY-E01-PRINT', 220000);
+        s.options.filter(id => id !== 'delivery').forEach(id => pay('PAY-E01-' + id.toUpperCase(), options[id].cost));
+        s.distribution = { counter: 80, branchA: 60, branchB: 20, holding: 40, inTransit: 0 };
+        next(); message = '지급 완료. 그런데 B분점에서 “20부만 받았다”는 연락이 왔어요.';
+      } else if (action.type === 'complaintCommit') {
+        s.replied = true;
+        if (s.options.includes('delivery')) pay('PAY-E01-DELIVERY', 30000);
+        next(); message = 'B분점에 60부 전달을 확인하고 회신했어요. 이제 결산 기록을 확인하세요.';
+      } else if (action.type === 'settlementCommit') {
+        s.reportSigned = true; next(); message = '결산 확인 도장! 홍보물 200부 사업을 마쳤어요.';
+      }
+    } else if (action.type === 'chips') {
+      const n = s.chips + action.delta;
+      if (!Number.isInteger(action.delta) || n < 0 || n > 26) deny('제작 예산은 0~26칩 안에서 배치하세요.');
+      else if (action.delta > 0 && n + optionCost(s) / 10000 > 26) deny('예비 칩이 부족해요. 선택 사업을 빼면 옮길 수 있어요.');
+      else { s.chips = n; edit(); message = '예산 칩이 제작 카드로 이동했어요.'; }
+    } else if (action.type === 'option') {
+      if (!options[action.id]) deny('이 사업은 선택할 수 없어요.');
+      else if (s.options.includes(action.id)) { s.options = s.options.filter(id => id !== action.id); edit(); message = '칩을 예비 트레이로 돌려놓았어요.'; }
+      else if (reserved(s) < options[action.id].cost / 10000) deny('예비 칩이 부족해요. 다른 사업을 조정하세요.');
+      else { s.options.push(action.id); edit(); message = options[action.id].effect; }
+    } else if (action.type === 'quote') {
+      if (s.priceRaised) deny('최신 견적은 이미 확인했어요. 제작 22칩을 준비하세요.');
+      else if (!evaluate(s).valid) deny('제작 20칩을 먼저 준비하고 견적을 확인하세요.');
+      else { s.priceRaised = true; edit(); message = '인쇄소 연락: 단가가 1,100원으로 올랐어요. 제작 카드에 2칩을 더 놓으세요.'; }
+    } else if (action.type === 'documentSet') {
+      const allowed = { quantity: [150, 200], unit: [1000, 1100], version: [1, 2], estimate: [1, 2], specimen: [1, 2] };
+      if (!allowed[action.field]?.includes(action.value)) deny('해당 문서 칸에 맞는 자료를 선택하세요.');
+      else { s.document[action.field] = action.value; edit(); message = '공문의 해당 위치를 교체했어요.'; }
+    } else if (action.type === 'visit') {
+      if (!['desk', 'cooperation', 'printer', 'chief', 'director'].includes(action.id)) deny('방문할 자리를 선택하세요.');
+      else {
+        s.location = action.id;
+        if (action.id === 'cooperation') { if (!s.approvals.cooperation) { s.approvals.cooperation = true; edit(); } message = s.options.includes('proof') ? '나소라: 교정지의 최신 운영시간과 일치해요. 협조 확인!' : '나소라: 최신 공지와 배부계획 확인했어요. 협조 도장!'; }
+        else if (action.id === 'chief') {
+          if (!s.approvals.cooperation || s.printed.length !== 2) deny('권한솔: 협조 확인과 최신 견적·견본 출력이 먼저예요.');
+          else { if (!s.approvals.chief) { s.approvals.chief = true; edit(); } message = '권한솔: 준비가 됐군요. 계장 결재!'; }
+        } else if (action.id === 'director') {
+          if (!s.approvals.chief) deny('정윤서: 계장 결재를 받고 가져와 주세요.');
+          else { if (!s.approvals.director) { s.approvals.director = true; edit(); } message = '정윤서: 과장 결재! 인쇄소에 발주할 수 있어요.'; }
+        } else message = action.id === 'printer' ? '출력함에서 우리 사업의 최신 견적과 견본을 찾아 서류철에 넣으세요.' : '담당 확인을 마친 서류철을 들고 있어요.';
+      }
+    } else if (action.type === 'print') {
+      if (s.location !== 'printer') deny('프린터에 도착한 뒤 출력물을 챙기세요.');
+      else if (!['estimate-v2', 'specimen-v2'].includes(action.id)) deny('이 종이는 구버전 또는 다른 사업이에요. 출력함에 남겨둘게요.');
+      else { if (!s.printed.includes(action.id)) { s.printed.push(action.id); edit(); } message = '최신 출력물을 서류철에 클립으로 묶었어요.'; }
+    } else if (action.type === 'inspect') {
+      const ids = action.ids || [];
+      if (!ids.length || ids.some(id => !s.bundles.some(b => b.id === id && b.status !== 'returned'))) deny('상자에서 확인할 묶음을 선택하세요.');
+      else { ids.forEach(id => { s.bundles.find(b => b.id === id).inspected = true; }); message = '샘플을 펼쳤어요. 운영시간을 승인 시안과 비교하세요.'; }
+    } else if (action.type === 'classify') {
+      const bundles = (action.ids || []).map(id => s.bundles.find(b => b.id === id));
+      if (!bundles.length || bundles.some(b => !b || !b.inspected || b.status === 'returned')) deny('묶음 샘플을 먼저 펼쳐 확인하세요.');
+      else if (!['good', 'bad'].includes(action.status)) deny('정상 또는 보완 구역을 선택하세요.');
+      else if (bundles.some(b => (b.version === 2 ? 'good' : 'bad') !== action.status)) deny('운영시간을 다시 비교하세요. v2 18:00는 정상, v1 17:00는 보완 대상이에요.');
+      else { bundles.forEach(b => { b.status = action.status; }); edit(); message = '묶음을 ' + (action.status === 'good' ? '정상' : '보완') + ' 구역에 옮겼어요.'; }
+    } else if (action.type === 'replace') {
+      const inv = inventory(s);
+      if (s.replacement) deny('반품과 교체는 이미 한 번 완료됐어요. 교체본을 확인하세요.');
+      else if (inv.good !== 160 || inv.bad !== 40 || inv.unknown) deny('정상 160부와 보완 40부를 먼저 분류하세요.');
+      else {
+        s.bundles.filter(b => b.status === 'bad').forEach(b => { b.status = 'returned'; }); s.returned = 40; s.replacement = true;
+        for (let i = 0; i < 4; i++) s.bundles.push({ id: 'N' + (i + 1), box: 5, quantity: 10, version: 2, status: 'unknown', inspected: false });
+        edit(); message = '구버전 40부를 돌려보내고 교체본 40부를 받았어요. 추가비용 0원. 새 상자를 확인하세요.';
+      }
+    } else if (action.type === 'paymentSlot') {
+      const matches = { contract: ['contract'], invoice: ['invoice-v1', 'invoice-v2'], inspection: ['inspection'] };
+      if (!matches[action.slot]?.includes(action.id)) deny('증빙 종류에 맞는 칸에 넣으세요.');
+      else { s.paymentSlots[action.slot] = action.id; edit(); message = '증빙을 지급 서류철에 넣었어요.'; }
+    } else if (action.type === 'clue') {
+      if (!['register', 'receipt', 'testimony', 'holding'].includes(action.id)) deny('조사 대상을 선택하세요.');
+      else { if (!s.clues.includes(action.id)) { s.clues.push(action.id); edit(); } message = '단서를 사건철에 기록했어요.'; }
+    } else if (action.type === 'complaintCause') {
+      if (!['intermediate', 'shortage', 'lost'].includes(action.value)) deny('기록과 물품으로 확인한 원인을 선택하세요.');
+      else { s.complaintCause = action.value; edit(); message = '원인 메모를 작성했어요. 실제 전달까지 확인해야 사건을 닫을 수 있어요.'; }
+    } else if (action.type === 'pickup') {
+      if (!['register', 'receipt', 'testimony', 'holding'].every(id => s.clues.includes(id)) || s.complaintCause !== 'intermediate') deny('단서 4개로 B-02의 행방과 기록 오류를 먼저 확인하세요.');
+      else if (s.carrying || s.distribution.holding === 0) deny('같은 묶음을 두 번 가져갈 수 없어요.');
+      else { s.carrying = true; s.distribution.holding = 0; s.distribution.inTransit = 40; edit(); message = 'B-02 40부를 들었어요. B분점으로 가져가세요.'; }
+    } else if (action.type === 'deliver') {
+      if (!s.carrying) deny('보관실에서 B-02 묶음을 먼저 가져오세요.');
+      else if (action.id !== 'branchB') deny('상자 라벨은 B분점행이에요. 목적지를 다시 확인하세요.');
+      else { s.carrying = false; s.distribution.holding = 0; s.distribution.inTransit = 0; s.distribution.branchB = 60; edit(); message = 'B분점에 40부를 전달했어요. 담당자의 수령 확인을 받으세요.'; }
+    } else if (action.type === 'receipt') {
+      if (s.distribution.branchB !== 60 || s.carrying) deny('실제 전달이 먼저예요. 기록만으로 완료할 수 없어요.');
+      else { if (!s.receipt) { s.receipt = true; edit(); } message = 'B분점 최종 수령증 60부를 받았어요.'; }
+    } else if (action.type === 'link') {
+      if (!['R1', 'R2'].includes(action.row) || !['PAY-E01-PRINT', 'CANCEL-DRAFT'].includes(action.target)) deny('집계행과 지급 자료를 선택하세요.');
+      else { s.links[action.row] = action.target; edit(); message = '자료를 연결했어요. 거래번호와 실제 지급 상태를 확인하세요.'; }
+    } else if (action.type === 'settlementCause') {
+      if (!['duplicate', 'doublePayment', 'cancel'].includes(action.value)) deny('조사한 오류 원인을 선택하세요.');
+      else { s.settlementCause = action.value; edit(); message = '결산 조사 결과를 작성했어요.'; }
+    } else if (action.type === 'exclude') {
+      if (!['R1', 'R2', ''].includes(action.row)) deny('제작비의 중복 집계행만 제외할 수 있어요.');
+      else { s.excluded = action.row; edit(); message = action.row ? action.row + '에 집계 제외 메모를 붙였어요. 실제 지급은 유지됩니다.' : '집계 제외 메모를 떼었어요.'; }
+    } else if (action.type === 'navigate') {
+      if (!Number.isInteger(action.stage) || action.stage < 0 || action.stage > s.highest) deny('현재 진행까지의 화면만 볼 수 있어요.');
+      else { s.stage = action.stage; s.checked = null; message = '완료한 작업을 다시 살펴보는 중이에요.'; }
+    } else deny('지원하지 않는 행동이에요.');
+    if (mutated && ok) s.log.push({ stage: state.stage, action: action.type, message });
+    return { state: s, ok, message };
+  }
+  function previewState(stage) {
+    let s = initialState();
+    const doAction = action => { const result = apply(s, action); if (!result.ok) throw new Error(result.message); s = result.state; };
+    const commit = type => { doAction({ type: 'check' }); doAction({ type }); };
+    if (stage === 0) return s;
+    doAction({ type: 'chips', delta: 20 }); doAction({ type: 'option', id: 'stand' }); doAction({ type: 'quote' }); doAction({ type: 'chips', delta: 2 }); commit('budgetCommit');
+    if (stage === 1) return s;
+    for (const [field, value] of Object.entries({ quantity: 200, unit: 1100, version: 2, estimate: 2, specimen: 2 })) doAction({ type: 'documentSet', field, value });
+    commit('documentCommit'); if (stage === 2) return s;
+    doAction({ type: 'visit', id: 'cooperation' }); doAction({ type: 'visit', id: 'printer' });
+    doAction({ type: 'print', id: 'estimate-v2' }); doAction({ type: 'print', id: 'specimen-v2' }); doAction({ type: 'visit', id: 'chief' }); doAction({ type: 'visit', id: 'director' }); commit('approvalCommit');
+    if (stage === 3) return s;
+    for (const version of [2, 1]) { const ids = s.bundles.filter(b => b.version === version).map(b => b.id); doAction({ type: 'inspect', ids }); doAction({ type: 'classify', ids, status: version === 2 ? 'good' : 'bad' }); }
+    doAction({ type: 'replace' }); const ids = s.bundles.filter(b => b.box === 5).map(b => b.id); doAction({ type: 'inspect', ids }); doAction({ type: 'classify', ids, status: 'good' }); commit('inspectionCommit');
+    if (stage === 4) return s;
+    for (const [slot, id] of Object.entries({ contract: 'contract', invoice: 'invoice-v2', inspection: 'inspection' })) doAction({ type: 'paymentSlot', slot, id });
+    commit('paymentCommit'); if (stage === 5) return s;
+    for (const id of ['register', 'receipt', 'testimony', 'holding']) doAction({ type: 'clue', id }); doAction({ type: 'complaintCause', value: 'intermediate' }); doAction({ type: 'pickup' }); doAction({ type: 'deliver', id: 'branchB' }); doAction({ type: 'receipt' }); commit('complaintCommit');
+    if (stage === 6) return s;
+    doAction({ type: 'link', row: 'R1', target: 'PAY-E01-PRINT' }); doAction({ type: 'link', row: 'R2', target: 'PAY-E01-PRINT' }); doAction({ type: 'settlementCause', value: 'duplicate' }); doAction({ type: 'exclude', row: 'R2' }); commit('settlementCommit');
+    return s;
+  }
+  const api = { options, stages, initialState, apply, evaluate, totals, inventory, optionCost, previewState };
+  if (typeof module !== 'undefined' && module.exports) module.exports = api;
+  else root.E01Episode = api;
+})(typeof window === 'undefined' ? globalThis : window);
+</script><script>/* Independent E01 presentation. The four supplied puzzle proposals contribute no code or rules. */
+(() => {
+ 'use strict';
+ const E = window.E01Episode;
+ const $ = id => document.getElementById(id);
+ let state = E.initialState(), history = [], selected = null, touched = new Set(), errors = new Set();
+ let note = '제작 카드에 20칩을 놓고, 남는 칩으로 지원을 골라보세요.', bad = false;
+ const icons = {
+ print: '<svg viewBox="0 0 130 110" aria-hidden="true"><path d="M19 35h85v60H19z" fill="#c9c9a5" stroke="#5d7350" stroke-width="3"/><path d="M25 29h85v60H25z" fill="#e9e5c8" stroke="#5d7350" stroke-width="3"/><path d="M31 22h85v60H31z" fill="#fffaf0" stroke="#5d7350" stroke-width="3"/><path d="M42 34h62v8H42z" fill="#7e9c64"/><path d="M42 51h38M42 60h53M42 68h45" stroke="#a8b998" stroke-width="4"/><circle cx="105" cy="83" r="18" fill="#edc45c" stroke="#a77829" stroke-width="2"/><path d="m96 83 6 6 12-14" fill="none" stroke="#886122" stroke-width="4"/></svg>',
+ stand: '<svg viewBox="0 0 80 60" aria-hidden="true"><path d="M31 41 21 56M49 41 59 56" stroke="#6a704f" stroke-width="4"/><rect x="13" y="7" width="54" height="38" rx="3" fill="#edf3d5" stroke="#66834e" stroke-width="3"/><path d="M23 17h32M23 24h22M23 31h28" stroke="#89a767" stroke-width="3"/><rect x="33" y="35" width="14" height="8" fill="#d6a93c"/></svg>',
+ delivery: '<svg viewBox="0 0 80 60" aria-hidden="true"><path d="M6 17h42v30H6z" fill="#9db8c7" stroke="#557385" stroke-width="3"/><path d="M48 27h15l11 11v9H48z" fill="#b9cbd3" stroke="#557385" stroke-width="3"/><path d="M53 30h8l7 8H53z" fill="#f3eddc"/><circle cx="20" cy="48" r="7" fill="#475b57"/><circle cx="62" cy="48" r="7" fill="#475b57"/><path d="M16 27h20M16 33h15" stroke="#f3eddc" stroke-width="3"/></svg>',
+  proof: '<svg viewBox="0 0 80 60" aria-hidden="true"><path d="M16 6h38v47H16z" fill="#fffaf0" stroke="#8c9b80" stroke-width="3"/><path d="M24 18h20M24 26h17M24 34h20" stroke="#abb793" stroke-width="3"/><circle cx="54" cy="37" r="12" fill="#e1eac9dd" stroke="#618257" stroke-width="3"/><path d="m62 46 11 10" stroke="#618257" stroke-width="5"/><path d="m48 37 4 4 8-9" stroke="#638052" stroke-width="2" fill="none"/></svg>',
+  clip:'<svg class="paperclip" viewBox="0 0 20 30" aria-hidden="true"><path d="M14 12v10a6 6 0 0 1-12 0V7a5 5 0 0 1 10 0v14a3 3 0 0 1-6 0V9" fill="none" stroke="#84938b" stroke-width="2.3" stroke-linecap="round"/></svg>'
+ };
+ // Estimate data is shared by the number picker and the attachment picker.
+ const records = {
+  plan: [{name:'지난달 배부계획',date:'9월 3일 · 보관함',value:150},{name:'이번 사업 배부계획',date:'10월 11일 · 팀장 전달',value:200}],
+  estimate: [{name:'인쇄소 견적서',date:'10월 10일 · 접수',unit:1000,version:1},{name:'인쇄소 견적서',date:'10월 11일 · 재접수',unit:1100,version:2}],
+  notice: [{name:'창구 운영 공지',date:'9월 1일 · 시행',hours:'09:00–17:00',version:1},{name:'창구 운영 공지',date:'10월 1일 · 시행',hours:'09:00–18:00',version:2}],
+  specimen: [{name:'인쇄 규격 견본',date:'10월 10일 · 보관본',hours:'09:00–17:00',version:1},{name:'인쇄 규격 견본',date:'10월 11일 · 전달본',hours:'09:00–18:00',version:2}]
+ };
+ const fieldNames = {quantity:'제작 수량',unit:'제작 단가',version:'운영시간',estimate:'붙임 · 견적서',specimen:'붙임 · 규격 견본'};
+ const values = {quantity:()=>`${state.document.quantity}부`,unit:()=>`${state.document.unit.toLocaleString()}원`,version:()=>state.document.version===2?'09:00–18:00':'09:00–17:00'};
+ if(new URLSearchParams(location.search).get('scene') === 'document') {
+  state.chips=22; state.options=['stand']; state.priceRaised=true; state.lockedBudget=true; state.stage=1; state.highest=1;
+  note='지난 기안문을 이번 사업에 맞게 고쳐요. 바꿀 칸을 눌러보세요.';
+ }
+ function stash() { history.push({state:JSON.parse(JSON.stringify(state)),touched:[...touched],note}); }
+ function dispatch(action) {
+  const result = E.apply(state,action);
+  if(result.ok && result.state.revision!==state.revision) stash();
+  state=result.state; note=result.message; bad=!result.ok; render();
+  if(result.ok) { $('board').classList.remove('flash'); void $('board').offsetWidth; $('board').classList.add('flash'); }
+ }
+ function notify(message,isError=false) { note=message;bad=isError;render();if(isError){$('message').classList.add('shake');} }
+ function chipsMarkup(n) {
+  if(!n) return '<span class="ghost">10</span><span class="ghost">10</span><small style="color:#8c8c69;font-size:10px">비어 있음</small>';
+  let html='';for(let i=0;i<Math.floor(n/10);i++) html+='<span class="coin stack" aria-label="10칩 묶음">10</span>';
+  if(n%10)html+=`<span class="coin" aria-label="${n%10}칩">${n%10}</span>`;
+  return html;
+ }
+ function budgetHTML() {
+  const reserve=E.totals(state).reserve, support=E.optionCost(state)/10000, required=state.priceRaised?22:20, need=required-state.chips;
+  return `<div class="budget-scene">
+   <div class="budget-hud" aria-label="예산 배정 현황"><div>총 예산<strong>26<em>칩</em></strong></div><div>배정<strong>${state.chips+support}<em>칩</em></strong></div><div class="free">미배정<strong>${reserve}<em>칩</em></strong></div></div>
+   <div class="allocation-bar" aria-hidden="true"><i class="printing" style="width:${state.chips/26*100}%"></i><i class="support" style="width:${support/26*100}%"></i><i class="free" style="width:${reserve/26*100}%"></i></div>
+   <div class="desk-label">오늘의 필수 사업 <span>1칩 = 10,000원</span></div>
+   <div class="printing-card" id="print-card"><div class="print-art">${icons.print}<div class="quantity-tag">목표 200부</div></div><div class="print-work"><h2>이용 안내 홍보물</h2><div class="meta">${state.priceRaised?'인쇄소 재견적 · 부당 1,100원':'첫 견적 · 부당 1,000원'}</div><div class="chip-piles">${chipsMarkup(state.chips)}</div><div class="print-controls">${state.chips===0?'<button class="allocate" data-action="base" draggable="true">20칩 놓기 ↓</button>':`<button data-action="minus" aria-label="제작 예산 1칩 돌려놓기">−</button><button data-action="plus" aria-label="제작 예산 1칩 더 놓기">+</button><b class="print-count">${state.chips}<span> / ${required}칩</span></b>`}</div></div></div>
+   <div class="reserve-box"><span class="reserve-icon" aria-hidden="true">▱</span><div><b>남겨둔 예산</b><small>돌발 상황에 꺼내 쓸 수 있어요.</small></div><span class="reserve-num">${reserve}<small style="display:inline">칩</small></span></div>
+   <div class="desk-label">선택 지원 <span>누르면 배정 · 다시 누르면 회수</span></div>
+   <div class="support-deck">${Object.entries(E.options).map(([id,o])=>`<button class="support-card ${state.options.includes(id)?'chosen':''}" data-option="${id}" aria-pressed="${state.options.includes(id)}" aria-label="${o.name} ${o.cost/10000}칩 ${state.options.includes(id)?'배정 취소':'배정'}"><span class="cost-tag">${o.cost/10000}칩</span>${icons[id]}<b>${o.name}</b><span class="effect">${{stand:'창구에 안내판 설치',delivery:'배송 카트 이용',proof:'비교 교정지 제공'}[id]}</span><span class="select-state">${state.options.includes(id)?'✓ 배정됨 · 회수':'＋ 선택하기'}</span></button>`).join('')}</div>
+   ${state.priceRaised?`<div class="quote-note ${need>reserve?'bad':''}"><span class="phone-icon" aria-hidden="true">☎</span><div class="quote-copy"><b>${need>0?'인쇄소: “단가가 올랐어요!”':'재견적 반영 완료'}</b><p>${need>0?`제작비 +${need}칩 · ${need>reserve?'지원 카드를 회수해 칩을 확보해요.':'남긴 예산에서 옮길 수 있어요.'}`:need<0?'제작비를 22칩으로 맞춰주세요.':'홍보물 200부 · 제작 22칩 준비 완료'}</p></div>${need>0?`<button data-action="topup" ${need>reserve?'disabled':''} aria-label="남긴 예산에서 제작에 ${need}칩 옮기기">${need}칩 옮기기</button>`:''}</div>`:'<div class="quote-note"><span class="phone-icon" aria-hidden="true">☎</span><div class="quote-copy"><b>인쇄소가 최종 견적을 보내준대요.</b><p>제작비를 배정하고 아래에서 견적을 확인하세요.</p></div></div>'}
+  </div>`;
+ }
+ function fieldHTML(field,label) {
+  const cls=[touched.has(field)?'touched':'',selected===field?'active':'',errors.has(field)?'bad':''].join(' ');
+  return `<div class="edit-row"><label id="label-${field}">${label}</label><button class="field ${cls}" data-field="${field}" aria-labelledby="label-${field}" aria-expanded="${selected===field}" aria-controls="evidence-dock"><span>${values[field]()}</span><small>${selected===field?'자료 닫기':errors.has(field)?'! 다시 확인':touched.has(field)?'↗ 가져옴':'✎ 수정'}</small></button></div>`;
+ }
+ function attachHTML(field,name) {
+  const version=state.document[field],cls=[touched.has(field)?'touched':'',selected===field?'active':'',errors.has(field)?'bad':''].join(' ');
+  return `<button class="attachment ${cls}" data-field="${field}" aria-label="붙임 ${name} 교체" aria-expanded="${selected===field}" aria-controls="evidence-dock">${icons.clip}<span>${name}<small>${version===2?'10/11 전달본':'10/10 보관본'} · ${selected===field?'닫기':errors.has(field)?'! 확인':'교체 ↗'}</small></span></button>`;
+ }
+ function dockHTML() {
+  if(!selected) return '<div class="dock-heading"><span>▱ 참고자료 서류함</span></div><p class="dock-help">공문의 점선 칸을 누르면 관련 자료가 펼쳐져요.</p><div class="source-index"><span>배부계획</span><span>견적서</span><span>운영 공지</span><span>규격 견본</span></div>';
+  const key={quantity:'plan',unit:'estimate',version:'notice',estimate:'estimate',specimen:'specimen'}[selected];
+  const rows=records[key];
+  return `<div class="dock-heading"><span>공문 · ${fieldNames[selected]}에 가져오기</span></div><div class="source-choices">${rows.map((r,i)=>{
+   const value=selected==='quantity'?r.value:selected==='unit'?r.unit:r.version;
+   const copy=selected==='quantity'?`${r.value}부`:selected==='unit'?`${r.unit.toLocaleString()}원`:selected==='estimate'?`200부 × ${r.unit.toLocaleString()}원`:r.hours;
+   return `<button class="source" data-source="${value}" data-source-index="${i}" aria-label="${r.name} ${r.date} ${copy} 가져오기"><b>${r.name}</b><small>${r.date}</small><span class="value">${copy}</span><span class="use">${['estimate','specimen'].includes(selected)?'클립으로 묶기':'이 값 가져오기'} ↗</span></button>`;
+  }).join('')}</div>`;
+ }
+ function docHTML() {
+  return `<div class="doc-scene"><div class="desk-mat"><article class="paper" aria-label="홍보물 제작 계획 기안문"><div class="paper-header"><span class="doc-mark">공</span><b>모서리구청</b><small>생활보장과</small></div><div class="approval-strip" aria-label="결재란"><span class="own">담당<br>작성 중</span><span>협조<br>다음 단계</span><span>계장<br>다음 단계</span><span>과장<br>다음 단계</span></div><div class="doc-to">수신　내부결재</div><h2 class="doc-title">제목　창구 이용 안내 홍보물 제작 계획</h2><p class="doc-line">주민 안내를 위해 다음과 같이 제작하고자 합니다.</p>${fieldHTML('quantity','1. 수량')}${fieldHTML('unit','2. 단가')}${fieldHTML('version','3. 시간')}<div class="calc-line">산출기초　${state.document.quantity}부 × ${state.document.unit.toLocaleString()}원 = <b>${(state.document.quantity*state.document.unit).toLocaleString()}원</b></div><div class="attachments-label"><span>붙임 <small>· 종이를 바꿔 끼워요</small></span><small>${[...touched].filter(f=>['estimate','specimen'].includes(f)).length} / 2 교체</small></div><div class="attachment-row">${attachHTML('estimate','견적서')}${attachHTML('specimen','규격 견본')}</div><div class="paper-end">각 1부.　끝.</div></article></div><aside class="evidence-dock" id="evidence-dock" aria-label="공문 관련 참고자료">${dockHTML()}</aside></div>`;
+ }
+ function completedHTML() {
+  return `<div class="complete-scene"><div class="stars" aria-hidden="true">★ ★ ★</div><h2>첫 서류철, 준비 완료!</h2><div class="folder"><div class="folder-label">홍보물 제작 계획<div class="seal">담당 확인</div>200부 · 220,000원</div></div><p>예산을 옮기고, 지난 공문을 고쳐<br>오늘의 제작 서류철을 완성했어요.</p><div class="result-tags"><span>제작 22칩</span>${state.options.map(id=>`<span>${E.options[id].name}</span>`).join('')}<span>남긴 예산 ${E.totals(state).reserve}칩</span><span>최신 붙임 2장</span></div><span class="next-label">다음 업무 · 서류철을 들고 결재자 찾아가기</span><p>이 시안은 1·2번까지 체험할 수 있어요.</p></div>`;
+ }
+ function render() {
+  $('title').textContent=['예산 쟁탈전','공문 작업대','서류철 완성'][Math.min(state.stage,2)];
+  $('stage-tag').textContent=state.stage===2?'1·2 완료':`${state.stage+1} / 8`;
+  document.querySelectorAll('.chapter-track i').forEach((x,i)=>x.classList.toggle('active',i<=Math.min(state.stage,1)));
+  $('brief').innerHTML=`<span class="speech-icon" aria-hidden="true">${state.stage===0?'₩':state.stage===1?'✎':'✓'}</span><span>${state.stage===0?'제작 <b>200부</b>를 준비하고, 남는 칩으로 지원을 골라요.':state.stage===1?'공문의 <b>바꿀 칸</b>을 누르고, 참고자료를 가져오세요.':'담당 확인 도장! 다음은 결재 작전이에요.'}</span>`;
+  const boardScroll=$('board').scrollTop;
+  $('board').innerHTML=state.stage===0?budgetHTML():state.stage===1?docHTML():completedHTML();
+  $('board').scrollTop=boardScroll;
+  $('message').textContent=note; $('message').className='message'+(bad?' error':'');
+  $('primary').textContent=state.stage===0?(state.priceRaised?'계획 확정 → 공문':'☎ 최종 견적 확인'):state.stage===1?'✓ 기안 완료 · 도장 찍기':'전체 8단계 목업 보기 ↗';
+  $('undo').disabled=!history.length||state.stage===2;$('hint').disabled=state.stage===2;
+  $('board').querySelectorAll('[data-action]').forEach(b=>b.addEventListener('click',()=>boardAction(b.dataset.action)));
+  $('board').querySelectorAll('[data-option]').forEach(b=>b.addEventListener('click',()=>dispatch({type:'option',id:b.dataset.option})));
+  $('board').querySelectorAll('[data-field]').forEach(b=>b.addEventListener('click',()=>{
+   if(selected===b.dataset.field){selected=null;render();return;}
+   selected=b.dataset.field;bad=false;note=`${fieldNames[selected]}을 선택했어요. 아래 자료를 비교해 가져오세요.`;render();
+   $('board').querySelector(`[data-source]`).focus({preventScroll:true});
+   // Low-height displays scroll only the board, keeping the action bar visible.
+   const dock=$('evidence-dock'),board=$('board');if(dock.getBoundingClientRect().bottom>board.getBoundingClientRect().bottom)board.scrollTop+=dock.getBoundingClientRect().bottom-board.getBoundingClientRect().bottom+6;
+  }));
+  $('board').querySelectorAll('[data-source]').forEach(b=>b.addEventListener('click',()=>{
+   const field=selected,result=E.apply(state,{type:'documentSet',field,value:Number(b.dataset.source)});
+   if(!result.ok){notify(result.message,true);return;}
+   stash();state=result.state;touched.add(field);errors.delete(field);selected=null;bad=false;
+   note=`${fieldNames[field]}에 자료를 가져왔어요. 다른 칸도 확인해요.`;render();
+   const target=$('board').querySelector(`[data-field="${field}"]`);if(target)target.focus({preventScroll:true});
+  }));
+  const base=$('board').querySelector('[data-action="base"]'),target=$('print-card');
+  if(base&&target){base.addEventListener('dragstart',e=>{e.dataTransfer.setData('text/plain','E01-20chips');e.dataTransfer.effectAllowed='move';});target.addEventListener('dragover',e=>e.preventDefault());target.addEventListener('drop',e=>{e.preventDefault();if(e.dataTransfer.getData('text/plain')==='E01-20chips')boardAction('base');});}
+ }
+ function boardAction(action) {
+  if(action==='close'){selected=null;render();return;}
+  const delta={base:20,plus:1,minus:-1,topup:22-state.chips}[action];
+  if(delta!==undefined)dispatch({type:'chips',delta});
+ }
+ function primary() {
+  if(state.stage===2){location.href='E01_체험목업.html';return;}
+  const evaluated=E.evaluate(state);
+  if(!evaluated.valid) {
+   if(state.stage===1) {
+    errors=new Set(Object.keys(fieldNames).filter(field=>state.document[field]!==({quantity:200,unit:1100,version:2,estimate:2,specimen:2}[field])));
+    selected=null;
+    notify(`${errors.size}곳을 다시 확인해요. 빨간 메모가 붙은 칸을 눌러 자료를 비교하세요.`,true);
+    $('board').scrollTop=0;
+   } else notify(`제작비 ${state.priceRaised?22:20}칩을 준비해요. 지금은 ${state.chips}칩이에요.`,true);
+   return;
+  }
+  if(state.stage===0&&!state.priceRaised){dispatch({type:'quote'});return;}
+  // Evaluate + check + commit are one user action; state-rule verification remains intact.
+  const checked=E.apply(state,{type:'check'});
+  const committed=E.apply(checked.state,{type:state.stage===0?'budgetCommit':'documentCommit'});
+  if(!committed.ok){notify(committed.message,true);return;}
+  state=committed.state;history=[];selected=null;errors.clear();touched.clear();bad=false;
+  note=state.stage===1?'지난 공문이 올라왔어요. 날짜가 다른 자료들을 비교해 고쳐주세요.':'예산 편성과 기안을 마쳤어요. 담당 확인 도장이 서류철에 남았어요.';
+  render();$('board').scrollTop=0;$('title').setAttribute('tabindex','-1');$('title').focus({preventScroll:true});
+ }
+ $('primary').addEventListener('click',primary);
+ $('undo').addEventListener('click',()=>{const previous=history.pop();if(!previous)return;state=previous.state;touched=new Set(previous.touched);selected=null;errors.clear();bad=false;note='마지막 조작을 되돌렸어요.';render();});
+ $('hint').addEventListener('click',()=>{
+  if(state.stage===0){const required=state.priceRaised?22:20;notify(state.chips!==required?(state.priceRaised&&E.totals(state).reserve<required-state.chips?'지원 카드를 다시 눌러 칩을 회수하면, 제작비에 옮길 수 있어요.':`제작 카드에 ${required-state.chips>0?`${required-state.chips}칩을 더 놓아`:`${state.chips-required}칩을 돌려놓아`}주세요.`):state.priceRaised?'지원 선택을 마쳤다면 계획을 확정하세요. 남긴 칩도 괜찮아요.':'지원은 필수가 아니에요. 선택을 마쳤다면 최종 견적을 확인하세요.');}
+  else {const field=Object.keys(fieldNames).find(f=>state.document[f]!==({quantity:200,unit:1100,version:2,estimate:2,specimen:2}[f]));if(field){selected=field;notify(`${fieldNames[field]}부터 살펴봐요. 같은 종류의 자료도 날짜와 내용이 달라요.`);}else notify('공문과 붙임이 준비됐어요. 기안을 완료해 담당 확인 도장을 찍으세요.');}
+ });
+ $('restart').addEventListener('click',()=>{$('reset-dialog').showModal();$('reset-cancel').focus();});
+ $('reset-cancel').addEventListener('click',()=>$('reset-dialog').close());
+ $('reset-confirm').addEventListener('click',()=>{state=E.initialState();history=[];selected=null;touched.clear();errors.clear();bad=false;note='제작 카드에 20칩을 놓고, 남는 칩으로 지원을 골라보세요.';$('reset-dialog').close();render();});
+ render();
+})();
+</script>
+</body></html>

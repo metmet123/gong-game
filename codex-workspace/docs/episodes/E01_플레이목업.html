@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>홍보물 200부 — 플레이 목업</title>
+  <link rel="stylesheet" href="e01-mockup.css">
+</head>
+<body>
+  <div class="app">
+    <header class="masthead">
+      <a class="brand" href="E01_플레이목업.html"><span class="brand-mark">공</span><span>모서리구청<small>생활보장과 · 첫 번째 사업</small></span></a>
+      <div class="episode-title">홍보물 200부,<br><strong>오늘 안에 끝내라고요?</strong></div>
+      <span class="prototype-label">플레이 목업 v0.2</span>
+    </header>
+    <div class="workspace">
+      <aside class="sidebar">
+        <div class="sidebar-heading">오늘의 사업</div>
+        <nav id="stages" aria-label="업무 단계"></nav>
+        <div class="mode-switch"><button id="play-mode" type="button">처음부터 플레이</button><button id="gallery-mode" type="button">주요 화면 둘러보기</button></div>
+        <p class="sidebar-note">직접 선택하고 옮겨서 완성하세요.<br>시간 제한 없이 수정할 수 있어요.</p>
+        <a class="design-link" href="E01_화면과상세기획.html">전체 기획 읽기 ↗</a>
+      </aside>
+      <main>
+        <div id="preview-banner" class="preview-banner" hidden>선택한 장면부터 체험하고 있어요. 전체 진행은 ‘처음부터 플레이’로 시작하세요.</div>
+        <div class="scene-top"><div><div id="chapter" class="eyebrow"></div><h1 id="scene-title"></h1><p id="mission"></p></div><div class="day-clock"><span>오늘의 목표</span><strong>200<span>부</span></strong></div></div>
+        <div class="status-ribbon" id="status"></div>
+        <div class="scene-layout"><section id="scene" aria-label="현재 작업 화면"></section><aside id="notebook" class="notebook" aria-label="업무 수첩"></aside></div>
+        <div id="feedback" class="feedback" role="status" aria-live="polite"></div>
+        <footer class="actions"><button id="undo" type="button">↶ 편집 되돌리기</button><button id="hint" type="button">힌트 보기</button><div class="action-spacer"></div><button id="check" type="button">작업 확인</button><button id="commit" type="button" class="primary" disabled></button></footer>
+      </main>
+    </div>
+    <div class="site-foot">독립 에피소드 체험 · 실제 게임 저장과 분리 · 외부 리소스 없이 실행</div>
+  </div>
+  <script src="e01-engine.js"></script>
+  <script src="e01-mockup.js"></script>
+</body>
+</html>

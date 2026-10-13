@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>홍보물 200부 · 예산과 공문 작업대</title><link rel="stylesheet" href="e01-pair.css"></head>
+<body>
+<div class="outside"><a href="E01_체험목업.html">이전 목업 ↗</a><span>홍보물 200부, 오늘 안에 끝내라고요?</span><button id="restart">처음부터</button></div>
+<main class="game" aria-label="예산과 공문 체험">
+ <header class="game-head"><div class="crest" aria-hidden="true">공</div><div class="heading"><small>모서리구청 · 오늘의 사업</small><h1 id="title">예산 쟁탈전</h1></div><span class="stage-tag" id="stage-tag">1 / 8</span></header>
+ <div class="chapter-track" aria-hidden="true"><i class="active"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+ <div id="brief" class="brief"></div>
+ <section id="board" class="board" aria-label="현재 퍼즐"></section>
+ <div class="message" id="message" role="status" aria-live="polite"></div>
+ <footer class="controls"><button id="undo" aria-label="마지막 조작 되돌리기">↶<small>되돌리기</small></button><button id="hint">?<small>힌트</small></button><button id="primary" class="primary"></button></footer>
+</main>
+<div class="outside foot"><span>1·2번 디자인 체험 · 별도 저장 없이 실행</span><a href="E01_01-02_게임화면_디자인해설.md">디자인 해설 ↗</a></div>
+<dialog id="reset-dialog"><h2>작업대를 비울까요?</h2><p>이 체험의 예산과 공문을 처음부터 시작해요.</p><div><button id="reset-cancel">계속하기</button><button id="reset-confirm" class="primary">처음부터</button></div></dialog>
+<script src="e01-engine.js"></script><script src="e01-pair.js"></script>
+</body></html>

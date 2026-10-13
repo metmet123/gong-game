@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "morningRendererScenarios": 15,
+  "additionalScenarios": [
+    "optional request skipped/completed",
+    "assisted result",
+    "quarter 2 first-day briefing",
+    "L3/L6 original-copy destinations"
+  ],
+  "mode": "Actual renderNews/renderRecords with in-memory DOM elements and real Core/Week/Puzzles data",
+  "limitations": [
+    "Browser layout and mobile wrapping not tested",
+    "Not a full gameplay playthrough"
+  ],
+  "expandedRelationshipSceneChecks": 36
+}

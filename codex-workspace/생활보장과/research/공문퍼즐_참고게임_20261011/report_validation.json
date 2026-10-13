@@ -1,0 +1,68 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "width": 390,
+      "pageWidth": 390,
+      "images": [
+        {
+          "src": "images/unsolicited.png",
+          "loaded": true
+        },
+        {
+          "src": "images/operator-0.jpg",
+          "loaded": true
+        },
+        {
+          "src": "images/horticulture-0.jpg",
+          "loaded": true
+        },
+        {
+          "src": "images/orwell-1.jpg",
+          "loaded": true
+        },
+        {
+          "src": "images/roottrees-2.jpg",
+          "loaded": true
+        },
+        {
+          "src": "images/republia.png",
+          "loaded": true
+        }
+      ],
+      "cards": 6
+    },
+    {
+      "width": 1440,
+      "pageWidth": 1440,
+      "images": [
+        {
+          "src": "images/unsolicited.png",
+          "loaded": true
+        },
+        {
+          "src": "images/operator-0.jpg",
+          "loaded": true
+        },
+        {
+          "src": "images/horticulture-0.jpg",
+          "loaded": true
+        },
+        {
+          "src": "images/orwell-1.jpg",
+          "loaded": true
+        },
+        {
+          "src": "images/roottrees-2.jpg",
+          "loaded": true
+        },
+        {
+          "src": "images/republia.png",
+          "loaded": true
+        }
+      ],
+      "cards": 6
+    }
+  ],
+  "scope": "Report layout and image loads, not gameplay validation"
+}

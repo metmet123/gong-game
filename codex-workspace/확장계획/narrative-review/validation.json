@@ -1,0 +1,140 @@
+{
+  "status": "PASS",
+  "changedTextFields": 459,
+  "changedBySection": {
+    "days": 130,
+    "visitors": 15,
+    "characters": 98,
+    "results": 41,
+    "departments": 55,
+    "decor": 29,
+    "dex": 54,
+    "achievements": 17,
+    "endings": 11,
+    "nextQuarter": 9
+  },
+  "scannedKoreanTextFields": 859,
+  "displayTextFields": 783,
+  "maxDisplayCharacters": 67,
+  "longestDisplayFields": [
+    {
+      "path": [
+        "endings",
+        3,
+        "body"
+      ],
+      "length": 67,
+      "text": "낯설었던 첫날부터 마지막 업무까지 무사히 마쳤습니다. 시간이 걸리기도 했지만, 하나씩 배우며 생활보장과에 익숙해졌습니다."
+    },
+    {
+      "path": [
+        "days",
+        "11",
+        "news",
+        "body",
+        1
+      ],
+      "length": 65,
+      "text": "예산표의 월·분기는 사업 계획의 기간입니다. 출근 일차와는 별개이며, 오늘의 선택 협조는 토지정보과 도면 복원입니다."
+    },
+    {
+      "path": [
+        "endings",
+        2,
+        "body"
+      ],
+      "length": 65,
+      "text": "도구와 자동화를 익혀 반복 업무를 수월하게 처리했습니다. 도재훈은 다음에도 새로운 방법을 함께 시험해 보자고 합니다."
+    },
+    {
+      "path": [
+        "endings",
+        1,
+        "body"
+      ],
+      "length": 64,
+      "text": "내 업무뿐 아니라 동료들의 일도 함께 도왔습니다. 이제 생활보장과에는 편하게 말을 걸 수 있는 동료가 많아졌습니다."
+    },
+    {
+      "path": [
+        "days",
+        "12",
+        "news",
+        "body",
+        0
+      ],
+      "length": 63,
+      "text": "정윤서 과장이 사업 보고서를 한 장으로 정리해 달라고 요청했습니다. 업무 화면에서 꼭 남길 내용을 확인해 주세요."
+    },
+    {
+      "path": [
+        "days",
+        "1",
+        "news",
+        "body",
+        1
+      ],
+      "length": 60,
+      "text": "이번 이야기는 분기 마감을 준비하는 15일입니다. 분기 평가는 부서가 해 온 일을 정리해 살피는 과정입니다."
+    },
+    {
+      "path": [
+        "days",
+        "13",
+        "news",
+        "body",
+        1
+      ],
+      "length": 60,
+      "text": "요청을 전하던 임하루 주무관과 정식 인사를 나눕니다. 오늘의 선택 협조는 정보화팀의 정산 매크로 점검입니다."
+    },
+    {
+      "path": [
+        "endings",
+        0,
+        "body"
+      ],
+      "length": 60,
+      "text": "작은 오류도 놓치지 않으려 꼼꼼히 확인했습니다. 동료들은 안심하고 일을 맡길 수 있는 주무관이라고 말합니다."
+    },
+    {
+      "path": [
+        "nextQuarter",
+        "day1News",
+        "body",
+        1
+      ],
+      "length": 60,
+      "text": "같은 15일 업무를 다시 진행합니다. 지난 분기의 도구·소품·관계는 이어지고 업무 보상 포인트는 절반입니다."
+    },
+    {
+      "path": [
+        "days",
+        "15",
+        "news",
+        "body",
+        1
+      ],
+      "length": 59,
+      "text": "오늘 필수 업무를 마치고 퇴근하면 이번 이야기가 끝납니다. 문화관광과의 축제 부스 배치는 선택 협조입니다."
+    }
+  ],
+  "checks": [
+    "same keys/types/array lengths",
+    "speaker/ID/unlock/note/proposals preserved; decor18 condition documentation corrected to existing predicate",
+    "15 days/3 act transitions/12 characters/36 relationship scenes/8 visits preserved",
+    "duplicate visitor profiles and keepsake descriptions synchronized",
+    "assisted completion has identical consequence",
+    "prose handbook contains all revised strings",
+    "upstream embedded narrative matches baseline",
+    "outside narrative only explicit html-patches manifest changed; gameplay/storage predicates unchanged"
+  ],
+  "upstreamBlobSha": "46a89e50e3bc67d19db80ea7b154c9013afb7150",
+  "upstreamSnapshotSha256": "ae70b3d2a1f75582695f15f4bc21e7d05d200ef68d3405b1262f509e1c71cb1d",
+  "candidateSha256": "a8f338e6767034dce698bd55216cbf73e6a2cac3628244f61f71a8e6ecc0d8ff",
+  "notVerified": [
+    "actual mobile text wrapping",
+    "all-game playthrough",
+    "public deployment"
+  ]
+}

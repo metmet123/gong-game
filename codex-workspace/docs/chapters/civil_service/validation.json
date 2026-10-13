@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-11",
+  "status": "static_plan_passed",
+  "gameTestsRun": false,
+  "htmlRenderingVerified": false,
+  "scope": "계획 파일의 수량·참조·의존·경제와 가상의 격자 배치 검증",
+  "checks": {
+    "mandatoryContexts": 40,
+    "mvpEasyContexts": 12,
+    "plannedVariants": 120,
+    "sourceReferences": "body_read_only",
+    "taskDependencies": "acyclic_ordered",
+    "itemCount": 12,
+    "shopCostP": 330,
+    "mapObjects": 30,
+    "mapZones": 8,
+    "mapBounds": "passed",
+    "mapOverlap": "passed",
+    "centralAisle": "clear",
+    "adjacentInteractionCells": 30,
+    "reachableInteractionCells": 30,
+    "relationUniqueTaskCounts": {
+      "cs.yujin": 6,
+      "cs.dohyun": 12,
+      "cs.serin": 7,
+      "cs.eungyeol": 6,
+      "cs.ian": 9
+    },
+    "examplePolicyConsistency": "passed"
+  },
+  "notVerified": [
+    "배포본 최신 소스·저장 구조",
+    "실제 renderer·이동·카메라",
+    "퍼즐 엔진과 120문항 해 존재",
+    "발령·보상 원자성",
+    "게임 모바일·Android",
+    "PDF 원문 이미지 시각 확인"
+  ],
+  "fixtureContract": "대표 예제의 필드와 witness 일관성만 검사; 실제 disclosure 엔진을 실행한 결과가 아님"
+}

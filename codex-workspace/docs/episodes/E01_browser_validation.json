@@ -1,0 +1,211 @@
+{
+  "passed": true,
+  "fullUiPlaythrough": "stand",
+  "refreshRestored": true,
+  "undoCannotReverseTransfers": true,
+  "completedScenesReadOnly": true,
+  "screenshots": 16,
+  "layoutChecks": [
+    {
+      "width": 390,
+      "contentWidth": 390,
+      "title": "사업 편성"
+    },
+    {
+      "width": 390,
+      "contentWidth": 390,
+      "title": "공문 작업대"
+    },
+    {
+      "width": 390,
+      "contentWidth": 390,
+      "title": "결재 작전"
+    },
+    {
+      "width": 390,
+      "contentWidth": 390,
+      "title": "납품 검수"
+    },
+    {
+      "width": 390,
+      "contentWidth": 390,
+      "title": "지급 서류철"
+    },
+    {
+      "width": 390,
+      "contentWidth": 390,
+      "title": "민원 조사"
+    },
+    {
+      "width": 390,
+      "contentWidth": 390,
+      "title": "결산 사건 보드"
+    },
+    {
+      "width": 390,
+      "contentWidth": 390,
+      "title": "오늘의 사무실"
+    },
+    {
+      "width": 320,
+      "contentWidth": 320,
+      "title": "사업 편성"
+    },
+    {
+      "width": 320,
+      "contentWidth": 320,
+      "title": "공문 작업대"
+    },
+    {
+      "width": 320,
+      "contentWidth": 320,
+      "title": "결재 작전"
+    },
+    {
+      "width": 320,
+      "contentWidth": 320,
+      "title": "납품 검수"
+    },
+    {
+      "width": 320,
+      "contentWidth": 320,
+      "title": "지급 서류철"
+    },
+    {
+      "width": 320,
+      "contentWidth": 320,
+      "title": "민원 조사"
+    },
+    {
+      "width": 320,
+      "contentWidth": 320,
+      "title": "결산 사건 보드"
+    },
+    {
+      "width": 320,
+      "contentWidth": 320,
+      "title": "오늘의 사무실"
+    },
+    {
+      "width": 390,
+      "contentWidth": 390,
+      "title": "사업 편성"
+    },
+    {
+      "width": 390,
+      "contentWidth": 390,
+      "title": "공문 작업대"
+    },
+    {
+      "width": 390,
+      "contentWidth": 390,
+      "title": "결재 작전"
+    },
+    {
+      "width": 390,
+      "contentWidth": 390,
+      "title": "납품 검수"
+    },
+    {
+      "width": 390,
+      "contentWidth": 390,
+      "title": "지급 서류철"
+    },
+    {
+      "width": 390,
+      "contentWidth": 390,
+      "title": "민원 조사"
+    },
+    {
+      "width": 390,
+      "contentWidth": 390,
+      "title": "결산 사건 보드"
+    },
+    {
+      "width": 390,
+      "contentWidth": 390,
+      "title": "오늘의 사무실"
+    },
+    {
+      "width": 768,
+      "contentWidth": 768,
+      "title": "사업 편성"
+    },
+    {
+      "width": 768,
+      "contentWidth": 768,
+      "title": "공문 작업대"
+    },
+    {
+      "width": 768,
+      "contentWidth": 768,
+      "title": "결재 작전"
+    },
+    {
+      "width": 768,
+      "contentWidth": 768,
+      "title": "납품 검수"
+    },
+    {
+      "width": 768,
+      "contentWidth": 768,
+      "title": "지급 서류철"
+    },
+    {
+      "width": 768,
+      "contentWidth": 768,
+      "title": "민원 조사"
+    },
+    {
+      "width": 768,
+      "contentWidth": 768,
+      "title": "결산 사건 보드"
+    },
+    {
+      "width": 768,
+      "contentWidth": 768,
+      "title": "오늘의 사무실"
+    },
+    {
+      "width": 1440,
+      "contentWidth": 1440,
+      "title": "사업 편성"
+    },
+    {
+      "width": 1440,
+      "contentWidth": 1440,
+      "title": "공문 작업대"
+    },
+    {
+      "width": 1440,
+      "contentWidth": 1440,
+      "title": "결재 작전"
+    },
+    {
+      "width": 1440,
+      "contentWidth": 1440,
+      "title": "납품 검수"
+    },
+    {
+      "width": 1440,
+      "contentWidth": 1440,
+      "title": "지급 서류철"
+    },
+    {
+      "width": 1440,
+      "contentWidth": 1440,
+      "title": "민원 조사"
+    },
+    {
+      "width": 1440,
+      "contentWidth": 1440,
+      "title": "결산 사건 보드"
+    },
+    {
+      "width": 1440,
+      "contentWidth": 1440,
+      "title": "오늘의 사무실"
+    }
+  ],
+  "browserErrors": []
+}

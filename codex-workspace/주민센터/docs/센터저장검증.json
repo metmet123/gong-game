@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-10-11T13:05:43.875Z",
+  "checks": [
+    "blank center valid, welfare open, chapter default",
+    "transfer progress independent from welfare access",
+    "copying legacy save leaves original key unchanged",
+    "exclusive locks allow only one simultaneous revision writer",
+    "malformed/future/oversize originals preserved until explicit recover",
+    "quota and unsupported locks never claim saved",
+    "invalid welfare evidence, forged progress and future versions rejected",
+    "bridge origin-frame-token validation and exact duplicate idempotence",
+    "flush waits correlated commit ack; stale seq cannot satisfy flush"
+  ],
+  "passed": true
+}

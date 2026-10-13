@@ -1,0 +1,143 @@
+{
+  "verifiedAt": "2026-10-11T10:53:29.028Z",
+  "scope": "별도 HTML 시안; 실제 게임·저장·배포 검증 아님",
+  "checks": [
+    {
+      "name": "초기 답 없음",
+      "passed": true
+    },
+    {
+      "name": "근거 보관은 답을 입력하지 않음",
+      "passed": true
+    },
+    {
+      "name": "배치·기준 뒤에도 관계 답은 빈 값",
+      "passed": true
+    },
+    {
+      "name": "검토에 실제 오답 기록",
+      "passed": true
+    },
+    {
+      "name": "오답 유지·근거 안내",
+      "passed": true
+    },
+    {
+      "name": "자료 왕복 후 초안 유지",
+      "passed": true
+    },
+    {
+      "name": "탭 왕복 후 값 유지",
+      "passed": true
+    },
+    {
+      "name": "기준 변경으로 관계 무효화",
+      "passed": true
+    },
+    {
+      "name": "완료는 올바른 직접 판단 후",
+      "passed": true
+    },
+    {
+      "name": "도움 초점",
+      "passed": true
+    },
+    {
+      "name": "도움 초점 유지",
+      "passed": true
+    },
+    {
+      "name": "도움 닫고 초점 복귀",
+      "passed": true
+    },
+    {
+      "name": "탭 키보드 이동",
+      "passed": true
+    },
+    {
+      "name": "320 source 가로 넘침 없음",
+      "passed": true
+    },
+    {
+      "name": "320 graph 가로 넘침 없음",
+      "passed": true
+    },
+    {
+      "name": "320 review 가로 넘침 없음",
+      "passed": true
+    },
+    {
+      "name": "320 관계 입력 16px",
+      "passed": true
+    },
+    {
+      "name": "320 앱 주요 버튼 44px",
+      "passed": true
+    },
+    {
+      "name": "390 source 가로 넘침 없음",
+      "passed": true
+    },
+    {
+      "name": "390 graph 가로 넘침 없음",
+      "passed": true
+    },
+    {
+      "name": "390 review 가로 넘침 없음",
+      "passed": true
+    },
+    {
+      "name": "390 관계 입력 16px",
+      "passed": true
+    },
+    {
+      "name": "390 앱 주요 버튼 44px",
+      "passed": true
+    },
+    {
+      "name": "430 source 가로 넘침 없음",
+      "passed": true
+    },
+    {
+      "name": "430 graph 가로 넘침 없음",
+      "passed": true
+    },
+    {
+      "name": "430 review 가로 넘침 없음",
+      "passed": true
+    },
+    {
+      "name": "430 관계 입력 16px",
+      "passed": true
+    },
+    {
+      "name": "430 앱 주요 버튼 44px",
+      "passed": true
+    },
+    {
+      "name": "PC 그래프와 자료 동시 표시",
+      "passed": true
+    },
+    {
+      "name": "PC 영역 넘침 없음",
+      "passed": true
+    },
+    {
+      "name": "PC 자료 탭에서도 그래프 유지",
+      "passed": true
+    },
+    {
+      "name": "현재 화면 비교",
+      "passed": true
+    },
+    {
+      "name": "200% 글자에서 내부 스크롤로 조작 접근",
+      "passed": true
+    },
+    {
+      "name": "스크립트 오류 없음",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

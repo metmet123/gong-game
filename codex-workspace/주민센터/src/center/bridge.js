@@ -1,0 +1,12 @@
+(function(root){'use strict';
+ function createBridge({frame,token,kind,validate,persist,onIssue}){let highest=0,tail=Promise.resolve(),disposed=false;const cache=new Map(),pending=new Map();
+ const ack=(msg,r)=>{if(!disposed)frame.contentWindow.postMessage({channel:'resident-center-ack',protocol:2,token,requestId:msg.requestId,seq:msg.seq,ok:r.ok,memory:!!r.memory,reason:r.reason||''},'*');};
+ async function handle(event){const m=event.data;if(disposed||event.source!==frame.contentWindow||m?.channel!=='resident-center'||m.protocol!==2||m.token!==token||typeof m.requestId!=='string'||m.requestId.length>100||!Number.isSafeInteger(m.seq)||m.seq<1)return false;
+ if(cache.has(m.requestId)){const c=cache.get(m.requestId);ack(m,c.seq===m.seq&&c.payload===JSON.stringify(m.model)?c.result:{ok:false,reason:'중복 요청 내용이 다릅니다.'});return true;}
+ const job=async()=>{if(cache.has(m.requestId)){const cached=cache.get(m.requestId);const r=cached.seq===m.seq&&cached.payload===JSON.stringify(m.model)?cached.result:{ok:false,reason:'중복 요청 내용이 다릅니다.'};ack(m,r);return r;}let result;if(m.seq<=highest)result={ok:false,reason:'이전 화면의 오래된 저장 요청입니다.'};else if(!validate(m.model))result={ok:false,reason:'전달받은 초안 형식을 확인할 수 없습니다.'};else{result=await persist(m.model,kind);if(result.ok||result.memory)highest=m.seq;}
+ cache.set(m.requestId,{seq:m.seq,payload:JSON.stringify(m.model),result});if(cache.size>100)cache.delete(cache.keys().next().value);ack(m,result);const waiter=pending.get(m.requestId);if(waiter){pending.delete(m.requestId);clearTimeout(waiter.timer);waiter.resolve(result);}if(!result.ok&&!result.memory)onIssue(result.reason);return result;};tail=tail.then(job,job);await tail;return true;}
+ function flush(){if(disposed)return Promise.resolve({ok:false,reason:'화면이 이미 닫혔습니다.'});const requestId='flush:'+crypto.randomUUID();return new Promise(resolve=>{const timer=setTimeout(()=>{pending.delete(requestId);resolve({ok:false,reason:'저장 확인이 늦어지고 있습니다. 화면을 유지합니다. 재시도하거나 초안을 내보내 주세요.'});},3000);pending.set(requestId,{resolve,timer});frame.contentWindow.postMessage({channel:'resident-center-flush',protocol:2,token,requestId},'*');});}
+ function dispose(){disposed=true;for(const x of pending.values()){clearTimeout(x.timer);x.resolve({ok:false,reason:'연결이 닫혔습니다.'});}pending.clear();}
+ return {handle,flush,dispose};}
+ const api={createBridge};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.CenterBridge=api;
+})(globalThis);

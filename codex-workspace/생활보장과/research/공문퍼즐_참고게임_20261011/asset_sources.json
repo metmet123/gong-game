@@ -1,0 +1,128 @@
+[
+  {
+    "id": "operator",
+    "name": "The Operator",
+    "screenshots": [
+      {
+        "file": "images/operator-0.jpg",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1771980/ss_152c464d71afa7bf2a0546cab74008d0e91b20c8.1920x1080.jpg?t=1778485297",
+        "source": "https://store.steampowered.com/app/1771980/",
+        "kind": "developer-published Steam screenshot"
+      },
+      {
+        "file": "images/operator-1.jpg",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1771980/ss_b6af536af205fdcbb0a79172bacd7e22c38326a7.1920x1080.jpg?t=1778485297",
+        "source": "https://store.steampowered.com/app/1771980/",
+        "kind": "developer-published Steam screenshot"
+      },
+      {
+        "file": "images/operator-2.jpg",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1771980/ss_613084ae51e3357660fc79c80edaf0385245d951.1920x1080.jpg?t=1778485297",
+        "source": "https://store.steampowered.com/app/1771980/",
+        "kind": "developer-published Steam screenshot"
+      }
+    ]
+  },
+  {
+    "id": "orwell",
+    "name": "Orwell: Keeping an Eye On You",
+    "screenshots": [
+      {
+        "file": "images/orwell-0.jpg",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/491950/ss_925264c65c464caeba82404bb99369a1f2655b77.1920x1080.jpg?t=1770913154",
+        "source": "https://store.steampowered.com/app/491950/",
+        "kind": "developer-published Steam screenshot"
+      },
+      {
+        "file": "images/orwell-1.jpg",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/491950/ss_41885155e4509b08fc9f1d958c8d8818d296c29f.1920x1080.jpg?t=1770913154",
+        "source": "https://store.steampowered.com/app/491950/",
+        "kind": "developer-published Steam screenshot"
+      },
+      {
+        "file": "images/orwell-2.jpg",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/491950/ss_246bfc18b10ae00be29327b69d706313dcc8ebab.1920x1080.jpg?t=1770913154",
+        "source": "https://store.steampowered.com/app/491950/",
+        "kind": "developer-published Steam screenshot"
+      }
+    ]
+  },
+  {
+    "id": "horticulture",
+    "name": "Strange Horticulture",
+    "screenshots": [
+      {
+        "file": "images/horticulture-0.jpg",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1574580/ss_bdf4e7e6ab970f19c95ae96896e9457a95dbdf65.1920x1080.jpg?t=1772459223",
+        "source": "https://store.steampowered.com/app/1574580/",
+        "kind": "developer-published Steam screenshot"
+      },
+      {
+        "file": "images/horticulture-1.jpg",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1574580/ss_5cdbae50e4a7a86a1e4a6b462bafba22779dfc1b.1920x1080.jpg?t=1772459223",
+        "source": "https://store.steampowered.com/app/1574580/",
+        "kind": "developer-published Steam screenshot"
+      },
+      {
+        "file": "images/horticulture-2.jpg",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1574580/ss_741db5d7020d737ea8aba278e95f7111d7ca8f6e.1920x1080.jpg?t=1772459223",
+        "source": "https://store.steampowered.com/app/1574580/",
+        "kind": "developer-published Steam screenshot"
+      }
+    ]
+  },
+  {
+    "id": "roottrees",
+    "name": "The Roottrees are Dead",
+    "screenshots": [
+      {
+        "file": "images/roottrees-0.jpg",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2754380/ss_fbdc2236369583a9123f2bcfc1bba1e915c62d02.1920x1080.jpg?t=1789391159",
+        "source": "https://store.steampowered.com/app/2754380/",
+        "kind": "developer-published Steam screenshot"
+      },
+      {
+        "file": "images/roottrees-1.jpg",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2754380/ss_f7df5d0b71a2a7f8a84af945a6324c2e51c4965e.1920x1080.jpg?t=1789391159",
+        "source": "https://store.steampowered.com/app/2754380/",
+        "kind": "developer-published Steam screenshot"
+      },
+      {
+        "file": "images/roottrees-2.jpg",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2754380/ss_6caf606c6def8bbb20d980a01523e454ff21f37b.1920x1080.jpg?t=1789391159",
+        "source": "https://store.steampowered.com/app/2754380/",
+        "kind": "developer-published Steam screenshot"
+      }
+    ]
+  },
+  {
+    "id": "unsolicited",
+    "name": "Unsolicited",
+    "imageCandidates": [
+      "http://i.imgur.com/m0ILoXS.png"
+    ],
+    "screenshots": [
+      {
+        "file": "images/unsolicited.png",
+        "url": "http://i.imgur.com/m0ILoXS.png",
+        "source": "https://dukope.com/",
+        "kind": "creator homepage image"
+      }
+    ]
+  },
+  {
+    "id": "republia",
+    "name": "The Republia Times",
+    "imageCandidates": [
+      "http://i.imgur.com/21RLwH6.png"
+    ],
+    "screenshots": [
+      {
+        "file": "images/republia.png",
+        "url": "http://i.imgur.com/21RLwH6.png",
+        "source": "https://dukope.com/",
+        "kind": "creator homepage image"
+      }
+    ]
+  }
+]

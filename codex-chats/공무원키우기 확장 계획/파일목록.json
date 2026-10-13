@@ -1,0 +1,1108 @@
+[
+  {
+    "path": ".claude/launch.json",
+    "repositoryPath": "codex-workspace/.claude/launch.json",
+    "bytes": 193,
+    "sha256": "cd9ffc6b68e9e82ca364b7dbe5a47f763ff34c0ca72c7c0577f47fcd4c28a042",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": ".plan-preview/index.html",
+    "repositoryPath": "codex-workspace/.plan-preview/index.html",
+    "bytes": 321118,
+    "sha256": "bd9a82ab324bcc7c28354f61531ecdb9af991a4408803e91f33c903e9fda8628",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": ".preview/index.html",
+    "repositoryPath": "codex-workspace/.preview/index.html",
+    "bytes": 126782,
+    "sha256": "8091a29dd12d5cb0076422f6bf3c85e7c306731cf53a83116b087abc8a0bd95b",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": ".preview/sequence.html",
+    "repositoryPath": "codex-workspace/.preview/sequence.html",
+    "bytes": 125596,
+    "sha256": "5296ea62658323bea302ea69d9a2e137f79b45c4d9cc2d8c2b6b548cc1b7db5e",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": ".qa/pixel-office.png",
+    "repositoryPath": "codex-workspace/.qa/pixel-office.png",
+    "bytes": 110196,
+    "sha256": "7b607d411cede25fe5dce86c6549109a3de42d20ec890b85a126ce3f6a0c7db7",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": ".qa/pixel-puzzle.png",
+    "repositoryPath": "codex-workspace/.qa/pixel-puzzle.png",
+    "bytes": 71832,
+    "sha256": "2a94f9492669f822c9f53ccd98daf27251e5706324405a5db377436d3c93f01c",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": ".qa/preview.html",
+    "repositoryPath": "codex-workspace/.qa/preview.html",
+    "bytes": 90472,
+    "sha256": "7d5add9877db6e5f4c130f4b35e793ba07f824c17ef6c02c24ad829351fc2750",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": ".qa/scene-desktop.png",
+    "repositoryPath": "codex-workspace/.qa/scene-desktop.png",
+    "bytes": 97810,
+    "sha256": "364dc50c9ab64b7ef443bf4d71b221580a21ea14670e34d1cdfbefc548c9d420",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": ".qa/scene-mobile.png",
+    "repositoryPath": "codex-workspace/.qa/scene-mobile.png",
+    "bytes": 34147,
+    "sha256": "4581f11b364a647dba68d7b8fc8b3d9fc0b7d6cbc3820d9bda8f55980ece1734",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": ".qa/생활보장과_확정배치.png",
+    "repositoryPath": "codex-workspace/.qa/생활보장과_확정배치.png",
+    "bytes": 94160,
+    "sha256": "89ef8cff370f86ba01471cfb27bbcd48626611f1777f1bc8c45adf3f6e2bf963",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "AGENTS.md",
+    "repositoryPath": "codex-workspace/AGENTS.md",
+    "bytes": 761,
+    "sha256": "ad86afcddcb7a43ed1d3f4359895e55c7f0898252d413aaa4c610ba4103a7151",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "build_expansion_plan.py",
+    "repositoryPath": "codex-workspace/build_expansion_plan.py",
+    "bytes": 57606,
+    "sha256": "ddd18b4c35fc99439cbeea021d512183e8bac692a4c188f18e52be1bcdf1f42a",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "build_game.py",
+    "repositoryPath": "codex-workspace/build_game.py",
+    "bytes": 502,
+    "sha256": "9758034b26bed219a3d9470944ecee77a5c0f8effa6528fb67780483fcad1ae1",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "build_report.py",
+    "repositoryPath": "codex-workspace/build_report.py",
+    "bytes": 46785,
+    "sha256": "87ebc9d39c8e2a2a82c3d536ff2bf081cf593f00a105349dec45af0cf5e48192",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "build_scene.py",
+    "repositoryPath": "codex-workspace/build_scene.py",
+    "bytes": 3427,
+    "sha256": "307a8a67eec069b5f95b33c25bc30c7c35402bfa810482add2a5c9e0f9de4bdb",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/00_README_INDEX.md",
+    "repositoryPath": "codex-workspace/docs/00_README_INDEX.md",
+    "bytes": 9017,
+    "sha256": "8648ad435fd8e6c2146adad8e713a2e0b1d6601724de6d781800e7ff363ce06e",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/01_SOURCE_AUDIT_AND_DECISIONS.md",
+    "repositoryPath": "codex-workspace/docs/01_SOURCE_AUDIT_AND_DECISIONS.md",
+    "bytes": 17845,
+    "sha256": "8200639e102cd9c6ab771b54e2923e615f651677507ed8d733312d388cb5f249",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/02_MASTER_GAME_DESIGN.md",
+    "repositoryPath": "codex-workspace/docs/02_MASTER_GAME_DESIGN.md",
+    "bytes": 9175,
+    "sha256": "253fa73e4e99911b4dae97bbb7d957f9ccf7967ee615a4e4938e760f72746955",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/03_STORY_WORLD_NPCS_EVENTS.md",
+    "repositoryPath": "codex-workspace/docs/03_STORY_WORLD_NPCS_EVENTS.md",
+    "bytes": 13410,
+    "sha256": "4596738524a704dc329431d13f88700c5324e66a3a6470ff31c066a235fdba69",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/04_OFFICE_ZONES_CAMERA_UI.md",
+    "repositoryPath": "codex-workspace/docs/04_OFFICE_ZONES_CAMERA_UI.md",
+    "bytes": 24540,
+    "sha256": "7e7c26af86f707fc92333c84c3340a7b69bd83dc9dc4c0543e22214e77f7ddba",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/05_PUZZLE_SYSTEM_AND_8_SPECS.md",
+    "repositoryPath": "codex-workspace/docs/05_PUZZLE_SYSTEM_AND_8_SPECS.md",
+    "bytes": 37996,
+    "sha256": "1d208b93b61b5c40eecf8c5597d7a321ce2e6215d081cf6bccfbedf3f909556f",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/06_GROWTH_DECOR_COLLECTIONS_ECONOMY.md",
+    "repositoryPath": "codex-workspace/docs/06_GROWTH_DECOR_COLLECTIONS_ECONOMY.md",
+    "bytes": 14231,
+    "sha256": "923dd066833bede63e441c5bc0bb4b170eabd9b5cdcfd5de1d9f77de522a6155",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/07_DEPARTMENT_EXPANSION_PACKS.md",
+    "repositoryPath": "codex-workspace/docs/07_DEPARTMENT_EXPANSION_PACKS.md",
+    "bytes": 12493,
+    "sha256": "bfa7e66d24f1970688c3b85cf97bb937832e4993423a037f94e28f02ed87911f",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/08_TECH_ARCHITECTURE_SAVE_ASSETS.md",
+    "repositoryPath": "codex-workspace/docs/08_TECH_ARCHITECTURE_SAVE_ASSETS.md",
+    "bytes": 19963,
+    "sha256": "dc1055ddfc1b73d3a781643cdf65b20ddd76b917510ab7303f0556d664e4f938",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/09_PHASED_ROADMAP_AND_TASK_BACKLOG.md",
+    "repositoryPath": "codex-workspace/docs/09_PHASED_ROADMAP_AND_TASK_BACKLOG.md",
+    "bytes": 95237,
+    "sha256": "746ef263cb6e39afe8fc1051366ccc72795220d1801c329bac835f0923a03866",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/10_TEST_PLAN_AND_ACCEPTANCE.md",
+    "repositoryPath": "codex-workspace/docs/10_TEST_PLAN_AND_ACCEPTANCE.md",
+    "bytes": 8854,
+    "sha256": "499bbcacc8ee38a4e6fa9df4598109dab949df4db0d780cc6a084451cc5b6ff4",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/11_RISK_REGISTER_AND_OPEN_DECISIONS.md",
+    "repositoryPath": "codex-workspace/docs/11_RISK_REGISTER_AND_OPEN_DECISIONS.md",
+    "bytes": 6144,
+    "sha256": "b4d2b5d493676ce37f313dbc3575d78f10ac350b5da995840e5e3fc44678d38e",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/12_NEXT_IMPLEMENTATION_HANDOFF.md",
+    "repositoryPath": "codex-workspace/docs/12_NEXT_IMPLEMENTATION_HANDOFF.md",
+    "bytes": 7082,
+    "sha256": "4d4af8bc77df72ef8d17489deb07a6f5f63b074b602c00b74688472fe8bbc5ab",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/3단계시안_사용안내.md",
+    "repositoryPath": "codex-workspace/docs/3단계시안_사용안내.md",
+    "bytes": 2620,
+    "sha256": "cd2561b5c25650f5e31aa9d338118733a224ad239268e9a38dcac4e390c05a64",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/assets/office_zones_overlay.svg",
+    "repositoryPath": "codex-workspace/docs/assets/office_zones_overlay.svg",
+    "bytes": 15884,
+    "sha256": "8346518ea3ab202b68b5759808c6e00002ed5c3e31de46afc302a8a1a83bafd0",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/data/office_original_v1.json",
+    "repositoryPath": "codex-workspace/docs/data/office_original_v1.json",
+    "bytes": 4915,
+    "sha256": "dba1be488608706f5bec0ea4bb8e62bc140fc7afa2f26fd5268bfd5ba19e890e",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/data/planning_contract.json",
+    "repositoryPath": "codex-workspace/docs/data/planning_contract.json",
+    "bytes": 19058,
+    "sha256": "ffdcee68002fe5baaa4ad738bec90fe331adbb0a19c5706391a9f21dda353c1e",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/data/puzzle_first_roadmap_v1_1.json",
+    "repositoryPath": "codex-workspace/docs/data/puzzle_first_roadmap_v1_1.json",
+    "bytes": 1299,
+    "sha256": "e6fd0564eb23bc13c5887fa31a34e75b64a788f87900b0bc0e5a2833aef0394d",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/data/puzzle_uiux_v1_2.json",
+    "repositoryPath": "codex-workspace/docs/data/puzzle_uiux_v1_2.json",
+    "bytes": 25682,
+    "sha256": "5767ccc6f29532a67ca1893c28a1a59893c860c26267ccef97367dbf78eb067b",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/data/stage_catalog_v1_1.json",
+    "repositoryPath": "codex-workspace/docs/data/stage_catalog_v1_1.json",
+    "bytes": 24501,
+    "sha256": "82178ec9e7a1e5d6304bcc5a3f65759c4e6978d76201df607b5ad70971315548",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/data/stage_catalog_v1_2.json",
+    "repositoryPath": "codex-workspace/docs/data/stage_catalog_v1_2.json",
+    "bytes": 33660,
+    "sha256": "4dbea743de387fd7d694e444764bab884cec5a6ff641b775d79497333c43c26c",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/actual_audit_results.json",
+    "repositoryPath": "codex-workspace/docs/evidence/actual_audit_results.json",
+    "bytes": 1611,
+    "sha256": "eba500e7b6b9d4ff0a790a1d64472ac64c580c67436af8929a1a70fd78e16c32",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/audit_sources.py",
+    "repositoryPath": "codex-workspace/docs/evidence/audit_sources.py",
+    "bytes": 3047,
+    "sha256": "830c6dda732095dbe32d05f587c8138bc03f449d12e41efc5b1453f30bf8f570",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/baseline-ui-390.png",
+    "repositoryPath": "codex-workspace/docs/evidence/baseline-ui-390.png",
+    "bytes": 47736,
+    "sha256": "c4cf241f84c9f7a61b7acaa0b594b0f7c6e428d107b6255311b6ae2672dd782a",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/check_examples.py",
+    "repositoryPath": "codex-workspace/docs/evidence/check_examples.py",
+    "bytes": 10147,
+    "sha256": "23f69aa2abebf531ac0a6b7b47e2b62b5e7c10e356b7920935f859eb23876b6d",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/economy_schedule.json",
+    "repositoryPath": "codex-workspace/docs/evidence/economy_schedule.json",
+    "bytes": 1853,
+    "sha256": "8e61ae485f6810214a442ce17ea46efc9664fda200dafaa0e33173e751e4fd91",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/example_checks.json",
+    "repositoryPath": "codex-workspace/docs/evidence/example_checks.json",
+    "bytes": 4062,
+    "sha256": "8712eef712c40bb478deb721c4653630ba42e350eeef77d53f8ce7033b94aa65",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/expansion_text.txt",
+    "repositoryPath": "codex-workspace/docs/evidence/expansion_text.txt",
+    "bytes": 37494,
+    "sha256": "33ca34179307c54d7ecc6804d43fafe4dd71d91e522edc78618e4761302ac6d8",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/extraction_result.json",
+    "repositoryPath": "codex-workspace/docs/evidence/extraction_result.json",
+    "bytes": 166,
+    "sha256": "270e649cfaadc8fc96080ecb668f2f2d57679f036792b798ed454b3f644cfec8",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/game_script_0.js",
+    "repositoryPath": "codex-workspace/docs/evidence/game_script_0.js",
+    "bytes": 72215,
+    "sha256": "04d31d4490b6e103ddd79246ec82c0524b06f0208a3edca2c0da09a38cda6d04",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/game_text.txt",
+    "repositoryPath": "codex-workspace/docs/evidence/game_text.txt",
+    "bytes": 1879,
+    "sha256": "4001199537ab1678b41619cec20f3c8960b1fe82e108aad27b27050855cdb94a",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/html_build_manifest.json",
+    "repositoryPath": "codex-workspace/docs/evidence/html_build_manifest.json",
+    "bytes": 2098,
+    "sha256": "71ac743025db8b993d773a3321677be452d5ebf9155f34807392fcffc4a2c4ca",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/html_reader_validation.json",
+    "repositoryPath": "codex-workspace/docs/evidence/html_reader_validation.json",
+    "bytes": 8244,
+    "sha256": "fabe8e18076f6f3b4ddf0ba174efd13e01466f0e522267e8fa6205724c5acdec",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/make_backlog.py",
+    "repositoryPath": "codex-workspace/docs/evidence/make_backlog.py",
+    "bytes": 48349,
+    "sha256": "8626cd974953bda20690b7fa6b181a33c823b7d878d1cd5f3bac71f7b76f8d67",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/make_planning_data.py",
+    "repositoryPath": "codex-workspace/docs/evidence/make_planning_data.py",
+    "bytes": 12731,
+    "sha256": "3bb6347f2a82c7281f6ac1f433fab217977f89a85dc00dcb4a66fc5e5ba1b573",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/map_analysis.json",
+    "repositoryPath": "codex-workspace/docs/evidence/map_analysis.json",
+    "bytes": 10789,
+    "sha256": "bf29aeaddd3e0a7db3df4b9640c3a4cba330196cc15c20ae0e5cd9df9879380a",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/new_design_text.txt",
+    "repositoryPath": "codex-workspace/docs/evidence/new_design_text.txt",
+    "bytes": 32845,
+    "sha256": "f822aecee339b4b64a5cc39fb962bc08a73d0832eff8957fe8243335a656f1d8",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/plan_validation.json",
+    "repositoryPath": "codex-workspace/docs/evidence/plan_validation.json",
+    "bytes": 3795,
+    "sha256": "48699010e668dbc1c4656b06db0b673794c626640d6cbf9fd1f1b60f79a0442b",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/preview/index.html",
+    "repositoryPath": "codex-workspace/docs/evidence/preview/index.html",
+    "bytes": 126795,
+    "sha256": "391e71ffd9f33bb49c9966213b0ba8b36aafe681253066ae2ba9572bf2216cc8",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/puzzle_uiux_validation_v1_2.json",
+    "repositoryPath": "codex-workspace/docs/evidence/puzzle_uiux_validation_v1_2.json",
+    "bytes": 2003,
+    "sha256": "f9b235196c7b075fba84d567d41f5502e4862e133f79481a392e19db9aad0f77",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/request_prompt.txt",
+    "repositoryPath": "codex-workspace/docs/evidence/request_prompt.txt",
+    "bytes": 35451,
+    "sha256": "ef8a20172e91fdec0900d98b20e031995ce7ad93868b21c3435dd4710412862d",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/requirements_traceability.md",
+    "repositoryPath": "codex-workspace/docs/evidence/requirements_traceability.md",
+    "bytes": 1413,
+    "sha256": "3663a7f3f9de88fe2e1251c2e776d87732c2cebab25f22bcf5620eaa45672616",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/research_text.txt",
+    "repositoryPath": "codex-workspace/docs/evidence/research_text.txt",
+    "bytes": 23756,
+    "sha256": "91135208ccc6ac19482a2a86eb00344b45dd54893c62c5cb5ee09654d264f5fd",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/research_verification.json",
+    "repositoryPath": "codex-workspace/docs/evidence/research_verification.json",
+    "bytes": 2628,
+    "sha256": "97b743ec3eab21b9733a5c70cd3c07b29b2ac5de692aac78c8043461d2eceb50",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/resumption_checks.json",
+    "repositoryPath": "codex-workspace/docs/evidence/resumption_checks.json",
+    "bytes": 511,
+    "sha256": "940489945aa4f961e7d9f46c92fd921ce63b2148a8b61dd82c73c0c69fcd0f87",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/runtime-test/existing-rules.cjs",
+    "repositoryPath": "codex-workspace/docs/evidence/runtime-test/existing-rules.cjs",
+    "bytes": 4241,
+    "sha256": "0bc73b6fd929d50e36925f8f1fd49d42c592c806660c32b880819a310f31ee13",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/runtime-test/inline-core.cjs",
+    "repositoryPath": "codex-workspace/docs/evidence/runtime-test/inline-core.cjs",
+    "bytes": 20795,
+    "sha256": "d57a70fd25571eb33e33269279af1ff021ce983cec407cb1d72662f0174f95fa",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/source_manifest.json",
+    "repositoryPath": "codex-workspace/docs/evidence/source_manifest.json",
+    "bytes": 1397,
+    "sha256": "c2e4ad0421edcbf2e42ce35bb781296360c69d6e497b617b0aecc8095960b624",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/stage_atlas_manifest.json",
+    "repositoryPath": "codex-workspace/docs/evidence/stage_atlas_manifest.json",
+    "bytes": 1778,
+    "sha256": "4783f7fe73a0128ae8b3829f36ab02fc105f3bb90422075bb791bfee37145f30",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/stage_atlas_validation.json",
+    "repositoryPath": "codex-workspace/docs/evidence/stage_atlas_validation.json",
+    "bytes": 2783,
+    "sha256": "3adc92df8a6f6a4f64175144ac061c31b65eff959173a7834e58106cf11070f7",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/v1_0_before_puzzle_first/00_README_INDEX.md",
+    "repositoryPath": "codex-workspace/docs/evidence/v1_0_before_puzzle_first/00_README_INDEX.md",
+    "bytes": 7575,
+    "sha256": "0ce7c3862f0cd98cca4005620ada8953fee24f13d9e3b27e4ce4b55ac92248bc",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/v1_0_before_puzzle_first/09_PHASED_ROADMAP_AND_TASK_BACKLOG.md",
+    "repositoryPath": "codex-workspace/docs/evidence/v1_0_before_puzzle_first/09_PHASED_ROADMAP_AND_TASK_BACKLOG.md",
+    "bytes": 94749,
+    "sha256": "4045e9561c0c9632ce8aa73179f76e1228e9ecc9ac69ee807be41e5dc9318d92",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/v1_0_before_puzzle_first/12_NEXT_IMPLEMENTATION_HANDOFF.md",
+    "repositoryPath": "codex-workspace/docs/evidence/v1_0_before_puzzle_first/12_NEXT_IMPLEMENTATION_HANDOFF.md",
+    "bytes": 6137,
+    "sha256": "d53393489e8a444c219ddc2db91f0d29d70e9a8f563b3ab9973d76a56c3a876f",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/v1_1_before_app_uiux/00_README_INDEX.md",
+    "repositoryPath": "codex-workspace/docs/evidence/v1_1_before_app_uiux/00_README_INDEX.md",
+    "bytes": 8449,
+    "sha256": "1d57c333d1208103b9f42171ff01a1156871a182668a0d39de429551cc889056",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/v1_1_before_app_uiux/05_PUZZLE_SYSTEM_AND_8_SPECS.md",
+    "repositoryPath": "codex-workspace/docs/evidence/v1_1_before_app_uiux/05_PUZZLE_SYSTEM_AND_8_SPECS.md",
+    "bytes": 37590,
+    "sha256": "7958ee0101597f679da1589ea6c08e864bfc48b429b3effd6a1c35b2ff3a6521",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/v1_1_before_app_uiux/07_DEPARTMENT_EXPANSION_PACKS.md",
+    "repositoryPath": "codex-workspace/docs/evidence/v1_1_before_app_uiux/07_DEPARTMENT_EXPANSION_PACKS.md",
+    "bytes": 12027,
+    "sha256": "46eca3d9c59514c9b88be98483cb8f7b211a6072a66d20d38dd8e441df11e581",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/v1_1_before_app_uiux/12_NEXT_IMPLEMENTATION_HANDOFF.md",
+    "repositoryPath": "codex-workspace/docs/evidence/v1_1_before_app_uiux/12_NEXT_IMPLEMENTATION_HANDOFF.md",
+    "bytes": 6676,
+    "sha256": "cc541cba6c5d1c7454207a9627b2f85ed1935d1508dd2bbfa03444ba8cf061cb",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/v1_1_before_app_uiux/3단계시안_사용안내.md",
+    "repositoryPath": "codex-workspace/docs/evidence/v1_1_before_app_uiux/3단계시안_사용안내.md",
+    "bytes": 2143,
+    "sha256": "c84c3e4e41797b2c1c70fc02b83099e86d30e655b6b24fce6f7d4c57eaef49a6",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/v1_1_before_app_uiux/PUZZLE_FIRST_V1_1.md",
+    "repositoryPath": "codex-workspace/docs/evidence/v1_1_before_app_uiux/PUZZLE_FIRST_V1_1.md",
+    "bytes": 15899,
+    "sha256": "ec0f639994e4a8002bf3f612840a517c98d9dfc4852c25370f29dd745d314d14",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/v1_1_before_app_uiux/tasks_puzzle_first_v1_1.json",
+    "repositoryPath": "codex-workspace/docs/evidence/v1_1_before_app_uiux/tasks_puzzle_first_v1_1.json",
+    "bytes": 12130,
+    "sha256": "83e6fad2b5ede814f53c67fa06f2f9857361506b476cadabf7a4d49c7c372047",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/v1_1_before_app_uiux/공무원키우기_3단계시안_퍼즐우선계획.html",
+    "repositoryPath": "codex-workspace/docs/evidence/v1_1_before_app_uiux/공무원키우기_3단계시안_퍼즐우선계획.html",
+    "bytes": 522292,
+    "sha256": "78ce5770984b70a3af74934268c5ca539b7557aed272bfe252bad76e57dd58da",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/validate_plan.py",
+    "repositoryPath": "codex-workspace/docs/evidence/validate_plan.py",
+    "bytes": 7260,
+    "sha256": "82d82b25279aa1596e5a8aa7ffc6d08e6e9dab958af69dd8dacf45a93171bbcc",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/WORK_COMPLETED_20261010.md",
+    "repositoryPath": "codex-workspace/docs/evidence/WORK_COMPLETED_20261010.md",
+    "bytes": 1337,
+    "sha256": "763c7eaa26468f6cb6999ffe4b9e7ff1dc809d64932e911b291ca5389008853b",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/evidence/workspace_source_manifest.json",
+    "repositoryPath": "codex-workspace/docs/evidence/workspace_source_manifest.json",
+    "bytes": 3712,
+    "sha256": "e58c28dcfd2177d2da1f7fffdab309ebaa32f5b629883016a48857665b37712c",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/html_reader_src/build_reader.py",
+    "repositoryPath": "codex-workspace/docs/html_reader_src/build_reader.py",
+    "bytes": 9302,
+    "sha256": "f5d75f984c8c01416269cf61fd37a1c1939668d5c928cb77f8844803b531ff2a",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/html_reader_src/reader.css",
+    "repositoryPath": "codex-workspace/docs/html_reader_src/reader.css",
+    "bytes": 31451,
+    "sha256": "f9f2c5c948b0f65ef6e122434395850e48b76a7e269130a7aa88535b0121fbbc",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/html_reader_src/reader.js",
+    "repositoryPath": "codex-workspace/docs/html_reader_src/reader.js",
+    "bytes": 31822,
+    "sha256": "124fde773909db9fb6ca4e30a7f9ff16086a9c9dbdc2a8c3e46d33792cee558b",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/html_reader_src/reader_template.html",
+    "repositoryPath": "codex-workspace/docs/html_reader_src/reader_template.html",
+    "bytes": 14533,
+    "sha256": "616a8f18d136a590ce48309fe59a602233bb52d5873791ef0c9cbfed2e2100b4",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/HTML_사용안내.md",
+    "repositoryPath": "codex-workspace/docs/HTML_사용안내.md",
+    "bytes": 2846,
+    "sha256": "24efab1cc9c09805cb5f3166047780041b37dd5716023820e96263c0e9b79f5f",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/mockups/game_style_v1_3/01_conveyor.png",
+    "repositoryPath": "codex-workspace/docs/mockups/game_style_v1_3/01_conveyor.png",
+    "bytes": 1672154,
+    "sha256": "c4df9c884be999290a1c825016dbaa4c344bc77f0d0260ba233a3314b3ace3eb",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/mockups/game_style_v1_3/02_rules.png",
+    "repositoryPath": "codex-workspace/docs/mockups/game_style_v1_3/02_rules.png",
+    "bytes": 1680856,
+    "sha256": "a77ba361b99d8209607d7eace265e47e3eba123c8cd0744be05ff07376d4d5ce",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/mockups/game_style_v1_3/03_macro.png",
+    "repositoryPath": "codex-workspace/docs/mockups/game_style_v1_3/03_macro.png",
+    "bytes": 1664466,
+    "sha256": "7cc57375cdbfeac11dda19cdc38b36ff81414f21024e70caec2dcd666bbefc85",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/mockups/game_style_v1_3/04_owner.png",
+    "repositoryPath": "codex-workspace/docs/mockups/game_style_v1_3/04_owner.png",
+    "bytes": 1672679,
+    "sha256": "9db470469021e679657eda090044df8bb11c657585e507e9fd1a05be92111aeb",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/mockups/game_style_v1_3/05_approval.png",
+    "repositoryPath": "codex-workspace/docs/mockups/game_style_v1_3/05_approval.png",
+    "bytes": 1901176,
+    "sha256": "b0c778bfdd4478eb4c06c957d10cd954c34e8bb1bf0576b199452640f5e12d64",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/mockups/game_style_v1_3/06_archive.png",
+    "repositoryPath": "codex-workspace/docs/mockups/game_style_v1_3/06_archive.png",
+    "bytes": 1738614,
+    "sha256": "32352489c31eacf606261c65afd482b05a9bfa6d442e1526925c5a8534cfaa50",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/mockups/game_style_v1_3/07_budget.png",
+    "repositoryPath": "codex-workspace/docs/mockups/game_style_v1_3/07_budget.png",
+    "bytes": 1564704,
+    "sha256": "211f175fa555dfe017c3d9f57d1c58972f8de479873bc920ab5a3f664bbb3a7e",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/mockups/game_style_v1_3/08_brief.png",
+    "repositoryPath": "codex-workspace/docs/mockups/game_style_v1_3/08_brief.png",
+    "bytes": 1807234,
+    "sha256": "12a3144b1c288c4fd22d4dafd2d75e1683473c8b4a8cf6467b61e25c04fba2cc",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/mockups/game_style_v1_3/공무원키우기_게임형시안_8종.html",
+    "repositoryPath": "codex-workspace/docs/mockups/game_style_v1_3/공무원키우기_게임형시안_8종.html",
+    "bytes": 18274166,
+    "sha256": "85e0934659a0a7d778431cdd88cd7a7df6d22366515b3b03eeac763c80e72215",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/mockups/game_style_v1_3/생성프롬프트.json",
+    "repositoryPath": "codex-workspace/docs/mockups/game_style_v1_3/생성프롬프트.json",
+    "bytes": 28731,
+    "sha256": "d5588b1413d92e79eca3807d894842482acfd5de974922f134564dfb6f476a14",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/PUZZLE_FIRST_V1_1.md",
+    "repositoryPath": "codex-workspace/docs/PUZZLE_FIRST_V1_1.md",
+    "bytes": 16803,
+    "sha256": "811a08c7d9e841eebc268f524fe15c82743ea1bcbee44aae982766044323e13a",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/PUZZLE_UIUX_V1_2.md",
+    "repositoryPath": "codex-workspace/docs/PUZZLE_UIUX_V1_2.md",
+    "bytes": 17898,
+    "sha256": "5f42a6785b82c1a639da4c190f50a9f8d9866258e5db7145b32f764a1b7b26a3",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/stage_atlas_src/build_stage_atlas.py",
+    "repositoryPath": "codex-workspace/docs/stage_atlas_src/build_stage_atlas.py",
+    "bytes": 38502,
+    "sha256": "0811c26006d66e1b9ff55036802c937f799e5dc663ae8dafa6e3e28520eedbcf",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/stage_atlas_src/prepare_puzzle_uiux.py",
+    "repositoryPath": "codex-workspace/docs/stage_atlas_src/prepare_puzzle_uiux.py",
+    "bytes": 23884,
+    "sha256": "5b89dac0c888a9a94d0774aad8b15d2735cd79c3ee552fcda495491b77fb68e9",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/stage_atlas_src/PUZZLE_FIRST_V1_1.md",
+    "repositoryPath": "codex-workspace/docs/stage_atlas_src/PUZZLE_FIRST_V1_1.md",
+    "bytes": 16803,
+    "sha256": "811a08c7d9e841eebc268f524fe15c82743ea1bcbee44aae982766044323e13a",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/stage_atlas_src/puzzle_uiux.css",
+    "repositoryPath": "codex-workspace/docs/stage_atlas_src/puzzle_uiux.css",
+    "bytes": 15282,
+    "sha256": "0e09763f4a127e14086c1f4cf14a803e936dab51161b8675f07d28f7aa3fe681",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/stage_atlas_src/puzzle_uiux.py",
+    "repositoryPath": "codex-workspace/docs/stage_atlas_src/puzzle_uiux.py",
+    "bytes": 12898,
+    "sha256": "bb7561cb5775937a9df1c30af92b98109fd6e8754ce38f854328f2ad35db8798",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/stage_atlas_src/puzzle_uiux_v1_2.json",
+    "repositoryPath": "codex-workspace/docs/stage_atlas_src/puzzle_uiux_v1_2.json",
+    "bytes": 25682,
+    "sha256": "5767ccc6f29532a67ca1893c28a1a59893c860c26267ccef97367dbf78eb067b",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/stage_atlas_src/PUZZLE_UIUX_V1_2.md",
+    "repositoryPath": "codex-workspace/docs/stage_atlas_src/PUZZLE_UIUX_V1_2.md",
+    "bytes": 17898,
+    "sha256": "5f42a6785b82c1a639da4c190f50a9f8d9866258e5db7145b32f764a1b7b26a3",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/stage_atlas_src/stage_atlas.css",
+    "repositoryPath": "codex-workspace/docs/stage_atlas_src/stage_atlas.css",
+    "bytes": 18639,
+    "sha256": "c8e24a45e145e5945130ba1c27f0017c1c7ec42b2300e37f9f64854e29550cb6",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/stage_atlas_src/stage_catalog.json",
+    "repositoryPath": "codex-workspace/docs/stage_atlas_src/stage_catalog.json",
+    "bytes": 33660,
+    "sha256": "4dbea743de387fd7d694e444764bab884cec5a6ff641b775d79497333c43c26c",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/stage_atlas_src/verify_puzzle_uiux.cjs",
+    "repositoryPath": "codex-workspace/docs/stage_atlas_src/verify_puzzle_uiux.cjs",
+    "bytes": 8805,
+    "sha256": "24994430196b480d39e3881fe6c2b24ef5aa7207f9826afc5f17cb98c211e679",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/tasks.csv",
+    "repositoryPath": "codex-workspace/docs/tasks.csv",
+    "bytes": 69403,
+    "sha256": "a5b51900d6d4bfed538a7c18cfcabcc88e5521b39d08e2d98a462377ec69e24f",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/tasks.json",
+    "repositoryPath": "codex-workspace/docs/tasks.json",
+    "bytes": 111028,
+    "sha256": "8c1b89741f5b4a72ecb4ac3a3f1013a13249be106353f01ac2fe3367884c6cba",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "docs/tasks_puzzle_first_v1_1.json",
+    "repositoryPath": "codex-workspace/docs/tasks_puzzle_first_v1_1.json",
+    "bytes": 12478,
+    "sha256": "fc23e72de33f5843dc2e3958b82397e3049b613a8fc8d788386b82bb6c7d2425",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "fetch_research.py",
+    "repositoryPath": "codex-workspace/fetch_research.py",
+    "bytes": 1330,
+    "sha256": "05a8f4da1238967cc3a5a2b5afc5ebd8c09126d2d7c80a61624282e7ef117531",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "game-app.js",
+    "repositoryPath": "codex-workspace/game-app.js",
+    "bytes": 41393,
+    "sha256": "7d0013e79d9008901a62779376301115179729aa886c707e54b33c2e930e93fe",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "game-core.js",
+    "repositoryPath": "codex-workspace/game-core.js",
+    "bytes": 20793,
+    "sha256": "ce3e53303e92cbf145c7887ea377509496a8de72bddc6f1c479595959f2ecce2",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "game-shell.html",
+    "repositoryPath": "codex-workspace/game-shell.html",
+    "bytes": 7144,
+    "sha256": "39ca8d2e834630c28792cd95f41fb0a00fea728a1e490b5c4aaa0bb0c1a07f57",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "game.css",
+    "repositoryPath": "codex-workspace/game.css",
+    "bytes": 21128,
+    "sha256": "a188e276507ee00d668703273566e8006319926dd68b5864f38767fc592983a2",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "pixel-characters.js",
+    "repositoryPath": "codex-workspace/pixel-characters.js",
+    "bytes": 2289,
+    "sha256": "738c725ac259a036aeb3a1c4b6afc46226465f05bf825a0baafd3c60b22b4736",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "research_assets/1166290_0.jpg",
+    "repositoryPath": "codex-workspace/research_assets/1166290_0.jpg",
+    "bytes": 557258,
+    "sha256": "41fa3a1c6f770f266b44aeb9194246db31f7e533eb38117c424abd11f50a98f7",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "research_assets/1166290_1.jpg",
+    "repositoryPath": "codex-workspace/research_assets/1166290_1.jpg",
+    "bytes": 819447,
+    "sha256": "6c46af12760c4e814ef0ae4a89040cfa8b89ed04d90ec855a2e89d7c08f1e65f",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "research_assets/1202900_0.jpg",
+    "repositoryPath": "codex-workspace/research_assets/1202900_0.jpg",
+    "bytes": 255921,
+    "sha256": "569cd8b799263c457f7aabd128fb0d1e038a75d3307dbe893e1fee947df8a5a2",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "research_assets/1202900_1.jpg",
+    "repositoryPath": "codex-workspace/research_assets/1202900_1.jpg",
+    "bytes": 347780,
+    "sha256": "0da9860ea442a7c70149817e52d2329f96dabbd8844ba642deddec876fcfa023",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "research_assets/1924360_0.jpg",
+    "repositoryPath": "codex-workspace/research_assets/1924360_0.jpg",
+    "bytes": 361416,
+    "sha256": "4083373985bb19207a7cf8bf86367d74482e6d205f84bd57f30bf8d31a722d4b",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "research_assets/1924360_1.jpg",
+    "repositoryPath": "codex-workspace/research_assets/1924360_1.jpg",
+    "bytes": 410268,
+    "sha256": "ee82b50df5cea13fbbbb4a17a167493f9f3c48433b8953a069172e12bcee6ba5",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "research_assets/239030_0.jpg",
+    "repositoryPath": "codex-workspace/research_assets/239030_0.jpg",
+    "bytes": 81689,
+    "sha256": "b81a60ea44e69de8d13d3558db6c28eab1ff7d036dff97fb9667a471a136b4af",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "research_assets/239030_1.jpg",
+    "repositoryPath": "codex-workspace/research_assets/239030_1.jpg",
+    "bytes": 173761,
+    "sha256": "2c1b6b1616657289b494c3c50ada70cd36376930663276cca507c797ea57feb7",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "research_assets/375820_0.jpg",
+    "repositoryPath": "codex-workspace/research_assets/375820_0.jpg",
+    "bytes": 245128,
+    "sha256": "f53fe825bad06ac38ae84143df5bad7d550999a51a583d529731d7f5e09bca1c",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "research_assets/375820_1.jpg",
+    "repositoryPath": "codex-workspace/research_assets/375820_1.jpg",
+    "bytes": 293817,
+    "sha256": "f00389217dc4b7f28b0ac61399ea741e1b97332ecad2cefb619c6101b183b951",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "research_assets/448510_0.jpg",
+    "repositoryPath": "codex-workspace/research_assets/448510_0.jpg",
+    "bytes": 263491,
+    "sha256": "57f3112e1544f535f4c002401949789ba7f9d514b96d19aecbbc519287f9e978",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "research_assets/448510_1.jpg",
+    "repositoryPath": "codex-workspace/research_assets/448510_1.jpg",
+    "bytes": 260947,
+    "sha256": "7bda03f023ac939314e72b42e8c7846fcfae4cbdec9872e56d47482353d1aa9a",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "research_assets/contact.jpg",
+    "repositoryPath": "codex-workspace/research_assets/contact.jpg",
+    "bytes": 259927,
+    "sha256": "16f7bf736cde894316c45fa3c74a6ab70c72d55edf958d1fc167d1ce9b6e6ec7",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "research_assets/papers.jpg",
+    "repositoryPath": "codex-workspace/research_assets/papers.jpg",
+    "bytes": 33234,
+    "sha256": "f1e276c60355260b01e942c61668206fd58c53198cb22780fd1027454b9bad62",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "research_assets/report-script.js",
+    "repositoryPath": "codex-workspace/research_assets/report-script.js",
+    "bytes": 5875,
+    "sha256": "66f602dfe45e309702bdeb11e62d48c8e423d60d4f33cbe944bc08366226daa7",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "research_assets/sources.json",
+    "repositoryPath": "codex-workspace/research_assets/sources.json",
+    "bytes": 3992,
+    "sha256": "707e0e98b165b0e5db8fa70345cea2b46cbd076319d71993d6844c1cb8a8dea8",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "scene-app.js",
+    "repositoryPath": "codex-workspace/scene-app.js",
+    "bytes": 51420,
+    "sha256": "c0b0b2805fa505cd8ce1f3389d4c7349b9bdda4738833e0a434301b44107454f",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "scene-art.js",
+    "repositoryPath": "codex-workspace/scene-art.js",
+    "bytes": 13179,
+    "sha256": "330d8b4e7a47271b757eed768aa497244fd5691fb08a0adb75fdbc18d6b202c9",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "scene-controller.js",
+    "repositoryPath": "codex-workspace/scene-controller.js",
+    "bytes": 11881,
+    "sha256": "67c62e87621016447ee8ea0488aa9ceedd03facb1cefe42702e997b7d30673a4",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "scene-init.js",
+    "repositoryPath": "codex-workspace/scene-init.js",
+    "bytes": 1400,
+    "sha256": "5dab7df6d73ac0daa61cefa6feda1988a9c66205c36d3e3ec06dc75e23e1ab31",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "scene-shell-top.html",
+    "repositoryPath": "codex-workspace/scene-shell-top.html",
+    "bytes": 3759,
+    "sha256": "54ebed8f66ebea1fbd525c31a04eb41c3464be81d8ad5cca5a06ce0b2a76aea8",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "scene.css",
+    "repositoryPath": "codex-workspace/scene.css",
+    "bytes": 13937,
+    "sha256": "121f30ea9d37f144d954f48314a18d65efd0b4e693b9696953646bc5cead2918",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "test_game.js",
+    "repositoryPath": "codex-workspace/test_game.js",
+    "bytes": 4182,
+    "sha256": "e8683aff662d00c94666a330c7ff01451e3c4ec8397889f787cb947734927169",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "workshop.css",
+    "repositoryPath": "codex-workspace/workshop.css",
+    "bytes": 12699,
+    "sha256": "020e5f890057ee20c23f6ba7b15e5353f77053a96cf45a1ea20d1f59c19682b8",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "workshop.js",
+    "repositoryPath": "codex-workspace/workshop.js",
+    "bytes": 3617,
+    "sha256": "6aea0043dfd277fa50644bcfd17b8b8127c2d89962bcd86d95fc81b0951eb4be",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "공무원키우기_3단계시안_퍼즐우선계획.html",
+    "repositoryPath": "codex-workspace/공무원키우기_3단계시안_퍼즐우선계획.html",
+    "bytes": 596430,
+    "sha256": "2673ebdf554bc335049927bf07b4ad06bedadac2c857159dd3e3a22b1aee7adf",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "공무원키우기_사무실버전.html",
+    "repositoryPath": "codex-workspace/공무원키우기_사무실버전.html",
+    "bytes": 103858,
+    "sha256": "eb4b81cae28627c5371701ea4782710415ccc87c5018f2e29bf48e272bf477ab",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "공무원키우기_새버전_기획시안.html",
+    "repositoryPath": "codex-workspace/공무원키우기_새버전_기획시안.html",
+    "bytes": 103065,
+    "sha256": "2b779dfabe57bf8406cc7eb72f05bbff736434f57ec8fcc7d2d352b266afb9d6",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "공무원키우기_생활보장과_확장상세계획.html",
+    "repositoryPath": "codex-workspace/공무원키우기_생활보장과_확장상세계획.html",
+    "bytes": 321118,
+    "sha256": "bd9a82ab324bcc7c28354f61531ecdb9af991a4408803e91f33c903e9fda8628",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "공무원키우기_유사게임조사_구현제안.html",
+    "repositoryPath": "codex-workspace/공무원키우기_유사게임조사_구현제안.html",
+    "bytes": 5663368,
+    "sha256": "4ba31ecea5f210febf9759e69ee9881b0ad4fd6597614ae10d42efbab040b36c",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "공무원키우기_통합계획_탐색형.html",
+    "repositoryPath": "codex-workspace/공무원키우기_통합계획_탐색형.html",
+    "bytes": 1406252,
+    "sha256": "d3e8950913174f16822b59400aff0f30b65eaa3035f7d3695140525222fff97b",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "공무원키우기_플레이.html",
+    "repositoryPath": "codex-workspace/공무원키우기_플레이.html",
+    "bytes": 126773,
+    "sha256": "41cae4d9b5fd377350f5f15b483d88abf0581a1c40325de8eb288bdf81258021",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "공무원키우기_플레이_이전버전.html",
+    "repositoryPath": "codex-workspace/공무원키우기_플레이_이전버전.html",
+    "bytes": 90483,
+    "sha256": "262184270114505700a42541e48996e0b922841d9ee5ba0a087b71760a17e846",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "공무원키우기_픽셀아트.html",
+    "repositoryPath": "codex-workspace/공무원키우기_픽셀아트.html",
+    "bytes": 126773,
+    "sha256": "41cae4d9b5fd377350f5f15b483d88abf0581a1c40325de8eb288bdf81258021",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "공문퍼즐_참고게임조사.html",
+    "repositoryPath": "codex-workspace/공문퍼즐_참고게임조사.html",
+    "bytes": 16993,
+    "sha256": "203d1333acf27201c80f5321a2190fb029d77ecbb61891f4eb381b170ad575c5",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "사무실배치도_만들기.html",
+    "repositoryPath": "codex-workspace/사무실배치도_만들기.html",
+    "bytes": 30014,
+    "sha256": "c6e57b8ecc9b553f86fff06ff29083969ad570860ba9e26eb7ffc2e57288983c",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "생활보장과_사무실_시안.html",
+    "repositoryPath": "codex-workspace/생활보장과_사무실_시안.html",
+    "bytes": 55744,
+    "sha256": "aee6b83b9586b09f1c40bfc3a716f0c43c6d1f261e3d71dfc6e79fdf42b9ee31",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "생활보장과_사무실배치.json",
+    "repositoryPath": "codex-workspace/생활보장과_사무실배치.json",
+    "bytes": 1757,
+    "sha256": "b877a08b19ca34cb52f39649689c7de46dd4560f4cbbe2cde904cf6f13bfe8c4",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "생활보장과_확정배치.jpg",
+    "repositoryPath": "codex-workspace/생활보장과_확정배치.jpg",
+    "bytes": 94160,
+    "sha256": "89ef8cff370f86ba01471cfb27bbcd48626611f1777f1bc8c45adf3f6e2bf963",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "확장계획/2._WORK_LOG.md",
+    "repositoryPath": "codex-workspace/확장계획/2._WORK_LOG.md",
+    "bytes": 10896,
+    "sha256": "a598130aa10249f2824d9fe864734086c3327c33769fb7a7bd6730f3212782df",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "확장계획/AGENTS.md",
+    "repositoryPath": "codex-workspace/확장계획/AGENTS.md",
+    "bytes": 394,
+    "sha256": "28551ed46e80658aac70338b677e9f279c3a159b72af545a3d3cdaafb606367a",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "확장계획/README.md",
+    "repositoryPath": "codex-workspace/확장계획/README.md",
+    "bytes": 744,
+    "sha256": "f8a67e92a1c14b3fc3025ca10e0b0a4f54a15c86d080900a6c41e84289b26d2c",
+    "owner": "공무원키우기 확장 계획"
+  },
+  {
+    "path": "확장계획/STATUS.md",
+    "repositoryPath": "codex-workspace/확장계획/STATUS.md",
+    "bytes": 4244,
+    "sha256": "73d0a6179bf1c2756e3230113eb5cfaeecb19bab0fbb82d5deea359e44d0072b",
+    "owner": "공무원키우기 확장 계획"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "scope": "revised_design_and_interactive_mockup",
+  "version": 2,
+  "source": "E01_홍보물200부_개정기획.md",
+  "screenCount": 8,
+  "captureCount": 16,
+  "minutesTarget": [
+    17,
+    24
+  ],
+  "runtimeReports": [
+    "E01_mockup_validation.json",
+    "E01_browser_validation.json"
+  ],
+  "legacyLogicReuse": false,
+  "productionGameIntegrated": false,
+  "nextDesign": "E01_재미중심_개정안.md",
+  "funValidatedWithUsers": false
+}

@@ -1,0 +1,683 @@
+{
+  "schemaVersion": 1,
+  "status": "planned",
+  "id": "cs.civil_hall",
+  "width": 24,
+  "height": 18,
+  "coordinateOrigin": "zero_based_top_left",
+  "spawn": [
+    12,
+    16
+  ],
+  "centralAisleColumns": [
+    12,
+    13
+  ],
+  "walls": [
+    [
+      17,
+      0
+    ],
+    [
+      17,
+      1
+    ],
+    [
+      17,
+      2
+    ],
+    [
+      17,
+      3
+    ],
+    [
+      17,
+      4
+    ]
+  ],
+  "objects": [
+    {
+      "id": "c01",
+      "label": "안내대",
+      "zone": "Z01",
+      "footprint": {
+        "x": 1,
+        "y": 8,
+        "width": 3,
+        "height": 1
+      },
+      "blocking": true,
+      "interactionCell": [
+        2,
+        9
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c02",
+      "label": "번호표",
+      "zone": "Z01",
+      "footprint": {
+        "x": 5,
+        "y": 8,
+        "width": 1,
+        "height": 1
+      },
+      "blocking": true,
+      "interactionCell": [
+        5,
+        9
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c03",
+      "label": "무인발급기",
+      "zone": "Z07",
+      "footprint": {
+        "x": 20,
+        "y": 9,
+        "width": 2,
+        "height": 2
+      },
+      "blocking": true,
+      "interactionCell": [
+        19,
+        10
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c04",
+      "label": "서식대",
+      "zone": "Z01",
+      "footprint": {
+        "x": 8,
+        "y": 8,
+        "width": 3,
+        "height": 1
+      },
+      "blocking": true,
+      "interactionCell": [
+        9,
+        9
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c05",
+      "label": "증명 창구",
+      "zone": "Z02",
+      "footprint": {
+        "x": 1,
+        "y": 6,
+        "width": 3,
+        "height": 1
+      },
+      "blocking": true,
+      "interactionCell": [
+        2,
+        7
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c06",
+      "label": "여권 접수",
+      "zone": "Z03",
+      "footprint": {
+        "x": 5,
+        "y": 6,
+        "width": 3,
+        "height": 1
+      },
+      "blocking": true,
+      "interactionCell": [
+        6,
+        7
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c07",
+      "label": "가족관계 창구",
+      "zone": "Z04",
+      "footprint": {
+        "x": 9,
+        "y": 6,
+        "width": 3,
+        "height": 1
+      },
+      "blocking": true,
+      "interactionCell": [
+        10,
+        7
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c08",
+      "label": "공개 접수",
+      "zone": "Z05",
+      "footprint": {
+        "x": 14,
+        "y": 6,
+        "width": 3,
+        "height": 1
+      },
+      "blocking": true,
+      "interactionCell": [
+        15,
+        7
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c09",
+      "label": "여권 교부",
+      "zone": "Z03",
+      "footprint": {
+        "x": 18,
+        "y": 6,
+        "width": 3,
+        "height": 1
+      },
+      "blocking": true,
+      "interactionCell": [
+        19,
+        7
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c10",
+      "label": "주인공 책상",
+      "zone": "Z02",
+      "footprint": {
+        "x": 1,
+        "y": 2,
+        "width": 3,
+        "height": 2
+      },
+      "blocking": true,
+      "interactionCell": [
+        2,
+        4
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c11",
+      "label": "여권 책상",
+      "zone": "Z03",
+      "footprint": {
+        "x": 5,
+        "y": 2,
+        "width": 3,
+        "height": 2
+      },
+      "blocking": true,
+      "interactionCell": [
+        6,
+        4
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c12",
+      "label": "가족관계 책상",
+      "zone": "Z04",
+      "footprint": {
+        "x": 9,
+        "y": 2,
+        "width": 3,
+        "height": 2
+      },
+      "blocking": true,
+      "interactionCell": [
+        10,
+        4
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c13",
+      "label": "공개 검토",
+      "zone": "Z05",
+      "footprint": {
+        "x": 14,
+        "y": 2,
+        "width": 3,
+        "height": 2
+      },
+      "blocking": true,
+      "interactionCell": [
+        15,
+        4
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c14",
+      "label": "팀장석",
+      "zone": "Z08",
+      "footprint": {
+        "x": 9,
+        "y": 0,
+        "width": 3,
+        "height": 1
+      },
+      "blocking": true,
+      "interactionCell": [
+        10,
+        1
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c15",
+      "label": "인계함",
+      "zone": "Z08",
+      "footprint": {
+        "x": 5,
+        "y": 0,
+        "width": 2,
+        "height": 1
+      },
+      "blocking": true,
+      "interactionCell": [
+        6,
+        1
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c16",
+      "label": "자료장 A",
+      "zone": "Z06",
+      "footprint": {
+        "x": 18,
+        "y": 1,
+        "width": 2,
+        "height": 1
+      },
+      "blocking": true,
+      "interactionCell": [
+        19,
+        2
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c17",
+      "label": "자료장 B",
+      "zone": "Z06",
+      "footprint": {
+        "x": 21,
+        "y": 1,
+        "width": 2,
+        "height": 1
+      },
+      "blocking": true,
+      "interactionCell": [
+        22,
+        2
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c18",
+      "label": "열람 작업대",
+      "zone": "Z06",
+      "footprint": {
+        "x": 19,
+        "y": 3,
+        "width": 3,
+        "height": 1
+      },
+      "blocking": true,
+      "interactionCell": [
+        20,
+        4
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c19",
+      "label": "출력기",
+      "zone": "Z08",
+      "footprint": {
+        "x": 1,
+        "y": 0,
+        "width": 1,
+        "height": 1
+      },
+      "blocking": true,
+      "interactionCell": [
+        1,
+        1
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c20",
+      "label": "파쇄기",
+      "zone": "Z08",
+      "footprint": {
+        "x": 3,
+        "y": 0,
+        "width": 1,
+        "height": 1
+      },
+      "blocking": true,
+      "interactionCell": [
+        3,
+        1
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c21",
+      "label": "대기석 A",
+      "zone": "Z07",
+      "footprint": {
+        "x": 1,
+        "y": 11,
+        "width": 3,
+        "height": 1
+      },
+      "blocking": true,
+      "interactionCell": [
+        2,
+        10
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c22",
+      "label": "대기석 B",
+      "zone": "Z07",
+      "footprint": {
+        "x": 5,
+        "y": 11,
+        "width": 3,
+        "height": 1
+      },
+      "blocking": true,
+      "interactionCell": [
+        6,
+        10
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c23",
+      "label": "대기석 C",
+      "zone": "Z07",
+      "footprint": {
+        "x": 1,
+        "y": 14,
+        "width": 3,
+        "height": 1
+      },
+      "blocking": true,
+      "interactionCell": [
+        2,
+        13
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c24",
+      "label": "대기석 D",
+      "zone": "Z07",
+      "footprint": {
+        "x": 5,
+        "y": 14,
+        "width": 3,
+        "height": 1
+      },
+      "blocking": true,
+      "interactionCell": [
+        6,
+        13
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c25",
+      "label": "배려 대기 공간",
+      "zone": "Z07",
+      "footprint": {
+        "x": 9,
+        "y": 11,
+        "width": 2,
+        "height": 2
+      },
+      "blocking": false,
+      "interactionCell": [
+        10,
+        13
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c26",
+      "label": "상담석",
+      "zone": "Z07",
+      "footprint": {
+        "x": 14,
+        "y": 10,
+        "width": 3,
+        "height": 2
+      },
+      "blocking": true,
+      "interactionCell": [
+        15,
+        12
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c27",
+      "label": "전시대",
+      "zone": "Z07",
+      "footprint": {
+        "x": 14,
+        "y": 14,
+        "width": 3,
+        "height": 1
+      },
+      "blocking": true,
+      "interactionCell": [
+        15,
+        13
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c28",
+      "label": "급수대",
+      "zone": "Z08",
+      "footprint": {
+        "x": 21,
+        "y": 14,
+        "width": 1,
+        "height": 1
+      },
+      "blocking": true,
+      "interactionCell": [
+        20,
+        14
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c29",
+      "label": "출입구",
+      "zone": "Z08",
+      "footprint": {
+        "x": 10,
+        "y": 17,
+        "width": 4,
+        "height": 1
+      },
+      "blocking": false,
+      "interactionCell": [
+        12,
+        16
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    },
+    {
+      "id": "c30",
+      "label": "게시판",
+      "zone": "Z08",
+      "footprint": {
+        "x": 18,
+        "y": 14,
+        "width": 2,
+        "height": 1
+      },
+      "blocking": true,
+      "interactionCell": [
+        19,
+        13
+      ],
+      "role": "public_fixture",
+      "personalShopItem": false
+    }
+  ],
+  "zones": [
+    {
+      "id": "Z01",
+      "name": "접수 안내",
+      "objectIds": [
+        "c01",
+        "c02",
+        "c04"
+      ]
+    },
+    {
+      "id": "Z02",
+      "name": "통합 증명",
+      "objectIds": [
+        "c05",
+        "c10"
+      ]
+    },
+    {
+      "id": "Z03",
+      "name": "여권 접수와 교부",
+      "objectIds": [
+        "c06",
+        "c09",
+        "c11"
+      ]
+    },
+    {
+      "id": "Z04",
+      "name": "가족관계",
+      "objectIds": [
+        "c07",
+        "c12"
+      ]
+    },
+    {
+      "id": "Z05",
+      "name": "정보공개",
+      "objectIds": [
+        "c08",
+        "c13"
+      ]
+    },
+    {
+      "id": "Z06",
+      "name": "기록",
+      "objectIds": [
+        "c16",
+        "c17",
+        "c18"
+      ]
+    },
+    {
+      "id": "Z07",
+      "name": "대기와 상담",
+      "objectIds": [
+        "c03",
+        "c21",
+        "c22",
+        "c23",
+        "c24",
+        "c25",
+        "c26",
+        "c27"
+      ]
+    },
+    {
+      "id": "Z08",
+      "name": "직원 지원과 출입",
+      "objectIds": [
+        "c14",
+        "c15",
+        "c19",
+        "c20",
+        "c28",
+        "c29",
+        "c30"
+      ]
+    }
+  ],
+  "visitors": {
+    "mode": "reserved_positions",
+    "staffAreaExcluded": true,
+    "note": "주민 위치는 예약 배치한다. 직원 구역 제외와 별도 접근점은 실제 renderer에서 검증한다."
+  },
+  "visualChanges": [
+    {
+      "day": 3,
+      "id": "revised_notice"
+    },
+    {
+      "day": 6,
+      "id": "evening_lights"
+    },
+    {
+      "day": 9,
+      "id": "public_display"
+    },
+    {
+      "day": 10,
+      "id": "handoff_box"
+    }
+  ]
+}

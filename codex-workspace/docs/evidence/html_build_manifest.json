@@ -1,0 +1,62 @@
+{
+  "sourceDocuments": [
+    {
+      "file": "00_README_INDEX.md",
+      "sha256": "0ce7c3862f0cd98cca4005620ada8953fee24f13d9e3b27e4ce4b55ac92248bc"
+    },
+    {
+      "file": "01_SOURCE_AUDIT_AND_DECISIONS.md",
+      "sha256": "8200639e102cd9c6ab771b54e2923e615f651677507ed8d733312d388cb5f249"
+    },
+    {
+      "file": "02_MASTER_GAME_DESIGN.md",
+      "sha256": "253fa73e4e99911b4dae97bbb7d957f9ccf7967ee615a4e4938e760f72746955"
+    },
+    {
+      "file": "03_STORY_WORLD_NPCS_EVENTS.md",
+      "sha256": "4596738524a704dc329431d13f88700c5324e66a3a6470ff31c066a235fdba69"
+    },
+    {
+      "file": "04_OFFICE_ZONES_CAMERA_UI.md",
+      "sha256": "7e7c26af86f707fc92333c84c3340a7b69bd83dc9dc4c0543e22214e77f7ddba"
+    },
+    {
+      "file": "05_PUZZLE_SYSTEM_AND_8_SPECS.md",
+      "sha256": "7958ee0101597f679da1589ea6c08e864bfc48b429b3effd6a1c35b2ff3a6521"
+    },
+    {
+      "file": "06_GROWTH_DECOR_COLLECTIONS_ECONOMY.md",
+      "sha256": "923dd066833bede63e441c5bc0bb4b170eabd9b5cdcfd5de1d9f77de522a6155"
+    },
+    {
+      "file": "07_DEPARTMENT_EXPANSION_PACKS.md",
+      "sha256": "46eca3d9c59514c9b88be98483cb8f7b211a6072a66d20d38dd8e441df11e581"
+    },
+    {
+      "file": "08_TECH_ARCHITECTURE_SAVE_ASSETS.md",
+      "sha256": "dc1055ddfc1b73d3a781643cdf65b20ddd76b917510ab7303f0556d664e4f938"
+    },
+    {
+      "file": "09_PHASED_ROADMAP_AND_TASK_BACKLOG.md",
+      "sha256": "4045e9561c0c9632ce8aa73179f76e1228e9ecc9ac69ee807be41e5dc9318d92"
+    },
+    {
+      "file": "10_TEST_PLAN_AND_ACCEPTANCE.md",
+      "sha256": "499bbcacc8ee38a4e6fa9df4598109dab949df4db0d780cc6a084451cc5b6ff4"
+    },
+    {
+      "file": "11_RISK_REGISTER_AND_OPEN_DECISIONS.md",
+      "sha256": "b4d2b5d493676ce37f313dbc3575d78f10ac350b5da995840e5e3fc44678d38e"
+    },
+    {
+      "file": "12_NEXT_IMPLEMENTATION_HANDOFF.md",
+      "sha256": "d53393489e8a444c219ddc2db91f0d29d70e9a8f563b3ab9973d76a56c3a876f"
+    }
+  ],
+  "chapters": 13,
+  "tasks": 96,
+  "exampleCount": 24,
+  "searchEntries": 195,
+  "singleFile": true,
+  "bytes": 1406252
+}

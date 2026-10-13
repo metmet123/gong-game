@@ -1,0 +1,1059 @@
+[
+  {
+    "path": "docs/episodes/build_e01_pair.py",
+    "repositoryPath": "codex-workspace/docs/episodes/build_e01_pair.py",
+    "bytes": 582,
+    "sha256": "efdeaf9750fc1303255ea1a63d6f38d2b24ccc3466f5ba77e1a1dd823cbb1c18",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/build_e01_preview.py",
+    "repositoryPath": "codex-workspace/docs/episodes/build_e01_preview.py",
+    "bytes": 27458,
+    "sha256": "a3203e6a1a3fb7c1d7ff09603f921354af74a1101a77f2bffc167e52fb84f893",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/build_e01_v2.py",
+    "repositoryPath": "codex-workspace/docs/episodes/build_e01_v2.py",
+    "bytes": 9458,
+    "sha256": "3dfad10821dc3a5695e26c4005b46829a5d0cdce66ca8686f1b65406c9ea20d1",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/capture_pair_refs.js",
+    "repositoryPath": "codex-workspace/docs/episodes/capture_pair_refs.js",
+    "bytes": 1068,
+    "sha256": "d1f71445fdb929f0f1a9407a1d3fcaee0970f30c1e024baae906a40d6992e405",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/e01-engine.js",
+    "repositoryPath": "codex-workspace/docs/episodes/e01-engine.js",
+    "bytes": 20847,
+    "sha256": "6d767e5457a8981777afa097953092a237633a9c9a6659be52152d21732b345f",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/e01-mockup.css",
+    "repositoryPath": "codex-workspace/docs/episodes/e01-mockup.css",
+    "bytes": 20399,
+    "sha256": "3b8ebbfccb4f7d9f796663a0af03c503e16ef4795c34807fbbb2c57712edff18",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/e01-mockup.js",
+    "repositoryPath": "codex-workspace/docs/episodes/e01-mockup.js",
+    "bytes": 36470,
+    "sha256": "2f334af3e476f6760cb4063d7eb05f1957df402c8f2cda44acb0b2fc158160f6",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/e01-pair.css",
+    "repositoryPath": "codex-workspace/docs/episodes/e01-pair.css",
+    "bytes": 20374,
+    "sha256": "1660795a95973369fb06ab4a9b6bd22b1107f04b5794d109c7853386f2766c32",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/e01-pair.js",
+    "repositoryPath": "codex-workspace/docs/episodes/e01-pair.js",
+    "bytes": 19558,
+    "sha256": "0aa6fa19703f6d56f62764a969d3630995a3f447fba1d8916d4bce559ee79cb4",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/E01_01-02_UIUX_관측.json",
+    "repositoryPath": "codex-workspace/docs/episodes/E01_01-02_UIUX_관측.json",
+    "bytes": 2190,
+    "sha256": "5c3fa71b05f77855e57960bd603a913223cb5dc374fc88f6aca35ab35fc9ed3e",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/E01_01-02_UIUX_집중개선계획.md",
+    "repositoryPath": "codex-workspace/docs/episodes/E01_01-02_UIUX_집중개선계획.md",
+    "bytes": 14947,
+    "sha256": "34391a86e810acb8c7778337455702e2208e1386e7befcb7faf2d46eaf753469",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/E01_01-02_게임화면_디자인해설.md",
+    "repositoryPath": "codex-workspace/docs/episodes/E01_01-02_게임화면_디자인해설.md",
+    "bytes": 4494,
+    "sha256": "6544d644a4e79ea553cb79873070b16584beaa233b4952458e75b9384cf93f87",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/E01_browser_validation.json",
+    "repositoryPath": "codex-workspace/docs/episodes/E01_browser_validation.json",
+    "bytes": 3971,
+    "sha256": "7ef420fcadb36e7d584e20c1862fa1e3acd12d9ac9d9f6b729d0305249f3abfc",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/E01_contract.json",
+    "repositoryPath": "codex-workspace/docs/episodes/E01_contract.json",
+    "bytes": 4537,
+    "sha256": "7792f68d3447a0321562a5edcd1cd44047078661dcf88f655906cdc2c87ef6b3",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/E01_design_validation.json",
+    "repositoryPath": "codex-workspace/docs/episodes/E01_design_validation.json",
+    "bytes": 466,
+    "sha256": "1e025a6ec4fd6b519a2c9e942ed0623c1ec8a871df6db4fa38fd0b7d25f3955a",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/E01_mockup_validation.json",
+    "repositoryPath": "codex-workspace/docs/episodes/E01_mockup_validation.json",
+    "bytes": 1468,
+    "sha256": "f946cd8f399c3d1e1ca0d0e95ce08cbe6aff3e351ecd438e835cb0a892feec80",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/E01_pair_design_validation.json",
+    "repositoryPath": "codex-workspace/docs/episodes/E01_pair_design_validation.json",
+    "bytes": 4455,
+    "sha256": "0132ebba0ce8ff956ed64954b097c996d63b8d534dbeb082dccfe8cc427668a3",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/E01_묶음1_게임화면.html",
+    "repositoryPath": "codex-workspace/docs/episodes/E01_묶음1_게임화면.html",
+    "bytes": 1812,
+    "sha256": "eef071b422ad4ffe3f39c7b82740655cab8fe88ed60b1ddc440b993fcf200b86",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/E01_묶음1_디자인비교.html",
+    "repositoryPath": "codex-workspace/docs/episodes/E01_묶음1_디자인비교.html",
+    "bytes": 7335,
+    "sha256": "3adbec1c2c722410ec25f8aa9d0ec6dfd3d9d9d03be7e7aafb246c88b6aad58e",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/E01_묶음1_휴대용시안.html",
+    "repositoryPath": "codex-workspace/docs/episodes/E01_묶음1_휴대용시안.html",
+    "bytes": 62925,
+    "sha256": "5e91578c191fb362268c2ca238d6d34185baed8be589647bad4599fb14f0d9e2",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/E01_재미중심_개정안.md",
+    "repositoryPath": "codex-workspace/docs/episodes/E01_재미중심_개정안.md",
+    "bytes": 12380,
+    "sha256": "2a6d68c9819cfb80d19cfe8913dec7476ace5b936f2f0b1e8b5e3b20c3ed11e8",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/E01_체험목업.html",
+    "repositoryPath": "codex-workspace/docs/episodes/E01_체험목업.html",
+    "bytes": 80498,
+    "sha256": "2754525c7c6f812f8a1f60557db5a68631b2580b0844d2253059f1fb59dafb56",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/E01_플레이목업.html",
+    "repositoryPath": "codex-workspace/docs/episodes/E01_플레이목업.html",
+    "bytes": 2583,
+    "sha256": "a3e51847fe98e1fd29c5639714060b1d650e5971b0d0b6c8aae3f71831761039",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/E01_홍보물200부_개정기획.md",
+    "repositoryPath": "codex-workspace/docs/episodes/E01_홍보물200부_개정기획.md",
+    "bytes": 19242,
+    "sha256": "7ea911b53b0a2363f9ea61fe79b8a7d280fb27c8d22faa14012ef334c92c954e",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/E01_홍보물200부_상세기획.md",
+    "repositoryPath": "codex-workspace/docs/episodes/E01_홍보물200부_상세기획.md",
+    "bytes": 36899,
+    "sha256": "4d98b4274918456cb07b73fd713b5e0c125a787e24d9c34a23b3e0bf9251b1e2",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/E01_화면과상세기획.html",
+    "repositoryPath": "codex-workspace/docs/episodes/E01_화면과상세기획.html",
+    "bytes": 42354,
+    "sha256": "7f41f815b636e8637e25c4748739d8b71bdff29acde4da5bcb6f42bf87796b75",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/mockup_screens/01-desktop.png",
+    "repositoryPath": "codex-workspace/docs/episodes/mockup_screens/01-desktop.png",
+    "bytes": 112111,
+    "sha256": "a8a2f3a72f6488346b9d46f6aebb9f954bba9b0175da94fb70c0b46831de3251",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/mockup_screens/01-mobile.png",
+    "repositoryPath": "codex-workspace/docs/episodes/mockup_screens/01-mobile.png",
+    "bytes": 84868,
+    "sha256": "838cc3aba30d139ca74e9c3a2475d47839f7c133987a08daa6091f9770359c5b",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/mockup_screens/02-desktop.png",
+    "repositoryPath": "codex-workspace/docs/episodes/mockup_screens/02-desktop.png",
+    "bytes": 113502,
+    "sha256": "00ee7b418337734179bd1a92adc44b3b7ebd2192a4c692f99dbba18fec07ae14",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/mockup_screens/02-mobile.png",
+    "repositoryPath": "codex-workspace/docs/episodes/mockup_screens/02-mobile.png",
+    "bytes": 85319,
+    "sha256": "f09cd005928586b7e78808b73fa45eaaf1ac982e65eb46341e87c45f50698946",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/mockup_screens/03-desktop.png",
+    "repositoryPath": "codex-workspace/docs/episodes/mockup_screens/03-desktop.png",
+    "bytes": 108912,
+    "sha256": "3142d1ba7205bf4316f210031375cc6235086fa8fdbbe374424d04fd52141742",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/mockup_screens/03-mobile.png",
+    "repositoryPath": "codex-workspace/docs/episodes/mockup_screens/03-mobile.png",
+    "bytes": 73556,
+    "sha256": "bbc9a7972799cff8b826defbe60a87a179b3c036d4caf584a391f69d32ab56cc",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/mockup_screens/04-desktop.png",
+    "repositoryPath": "codex-workspace/docs/episodes/mockup_screens/04-desktop.png",
+    "bytes": 106266,
+    "sha256": "af0fb913bd13ad897be995ef47ca412bbc72ae7779cdc266575cfa6ecf1132b1",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/mockup_screens/04-mobile.png",
+    "repositoryPath": "codex-workspace/docs/episodes/mockup_screens/04-mobile.png",
+    "bytes": 81807,
+    "sha256": "1d5fddcbe46fd94491a09734f663e1da5aa8c5a6aed5b00e2b2d073607f0e72e",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/mockup_screens/05-desktop.png",
+    "repositoryPath": "codex-workspace/docs/episodes/mockup_screens/05-desktop.png",
+    "bytes": 100373,
+    "sha256": "442e4320755a59233b9396a768be7e7b154799b65335d12b3902fa4c446b225d",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/mockup_screens/05-mobile.png",
+    "repositoryPath": "codex-workspace/docs/episodes/mockup_screens/05-mobile.png",
+    "bytes": 72077,
+    "sha256": "a2cb7ec006a847f3349296b9de03cfae979f29811b8636e89c9b8add85017874",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/mockup_screens/06-desktop.png",
+    "repositoryPath": "codex-workspace/docs/episodes/mockup_screens/06-desktop.png",
+    "bytes": 113391,
+    "sha256": "82429d4a4a2f0fc40afe75d14261b0471dffb77d0e67693b55d7f02c1b376d54",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/mockup_screens/06-mobile.png",
+    "repositoryPath": "codex-workspace/docs/episodes/mockup_screens/06-mobile.png",
+    "bytes": 84648,
+    "sha256": "d7befcbc6e12dce7f34fe4f846db7452e631b8cbc7a56ada4c1b4ec6af12e86c",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/mockup_screens/07-desktop.png",
+    "repositoryPath": "codex-workspace/docs/episodes/mockup_screens/07-desktop.png",
+    "bytes": 111072,
+    "sha256": "635f9094dac025a755badcd40296ef692de6e42c9c466a4c713265a22a329847",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/mockup_screens/07-mobile.png",
+    "repositoryPath": "codex-workspace/docs/episodes/mockup_screens/07-mobile.png",
+    "bytes": 79929,
+    "sha256": "c00498a90cc15a98a93f21d417bd61c25385db8cdae6db9acf56ed290908606b",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/mockup_screens/08-desktop.png",
+    "repositoryPath": "codex-workspace/docs/episodes/mockup_screens/08-desktop.png",
+    "bytes": 101212,
+    "sha256": "121b6f8e2a8e993536c07d603dfa8533938bb988cc40405fedbf6af26e0d6dd0",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/mockup_screens/08-mobile.png",
+    "repositoryPath": "codex-workspace/docs/episodes/mockup_screens/08-mobile.png",
+    "bytes": 73987,
+    "sha256": "8e5408dacb310f6b596359bbab3a695a9d4e407f67a983e1aec83af237d0c71a",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/mockup_screens/screen-gallery.png",
+    "repositoryPath": "codex-workspace/docs/episodes/mockup_screens/screen-gallery.png",
+    "bytes": 595172,
+    "sha256": "4f0fbb6dac4934ce6f5823f8dff1558008dc40ac2be6f7f471297d5bd1346762",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/pair_design_refs/reference-1.png",
+    "repositoryPath": "codex-workspace/docs/episodes/pair_design_refs/reference-1.png",
+    "bytes": 19602,
+    "sha256": "fe24953b0fac88b71ab530baf44a08d976b1e8a06e899a87665e40c2cb3626a5",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/pair_design_refs/reference-2.png",
+    "repositoryPath": "codex-workspace/docs/episodes/pair_design_refs/reference-2.png",
+    "bytes": 20841,
+    "sha256": "fecf78f70e168983ad296005321bc5ac26ae11c63cb4f2bcaa02fecd5c0d0de6",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/pair_design_refs/reference-3.png",
+    "repositoryPath": "codex-workspace/docs/episodes/pair_design_refs/reference-3.png",
+    "bytes": 37814,
+    "sha256": "ab1e872a640213b91766edda21bd94fc9bc35df4f2083e4114a0d4a3db563908",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/pair_design_refs/reference-4.png",
+    "repositoryPath": "codex-workspace/docs/episodes/pair_design_refs/reference-4.png",
+    "bytes": 20198,
+    "sha256": "56ea28a691524aaf62d79ace48e52e85f5e661406030dbcba89c650e716f4a43",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/pair_game_screens/01-budget-start.png",
+    "repositoryPath": "codex-workspace/docs/episodes/pair_game_screens/01-budget-start.png",
+    "bytes": 80669,
+    "sha256": "29c92df78d4eeec541a2b95fa6d79b38d7dc2c3df0693e6455b4b1160589b60f",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/pair_game_screens/02-budget-event.png",
+    "repositoryPath": "codex-workspace/docs/episodes/pair_game_screens/02-budget-event.png",
+    "bytes": 86070,
+    "sha256": "8073b8f1c05687fad1d5a197bc18abba0663525df02b6fd8cf03c09d2085b89b",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/pair_game_screens/03-budget-ready.png",
+    "repositoryPath": "codex-workspace/docs/episodes/pair_game_screens/03-budget-ready.png",
+    "bytes": 84564,
+    "sha256": "37c8a135192103be3d864697c11bd0ca61a54ce6d4f9cb18eca3f759ae9e547e",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/pair_game_screens/04-document-start.png",
+    "repositoryPath": "codex-workspace/docs/episodes/pair_game_screens/04-document-start.png",
+    "bytes": 91034,
+    "sha256": "63ee7ddc1b5df683c72ac8f07cdbe3bb599648ec5bab0fb6f1406260156d4cb0",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/pair_game_screens/05-document-error.png",
+    "repositoryPath": "codex-workspace/docs/episodes/pair_game_screens/05-document-error.png",
+    "bytes": 88754,
+    "sha256": "3fcc143cd168b75c4a7eea81d6e392de5723b2dbe666cb2bb667bdb4a1169a43",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/pair_game_screens/06-document-picker.png",
+    "repositoryPath": "codex-workspace/docs/episodes/pair_game_screens/06-document-picker.png",
+    "bytes": 92455,
+    "sha256": "e0d5bf5bff8b8124eb060e048648b8d6289549c9d628852bd06562fec414dfef",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/pair_game_screens/07-document-ready.png",
+    "repositoryPath": "codex-workspace/docs/episodes/pair_game_screens/07-document-ready.png",
+    "bytes": 86906,
+    "sha256": "15d7229dfd0833fb4f6fe8930404649f381db2aebd8cc3c2dbee88f115c0ffe0",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/pair_game_screens/08-complete.png",
+    "repositoryPath": "codex-workspace/docs/episodes/pair_game_screens/08-complete.png",
+    "bytes": 130271,
+    "sha256": "4628c1e2234521b7a54f72ac3a497a6d57aa63186479109201f25e7f42bdb69a",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/pair_game_screens/09-budget-shortage.png",
+    "repositoryPath": "codex-workspace/docs/episodes/pair_game_screens/09-budget-shortage.png",
+    "bytes": 86796,
+    "sha256": "ba7b38ace11e8400b7d5d23246fc71e81d5e6fe40cf573f0587ec70e2a985100",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/pair_game_screens/budget-desktop.png",
+    "repositoryPath": "codex-workspace/docs/episodes/pair_game_screens/budget-desktop.png",
+    "bytes": 380942,
+    "sha256": "6fa24577f1efecbc72fd0aca1b3ac49c6fa8558731a1d01fd65cbf0831190770",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/pair_game_screens/budget-mobile.png",
+    "repositoryPath": "codex-workspace/docs/episodes/pair_game_screens/budget-mobile.png",
+    "bytes": 80669,
+    "sha256": "29c92df78d4eeec541a2b95fa6d79b38d7dc2c3df0693e6455b4b1160589b60f",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/pair_game_screens/comparison-page.png",
+    "repositoryPath": "codex-workspace/docs/episodes/pair_game_screens/comparison-page.png",
+    "bytes": 810437,
+    "sha256": "3b4b921d676fab841910fc643f77c9bd10f3bf6797654dde3e89d0e6a070b080",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/pair_game_screens/document-desktop.png",
+    "repositoryPath": "codex-workspace/docs/episodes/pair_game_screens/document-desktop.png",
+    "bytes": 384568,
+    "sha256": "b12d13a3f889ab59fb30d5e7c74eb9d0b5ad666b73f4712ed646d003573b8af5",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/pair_game_screens/document-mobile.png",
+    "repositoryPath": "codex-workspace/docs/episodes/pair_game_screens/document-mobile.png",
+    "bytes": 90679,
+    "sha256": "859d38945017f261c62380fe3c5cea83639cd9892c5476648aded6ca314412ee",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/pair_game_screens/document-picker-desktop.png",
+    "repositoryPath": "codex-workspace/docs/episodes/pair_game_screens/document-picker-desktop.png",
+    "bytes": 391625,
+    "sha256": "8121762fde0bb1080bb11e1ec10ef883d3645b3d1b82081fad054fd4ff986472",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/test_e01_browser.js",
+    "repositoryPath": "codex-workspace/docs/episodes/test_e01_browser.js",
+    "bytes": 6759,
+    "sha256": "ea918f72fa56c379591501b98ac5fdea6140d680ca65602d8dd797f33cda3089",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/test_e01_engine.js",
+    "repositoryPath": "codex-workspace/docs/episodes/test_e01_engine.js",
+    "bytes": 7407,
+    "sha256": "54664217c432db3b97ad132a2dcc274616f787f954cbcc3385d6507641696a46",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/test_e01_pair.js",
+    "repositoryPath": "codex-workspace/docs/episodes/test_e01_pair.js",
+    "bytes": 6559,
+    "sha256": "41be6b605be1b4929a730c34ae5ab251639f08b5b92427bb4be13f8292ff3e48",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "docs/episodes/verify_e01_reader.js",
+    "repositoryPath": "codex-workspace/docs/episodes/verify_e01_reader.js",
+    "bytes": 2145,
+    "sha256": "88aaafdf507245532d6b3ff73034f9e53479aade377591804091b29bfa0e0b1b",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/2._WORK_LOG.md",
+    "repositoryPath": "codex-workspace/생활보장과/2._WORK_LOG.md",
+    "bytes": 21949,
+    "sha256": "e826e4ebbc403cc22eb5901ea997310f158913c60d01d2f6bdd2f16161ac922e",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/AGENTS.md",
+    "repositoryPath": "codex-workspace/생활보장과/AGENTS.md",
+    "bytes": 430,
+    "sha256": "efe8782a0cacc3c365462eb579085681ba0074d2e5a606cdb4793b9039f7d316",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/A_견본식별_상세기획.md",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/A_견본식별_상세기획.md",
+    "bytes": 31627,
+    "sha256": "fcc5fb071e6d4726d1ddacc304e89649d3e81a460f8e926f1edeab2e84ba4e23",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/A_공문중심_UI_시안_v1.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/A_공문중심_UI_시안_v1.png",
+    "bytes": 2022382,
+    "sha256": "d36d3e29d90fb612528dc78430251caa74ad361979150d6ed946d999ab8d3e67",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/A_구현전_전체명세.md",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/A_구현전_전체명세.md",
+    "bytes": 28531,
+    "sha256": "29b7a3507f1c0731dfe66281cf52a14ab929eb9b9e315d9457e861b3ca258bf2",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/A_구현준비계획.md",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/A_구현준비계획.md",
+    "bytes": 15508,
+    "sha256": "731edbddaf6fdfa28f5c2ac91f0136d0fc0aaced8996acb0202f3157732d933d",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/A_도전_시안_v1.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/A_도전_시안_v1.png",
+    "bytes": 2392913,
+    "sha256": "fa31f28dcc50152abeddb819053eaef40ebacbb2b9a71668e64884c4a8d9af61",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/A_모바일_시안_v1.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/A_모바일_시안_v1.png",
+    "bytes": 2232164,
+    "sha256": "7607ade669704e70e5a1dbb0caca068a550a00337fdf64bd9c3bebb4065ef7e6",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/A_책상중심_UI_시안_v1.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/A_책상중심_UI_시안_v1.png",
+    "bytes": 2635750,
+    "sha256": "5db79431bde7a9759db0b8fa77d8574df4f9fa52d4f905d5fed08fe9f8bb68dd",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/A_화면상태_시안_v1.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/A_화면상태_시안_v1.png",
+    "bytes": 2142286,
+    "sha256": "b2a52318bbce55f6918c14d0e27369a929f3cd2ed9a943a73f07b63cb118a47e",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/UI_이미지_제작기록.md",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/UI_이미지_제작기록.md",
+    "bytes": 21847,
+    "sha256": "8f530c06739543c66db0518c3dc4e9b9b1272dd74e61e3994b8452df9367001e",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/browser-results.json",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/browser-results.json",
+    "bytes": 1504,
+    "sha256": "09533f394303f14f8e21cb8465a0be4e6e24276f0dd0cae13afab32722d9874a",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/completed-1024.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/completed-1024.png",
+    "bytes": 241051,
+    "sha256": "a4c34fdea7b834c90ef0f88c7f037825b73894e4085e90ce23cb74faa3e0a3b8",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/completed-1366.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/completed-1366.png",
+    "bytes": 320470,
+    "sha256": "413d66cd36fb2dd3710862ad8ed33671887d039d3a6ae394438fddd9bae01e81",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/completed-1440.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/completed-1440.png",
+    "bytes": 383202,
+    "sha256": "bc8e709da6e33bae0623af8943c9810656de053f20b170ea00938f6e494ca81a",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/completed-360.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/completed-360.png",
+    "bytes": 177061,
+    "sha256": "5a8b495b725b2c6a25a8053699fcf53908fc74d3e0df62e2ccf8dfaf050fe182",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/completed-390.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/completed-390.png",
+    "bytes": 183837,
+    "sha256": "b4e4e0341dcdb1ee6a030e6a4d0b8ccf3f67d3c4fb92152600f2b2e28ff9e397",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/completed-768.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/completed-768.png",
+    "bytes": 244419,
+    "sha256": "c5e2b71949d2e4bcd9cef99d2848567ed02118b7c3b8b9777a8544a5717512bf",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/map-compare-1024.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/map-compare-1024.png",
+    "bytes": 252038,
+    "sha256": "5d333e63e00690ca3325780362b73dc5303569f46baa8de5b29c552868c07246",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/map-compare-1366.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/map-compare-1366.png",
+    "bytes": 313737,
+    "sha256": "080d3b44d61985a068e7c88aa9165cc10a94cf5491f7856ffeb334121f57a2fc",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/map-compare-1440.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/map-compare-1440.png",
+    "bytes": 379905,
+    "sha256": "6453622f1ea0d914f80f2875675a5b5b8c27babb4dbad84c306dc486bf3a66dc",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/map-compare-360.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/map-compare-360.png",
+    "bytes": 158824,
+    "sha256": "485a078ba22933eff2a74d92b3f447ecd29797469814116f43208bd0bccddc08",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/map-compare-390.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/map-compare-390.png",
+    "bytes": 160665,
+    "sha256": "c723679b5d61929f2431c7eb6c9ae95ccbf5ad1917908548fc0810894393ed5a",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/map-compare-768.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/map-compare-768.png",
+    "bytes": 248621,
+    "sha256": "5ecc2f264c229203d8e0f505246490a98bd6702e3453f67da07944659492429d",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/rejected-1024.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/rejected-1024.png",
+    "bytes": 235425,
+    "sha256": "1c202315e3bcb987941031e87389945f981da32efff87ab6497b4b15e9ef6eaa",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/rejected-1366.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/rejected-1366.png",
+    "bytes": 317476,
+    "sha256": "0773131ab34cc27a33f36d344cabe82824b9f2c83ba2116f3cc5668b207638a7",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/rejected-1440.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/rejected-1440.png",
+    "bytes": 380833,
+    "sha256": "0937ac2e43e57c838335ff55929b448170f31c790eefcb6e1b706e9707803d63",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/rejected-360.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/rejected-360.png",
+    "bytes": 168491,
+    "sha256": "70b6142fb825d60d32b8f3620d1d520c6a633646318478073e0f880ab6c6356a",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/rejected-390.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/rejected-390.png",
+    "bytes": 176322,
+    "sha256": "3184834af538ffefa0844184a0719d8171d246c32c585ba68a6182a3d692963e",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/rejected-768.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/rejected-768.png",
+    "bytes": 236455,
+    "sha256": "c9e6abe97da83491204672d5685a924146e5ea8b58c07cb7f5567fa70cc53d26",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/stand-hidden-1024.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/stand-hidden-1024.png",
+    "bytes": 328483,
+    "sha256": "576842141b016e517b5a452785814347591cad9904f057a483be1859cb8e584b",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/stand-hidden-1366.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/stand-hidden-1366.png",
+    "bytes": 439405,
+    "sha256": "5bead3a6cb081525167d080214a5e3bf0ffe296997fbd3a8835de0bceff08fa7",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/stand-hidden-1440.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/stand-hidden-1440.png",
+    "bytes": 513714,
+    "sha256": "260ef6ac04aab1609b7194e332a87d492d759fbf1a81b1594feba09026fdc118",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/stand-hidden-360.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/stand-hidden-360.png",
+    "bytes": 191862,
+    "sha256": "d7423a918b49d5fd0901d46e711e0dcab57a7aee3f67085be972208f4e00fb74",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/stand-hidden-390.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/stand-hidden-390.png",
+    "bytes": 200811,
+    "sha256": "384307b1450472bd83f80619d746303f3a9303bb54b4434848996b49dc7a8016",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/stand-hidden-768.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/stand-hidden-768.png",
+    "bytes": 298146,
+    "sha256": "8302aa00d74f68e1a3895fc98cb20f29c95a82f619ecc7df3fffae3568f68a7c",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/start-1024.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/start-1024.png",
+    "bytes": 332898,
+    "sha256": "5779b7aab65cbc54f5a94fcaa4b420ec395be6768f1ad23b155293add9e88e7b",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/start-1366.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/start-1366.png",
+    "bytes": 440602,
+    "sha256": "0c2ad7c13ecbdef41457f8be54ecae0f1549d85a278fc09e02f144a47a3b202e",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/start-1440.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/start-1440.png",
+    "bytes": 514385,
+    "sha256": "27e1bf5ddb75fbe8170c1682d76a8c317aa58c0f43e6e495e7fdaced9653a45e",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/start-360.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/start-360.png",
+    "bytes": 188505,
+    "sha256": "7b2816cd3ea2456a396347874bf7de92b7fe97f082249f224677435147bbf200",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/start-390.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/start-390.png",
+    "bytes": 198034,
+    "sha256": "1dfc8484d840cc72c38e5cf6a4be79c4ecd9633546bd388e8f2b9d0e51f58c91",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/start-768.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/start-768.png",
+    "bytes": 301313,
+    "sha256": "fee798e891ef6ea6c35125cfac08272e4bc1f1c2c2336f2d0f56ffee9d28e5c5",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/검증기록.md",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/검증기록.md",
+    "bytes": 3946,
+    "sha256": "86907e8ff16820fdff7b3688c1baa88a6f44d102163f5d9940c2ae20687c9b0a",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/구현검증/시안-실제-나란히.html",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/구현검증/시안-실제-나란히.html",
+    "bytes": 2200,
+    "sha256": "924f0188299dd218c7c216ea91a04637c11220c4fd50b8a25dd59e64226a49e1",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/design/공문A_견본식별/시안_4단계_원본.png",
+    "repositoryPath": "codex-workspace/생활보장과/design/공문A_견본식별/시안_4단계_원본.png",
+    "bytes": 310934,
+    "sha256": "e02de57e3ea765ddb96d42419e8640047db16b7e5d9f77d47ae6b27a3cc560a7",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/MERGE.md",
+    "repositoryPath": "codex-workspace/생활보장과/MERGE.md",
+    "bytes": 2507,
+    "sha256": "0a63e70c84afdf896d9db9ba6c68b2caa7a355ca43acd69e33eb6cd61e8837c1",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/PROJECT_PLAN.md",
+    "repositoryPath": "codex-workspace/생활보장과/PROJECT_PLAN.md",
+    "bytes": 15398,
+    "sha256": "8a633ea5d1b59adee2d72490cb5db1a4d36e3adb527a21d36a7a3ed48a71e63d",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/README.md",
+    "repositoryPath": "codex-workspace/생활보장과/README.md",
+    "bytes": 754,
+    "sha256": "3a124915f5bbb302137f50089b8379aaa26e7f97347da98971e3303171890ca5",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/asset-contact.jpg",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/asset-contact.jpg",
+    "bytes": 137706,
+    "sha256": "de173ffd24ee6007bca89bf0c427a02829c1d805583948f60a7084861391fa96",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/asset_sources.json",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/asset_sources.json",
+    "bytes": 5311,
+    "sha256": "dc012aedc90728432972de0075237fdd317b3b765d97902d3e24a6d76f31e4b3",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/build_report.py",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/build_report.py",
+    "bytes": 6076,
+    "sha256": "b824c74d62a2af68469fe0cc221ba7dcfb46e3fd8c21749aea4168e340d26cc4",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/collect_assets.py",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/collect_assets.py",
+    "bytes": 1829,
+    "sha256": "3ab969a9df73669749906a90194473a1d155809eec9abd7f91c54309ff2584c4",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/collect_creator_assets.py",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/collect_creator_assets.py",
+    "bytes": 1263,
+    "sha256": "5f2a076143ee469d1e59e6533d81d54073851c3f0806a13be34e486fd526b8c3",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/images/horticulture-0.jpg",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/images/horticulture-0.jpg",
+    "bytes": 426810,
+    "sha256": "805349565a0d9b7ade52501c392532ac5a4a1770d6367bb8dd84ef6c5c744595",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/images/horticulture-1.jpg",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/images/horticulture-1.jpg",
+    "bytes": 97414,
+    "sha256": "454c65585a1a0bd2d0167e605890ad8eab3c7cb1f0f607c55b30cb811c4b6f3b",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/images/horticulture-2.jpg",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/images/horticulture-2.jpg",
+    "bytes": 410923,
+    "sha256": "65791f3351abd9a34c77d700e902a9715603332b32f461258457c79add2c12af",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/images/operator-0.jpg",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/images/operator-0.jpg",
+    "bytes": 531327,
+    "sha256": "4052da2e1e27d5b0e5133584dfd6b15d924cff76dbe08061c4623fb0ba3d0ff4",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/images/operator-1.jpg",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/images/operator-1.jpg",
+    "bytes": 545948,
+    "sha256": "d2b4b8f907ea425075f9c4400d8734374bc1cc0871a7cb714596e041166ddfaf",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/images/operator-2.jpg",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/images/operator-2.jpg",
+    "bytes": 460729,
+    "sha256": "c706dcd1af48b59329a895ca4e08c30c0f9613a2ef8bbfe179a76b496f8fd4c1",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/images/orwell-0.jpg",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/images/orwell-0.jpg",
+    "bytes": 355559,
+    "sha256": "96859e9cd8e448901bbc9bedb4565299181718a650cc3f637f3d2f020d270565",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/images/orwell-1.jpg",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/images/orwell-1.jpg",
+    "bytes": 340824,
+    "sha256": "96a20110fdd727f150f8d3380f54aa10592e129bcba54796112e894cbef34c84",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/images/orwell-2.jpg",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/images/orwell-2.jpg",
+    "bytes": 300795,
+    "sha256": "4bba53df47db82d4919afc018cd00ed8878f6efe8ee6552d85d84251ce20113e",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/images/republia.png",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/images/republia.png",
+    "bytes": 18357,
+    "sha256": "119223c19728b254ee9ebceeb6549a2762dfa5ef1ea17d562b06e227f03eb2a7",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/images/roottrees-0.jpg",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/images/roottrees-0.jpg",
+    "bytes": 333540,
+    "sha256": "7b5ce244febc7f8de46484cb81c24525749e1bb1f13fb0186230869bd76959d9",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/images/roottrees-1.jpg",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/images/roottrees-1.jpg",
+    "bytes": 894716,
+    "sha256": "dc4e66aef9576cf4dfbc13a4859f71d2f8944dadfd5bc71155cd373ef4cc1a95",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/images/roottrees-2.jpg",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/images/roottrees-2.jpg",
+    "bytes": 361581,
+    "sha256": "51d5b1e870d1ad14299949f40a8ccb42f488bd000738c7d3a3e7737a090d397e",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/images/unsolicited.png",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/images/unsolicited.png",
+    "bytes": 9878,
+    "sha256": "ef55bdcbdc15f0c5bfbe47cc57cfc2283588ebe7ef739e2c364d952ebc9404d6",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/make_contact.py",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/make_contact.py",
+    "bytes": 815,
+    "sha256": "cf1419ee4a9245f291077f3792fc2ecce81097fec4dabc4ef6d50bacb5f23da6",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/report-preview.png",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/report-preview.png",
+    "bytes": 880254,
+    "sha256": "a7306bd43739a122a76af725d737f39618feebca821ca18be449bcd86ad45585",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/report_validation.json",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/report_validation.json",
+    "bytes": 1373,
+    "sha256": "0d259b36b5f5b3d2385d134c4ce465504df16e479119426b1556de9ea3049e6b",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/republia-image-candidates.json",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/republia-image-candidates.json",
+    "bytes": 59,
+    "sha256": "a80b1124aacccbc5d2640549eb3a352a3c3b833aed743ceda4019d53cc90a006",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/research.json",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/research.json",
+    "bytes": 9253,
+    "sha256": "eeee378c147199f00c492cc71c28567ba1ae224ab999ff7e0c2996ff027efe5c",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/unsolicited-image-candidates.json",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/unsolicited-image-candidates.json",
+    "bytes": 78,
+    "sha256": "0157b38d11bebc4fa4644906923f93829ea8228d49f12c672db100999d5d196e",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/verify_report.cjs",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/verify_report.cjs",
+    "bytes": 1341,
+    "sha256": "4b0031b731ac16b334d0a8d7f016e0718b8927b34a886dca8369704dea071574",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/공문퍼즐_참고게임조사.html",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/공문퍼즐_참고게임조사.html",
+    "bytes": 16993,
+    "sha256": "203d1333acf27201c80f5321a2190fb029d77ecbb61891f4eb381b170ad575c5",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/research/공문퍼즐_참고게임_20261011/참고게임_화면모음.jpg",
+    "repositoryPath": "codex-workspace/생활보장과/research/공문퍼즐_참고게임_20261011/참고게임_화면모음.jpg",
+    "bytes": 131917,
+    "sha256": "e36c77ca5df414b2179fadd49813019b9a4e24451b8da529b6ef51414987c719",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/src/leaflet-a/app.js",
+    "repositoryPath": "codex-workspace/생활보장과/src/leaflet-a/app.js",
+    "bytes": 18376,
+    "sha256": "21d9c66465552f1ef3975ddd4351c2adce42e138bbdf314e2bb899564e56d71f",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/src/leaflet-a/index.html",
+    "repositoryPath": "codex-workspace/생활보장과/src/leaflet-a/index.html",
+    "bytes": 780,
+    "sha256": "8d35abaa7164a6f1eb9e65a8b102f4e70954bce640bbcf3fffaa76d73edc221c",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/src/leaflet-a/model.js",
+    "repositoryPath": "codex-workspace/생활보장과/src/leaflet-a/model.js",
+    "bytes": 6169,
+    "sha256": "86012d9807308ebfe8be436ad8476d9768fcba717f318574c9d16f56cfdfd1bc",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/src/leaflet-a/README.md",
+    "repositoryPath": "codex-workspace/생활보장과/src/leaflet-a/README.md",
+    "bytes": 2702,
+    "sha256": "e71ca2e82d80dadf8a3eddafc0a0635f3fe1d23e080fae85803ae66d2f96ecee",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/src/leaflet-a/stage.css",
+    "repositoryPath": "codex-workspace/생활보장과/src/leaflet-a/stage.css",
+    "bytes": 13940,
+    "sha256": "f54b06fc8cef29d30b238cf629655ae48b21e8a0f0783fc3d4015eade3707eda",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/src/leaflet-a/style.css",
+    "repositoryPath": "codex-workspace/생활보장과/src/leaflet-a/style.css",
+    "bytes": 10712,
+    "sha256": "20456238537a01c3768556fcbf2d494fbaf314c4a8bd0449c960d83ddb9cee3d",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/STATUS.md",
+    "repositoryPath": "codex-workspace/생활보장과/STATUS.md",
+    "bytes": 5035,
+    "sha256": "0e4e63588c907f4165c512db9c565742a560e10949801cb0e251cebe06f255de",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/tests/leaflet-a/browser.test.cjs",
+    "repositoryPath": "codex-workspace/생활보장과/tests/leaflet-a/browser.test.cjs",
+    "bytes": 6560,
+    "sha256": "75fe6049c4f4f765202854175352a29cdd751b27ea2aca476fb9139a2446a4b3",
+    "owner": "공무원키우기 확장_생활보장과"
+  },
+  {
+    "path": "생활보장과/tests/leaflet-a/model.test.cjs",
+    "repositoryPath": "codex-workspace/생활보장과/tests/leaflet-a/model.test.cjs",
+    "bytes": 3110,
+    "sha256": "ff0282e97a24bbabeddea0b4125a4fe6271185d73d17eda2a2a8e074b59b9d34",
+    "owner": "공무원키우기 확장_생활보장과"
+  }
+]

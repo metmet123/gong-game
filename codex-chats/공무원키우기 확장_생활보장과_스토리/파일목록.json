@@ -1,0 +1,240 @@
+[
+  {
+    "path": "docs/narrative/narrative_concept.md",
+    "repositoryPath": "codex-workspace/docs/narrative/narrative_concept.md",
+    "bytes": 92889,
+    "sha256": "b003b2a6de4b5893009b89f32d008d3a072cb8ad9cd182f8b2de8b708682802f",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "docs/narrative/narrative_data.json",
+    "repositoryPath": "codex-workspace/docs/narrative/narrative_data.json",
+    "bytes": 124580,
+    "sha256": "db249888080892a4e72fe333579bfb3efb7f2bd1acc3b1a23f81c090144519c5",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/before_concept.md",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/before_concept.md",
+    "bytes": 71092,
+    "sha256": "f784fc0de641844f1632de08d37113c2bfaf52143b56811133795859a03d1ebf",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/before_data.json",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/before_data.json",
+    "bytes": 84327,
+    "sha256": "1ce391ebbf465b01addd2b713c13bdd6ba44c374837647d9ea66b4d426cee678",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/candidate/index.html",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/candidate/index.html",
+    "bytes": 2042107,
+    "sha256": "6364750b984de02ffee72e1433af466e3e96bf4822597c2bace0b13aec7c972f",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/changes.json",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/changes.json",
+    "bytes": 116731,
+    "sha256": "84d01f0be27d994d7f0db7f1787d1cf1453e9f0d7f75149a4fe2056fd16f10f6",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/character-expansion/before_candidate.html",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/character-expansion/before_candidate.html",
+    "bytes": 2020409,
+    "sha256": "156f7fbc549ea4b43c8a1350d6a58efe752cdad3dcfe312d02dda537aaed871d",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/character-expansion/before_concept.md",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/character-expansion/before_concept.md",
+    "bytes": 81613,
+    "sha256": "ad4c5ebf54c73f5f20e35c1c2e7c2465564c59910f4c91db495fb636e8448994",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/character-expansion/before_data.json",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/character-expansion/before_data.json",
+    "bytes": 95732,
+    "sha256": "82a27817387d045e347c58769b8d4d53a595e63498172f622b9afefef95fb674",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/character-expansion/changes.json",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/character-expansion/changes.json",
+    "bytes": 117229,
+    "sha256": "df3e8fa6670d2438b6e94d22102b70848709bbe47d0d1ed0c81ff85754ea72f7",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/character-expansion/html-patches.json",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/character-expansion/html-patches.json",
+    "bytes": 427,
+    "sha256": "d06770f0e7b0b16b76855b155edb08d84ea3de430ed0387648535cb36c950c22",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/character-expansion/previous-validation.json",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/character-expansion/previous-validation.json",
+    "bytes": 4402,
+    "sha256": "9292b984cac44392f20aa980d2224e84f91715ea8623e3490a14520572c97a26",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/character-expansion/validation.json",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/character-expansion/validation.json",
+    "bytes": 1136,
+    "sha256": "19051904e5235868fdacee4b36f089506b0f80483c6520b1d605900221fcd4e6",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/character-expansion/설정확장결과.md",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/character-expansion/설정확장결과.md",
+    "bytes": 6960,
+    "sha256": "10af069246c4639ceb15dfc0553a4ba4b427c8e5fb86fb48ab81c7514c652a55",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/check-context.cjs",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/check-context.cjs",
+    "bytes": 5212,
+    "sha256": "c83e003a04a4c4416559d04f628a5421545fee309f2b697ab49c62bd62c27c5a",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/check-runtime.cjs",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/check-runtime.cjs",
+    "bytes": 1836,
+    "sha256": "e9a99ce76f5a69d1b69b760b3821e05368b66ffe91e0d4dc26601430337f59a9",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/context-inspect.py",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/context-inspect.py",
+    "bytes": 460,
+    "sha256": "6ba559d3e7dde0d5b39b9fae24b41f093de2b4aba26d7e1325cf8e991dc68cb4",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/context-review/before_concept.md",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/context-review/before_concept.md",
+    "bytes": 77849,
+    "sha256": "236e95c5140bd8b51c92843e076edc0203ad93fdcdd09a7e4caf03a84b77b682",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/context-review/before_data.json",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/context-review/before_data.json",
+    "bytes": 91975,
+    "sha256": "4458f231f996f4324800ae46702a37d4ba03ebe4a6852332eee4c3186c055946",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/context-review/changes.json",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/context-review/changes.json",
+    "bytes": 36768,
+    "sha256": "acca91389cfc8dec6d73167a2ec20a08a7b14e395e6c1e9def89706b18d8f2cd",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/context-review/html-patches.json",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/context-review/html-patches.json",
+    "bytes": 1975,
+    "sha256": "b4ab3f7072c8038191dbbb73ada36102d8fab57e6fb2c6369bbf9d0272d68498",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/context-review/language-changes.json",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/context-review/language-changes.json",
+    "bytes": 94178,
+    "sha256": "f9049f2d3b285b8b24c324e4c544b247c38ec1c3cd1c575fd708e2c5b255128c",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/context-review/render-validation.json",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/context-review/render-validation.json",
+    "bytes": 490,
+    "sha256": "d0fe8bf36b79a507c0c928eb6064edcb403d50cf3306aa1db006ea31a316729c",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/context-review/맥락검수결과.md",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/context-review/맥락검수결과.md",
+    "bytes": 6166,
+    "sha256": "28d78fb34cdf1680ffab18d74e94976ee15a7b179883333ef36356a07a572322",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/context-revise.py",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/context-revise.py",
+    "bytes": 18227,
+    "sha256": "988225172c68bedd7f7e89292cc7277ac8c279368fa65a5e8ed50edcac29fcd3",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/dump-week.cjs",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/dump-week.cjs",
+    "bytes": 511,
+    "sha256": "3c776cb75e5ca5b72f094fbfc885c014dc7ae25f37da7651583e9f599a7eeea6",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/expand.py",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/expand.py",
+    "bytes": 43315,
+    "sha256": "95d47458ed6a5901fceb0df9c2414c8230f5fc9877c5e1b3a25d7a4568fccae9",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/revise.py",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/revise.py",
+    "bytes": 44829,
+    "sha256": "434018cd6a0774ef142ac1a19c5a3105bac2077beacfd969165115b33553ad39",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/runtime-validation.json",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/runtime-validation.json",
+    "bytes": 293,
+    "sha256": "22dd5424953fed7d4671ff30e1ea7605692530d649562167a25a5bf6f73c07f4",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/upstream/index.html",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/upstream/index.html",
+    "bytes": 2006556,
+    "sha256": "ae70b3d2a1f75582695f15f4bc21e7d05d200ef68d3405b1262f509e1c71cb1d",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/validate-expansion.py",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/validate-expansion.py",
+    "bytes": 5295,
+    "sha256": "6d5703d08fd61dc476ecfdf23c3797418a7079e207a1d35e02556ccabea2c66d",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/validate.py",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/validate.py",
+    "bytes": 5554,
+    "sha256": "09a72e2f3c1e5666accaa9153fee6d792a814c6bedf7a6d37194e0ef07200bb4",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/validation.json",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/validation.json",
+    "bytes": 4402,
+    "sha256": "9292b984cac44392f20aa980d2224e84f91715ea8623e3490a14520572c97a26",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  },
+  {
+    "path": "확장계획/narrative-review/검수결과.md",
+    "repositoryPath": "codex-workspace/확장계획/narrative-review/검수결과.md",
+    "bytes": 5867,
+    "sha256": "016c3c7cb5c5be7504b1e120a99afc605b74379ff0e5d3df19ad8ff36872b912",
+    "owner": "공무원키우기 확장_생활보장과_스토리"
+  }
+]

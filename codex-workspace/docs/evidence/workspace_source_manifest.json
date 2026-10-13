@@ -1,0 +1,72 @@
+[
+  {
+    "id": "game",
+    "path": "C:\\Users\\이현주\\Documents\\Codex\\2026-10-10\\html\\공무원키우기_픽셀아트.html",
+    "bytes": 126773,
+    "sha256": "41cae4d9b5fd377350f5f15b483d88abf0581a1c40325de8eb288bdf81258021",
+    "workspacePath": "C:\\Users\\이현주\\Desktop\\공무원키우기 _코덱스\\공무원키우기_픽셀아트.html",
+    "hashVerifiedAfterCopy": true
+  },
+  {
+    "id": "expansion",
+    "path": "C:\\Users\\이현주\\Documents\\Codex\\2026-10-10\\html\\공무원키우기_생활보장과_확장상세계획.html",
+    "bytes": 321118,
+    "sha256": "bd9a82ab324bcc7c28354f61531ecdb9af991a4408803e91f33c903e9fda8628",
+    "workspacePath": "C:\\Users\\이현주\\Desktop\\공무원키우기 _코덱스\\공무원키우기_생활보장과_확장상세계획.html",
+    "hashVerifiedAfterCopy": true
+  },
+  {
+    "id": "new_design",
+    "path": "C:\\Users\\이현주\\Documents\\Codex\\2026-10-10\\html\\.codex-remote-attachments\\01a1216b-d366-7ce3-bede-e9c7d2abacfd\\8f0f2f09-db74-4285-848c-20ea775cc1b1\\1-공무원키우기_새버전_기획시안.html",
+    "bytes": 100805,
+    "sha256": "6e5c82614528c4d0843cb03dbc1c1883391b6714dcfc0e4c3ad11015930293a8",
+    "workspacePath": "C:\\Users\\이현주\\Desktop\\공무원키우기 _코덱스\\.codex-remote-attachments\\01a1216b-d366-7ce3-bede-e9c7d2abacfd\\8f0f2f09-db74-4285-848c-20ea775cc1b1\\1-공무원키우기_새버전_기획시안.html",
+    "hashVerifiedAfterCopy": true
+  },
+  {
+    "id": "research",
+    "path": "C:\\Users\\이현주\\Documents\\Codex\\2026-10-10\\html\\공무원키우기_유사게임조사_구현제안.html",
+    "bytes": 5663368,
+    "sha256": "4ba31ecea5f210febf9759e69ee9881b0ad4fd6597614ae10d42efbab040b36c",
+    "workspacePath": "C:\\Users\\이현주\\Desktop\\공무원키우기 _코덱스\\공무원키우기_유사게임조사_구현제안.html",
+    "hashVerifiedAfterCopy": true
+  },
+  {
+    "id": "map",
+    "path": "C:\\Users\\이현주\\Documents\\Codex\\2026-10-10\\html\\생활보장과_사무실배치.json",
+    "bytes": 1757,
+    "sha256": "b877a08b19ca34cb52f39649689c7de46dd4560f4cbbe2cde904cf6f13bfe8c4",
+    "workspacePath": "C:\\Users\\이현주\\Desktop\\공무원키우기 _코덱스\\생활보장과_사무실배치.json",
+    "hashVerifiedAfterCopy": true
+  },
+  {
+    "id": "desktop_reference",
+    "workspacePath": "C:\\Users\\이현주\\Desktop\\공무원키우기 _코덱스\\공무원키우기_사무실버전.html",
+    "bytes": 103858,
+    "sha256": "eb4b81cae28627c5371701ea4782710415ccc87c5018f2e29bf48e272bf477ab"
+  },
+  {
+    "id": "desktop_reference",
+    "workspacePath": "C:\\Users\\이현주\\Desktop\\공무원키우기 _코덱스\\공무원키우기_새버전_기획시안.html",
+    "bytes": 103065,
+    "sha256": "2b779dfabe57bf8406cc7eb72f05bbff736434f57ec8fcc7d2d352b266afb9d6"
+  },
+  {
+    "id": "desktop_reference",
+    "workspacePath": "C:\\Users\\이현주\\Desktop\\공무원키우기 _코덱스\\사무실배치도_만들기.html",
+    "bytes": 30014,
+    "sha256": "c6e57b8ecc9b553f86fff06ff29083969ad570860ba9e26eb7ffc2e57288983c"
+  },
+  {
+    "id": "desktop_reference",
+    "workspacePath": "C:\\Users\\이현주\\Desktop\\공무원키우기 _코덱스\\생활보장과_사무실_시안.html",
+    "bytes": 55744,
+    "sha256": "aee6b83b9586b09f1c40bfc3a716f0c43c6d1f261e3d71dfc6e79fdf42b9ee31"
+  },
+  {
+    "id": "desktop_reference",
+    "workspacePath": "C:\\Users\\이현주\\Desktop\\공무원키우기 _코덱스\\생활보장과_확정배치.jpg",
+    "bytes": 94160,
+    "sha256": "89ef8cff370f86ba01471cfb27bbcd48626611f1777f1bc8c45adf3f6e2bf963"
+  }
+]

@@ -1,0 +1,538 @@
+{
+  "completedOn": "2026-10-11",
+  "scope": "독립판과 로컬 통합 후보; 공개 배포 제외",
+  "tasks": [
+    {
+      "id": "MC00",
+      "title": "기준 빌드와 원본 보호",
+      "status": "completed",
+      "completedOn": "2026-10-11",
+      "verification": "2._WORK_LOG.md 및 docs/출시검증.md"
+    },
+    {
+      "id": "MC01",
+      "title": "사례 데이터 분리와 절차 근거",
+      "status": "completed",
+      "completedOn": "2026-10-11",
+      "verification": "2._WORK_LOG.md 및 docs/출시검증.md"
+    },
+    {
+      "id": "MC02",
+      "title": "초안과 확인 사실 및 화면 상태 분리",
+      "status": "completed",
+      "completedOn": "2026-10-11",
+      "verification": "2._WORK_LOG.md 및 docs/출시검증.md"
+    },
+    {
+      "id": "MC03",
+      "title": "검토와 전입 처리 및 보완 안내",
+      "status": "completed",
+      "completedOn": "2026-10-11",
+      "verification": "2._WORK_LOG.md 및 docs/출시검증.md"
+    },
+    {
+      "id": "MC04",
+      "title": "모바일 전용 작업 화면",
+      "status": "completed",
+      "completedOn": "2026-10-11",
+      "verification": "2._WORK_LOG.md 및 docs/출시검증.md"
+    },
+    {
+      "id": "MC05",
+      "title": "세대 이동과 카드별 관계 입력",
+      "status": "completed",
+      "completedOn": "2026-10-11",
+      "verification": "2._WORK_LOG.md 및 docs/출시검증.md"
+    },
+    {
+      "id": "MC06",
+      "title": "자료와 무료 질문 및 화면 이동",
+      "status": "completed",
+      "completedOn": "2026-10-11",
+      "verification": "2._WORK_LOG.md 및 docs/출시검증.md"
+    },
+    {
+      "id": "MC07",
+      "title": "여섯 사례 실제 플레이 콘텐츠",
+      "status": "completed",
+      "completedOn": "2026-10-11",
+      "verification": "2._WORK_LOG.md 및 docs/출시검증.md"
+    },
+    {
+      "id": "MC08",
+      "title": "검토 화면과 오류 수정 및 힌트",
+      "status": "completed",
+      "completedOn": "2026-10-11",
+      "verification": "2._WORK_LOG.md 및 docs/출시검증.md"
+    },
+    {
+      "id": "MC09",
+      "title": "초안 저장과 복원 및 내보내기",
+      "status": "completed",
+      "completedOn": "2026-10-11",
+      "verification": "2._WORK_LOG.md 및 docs/출시검증.md"
+    },
+    {
+      "id": "MC10",
+      "title": "독립 퍼즐 진행과 연습 모드",
+      "status": "completed",
+      "completedOn": "2026-10-11",
+      "verification": "2._WORK_LOG.md 및 docs/출시검증.md"
+    },
+    {
+      "id": "MC11",
+      "title": "독립 퍼즐 모바일 품질 검증",
+      "status": "completed",
+      "completedOn": "2026-10-11",
+      "verification": "2._WORK_LOG.md 및 docs/출시검증.md"
+    },
+    {
+      "id": "MC12",
+      "title": "4일 이야기와 재방문 진행",
+      "status": "completed",
+      "completedOn": "2026-10-11",
+      "verification": "2._WORK_LOG.md 및 docs/출시검증.md"
+    },
+    {
+      "id": "MC13",
+      "title": "주민센터 맵과 복귀 흐름",
+      "status": "completed",
+      "completedOn": "2026-10-11",
+      "verification": "2._WORK_LOG.md 및 docs/출시검증.md"
+    },
+    {
+      "id": "MC14",
+      "title": "기념품과 챕터 독립 완성",
+      "status": "completed",
+      "completedOn": "2026-10-11",
+      "verification": "2._WORK_LOG.md 및 docs/출시검증.md"
+    },
+    {
+      "id": "MC15",
+      "title": "최신 본편 통합 구조 확인",
+      "status": "completed",
+      "completedOn": "2026-10-11",
+      "verification": "2._WORK_LOG.md 및 docs/출시검증.md"
+    },
+    {
+      "id": "MC16",
+      "title": "본편과 발령 및 경력 연결",
+      "status": "completed",
+      "completedOn": "2026-10-11",
+      "verification": "2._WORK_LOG.md 및 docs/출시검증.md"
+    },
+    {
+      "id": "MC17",
+      "title": "출시 후보 종합 검수",
+      "status": "completed",
+      "completedOn": "2026-10-11",
+      "verification": "2._WORK_LOG.md 및 docs/출시검증.md"
+    },
+    {
+      "id": "RC-R01",
+      "title": "첫 접수 목적·대본 고정",
+      "status": "completed",
+      "dependsOn": [
+        "MC17"
+      ],
+      "verification": "docs/첫접수_구현검증.md 및 docs/최종검사.json",
+      "completedOn": "2026-10-11"
+    },
+    {
+      "id": "RC-R02",
+      "title": "첫 접수 후보 및 저장 분리",
+      "status": "completed",
+      "dependsOn": [
+        "RC-R01"
+      ],
+      "verification": "docs/첫접수_구현검증.md 및 docs/최종검사.json",
+      "completedOn": "2026-10-11"
+    },
+    {
+      "id": "RC-R03",
+      "title": "탭 기반 집 배치",
+      "status": "completed",
+      "dependsOn": [
+        "RC-R02"
+      ],
+      "verification": "docs/첫접수_구현검증.md 및 docs/최종검사.json",
+      "completedOn": "2026-10-11"
+    },
+    {
+      "id": "RC-R04",
+      "title": "기준·관계 추론과 도움",
+      "status": "completed",
+      "dependsOn": [
+        "RC-R03"
+      ],
+      "verification": "docs/첫접수_구현검증.md 및 docs/최종검사.json",
+      "completedOn": "2026-10-11"
+    },
+    {
+      "id": "RC-R05",
+      "title": "실제 초안·근거·완료 연결",
+      "status": "completed",
+      "dependsOn": [
+        "RC-R04"
+      ],
+      "verification": "docs/첫접수_구현검증.md 및 docs/최종검사.json",
+      "completedOn": "2026-10-11"
+    },
+    {
+      "id": "RC-R06",
+      "title": "복원·모바일 및 회귀 검수",
+      "status": "completed",
+      "dependsOn": [
+        "RC-R05"
+      ],
+      "verification": "docs/첫접수_구현검증.md 및 docs/최종검사.json",
+      "completedOn": "2026-10-11"
+    },
+    {
+      "id": "RC-R07",
+      "title": "업무 미경험자 이해·재미 평가",
+      "status": "planned",
+      "dependsOn": [
+        "RC-R06"
+      ],
+      "verification": "docs/첫접수_구현검증.md · 실제 사람 평가 미실시"
+    },
+    {
+      "id": "RC-T01",
+      "title": "전입 기준·보호·구 저장 고정",
+      "status": "completed",
+      "dependsOn": [
+        "RC-R06"
+      ],
+      "program": "resident-center-two-desks-v1",
+      "deliverable": "기준 해시·저장 fixture·기존 회귀 결과",
+      "acceptance": "기존 실행판 재현 및 회귀 통과",
+      "verification": "docs/센터구현검증.md · docs/센터검증.json · docs/전입인수검증.json",
+      "requiresHumanEvidence": false,
+      "releaseGate": false,
+      "completedOn": "2026-10-11",
+      "completionScope": "로컬 구현·자동 검증; 실제 기기/사람·공개·본편은 별도"
+    },
+    {
+      "id": "RC-T02",
+      "title": "전입 첫 접수 이해·모바일 보완",
+      "status": "completed",
+      "dependsOn": [
+        "RC-T01"
+      ],
+      "program": "resident-center-two-desks-v1",
+      "deliverable": "기존 tutorial UI의 근거 있는 보완",
+      "acceptance": "정답 비공개·초안 유지·작은 화면 조작 통과",
+      "verification": "docs/센터구현검증.md · docs/센터검증.json · docs/전입인수검증.json",
+      "requiresHumanEvidence": false,
+      "releaseGate": false,
+      "completedOn": "2026-10-11",
+      "completionScope": "로컬 구현·자동 검증; 실제 기기/사람·공개·본편은 별도"
+    },
+    {
+      "id": "RC-T03",
+      "title": "전입 6사례·12방문 인수",
+      "status": "completed",
+      "dependsOn": [
+        "RC-T02"
+      ],
+      "program": "resident-center-two-desks-v1",
+      "deliverable": "전입 인수 검증 문서",
+      "acceptance": "보완 재방문·저장·보상·기존 본편 회귀 통과",
+      "verification": "docs/센터구현검증.md · docs/센터검증.json · docs/전입인수검증.json",
+      "requiresHumanEvidence": false,
+      "releaseGate": false,
+      "completedOn": "2026-10-11",
+      "completionScope": "로컬 구현·자동 검증; 실제 기기/사람·공개·본편은 별도"
+    },
+    {
+      "id": "RC-T04",
+      "title": "전입 실기기 및 사람 평가",
+      "status": "planned",
+      "dependsOn": [
+        "RC-T03",
+        "RC-R07"
+      ],
+      "program": "resident-center-two-desks-v1",
+      "deliverable": "기기 기록·관찰표",
+      "acceptance": "Android/iPhone 실기기와 RC-R07 검증 근거",
+      "verification": "docs/전입창구_복지상담실_상세개발계획.md",
+      "requiresHumanEvidence": true,
+      "releaseGate": true
+    },
+    {
+      "id": "RC-H01",
+      "title": "업무 선택과 새 센터 envelope",
+      "status": "completed",
+      "dependsOn": [
+        "RC-T03"
+      ],
+      "program": "resident-center-two-desks-v1",
+      "deliverable": "src/center/shell.html·app.js·storage.js",
+      "acceptance": "새 키 저장·구 키 보존·개방 근거 계산",
+      "verification": "docs/센터구현검증.md · docs/센터검증.json · docs/전입인수검증.json",
+      "requiresHumanEvidence": false,
+      "releaseGate": false,
+      "completedOn": "2026-10-11",
+      "completionScope": "로컬 구현·자동 검증; 실제 기기/사람·공개·본편은 별도"
+    },
+    {
+      "id": "RC-H02",
+      "title": "전입 embed v2 저장·복귀 브리지",
+      "status": "completed",
+      "dependsOn": [
+        "RC-H01"
+      ],
+      "program": "resident-center-two-desks-v1",
+      "deliverable": "src/center/bridge.js 및 선택적 전입 v2 통신",
+      "acceptance": "flush requestId·중복/지연 ack·원본 보존",
+      "verification": "docs/센터구현검증.md · docs/센터검증.json · docs/전입인수검증.json",
+      "requiresHumanEvidence": false,
+      "releaseGate": false,
+      "completedOn": "2026-10-11",
+      "completionScope": "로컬 구현·자동 검증; 실제 기기/사람·공개·본편은 별도"
+    },
+    {
+      "id": "RC-H03",
+      "title": "기존 기록 가져오기와 업무 전환",
+      "status": "completed",
+      "dependsOn": [
+        "RC-H02"
+      ],
+      "program": "resident-center-two-desks-v1",
+      "deliverable": "가져오기·백업·충돌 UI",
+      "acceptance": "전입 초안 왕복·가져오기 취소·복지 초안 분리",
+      "verification": "docs/센터구현검증.md · docs/센터검증.json · docs/전입인수검증.json",
+      "requiresHumanEvidence": false,
+      "releaseGate": false,
+      "completedOn": "2026-10-11",
+      "completionScope": "로컬 구현·자동 검증; 실제 기기/사람·공개·본편은 별도"
+    },
+    {
+      "id": "RC-W01",
+      "title": "W01 사건 데이터와 근거 계약",
+      "status": "completed",
+      "dependsOn": [
+        "RC-T03"
+      ],
+      "program": "resident-center-two-desks-v1",
+      "deliverable": "src/welfare/data/cases.js",
+      "acceptance": "참조·허용 근거·질문 의존·정답 witness 검증",
+      "verification": "docs/센터구현검증.md · docs/센터검증.json · docs/전입인수검증.json",
+      "requiresHumanEvidence": false,
+      "releaseGate": false,
+      "completedOn": "2026-10-11",
+      "completionScope": "로컬 구현·자동 검증; 실제 기기/사람·공개·본편은 별도"
+    },
+    {
+      "id": "RC-W02",
+      "title": "복지 순수 판정·저장 검증",
+      "status": "completed",
+      "dependsOn": [
+        "RC-W01"
+      ],
+      "program": "resident-center-two-desks-v1",
+      "deliverable": "src/welfare/engine/*·services/storage.js",
+      "acceptance": "근거/시점/동의·검토 만료·완료 불변 fixture 통과",
+      "verification": "docs/센터구현검증.md · docs/센터검증.json · docs/전입인수검증.json",
+      "requiresHumanEvidence": false,
+      "releaseGate": false,
+      "completedOn": "2026-10-11",
+      "completionScope": "로컬 구현·자동 검증; 실제 기기/사람·공개·본편은 별도"
+    },
+    {
+      "id": "RC-W03",
+      "title": "복지 자료·질문·관계 UI",
+      "status": "completed",
+      "dependsOn": [
+        "RC-W02",
+        "RC-H03"
+      ],
+      "program": "resident-center-two-desks-v1",
+      "deliverable": "src/welfare/view.js·welfare.css",
+      "acceptance": "모바일 탭·목록 대체·빈 초기 답·근거 연결",
+      "verification": "docs/센터구현검증.md · docs/센터검증.json · docs/전입인수검증.json",
+      "requiresHumanEvidence": false,
+      "releaseGate": false,
+      "completedOn": "2026-10-11",
+      "completionScope": "로컬 구현·자동 검증; 실제 기기/사람·공개·본편은 별도"
+    },
+    {
+      "id": "RC-W04",
+      "title": "계획·검토·완료·후속 답신",
+      "status": "completed",
+      "dependsOn": [
+        "RC-W03"
+      ],
+      "program": "resident-center-two-desks-v1",
+      "deliverable": "복지 계획·기념품·답신 화면",
+      "acceptance": "W01 단일 사례 시작부터 후속 확인까지 완주",
+      "verification": "docs/센터구현검증.md · docs/센터검증.json · docs/전입인수검증.json",
+      "requiresHumanEvidence": false,
+      "releaseGate": false,
+      "completedOn": "2026-10-11",
+      "completionScope": "로컬 구현·자동 검증; 실제 기기/사람·공개·본편은 별도"
+    },
+    {
+      "id": "RC-W05",
+      "title": "첫 상담 빌드·저장·기기 크기 검증",
+      "status": "completed",
+      "dependsOn": [
+        "RC-W04"
+      ],
+      "program": "resident-center-two-desks-v1",
+      "deliverable": "build_center.py·W01 E2E",
+      "acceptance": "센터 새로고침·오답 수정·기존 전입 회귀",
+      "verification": "docs/센터구현검증.md · docs/센터검증.json · docs/전입인수검증.json",
+      "requiresHumanEvidence": false,
+      "releaseGate": false,
+      "completedOn": "2026-10-11",
+      "completionScope": "로컬 구현·자동 검증; 실제 기기/사람·공개·본편은 별도"
+    },
+    {
+      "id": "RC-W06",
+      "title": "첫 상담 사람 평가와 보완",
+      "status": "planned",
+      "dependsOn": [
+        "RC-W05"
+      ],
+      "program": "resident-center-two-desks-v1",
+      "deliverable": "초심자 관찰표·보완 기록",
+      "acceptance": "3명 중 2명 이상 독립 완료·핵심 판단 설명",
+      "verification": "docs/전입창구_복지상담실_상세개발계획.md",
+      "requiresHumanEvidence": true,
+      "releaseGate": true
+    },
+    {
+      "id": "RC-W07",
+      "title": "W02 시점과 확인 대기 분기",
+      "status": "completed",
+      "dependsOn": [
+        "RC-W05"
+      ],
+      "program": "resident-center-two-desks-v1",
+      "deliverable": "W02 데이터·부정/허용 fixture",
+      "acceptance": "과거/현재·대기 계획 구분; W06 실패 관찰 시 확장 보류",
+      "verification": "docs/센터구현검증.md · docs/센터검증.json · docs/전입인수검증.json",
+      "requiresHumanEvidence": false,
+      "releaseGate": false,
+      "completedOn": "2026-10-11",
+      "completionScope": "로컬 구현·자동 검증; 실제 기기/사람·공개·본편은 별도"
+    },
+    {
+      "id": "RC-W08",
+      "title": "W03 다중 문제와 챕터 마무리",
+      "status": "completed",
+      "dependsOn": [
+        "RC-W07"
+      ],
+      "program": "resident-center-two-desks-v1",
+      "deliverable": "W03 데이터·기관 역할·기념품",
+      "acceptance": "두 문제·두 기관 계획·중복 완료 방지",
+      "verification": "docs/센터구현검증.md · docs/센터검증.json · docs/전입인수검증.json",
+      "requiresHumanEvidence": false,
+      "releaseGate": false,
+      "completedOn": "2026-10-11",
+      "completionScope": "로컬 구현·자동 검증; 실제 기기/사람·공개·본편은 별도"
+    },
+    {
+      "id": "RC-I01",
+      "title": "두 업무 출시 후보 종합 검증",
+      "status": "completed",
+      "dependsOn": [
+        "RC-W08",
+        "RC-H03",
+        "RC-T03"
+      ],
+      "program": "resident-center-two-desks-v1",
+      "deliverable": "센터검증.json·릴리스 체크리스트",
+      "acceptance": "두 업무 왕복·모바일·저장 실패·회귀·빌드 재현",
+      "verification": "docs/센터구현검증.md · docs/센터검증.json · docs/전입인수검증.json",
+      "requiresHumanEvidence": false,
+      "releaseGate": false,
+      "completedOn": "2026-10-11",
+      "completionScope": "로컬 구현·자동 검증; 실제 기기/사람·공개·본편은 별도"
+    },
+    {
+      "id": "RC-I02",
+      "title": "독립 센터판 공개·캐시·롤백",
+      "status": "planned",
+      "dependsOn": [
+        "RC-I01",
+        "RC-T04",
+        "RC-W06"
+      ],
+      "program": "resident-center-two-desks-v1",
+      "deliverable": "새 테스트 경로 배포 근거",
+      "acceptance": "배포 범위 승인·Pages 성공·기존 페이지와 캐시 보존",
+      "verification": "docs/전입창구_복지상담실_상세개발계획.md",
+      "requiresHumanEvidence": false,
+      "releaseGate": true
+    },
+    {
+      "id": "RC-I03",
+      "title": "본편 upstream와 센터 연결",
+      "status": "planned",
+      "dependsOn": [
+        "RC-I01"
+      ],
+      "program": "resident-center-two-desks-v1",
+      "deliverable": "확장계획 전달·실제 원본 adapter 계약",
+      "acceptance": "담당 조율·저장 호환·부서 왕복·기존 보상 보존",
+      "verification": "docs/전입창구_복지상담실_상세개발계획.md",
+      "requiresHumanEvidence": false,
+      "releaseGate": false
+    },
+    {
+      "id": "RC-W09",
+      "title": "첫 화면 복지 우선 노출",
+      "status": "completed",
+      "completedOn": "2026-10-11",
+      "verification": "design/화면/복지우선/검증.json",
+      "completionScope": "로컬 순서 변경 및 4개 화면 크기 검사"
+    },
+    {
+      "id": "RC-W10",
+      "title": "복지상담 완성도 보완",
+      "status": "completed",
+      "dependsOn": [
+        "RC-W09"
+      ],
+      "deliverable": "즉시 정식 개방·하중상 9건·사례 선택·상담 UX",
+      "completedOn": "2026-10-11",
+      "verification": "docs/센터검증.json · docs/복지9건_엔진검증.json · design/화면/복지9건/검증.json",
+      "completionScope": "로컬 9건·자동 검증; 실제 기기/사람·공개/본편 별도"
+    },
+    {
+      "id": "RC-W11",
+      "title": "사용자 관점 직접 플레이 검토",
+      "status": "completed",
+      "dependsOn": [
+        "RC-W10"
+      ],
+      "completedOn": "2026-10-11",
+      "verification": "docs/사용자관점_플레이검토_20261011.md · design/화면/사용자플레이검토_20261011/검토범위.json",
+      "completionScope": "AI 화면 조작으로 복지 9건·답신, 전입 첫 접수·M01~03·1일차 결산; 실제 사람/기기 및 전입 M04~12 제외",
+      "requiresHumanEvidence": false,
+      "releaseGate": false
+    }
+  ],
+  "nextProgram": {
+    "id": "resident-center-two-desks-v1",
+    "status": "in_progress",
+    "createdOn": "2026-10-11",
+    "scope": "복지 정식 즉시 개방·난이도별 9건→실기기/사람 평가→센터 공개→본편 연결",
+    "historicalRootMetadata": "기존 completedOn과 scope는 초기 MC 프로그램의 이력으로 보존",
+    "spec": "docs/전입창구_복지상담실_상세개발계획.md",
+    "approvalState": "사용자 A·난이도별 여러 건 지시의 로컬 구현 완료; 실제 평가·공개·본편 별도",
+    "confirmedPreferences": {
+      "unlock": "처음부터 정식 복지상담",
+      "tone": "따뜻한 생활 이야기 속에서 기록의 빈틈을 풀기",
+      "scope": "상중하별 여러 건(사용자 지시); 각 3건 총 9건(구현 분량)",
+      "confirmedOn": "2026-10-11",
+      "source": "사용자 A 선택 및 난이도별 여러 건 배치 지시"
+    },
+    "engineeringStatus": "completed",
+    "verification": "docs/센터검증.json"
+  }
+}

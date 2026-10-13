@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>묶음 3 시안 · 그물 풀기</title>
+<style>
+:root{--bg:#1f2a1b;--panel:#2b3a25;--panel2:#34462d;--cream:#f4eedb;--paper:#fffaf0;--ink:#2c3628;--muted:#6b705c;--line:#c9bc94;--green:#3f5f3a;--leaf:#7fae6a;--gold:#d6a93c;--red:#b4472f;--blue:#3d5f9e;--wood:#8a6239}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:#e8e3cc;font:15px/1.65 "Malgun Gothic","Apple SD Gothic Neo",system-ui,sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:28px 16px 80px}
+h1{font-size:clamp(24px,5vw,32px);margin:0 0 6px;color:var(--cream);text-wrap:balance}
+h2{font-size:21px;margin:46px 0 10px;color:var(--cream);border-bottom:1px solid #46573c;padding-bottom:6px}
+h3{font-size:18px;margin:26px 0 6px;color:var(--gold)}
+h4{font-size:15px;margin:16px 0 4px;color:var(--cream)}
+p{margin:6px 0;max-width:80ch}
+.lead{color:#c9cdb6;max-width:76ch}
+.kick{font-size:12px;letter-spacing:.08em;color:var(--gold);font-weight:800}
+.note{background:#3a2a20;border-left:4px solid var(--gold);border-radius:8px;padding:10px 14px;margin:14px 0;color:#f0e2c8;max-width:84ch}
+.toc{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}.toc a{background:var(--panel2);color:var(--cream);text-decoration:none;border-radius:8px;padding:4px 10px;font-size:13px;font-weight:700}
+.tbl{overflow-x:auto;margin:10px 0}
+table{border-collapse:collapse;width:100%;min-width:620px;background:var(--panel);border-radius:8px;overflow:hidden;font-size:14px}
+th,td{padding:7px 10px;text-align:left;vertical-align:top;border-bottom:1px solid #3d4d35}
+th{background:var(--panel2);color:var(--cream);font-size:13px;white-space:nowrap}
+td b{color:var(--cream)}
+ul,ol{padding-left:22px;margin:6px 0}li{margin:3px 0}
+code,pre{font-family:Consolas,"D2Coding",monospace;font-size:13px}
+pre{background:#141c11;color:#d9e4c8;border-radius:8px;padding:10px 12px;overflow-x:auto;margin:8px 0;line-height:1.5}
+code{background:#141c11;border-radius:4px;padding:0 4px;color:#d9e4c8}
+.files li code{color:#f6e27a}
+/* 휴대폰 시안 */
+.phones{display:flex;gap:18px;overflow-x:auto;padding:6px 2px 12px}
+.ph{flex:0 0 300px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.ph .cap{font-size:13px;color:#c9cdb6;margin:0}.ph .cap b{color:var(--gold)}
+.phone{width:300px;height:600px;border:7px solid #11180e;border-radius:28px;overflow:hidden;background:#4b6744;color:var(--ink);font-size:12px;line-height:1.4;display:flex;flex-direction:column}
+.phone .bar{height:14px;background:#11180e;flex:0 0 auto}
+.scr{flex:1;overflow:hidden;padding:7px;display:flex;flex-direction:column;gap:6px}
+.ghd{display:flex;align-items:center;gap:6px;background:#2f4129;color:var(--cream);border-radius:9px;padding:5px 8px}
+.ghd .back{font-weight:900;font-size:11px;white-space:nowrap}
+.ghd .t{flex:1;text-align:center;line-height:1.15}.ghd .t small{display:block;font-size:9.5px;opacity:.8}.ghd .t b{font-size:13px}
+.ghd .lv{background:var(--cream);color:var(--red);border-radius:6px;font-weight:900;padding:1px 6px;font-size:11px}
+.brief{background:#2f4129;color:#e8f0dc;border-radius:8px;padding:5px 8px;font-size:11px;line-height:1.35}
+.play{flex:1;background:var(--cream);border-radius:10px;padding:7px;display:flex;flex-direction:column;gap:6px;min-height:0;position:relative}
+.btns{display:flex;gap:5px}.btns span{flex:1;text-align:center;background:var(--cream);border-radius:8px;padding:6px 0;font-weight:800;font-size:11px;border:1.5px solid #b9ad84}.btns span.go{background:var(--green);color:var(--cream);border-color:#2a3f26}
+.tip{background:#f6e27a;color:#4a3b10;border-radius:6px;padding:4px 7px;font-size:10.5px;font-weight:700}
+.ok{color:#2f6a2a;font-weight:900}.bad{color:var(--red);font-weight:900}
+.bubble{position:absolute;background:#fff;border:2px solid var(--ink);border-radius:8px;padding:3px 6px;font-size:10px;font-weight:800}
+.win{background:#fff8e0;border:2px solid var(--gold);border-radius:10px;padding:8px;text-align:center}
+.win .st{font-size:22px;color:var(--gold);letter-spacing:2px}.win .st i{color:#d4ccb2;font-style:normal}
+.small{font-size:10.5px;color:var(--muted)}
+.card{background:var(--cream);color:var(--ink);border-radius:12px;padding:14px 16px;margin:14px 0;border:1.5px solid var(--line)}
+.card h4{color:var(--green)}
+.card table{background:var(--paper);min-width:540px}.card th{background:#e6dcc0;color:var(--ink)}.card td{border-bottom:1px solid #e3d8b8}.card td b{color:var(--ink)}
+.card code,.card pre{background:#2c3628;color:#e9f0dc}
+.steps{counter-reset:s;list-style:none;padding:0;margin:8px 0}
+.steps li{counter-increment:s;position:relative;padding:8px 10px 8px 42px;background:var(--panel);border-radius:8px;margin:6px 0}
+.steps li::before{content:counter(s);position:absolute;left:10px;top:8px;width:22px;height:22px;border-radius:50%;background:var(--gold);color:#2b2208;font-weight:900;font-size:12px;display:grid;place-items:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="toc" style="margin-top:0"><a href="시안_묶음1_거르기블록.html">묶음 1 거르기 블록</a><a href="시안_묶음2_예산표배정.html">묶음 2 예산표 배정</a><a href="시안_묶음3_그물풀기.html" style="background:#d6a93c;color:#2b2208">묶음 3 그물 풀기</a><a href="시안_묶음4_서가빼내기.html">묶음 4 서가 빼내기</a><a href="퍼즐_중복정리_개선계획.html">전체 계획</a></div><style>
+.net{background:linear-gradient(#cfe3bf,#b9d6a3);border-radius:10px;border:2px solid #6b8a4a;display:block;width:100%;height:auto}
+.hud{display:flex;justify-content:space-between;font-size:11px;font-weight:800}
+</style>
+<div class="kick">묶음 3 · 시안과 구현 계획</div>
+<h1>3개 맞추기 묶음 → 놀이터 그물 풀기</h1>
+<p class="lead">기록물 철하기(트리플 매치)는 기록관리팀 업무와 딱 맞아 그대로 두고, 같은 구조(드러난 것 집기 → 받침대 → 3개면 사라짐)인 <b>노후 놀이터 해체</b>를 끌어서 푸는 공간 퍼즐로 바꿔요. 참고: <b>Untangle</b>(점을 끌어 선이 안 겹치게 — 규칙 한 줄, 손가락 조작에 최적), <b>Tangle Master 3D</b>(모바일 캐주얼 대표작, 로프 색·고정점으로 단계 상승).</p>
+<p class="lead">이야기: 공원녹지과가 낡은 놀이터 <b>오르기 그물</b>을 정비하는데 로프가 엉켰어요. 매듭(동그라미)을 옮겨 로프끼리 하나도 안 겹치게 해야 새 그물로 교체할 수 있어요.</p>
+
+<h2>시안</h2>
+<div class="phones">
+<div class="ph"><div class="phone"><div class="bar"></div><div class="scr">
+  <div class="ghd"><span class="back">◀ 지도</span><span class="t"><small>공원녹지과 · 하 14/30</small><b>오르기 그물 정비</b></span><span class="lv">하</span></div>
+  <div class="brief">매듭을 끌어 옮겨 로프가 하나도 안 겹치게 해요. 겹친 로프는 빨강.</div>
+  <div class="play"><div class="hud"><span>겹침 <span class="bad" id="c1">0</span></span><span>옮긴 횟수 0</span></div><svg class="net" id="n1" viewBox="0 0 240 240"></svg>
+    <div class="tip">👆 매듭을 손가락으로 끌어요. 놓는 순간 겹침 수가 바뀌어요.</div></div>
+  <div class="btns"><span>↶ 되돌리기</span><span>💡 힌트</span><span class="go">✓ 제출</span></div>
+</div></div><p class="cap"><b>① 처음 모습</b> — 매듭 8개, 로프 14줄(바퀴 모양 그물을 흩어 놓음, 겹침 수는 화면 위 숫자). 시작부터 엉망이지만 조작은 끌기 하나.</p></div>
+
+<div class="ph"><div class="phone"><div class="bar"></div><div class="scr">
+  <div class="ghd"><span class="back">◀ 지도</span><span class="t"><small>공원녹지과 · 하 14/30</small><b>오르기 그물 정비</b></span><span class="lv">하</span></div>
+  <div class="brief">다 풀었어요!</div>
+  <div class="play"><div class="hud"><span>겹침 <span class="ok" id="c2">0</span></span><span>옮긴 횟수 7 / 목표 8</span></div><svg class="net" id="n2" viewBox="0 0 240 240"></svg>
+    <div class="win" style="padding:5px"><div class="st" style="font-size:18px">★★★</div><span style="font-size:11px">새 그물로 교체 완료 · 7번 만에</span></div></div>
+</div></div><p class="cap"><b>② 풀린 모습</b> — 겹침 0이면 로프가 초록으로 바뀌고 새 그물로 교체되는 연출. 별 3번째 = 옮긴 횟수 목표.</p></div>
+
+<div class="ph"><div class="phone"><div class="bar"></div><div class="scr">
+  <div class="ghd"><span class="back">◀ 지도</span><span class="t"><small>공원녹지과 · 상 22/30</small><b>큰 그물 · 기둥 매듭</b></span><span class="lv">상</span></div>
+  <div class="brief">🔩 기둥 매듭은 못 옮겨요. 로프는 너무 길게 늘이면 끊어질 것 같아요(점선 = 너무 김).</div>
+  <div class="play"><div class="hud"><span>겹침 <span class="bad" id="c3">0</span> · 너무 긴 로프 <span class="bad">1</span></span><span>옮긴 횟수 11 / 목표 14</span></div><svg class="net" id="n3" viewBox="0 0 240 240"></svg></div>
+  <div class="btns"><span>↶ 되돌리기</span><span>💡 힌트</span><span class="go">✓ 제출</span></div>
+</div></div><p class="cap"><b>③ 상 22 · 장치</b> — 🔩 고정 기둥(움직일 수 없음)과 로프 길이 한계. 매듭 15~20개. 그냥 끌어서는 안 풀리고 순서를 계획해야 해요.</p></div>
+</div>
+
+<div class="card">
+<h4>규칙</h4>
+<ul><li>매듭 = 점, 로프 = 두 매듭을 잇는 곧은 선. 매듭을 판 안 아무 곳으로 끌어 옮김(다른 매듭 위에는 못 놓음).</li>
+<li>성공: 어떤 두 로프도 서로 교차하지 않음(같은 매듭에서 만나는 건 괜찮음) + 장치 조건(고정 기둥 그대로, 로프 길이 ≤ 한계).</li>
+<li>‘옮긴 횟수’ = 매듭을 집어 놓은 횟수(같은 매듭 연속 이동은 1번). 별 3번째 목표.</li></ul>
+<h4>30레벨 사다리</h4>
+<table><tr><th>레벨</th><th>하</th><th>중</th><th>상</th></tr>
+<tr><td>1~10</td><td>매듭 5~7, 겹침 적음</td><td>매듭 10~12</td><td>매듭 14~16 + 기둥 2~3</td></tr>
+<tr><td>11~20</td><td>매듭 7~9</td><td>🔩 기둥 매듭 첫 등장(1~2개)</td><td>+ 로프 길이 한계 첫 등장</td></tr>
+<tr><td>21~30</td><td>매듭 8~10, 바퀴·사다리 모양</td><td>매듭 12~14 + 기둥 2~3</td><td>매듭 17~20 + 기둥 3~4 + 길이 한계 빠듯</td></tr></table>
+<h4>데이터·생성</h4>
+<pre>level = { w:240, h:240,
+  nodes:[[169,26],[55,179],...],     // 시작 위치
+  edges:[[0,1],[0,7],...],
+  pins:[3,7],                        // 고정 기둥 매듭 (없으면 [])
+  maxLen:110,                        // 로프 길이 한계 (없으면 null)
+  par:8,                             // 별 3번째: 옮긴 횟수 목표
+  witness:{ nodes:[[210,120],...] } }   // 겹침 없는 정답 위치 하나
+draft = { nodes:[[x,y],...], moves:3 }</pre>
+<ul><li>생성: ① 겹침 없는 그물을 먼저 만듦 — 판에 점 무작위 → 들로네 삼각분할 → 일부 로프를 빼서 매듭당 로프 2~4개(사다리·바퀴·격자 모양 틀 섞기). 이 위치가 정답(witness). ② 기둥 매듭은 정답 위치에 고정, 길이 한계 = 정답 로프 최장 길이 × 1.1~1.25. ③ 나머지 매듭을 흩어 놓되 겹침 수가 단계 목표 이상이 되게.</li>
+<li>par: ‘흩어 놓은 매듭 중 정답 근처에 있지 않은 것’의 수 + 여유(하 +3, 중 +2, 상 +1). 실제 정답 위치로 옮기면 반드시 그 횟수 안에 풀림.</li>
+<li>난이도 점수 = 매듭 수 × 1 + 처음 겹침 수 × 0.15 + 기둥 × 2 + 길이 한계 빠듯함 × 3. 정답이 하나일 필요는 없음(겹침 없는 배치면 무엇이든 정답).</li>
+<li>판정은 선분 교차 검사(로프 20줄이면 190쌍, 즉시)와 길이 검사뿐 — 풀이기가 필요 없음.</li></ul>
+<h4>화면</h4>
+<ul><li>SVG 한 장: 로프(선)·매듭(원). 포인터 끌기로 매듭 이동(놓기 전에도 겹침 수 실시간 갱신), 손가락에 가리지 않게 끄는 중인 매듭은 살짝 위에 표시.</li>
+<li>겹친 로프 빨강, 겹침 0인 로프 초록, 길이 넘은 로프 점선. 🔩 기둥은 굵은 테두리 + 나사 그림.</li>
+<li>되돌리기 = 마지막 이동 취소. 판 크기는 화면 폭에 맞춰 늘고 줄며(viewBox) 매듭 지름 24px 이상.</li>
+<li>완료 연출: 낡은 로프가 초록 새 로프로 차례로 바뀌고 아이가 그물에 올라가는 픽셀 그림 한 장.</li></ul>
+<h4>힌트·별·부서 연결</h4>
+<ul><li>힌트 1: 겹침이 가장 많은 매듭 반짝 · 힌트 2: 매듭 하나를 정답 위치로 옮김 · 힌트 3: 정답 배치.</li>
+<li>별: 완료 · 힌트 없이 · 옮긴 횟수 ≤ par.</li>
+<li>공원녹지과 우호도·기념 소품·소식지 문구는 그대로. 부서 안내도의 ‘노후 놀이터 해체’ 이름은 ‘놀이터 그물 정비’로 바꿈.</li></ul>
+</div>
+
+<h2>파일별 작업과 순서</h2>
+<ul class="files">
+<li><code>puzzles/dept.js</code> — parks 모듈 교체(screwPlay·나사 화면 삭제, 교차 판정·SVG 끌기 화면 추가)</li>
+<li><code>levelgen/gen_dept.js</code> — parks 생성기 교체(삼각분할 그물 → 흩기)</li>
+<li><code>app.js</code> FLOORS 이름, <code>puzzles/howto.js</code>, <code>style.css</code>, <code>framework.js</code>(ver 2), <code>test_puzzles.js</code>(정답 배치 겹침 0 · 기둥·길이 조건 · 흩은 배치는 겹침 ≥ 목표)</li></ul>
+<ol class="steps"><li>판정(교차·길이) + 생성기 → 90레벨</li><li>SVG 끌기 화면 → <i>확인 지점: 휴대폰에서 끌기 손맛(가장 중요)</i></li><li>완료 연출·힌트 → 시험·빌드·배포</li></ol>
+<div class="note">위험 — 끌기 퍼즐은 매듭이 많으면 손가락으로 집기 어려워요. 상에서도 매듭 20개를 넘기지 않고, 두 손가락으로 판 확대(핀치)를 넣을지는 확인 지점에서 정해요.</div>
+
+<script>
+const U={e:[[0,1],[0,7],[1,2],[1,7],[2,3],[2,7],[3,4],[3,7],[4,5],[4,7],[5,6],[5,7],[6,0],[6,7]],start:[[40,40],[205,205],[60,195],[195,45],[120,28],[28,125],[212,128],[128,212]],sol:[[210,120],[176,190],[100,208],[39,159],[39,81],[100,32],[176,50],[120,120]]};
+function cross(p,e){const o=(a,b,c)=>Math.sign((b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0]));const bad=new Set();let n=0;
+  for(let i=0;i<e.length;i++)for(let j=i+1;j<e.length;j++){const [a,b]=e[i],[c,d]=e[j];if(a===c||a===d||b===c||b===d)continue;
+    if(o(p[a],p[b],p[c])*o(p[a],p[b],p[d])<0&&o(p[c],p[d],p[a])*o(p[c],p[d],p[b])<0){n++;bad.add(i);bad.add(j);}}return {n,bad};}
+function draw(id,p,e,opt={}){const c=cross(p,e),s=document.getElementById(id);let h='';
+  e.forEach(([a,b],i)=>{const long=opt.long&&opt.long.includes(i);h+=`<line x1="${p[a][0]}" y1="${p[a][1]}" x2="${p[b][0]}" y2="${p[b][1]}" stroke="${c.bad.has(i)?'#b4472f':'#3f7a3a'}" stroke-width="4" stroke-linecap="round" ${long?'stroke-dasharray="6 5"':''}/>`;});
+  p.forEach(([x,y],i)=>{const pin=opt.pins&&opt.pins.includes(i);h+=`<circle cx="${x}" cy="${y}" r="${pin?11:10}" fill="${pin?'#6b705c':'#f4eedb'}" stroke="#2c3628" stroke-width="${pin?4:2.5}"/>`+(pin?`<text x="${x}" y="${y+4}" font-size="11" text-anchor="middle">🔩</text>`:'');});
+  s.innerHTML=h;return c.n;}
+document.getElementById('c1').textContent=draw('n1',U.start,U.e);
+document.getElementById('c2').textContent=draw('n2',U.sol,U.e);
+/* 상: 큰 그물 예시(격자 + 대각) 일부 겹침 */
+const N=[];for(let y=0;y<4;y++)for(let x=0;x<4;x++)N.push([40+x*53,40+y*53]);const E=[];
+for(let y=0;y<4;y++)for(let x=0;x<4;x++){const i=y*4+x;if(x<3)E.push([i,i+1]);if(y<3)E.push([i,i+4]);if(x<3&&y<3&&(x+y)%2===0)E.push([i,i+5]);}
+const P=N.map(q=>[...q]);P[5]=[200,120];P[10]=[60,200];P[6]=[172,96];P[9]=[110,160];
+document.getElementById('c3').textContent=draw('n3',P,E,{pins:[0,15,12],long:[E.findIndex(([a,b])=>a===5&&b===9)]});
+</script>
+
+</div>
+</body>
+</html>

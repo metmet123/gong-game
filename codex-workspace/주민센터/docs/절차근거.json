@@ -1,0 +1,6 @@
+{
+  "checkedAt":"2026-10-11",
+  "sources":[
+    {"id":"S01","title":"주민등록법 시행령 별지 제15호의2서식","url":"https://law.go.kr/LSW/flDownload.do?bylClsCd=110202&flSeq=163702297&gubun=","revisionLabel":"2026-04-28","locations":["앞쪽 이전/전입지 세대와 세대주 확인란","앞쪽 신고 대상자 작성 2","뒤쪽 작성방법 1과 5"],"appliesTo":["M03","M04","M05","M06"],"facts":["이전 세대와 전입지 세대 구성을 구분한다","관계는 전입지 세대주를 기준으로 작성한다","가족관계가 아닌 경우 동거인으로 작성한다","세대주 확인란이 있다"],"simplifications":["실제 서명이나 신분증을 입력하지 않는다","사례 자료 카드의 상태를 확인한다","사실조사·위임·미성년자·재등록·정정 절차는 제외"],"requiresFurtherVerification":false}
+  ]
+}

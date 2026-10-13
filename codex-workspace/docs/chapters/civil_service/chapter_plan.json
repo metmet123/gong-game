@@ -1,0 +1,1611 @@
+{
+  "schemaVersion": 1,
+  "id": "civil_service",
+  "shortId": "cs",
+  "status": "planned",
+  "version": "1.0",
+  "date": "2026-10-11",
+  "title": "민원봉사과 · 같은 설명이 닿도록",
+  "designPremise": "반복 방문의 원인을 찾아 안내와 자료 전달을 개선하는 10일",
+  "map": "map_layout.json",
+  "sources": "sources.json",
+  "implementationTasks": "tasks.json",
+  "quantity": {
+    "days": 10,
+    "mandatoryContexts": 40,
+    "plannedFullVariants": 120,
+    "mvpDays": 3,
+    "mvpEasyStages": 12,
+    "puzzleTypes": 8,
+    "newEngines": 1,
+    "mapObjects": 30,
+    "mapZones": 8,
+    "colleagues": 5,
+    "visitors": 4,
+    "majorEvents": 4,
+    "personalItems": 12,
+    "freeTools": 4,
+    "relationshipScenes": 15,
+    "optionalScenes": 6
+  },
+  "transfer": {
+    "fromChapter": "life_support",
+    "toChapter": "civil_service",
+    "fromIdStatus": "resolve_against_latest_source",
+    "trigger": "previous_chapter_summary",
+    "commit": "confirmed_next_workday_start",
+    "testSaveKey": "new_key_required"
+  },
+  "colleagues": [
+    {
+      "id": "cs.yujin",
+      "name": "서유진",
+      "role": "민원행정팀장",
+      "mvpDialogue": true,
+      "relationshipThresholds": [
+        1,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "cs.dohyun",
+      "name": "문도현",
+      "role": "통합 증명 담당",
+      "mvpDialogue": true,
+      "relationshipThresholds": [
+        1,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "cs.serin",
+      "name": "오세린",
+      "role": "여권 담당",
+      "mvpDialogue": true,
+      "relationshipThresholds": [
+        1,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "cs.eungyeol",
+      "name": "고은결",
+      "role": "가족관계 담당",
+      "mvpDialogue": false,
+      "relationshipThresholds": [
+        1,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "cs.ian",
+      "name": "정이안",
+      "role": "기록과 공개 지원",
+      "mvpDialogue": false,
+      "relationshipThresholds": [
+        1,
+        3,
+        5
+      ]
+    }
+  ],
+  "visitors": [
+    {
+      "id": "cs.dajeong",
+      "name": "이다정",
+      "appearanceDays": [
+        1,
+        2,
+        3,
+        9
+      ],
+      "mvpDialogue": true
+    },
+    {
+      "id": "cs.haesol",
+      "name": "진해솔",
+      "appearanceDays": [
+        2,
+        4,
+        6
+      ],
+      "mvpDialogue": true
+    },
+    {
+      "id": "cs.seowoo",
+      "name": "홍서우",
+      "appearanceDays": [
+        4,
+        5,
+        10
+      ],
+      "mvpDialogue": false
+    },
+    {
+      "id": "cs.hanbit",
+      "name": "배한빛",
+      "appearanceDays": [
+        7,
+        8,
+        9
+      ],
+      "mvpDialogue": false
+    }
+  ],
+  "legacyCameos": [
+    {
+      "name": "나소라",
+      "days": [
+        0,
+        5
+      ]
+    },
+    {
+      "name": "연미루",
+      "days": [
+        1
+      ]
+    },
+    {
+      "name": "백단비",
+      "days": [
+        7
+      ]
+    },
+    {
+      "name": "임하루",
+      "days": [
+        2,
+        8
+      ]
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "newsTitle": "새 창구의 첫 인사",
+      "tasks": [
+        {
+          "id": "cs.d01.t1",
+          "title": "이다정 목적과 창구 안내",
+          "puzzleType": "route",
+          "eventId": "E01",
+          "zone": "Z01",
+          "relationCharacter": "cs.dohyun",
+          "sourceIds": [
+            "S02",
+            "S03"
+          ],
+          "status": "planned",
+          "mvp": true,
+          "stageVariants": [
+            "easy"
+          ],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d01:t1"
+        },
+        {
+          "id": "cs.d01.t2",
+          "title": "신청자료와 원문 대조",
+          "puzzleType": "compare",
+          "eventId": "E01",
+          "zone": "Z02",
+          "relationCharacter": "cs.dohyun",
+          "sourceIds": [
+            "S02",
+            "S03"
+          ],
+          "status": "planned",
+          "mvp": true,
+          "stageVariants": [
+            "easy"
+          ],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d01:t2"
+        },
+        {
+          "id": "cs.d01.t3",
+          "title": "최신 안내문 취합",
+          "puzzleType": "sort",
+          "eventId": "E01",
+          "zone": "Z06",
+          "relationCharacter": "cs.ian",
+          "sourceIds": [
+            "S02",
+            "S03"
+          ],
+          "status": "planned",
+          "mvp": true,
+          "stageVariants": [
+            "easy"
+          ],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d01:t3"
+        },
+        {
+          "id": "cs.d01.t4",
+          "title": "요청 내용 인계",
+          "puzzleType": "brief",
+          "eventId": "E01",
+          "zone": "Z02",
+          "relationCharacter": "cs.yujin",
+          "sourceIds": [
+            "S02",
+            "S03"
+          ],
+          "status": "planned",
+          "mvp": true,
+          "stageVariants": [
+            "easy"
+          ],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d01:t4"
+        }
+      ],
+      "closeRewardOnce": "close:cs:d01"
+    },
+    {
+      "day": 2,
+      "newsTitle": "번호표보다 먼저 물을 것",
+      "tasks": [
+        {
+          "id": "cs.d02.t1",
+          "title": "교부 봉투 주인",
+          "puzzleType": "owner",
+          "eventId": "E02",
+          "zone": "Z03",
+          "relationCharacter": "cs.serin",
+          "sourceIds": [
+            "S03",
+            "S04",
+            "S05"
+          ],
+          "status": "planned",
+          "mvp": true,
+          "stageVariants": [
+            "easy"
+          ],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d02:t1"
+        },
+        {
+          "id": "cs.d02.t2",
+          "title": "옛 안내 규칙 수정",
+          "puzzleType": "rules",
+          "eventId": "E01",
+          "zone": "Z02",
+          "relationCharacter": "cs.dohyun",
+          "sourceIds": [
+            "S02",
+            "S03"
+          ],
+          "status": "planned",
+          "mvp": true,
+          "stageVariants": [
+            "easy"
+          ],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d02:t2"
+        },
+        {
+          "id": "cs.d02.t3",
+          "title": "부서 확인 일정",
+          "puzzleType": "approval",
+          "eventId": "E01",
+          "zone": "Z08",
+          "relationCharacter": "cs.yujin",
+          "sourceIds": [
+            "S02",
+            "S03"
+          ],
+          "status": "planned",
+          "mvp": true,
+          "stageVariants": [
+            "easy"
+          ],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d02:t3"
+        },
+        {
+          "id": "cs.d02.t4",
+          "title": "진해솔 접수자료",
+          "puzzleType": "compare",
+          "eventId": "E02",
+          "zone": "Z03",
+          "relationCharacter": "cs.serin",
+          "sourceIds": [
+            "S03",
+            "S04",
+            "S05"
+          ],
+          "status": "planned",
+          "mvp": true,
+          "stageVariants": [
+            "easy"
+          ],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d02:t4"
+        }
+      ],
+      "closeRewardOnce": "close:cs:d02"
+    },
+    {
+      "day": 3,
+      "newsTitle": "같은 설명이 닿도록",
+      "tasks": [
+        {
+          "id": "cs.d03.t1",
+          "title": "수정 안내문 배포",
+          "puzzleType": "sort",
+          "eventId": "E01",
+          "zone": "Z06",
+          "relationCharacter": "cs.ian",
+          "sourceIds": [
+            "S02",
+            "S03"
+          ],
+          "status": "planned",
+          "mvp": true,
+          "stageVariants": [
+            "easy"
+          ],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d03:t1"
+        },
+        {
+          "id": "cs.d03.t2",
+          "title": "이다정용 안내문",
+          "puzzleType": "brief",
+          "eventId": "E01",
+          "zone": "Z02",
+          "relationCharacter": "cs.dohyun",
+          "sourceIds": [
+            "S02",
+            "S03"
+          ],
+          "status": "planned",
+          "mvp": true,
+          "stageVariants": [
+            "easy"
+          ],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d03:t2"
+        },
+        {
+          "id": "cs.d03.t3",
+          "title": "창구 간 연결 재확인",
+          "puzzleType": "route",
+          "eventId": "E01",
+          "zone": "Z01",
+          "relationCharacter": "cs.dohyun",
+          "sourceIds": [
+            "S02",
+            "S03"
+          ],
+          "status": "planned",
+          "mvp": true,
+          "stageVariants": [
+            "easy"
+          ],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d03:t3"
+        },
+        {
+          "id": "cs.d03.t4",
+          "title": "편의시설 보고서 공개 범위",
+          "puzzleType": "disclosure",
+          "eventId": "E04",
+          "zone": "Z05",
+          "relationCharacter": "cs.ian",
+          "sourceIds": [
+            "S01",
+            "S06",
+            "S07"
+          ],
+          "status": "planned",
+          "mvp": true,
+          "stageVariants": [
+            "easy"
+          ],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d03:t4"
+        }
+      ],
+      "closeRewardOnce": "close:cs:d03"
+    },
+    {
+      "day": 4,
+      "newsTitle": "사진 한 장의 기준",
+      "tasks": [
+        {
+          "id": "cs.d04.t1",
+          "title": "진해솔 사진 카드",
+          "puzzleType": "compare",
+          "eventId": "E02",
+          "zone": "Z03",
+          "relationCharacter": "cs.serin",
+          "sourceIds": [
+            "S03",
+            "S04",
+            "S05"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d04:t1"
+        },
+        {
+          "id": "cs.d04.t2",
+          "title": "교부 대상 구분",
+          "puzzleType": "owner",
+          "eventId": "E02",
+          "zone": "Z03",
+          "relationCharacter": "cs.serin",
+          "sourceIds": [
+            "S03",
+            "S04",
+            "S05"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d04:t2"
+        },
+        {
+          "id": "cs.d04.t3",
+          "title": "홍서우 신고 조건",
+          "puzzleType": "rules",
+          "eventId": "E03",
+          "zone": "Z04",
+          "relationCharacter": "cs.eungyeol",
+          "sourceIds": [
+            "S03"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d04:t3"
+        },
+        {
+          "id": "cs.d04.t4",
+          "title": "접수·후속 확인 일정",
+          "puzzleType": "approval",
+          "eventId": "E03",
+          "zone": "Z08",
+          "relationCharacter": "cs.eungyeol",
+          "sourceIds": [
+            "S03"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d04:t4"
+        }
+      ],
+      "closeRewardOnce": "close:cs:d04"
+    },
+    {
+      "day": 5,
+      "newsTitle": "접수 뒤의 안내",
+      "tasks": [
+        {
+          "id": "cs.d05.t1",
+          "title": "홍서우 후속 기관",
+          "puzzleType": "route",
+          "eventId": "E03",
+          "zone": "Z01",
+          "relationCharacter": "cs.eungyeol",
+          "sourceIds": [
+            "S03"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d05:t1"
+        },
+        {
+          "id": "cs.d05.t2",
+          "title": "후속 절차 한 장",
+          "puzzleType": "brief",
+          "eventId": "E03",
+          "zone": "Z04",
+          "relationCharacter": "cs.eungyeol",
+          "sourceIds": [
+            "S03"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d05:t2"
+        },
+        {
+          "id": "cs.d05.t3",
+          "title": "공동이용 확인자료",
+          "puzzleType": "sort",
+          "eventId": "E03",
+          "zone": "Z06",
+          "relationCharacter": "cs.eungyeol",
+          "sourceIds": [
+            "S03"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d05:t3"
+        },
+        {
+          "id": "cs.d05.t4",
+          "title": "사전공개 목록 검토",
+          "puzzleType": "disclosure",
+          "eventId": "E04",
+          "zone": "Z05",
+          "relationCharacter": "cs.ian",
+          "sourceIds": [
+            "S01",
+            "S06",
+            "S07"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d05:t4"
+        }
+      ],
+      "closeRewardOnce": "close:cs:d05"
+    },
+    {
+      "day": 6,
+      "newsTitle": "불이 조금 늦게 꺼지는 날",
+      "tasks": [
+        {
+          "id": "cs.d06.t1",
+          "title": "여권 교부 대상",
+          "puzzleType": "owner",
+          "eventId": "E02",
+          "zone": "Z03",
+          "relationCharacter": "cs.serin",
+          "sourceIds": [
+            "S03",
+            "S04",
+            "S05"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d06:t1"
+        },
+        {
+          "id": "cs.d06.t2",
+          "title": "교부 기록 대조",
+          "puzzleType": "compare",
+          "eventId": "E02",
+          "zone": "Z03",
+          "relationCharacter": "cs.serin",
+          "sourceIds": [
+            "S03",
+            "S04",
+            "S05"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d06:t2"
+        },
+        {
+          "id": "cs.d06.t3",
+          "title": "야간 창구 시간 배치",
+          "puzzleType": "approval",
+          "eventId": "E02",
+          "zone": "Z08",
+          "relationCharacter": "cs.yujin",
+          "sourceIds": [
+            "S03",
+            "S04",
+            "S05"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d06:t3"
+        },
+        {
+          "id": "cs.d06.t4",
+          "title": "수령 방법 안내",
+          "puzzleType": "brief",
+          "eventId": "E02",
+          "zone": "Z03",
+          "relationCharacter": "cs.dohyun",
+          "sourceIds": [
+            "S03",
+            "S04",
+            "S05"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d06:t4"
+        }
+      ],
+      "closeRewardOnce": "close:cs:d06"
+    },
+    {
+      "day": 7,
+      "newsTitle": "자료를 찾는 사람들",
+      "tasks": [
+        {
+          "id": "cs.d07.t1",
+          "title": "이름만 가리면 될까요",
+          "puzzleType": "disclosure",
+          "eventId": "E04",
+          "zone": "Z05",
+          "relationCharacter": "cs.ian",
+          "sourceIds": [
+            "S01",
+            "S06",
+            "S07"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d07:t1"
+        },
+        {
+          "id": "cs.d07.t2",
+          "title": "백단비 협조자료",
+          "puzzleType": "sort",
+          "eventId": "E04",
+          "zone": "Z06",
+          "relationCharacter": "cs.ian",
+          "sourceIds": [
+            "S01",
+            "S06",
+            "S07"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d07:t2"
+        },
+        {
+          "id": "cs.d07.t3",
+          "title": "자료 보유 부서 규칙",
+          "puzzleType": "rules",
+          "eventId": "E04",
+          "zone": "Z02",
+          "relationCharacter": "cs.dohyun",
+          "sourceIds": [
+            "S01",
+            "S06",
+            "S07"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d07:t3"
+        },
+        {
+          "id": "cs.d07.t4",
+          "title": "검토 요청",
+          "puzzleType": "brief",
+          "eventId": "E04",
+          "zone": "Z02",
+          "relationCharacter": "cs.dohyun",
+          "sourceIds": [
+            "S01",
+            "S06",
+            "S07"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d07:t4"
+        }
+      ],
+      "closeRewardOnce": "close:cs:d07"
+    },
+    {
+      "day": 8,
+      "newsTitle": "함께 확인한 답변",
+      "tasks": [
+        {
+          "id": "cs.d08.t1",
+          "title": "공개·건의 항목 구분",
+          "puzzleType": "route",
+          "eventId": "E04",
+          "zone": "Z01",
+          "relationCharacter": "cs.dohyun",
+          "sourceIds": [
+            "S01",
+            "S06",
+            "S07"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d08:t1"
+        },
+        {
+          "id": "cs.d08.t2",
+          "title": "처리부서 협의 일정",
+          "puzzleType": "approval",
+          "eventId": "E04",
+          "zone": "Z08",
+          "relationCharacter": "cs.yujin",
+          "sourceIds": [
+            "S01",
+            "S06",
+            "S07"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d08:t2"
+        },
+        {
+          "id": "cs.d08.t3",
+          "title": "자료 누락 대조",
+          "puzzleType": "compare",
+          "eventId": "E04",
+          "zone": "Z02",
+          "relationCharacter": "cs.dohyun",
+          "sourceIds": [
+            "S01",
+            "S06",
+            "S07"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d08:t3"
+        },
+        {
+          "id": "cs.d08.t4",
+          "title": "유사 요청 자료 주인",
+          "puzzleType": "owner",
+          "eventId": "E04",
+          "zone": "Z03",
+          "relationCharacter": "cs.serin",
+          "sourceIds": [
+            "S01",
+            "S06",
+            "S07"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d08:t4"
+        }
+      ],
+      "closeRewardOnce": "close:cs:d08"
+    },
+    {
+      "day": 9,
+      "newsTitle": "벽에 걸린 변화",
+      "tasks": [
+        {
+          "id": "cs.d09.t1",
+          "title": "재검토 공개본",
+          "puzzleType": "disclosure",
+          "eventId": "E04",
+          "zone": "Z05",
+          "relationCharacter": "cs.ian",
+          "sourceIds": [
+            "S01",
+            "S06",
+            "S07"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d09:t1"
+        },
+        {
+          "id": "cs.d09.t2",
+          "title": "사전공개 목록 갱신",
+          "puzzleType": "rules",
+          "eventId": "E04",
+          "zone": "Z02",
+          "relationCharacter": "cs.dohyun",
+          "sourceIds": [
+            "S01",
+            "S06",
+            "S07"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d09:t2"
+        },
+        {
+          "id": "cs.d09.t3",
+          "title": "최종 버전 자료 취합",
+          "puzzleType": "sort",
+          "eventId": "E04",
+          "zone": "Z06",
+          "relationCharacter": "cs.ian",
+          "sourceIds": [
+            "S01",
+            "S06",
+            "S07"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d09:t3"
+        },
+        {
+          "id": "cs.d09.t4",
+          "title": "개선 결과보고",
+          "puzzleType": "brief",
+          "eventId": "E04",
+          "zone": "Z02",
+          "relationCharacter": "cs.dohyun",
+          "sourceIds": [
+            "S01",
+            "S06",
+            "S07"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d09:t4"
+        }
+      ],
+      "closeRewardOnce": "close:cs:d09"
+    },
+    {
+      "day": 10,
+      "newsTitle": "다음 창구로 가져갈 것",
+      "tasks": [
+        {
+          "id": "cs.d10.t1",
+          "title": "홍서우 주민센터 안내",
+          "puzzleType": "route",
+          "eventId": "E03",
+          "zone": "Z01",
+          "relationCharacter": "cs.eungyeol",
+          "sourceIds": [
+            "S03"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d10:t1"
+        },
+        {
+          "id": "cs.d10.t2",
+          "title": "인계용 문서 공개 범위",
+          "puzzleType": "disclosure",
+          "eventId": "E04",
+          "zone": "Z05",
+          "relationCharacter": "cs.ian",
+          "sourceIds": [
+            "S01",
+            "S06",
+            "S07"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d10:t2"
+        },
+        {
+          "id": "cs.d10.t3",
+          "title": "인수인계 일정",
+          "puzzleType": "approval",
+          "eventId": null,
+          "zone": "Z08",
+          "relationCharacter": "cs.yujin",
+          "sourceIds": [
+            "S01",
+            "S03"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d10:t3"
+        },
+        {
+          "id": "cs.d10.t4",
+          "title": "근무 기록 한 장",
+          "puzzleType": "brief",
+          "eventId": null,
+          "zone": "Z02",
+          "relationCharacter": "cs.yujin",
+          "sourceIds": [
+            "S01",
+            "S03"
+          ],
+          "status": "planned",
+          "mvp": false,
+          "stageVariants": [],
+          "fullReleaseVariants": [
+            "easy",
+            "normal",
+            "hard"
+          ],
+          "contentVersion": "cs-plan-1",
+          "callbackOnce": "task:cs:d10:t4"
+        }
+      ],
+      "closeRewardOnce": "close:cs:d10"
+    }
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "title": "세 번째 방문",
+      "days": [
+        1,
+        2,
+        3
+      ],
+      "sourceIds": [
+        "S02",
+        "S03"
+      ],
+      "goal": "목적을 확인하고 구 안내문을 수정해 반복 방문을 줄인다.",
+      "resolution": "3일 이다정 접수 안내 완료, 수정 안내문 배포",
+      "mapEffect": "revised_notice",
+      "gift": "P06"
+    },
+    {
+      "id": "E02",
+      "title": "출발 전에 한 번 더",
+      "days": [
+        2,
+        4,
+        6
+      ],
+      "sourceIds": [
+        "S03",
+        "S04",
+        "S05"
+      ],
+      "goal": "여권 접수·사진 보완·수령을 구분해 안내한다.",
+      "resolution": "6일 교부 대상·방법 확인",
+      "gift": "P07"
+    },
+    {
+      "id": "E03",
+      "title": "신고 뒤에 남는 안내",
+      "days": [
+        4,
+        5,
+        10
+      ],
+      "sourceIds": [
+        "S03"
+      ],
+      "goal": "신고를 확인한 뒤 주소 변경의 후속 기관을 안내한다.",
+      "resolution": "10일 주민센터 인계",
+      "gift": "P12"
+    },
+    {
+      "id": "E04",
+      "title": "어디까지 보여드릴까요",
+      "days": [
+        3,
+        5,
+        7,
+        8,
+        9,
+        10
+      ],
+      "sourceIds": [
+        "S01",
+        "S06",
+        "S07"
+      ],
+      "goal": "보유 자료를 찾고 검토 회신에 따라 공개 사본을 만든다.",
+      "resolution": "9일 개선 결과 전시, 10일 인계용 자료 점검",
+      "mapEffect": "public_display"
+    }
+  ],
+  "puzzleAdapters": {
+    "route": {
+      "surface": "접수 티켓",
+      "input": "목적 카드·기관 역할표",
+      "action": "담당/처리 항목 선택",
+      "check": "필수 목적과 관할·처리 항목 제약",
+      "difficulty": "단일 목적 / 연결2곳 / 청구와 건의 분리"
+    },
+    "compare": {
+      "surface": "두 서류",
+      "input": "기준표·원문·신청안",
+      "action": "다른 칸과 보완 사유 표시",
+      "check": "불일치 집합과 사유 일치",
+      "difficulty": "항목4 / 6 / 8"
+    },
+    "sort": {
+      "surface": "자료함",
+      "input": "연도·버전·확정 여부·문서종류",
+      "action": "자료 묶음 선택",
+      "check": "필수 문서 집합, 구버전 제외",
+      "difficulty": "자료5·필수2 / 자료7·필수3 / 자료9·필수4"
+    },
+    "owner": {
+      "surface": "교부 봉투",
+      "input": "가상 접수번호·수령 방식·이름 단서",
+      "action": "봉투 일대일 배정",
+      "check": "모든 단서 동시 충족과 유일해",
+      "difficulty": "3 / 4 / 5명"
+    },
+    "rules": {
+      "surface": "안내 편집",
+      "input": "잠긴 확인조건·편집 슬롯·사례",
+      "action": "허용 카드 교체",
+      "check": "잠금 유지, 사례 전체 충족",
+      "difficulty": "1슬롯 / OR조건 / 예외와 우선순위"
+    },
+    "approval": {
+      "surface": "협조 달력",
+      "input": "가능일·처리단계·담당자 용량",
+      "action": "날짜 배치",
+      "check": "선행·마감·용량, 동등해 허용",
+      "difficulty": "1 / 2 / 3자료"
+    },
+    "brief": {
+      "surface": "회신문 초안",
+      "input": "사실·보완·방법 카드",
+      "action": "선택·결합·순서 변경",
+      "check": "필수 사실·출처·분량·순서",
+      "difficulty": "필수3 / 4 / 6"
+    },
+    "disclosure": {
+      "surface": "공개 검토표",
+      "input": "문서의 의미 단위·검토 회신",
+      "action": "보임/가림/미검토와 이유 선택",
+      "check": "보호 부분, 필수 사실과 요청 문서",
+      "difficulty": "보호1 / 문맥 식별 / 여러 문서와 누락"
+    }
+  },
+  "disclosureExample": {
+    "id": "cs.disclosure.e01",
+    "status": "planned_fixture",
+    "difficulty": "easy",
+    "contentVersion": "cs-plan-1",
+    "publicRules": [
+      "개선 목적과 지출 금액, 업무 담당 직위는 남긴다.",
+      "개인의 연락처는 검토 회신에 따라 가린다."
+    ],
+    "goals": [
+      "요청된 문서와 필수 사실을 유지한 공개 사본을 만든다.",
+      "검토표의 보호 부분만 올바른 사유로 가린다."
+    ],
+    "input": {
+      "documents": [
+        {
+          "id": "improvement_report",
+          "title": "모서리구청 안내 개선 보고 · 가상 자료",
+          "tokens": [
+            {
+              "id": "purpose",
+              "text": "창구 안내를 더 쉽게 만들기 위한 안내 카드 제작",
+              "factId": "improvement_purpose",
+              "policy": "show",
+              "allowedReasons": []
+            },
+            {
+              "id": "amount",
+              "text": "제작비 120P",
+              "factId": "cost",
+              "policy": "show",
+              "allowedReasons": []
+            },
+            {
+              "id": "role",
+              "text": "업무 담당: 안내 개선 담당",
+              "factId": "official_role",
+              "policy": "show",
+              "allowedReasons": []
+            },
+            {
+              "id": "contact",
+              "text": "개인의 연락처: 가상 연락처 A",
+              "factId": "private_contact",
+              "policy": "hide",
+              "allowedReasons": [
+                "private_contact"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "constraints": {
+      "documentIds": [
+        "improvement_report"
+      ],
+      "requiredFacts": [
+        "improvement_purpose",
+        "cost",
+        "official_role"
+      ]
+    },
+    "initialDraft": {
+      "documentIds": [
+        "improvement_report"
+      ],
+      "tokenStates": {
+        "purpose": "unreviewed",
+        "amount": "unreviewed",
+        "role": "unreviewed",
+        "contact": "unreviewed"
+      },
+      "reasonByToken": {}
+    },
+    "witness": {
+      "documentIds": [
+        "improvement_report"
+      ],
+      "tokenStates": {
+        "purpose": "show",
+        "amount": "show",
+        "role": "show",
+        "contact": "hide"
+      },
+      "reasonByToken": {
+        "contact": "private_contact"
+      }
+    },
+    "hintSteps": [
+      "공개 검토표에서 남겨야 할 항목을 확인한다.",
+      "개인의 연락처를 가리는 기준을 확인한다.",
+      "목적·금액·직위는 보이고 연락처만 가린다."
+    ],
+    "sourceIds": [
+      "S07"
+    ],
+    "moneyIsFictional": true
+  },
+  "items": [
+    {
+      "id": "P01",
+      "name": "새 창구 명패",
+      "priceP": 0,
+      "unlockDay": 1,
+      "acquire": "arrival",
+      "slot": "desk",
+      "mvp": true,
+      "onceKey": "gift:cs:P01"
+    },
+    {
+      "id": "P02",
+      "name": "나소라의 작은 메모",
+      "priceP": 0,
+      "unlockDay": 0,
+      "acquire": "transfer",
+      "slot": "wall",
+      "mvp": true,
+      "onceKey": "gift:cs:P02"
+    },
+    {
+      "id": "P03",
+      "name": "창구 펜꽂이",
+      "priceP": 30,
+      "unlockDay": 1,
+      "acquire": "shop",
+      "slot": "desk",
+      "mvp": true,
+      "onceKey": "purchase:cs:P03"
+    },
+    {
+      "id": "P04",
+      "name": "안내 카드 받침",
+      "priceP": 40,
+      "unlockDay": 2,
+      "acquire": "shop",
+      "slot": "desk",
+      "mvp": true,
+      "onceKey": "purchase:cs:P04"
+    },
+    {
+      "id": "P05",
+      "name": "접수 봉투 트레이",
+      "priceP": 50,
+      "unlockDay": 3,
+      "acquire": "shop",
+      "slot": "desk",
+      "mvp": true,
+      "onceKey": "purchase:cs:P05"
+    },
+    {
+      "id": "P06",
+      "name": "고친 안내문 액자",
+      "priceP": 0,
+      "unlockDay": 3,
+      "acquire": "E01",
+      "slot": "wall",
+      "mvp": true,
+      "onceKey": "gift:cs:P06"
+    },
+    {
+      "id": "P07",
+      "name": "파란 여권 모형",
+      "priceP": 0,
+      "unlockDay": 6,
+      "acquire": "E02",
+      "slot": "desk",
+      "mvp": false,
+      "onceKey": "gift:cs:P07"
+    },
+    {
+      "id": "P08",
+      "name": "작은 순번 표시등",
+      "priceP": 60,
+      "unlockDay": 4,
+      "acquire": "shop",
+      "slot": "desk",
+      "mvp": false,
+      "onceKey": "purchase:cs:P08"
+    },
+    {
+      "id": "P09",
+      "name": "민원실 갤러리 사진",
+      "priceP": 70,
+      "unlockDay": 6,
+      "acquire": "shop",
+      "slot": "wall",
+      "mvp": false,
+      "onceKey": "purchase:cs:P09"
+    },
+    {
+      "id": "P10",
+      "name": "공개 자료 책받침",
+      "priceP": 80,
+      "unlockDay": 7,
+      "acquire": "shop",
+      "slot": "desk",
+      "mvp": false,
+      "onceKey": "purchase:cs:P10"
+    },
+    {
+      "id": "P11",
+      "name": "창구 팀의 사진",
+      "priceP": 0,
+      "unlockDay": 10,
+      "acquire": "ending",
+      "slot": "wall",
+      "mvp": false,
+      "onceKey": "gift:cs:P11"
+    },
+    {
+      "id": "P12",
+      "name": "주민센터 길 안내 지도",
+      "priceP": 0,
+      "unlockDay": 10,
+      "acquire": "E03",
+      "slot": "wall",
+      "mvp": false,
+      "onceKey": "gift:cs:P12"
+    }
+  ],
+  "tools": [
+    {
+      "id": "cs.checklist",
+      "name": "체크판",
+      "free": true,
+      "effect": "대조 행 강조"
+    },
+    {
+      "id": "cs.index",
+      "name": "접수 색인",
+      "free": true,
+      "effect": "자료 정렬"
+    },
+    {
+      "id": "cs.marker",
+      "name": "검토 표시자",
+      "free": true,
+      "effect": "확인 위치 표시"
+    },
+    {
+      "id": "cs.handoff",
+      "name": "인계 노트",
+      "free": true,
+      "effect": "처리 항목 목록 유지"
+    }
+  ],
+  "optionalScenes": [
+    {
+      "id": "cs.optional.01",
+      "title": "큰 글씨 안내문",
+      "day": 1,
+      "blocksProgress": false,
+      "repeatedCurrency": false
+    },
+    {
+      "id": "cs.optional.02",
+      "title": "펜꽂이 정리",
+      "day": 2,
+      "blocksProgress": false,
+      "repeatedCurrency": false
+    },
+    {
+      "id": "cs.optional.03",
+      "title": "기기 도움 요청",
+      "day": 4,
+      "blocksProgress": false,
+      "repeatedCurrency": false
+    },
+    {
+      "id": "cs.optional.04",
+      "title": "창구 사진첩",
+      "day": 5,
+      "blocksProgress": false,
+      "repeatedCurrency": false
+    },
+    {
+      "id": "cs.optional.05",
+      "title": "동료의 늦은 간식",
+      "day": 6,
+      "blocksProgress": false,
+      "repeatedCurrency": false
+    },
+    {
+      "id": "cs.optional.06",
+      "title": "백단비의 기록물 농담",
+      "day": 7,
+      "blocksProgress": false,
+      "repeatedCurrency": false
+    }
+  ],
+  "economy": {
+    "status": "proposal_pending_live_source_audit",
+    "perTaskP": 20,
+    "perTaskXP": 15,
+    "perDayP": 15,
+    "fullIncomeP": 950,
+    "fullShopCostP": 330,
+    "fullNetP": 620,
+    "mvpIncomeP": 285,
+    "mvpShopCostP": 120,
+    "mvpNetP": 165
+  },
+  "contentContract": [
+    "publicRules",
+    "input",
+    "goals",
+    "constraints",
+    "initialDraft",
+    "hintSteps",
+    "witness",
+    "contentVersion"
+  ],
+  "disclosureReasonCodes": [
+    "unknownToken",
+    "unreviewed",
+    "protectedVisible",
+    "requiredFactHidden",
+    "wrongReason",
+    "missingDocument"
+  ],
+  "implementationVerified": false
+}

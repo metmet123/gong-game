@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": 1,
+  "saveRevision": 0,
+  "route": "hub",
+  "moveIn": {
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "saveRevision": 0,
+    "mode": "chapter",
+    "records": {},
+    "drafts": {},
+    "dayClosed": [],
+    "introduced": false,
+    "items": [],
+    "active": null,
+    "map": {
+      "x": 4,
+      "y": 10
+    },
+    "settings": {
+      "motion": true,
+      "sound": false
+    },
+    "savedAt": null
+  },
+  "welfare": {
+    "version": 1,
+    "active": null,
+    "drafts": {},
+    "records": {
+      "W01": {
+        "caseId": "resident-center:welfare:W01",
+        "contentVersion": 1,
+        "resolutionId": "resident-center:welfare:W01:handoff",
+        "outcome": "handoff-complete",
+        "serviceApproved": false,
+        "snapshot": {
+          "options": {
+            "agencyPending": false
+          },
+          "knowledge": {
+            "readSourceIds": [
+              "S01",
+              "S02",
+              "S05",
+              "S03",
+              "S04"
+            ],
+            "pinnedStatementIds": [
+              "E01",
+              "E02",
+              "E03",
+              "E09",
+              "E04",
+              "E05",
+              "E06",
+              "E07",
+              "E08"
+            ],
+            "askedQuestionIds": [
+              "Q01",
+              "Q02"
+            ],
+            "revision": 16
+          },
+          "draft": {
+            "claimsById": {
+              "C1": "daughter",
+              "C2": "no",
+              "C3": "yes",
+              "C4": "no",
+              "C5": "yes"
+            },
+            "evidenceByClaim": {
+              "C1": [
+                "E02"
+              ],
+              "C2": [
+                "E04"
+              ],
+              "C3": [
+                "E07"
+              ],
+              "C4": [
+                "E08"
+              ],
+              "C5": [
+                "E05"
+              ]
+            },
+            "plans": [
+              "P-MEAL"
+            ],
+            "followup": "receipt",
+            "priority": "",
+            "priorityEvidence": [],
+            "cooperationNote": null,
+            "revision": 12
+          }
+        },
+        "itemId": "resident-center:welfare:W01:note"
+      },
+      "W02": {
+        "caseId": "resident-center:welfare:W02",
+        "contentVersion": 1,
+        "resolutionId": "resident-center:welfare:W02:handoff",
+        "outcome": "handoff-complete",
+        "serviceApproved": false,
+        "snapshot": {
+          "options": {
+            "agencyPending": false
+          },
+          "knowledge": {
+            "readSourceIds": [
+              "S01",
+              "S02",
+              "S05",
+              "S03",
+              "S06",
+              "S04"
+            ],
+            "pinnedStatementIds": [
+              "E01",
+              "E02",
+              "E05",
+              "E03",
+              "E06",
+              "E04"
+            ],
+            "askedQuestionIds": [
+              "Q01",
+              "Q02",
+              "Q03"
+            ],
+            "revision": 15
+          },
+          "draft": {
+            "claimsById": {
+              "C1": "yes",
+              "C2": "ended",
+              "C3": "yes"
+            },
+            "evidenceByClaim": {
+              "C1": [
+                "E02"
+              ],
+              "C2": [
+                "E04"
+              ],
+              "C3": [
+                "E01"
+              ]
+            },
+            "plans": [
+              "P-LIVING"
+            ],
+            "followup": "receipt",
+            "priority": "",
+            "priorityEvidence": [],
+            "cooperationNote": null,
+            "revision": 8
+          }
+        },
+        "itemId": "resident-center:welfare:W02:contacts"
+      },
+      "W03": {
+        "caseId": "resident-center:welfare:W03",
+        "contentVersion": 1,
+        "resolutionId": "resident-center:welfare:W03:handoff",
+        "outcome": "handoff-complete",
+        "serviceApproved": false,
+        "snapshot": {
+          "options": {
+            "agencyPending": false
+          },
+          "knowledge": {
+            "readSourceIds": [
+              "S01",
+              "S02",
+              "S06",
+              "S07",
+              "S03",
+              "S05",
+              "S04"
+            ],
+            "pinnedStatementIds": [
+              "E01",
+              "E02",
+              "E06",
+              "E07",
+              "E03",
+              "E05",
+              "E04"
+            ],
+            "askedQuestionIds": [
+              "Q01",
+              "Q02",
+              "Q03"
+            ],
+            "revision": 17
+          },
+          "draft": {
+            "claimsById": {
+              "C1": "yes",
+              "C2": "yes",
+              "C3": "temporary",
+              "C4": "unknown"
+            },
+            "evidenceByClaim": {
+              "C1": [
+                "E01"
+              ],
+              "C2": [
+                "E01"
+              ],
+              "C3": [
+                "E04"
+              ],
+              "C4": [
+                "E04"
+              ]
+            },
+            "plans": [
+              "P-LIVING",
+              "P-HOUSING"
+            ],
+            "followup": "both",
+            "priority": "housing",
+            "priorityEvidence": [
+              "E03"
+            ],
+            "cooperationNote": null,
+            "revision": 13
+          }
+        },
+        "itemId": "resident-center:welfare:W03:map"
+      }
+    },
+    "items": [
+      "resident-center:welfare:W01:note",
+      "resident-center:welfare:W02:contacts",
+      "resident-center:welfare:W03:map"
+    ],
+    "shiftIndex": 4,
+    "seenReplyIds": [
+      "resident-center:welfare:W01:reply",
+      "resident-center:welfare:W02:reply",
+      "resident-center:welfare:W03:reply"
+    ]
+  },
+  "hub": {
+    "unlockSceneSeen": false,
+    "lastDesk": "movein"
+  },
+  "settings": {
+    "motion": true,
+    "sound": false
+  },
+  "savedAt": null
+}

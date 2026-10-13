@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-10",
+  "baseline": "공무원키우기_픽셀아트.html",
+  "coreMatchesInline": true,
+  "command": "node docs/evidence/runtime-test/existing-rules.cjs",
+  "exitCode": 0,
+  "stdout": "PASS: 1200 deterministic puzzle variants, correct/incorrect judgments, commutative automation, 5-day campaign, duplicate-reward guards, restore, purchases, and import validation.\n",
+  "uiEvidence": "Previous session only; no new UI/Android test in resumption",
+  "gameOriginalsUnchanged": true
+}

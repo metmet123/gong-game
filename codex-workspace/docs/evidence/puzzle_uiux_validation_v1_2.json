@@ -1,0 +1,82 @@
+{
+  "version": "1.2",
+  "date": "2026-10-11",
+  "scope": "Design atlas and planning contracts only; not playable engine, measured novice usability, or actual Android validation",
+  "checks": [
+    {
+      "name": "24 puzzle contracts and 9 official sources",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "72 revised puzzle frames; 57 retained place frames",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Each puzzle has reference, 3-step flow, failure and completion cue",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Every frame has first action, active step, type-specific tool, primary and undo",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Mock actions clearly illustrative, not inert actual buttons",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Official reference URLs in atlas match registry",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "App-name search finds report and appropriate future designs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "All 24 designs fit frames and page at 7 viewport widths",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "JS blocked: 72 app frames and 24 flow descriptions visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "JS blocked: native reference disclosure shows all 9 sources",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "JS blocked: anchor opens report design",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Existing PF roadmap links new UX contract",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Original rule content and witness data preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Browser errors and resource requests absent",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "layout": [],
+  "errors": [],
+  "network": [],
+  "passed": 14,
+  "total": 14
+}

@@ -1,0 +1,7 @@
+'use strict';
+const assert=require('node:assert/strict'),path=require('node:path'),fs=require('node:fs'),{pathToFileURL}=require('node:url'),{chromium}=require(process.env.PLAYWRIGHT_PACKAGE||'playwright');
+const root=path.resolve(__dirname,'..');
+(async()=>{const b=await chromium.launch({channel:'msedge',headless:true});try{
+ async function collect(file){const context=await b.newContext(),p=await context.newPage(),errors=[];p.on('pageerror',e=>errors.push(e.message));await p.goto(pathToFileURL(path.join(root,file)).href);const modules=await p.evaluate(()=>Puzzles.list().filter(m=>m.id!=='movein').map(m=>({id:m.id,results:['easy','normal','hard'].map(diff=>{try{const levels=Puzzles.levels(m,diff);return {diff,count:levels.length,witnesses:levels.map(l=>l.witness?m.evaluate(l,l.witness).status:'none')};}catch(e){return {diff,error:e.message};}})})));await context.close();return {modules,errors};}
+ const old=await collect('docs/본편자료/배포본.html'),now=await collect('공무원키우기_주민센터_통합후보.html');assert.deepEqual(now,old);assert.deepEqual(old.errors,[]);const levels=old.modules.flatMap(m=>m.results).reduce((n,r)=>n+(r.count||0),0);assert(levels>0);fs.writeFileSync(path.join(root,'docs/검증화면/기존퍼즐_회귀.json'),JSON.stringify({moduleCount:old.modules.length,levelCount:levels,unchanged:true,baseline:old},null,2));console.log('PASS existing '+old.modules.length+' registered modules / '+levels+' levels and witness results unchanged');
+ }finally{await b.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

@@ -1,0 +1,73 @@
+{
+  "scope": "independent_e01_mockup_rules",
+  "passed": true,
+  "assertions": 477,
+  "paths": [
+    {
+      "option": "none",
+      "paid": 220000,
+      "remaining": 40000,
+      "received": {
+        "counter": 80,
+        "branchA": 60,
+        "branchB": 60,
+        "holding": 0,
+        "inTransit": 0
+      },
+      "printPayments": 1
+    },
+    {
+      "option": "stand",
+      "paid": 240000,
+      "remaining": 20000,
+      "received": {
+        "counter": 80,
+        "branchA": 60,
+        "branchB": 60,
+        "holding": 0,
+        "inTransit": 0
+      },
+      "printPayments": 1
+    },
+    {
+      "option": "delivery",
+      "paid": 250000,
+      "remaining": 10000,
+      "received": {
+        "counter": 80,
+        "branchA": 60,
+        "branchB": 60,
+        "holding": 0,
+        "inTransit": 0
+      },
+      "printPayments": 1
+    },
+    {
+      "option": "proof",
+      "paid": 260000,
+      "remaining": 0,
+      "received": {
+        "counter": 80,
+        "branchA": 60,
+        "branchB": 60,
+        "holding": 0,
+        "inTransit": 0
+      },
+      "printPayments": 1
+    }
+  ],
+  "tested": [
+    "four_option_paths",
+    "stale_checks",
+    "read_only_history",
+    "approval_order",
+    "bad_stock_classification",
+    "free_replacement",
+    "single_payment",
+    "deferred_delivery_payment",
+    "inventory_conservation",
+    "duplicate_record_evidence",
+    "alternative_row_exclusion",
+    "isolated_source_dependencies"
+  ]
+}

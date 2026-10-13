@@ -1,0 +1,68 @@
+{
+  "reviewDate": "2026-10-11",
+  "method": "AI interactive UI walkthrough; human/real-phone evidence not claimed",
+  "gameModified": false,
+  "artifactSHA256": "2259a43e041040557d422266aeb88f3275d0dfbe0fd0064456e18df20a528f37",
+  "welfareCompleted": [
+    {
+      "case": "W01",
+      "seq": 43
+    },
+    {
+      "case": "W04",
+      "seq": 79
+    },
+    {
+      "case": "W05",
+      "seq": 105
+    },
+    {
+      "case": "W06",
+      "seq": 181
+    },
+    {
+      "case": "W07",
+      "seq": 213
+    },
+    {
+      "case": "W02",
+      "seq": 231
+    },
+    {
+      "case": "W03",
+      "seq": 277
+    },
+    {
+      "case": "W08",
+      "seq": 329
+    },
+    {
+      "case": "W09",
+      "seq": 376
+    }
+  ],
+  "welfareRepliesRead": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "transferScope": "relation-first-contact and M01-M03 + day-1 settlement",
+  "notReviewed": "M04-M12, full transfer ending, real Android/iPhone, human novices",
+  "interactionRecords": 528,
+  "screenshots": 44,
+  "viewportSizes": [
+    "390x844",
+    "320x568",
+    "844x390",
+    "1180x820"
+  ],
+  "sourceAnswersRead": false,
+  "engineeringRegressionRerun": false,
+  "toolLimitations": "CUA/Node REPL kernel path failed; Playwright fresh context. Locator/stale-frame mistakes not game failures."
+}

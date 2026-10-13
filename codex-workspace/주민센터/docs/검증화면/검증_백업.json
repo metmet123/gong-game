@@ -1,0 +1,1160 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": 1,
+  "saveRevision": 108,
+  "mode": "puzzle",
+  "records": {
+    "puzzle:M01": {
+      "resolutionId": "visit:M01",
+      "caseId": "M01",
+      "visitId": "M01",
+      "outcome": "registered",
+      "beforeSnapshot": {
+        "origin": {
+          "address": "들꽃길 3 · 101호",
+          "headId": "sae",
+          "memberIds": [
+            "sae"
+          ],
+          "relationByPerson": {
+            "sae": "본인"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "모퉁이로 12 · 201호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        }
+      },
+      "afterSnapshot": {
+        "origin": {
+          "address": "들꽃길 3 · 101호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        },
+        "destination": {
+          "address": "모퉁이로 12 · 201호",
+          "headId": "sae",
+          "memberIds": [
+            "sae"
+          ],
+          "relationByPerson": {
+            "sae": "본인"
+          },
+          "active": true
+        }
+      },
+      "explanation": "제 첫 독립 주소네요. 이사 온 게 실감 나요."
+    },
+    "puzzle:M02": {
+      "resolutionId": "visit:M02",
+      "caseId": "M02",
+      "visitId": "M02",
+      "outcome": "registered",
+      "beforeSnapshot": {
+        "origin": {
+          "address": "나무길 8 · 101호",
+          "headId": "yu",
+          "memberIds": [
+            "yu",
+            "min",
+            "sol"
+          ],
+          "relationByPerson": {
+            "yu": "본인",
+            "min": "배우자",
+            "sol": "자녀"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "모퉁이로 12 · 202호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        }
+      },
+      "afterSnapshot": {
+        "origin": {
+          "address": "나무길 8 · 101호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        },
+        "destination": {
+          "address": "모퉁이로 12 · 202호",
+          "headId": "yu",
+          "memberIds": [
+            "sol",
+            "min",
+            "yu"
+          ],
+          "relationByPerson": {
+            "yu": "본인",
+            "min": "배우자",
+            "sol": "자녀"
+          },
+          "active": true
+        }
+      },
+      "explanation": "세 사람의 새집 주소가 잘 등록됐네요. 감사합니다."
+    },
+    "puzzle:M03": {
+      "resolutionId": "visit:M03",
+      "caseId": "M03",
+      "visitId": "M03",
+      "outcome": "registered",
+      "beforeSnapshot": {
+        "origin": {
+          "address": "나무길 8 · 101호",
+          "headId": "chae",
+          "memberIds": [
+            "chae",
+            "ga",
+            "bo"
+          ],
+          "relationByPerson": {
+            "chae": "본인",
+            "ga": "자녀",
+            "bo": "자녀"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "모퉁이로 12 · 202호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        }
+      },
+      "afterSnapshot": {
+        "origin": {
+          "address": "나무길 8 · 101호",
+          "headId": "chae",
+          "memberIds": [
+            "chae"
+          ],
+          "relationByPerson": {
+            "chae": "본인"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "모퉁이로 12 · 202호",
+          "headId": "ga",
+          "memberIds": [
+            "bo",
+            "ga"
+          ],
+          "relationByPerson": {
+            "ga": "본인",
+            "bo": "형제자매"
+          },
+          "active": true
+        }
+      },
+      "explanation": "이제 정말 저희 집 주소가 생겼네요. 이삿짐 정리하러 갈게요."
+    },
+    "puzzle:M04": {
+      "resolutionId": "visit:M04",
+      "caseId": "M04",
+      "visitId": "M04",
+      "outcome": "registered",
+      "beforeSnapshot": {
+        "origin": {
+          "address": "나무길 8 · 101호",
+          "headId": "jun",
+          "memberIds": [
+            "jun",
+            "da"
+          ],
+          "relationByPerson": {
+            "jun": "본인",
+            "da": "형제자매"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "햇살길 7 · 301호",
+          "headId": "eun",
+          "memberIds": [
+            "eun"
+          ],
+          "relationByPerson": {
+            "eun": "본인"
+          },
+          "active": true
+        }
+      },
+      "afterSnapshot": {
+        "origin": {
+          "address": "나무길 8 · 101호",
+          "headId": "jun",
+          "memberIds": [
+            "jun"
+          ],
+          "relationByPerson": {
+            "jun": "본인"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "햇살길 7 · 301호",
+          "headId": "eun",
+          "memberIds": [
+            "eun",
+            "da"
+          ],
+          "relationByPerson": {
+            "eun": "본인",
+            "da": "동거인"
+          },
+          "active": true
+        }
+      },
+      "explanation": "은오랑 같은 세대로 잘 등록됐네요. 저녁은 제가 사야겠어요."
+    },
+    "puzzle:M05": {
+      "resolutionId": "visit:M05",
+      "caseId": "M05",
+      "visitId": "M05",
+      "outcome": "registered",
+      "beforeSnapshot": {
+        "origin": {
+          "address": "들꽃길 3 · 204호",
+          "headId": "yeo",
+          "memberIds": [
+            "yeo"
+          ],
+          "relationByPerson": {
+            "yeo": "본인"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "새봄로 21 · 302호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        }
+      },
+      "afterSnapshot": {
+        "origin": {
+          "address": "들꽃길 3 · 204호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        },
+        "destination": {
+          "address": "새봄로 21 · 302호",
+          "headId": "yeo",
+          "memberIds": [
+            "yeo"
+          ],
+          "relationByPerson": {
+            "yeo": "본인"
+          },
+          "active": true
+        }
+      },
+      "explanation": "호수를 빠뜨릴 뻔했네요. 다시 물어봐 주셔서 감사합니다."
+    },
+    "puzzle:M06": {
+      "resolutionId": "visit:M06",
+      "caseId": "M06",
+      "visitId": "M06",
+      "outcome": "followup_requested",
+      "beforeSnapshot": {
+        "origin": {
+          "address": "나무길 16 · 101호",
+          "headId": "mi",
+          "memberIds": [
+            "mi",
+            "su"
+          ],
+          "relationByPerson": {
+            "mi": "본인",
+            "su": "자녀"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "온기길 4 · 402호",
+          "headId": "ji",
+          "memberIds": [
+            "ji"
+          ],
+          "relationByPerson": {
+            "ji": "본인"
+          },
+          "active": true
+        }
+      },
+      "afterSnapshot": {
+        "origin": {
+          "address": "나무길 16 · 101호",
+          "headId": "mi",
+          "memberIds": [
+            "mi",
+            "su"
+          ],
+          "relationByPerson": {
+            "mi": "본인",
+            "su": "자녀"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "온기길 4 · 402호",
+          "headId": "ji",
+          "memberIds": [
+            "ji"
+          ],
+          "relationByPerson": {
+            "ji": "본인"
+          },
+          "active": true
+        }
+      },
+      "explanation": "어떤 확인이 필요한지 알겠어요. 준비해서 다시 올게요."
+    },
+    "chapter:M01": {
+      "resolutionId": "visit:M01",
+      "caseId": "M01",
+      "visitId": "M01",
+      "outcome": "registered",
+      "beforeSnapshot": {
+        "origin": {
+          "address": "들꽃길 3 · 101호",
+          "headId": "sae",
+          "memberIds": [
+            "sae"
+          ],
+          "relationByPerson": {
+            "sae": "본인"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "모퉁이로 12 · 201호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        }
+      },
+      "afterSnapshot": {
+        "origin": {
+          "address": "들꽃길 3 · 101호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        },
+        "destination": {
+          "address": "모퉁이로 12 · 201호",
+          "headId": "sae",
+          "memberIds": [
+            "sae"
+          ],
+          "relationByPerson": {
+            "sae": "본인"
+          },
+          "active": true
+        }
+      },
+      "explanation": "제 첫 독립 주소네요. 이사 온 게 실감 나요."
+    },
+    "chapter:M02": {
+      "resolutionId": "visit:M02",
+      "caseId": "M02",
+      "visitId": "M02",
+      "outcome": "registered",
+      "beforeSnapshot": {
+        "origin": {
+          "address": "나무길 8 · 101호",
+          "headId": "yu",
+          "memberIds": [
+            "yu",
+            "min",
+            "sol"
+          ],
+          "relationByPerson": {
+            "yu": "본인",
+            "min": "배우자",
+            "sol": "자녀"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "모퉁이로 12 · 202호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        }
+      },
+      "afterSnapshot": {
+        "origin": {
+          "address": "나무길 8 · 101호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        },
+        "destination": {
+          "address": "모퉁이로 12 · 202호",
+          "headId": "yu",
+          "memberIds": [
+            "sol",
+            "min",
+            "yu"
+          ],
+          "relationByPerson": {
+            "yu": "본인",
+            "min": "배우자",
+            "sol": "자녀"
+          },
+          "active": true
+        }
+      },
+      "explanation": "세 사람의 새집 주소가 잘 등록됐네요. 감사합니다."
+    },
+    "chapter:M03": {
+      "resolutionId": "visit:M03",
+      "caseId": "M03",
+      "visitId": "M03",
+      "outcome": "registered",
+      "beforeSnapshot": {
+        "origin": {
+          "address": "나무길 8 · 101호",
+          "headId": "chae",
+          "memberIds": [
+            "chae",
+            "ga",
+            "bo"
+          ],
+          "relationByPerson": {
+            "chae": "본인",
+            "ga": "자녀",
+            "bo": "자녀"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "모퉁이로 12 · 202호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        }
+      },
+      "afterSnapshot": {
+        "origin": {
+          "address": "나무길 8 · 101호",
+          "headId": "chae",
+          "memberIds": [
+            "chae"
+          ],
+          "relationByPerson": {
+            "chae": "본인"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "모퉁이로 12 · 202호",
+          "headId": "ga",
+          "memberIds": [
+            "bo",
+            "ga"
+          ],
+          "relationByPerson": {
+            "ga": "본인",
+            "bo": "형제자매"
+          },
+          "active": true
+        }
+      },
+      "explanation": "이제 정말 저희 집 주소가 생겼네요. 이삿짐 정리하러 갈게요."
+    },
+    "chapter:M04": {
+      "resolutionId": "visit:M04",
+      "caseId": "M04",
+      "visitId": "M04",
+      "outcome": "registered",
+      "beforeSnapshot": {
+        "origin": {
+          "address": "나무길 8 · 101호",
+          "headId": "jun",
+          "memberIds": [
+            "jun",
+            "da"
+          ],
+          "relationByPerson": {
+            "jun": "본인",
+            "da": "형제자매"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "햇살길 7 · 301호",
+          "headId": "eun",
+          "memberIds": [
+            "eun"
+          ],
+          "relationByPerson": {
+            "eun": "본인"
+          },
+          "active": true
+        }
+      },
+      "afterSnapshot": {
+        "origin": {
+          "address": "나무길 8 · 101호",
+          "headId": "jun",
+          "memberIds": [
+            "jun"
+          ],
+          "relationByPerson": {
+            "jun": "본인"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "햇살길 7 · 301호",
+          "headId": "eun",
+          "memberIds": [
+            "eun",
+            "da"
+          ],
+          "relationByPerson": {
+            "eun": "본인",
+            "da": "동거인"
+          },
+          "active": true
+        }
+      },
+      "explanation": "은오랑 같은 세대로 잘 등록됐네요. 저녁은 제가 사야겠어요."
+    },
+    "chapter:M05": {
+      "resolutionId": "visit:M05",
+      "caseId": "M05",
+      "visitId": "M05",
+      "outcome": "registered",
+      "beforeSnapshot": {
+        "origin": {
+          "address": "들꽃길 3 · 204호",
+          "headId": "yeo",
+          "memberIds": [
+            "yeo"
+          ],
+          "relationByPerson": {
+            "yeo": "본인"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "새봄로 21 · 302호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        }
+      },
+      "afterSnapshot": {
+        "origin": {
+          "address": "들꽃길 3 · 204호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        },
+        "destination": {
+          "address": "새봄로 21 · 302호",
+          "headId": "yeo",
+          "memberIds": [
+            "yeo"
+          ],
+          "relationByPerson": {
+            "yeo": "본인"
+          },
+          "active": true
+        }
+      },
+      "explanation": "호수를 빠뜨릴 뻔했네요. 다시 물어봐 주셔서 감사합니다."
+    },
+    "chapter:M06": {
+      "resolutionId": "visit:M06",
+      "caseId": "M06",
+      "visitId": "M06",
+      "outcome": "followup_requested",
+      "beforeSnapshot": {
+        "origin": {
+          "address": "나무길 16 · 101호",
+          "headId": "mi",
+          "memberIds": [
+            "mi",
+            "su"
+          ],
+          "relationByPerson": {
+            "mi": "본인",
+            "su": "자녀"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "온기길 4 · 402호",
+          "headId": "ji",
+          "memberIds": [
+            "ji"
+          ],
+          "relationByPerson": {
+            "ji": "본인"
+          },
+          "active": true
+        }
+      },
+      "afterSnapshot": {
+        "origin": {
+          "address": "나무길 16 · 101호",
+          "headId": "mi",
+          "memberIds": [
+            "mi",
+            "su"
+          ],
+          "relationByPerson": {
+            "mi": "본인",
+            "su": "자녀"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "온기길 4 · 402호",
+          "headId": "ji",
+          "memberIds": [
+            "ji"
+          ],
+          "relationByPerson": {
+            "ji": "본인"
+          },
+          "active": true
+        }
+      },
+      "explanation": "어떤 확인이 필요한지 알겠어요. 준비해서 다시 올게요."
+    },
+    "chapter:M06-return": {
+      "resolutionId": "visit:M06-return",
+      "caseId": "M06",
+      "visitId": "M06-return",
+      "outcome": "registered",
+      "beforeSnapshot": {
+        "origin": {
+          "address": "나무길 16 · 101호",
+          "headId": "mi",
+          "memberIds": [
+            "mi",
+            "su"
+          ],
+          "relationByPerson": {
+            "mi": "본인",
+            "su": "자녀"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "온기길 4 · 402호",
+          "headId": "ji",
+          "memberIds": [
+            "ji"
+          ],
+          "relationByPerson": {
+            "ji": "본인"
+          },
+          "active": true
+        }
+      },
+      "afterSnapshot": {
+        "origin": {
+          "address": "나무길 16 · 101호",
+          "headId": "mi",
+          "memberIds": [
+            "mi"
+          ],
+          "relationByPerson": {
+            "mi": "본인"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "온기길 4 · 402호",
+          "headId": "ji",
+          "memberIds": [
+            "ji",
+            "su"
+          ],
+          "relationByPerson": {
+            "ji": "본인",
+            "su": "동거인"
+          },
+          "active": true
+        }
+      },
+      "explanation": "어제 안내 덕분에 한 번에 준비했어요. 이제 같은 집 주소네요."
+    },
+    "chapter:M07": {
+      "resolutionId": "visit:M07",
+      "caseId": "M07",
+      "visitId": "M07",
+      "outcome": "registered",
+      "beforeSnapshot": {
+        "origin": {
+          "address": "들꽃길 30 · 101호",
+          "headId": "ma",
+          "memberIds": [
+            "ma",
+            "ha",
+            "ba"
+          ],
+          "relationByPerson": {
+            "ma": "본인",
+            "ha": "자녀",
+            "ba": "자녀"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "모퉁이로 30 · 202호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        }
+      },
+      "afterSnapshot": {
+        "origin": {
+          "address": "들꽃길 30 · 101호",
+          "headId": "ma",
+          "memberIds": [
+            "ma"
+          ],
+          "relationByPerson": {
+            "ma": "본인"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "모퉁이로 30 · 202호",
+          "headId": "ha",
+          "memberIds": [
+            "ba",
+            "ha"
+          ],
+          "relationByPerson": {
+            "ha": "본인",
+            "ba": "형제자매"
+          },
+          "active": true
+        }
+      },
+      "explanation": "이 동네에서 잘 살아볼게요. 차근차근 확인해 주셔서 감사합니다."
+    },
+    "chapter:M08": {
+      "resolutionId": "visit:M08",
+      "caseId": "M08",
+      "visitId": "M08",
+      "outcome": "registered",
+      "beforeSnapshot": {
+        "origin": {
+          "address": "들꽃길 31 · 101호",
+          "headId": "on",
+          "memberIds": [
+            "on",
+            "bom"
+          ],
+          "relationByPerson": {
+            "on": "본인",
+            "bom": "배우자"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "모퉁이로 31 · 202호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        }
+      },
+      "afterSnapshot": {
+        "origin": {
+          "address": "들꽃길 31 · 101호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        },
+        "destination": {
+          "address": "모퉁이로 31 · 202호",
+          "headId": "on",
+          "memberIds": [
+            "bom",
+            "on"
+          ],
+          "relationByPerson": {
+            "on": "본인",
+            "bom": "배우자"
+          },
+          "active": true
+        }
+      },
+      "explanation": "이 동네에서 잘 살아볼게요. 차근차근 확인해 주셔서 감사합니다."
+    },
+    "chapter:M09": {
+      "resolutionId": "visit:M09",
+      "caseId": "M09",
+      "visitId": "M09",
+      "outcome": "registered",
+      "beforeSnapshot": {
+        "origin": {
+          "address": "들꽃길 32 · 101호",
+          "headId": "na",
+          "memberIds": [
+            "na"
+          ],
+          "relationByPerson": {
+            "na": "본인"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "모퉁이로 32 · 501호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        }
+      },
+      "afterSnapshot": {
+        "origin": {
+          "address": "들꽃길 32 · 101호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        },
+        "destination": {
+          "address": "모퉁이로 32 · 501호",
+          "headId": "na",
+          "memberIds": [
+            "na"
+          ],
+          "relationByPerson": {
+            "na": "본인"
+          },
+          "active": true
+        }
+      },
+      "explanation": "이 동네에서 잘 살아볼게요. 차근차근 확인해 주셔서 감사합니다."
+    },
+    "chapter:M10": {
+      "resolutionId": "visit:M10",
+      "caseId": "M10",
+      "visitId": "M10",
+      "outcome": "registered",
+      "beforeSnapshot": {
+        "origin": {
+          "address": "들꽃길 33 · 101호",
+          "headId": "jo",
+          "memberIds": [
+            "jo",
+            "se"
+          ],
+          "relationByPerson": {
+            "jo": "본인",
+            "se": "자녀"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "모퉁이로 33 · 202호",
+          "headId": "won",
+          "memberIds": [
+            "won"
+          ],
+          "relationByPerson": {
+            "won": "본인"
+          },
+          "active": true
+        }
+      },
+      "afterSnapshot": {
+        "origin": {
+          "address": "들꽃길 33 · 101호",
+          "headId": "jo",
+          "memberIds": [
+            "jo"
+          ],
+          "relationByPerson": {
+            "jo": "본인"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "모퉁이로 33 · 202호",
+          "headId": "won",
+          "memberIds": [
+            "won",
+            "se"
+          ],
+          "relationByPerson": {
+            "won": "본인",
+            "se": "동거인"
+          },
+          "active": true
+        }
+      },
+      "explanation": "이 동네에서 잘 살아볼게요. 차근차근 확인해 주셔서 감사합니다."
+    },
+    "chapter:M11": {
+      "resolutionId": "visit:M11",
+      "caseId": "M11",
+      "visitId": "M11",
+      "outcome": "registered",
+      "beforeSnapshot": {
+        "origin": {
+          "address": "들꽃길 34 · 101호",
+          "headId": "dan",
+          "memberIds": [
+            "dan",
+            "san",
+            "dal"
+          ],
+          "relationByPerson": {
+            "dan": "본인",
+            "san": "배우자",
+            "dal": "자녀"
+          },
+          "active": true
+        },
+        "destination": {
+          "address": "모퉁이로 34 · 202호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        }
+      },
+      "afterSnapshot": {
+        "origin": {
+          "address": "들꽃길 34 · 101호",
+          "headId": null,
+          "memberIds": [],
+          "relationByPerson": {},
+          "active": false
+        },
+        "destination": {
+          "address": "모퉁이로 34 · 202호",
+          "headId": "dan",
+          "memberIds": [
+            "dal",
+            "san",
+            "dan"
+          ],
+          "relationByPerson": {
+            "dan": "본인",
+            "san": "배우자",
+            "dal": "자녀"
+          },
+          "active": true
+        }
+      },
+      "explanation": "이 동네에서 잘 살아볼게요. 차근차근 확인해 주셔서 감사합니다."
+    }
+  },
+  "drafts": {},
+  "dayClosed": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "introduced": true,
+  "items": [
+    "badge",
+    "memo",
+    "map",
+    "photo"
+  ],
+  "active": {
+    "mode": "puzzle",
+    "visitId": "M03",
+    "practice": true,
+    "session": {
+      "caseId": "M03",
+      "visitId": "M03",
+      "contentVersion": 1,
+      "status": "editing",
+      "draft": {
+        "moverIds": [
+          "ga",
+          "bo"
+        ],
+        "addressId": "M03-home",
+        "householdMode": "new",
+        "destinationHeadId": "ga",
+        "relationByPerson": {
+          "ga": "본인"
+        },
+        "disposition": "registered",
+        "followupReasonIds": [],
+        "revision": 6
+      },
+      "knowledge": {
+        "seenDocumentIds": [
+          "report",
+          "identity"
+        ],
+        "answeredQuestionIds": [],
+        "verifiedFactIds": [
+          "request",
+          "identity"
+        ],
+        "revision": 2
+      },
+      "view": {
+        "phase": "composing",
+        "boardTab": "after",
+        "selectionIds": []
+      },
+      "undo": [],
+      "redo": [],
+      "record": null
+    }
+  },
+  "map": {
+    "x": 4,
+    "y": 10
+  },
+  "settings": {
+    "motion": true,
+    "sound": false
+  },
+  "savedAt": "2026-10-11T12:11:38.179Z",
+  "tutorial": {
+    "version": 1,
+    "active": false,
+    "session": {
+      "caseId": "resident-center:tutorial-family",
+      "visitId": "resident-center:tutorial-family",
+      "contentVersion": 1,
+      "status": "resolved",
+      "draft": {
+        "moverIds": [
+          "ga",
+          "bo"
+        ],
+        "addressId": "family-home",
+        "householdMode": "new",
+        "destinationHeadId": "ga",
+        "relationByPerson": {
+          "ga": "본인",
+          "bo": "형제자매"
+        },
+        "disposition": "registered",
+        "followupReasonIds": [],
+        "revision": 6
+      },
+      "knowledge": {
+        "seenDocumentIds": [
+          "story",
+          "ledger",
+          "request"
+        ],
+        "answeredQuestionIds": [],
+        "verifiedFactIds": [
+          "request",
+          "ledger",
+          "headrequest"
+        ],
+        "revision": 3
+      },
+      "view": {
+        "phase": "resolved",
+        "boardTab": "after",
+        "selectionIds": []
+      },
+      "undo": [],
+      "redo": [],
+      "record": {
+        "resolutionId": "visit:resident-center:tutorial-family",
+        "caseId": "resident-center:tutorial-family",
+        "visitId": "resident-center:tutorial-family",
+        "outcome": "registered",
+        "beforeSnapshot": {
+          "origin": {
+            "address": "나무길 8 · 101호",
+            "headId": "chae",
+            "memberIds": [
+              "chae",
+              "ga",
+              "bo"
+            ],
+            "relationByPerson": {
+              "chae": "본인",
+              "ga": "자녀",
+              "bo": "자녀"
+            },
+            "active": true
+          },
+          "destination": {
+            "address": "모퉁이로 12 · 202호",
+            "headId": null,
+            "memberIds": [],
+            "relationByPerson": {},
+            "active": false
+          }
+        },
+        "afterSnapshot": {
+          "origin": {
+            "address": "나무길 8 · 101호",
+            "headId": "chae",
+            "memberIds": [
+              "chae"
+            ],
+            "relationByPerson": {
+              "chae": "본인"
+            },
+            "active": true
+          },
+          "destination": {
+            "address": "모퉁이로 12 · 202호",
+            "headId": "ga",
+            "memberIds": [
+              "ga",
+              "bo"
+            ],
+            "relationByPerson": {
+              "ga": "본인",
+              "bo": "형제자매"
+            },
+            "active": true
+          }
+        },
+        "explanation": "어머니 주소는 그대로고, 저희 둘만 새집으로 바뀌었네요. 감사합니다."
+      }
+    },
+    "reason": "new-head",
+    "hintLevel": 0,
+    "attempted": true
+  }
+}

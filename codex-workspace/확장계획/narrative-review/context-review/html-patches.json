@@ -1,0 +1,57 @@
+[
+  {
+    "before": "Object.assign(NPCS[k],{profile:c.profile,wrong:c.wrong,win:c.win,ask:c.ask});",
+    "after": "Object.assign(NPCS[k],{quote:c.profile.habit,profile:c.profile,wrong:c.wrong,win:c.win,ask:c.ask});",
+    "count": 1
+  },
+  {
+    "before": "D.news={...D.news,headline:n.news.headline,body:n.news.body};",
+    "after": "D.news={...D.news,headline:n.news.headline,rule:n.news.rule,body:n.news.body};",
+    "count": 1
+  },
+  {
+    "before": "rule:'지난 분기에 배운 규칙은 그대로',body:N.nextQuarter.day1News.body",
+    "after": "rule:N.nextQuarter.day1News.rule,body:N.nextQuarter.day1News.body",
+    "count": 1
+  },
+  {
+    "before": "오늘부터 바뀐 규칙",
+    "after": "오늘의 업무 안내",
+    "count": 1
+  },
+  {
+    "before": "한 주 진행 · 보상 장부",
+    "after": "업무 기록 · 도감",
+    "count": 2
+  },
+  {
+    "before": "생활보장과 · 첫 주 프로토타입",
+    "after": "생활보장과 · 15일 업무 체험",
+    "count": 1
+  },
+  {
+    "before": "<br>실제 업무: ",
+    "after": "<br>관련 업무: ",
+    "count": 1
+  },
+  {
+    "before": "100만 원 넘는 건 과장님까지.",
+    "after": "100만 원 이상은 과장님까지 결재를 받아요.",
+    "count": 1
+  },
+  {
+    "before": "모든 서류는 계장 도장 → 사본은 기록관 → 원본은 금액에 따라 계장 전결 또는 과장 결재로.",
+    "after": "이번 종합 결재는 계장 도장 → 복사 → 사본은 기록관, 원본은 금액별 결재함으로 보내요. 3일차와 목적함이 달라요.",
+    "count": 1
+  },
+  {
+    "before": "분기기는 기준을 넘는 서류를 오른쪽으로 꺾어요.",
+    "after": "분기기는 기준 이상인 서류를 오른쪽으로 꺾어요.",
+    "count": 1
+  },
+  {
+    "before": "'민원 예보: 월요일이라 붐빔'",
+    "after": "'민원 예보: 출근 직후 붐빔'",
+    "count": 1
+  }
+]

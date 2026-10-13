@@ -1,0 +1,142 @@
+{
+  "checkedAt": "2026-10-11",
+  "verifiedBodyCount": 7,
+  "candidateCount": 1,
+  "realDisclosureRequestSubmitted": false,
+  "sources": [
+    {
+      "id": "S01",
+      "title": "대전 서구 2026 주요업무계획",
+      "url": "https://clik.nanet.go.kr/clikr-collection/bill/042004/9/2026/CLIKC9769943775258170_1.pdf",
+      "publicationYear": "2026",
+      "checkedAt": "2026-10-11",
+      "verification": "body_read",
+      "locator": "인쇄 52쪽 / PDF 54페이지",
+      "evidenceSummary": "민원편의 기능, 우선배려창구, 기록 이관과 사전공개 자료 현행화 계획",
+      "proposedAdaptation": "맵의 대기·기록 구역, 공개 목록 갱신 사건",
+      "limitations": [
+        "업무계획의 추진 항목이다. 완료 실적이나 전국 공통 운영으로 해석하지 않는다."
+      ],
+      "quotation": null,
+      "imageReuse": false,
+      "pdfVisualCheck": "not_completed"
+    },
+    {
+      "id": "S02",
+      "title": "구미시의회 2025 행정사무감사 결과보고서 · 기획행정위원회",
+      "url": "https://clik.nanet.go.kr/clikr-collection/bill/054005/9/2025/CLIKC1455081685519566_2.pdf",
+      "publicationYear": "2025",
+      "checkedAt": "2026-10-11",
+      "verification": "body_read",
+      "locator": "인쇄 42쪽 / PDF 43페이지 / 항목 153",
+      "evidenceSummary": "여권 창구 대기 불편 지적과 예약·키오스크 등 개선 권고",
+      "proposedAdaptation": "반복 방문과 안내 개선을 조사하는 창작 사건의 배경",
+      "limitations": [
+        "특정 기관 감사 지적이며 게임 주민·문서·원인·해결은 창작이다."
+      ],
+      "quotation": null,
+      "imageReuse": false,
+      "pdfVisualCheck": "not_completed"
+    },
+    {
+      "id": "S03",
+      "title": "서대문구 종합 민원실 안내",
+      "url": "https://www.sdm.go.kr/civil/kind/info.do",
+      "publicationYear": null,
+      "checkedAt": "2026-10-11",
+      "verification": "body_read",
+      "locator": "본문 민원실 업무 및 연장 운영 안내",
+      "evidenceSummary": "증명 발급, 가족관계 신고, 여권 접수·교부 및 일부 업무의 연장 운영",
+      "proposedAdaptation": "접수·교부 분리, 가족관계 후속 안내, 제한된 야간 창구",
+      "limitations": [
+        "해당 기관 운영 안내다. 게임 내 요일·창구·조건은 가상값으로 작성한다."
+      ],
+      "quotation": null,
+      "imageReuse": false,
+      "pdfVisualCheck": "not_applicable"
+    },
+    {
+      "id": "S04",
+      "title": "외교부 여권 최초 발급 안내",
+      "url": "https://passport.go.kr/home/kor/contents.do?menuPos=2",
+      "publicationYear": null,
+      "checkedAt": "2026-10-11",
+      "verification": "body_read",
+      "locator": "공통 구비 서류와 공동이용 확인 안내",
+      "evidenceSummary": "신청서·신분증·사진 등의 자료, 공동이용 확인에 따른 일부 제출 생략",
+      "proposedAdaptation": "가상 접수자료와 확인표 대조",
+      "limitations": [
+        "최초·재발급·미성년 등 모든 신청에 동일 조건을 적용하지 않는다."
+      ],
+      "quotation": null,
+      "imageReuse": false,
+      "pdfVisualCheck": "not_applicable"
+    },
+    {
+      "id": "S05",
+      "title": "외교부 온라인 여권 사진 안내 본문",
+      "url": "https://passport.go.kr/home/kor/onlinePhotoVerify/index.do?menuPos=35",
+      "publicationYear": null,
+      "checkedAt": "2026-10-11",
+      "verification": "body_read",
+      "locator": "본문 사진 규격과 온라인 확인 주의사항",
+      "evidenceSummary": "사진의 배경·품질·얼굴 방향 등 조건과 온라인 확인의 한계",
+      "proposedAdaptation": "선언된 속성이 있는 가상 그림 카드의 보완 사유 선택",
+      "limitations": [
+        "온라인 확인은 실제 접수 적합성을 보장하지 않는다. 실제 사진과 이미지를 복제하지 않는다."
+      ],
+      "quotation": null,
+      "imageReuse": false,
+      "pdfVisualCheck": "not_applicable"
+    },
+    {
+      "id": "S06",
+      "title": "금천구 정보공개 업무처리절차",
+      "url": "https://www.geumcheon.go.kr/portal/contents.do?key=248",
+      "publicationYear": null,
+      "checkedAt": "2026-10-11",
+      "verification": "body_read",
+      "locator": "접수·이송·처리·통지 흐름 본문",
+      "evidenceSummary": "접수창구와 정보 보유·처리부서 분리, 이송과 검토 및 통지",
+      "proposedAdaptation": "문서 보유부서 확인과 전문 담당자 협조",
+      "limitations": [
+        "접수 담당의 단독 결정으로 각색하지 않는다. 최신 법정 기한을 확인한 자료로 취급하지 않는다."
+      ],
+      "quotation": null,
+      "imageReuse": false,
+      "pdfVisualCheck": "not_applicable"
+    },
+    {
+      "id": "S07",
+      "title": "서울시 2023 정보공개 업무 매뉴얼",
+      "url": "https://tbs.seoul.kr/common/images/info/info-guide_seoul_2023.pdf",
+      "publicationYear": "2023",
+      "checkedAt": "2026-10-11",
+      "verification": "body_read",
+      "locator": "인쇄 176쪽 / PDF 182페이지",
+      "evidenceSummary": "민원 회신문서의 개인 식별 부분을 제외한 공개 권고 사례",
+      "proposedAdaptation": "필수 정보를 유지하고 검토표에 지정된 보호 부분만 가리는 퍼즐",
+      "limitations": [
+        "2023 사례집이다. 2026년 현행 법령 또는 모든 이름의 비공개 규칙으로 사용하지 않는다."
+      ],
+      "quotation": null,
+      "imageReuse": false,
+      "pdfVisualCheck": "not_completed"
+    },
+    {
+      "id": "S08",
+      "title": "구리시 시민의 소리 · 여권 창구 응대 관련 검색 후보",
+      "url": "https://guri.go.kr/mayor/selectBbsNttView.do?bbsNo=482&integrDeptCode=&key=1165&nttNo=108476&pageIndex=368&searchCnd=SJ&searchCtgry=&searchKrwd=",
+      "checkedAt": "2026-10-11",
+      "verification": "search_snippet_only",
+      "publicationYear": null,
+      "evidenceSummary": "검색 결과에 응대 불편과 답변이 나타났으나 원문 재열람에 실패했다.",
+      "proposedAdaptation": null,
+      "limitations": [
+        "날짜·개별 민원 사실·원문 표현을 확인한 출처로 인용하지 않는다."
+      ],
+      "quotation": null,
+      "imageReuse": false
+    }
+  ]
+}
