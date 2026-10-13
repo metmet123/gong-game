@@ -1,0 +1,11 @@
+const fs=require('fs'),path=require('path'),cp=require('child_process'),BASE='0376a961c7736a3f34c69acc8f3f8a179fc6abd5';
+const root=path.resolve(__dirname,'..');
+const baseline=cp.execFileSync('git',['show',BASE+':index.html'],{cwd:root,maxBuffer:10*1024*1024}).toString('utf8');
+const engine=fs.readFileSync(path.join(root,'budget/engine.js'),'utf8'),levels=fs.readFileSync(path.join(root,'budget/levels.json'),'utf8'),ui=fs.readFileSync(path.join(root,'budget/ui.js'),'utf8');
+const block='\n<!-- budget-expansion:start; base '+BASE+' -->\n<script>\n'+engine+'\nwindow.BudgetLevels='+levels+';\n'+ui+'\n</script>\n<!-- budget-expansion:end -->\n';
+if(/<\/script/i.test(engine+levels+ui))throw Error('Unsafe inline script terminator');
+fs.writeFileSync(path.join(root,'index.html'),baseline.replace('</body>',block+'</body>'));
+const hash=require('crypto').createHash('sha256').update(fs.readFileSync(path.join(root,'index.html'))).digest('hex').slice(0,10);
+const sw=cp.execFileSync('git',['show',BASE+':sw.js'],{cwd:root}).toString('utf8');
+fs.writeFileSync(path.join(root,'sw.js'),sw.replaceAll('9fd2c7f9c8',hash));
+console.log('Budget expansion built; upstream HTML preserved outside expansion block.');

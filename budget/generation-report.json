@@ -1,0 +1,143 @@
+[
+  {
+    "id": "sumgrid",
+    "diff": "normal",
+    "title": "영수증이 두 번 왔어요",
+    "tries": 2221,
+    "solutions": 1,
+    "withoutEvidence": 2,
+    "ablation": {
+      "duplicate": 2
+    }
+  },
+  {
+    "id": "sumgrid",
+    "diff": "normal",
+    "title": "금액은 맞는데 과목이 달라요",
+    "tries": 201,
+    "solutions": 1,
+    "withoutEvidence": 2,
+    "ablation": {
+      "topic": 2
+    }
+  },
+  {
+    "id": "sumgrid",
+    "diff": "normal",
+    "title": "도장 전에는 이번 집계에서 빼요",
+    "tries": 1446,
+    "solutions": 1,
+    "withoutEvidence": 2,
+    "ablation": {
+      "approval": 2
+    }
+  },
+  {
+    "id": "sumgrid",
+    "diff": "hard",
+    "title": "최종본이 셋입니다",
+    "tries": 8537,
+    "solutions": 1,
+    "withoutEvidence": 4,
+    "ablation": {
+      "version": 2,
+      "approval": 2
+    }
+  },
+  {
+    "id": "sumgrid",
+    "diff": "hard",
+    "title": "지급액과 지출액은 달라요",
+    "tries": 1,
+    "solutions": 1,
+    "withoutEvidence": 2,
+    "ablation": {
+      "basis": 2
+    }
+  },
+  {
+    "id": "sumgrid",
+    "diff": "hard",
+    "title": "올해 쓴 돈만 마감하세요",
+    "tries": 23755,
+    "solutions": 1,
+    "withoutEvidence": 3,
+    "ablation": {
+      "period": 2,
+      "fund": 2
+    }
+  },
+  {
+    "id": "queens",
+    "diff": "normal",
+    "title": "이 돈은 이 용도로만",
+    "tries": 1,
+    "solutions": 1,
+    "withoutEvidence": 2,
+    "ablation": {
+      "topic": 2
+    }
+  },
+  {
+    "id": "queens",
+    "diff": "normal",
+    "title": "잔액이 남아도 들어갈 수는 없어요",
+    "tries": 228,
+    "solutions": 1,
+    "withoutEvidence": 7,
+    "ablation": {
+      "amount": 2,
+      "fund": 3
+    }
+  },
+  {
+    "id": "queens",
+    "diff": "normal",
+    "title": "보조금이 오는 달",
+    "tries": 5,
+    "solutions": 1,
+    "withoutEvidence": 6,
+    "ablation": {
+      "time": 6
+    }
+  },
+  {
+    "id": "queens",
+    "diff": "hard",
+    "title": "돈은 있는데 용도가 달라요",
+    "tries": 40577,
+    "solutions": 1,
+    "withoutEvidence": 7,
+    "ablation": {
+      "topic": 2,
+      "amount": 2,
+      "fund": 2
+    }
+  },
+  {
+    "id": "queens",
+    "diff": "hard",
+    "title": "결재 끝난 뒤에 배정하세요",
+    "tries": 13784,
+    "solutions": 1,
+    "withoutEvidence": 6,
+    "ablation": {
+      "fund": 2,
+      "time": 2,
+      "approval": 2
+    }
+  },
+  {
+    "id": "queens",
+    "diff": "hard",
+    "title": "먼저 끝나야 시작합니다",
+    "tries": 39890,
+    "solutions": 1,
+    "withoutEvidence": 4,
+    "ablation": {
+      "fund": 2,
+      "time": 2,
+      "dependency": 2
+    }
+  }
+]

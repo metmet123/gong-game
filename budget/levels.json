@@ -1,0 +1,3175 @@
+{
+  "sumgrid": {
+    "normal": [
+      {
+        "budget": true,
+        "kind": "sumgrid",
+        "n": 4,
+        "g": [
+          [
+            60,
+            50,
+            80,
+            60
+          ],
+          [
+            60,
+            80,
+            30,
+            60
+          ],
+          [
+            60,
+            30,
+            40,
+            50
+          ],
+          [
+            20,
+            20,
+            60,
+            80
+          ]
+        ],
+        "title": "영수증이 두 번 왔어요",
+        "phase": "지출",
+        "ruleText": "같은 증빙은 한 번만 집계해요. 승인·과목은 이 문제에서 모두 맞아요.",
+        "rules": [
+          "duplicate"
+        ],
+        "year": 2026,
+        "cutoff": "2026-04-30",
+        "unit": "만 원",
+        "rows": [
+          "인쇄",
+          "교육",
+          "시설",
+          "행사"
+        ],
+        "cols": [
+          "1월",
+          "2월",
+          "3월",
+          "4월"
+        ],
+        "rs": [
+          190,
+          60,
+          140,
+          160
+        ],
+        "cs": [
+          140,
+          80,
+          140,
+          190
+        ],
+        "records": [
+          {
+            "amount": 60,
+            "receipt": "증-1",
+            "revision": 1,
+            "topic": "사무관리비",
+            "expectedTopic": "사무관리비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 50,
+            "receipt": "증-2",
+            "revision": 1,
+            "topic": "사무관리비",
+            "expectedTopic": "사무관리비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 80,
+            "receipt": "증-3",
+            "revision": 1,
+            "topic": "사무관리비",
+            "expectedTopic": "사무관리비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 60,
+            "receipt": "증-4",
+            "revision": 1,
+            "topic": "사무관리비",
+            "expectedTopic": "사무관리비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 60,
+            "receipt": "증-5",
+            "revision": 1,
+            "topic": "행사운영비",
+            "expectedTopic": "행사운영비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 80,
+            "receipt": "증-6",
+            "revision": 1,
+            "topic": "행사운영비",
+            "expectedTopic": "행사운영비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 30,
+            "receipt": "증-7",
+            "revision": 1,
+            "topic": "행사운영비",
+            "expectedTopic": "행사운영비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 60,
+            "receipt": "증-9",
+            "revision": 1,
+            "topic": "행사운영비",
+            "expectedTopic": "행사운영비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 60,
+            "receipt": "증-9",
+            "revision": 1,
+            "topic": "시설비",
+            "expectedTopic": "시설비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 30,
+            "receipt": "증-10",
+            "revision": 1,
+            "topic": "시설비",
+            "expectedTopic": "시설비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 40,
+            "receipt": "증-11",
+            "revision": 1,
+            "topic": "시설비",
+            "expectedTopic": "시설비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 50,
+            "receipt": "증-12",
+            "revision": 1,
+            "topic": "시설비",
+            "expectedTopic": "시설비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 20,
+            "receipt": "증-13",
+            "revision": 1,
+            "topic": "재료비",
+            "expectedTopic": "재료비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 20,
+            "receipt": "증-14",
+            "revision": 1,
+            "topic": "재료비",
+            "expectedTopic": "재료비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 60,
+            "receipt": "증-15",
+            "revision": 1,
+            "topic": "재료비",
+            "expectedTopic": "재료비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 80,
+            "receipt": "증-16",
+            "revision": 1,
+            "topic": "재료비",
+            "expectedTopic": "재료비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          }
+        ],
+        "witness": {
+          "m": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "selected": 0
+        },
+        "audit": {
+          "solutions": 1,
+          "withoutEvidence": 2,
+          "ablation": {
+            "duplicate": 2
+          }
+        },
+        "brief": "행·열 합계와 증빙 조건을 함께 맞춰요. 제외는 이번 집계에서만 빼는 표시예요.",
+        "hints": [
+          "같은 증빙은 한 번만 집계해요. 승인·과목은 이 문제에서 모두 맞아요.",
+          "금액이 같아도 증빙 번호·승인·과목이 다를 수 있어요. 합계와 선택한 칸의 증빙을 번갈아 보세요."
+        ]
+      },
+      {
+        "budget": true,
+        "kind": "sumgrid",
+        "n": 4,
+        "g": [
+          [
+            20,
+            30,
+            40,
+            40
+          ],
+          [
+            50,
+            80,
+            40,
+            60
+          ],
+          [
+            90,
+            60,
+            40,
+            40
+          ],
+          [
+            90,
+            80,
+            40,
+            20
+          ]
+        ],
+        "title": "금액은 맞는데 과목이 달라요",
+        "phase": "지출",
+        "ruleText": "칸 아래 사업의 예산과목에 맞는 증빙만 남겨요.",
+        "rules": [
+          "topic"
+        ],
+        "year": 2026,
+        "cutoff": "2026-04-30",
+        "unit": "만 원",
+        "rows": [
+          "인쇄",
+          "교육",
+          "시설",
+          "행사"
+        ],
+        "cols": [
+          "1월",
+          "2월",
+          "3월",
+          "4월"
+        ],
+        "rs": [
+          60,
+          80,
+          100,
+          210
+        ],
+        "cs": [
+          110,
+          220,
+          80,
+          40
+        ],
+        "records": [
+          {
+            "amount": 20,
+            "receipt": "증-1",
+            "revision": 1,
+            "topic": "사무관리비",
+            "expectedTopic": "사무관리비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 30,
+            "receipt": "증-2",
+            "revision": 1,
+            "topic": "사무관리비",
+            "expectedTopic": "사무관리비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 40,
+            "receipt": "증-3",
+            "revision": 1,
+            "topic": "사무관리비",
+            "expectedTopic": "사무관리비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 40,
+            "receipt": "증-4",
+            "revision": 1,
+            "topic": "사무관리비",
+            "expectedTopic": "사무관리비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 50,
+            "receipt": "증-5",
+            "revision": 1,
+            "topic": "행사운영비",
+            "expectedTopic": "행사운영비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 80,
+            "receipt": "증-6",
+            "revision": 1,
+            "topic": "행사운영비",
+            "expectedTopic": "행사운영비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 40,
+            "receipt": "증-7",
+            "revision": 1,
+            "topic": "행사운영비",
+            "expectedTopic": "행사운영비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 60,
+            "receipt": "증-8",
+            "revision": 1,
+            "topic": "행사운영비",
+            "expectedTopic": "행사운영비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 90,
+            "receipt": "증-9",
+            "revision": 1,
+            "topic": "시설비",
+            "expectedTopic": "시설비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 60,
+            "receipt": "증-10",
+            "revision": 1,
+            "topic": "시설비",
+            "expectedTopic": "시설비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 40,
+            "receipt": "증-11",
+            "revision": 1,
+            "topic": "재료비",
+            "expectedTopic": "시설비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 40,
+            "receipt": "증-12",
+            "revision": 1,
+            "topic": "시설비",
+            "expectedTopic": "시설비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 90,
+            "receipt": "증-13",
+            "revision": 1,
+            "topic": "재료비",
+            "expectedTopic": "재료비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 80,
+            "receipt": "증-14",
+            "revision": 1,
+            "topic": "재료비",
+            "expectedTopic": "재료비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 40,
+            "receipt": "증-15",
+            "revision": 1,
+            "topic": "재료비",
+            "expectedTopic": "재료비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 20,
+            "receipt": "증-16",
+            "revision": 1,
+            "topic": "재료비",
+            "expectedTopic": "재료비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          }
+        ],
+        "witness": {
+          "m": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "selected": 0
+        },
+        "audit": {
+          "solutions": 1,
+          "withoutEvidence": 2,
+          "ablation": {
+            "topic": 2
+          }
+        },
+        "brief": "행·열 합계와 증빙 조건을 함께 맞춰요. 제외는 이번 집계에서만 빼는 표시예요.",
+        "hints": [
+          "칸 아래 사업의 예산과목에 맞는 증빙만 남겨요.",
+          "금액이 같아도 증빙 번호·승인·과목이 다를 수 있어요. 합계와 선택한 칸의 증빙을 번갈아 보세요."
+        ]
+      },
+      {
+        "budget": true,
+        "kind": "sumgrid",
+        "n": 4,
+        "g": [
+          [
+            20,
+            90,
+            20,
+            60
+          ],
+          [
+            30,
+            20,
+            50,
+            50
+          ],
+          [
+            20,
+            80,
+            60,
+            40
+          ],
+          [
+            20,
+            20,
+            50,
+            50
+          ]
+        ],
+        "title": "도장 전에는 이번 집계에서 빼요",
+        "phase": "지출",
+        "ruleText": "기준일까지 승인 완료된 증빙만 이번 지출에 넣어요. 대기 건을 취소하는 것은 아니에요.",
+        "rules": [
+          "approval"
+        ],
+        "year": 2026,
+        "cutoff": "2026-04-30",
+        "unit": "만 원",
+        "rows": [
+          "인쇄",
+          "교육",
+          "시설",
+          "행사"
+        ],
+        "cols": [
+          "1월",
+          "2월",
+          "3월",
+          "4월"
+        ],
+        "rs": [
+          100,
+          100,
+          60,
+          70
+        ],
+        "cs": [
+          50,
+          40,
+          130,
+          110
+        ],
+        "records": [
+          {
+            "amount": 20,
+            "receipt": "증-1",
+            "revision": 1,
+            "topic": "사무관리비",
+            "expectedTopic": "사무관리비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 90,
+            "receipt": "증-2",
+            "revision": 1,
+            "topic": "사무관리비",
+            "expectedTopic": "사무관리비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 20,
+            "receipt": "증-3",
+            "revision": 1,
+            "topic": "사무관리비",
+            "expectedTopic": "사무관리비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 60,
+            "receipt": "증-4",
+            "revision": 1,
+            "topic": "사무관리비",
+            "expectedTopic": "사무관리비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 30,
+            "receipt": "증-5",
+            "revision": 1,
+            "topic": "행사운영비",
+            "expectedTopic": "행사운영비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 20,
+            "receipt": "증-6",
+            "revision": 1,
+            "topic": "행사운영비",
+            "expectedTopic": "행사운영비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 50,
+            "receipt": "증-7",
+            "revision": 1,
+            "topic": "행사운영비",
+            "expectedTopic": "행사운영비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 50,
+            "receipt": "증-8",
+            "revision": 1,
+            "topic": "행사운영비",
+            "expectedTopic": "행사운영비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 20,
+            "receipt": "증-9",
+            "revision": 1,
+            "topic": "시설비",
+            "expectedTopic": "시설비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 80,
+            "receipt": "증-10",
+            "revision": 1,
+            "topic": "시설비",
+            "expectedTopic": "시설비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 60,
+            "receipt": "증-11",
+            "revision": 1,
+            "topic": "시설비",
+            "expectedTopic": "시설비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 40,
+            "receipt": "증-12",
+            "revision": 1,
+            "topic": "시설비",
+            "expectedTopic": "시설비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 20,
+            "receipt": "증-13",
+            "revision": 1,
+            "topic": "재료비",
+            "expectedTopic": "재료비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 20,
+            "receipt": "증-14",
+            "revision": 1,
+            "topic": "재료비",
+            "expectedTopic": "재료비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 50,
+            "receipt": "증-15",
+            "revision": 1,
+            "topic": "재료비",
+            "expectedTopic": "재료비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 50,
+            "receipt": "증-16",
+            "revision": 1,
+            "topic": "재료비",
+            "expectedTopic": "재료비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": false,
+            "approvedAt": "2026-05-02",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          }
+        ],
+        "witness": {
+          "m": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "selected": 0
+        },
+        "audit": {
+          "solutions": 1,
+          "withoutEvidence": 2,
+          "ablation": {
+            "approval": 2
+          }
+        },
+        "brief": "행·열 합계와 증빙 조건을 함께 맞춰요. 제외는 이번 집계에서만 빼는 표시예요.",
+        "hints": [
+          "기준일까지 승인 완료된 증빙만 이번 지출에 넣어요. 대기 건을 취소하는 것은 아니에요.",
+          "금액이 같아도 증빙 번호·승인·과목이 다를 수 있어요. 합계와 선택한 칸의 증빙을 번갈아 보세요."
+        ]
+      }
+    ],
+    "hard": [
+      {
+        "budget": true,
+        "kind": "sumgrid",
+        "n": 4,
+        "g": [
+          [
+            90,
+            20,
+            90,
+            20
+          ],
+          [
+            90,
+            90,
+            90,
+            50
+          ],
+          [
+            90,
+            90,
+            30,
+            90
+          ],
+          [
+            60,
+            90,
+            50,
+            90
+          ]
+        ],
+        "title": "최종본이 셋입니다",
+        "phase": "지출",
+        "ruleText": "같은 증빙의 승인 완료본 중 최신 유효본만 집계해요. 날짜가 최신인 미승인 초안은 제외해요.",
+        "rules": [
+          "version",
+          "approval"
+        ],
+        "year": 2026,
+        "cutoff": "2026-04-30",
+        "unit": "만 원",
+        "rows": [
+          "인쇄",
+          "교육",
+          "시설",
+          "행사"
+        ],
+        "cols": [
+          "1월",
+          "2월",
+          "3월",
+          "4월"
+        ],
+        "rs": [
+          110,
+          140,
+          180,
+          90
+        ],
+        "cs": [
+          180,
+          90,
+          90,
+          160
+        ],
+        "records": [
+          {
+            "amount": 90,
+            "receipt": "증-1",
+            "revision": 1,
+            "topic": "사무관리비",
+            "expectedTopic": "사무관리비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 20,
+            "receipt": "증-16",
+            "revision": 3,
+            "topic": "사무관리비",
+            "expectedTopic": "사무관리비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": false,
+            "approvedAt": "2026-05-02",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "가장 최근 초안이지만 집계 기준일에 미승인"
+          },
+          {
+            "amount": 90,
+            "receipt": "증-16",
+            "revision": 1,
+            "topic": "사무관리비",
+            "expectedTopic": "사무관리비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-02-10",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 20,
+            "receipt": "증-4",
+            "revision": 1,
+            "topic": "사무관리비",
+            "expectedTopic": "사무관리비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 90,
+            "receipt": "증-5",
+            "revision": 1,
+            "topic": "행사운영비",
+            "expectedTopic": "행사운영비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 90,
+            "receipt": "증-6",
+            "revision": 1,
+            "topic": "행사운영비",
+            "expectedTopic": "행사운영비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 90,
+            "receipt": "증-7",
+            "revision": 1,
+            "topic": "행사운영비",
+            "expectedTopic": "행사운영비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 50,
+            "receipt": "증-8",
+            "revision": 1,
+            "topic": "행사운영비",
+            "expectedTopic": "행사운영비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 90,
+            "receipt": "증-9",
+            "revision": 1,
+            "topic": "시설비",
+            "expectedTopic": "시설비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 90,
+            "receipt": "증-10",
+            "revision": 1,
+            "topic": "시설비",
+            "expectedTopic": "시설비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 30,
+            "receipt": "증-11",
+            "revision": 1,
+            "topic": "시설비",
+            "expectedTopic": "시설비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 90,
+            "receipt": "증-12",
+            "revision": 1,
+            "topic": "시설비",
+            "expectedTopic": "시설비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 60,
+            "receipt": "증-13",
+            "revision": 1,
+            "topic": "재료비",
+            "expectedTopic": "재료비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 90,
+            "receipt": "증-14",
+            "revision": 1,
+            "topic": "재료비",
+            "expectedTopic": "재료비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": false,
+            "approvedAt": "2026-05-02",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 50,
+            "receipt": "증-15",
+            "revision": 1,
+            "topic": "재료비",
+            "expectedTopic": "재료비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 90,
+            "receipt": "증-16",
+            "revision": 2,
+            "topic": "재료비",
+            "expectedTopic": "재료비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          }
+        ],
+        "witness": {
+          "m": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "selected": 0
+        },
+        "audit": {
+          "solutions": 1,
+          "withoutEvidence": 4,
+          "ablation": {
+            "version": 2,
+            "approval": 2
+          }
+        },
+        "brief": "행·열 합계와 증빙 조건을 함께 맞춰요. 제외는 이번 집계에서만 빼는 표시예요.",
+        "hints": [
+          "같은 증빙의 승인 완료본 중 최신 유효본만 집계해요. 날짜가 최신인 미승인 초안은 제외해요.",
+          "금액이 같아도 증빙 번호·승인·과목이 다를 수 있어요. 합계와 선택한 칸의 증빙을 번갈아 보세요."
+        ]
+      },
+      {
+        "budget": true,
+        "kind": "sumgrid",
+        "n": 4,
+        "g": [
+          [
+            100,
+            90,
+            10,
+            40
+          ],
+          [
+            100,
+            90,
+            10,
+            40
+          ],
+          [
+            40,
+            80,
+            50,
+            60
+          ],
+          [
+            30,
+            80,
+            90,
+            60
+          ]
+        ],
+        "title": "지급액과 지출액은 달라요",
+        "phase": "지출",
+        "ruleText": "지출결의 총액을 집계해요. 계좌 지급·공제 명세는 대조용이며 다시 더하지 않아요.",
+        "rules": [
+          "basis"
+        ],
+        "year": 2026,
+        "cutoff": "2026-04-30",
+        "unit": "만 원",
+        "rows": [
+          "인쇄",
+          "교육",
+          "시설",
+          "행사"
+        ],
+        "cols": [
+          "1월",
+          "2월",
+          "3월",
+          "4월"
+        ],
+        "rs": [
+          140,
+          100,
+          100,
+          30
+        ],
+        "cs": [
+          170,
+          90,
+          10,
+          100
+        ],
+        "records": [
+          {
+            "amount": 100,
+            "receipt": "증-1",
+            "revision": 1,
+            "topic": "사무관리비",
+            "expectedTopic": "사무관리비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "지출결의 100만 원 = 지급 90만 원 + 공제 10만 원. 명세는 대조용"
+          },
+          {
+            "amount": 90,
+            "receipt": "증-1",
+            "revision": 1,
+            "topic": "사무관리비",
+            "expectedTopic": "사무관리비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "계좌 지급",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 10,
+            "receipt": "증-1",
+            "revision": 1,
+            "topic": "사무관리비",
+            "expectedTopic": "사무관리비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "공제 명세",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 40,
+            "receipt": "증-4",
+            "revision": 1,
+            "topic": "사무관리비",
+            "expectedTopic": "사무관리비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 100,
+            "receipt": "증-5",
+            "revision": 1,
+            "topic": "행사운영비",
+            "expectedTopic": "행사운영비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 90,
+            "receipt": "증-6",
+            "revision": 1,
+            "topic": "행사운영비",
+            "expectedTopic": "행사운영비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 10,
+            "receipt": "증-7",
+            "revision": 1,
+            "topic": "행사운영비",
+            "expectedTopic": "행사운영비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 40,
+            "receipt": "증-8",
+            "revision": 1,
+            "topic": "행사운영비",
+            "expectedTopic": "행사운영비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 40,
+            "receipt": "증-9",
+            "revision": 1,
+            "topic": "시설비",
+            "expectedTopic": "시설비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 80,
+            "receipt": "증-10",
+            "revision": 1,
+            "topic": "시설비",
+            "expectedTopic": "시설비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 50,
+            "receipt": "증-11",
+            "revision": 1,
+            "topic": "시설비",
+            "expectedTopic": "시설비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 60,
+            "receipt": "증-12",
+            "revision": 1,
+            "topic": "시설비",
+            "expectedTopic": "시설비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 30,
+            "receipt": "증-13",
+            "revision": 1,
+            "topic": "재료비",
+            "expectedTopic": "재료비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 80,
+            "receipt": "증-14",
+            "revision": 1,
+            "topic": "재료비",
+            "expectedTopic": "재료비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 90,
+            "receipt": "증-15",
+            "revision": 1,
+            "topic": "재료비",
+            "expectedTopic": "재료비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 60,
+            "receipt": "증-16",
+            "revision": 1,
+            "topic": "재료비",
+            "expectedTopic": "재료비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          }
+        ],
+        "witness": {
+          "m": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "selected": 0
+        },
+        "audit": {
+          "solutions": 1,
+          "withoutEvidence": 2,
+          "ablation": {
+            "basis": 2
+          }
+        },
+        "brief": "행·열 합계와 증빙 조건을 함께 맞춰요. 제외는 이번 집계에서만 빼는 표시예요.",
+        "hints": [
+          "지출결의 총액을 집계해요. 계좌 지급·공제 명세는 대조용이며 다시 더하지 않아요.",
+          "금액이 같아도 증빙 번호·승인·과목이 다를 수 있어요. 합계와 선택한 칸의 증빙을 번갈아 보세요."
+        ]
+      },
+      {
+        "budget": true,
+        "kind": "sumgrid",
+        "n": 4,
+        "g": [
+          [
+            50,
+            90,
+            60,
+            90
+          ],
+          [
+            30,
+            90,
+            30,
+            90
+          ],
+          [
+            60,
+            60,
+            30,
+            80
+          ],
+          [
+            20,
+            90,
+            90,
+            90
+          ]
+        ],
+        "title": "올해 쓴 돈만 마감하세요",
+        "phase": "결산",
+        "ruleText": "2026년 지출과 지정 재원이 맞는 기록만 남겨요. 이월·반납은 지출에 섞지 않아요.",
+        "rules": [
+          "period",
+          "fund"
+        ],
+        "year": 2026,
+        "cutoff": "2026-04-30",
+        "unit": "만 원",
+        "rows": [
+          "인쇄",
+          "교육",
+          "시설",
+          "행사"
+        ],
+        "cols": [
+          "1월",
+          "2월",
+          "3월",
+          "4월"
+        ],
+        "rs": [
+          150,
+          120,
+          170,
+          200
+        ],
+        "cs": [
+          50,
+          240,
+          180,
+          170
+        ],
+        "records": [
+          {
+            "amount": 50,
+            "receipt": "증-1",
+            "revision": 1,
+            "topic": "사무관리비",
+            "expectedTopic": "사무관리비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2025,
+            "category": "지난 연도 지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 90,
+            "receipt": "증-2",
+            "revision": 1,
+            "topic": "사무관리비",
+            "expectedTopic": "사무관리비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 60,
+            "receipt": "증-3",
+            "revision": 1,
+            "topic": "사무관리비",
+            "expectedTopic": "사무관리비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 90,
+            "receipt": "증-4",
+            "revision": 1,
+            "topic": "사무관리비",
+            "expectedTopic": "사무관리비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 30,
+            "receipt": "증-5",
+            "revision": 1,
+            "topic": "행사운영비",
+            "expectedTopic": "행사운영비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 90,
+            "receipt": "증-6",
+            "revision": 1,
+            "topic": "행사운영비",
+            "expectedTopic": "행사운영비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 30,
+            "receipt": "증-7",
+            "revision": 1,
+            "topic": "행사운영비",
+            "expectedTopic": "행사운영비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 90,
+            "receipt": "증-8",
+            "revision": 1,
+            "topic": "행사운영비",
+            "expectedTopic": "행사운영비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2025,
+            "category": "지난 연도 지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 60,
+            "receipt": "증-9",
+            "revision": 1,
+            "topic": "시설비",
+            "expectedTopic": "시설비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 60,
+            "receipt": "증-10",
+            "revision": 1,
+            "topic": "시설비",
+            "expectedTopic": "시설비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 30,
+            "receipt": "증-11",
+            "revision": 1,
+            "topic": "시설비",
+            "expectedTopic": "시설비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 80,
+            "receipt": "증-12",
+            "revision": 1,
+            "topic": "시설비",
+            "expectedTopic": "시설비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 20,
+            "receipt": "증-13",
+            "revision": 1,
+            "topic": "재료비",
+            "expectedTopic": "재료비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 90,
+            "receipt": "증-14",
+            "revision": 1,
+            "topic": "재료비",
+            "expectedTopic": "재료비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 90,
+            "receipt": "증-15",
+            "revision": 1,
+            "topic": "재료비",
+            "expectedTopic": "재료비",
+            "fund": "구비",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          },
+          {
+            "amount": 90,
+            "receipt": "증-16",
+            "revision": 1,
+            "topic": "재료비",
+            "expectedTopic": "재료비",
+            "fund": "보조금",
+            "expectedFund": "구비",
+            "approved": true,
+            "approvedAt": "2026-03-20",
+            "year": 2026,
+            "category": "지출",
+            "basis": "지출결의",
+            "note": "사업·금액을 확인한 승인 증빙"
+          }
+        ],
+        "witness": {
+          "m": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "selected": 0
+        },
+        "audit": {
+          "solutions": 1,
+          "withoutEvidence": 3,
+          "ablation": {
+            "period": 2,
+            "fund": 2
+          }
+        },
+        "closing": {
+          "budget": 740,
+          "carry": 60,
+          "refund": 20,
+          "balance": 20
+        },
+        "brief": "행·열 합계와 증빙 조건을 함께 맞춰요. 제외는 이번 집계에서만 빼는 표시예요.",
+        "hints": [
+          "2026년 지출과 지정 재원이 맞는 기록만 남겨요. 이월·반납은 지출에 섞지 않아요.",
+          "금액이 같아도 증빙 번호·승인·과목이 다를 수 있어요. 합계와 선택한 칸의 증빙을 번갈아 보세요."
+        ]
+      }
+    ]
+  },
+  "queens": {
+    "normal": [
+      {
+        "budget": true,
+        "kind": "queens",
+        "n": 5,
+        "reg": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          3,
+          1,
+          1,
+          2,
+          0,
+          3,
+          1,
+          1,
+          2,
+          3,
+          3,
+          1,
+          1,
+          2,
+          3,
+          3,
+          4,
+          4
+        ],
+        "projects": [
+          {
+            "name": "생활 안내",
+            "short": "생활",
+            "topic": "행사운영비",
+            "cost": 4,
+            "fund": "국비·구비 매칭",
+            "from": 2,
+            "to": 5,
+            "approvedMonth": 0
+          },
+          {
+            "name": "현장 조사",
+            "short": "조사",
+            "topic": "사무관리비",
+            "cost": 8,
+            "fund": "보조금",
+            "from": 4,
+            "to": 5,
+            "approvedMonth": 3
+          },
+          {
+            "name": "시설 정비",
+            "short": "시설",
+            "topic": "시설비",
+            "cost": 3,
+            "fund": "구비",
+            "from": 1,
+            "to": 4,
+            "approvedMonth": 0
+          },
+          {
+            "name": "교육 운영",
+            "short": "교육",
+            "topic": "행사운영비",
+            "cost": 3,
+            "fund": "국비·구비 매칭",
+            "from": 3,
+            "to": 4,
+            "approvedMonth": 2
+          },
+          {
+            "name": "홍보 인쇄",
+            "short": "홍보",
+            "topic": "재료비",
+            "cost": 6,
+            "fund": "보조금",
+            "from": 3,
+            "to": 5,
+            "approvedMonth": 0
+          }
+        ],
+        "buckets": [
+          {
+            "name": "A",
+            "fund": "국비·구비 매칭",
+            "topics": [
+              "행사운영비"
+            ],
+            "limit": 7,
+            "from": 2
+          },
+          {
+            "name": "B",
+            "fund": "보조금",
+            "topics": [
+              "사무관리비"
+            ],
+            "limit": 11,
+            "from": 4
+          },
+          {
+            "name": "C",
+            "fund": "구비",
+            "topics": [
+              "시설비"
+            ],
+            "limit": 4,
+            "from": 1
+          },
+          {
+            "name": "D",
+            "fund": "국비·구비 매칭",
+            "topics": [
+              "행사운영비",
+              "재료비"
+            ],
+            "limit": 4,
+            "from": 1
+          },
+          {
+            "name": "E",
+            "fund": "보조금",
+            "topics": [
+              "재료비",
+              "사무관리비"
+            ],
+            "limit": 6,
+            "from": 1
+          }
+        ],
+        "rules": [
+          "topic"
+        ],
+        "title": "이 돈은 이 용도로만",
+        "phase": "편성",
+        "ruleText": "사업 과목에 쓸 수 있는 예산 묶음에 배정해요.",
+        "dependencies": [],
+        "brief": "사업마다·월마다·예산 묶음마다 하나씩. 배정끼리는 대각선까지 붙지 않아요(가상 조정 규칙).",
+        "witness": {
+          "c": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "selected": 1
+        },
+        "audit": {
+          "solutions": 1,
+          "withoutEvidence": 2,
+          "ablation": {
+            "topic": 2
+          }
+        },
+        "hints": [
+          "사업 과목에 쓸 수 있는 예산 묶음에 배정해요.",
+          "한 사업의 가능한 칸을 좁힌 다음 같은 월·묶음의 다른 사업을 살펴보세요. 잠금 칸을 누르면 이유를 읽을 수 있어요."
+        ]
+      },
+      {
+        "budget": true,
+        "kind": "queens",
+        "n": 5,
+        "reg": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          3,
+          2,
+          2,
+          4,
+          4,
+          3,
+          3,
+          2,
+          4,
+          4,
+          3,
+          3,
+          2,
+          4,
+          4
+        ],
+        "projects": [
+          {
+            "name": "생활 안내",
+            "short": "생활",
+            "topic": "사무관리비",
+            "cost": 4,
+            "fund": "구비",
+            "from": 1,
+            "to": 3,
+            "approvedMonth": 1
+          },
+          {
+            "name": "현장 조사",
+            "short": "조사",
+            "topic": "시설비",
+            "cost": 7,
+            "fund": "구비",
+            "from": 3,
+            "to": 5,
+            "approvedMonth": 1
+          },
+          {
+            "name": "시설 정비",
+            "short": "시설",
+            "topic": "사무관리비",
+            "cost": 4,
+            "fund": "구비",
+            "from": 3,
+            "to": 4,
+            "approvedMonth": 2
+          },
+          {
+            "name": "교육 운영",
+            "short": "교육",
+            "topic": "재료비",
+            "cost": 4,
+            "fund": "보조금",
+            "from": 1,
+            "to": 2,
+            "approvedMonth": 0
+          },
+          {
+            "name": "홍보 인쇄",
+            "short": "홍보",
+            "topic": "사무관리비",
+            "cost": 5,
+            "fund": "보조금",
+            "from": 3,
+            "to": 4,
+            "approvedMonth": 3
+          }
+        ],
+        "buckets": [
+          {
+            "name": "A",
+            "fund": "구비",
+            "topics": [
+              "사무관리비"
+            ],
+            "limit": 5,
+            "from": 1
+          },
+          {
+            "name": "B",
+            "fund": "구비",
+            "topics": [
+              "시설비",
+              "재료비"
+            ],
+            "limit": 7,
+            "from": 4
+          },
+          {
+            "name": "C",
+            "fund": "구비",
+            "topics": [
+              "사무관리비",
+              "시설비"
+            ],
+            "limit": 5,
+            "from": 3
+          },
+          {
+            "name": "D",
+            "fund": "보조금",
+            "topics": [
+              "재료비",
+              "재료비"
+            ],
+            "limit": 7,
+            "from": 1
+          },
+          {
+            "name": "E",
+            "fund": "보조금",
+            "topics": [
+              "사무관리비"
+            ],
+            "limit": 6,
+            "from": 2
+          }
+        ],
+        "rules": [
+          "amount",
+          "fund"
+        ],
+        "title": "잔액이 남아도 들어갈 수는 없어요",
+        "phase": "편성",
+        "ruleText": "사업비가 한도 안에 들어가고 지정 재원이 맞아야 해요.",
+        "dependencies": [],
+        "brief": "사업마다·월마다·예산 묶음마다 하나씩. 배정끼리는 대각선까지 붙지 않아요(가상 조정 규칙).",
+        "witness": {
+          "c": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            2,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "selected": 1
+        },
+        "audit": {
+          "solutions": 1,
+          "withoutEvidence": 7,
+          "ablation": {
+            "amount": 2,
+            "fund": 3
+          }
+        },
+        "hints": [
+          "사업비가 한도 안에 들어가고 지정 재원이 맞아야 해요.",
+          "한 사업의 가능한 칸을 좁힌 다음 같은 월·묶음의 다른 사업을 살펴보세요. 잠금 칸을 누르면 이유를 읽을 수 있어요."
+        ]
+      },
+      {
+        "budget": true,
+        "kind": "queens",
+        "n": 5,
+        "reg": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          3,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          2,
+          3,
+          3,
+          4,
+          4,
+          4
+        ],
+        "projects": [
+          {
+            "name": "생활 안내",
+            "short": "생활",
+            "topic": "사무관리비",
+            "cost": 3,
+            "fund": "구비",
+            "from": 5,
+            "to": 5,
+            "approvedMonth": 1
+          },
+          {
+            "name": "현장 조사",
+            "short": "조사",
+            "topic": "사무관리비",
+            "cost": 7,
+            "fund": "구비",
+            "from": 2,
+            "to": 5,
+            "approvedMonth": 0
+          },
+          {
+            "name": "시설 정비",
+            "short": "시설",
+            "topic": "재료비",
+            "cost": 5,
+            "fund": "국비·구비 매칭",
+            "from": 2,
+            "to": 5,
+            "approvedMonth": 2
+          },
+          {
+            "name": "교육 운영",
+            "short": "교육",
+            "topic": "행사운영비",
+            "cost": 7,
+            "fund": "보조금",
+            "from": 1,
+            "to": 2,
+            "approvedMonth": 0
+          },
+          {
+            "name": "홍보 인쇄",
+            "short": "홍보",
+            "topic": "재료비",
+            "cost": 8,
+            "fund": "구비",
+            "from": 2,
+            "to": 5,
+            "approvedMonth": 0
+          }
+        ],
+        "buckets": [
+          {
+            "name": "A",
+            "fund": "구비",
+            "topics": [
+              "사무관리비",
+              "행사운영비"
+            ],
+            "limit": 6,
+            "from": 3
+          },
+          {
+            "name": "B",
+            "fund": "구비",
+            "topics": [
+              "사무관리비"
+            ],
+            "limit": 8,
+            "from": 1
+          },
+          {
+            "name": "C",
+            "fund": "국비·구비 매칭",
+            "topics": [
+              "재료비",
+              "사무관리비"
+            ],
+            "limit": 6,
+            "from": 3
+          },
+          {
+            "name": "D",
+            "fund": "보조금",
+            "topics": [
+              "행사운영비",
+              "행사운영비"
+            ],
+            "limit": 9,
+            "from": 1
+          },
+          {
+            "name": "E",
+            "fund": "구비",
+            "topics": [
+              "재료비"
+            ],
+            "limit": 11,
+            "from": 3
+          }
+        ],
+        "rules": [
+          "time"
+        ],
+        "title": "보조금이 오는 달",
+        "phase": "집행계획",
+        "ruleText": "사업의 가능 기간과 재원 사용 시작월을 함께 보세요.",
+        "dependencies": [],
+        "brief": "사업마다·월마다·예산 묶음마다 하나씩. 배정끼리는 대각선까지 붙지 않아요(가상 조정 규칙).",
+        "witness": {
+          "c": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "selected": 4
+        },
+        "audit": {
+          "solutions": 1,
+          "withoutEvidence": 6,
+          "ablation": {
+            "time": 6
+          }
+        },
+        "hints": [
+          "사업의 가능 기간과 재원 사용 시작월을 함께 보세요.",
+          "한 사업의 가능한 칸을 좁힌 다음 같은 월·묶음의 다른 사업을 살펴보세요. 잠금 칸을 누르면 이유를 읽을 수 있어요."
+        ]
+      }
+    ],
+    "hard": [
+      {
+        "budget": true,
+        "kind": "queens",
+        "n": 5,
+        "reg": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          2,
+          3,
+          4,
+          4,
+          4,
+          2,
+          3,
+          3,
+          4,
+          4,
+          2,
+          3,
+          3,
+          3,
+          4,
+          2
+        ],
+        "projects": [
+          {
+            "name": "생활 안내",
+            "short": "생활",
+            "topic": "사무관리비",
+            "cost": 2,
+            "fund": "구비",
+            "from": 2,
+            "to": 5,
+            "approvedMonth": 2
+          },
+          {
+            "name": "현장 조사",
+            "short": "조사",
+            "topic": "사무관리비",
+            "cost": 5,
+            "fund": "구비",
+            "from": 1,
+            "to": 4,
+            "approvedMonth": 0
+          },
+          {
+            "name": "시설 정비",
+            "short": "시설",
+            "topic": "사무관리비",
+            "cost": 7,
+            "fund": "국비·구비 매칭",
+            "from": 5,
+            "to": 5,
+            "approvedMonth": 1
+          },
+          {
+            "name": "교육 운영",
+            "short": "교육",
+            "topic": "행사운영비",
+            "cost": 6,
+            "fund": "보조금",
+            "from": 1,
+            "to": 5,
+            "approvedMonth": 1
+          },
+          {
+            "name": "홍보 인쇄",
+            "short": "홍보",
+            "topic": "행사운영비",
+            "cost": 6,
+            "fund": "국비·구비 매칭",
+            "from": 1,
+            "to": 5,
+            "approvedMonth": 1
+          }
+        ],
+        "buckets": [
+          {
+            "name": "A",
+            "fund": "구비",
+            "topics": [
+              "사무관리비",
+              "시설비"
+            ],
+            "limit": 4,
+            "from": 1
+          },
+          {
+            "name": "B",
+            "fund": "구비",
+            "topics": [
+              "사무관리비"
+            ],
+            "limit": 7,
+            "from": 1
+          },
+          {
+            "name": "C",
+            "fund": "국비·구비 매칭",
+            "topics": [
+              "사무관리비",
+              "재료비"
+            ],
+            "limit": 10,
+            "from": 3
+          },
+          {
+            "name": "D",
+            "fund": "보조금",
+            "topics": [
+              "행사운영비"
+            ],
+            "limit": 9,
+            "from": 1
+          },
+          {
+            "name": "E",
+            "fund": "국비·구비 매칭",
+            "topics": [
+              "행사운영비"
+            ],
+            "limit": 8,
+            "from": 3
+          }
+        ],
+        "rules": [
+          "topic",
+          "amount",
+          "fund"
+        ],
+        "title": "돈은 있는데 용도가 달라요",
+        "phase": "편성",
+        "ruleText": "용도·금액·재원이 모두 맞는 묶음을 찾아요.",
+        "dependencies": [],
+        "brief": "사업마다·월마다·예산 묶음마다 하나씩. 배정끼리는 대각선까지 붙지 않아요(가상 조정 규칙).",
+        "witness": {
+          "c": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "selected": 2
+        },
+        "audit": {
+          "solutions": 1,
+          "withoutEvidence": 7,
+          "ablation": {
+            "topic": 2,
+            "amount": 2,
+            "fund": 2
+          }
+        },
+        "hints": [
+          "용도·금액·재원이 모두 맞는 묶음을 찾아요.",
+          "한 사업의 가능한 칸을 좁힌 다음 같은 월·묶음의 다른 사업을 살펴보세요. 잠금 칸을 누르면 이유를 읽을 수 있어요."
+        ]
+      },
+      {
+        "budget": true,
+        "kind": "queens",
+        "n": 5,
+        "reg": [
+          1,
+          1,
+          0,
+          0,
+          2,
+          1,
+          1,
+          0,
+          0,
+          2,
+          3,
+          0,
+          0,
+          0,
+          2,
+          3,
+          3,
+          4,
+          4,
+          4,
+          3,
+          3,
+          4,
+          4,
+          4
+        ],
+        "projects": [
+          {
+            "name": "생활 안내",
+            "short": "생활",
+            "topic": "행사운영비",
+            "cost": 8,
+            "fund": "구비",
+            "from": 3,
+            "to": 5,
+            "approvedMonth": 0
+          },
+          {
+            "name": "현장 조사",
+            "short": "조사",
+            "topic": "재료비",
+            "cost": 4,
+            "fund": "보조금",
+            "from": 2,
+            "to": 4,
+            "approvedMonth": 0
+          },
+          {
+            "name": "시설 정비",
+            "short": "시설",
+            "topic": "사무관리비",
+            "cost": 8,
+            "fund": "보조금",
+            "from": 1,
+            "to": 5,
+            "approvedMonth": 3
+          },
+          {
+            "name": "교육 운영",
+            "short": "교육",
+            "topic": "재료비",
+            "cost": 8,
+            "fund": "보조금",
+            "from": 1,
+            "to": 4,
+            "approvedMonth": 0
+          },
+          {
+            "name": "홍보 인쇄",
+            "short": "홍보",
+            "topic": "시설비",
+            "cost": 5,
+            "fund": "보조금",
+            "from": 1,
+            "to": 5,
+            "approvedMonth": 1
+          }
+        ],
+        "buckets": [
+          {
+            "name": "A",
+            "fund": "구비",
+            "topics": [
+              "행사운영비"
+            ],
+            "limit": 8,
+            "from": 2
+          },
+          {
+            "name": "B",
+            "fund": "보조금",
+            "topics": [
+              "재료비",
+              "행사운영비"
+            ],
+            "limit": 4,
+            "from": 1
+          },
+          {
+            "name": "C",
+            "fund": "보조금",
+            "topics": [
+              "사무관리비"
+            ],
+            "limit": 9,
+            "from": 5
+          },
+          {
+            "name": "D",
+            "fund": "보조금",
+            "topics": [
+              "재료비",
+              "사무관리비"
+            ],
+            "limit": 10,
+            "from": 1
+          },
+          {
+            "name": "E",
+            "fund": "보조금",
+            "topics": [
+              "시설비",
+              "사무관리비"
+            ],
+            "limit": 7,
+            "from": 1
+          }
+        ],
+        "rules": [
+          "fund",
+          "time",
+          "approval"
+        ],
+        "title": "결재 끝난 뒤에 배정하세요",
+        "phase": "집행계획",
+        "ruleText": "가상 배정 규칙: 전월 말까지 승인된 사업만 다음 달에 배정해요.",
+        "dependencies": [],
+        "brief": "사업마다·월마다·예산 묶음마다 하나씩. 배정끼리는 대각선까지 붙지 않아요(가상 조정 규칙).",
+        "witness": {
+          "c": [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "selected": 3
+        },
+        "audit": {
+          "solutions": 1,
+          "withoutEvidence": 6,
+          "ablation": {
+            "fund": 2,
+            "time": 2,
+            "approval": 2
+          }
+        },
+        "hints": [
+          "가상 배정 규칙: 전월 말까지 승인된 사업만 다음 달에 배정해요.",
+          "한 사업의 가능한 칸을 좁힌 다음 같은 월·묶음의 다른 사업을 살펴보세요. 잠금 칸을 누르면 이유를 읽을 수 있어요."
+        ]
+      },
+      {
+        "budget": true,
+        "kind": "queens",
+        "n": 5,
+        "reg": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4,
+          1,
+          1,
+          1,
+          2,
+          4,
+          4,
+          3,
+          3,
+          4,
+          4,
+          4,
+          3,
+          3,
+          4,
+          4,
+          4,
+          3,
+          3
+        ],
+        "projects": [
+          {
+            "name": "생활 안내",
+            "short": "생활",
+            "topic": "시설비",
+            "cost": 2,
+            "fund": "국비·구비 매칭",
+            "from": 1,
+            "to": 5,
+            "approvedMonth": 1
+          },
+          {
+            "name": "현장 조사",
+            "short": "조사",
+            "topic": "재료비",
+            "cost": 3,
+            "fund": "국비·구비 매칭",
+            "from": 3,
+            "to": 4,
+            "approvedMonth": 1
+          },
+          {
+            "name": "시설 정비",
+            "short": "시설",
+            "topic": "행사운영비",
+            "cost": 7,
+            "fund": "국비·구비 매칭",
+            "from": 1,
+            "to": 2,
+            "approvedMonth": 0
+          },
+          {
+            "name": "교육 운영",
+            "short": "교육",
+            "topic": "시설비",
+            "cost": 5,
+            "fund": "국비·구비 매칭",
+            "from": 1,
+            "to": 5,
+            "approvedMonth": 3
+          },
+          {
+            "name": "홍보 인쇄",
+            "short": "홍보",
+            "topic": "사무관리비",
+            "cost": 5,
+            "fund": "구비",
+            "from": 2,
+            "to": 5,
+            "approvedMonth": 0
+          }
+        ],
+        "buckets": [
+          {
+            "name": "A",
+            "fund": "국비·구비 매칭",
+            "topics": [
+              "시설비",
+              "사무관리비"
+            ],
+            "limit": 2,
+            "from": 2
+          },
+          {
+            "name": "B",
+            "fund": "국비·구비 매칭",
+            "topics": [
+              "재료비"
+            ],
+            "limit": 4,
+            "from": 2
+          },
+          {
+            "name": "C",
+            "fund": "국비·구비 매칭",
+            "topics": [
+              "행사운영비"
+            ],
+            "limit": 10,
+            "from": 1
+          },
+          {
+            "name": "D",
+            "fund": "국비·구비 매칭",
+            "topics": [
+              "시설비"
+            ],
+            "limit": 5,
+            "from": 2
+          },
+          {
+            "name": "E",
+            "fund": "구비",
+            "topics": [
+              "사무관리비"
+            ],
+            "limit": 6,
+            "from": 1
+          }
+        ],
+        "rules": [
+          "fund",
+          "time",
+          "dependency"
+        ],
+        "title": "먼저 끝나야 시작합니다",
+        "phase": "집행계획",
+        "ruleText": "앞 사업을 마친 다음 달부터 뒤 사업을 시작해요. 월·묶음·재원도 모두 맞춰요.",
+        "dependencies": [
+          [
+            0,
+            3
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "brief": "사업마다·월마다·예산 묶음마다 하나씩. 배정끼리는 대각선까지 붙지 않아요(가상 조정 규칙).",
+        "witness": {
+          "c": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "selected": 1
+        },
+        "audit": {
+          "solutions": 1,
+          "withoutEvidence": 4,
+          "ablation": {
+            "fund": 2,
+            "time": 2,
+            "dependency": 2
+          }
+        },
+        "hints": [
+          "앞 사업을 마친 다음 달부터 뒤 사업을 시작해요. 월·묶음·재원도 모두 맞춰요.",
+          "한 사업의 가능한 칸을 좁힌 다음 같은 월·묶음의 다른 사업을 살펴보세요. 잠금 칸을 누르면 이유를 읽을 수 있어요."
+        ]
+      }
+    ]
+  }
+}
