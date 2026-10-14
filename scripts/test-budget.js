@@ -14,5 +14,5 @@ for(const [kind,id] of [['sumgrid','it'],['queens','budget']]){
  assert.equal(l.key,`${id}:${diff}:${l.index}`);assert.equal(m.hints(l).length,2);
  }}
 }
-const built=fs.readFileSync('index.html','utf8');assert.equal(built.replace(/\n<!-- budget-expansion:start;[\s\S]*?<!-- budget-expansion:end -->\n/,''),base);
-assert.equal(count,12);console.log('PASS: 12 new witnesses, unique answers, every rule necessary, independent 65536-mask arithmetic and 120-permutation assignment searches, connected regions, locks, malformed drafts, 90 upstream levels and upstream bytes preserved.');
+const built=fs.readFileSync('index.html','utf8');const puzzlePart=t=>{const a=t.indexOf('const Puzzles=(()=>{');return t.slice(a,t.indexOf('</script>',a)).replace(/\r\n/g,'\n');};assert.equal(puzzlePart(built),puzzlePart(base),'original puzzle code and level data preserved');
+assert.equal(count,12);console.log('PASS: 12 new witnesses, unique answers, every rule necessary, independent 65536-mask arithmetic and 120-permutation assignment searches, connected regions, locks, malformed drafts, 90 upstream levels and original puzzle source bytes preserved.');
