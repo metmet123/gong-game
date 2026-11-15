@@ -1,5 +1,5 @@
 /* Consolidated release: exact-route cache keeps each desk independent. */
-const CACHE='gongmuwon-cc1fae786332';
+const CACHE='gongmuwon-c020cb6cd42c';
 const FILES=["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./icon-maskable-512.png", "./resident-center/index.html", "./leaflet-a/index.html", "./leaflet-a/style.css", "./leaflet-a/stage.css", "./leaflet-a/model.js", "./leaflet-a/app.js"];
 const allowed=new Set(FILES.map(p=>new URL(p,self.location.href).href));
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting())));
